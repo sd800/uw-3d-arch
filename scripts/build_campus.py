@@ -175,7 +175,7 @@ red=next(f for f in osm if f['properties'].get('name')=='Red Square' and f['poly
 quad=next(f for f in osm if f['properties'].get('name')=='The Quad')
 fountain=next(f for f in osm if f['properties'].get('name')=='Drumheller Fountain')
 places=[]
-place_names={'Red Square':'红场（中央广场）','The Quad':'The Quad（文科庭院）','Drumheller Fountain':'德拉姆赫勒喷泉','Rainier Vista':'雷尼尔山景观轴线','Union Bay':'联合湾','Portage Bay':'波蒂奇湾','Lake Washington':'华盛顿湖','Montlake Cut':'蒙特莱克水道'}
+place_names={'Red Square':'红场','The Quad':'The Quad 庭院','Drumheller Fountain':'德拉姆赫勒喷泉','Rainier Vista':'雷尼尔山景观轴线','Union Bay':'联合湾','Portage Bay':'波蒂奇湾','Lake Washington':'华盛顿湖','Montlake Cut':'蒙特莱克水道'}
 seen=set()
 for f in osm:
     t=f['properties'];g=f['poly'];name=t.get('name');mat=None
