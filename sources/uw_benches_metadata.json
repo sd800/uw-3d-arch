@@ -1,0 +1,139 @@
+{
+ "documentInfo": {
+  "Category": "",
+  "Keywords": "UW,University of Washington,Grounds,Bench,Benches,Seattle",
+  "Version": "3.3.0",
+  "Comments": "",
+  "AntialiasingMode": "Fast",
+  "Title": "Map3",
+  "Author": "",
+  "TextAntialiasingMode": "Force",
+  "Subject": ""
+ },
+ "maxImageWidth": 4096,
+ "maxRecordCount": 2000,
+ "description": "The Grounds Shop within UW Facilities Services performs routine maintenance benches on the Seattle Campus of the University of Washington. The grounds shop also installs memorial benches when they are ordered. To perform this maintenance the grounds shop tracks not only the location of benches but also the material, condition and the date it was last inspected.This data is updated as needed when new construction projects add benches to campus and when the grounds shop inspects each bench.",
+ "datesInUnknownTimezone": false,
+ "supportsQueryDomains": true,
+ "units": "esriFeet",
+ "maxSelectionCount": 2000,
+ "supportedImageFormatTypes": "PNG32,PNG24,PNG,JPG,DIB,TIFF,EMF,PS,PDF,GIF,SVG,SVGZ,BMP",
+ "supportsClipping": true,
+ "exportTilesAllowed": false,
+ "maxImageHeight": 4096,
+ "tables": [],
+ "hasVersionedData": true,
+ "supportsDatumTransformation": true,
+ "cimVersion": "3.7.0",
+ "supportsQueryDataElements": true,
+ "layers": [{
+  "subLayerIds": null,
+  "maxScale": 0,
+  "name": "GroundsBench",
+  "defaultVisibility": true,
+  "id": 0,
+  "minScale": 0,
+  "supportsDynamicLegends": true,
+  "type": "Feature Layer",
+  "parentLayerId": -1,
+  "geometryType": "esriGeometryPoint"
+ }],
+ "mapName": "Map3",
+ "minScale": 0,
+ "archivingInfo": {"supportsHistoricMoment": false},
+ "spatialReference": {
+  "falseM": -100000,
+  "xyTolerance": 0.0032808333333333331,
+  "mUnits": 10000,
+  "zUnits": 10000,
+  "latestWkid": 2285,
+  "zTolerance": 0.001,
+  "wkid": 102748,
+  "xyUnits": 3048.00609601219276,
+  "mTolerance": 0.001,
+  "falseX": -117104300,
+  "falseY": -99539600,
+  "falseZ": -100000
+ },
+ "fullExtent": {
+  "ymin": 239654.67567156255,
+  "xmin": 1274495.4922635555,
+  "ymax": 244605.38066513836,
+  "xmax": 1281606.3097348064,
+  "spatialReference": {
+   "falseM": -100000,
+   "xyTolerance": 0.0032808333333333331,
+   "mUnits": 10000,
+   "zUnits": 10000,
+   "latestWkid": 2285,
+   "zTolerance": 0.001,
+   "wkid": 102748,
+   "xyUnits": 3048.00609601219276,
+   "mTolerance": 0.001,
+   "falseX": -117104300,
+   "falseY": -99539600,
+   "falseZ": -100000
+  }
+ },
+ "supportedExtensions": "FeatureServer",
+ "serviceItemId": "5ba5cd29576f44b1bb227bc9b8db456c",
+ "capabilities": "Query,Map,Data",
+ "supportsDynamicLayers": true,
+ "maxScale": 0,
+ "singleFusedMapCache": false,
+ "currentVersion": 12.1,
+ "hasBranchVersionedData": false,
+ "mapUnits": {"uwkid": 9003},
+ "referenceScale": 0,
+ "supportsSpatialFilter": true,
+ "supportedQueryFormats": "JSON, geoJSON, PBF",
+ "datumTransformations": [
+  {"geoTransforms": [{
+   "latestWkid": 108190,
+   "transformForward": true,
+   "wkid": 108190,
+   "name": "WGS_1984_(ITRF00)_To_NAD_1983"
+  }]},
+  {"geoTransforms": [{
+   "latestWkid": 108190,
+   "transformForward": false,
+   "wkid": 108190,
+   "name": "WGS_1984_(ITRF00)_To_NAD_1983"
+  }]},
+  {"geoTransforms": [{
+   "latestWkid": 108190,
+   "transformForward": true,
+   "wkid": 108190,
+   "name": "WGS_1984_(ITRF00)_To_NAD_1983"
+  }]},
+  {"geoTransforms": [{
+   "latestWkid": 108190,
+   "transformForward": false,
+   "wkid": 108190,
+   "name": "WGS_1984_(ITRF00)_To_NAD_1983"
+  }]}
+ ],
+ "initialExtent": {
+  "ymin": 240803.21700651915,
+  "xmin": 1273908.3384689735,
+  "ymax": 243880.3601000426,
+  "xmax": 1281730.2376873493,
+  "spatialReference": {
+   "falseM": -100000,
+   "xyTolerance": 0.0032808333333333331,
+   "mUnits": 10000,
+   "zUnits": 10000,
+   "latestWkid": 2285,
+   "zTolerance": 0.001,
+   "wkid": 102748,
+   "xyUnits": 3048.00609601219276,
+   "mTolerance": 0.001,
+   "falseX": -117104300,
+   "falseY": -99539600,
+   "falseZ": -100000
+  }
+ },
+ "serviceDescription": "<div style='text-align:Left;'><div><div><p><span>The Grounds Shop within UW Facilities Services performs routine maintenance benches on the Seattle Campus of the University of Washington. The grounds shop also installs memorial benches when they are ordered. To perform this maintenance the grounds shop tracks not only the location of benches but also the material, condition and the date it was last inspected.<\/span><\/p><p><span>This data is updated as needed when new construction projects add benches to campus and when the grounds shop inspects each bench.<\/span><\/p><\/div><\/div><\/div>",
+ "copyrightText": "Engineering Services and Grounds Management, University of Washington",
+ "supportsTimeRelation": true
+}

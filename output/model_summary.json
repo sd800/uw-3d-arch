@@ -1,0 +1,68 @@
+{
+  "buildings": 271,
+  "layers": 272,
+  "environment_layer": "Environment",
+  "native_closed_solids": 285,
+  "objects_3ds": 1627,
+  "vertices": 1442313,
+  "triangles": 2492362,
+  "trees": 8427,
+  "quad_cherry_trees": 30,
+  "landmarks": 26,
+  "unit": "meters",
+  "crs": "EPSG:32610 local offsets",
+  "origin_wgs84": [
+    -122.3093,
+    47.6558
+  ],
+  "origin_utm": [
+    551864.7842745285,
+    5278276.038903566
+  ],
+  "local_z_zero_m": 0,
+  "bounds": [
+    -985.0,
+    -1005.0,
+    1705.0,
+    1036.2289345527518
+  ],
+  "district_bounds": {
+    "central": [
+      -298.67234766308684,
+      -492.02898351382464,
+      482.11113221221603,
+      614.2422770000994
+    ],
+    "west": [
+      -963.7681653411128,
+      -505.88633146323264,
+      -198.82611512439325,
+      619.327343002893
+    ],
+    "south": [
+      -315.9569758976577,
+      -908.6569262072444,
+      374.67183426534757,
+      -411.0757687035948
+    ],
+    "east": [
+      407.70482782286126,
+      -930.3027769187465,
+      1576.5297514519189,
+      1101.0419176975265
+    ]
+  },
+  "overview_center": [
+    -14.3477,
+    16.419
+  ],
+  "terrain": "USGS 3DEP F32 bare-earth DEM sampled at about 10m; landscape patches 60m with 12m edge segmentation and flattened building pads",
+  "terrain_source": "https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer",
+  "sectors": {
+    "central": 91,
+    "west": 59,
+    "south": 50,
+    "east": 71
+  },
+  "accuracy": "Official mapped footprint/tree positions; all exterior heights, roof/facade geometry and tree forms approximate, not surveyed."
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "id": "P0",
+    "name": "The Quad",
+    "name_zh": "The Quad（文科庭院）",
+    "position": [
+      155.23,
+      166.38,
+      52.64
+    ]
+  },
+  {
+    "id": "P1",
+    "name": "Drumheller Fountain",
+    "name_zh": "德拉姆赫勒喷泉",
+    "position": [
+      114.26,
+      -220.05,
+      38.55
+    ]
+  },
+  {
+    "id": "P2",
+    "name": "Lake Washington",
+    "name_zh": "华盛顿湖",
+    "position": [
+      1267.75,
+      -565.69,
+      6.14
+    ]
+  },
+  {
+    "id": "P3",
+    "name": "Montlake Cut",
+    "name_zh": "蒙特莱克水道",
+    "position": [
+      349.37,
+      -941.69,
+      6.49
+    ]
+  },
+  {
+    "id": "P4",
+    "name": "Rainier Vista",
+    "name_zh": "雷尼尔山景观轴线",
+    "position": [
+      220.74,
+      -441.17,
+      28.24
+    ]
+  },
+  {
+    "id": "P5",
+    "name": "Portage Bay",
+    "name_zh": "波蒂奇湾",
+    "position": [
+      -487.61,
+      -652.22,
+      6.18
+    ]
+  },
+  {
+    "id": "P6",
+    "name": "Red Square",
+    "name_zh": "红场（中央广场）",
+    "position": [
+      -14.35,
+      16.42,
+      48.18
+    ]
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "file": "uw_roads.geojson",
+    "url": "https://gis.maps.uw.edu/federated/rest/services/PublicData/PublicData/MapServer/36/query",
+    "sha256": "db4b95a8b16d2f822e7bb3de9cbf2ca1f41331423145e2d42f59ee10307f66e8",
+    "features": 63
+  },
+  {
+    "file": "uw_benches.geojson",
+    "url": "https://gis.maps.uw.edu/federated/rest/services/PublicData/Public_GroundsBench/MapServer/0/query",
+    "sha256": "d62c8a3961d7b43323c02ac36ed2ad9592d8363ed07409980b59ebd12aebf4fa",
+    "features": 1242
+  },
+  {
+    "file": "uw_walks.geojson",
+    "url": "https://gis.maps.uw.edu/federated/rest/services/PublicData/PublicData/MapServer/35/query",
+    "sha256": "7cfcea12de1783de08f56ab95072c6c9bedf5acdd820e568f038a53bf1667b29",
+    "features": 401
+  },
+  {
+    "file": "uw_linework.geojson",
+    "url": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/0/query",
+    "sha256": "a786d937ba443997ac76382cdc213b13fa9142040683464ca5a18ba003ccc683",
+    "features": 41025
+  },
+  {
+    "file": "uw_trees.geojson",
+    "url": "https://gis.maps.uw.edu/federated/rest/services/PublicData/PublicData/MapServer/37/query",
+    "parameters": {
+      "where": "1=1",
+      "geometry": "-122.325,47.641,-122.285,47.665",
+      "geometryType": "esriGeometryEnvelope",
+      "inSR": 4326,
+      "spatialRel": "esriSpatialRelIntersects"
+    },
+    "fields": "OBJECTID,TreeNumber,TreeType,SpeciesName,CommonName,DSH,Height",
+    "features": 8854,
+    "retrieved_utc": "2026-10-13T21:07:42.685727+00:00",
+    "sha256": "b6a9ae879b4ec05d2e54c96b34115dc007f1d8346da4d607503c3c9783e3ea08"
+  },
+  {
+    "file": "uw_buildings.geojson",
+    "url": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1/query",
+    "retrieved_date": "2026-10-13",
+    "bytes": 427567,
+    "sha256": "56a90a02681fd31a24f8f16a1ed922c5057206971c1083ed784c700cbc07a142"
+  },
+  {
+    "file": "osm_features.geojson",
+    "url": "https://api.openstreetmap.org/api/0.6/map",
+    "retrieved_date": "2026-10-13",
+    "bytes": 5684480,
+    "sha256": "36a9044c84fcc081bdad916963eb1d1831547b43d06b7d491250a4da8d4dcc68"
+  },
+  {
+    "file": "terrain_dem.tif",
+    "url": "https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage",
+    "retrieved_date": "2026-10-13",
+    "bytes": 591017,
+    "sha256": "0422d605393363be5eead0bb2896288cec270e23e0412f8eeb10ddf64a0c72b1"
+  },
+  {
+    "file": "osm_map_east.xml.gz",
+    "url": "https://api.openstreetmap.org/api/0.6/map",
+    "retrieved_date": "2026-10-13",
+    "sha256": "0c4c42108dd70c09774ce6d235a9c692f9304dffec0bbe878e3bb1f106f13b13"
+  },
+  {
+    "file": "osm_map_water_2793830.xml.gz",
+    "url": "https://api.openstreetmap.org/api/0.6/relation/2793830/full",
+    "retrieved_date": "2026-10-13",
+    "sha256": "461292631d46d44320692e0f726466ce7892b0f6191a5172ccb996f9ff32155d"
+  },
+  {
+    "file": "osm_map_water_2793848.xml.gz",
+    "url": "https://api.openstreetmap.org/api/0.6/relation/2793848/full",
+    "retrieved_date": "2026-10-13",
+    "sha256": "26d309fef5c795d2f0b716f263ec80ced03b970ef869bda3ba108b27a416bbc9"
+  },
+  {
+    "file": "osm_map_west.xml.gz",
+    "url": "https://api.openstreetmap.org/api/0.6/map",
+    "retrieved_date": "2026-10-13",
+    "sha256": "992aea3c8c00c62e0ccc9b3ef1420094bfd153e3ff11dfd27471045c3e9996a7"
+  }
+]

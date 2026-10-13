@@ -1,0 +1,153 @@
+{
+ "documentInfo": {
+  "Category": "",
+  "Keywords": "Buildings,Paths,Reference,UW,University of Washington",
+  "Version": "3.6.0",
+  "Comments": "",
+  "AntialiasingMode": "Fast",
+  "Title": "Map5",
+  "Author": "",
+  "TextAntialiasingMode": "Force",
+  "Subject": ""
+ },
+ "maxImageWidth": 4096,
+ "maxRecordCount": 2000,
+ "description": "",
+ "datesInUnknownTimezone": false,
+ "supportsQueryDomains": true,
+ "units": "esriFeet",
+ "maxSelectionCount": 2000,
+ "supportedImageFormatTypes": "PNG32,PNG24,PNG,JPG,DIB,TIFF,EMF,PS,PDF,GIF,SVG,SVGZ,BMP",
+ "supportsClipping": true,
+ "exportTilesAllowed": false,
+ "maxImageHeight": 4096,
+ "tables": [],
+ "hasVersionedData": true,
+ "supportsDatumTransformation": true,
+ "cimVersion": "3.7.0",
+ "supportsQueryDataElements": true,
+ "layers": [
+  {
+   "subLayerIds": null,
+   "maxScale": 0,
+   "name": "UWSeattleCampusLinework",
+   "defaultVisibility": true,
+   "id": 0,
+   "minScale": 0,
+   "supportsDynamicLegends": true,
+   "type": "Feature Layer",
+   "parentLayerId": -1,
+   "geometryType": "esriGeometryPolyline"
+  },
+  {
+   "subLayerIds": null,
+   "maxScale": 0,
+   "name": "UniversityBuildings",
+   "defaultVisibility": true,
+   "id": 1,
+   "minScale": 0,
+   "supportsDynamicLegends": true,
+   "type": "Feature Layer",
+   "parentLayerId": -1,
+   "geometryType": "esriGeometryPolygon"
+  }
+ ],
+ "mapName": "SeattleBuildingsAndPaths",
+ "minScale": 0,
+ "archivingInfo": {"supportsHistoricMoment": false},
+ "spatialReference": {
+  "falseM": -100000,
+  "xyTolerance": 0.0032808333333333331,
+  "mUnits": 10000,
+  "zUnits": 10000,
+  "latestWkid": 2285,
+  "zTolerance": 0.001,
+  "wkid": 102748,
+  "xyUnits": 3048.00609601219276,
+  "mTolerance": 0.001,
+  "falseX": -117104300,
+  "falseY": -99539600,
+  "falseZ": -100000
+ },
+ "fullExtent": {
+  "ymin": -99539600,
+  "xmin": -117104300,
+  "ymax": 22591999.243858889,
+  "xmax": 22436976.809932798,
+  "spatialReference": {
+   "falseM": -100000,
+   "xyTolerance": 0.0032808333333333331,
+   "mUnits": 10000,
+   "zUnits": 10000,
+   "latestWkid": 2285,
+   "zTolerance": 0.001,
+   "wkid": 102748,
+   "xyUnits": 3048.00609601219276,
+   "mTolerance": 0.001,
+   "falseX": -117104300,
+   "falseY": -99539600,
+   "falseZ": -100000
+  }
+ },
+ "supportedExtensions": "FeatureServer",
+ "serviceItemId": "e75fb823979043b3b7292ca3ac1ab1d0",
+ "capabilities": "Query,Map,Data",
+ "supportsDynamicLayers": true,
+ "maxScale": 0,
+ "singleFusedMapCache": false,
+ "currentVersion": 12.1,
+ "hasBranchVersionedData": false,
+ "mapUnits": {"uwkid": 9003},
+ "referenceScale": 0,
+ "supportsSpatialFilter": true,
+ "supportedQueryFormats": "JSON, geoJSON, PBF",
+ "datumTransformations": [
+  {"geoTransforms": [{
+   "latestWkid": 108190,
+   "transformForward": true,
+   "wkid": 108190,
+   "name": "WGS_1984_(ITRF00)_To_NAD_1983"
+  }]},
+  {"geoTransforms": [{
+   "latestWkid": 108190,
+   "transformForward": false,
+   "wkid": 108190,
+   "name": "WGS_1984_(ITRF00)_To_NAD_1983"
+  }]},
+  {"geoTransforms": [{
+   "latestWkid": 108190,
+   "transformForward": true,
+   "wkid": 108190,
+   "name": "WGS_1984_(ITRF00)_To_NAD_1983"
+  }]},
+  {"geoTransforms": [{
+   "latestWkid": 108190,
+   "transformForward": false,
+   "wkid": 108190,
+   "name": "WGS_1984_(ITRF00)_To_NAD_1983"
+  }]}
+ ],
+ "initialExtent": {
+  "ymin": 239328.29142442014,
+  "xmin": 1272391.0668615417,
+  "ymax": 246986.27753553126,
+  "xmax": 1283257.3863059862,
+  "spatialReference": {
+   "falseM": -100000,
+   "xyTolerance": 0.0032808333333333331,
+   "mUnits": 10000,
+   "zUnits": 10000,
+   "latestWkid": 2285,
+   "zTolerance": 0.001,
+   "wkid": 102748,
+   "xyUnits": 3048.00609601219276,
+   "mTolerance": 0.001,
+   "falseX": -117104300,
+   "falseY": -99539600,
+   "falseZ": -100000
+  }
+ },
+ "serviceDescription": "",
+ "copyrightText": "",
+ "supportsTimeRelation": true
+}

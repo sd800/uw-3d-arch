@@ -1,0 +1,26 @@
+{
+  "format": "Rhino 3DM v7",
+  "units": "meters",
+  "layers": 272,
+  "nonempty_layers": 272,
+  "objects": 2196,
+  "closed_native_solids": 285,
+  "closed_mesh_objects": 1627,
+  "plan_curves": 284,
+  "all_geometry_valid": true,
+  "named_views": [
+    "Campus",
+    "central",
+    "west",
+    "south",
+    "east"
+  ],
+  "georeference": {
+    "wgs84": [
+      -122.3093,
+      47.6558
+    ],
+    "projection": "EPSG:32610",
+    "local_z_zero_m": 0
+  }
+}

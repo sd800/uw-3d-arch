@@ -1,0 +1,117 @@
+[
+  {
+    "id": "EHD",
+    "name": "668 NE Northlake Way (Environmental Hlth Dept)",
+    "reason": "Outside selected Seattle campus / underground-only / inactive / small unmapped exterior footprint"
+  },
+  {
+    "id": "L027",
+    "name": "664 NE Northlake Way",
+    "reason": "Outside selected Seattle campus / underground-only / inactive / small unmapped exterior footprint"
+  },
+  {
+    "id": "COL",
+    "name": "Collegiana",
+    "reason": "Outside selected Seattle campus / underground-only / inactive / small unmapped exterior footprint"
+  },
+  {
+    "id": "X08",
+    "name": "FISHERIES PONDS",
+    "reason": "Non-building pond or helipad"
+  },
+  {
+    "id": "RCE",
+    "name": "Roosevelt Commons East, 4311 11th Ave NE",
+    "reason": "Outside selected Seattle campus / underground-only / inactive / small unmapped exterior footprint"
+  },
+  {
+    "id": "OTT",
+    "name": "Roosevelt I, 4225 Roosevelt Way NE",
+    "reason": "Outside selected Seattle campus / underground-only / inactive / small unmapped exterior footprint"
+  },
+  {
+    "id": "X05",
+    "name": "HELISTOP PAD",
+    "reason": "Non-building pond or helipad"
+  },
+  {
+    "id": "L039",
+    "name": "45th Street Plaza Building, 1100 NE 45th St",
+    "reason": "Outside selected Seattle campus / underground-only / inactive / small unmapped exterior footprint"
+  },
+  {
+    "id": "W46",
+    "name": "Parking Garage W-46 (UW Tower Garage A)",
+    "reason": "Outside selected Seattle campus / underground-only / inactive / small unmapped exterior footprint"
+  },
+  {
+    "id": "W45",
+    "name": "Parking Garage W-45 (UW Tower Garage B)",
+    "reason": "Outside selected Seattle campus / underground-only / inactive / small unmapped exterior footprint"
+  },
+  {
+    "id": "AHO",
+    "name": "Alumni House",
+    "reason": "Outside selected Seattle campus / underground-only / inactive / small unmapped exterior footprint"
+  },
+  {
+    "id": "UDB",
+    "name": "University District Building, 1107 NE 45th Street",
+    "reason": "Outside selected Seattle campus / underground-only / inactive / small unmapped exterior footprint"
+  },
+  {
+    "id": "AAB",
+    "name": "4518-4522 University Way NE",
+    "reason": "Outside selected Seattle campus / underground-only / inactive / small unmapped exterior footprint"
+  },
+  {
+    "id": "ADS",
+    "name": "4545 Building",
+    "reason": "Outside selected Seattle campus / underground-only / inactive / small unmapped exterior footprint"
+  },
+  {
+    "id": "BOW",
+    "name": "Bowman Building, 4625 Union Bay Place NE",
+    "reason": "Outside selected Seattle campus / underground-only / inactive / small unmapped exterior footprint"
+  },
+  {
+    "id": "NCLW",
+    "name": "Northcut Landing West Bldg, UW Medicine Neighborhood Clinic Ravenna",
+    "reason": "Outside selected Seattle campus / underground-only / inactive / small unmapped exterior footprint"
+  },
+  {
+    "id": "QUC",
+    "name": "Roosevelt II",
+    "reason": "Outside selected Seattle campus / underground-only / inactive / small unmapped exterior footprint"
+  },
+  {
+    "id": "FIL",
+    "name": "4201 Roosevelt (Filer Property)",
+    "reason": "Outside selected Seattle campus / underground-only / inactive / small unmapped exterior footprint"
+  },
+  {
+    "id": "ROM",
+    "name": "Romero House",
+    "reason": "Outside selected Seattle campus / underground-only / inactive / small unmapped exterior footprint"
+  },
+  {
+    "id": "L042",
+    "name": "909 NE Boat St",
+    "reason": "Outside selected Seattle campus / underground-only / inactive / small unmapped exterior footprint"
+  },
+  {
+    "id": "L125",
+    "name": "George F. Russell, Jr. Hall, 1414 NE 42nd Street",
+    "reason": "Outside selected Seattle campus / underground-only / inactive / small unmapped exterior footprint"
+  },
+  {
+    "id": "AAB",
+    "name": "4518-4522 University Way NE",
+    "reason": "Outside selected Seattle campus / underground-only / inactive / small unmapped exterior footprint"
+  },
+  {
+    "id": "UDSB",
+    "name": "Gateway",
+    "reason": "Outside selected Seattle campus / underground-only / inactive / small unmapped exterior footprint"
+  }
+]
