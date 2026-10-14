@@ -3,10 +3,10 @@
   "units": "meters",
   "layers": 272,
   "nonempty_layers": 272,
-  "objects": 2196,
-  "closed_native_solids": 285,
+  "objects": 2283,
+  "closed_native_solids": 370,
   "closed_mesh_objects": 1627,
-  "plan_curves": 284,
+  "plan_curves": 286,
   "all_geometry_valid": true,
   "named_views": [
     "Campus",

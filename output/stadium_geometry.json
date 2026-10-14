@@ -1,0 +1,21 @@
+{
+  "field_source": "OpenStreetMap way/235758229",
+  "axis_east_north": [
+    0.9543914221926996,
+    -0.29855822421262534
+  ],
+  "mapped_field_center_m": [
+    582.9641886473182,
+    -604.8141360286937
+  ],
+  "playing_field_m": [
+    109.728,
+    48.768
+  ],
+  "lower_rows": 28,
+  "upper_rows_each_side": 28,
+  "canopy_count": 2,
+  "modeled_roof_height_m": 40.8,
+  "height_status": "Approximate exterior, not surveyed",
+  "reference": "https://www.hok.com/projects/view/university-of-washington-husky-stadium-renovation-and-expansion/"
+}

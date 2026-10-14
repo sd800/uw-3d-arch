@@ -8,6 +8,6 @@
 - Drumheller Fountain → 德拉姆赫勒喷泉.
 - Portage Bay → 波蒂奇湾; Union Bay → 联合湾; Lake Washington → 华盛顿湖.
 - Montlake Cut → 蒙特莱克水道; Cut denotes the connecting navigational channel.
-- Intellectual House retains its proper English name with the functional note 原住民文化交流中心.
+- Intellectual House → 原住民文化交流中心; the original English name remains available in building details.
 
 Chinese labels are independent project translations, not claimed as official UW translations. Full English and original GIS names remain available in the building detail and source CSV.

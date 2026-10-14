@@ -2,7 +2,7 @@
 
 An independent, bilingual exterior model of the **University of Washington Seattle campus**. Open `index.html` by double-clicking it with the `assets` and `output` folders beside it, or open the single-file offline edition.
 
-华盛顿大学西雅图校区室外三维模型，覆盖中央校区、西校区、南校区与医学区、东校区与体育区。英文为默认语言；设备语言偏好中含中文时首次默认中文，可随时切换。
+华盛顿大学西雅图校区室外三维模型，覆盖中央校区、西校区、南校区与医学区、东校区与体育区。英文为默认语言；首次打开统一使用英文，可随时切换中英文。
 
 ## Deliverables
 
@@ -22,11 +22,11 @@ An independent, bilingual exterior model of the **University of Washington Seatt
 
 ## Model and interaction
 
-The model contains **271 mapped facility/building layers plus one Environment layer**, 26 architectural highlights, **8,427 official tree positions** and 30 cherry canopies around the Quad. Named wings and disconnected pieces sharing a facility code share a layer. The official facility layer's ponds and helipad belong to the environment, not building volumes. Excluded facilities are recorded in `output/excluded_records.json`.
+The model contains **271 mapped facility/building layers plus one Environment layer**, 26 architectural highlights, **8,427 official tree positions** and 29 cherry canopies around the Quad. Named wings and disconnected pieces sharing a facility code share a layer. The official facility layer's ponds and helipad belong to the environment, not building volumes. Excluded facilities are recorded in `output/excluded_records.json`.
 
-The initial Core view centers Red Square at a readable oblique angle. Reset restores it. Campus shows a wider overview; district and Plan controls provide other views. Left-drag pans, right-drag rotates, and the wheel zooms at the pointer. One finger pans; two fingers pan or pinch. Rotate enables one-finger rotation. Level reaches exactly horizontal without ground-ray jumps. Camera pivots stay grounded, there is no inertia, and zoom-out remains campus-wide after choosing a landmark.
+The initial Core view centers Red Square from the southwest, with north pointing upper-left. Persistent landmark labels start off; hovering a mapped outdoor place or building still shows its name. Reset restores it. Campus shows a wider overview; district and Plan controls provide other views. The East & Athletics preset focuses on Husky Stadium and the adjacent principal athletic facilities. Left-drag pans, right-drag rotates, and the wheel zooms at the pointer. One finger pans; two fingers pan or pinch. Rotate enables one-finger rotation. Camera pivots stay grounded, there is no inertia, and zoom-out remains campus-wide after choosing a landmark.
 
-Search works in both languages and by official code. Buildings can be selected, hidden, isolated or located. Selection retains a clear highlight. The viewer includes architectural tours, progress/percentage loading, shadows, metric scale, labels, elevation slicing, 3DS download and PNG export. Roof depth separation, fixed shadow filtering and continuous terrain lighting avoid unstable coplanar surfaces during navigation.
+Search works in both languages and by official code. Buildings can be selected, hidden, isolated or located. Selection retains a clear highlight. Mapped outdoor places have bilingual hover names; smaller pools take priority over enclosing plazas, while buildings retain priority. The viewer includes architectural tours, progress/percentage loading, shadows, metric scale, labels, elevation slicing, 3DS download and PNG export. Roof depth separation, fixed shadow filtering and continuous terrain lighting avoid unstable coplanar surfaces during navigation.
 
 ## Sources and measurement limits
 
@@ -34,10 +34,11 @@ Search works in both languages and by official code. Buildings can be selected, 
 - **OpenStreetMap contributors** supply supplementary road, path, plaza, lawn, field and shoreline geometry: https://www.openstreetmap.org/copyright . Some road widths use contributed tags; unrecorded widths are illustrative.
 - **USGS 3DEP** supplies bare-earth terrain at about 10m sampling: https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer . Building pads are locally flattened. Lake surfaces use an approximate common level.
 - Projection: **EPSG:32610**, with local meter offsets from WGS84 [-122.3093, 47.6558]. Z uses the DEM meter elevation datum. The elevation slice is an elevation plane, not building-relative storeys.
+- Core refinements include aligned Gothic wing roofs, stone courses and entrances, Suzzallo reading-room window groups, Red Square brick courses and approximate monuments, the Quad’s unified mapped brick walks, Pierce Lane connection and 29 mapped Yoshino trees with their original simple canopy style, and Drumheller Fountain’s flat basin, coping, volumetric plume, arced jets, splash rings and restrained ripples. Small details and vertical dimensions remain approximate.
 - **All exterior heights, storeys, roof partitions, facade bays, canopies and detailed landscape forms are approximate.** Reported gross floor area can include basements and is not an exterior floor count. UW's published Suzzallo reading-room dimensions are interior dimensions, not the exterior building envelope. No whole-building height is presented as a measured survey.
 - The model is an independent exterior study, not official university BIM. Original English names remain available beside faithful independent Chinese translations. Trees around the Quad use illustrative spring cherry color; this does not represent current seasonal conditions.
 
-Sources, retrieval hashes and translation notes are in `sources`. See `THIRD_PARTY_NOTICES.md` for attribution and third-party licenses.
+Sources, retrieval hashes and translation notes are in `sources`. See `docs/THIRD_PARTY_NOTICES.md` for attribution and third-party licenses.
 
 ## Website and releases
 
@@ -64,3 +65,14 @@ python3 scripts/package_delivery.py
 ```
 
 Source snapshots are retained; geometry rebuilding needs no live map access. `fetch_sources.py` and `fetch_terrain.py` retrieve public sources when an updated snapshot is explicitly needed. `prepare_sources.py` also accepts the compressed OSM API snapshots. A GPU-exported preview can replace the lightweight footprint preview before the final website build. WebGL 2 and Compression Streams are required for interactive viewing.
+
+## Project layout
+
+- `index.html`: website entry; root SEO files and `CNAME` support publishing.
+- `assets/`: browser engine, fonts, icons and local model payload.
+- `config/`: custom site configuration.
+- `docs/`: project decisions and third-party license notices.
+- `scripts/`: model generators, packaging and necessary checks.
+- `sources/`: source snapshots and provenance.
+- `output/`: CAD files, offline edition, reports and delivery archive.
+- Root `VERSION`, `CHANGELOG.md` and package manifests record releases and builds.

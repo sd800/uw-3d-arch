@@ -14,11 +14,6 @@
     "category": "building",
     "material": "Slate"
   },
-  "W001M0700": {
-    "layer": "W001_Hansee Hall",
-    "category": "building",
-    "material": "Metal"
-  },
   "W001D0900": {
     "layer": "W001_Hansee Hall",
     "category": "building",
@@ -243,11 +238,6 @@
     "layer": "W009_Hutchinson Hall",
     "category": "building",
     "material": "Slate"
-  },
-  "W009M0700": {
-    "layer": "W009_Hutchinson Hall",
-    "category": "building",
-    "material": "Metal"
   },
   "W009D0900": {
     "layer": "W009_Hutchinson Hall",
@@ -499,11 +489,6 @@
     "category": "building",
     "material": "Slate"
   },
-  "W018M0700": {
-    "layer": "W018_Denny Hall",
-    "category": "building",
-    "material": "Metal"
-  },
   "W018D0800": {
     "layer": "W018_Denny Hall",
     "category": "building",
@@ -619,11 +604,6 @@
     "category": "building",
     "material": "Slate"
   },
-  "W022M0700": {
-    "layer": "W022_Raitt Hall",
-    "category": "building",
-    "material": "Metal"
-  },
   "W022D0900": {
     "layer": "W022_Raitt Hall",
     "category": "building",
@@ -643,11 +623,6 @@
     "layer": "W023_Music Building",
     "category": "building",
     "material": "Slate"
-  },
-  "W023M0700": {
-    "layer": "W023_Music Building",
-    "category": "building",
-    "material": "Metal"
   },
   "W023D0900": {
     "layer": "W023_Music Building",
@@ -754,11 +729,6 @@
     "category": "building",
     "material": "Slate"
   },
-  "W027M0700": {
-    "layer": "W027_Miller Hall",
-    "category": "building",
-    "material": "Metal"
-  },
   "W027D0900": {
     "layer": "W027_Miller Hall",
     "category": "building",
@@ -808,11 +778,6 @@
     "layer": "W029_Savery Hall",
     "category": "building",
     "material": "Slate"
-  },
-  "W029M0700": {
-    "layer": "W029_Savery Hall",
-    "category": "building",
-    "material": "Metal"
   },
   "W029D0900": {
     "layer": "W029_Savery Hall",
@@ -894,25 +859,20 @@
     "category": "building",
     "material": "Slate"
   },
-  "W032M0700": {
-    "layer": "W032_Smith Hall",
-    "category": "building",
-    "material": "Metal"
-  },
   "W032D0900": {
     "layer": "W032_Smith Hall",
     "category": "building",
     "material": "DarkGlass"
   },
-  "W033M0000": {
-    "layer": "W033_Kane Hall",
-    "category": "building",
-    "material": "Limestone"
-  },
   "W033M0100": {
     "layer": "W033_Kane Hall",
     "category": "building",
     "material": "LightStone"
+  },
+  "W033M0200": {
+    "layer": "W033_Kane Hall",
+    "category": "building",
+    "material": "Brick"
   },
   "W033M0500": {
     "layer": "W033_Kane Hall",
@@ -928,6 +888,11 @@
     "layer": "W033_Kane Hall",
     "category": "building",
     "material": "Glass"
+  },
+  "W033D0900": {
+    "layer": "W033_Kane Hall",
+    "category": "building",
+    "material": "DarkGlass"
   },
   "W033D1000": {
     "layer": "W033_Kane Hall",
@@ -948,11 +913,6 @@
     "layer": "W034_Thomson Hall",
     "category": "building",
     "material": "Slate"
-  },
-  "W034M0700": {
-    "layer": "W034_Thomson Hall",
-    "category": "building",
-    "material": "Metal"
   },
   "W034D0900": {
     "layer": "W034_Thomson Hall",
@@ -989,15 +949,15 @@
     "category": "building",
     "material": "Frame"
   },
-  "W036M0000": {
-    "layer": "W036_Odegaard Library",
-    "category": "building",
-    "material": "Limestone"
-  },
   "W036M0100": {
     "layer": "W036_Odegaard Library",
     "category": "building",
     "material": "LightStone"
+  },
+  "W036M0200": {
+    "layer": "W036_Odegaard Library",
+    "category": "building",
+    "material": "Brick"
   },
   "W036M0500": {
     "layer": "W036_Odegaard Library",
@@ -1013,6 +973,11 @@
     "layer": "W036_Odegaard Library",
     "category": "building",
     "material": "Glass"
+  },
+  "W036D0900": {
+    "layer": "W036_Odegaard Library",
+    "category": "building",
+    "material": "DarkGlass"
   },
   "W036D1000": {
     "layer": "W036_Odegaard Library",
@@ -1033,11 +998,6 @@
     "layer": "W037_Gowen Hall",
     "category": "building",
     "material": "Slate"
-  },
-  "W037M0700": {
-    "layer": "W037_Gowen Hall",
-    "category": "building",
-    "material": "Metal"
   },
   "W037D0900": {
     "layer": "W037_Gowen Hall",
@@ -1104,25 +1064,20 @@
     "category": "building",
     "material": "Frame"
   },
+  "W040M0000": {
+    "layer": "W040_Suzzallo Library",
+    "category": "building",
+    "material": "Limestone"
+  },
   "W040M0100": {
     "layer": "W040_Suzzallo Library",
     "category": "building",
     "material": "LightStone"
   },
-  "W040M0200": {
-    "layer": "W040_Suzzallo Library",
-    "category": "building",
-    "material": "Brick"
-  },
   "W040M0300": {
     "layer": "W040_Suzzallo Library",
     "category": "building",
     "material": "Slate"
-  },
-  "W040M0700": {
-    "layer": "W040_Suzzallo Library",
-    "category": "building",
-    "material": "Metal"
   },
   "W040D0900": {
     "layer": "W040_Suzzallo Library",
@@ -1219,15 +1174,15 @@
     "category": "building",
     "material": "Frame"
   },
-  "W044M0000": {
-    "layer": "W044_Meany Hall",
-    "category": "building",
-    "material": "Limestone"
-  },
   "W044M0100": {
     "layer": "W044_Meany Hall",
     "category": "building",
     "material": "LightStone"
+  },
+  "W044M0200": {
+    "layer": "W044_Meany Hall",
+    "category": "building",
+    "material": "Brick"
   },
   "W044M0500": {
     "layer": "W044_Meany Hall",
@@ -1244,20 +1199,25 @@
     "category": "building",
     "material": "Glass"
   },
+  "W044D0900": {
+    "layer": "W044_Meany Hall",
+    "category": "building",
+    "material": "DarkGlass"
+  },
   "W044D1000": {
     "layer": "W044_Meany Hall",
     "category": "building",
     "material": "Frame"
   },
-  "W045M0000": {
-    "layer": "W045_Student Union Building",
-    "category": "building",
-    "material": "Limestone"
-  },
   "W045M0100": {
     "layer": "W045_Student Union Building",
     "category": "building",
     "material": "LightStone"
+  },
+  "W045M0200": {
+    "layer": "W045_Student Union Building",
+    "category": "building",
+    "material": "Brick"
   },
   "W045M0500": {
     "layer": "W045_Student Union Building",
@@ -1273,6 +1233,11 @@
     "layer": "W045_Student Union Building",
     "category": "building",
     "material": "Glass"
+  },
+  "W045D0900": {
+    "layer": "W045_Student Union Building",
+    "category": "building",
+    "material": "DarkGlass"
   },
   "W045D1000": {
     "layer": "W045_Student Union Building",
@@ -1293,11 +1258,6 @@
     "layer": "W046_Gerberding Hall",
     "category": "building",
     "material": "Slate"
-  },
-  "W046M0700": {
-    "layer": "W046_Gerberding Hall",
-    "category": "building",
-    "material": "Metal"
   },
   "W046D0900": {
     "layer": "W046_Gerberding Hall",
@@ -1403,11 +1363,6 @@
     "layer": "W050_Mary Gates Hall",
     "category": "building",
     "material": "Slate"
-  },
-  "W050M0700": {
-    "layer": "W050_Mary Gates Hall",
-    "category": "building",
-    "material": "Metal"
   },
   "W050D0900": {
     "layer": "W050_Mary Gates Hall",
@@ -1544,11 +1499,6 @@
     "category": "building",
     "material": "Slate"
   },
-  "W055M0700": {
-    "layer": "W055_Architecture Hall",
-    "category": "building",
-    "material": "Metal"
-  },
   "W055D0800": {
     "layer": "W055_Architecture Hall",
     "category": "building",
@@ -1658,11 +1608,6 @@
     "layer": "W059_Johnson Hall",
     "category": "building",
     "material": "Slate"
-  },
-  "W059M0700": {
-    "layer": "W059_Johnson Hall",
-    "category": "building",
-    "material": "Metal"
   },
   "W059D0900": {
     "layer": "W059_Johnson Hall",
@@ -1833,11 +1778,6 @@
     "layer": "W065_Guggenheim Hall",
     "category": "building",
     "material": "Slate"
-  },
-  "W065M0700": {
-    "layer": "W065_Guggenheim Hall",
-    "category": "building",
-    "material": "Metal"
   },
   "W065D0900": {
     "layer": "W065_Guggenheim Hall",
@@ -2503,11 +2443,6 @@
     "layer": "W088_Roberts Hall",
     "category": "building",
     "material": "Slate"
-  },
-  "W088M0700": {
-    "layer": "W088_Roberts Hall",
-    "category": "building",
-    "material": "Metal"
   },
   "W088D0900": {
     "layer": "W088_Roberts Hall",
@@ -7714,11 +7649,6 @@
     "category": "building",
     "material": "Slate"
   },
-  "W263M0700": {
-    "layer": "W263_Hec Edmundson Pavilion",
-    "category": "building",
-    "material": "Metal"
-  },
   "W263D0800": {
     "layer": "W263_Hec Edmundson Pavilion",
     "category": "building",
@@ -7889,6 +7819,11 @@
     "category": "building",
     "material": "Metal"
   },
+  "W269D0900": {
+    "layer": "W269_Husky Stadium",
+    "category": "building",
+    "material": "DarkGlass"
+  },
   "W269D1000": {
     "layer": "W269_Husky Stadium",
     "category": "building",
@@ -7913,6 +7848,11 @@
     "layer": "W269_Husky Stadium",
     "category": "building",
     "material": "Gold"
+  },
+  "W269M2900": {
+    "layer": "W269_Husky Stadium",
+    "category": "building",
+    "material": "Seat"
   },
   "W270M0000": {
     "layer": "W270_Waterfront Activities Center",
@@ -7974,10 +7914,10 @@
     "category": "building",
     "material": "Frame"
   },
-  "E0100": {
+  "E0200": {
     "layer": "Environment",
     "category": "environment",
-    "material": "LightStone"
+    "material": "Brick"
   },
   "E0400": {
     "layer": "Environment",
@@ -8133,5 +8073,65 @@
     "layer": "Environment",
     "category": "environment",
     "material": "Blossom"
+  },
+  "E3000": {
+    "layer": "Environment",
+    "category": "environment",
+    "material": "BrickPath"
+  },
+  "E3100": {
+    "layer": "Environment",
+    "category": "environment",
+    "material": "BrickPale"
+  },
+  "E3200": {
+    "layer": "Environment",
+    "category": "environment",
+    "material": "BrickWarm"
+  },
+  "E3300": {
+    "layer": "Environment",
+    "category": "environment",
+    "material": "BrickBand"
+  },
+  "E3400": {
+    "layer": "Environment",
+    "category": "environment",
+    "material": "StepStone"
+  },
+  "E3500": {
+    "layer": "Environment",
+    "category": "environment",
+    "material": "StoneEdge"
+  },
+  "E3600": {
+    "layer": "Environment",
+    "category": "environment",
+    "material": "StoneJoint"
+  },
+  "E3700": {
+    "layer": "Environment",
+    "category": "environment",
+    "material": "Corten"
+  },
+  "E3800": {
+    "layer": "Environment",
+    "category": "environment",
+    "material": "Spray"
+  },
+  "E3900": {
+    "layer": "Environment",
+    "category": "environment",
+    "material": "PoolWater"
+  },
+  "E4000": {
+    "layer": "Environment",
+    "category": "environment",
+    "material": "Foam"
+  },
+  "E4100": {
+    "layer": "Environment",
+    "category": "environment",
+    "material": "Ripple"
   }
 }

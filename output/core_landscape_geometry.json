@@ -1,0 +1,36 @@
+{
+  "red_square": {
+    "mapped_area_m2": 10388.13,
+    "details": [
+      "axis-aligned brick panels and bands",
+      "continuous Pierce Lane approach and two mapped three-step flights",
+      "three brick monoliths",
+      "Broken Obelisk schematic at mapped point"
+    ]
+  },
+  "quad": {
+    "mapped_area_m2": 13307.73,
+    "mapped_lawn_panels": 40,
+    "connection_area_m2": 584.55,
+    "mapped_step_flights": 2,
+    "details": [
+      "mapped brick cross/diagonal walks",
+      "lawn edges",
+      "original simple faceted cherry canopies at mapped Yoshino positions"
+    ]
+  },
+  "fountain": {
+    "mapped_basin_area_m2": 2762.35,
+    "mapped_diameter_m": 59.31,
+    "details": [
+      "flat water plane",
+      "double coping rim",
+      "radial coping joints",
+      "volumetric central plume, twelve arced jets, splash rings and ripples"
+    ],
+    "central_plume_illustrative_height_m": 18,
+    "arc_stream_illustrative_diameter_m": 0.5,
+    "jet_height_status": "Illustrative water display, not surveyed or an operational prediction"
+  },
+  "accuracy": "Mapped footprints and tree positions; paving panel size, sculpture details, steps, coping sections and jets are exterior approximations."
+}

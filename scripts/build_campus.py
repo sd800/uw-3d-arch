@@ -2,6 +2,9 @@
 All heights and facade detail are approximate unless an explicit measurement is cited.
 """
 from cad_core import *
+from husky_stadium import build_husky_stadium
+from core_landscape import detail_core,core_plan
+from core_architecture import oriented_roofs,core_accents
 from curation import GIS,MAP,LANDMARKS,GOTHIC,PITCHED,HEIGHTS,REFS,SHORT,chinese
 from scipy.interpolate import RegularGridInterpolator
 from shapely import segmentize,points
@@ -71,23 +74,12 @@ for j,f in enumerate(buildings,1):
     if id not in HEIGHTS and re.fullmatch(r'[0-9]+(?:\.[0-9]+)?',ot.get('height','')):
         height=max(3,min(110,float(ot['height'])));source='https://www.openstreetmap.org/'+ot['osm_id']
     height=min(height,110);mat='Brick' if gothic or pitched_roof or residential else ('Glass' if id in {'LSB','CSE2','HRC','PCAR','IEB','BIOE','GNOM','HSEB','NAN'} else 'Limestone')
+    if id=='SUZ':mat='Limestone';levels=3
+    if id in {'KNE','OUG','MNY','HUB'}:mat='Brick'
     layer(lay,mat);ms={m:[] for m in COLORS};info={'FacilityCode':id,'NameEN':f['name'],'NameZH':f['name_zh'],'FootprintSource':GIS,'HeightStatus':'Estimated exterior','Units':'meters'}
     if id=='STD':
-        # Bowl with two opposing cantilever-roof silhouettes, open toward the lake.
-        inner=affinity.scale(p,xfact=.66,yfact=.55,origin=(x,y));rim=p.difference(inner)
-        for q in polygons(rim):
-            native_extrude(q,base,8,code+'_Bowl',lay,'Concrete',info);ms['Concrete'].append(extrusion(q,base,8))
-        for k in range(14):
-            outer=affinity.scale(p,xfact=.67+k*.019,yfact=.56+k*.027,origin=(x,y));inn=affinity.scale(p,xfact=.655+k*.019,yfact=.535+k*.027,origin=(x,y))
-            for q in polygons(outer.difference(inn)):ms['Purple' if k%3 else 'Gold'].append(extrusion(q,base+8+k*1.35,.38))
-        for sign in [-1,1]:
-            roof=box(a+25,y+sign*(d-b)*.29-14,c-25,y+sign*(d-b)*.29+14).intersection(p)
-            for q in polygons(roof):ms['Metal'].append(extrusion(q,base+height-3,1.3))
-            for xx in np.arange(a+32,c-25,18):ms['Frame'].append(cylinder((xx,y+sign*(d-b)*.34,base+15),(xx,y+sign*(d-b)*.26,base+height-3),.5,6))
-        # Field occupies the true inner footprint, with illustrative regulation markings.
-        for q in polygons(inner):ms['Grass'].append(extrusion(q,base+.1,.12))
-        for xx in np.linspace(x-47,x+47,11):ms['Marking'].append(boxmesh(xx,y,base+.25,.13,48,.035))
-        ms['Purple'].append(boxmesh(x-54,y,base+.2,10,49,.07));ms['Purple'].append(boxmesh(x+54,y,base+.2,10,49,.07))
+        field=next(o['poly'] for o in osm if o['properties'].get('osm_id')=='way/235758229')
+        build_husky_stadium(ms,p,field,base,code,lay,info)
         levels=0
     else:
         bodyheight=height-(4.4 if pitched_roof else .8)
@@ -100,14 +92,7 @@ for j,f in enumerate(buildings,1):
                 for bb in polygons(band):ms['LightStone'].append(extrusion(bb,zz,.32))
             facade(ms,q,base,bodyheight,max(1,levels),gothic=gothic,continuous=mat=='Glass',spacing=4.5)
             if pitched_roof:
-                # Roof wings follow clipped strips; courtyards remain open.
-                width=min(c-a,d-b);axis='y' if d-b>c-a else 'x'
-                if width>38:
-                    for strip in [box(a-1,b-1,a+17,d+1),box(c-17,b-1,c+1,d+1),box(a+17,b-1,c-17,b+16),box(a+17,d-16,c-17,d+1)]:
-                        for qq in polygons(q.intersection(strip)):ms['Slate'].extend(pitched(qq,base+bodyheight,4.2))
-                    core=q.difference(unary_union([box(a-1,b-1,a+17,d+1),box(c-17,b-1,c+1,d+1),box(a+17,b-1,c-17,b+16),box(a+17,d-16,c-17,d+1)]))
-                    for qq in polygons(core):ms['Metal'].append(extrusion(qq,base+bodyheight,.16))
-                else:ms['Slate'].extend(pitched(q,base+bodyheight,4.2))
+                oriented_roofs(ms,q,base+bodyheight,4.2)
                 if gothic:
                     for aa,bb in zip(np.asarray(q.exterior.coords)[:-1],np.asarray(q.exterior.coords)[1:]):
                         v=bb-aa;length=np.linalg.norm(v)
@@ -126,13 +111,14 @@ for j,f in enumerate(buildings,1):
                 ms['Brick'].append(extrusion(pp,base+bodyheight,height-bodyheight-2));ms['Slate'].extend(pitched(pp,base+height-2,2));facade(ms,pp,base+bodyheight,height-bodyheight-2,2,True)
         if id=='OBS':
             dome=trimesh.creation.icosphere(subdivisions=2);dome.apply_scale([4.1,4.1,3.5]);dome.apply_translation([x,y,base+height-1.5]);ms['Metal'].append(dome)
-        if id=='SUZ':
-            # Reading-room west front: 250ft length, 65ft interior clear height
-            # documented by UW; exterior height remains an estimate.
-            for xx,yy in [(a+4,b+5),(a+4,d-5),(c-4,b+5),(c-4,d-5)]:ms['LightStone'].append(boxmesh(xx,yy,base+height-4,2.2,2.2,5.0))
+        core_accents(ms,p,base,bodyheight,height,id,(-14.3477,16.419))
     for k,(mm,parts) in enumerate(ms.items()):
         if parts:chunk_meshes(code+('D' if mm in ['Glass','DarkGlass','Frame'] else 'M')+f'{k:02d}',parts,mm,lay,info)
     r={'code':code,'facility_id':id,'name':f['name'],'name_zh':f['name_zh'],'official_name':t.get('FacName'),'short':SHORT.get(id,f['name']),'short_zh':f['name_zh'],'aliases_zh':[id,t.get('Address') or ''],'layer':lay,'zone':f['zone'],'landmark':id in LANDMARKS,'height':round(height,3),'height_status':'estimated','levels':levels,'year_built':t.get('YearBuilt'),'reported_gsf_ft2':t.get('GSF'),'area':round(p.area,2),'width':round(c-a,2),'depth':round(d-b,2),'center':[round(x,3),round(y,3)],'ground_m':round(base,3),'bottom_m':round(base,3),'peak_m':round(max((m.bounds[1,2] for parts in ms.values() for m in parts),default=base+height),3),'basis':'平面采用 UW 官方 GIS；外部层数、层高与屋顶高度为估算。GIS 总建筑面积不能视为地上层数。','basis_en':'Official UW footprint; exterior storeys, floor heights and roof elevations are approximate. Reported gross floor area may include basements and does not certify exterior storeys.','partition':'依据映射轮廓保留建筑范围、庭院与翼楼；屋顶、窗格、塔楼和立面构件为简化表达，未经过实测。','partition_en':'Mapped footprint with courtyard voids and wings; roofs, windows, towers and facade members are simplified public-source approximations, not surveyed detail.','source':source,'footprint_source':GIS,'architecture_reference':REFS.get(id),'construction_status':'Active'}
+    if id=='STD':
+        r['partition']='沿公开球场轮廓的长轴重建下层环形看台、南北上层看台及两片悬挑屋顶；球场按120码×53⅓码表达。看台排数、立面、屋顶标高与支撑结构为简化估算。'
+        r['partition_en']='Mapped field axis with stepped lower bowl, north/south upper decks and two cantilever roofs. A 120 by 53 1/3 yard field is shown; row count, exterior elevations, roof heights and supports are illustrative estimates.'
+        r['architecture_reference']='https://www.hok.com/projects/view/university-of-washington-husky-stadium-renovation-and-expansion/'
     if id=='SUZ':r['basis_en']+=' UW documents the reading room as 250 × 52 × 65 ft; these are interior dimensions, not the exterior building envelope.';r['basis']+=' 校方公布的阅览室为250×52×65英尺，属于室内尺寸，不能当作整栋建筑的外部尺寸。'
     records.append(r);f['record']=r
     if j%40==0:print('Buildings',j,flush=True)
@@ -169,11 +155,13 @@ for f in osm:
 # Supplement official walk routes only where OSM lacks the mapped corridor.
 for f in features('uw_walks.geojson'):walkparts.append(f['poly'].buffer(1.35,cap_style=2,join_style=2))
 walkarea=set_precision(unary_union(walkparts).difference(footprints).difference(roadarea).intersection(scope).buffer(0),.01)
-# A neutral site base and campus lawn field; paved and wooded mappings overlay it.
-env(scope,-3,3,'Ground');env(campus_boundary.difference(lakewater).difference(footprints).difference(roadarea).difference(walkarea),.10,.065,'Grass');env(roadarea,.03,.07,'Road');env(walkarea,.16,.055,'Walk')
 red=next(f for f in osm if f['properties'].get('name')=='Red Square' and f['poly'].geom_type=='Polygon')
 quad=next(f for f in osm if f['properties'].get('name')=='The Quad')
 fountain=next(f for f in osm if f['properties'].get('name')=='Drumheller Fountain')
+core_layout=core_plan(red['poly'],quad['poly'],osm,footprints)
+core_mask=unary_union([red['poly'],quad['poly'],fountain['poly'].buffer(3.8),core_layout[0]])
+# Dedicated core surfaces replace generic overlapping lawn and path skins.
+env(scope,-3,3,'Ground');env(campus_boundary.difference(lakewater).difference(footprints).difference(roadarea).difference(walkarea).difference(core_mask),.10,.065,'Grass');env(roadarea,.03,.07,'Road');env(walkarea.difference(core_mask),.16,.055,'Walk')
 places=[]
 place_names={'Red Square':'红场','The Quad':'The Quad 庭院','Drumheller Fountain':'德拉姆赫勒喷泉','Rainier Vista':'雷尼尔山景观轴线','Union Bay':'联合湾','Portage Bay':'波蒂奇湾','Lake Washington':'华盛顿湖','Montlake Cut':'蒙特莱克水道'}
 seen=set()
@@ -188,7 +176,7 @@ for f in osm:
     elif t.get('highway')=='pedestrian':mat='Paving'
     elif t.get('landuse') in ['forest','grass','meadow','village_green'] or t.get('natural') in ['wood','scrub'] or t.get('leisure') in ['garden','park']:mat='Garden' if t.get('natural') in ['wood','scrub'] or t.get('leisure')=='garden' else 'Grass'
     if mat:
-        q=set_precision(g.buffer(0),.01).difference(set_precision(footprints,.01)).difference(roadarea).buffer(0)
+        q=set_precision(g.buffer(0),.01).difference(set_precision(footprints,.01)).difference(roadarea).difference(core_mask).buffer(0)
         if mat in ['Grass','Garden']:q=q.difference(walkarea)
         if mat=='Water' and name in ['Lake Washington','Portage Bay','Montlake Cut']:
             # Lake Union / Lake Washington are a regulated lake level, not a
@@ -198,23 +186,17 @@ for f in osm:
     if name in place_names and name not in seen and g.area>100:
         c0=g.intersection(scope).centroid;places.append({'id':'P'+str(len(places)),'name':name,'name_zh':place_names[name],'position':[round(c0.x,2),round(c0.y,2),round(float(raw_ground(c0.x,c0.y))+1,2)]});seen.add(name)
 for f in raw:
-    if f['properties'].get('FacCode')=='X08':env(f['poly'],.26,.04,'Water')
+    if f['properties'].get('FacCode')=='X08':env(f['poly'].difference(core_mask),.26,.04,'Water')
     if f['properties'].get('FacCode')=='X05':env(f['poly'],.26,.04,'Paving')
-# Paving grid and lawn cross in the Quad; Red Square's brick layout is legible.
 rc=red['poly'].centroid
-for gx in np.arange(red['poly'].bounds[0],red['poly'].bounds[2],8):env(LineString([(gx,red['poly'].bounds[1]),(gx,red['poly'].bounds[3])]).buffer(.045).intersection(red['poly']),.30,.018,'Paving')
-fc=fountain['poly'].centroid;fr=math.sqrt(fountain['poly'].area/math.pi);base=float(raw_ground(fc.x,fc.y))
-for q in polygons(fountain['poly'].buffer(.4).difference(fountain['poly'].buffer(-.3))):eg['LightStone'].append(extrusion(q,base+.1,.55))
-for rad,num,h in [(0,1,6.5),(fr*.52,12,1.8)]:
-    for angle in np.linspace(0,2*math.pi,num,endpoint=False):
-        xx=fc.x+rad*math.cos(angle);yy=fc.y+rad*math.sin(angle);eg['Water'].append(cylinder((xx,yy,base+.4),(xx,yy,base+h),.10 if num>1 else .20,6))
+detail_core(eg,env,red['poly'],quad['poly'],fountain['poly'],ground,footprints,core_layout)
 # Trees use official positions; canopy shape and size are illustrative.
 clearance=footprints.buffer(.65);trees=0;cherry=0
 for f in features('uw_trees.geojson'):
     q=f['poly'];t=f['properties'];xx,yy=q.x,q.y
     if lakewater.contains(q):continue
     if not scope.contains(q) or clearance.contains(q):continue
-    rng=np.random.default_rng(int(t['OBJECTID']));species=t.get('SpeciesName') or '';is_cherry='Prunus' in species and q.distance(quad['poly'])<16
+    rng=np.random.default_rng(int(t['OBJECTID']));species=t.get('SpeciesName') or '';is_cherry='yedoensis' in species and q.distance(quad['poly'])<1
     h=8+rng.uniform(-1,5);rad=2.8+rng.uniform(0,2);base=float(ground(xx,yy));conifer=t.get('TreeType')=='Conifer'
     eg['Trunk'].append(cylinder((xx,yy,base+.08),(xx,yy,base+h*.68),.18,5))
     if conifer:m=trimesh.creation.cone(radius=rad,height=h*.9,sections=9);m.apply_translation([xx,yy,base+h*.22])
@@ -242,6 +224,12 @@ ob=b''
 for o in objects:
     m=o['mesh'];v=np.asarray(m.vertices,dtype='<f4');ff=np.column_stack((m.faces,np.full(len(m.faces),7))).astype('<u2');fc0=struct.pack('<H',len(ff))+ff.tobytes()+chunk(0x4130,zs(o['mat'])+struct.pack('<H',len(ff))+np.arange(len(ff),dtype='<u2').tobytes())+chunk(0x4150,np.zeros(len(ff),dtype='<u4').tobytes());ob+=chunk(0x4000,zs(o['name'])+chunk(0x4100,chunk(0x4110,struct.pack('<H',len(v))+v.tobytes())+chunk(0x4120,fc0)))
 (OUT/'UW_Seattle.3ds').write_bytes(chunk(0x4D4D,chunk(0x0002,struct.pack('<I',3))+chunk(0x3D3D,chunk(0x3D3E,struct.pack('<I',3))+chunk(0x0100,struct.pack('<f',1))+mb+ob)))
+# Hover boundaries retain mapped outlines; they are independent of persistent labels.
+for place in places:
+    candidates=[f['poly'] for f in osm if f['properties'].get('name')==place['name'] and f['poly'].geom_type in ['Polygon','MultiPolygon']]
+    q=unary_union(candidates).intersection(scope).simplify(.20,preserve_topology=True)
+    place['hitArea']=mapping(set_precision(q,.01))
+    place['source']='https://www.openstreetmap.org/'
 for name,data in [('layer_map',layer_map),('palette',COLORS),('buildings',records),('viewer_records',records),('places',places)]:
     (OUT/(name+'.json')).write_text(json.dumps(data,ensure_ascii=False,indent=2))
 with (OUT/'building_dimensions_and_sources.csv').open('w',encoding='utf-8-sig',newline='') as fd:

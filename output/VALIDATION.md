@@ -1,12 +1,15 @@
 # Delivery validation
 
-- Rhino v7: meter units, 272 nonempty layers; 285 valid closed native building solids, 1627 closed meshes and 284 footprint curves.
-- Independent Three.js 3DS import: 1627 named objects and 2,492,362 triangles; all names preserved and mapped to individual facilities or Environment.
-- Representative navigation checks: 8 bearing/view/viewport combinations and 12 low-angle/level cases, including pan, cursor zoom, ground pivots, explicit rotation, no drift and drag/pinch selection safeguards.
-- Offline loader checks: HTTP binary, local classic-script path, inline model, error handling and SHA-256 equality with the original 3DS.
-- SEO checks: canonical/domain, crawlable bilingual directory, model digest, sharing metadata, local assets and self-contained edition.
-- Browser checks: actual progress loading, English/Chinese content, selected landmark detail/highlight, exact Level view, district/overview/reset and a 390px mobile layout. The self-contained edition loaded and rendered through HTTP with no console errors.
-- The browser automation policy disallows file:// navigation, so direct double-click browser execution was not tested. The local classic-script loader and unchanged model-byte paths passed independently.
-- Preview exported from the actual interactive model; social image dimensions use the PNG’s real dimensions.
+- Rhino v7, meter units: 272 nonempty layers, 370 valid closed native solids, 1627 closed meshes and 286 footprint curves. All geometry is valid.
+- Independent Three.js 3DS import: 1627 named objects, 2,598,134 triangles and 1,508,413 vertices; all object names preserved and mapped to facility or Environment layers.
+- Current landscape: mapped basin diameter 59.31 m; 29 mapped Quad Yoshino trees with the original simple canopy style; two mapped three-step flights on the Quad approach. Small details and water display geometry are approximate.
+- Viewport checks: ten aerial/level resize cases, atomic resize/draw before paint, combined notifications, unchanged/hidden dimensions, preserved scale/framing and current-size PNG export.
+- Outdoor hover checks: seven bilingual mapped areas, polygon boundaries/holes, nested priority, ground rays and drag/touch/leave safeguards. Building picks take priority.
+- Navigation: representative bearing/viewport checks preserve grounded pivots, pointer-aligned pan/zoom, immediate stopping and campus-wide zoom-out. The Level toolbar option is removed.
+- Language: English fallback on all device locales; explicit manual choices remain remembered.
+- Browser: all three final campus sites load with no console errors; UW labels begin unchecked. Inspect the revised Quad, approach, fountain and stadium in the actual WebGL viewer. Preview images are exported by the interactive model.
+- Model-byte checks: HTTP compressed binary, local classic-script and self-contained paths match the source 3DS SHA-256, with error handling verified.
+- SEO: canonical/domain, crawlable bilingual directory, model checksum, local assets, sharing metadata and offline edition.
+- Finder metadata is ignored at every depth and excluded from the delivery ZIP; local files are retained.
 
-These checks validate deliverable integrity and navigation, not as-built survey accuracy. Exterior heights, roofs, facades and canopy forms are estimates.
+Checks validate deliverable integrity and interaction, not as-built survey accuracy. Exterior elevations, architectural and landscape details are approximate. Direct file:// browser navigation is unavailable in the test interface; the local loader and embedded bytes are checked independently.

@@ -5,7 +5,7 @@ MAP='https://map.uw.edu/?id=2099'
 LANDMARKS=['SUZ','GRB','DEN','MGH','SAV','RAI','SMI','GWN','KNE','OUG','HUB','BRK','HAG','PCAR','LAW','CSE','CSE2','LSB','HRC','HSEB','UMSA','STD','EDP','CSH','INT','IEB']
 GOTHIC={'SUZ','GRB','MGH','SAV','RAI','SMI','GWN','MLR','MUS','HUT','THO','HNS','JHN','GUG','AND','ROB'}
 PITCHED=GOTHIC|{'DEN','LEW','CLK','ARC','OBS','HPT','INT','EDP','PHT'}
-HEIGHTS={'SUZ':32.5,'GRB':35,'DEN':26,'MGH':27,'SAV':23,'RAI':21,'SMI':23,'GWN':23,'MLR':21,'HNS':25,'MCM':36,'KNE':16,'OUG':16,'HUB':21,'BRK':15,'PCAR':22,'LAW':20,'CSE':27,'CSE2':30,'LSB':32,'HRC':33,'HSEB':21,'IEB':28,'UMSA':39,'STD':41,'EDP':26,'CSH':14,'INT':11,'UWT':99,'UWTC':99,'HST':46,'HND':30,'HSH':28,'HSK':32,'PAT':28,'PAB':26,'PAA':15}
+HEIGHTS={'SUZ':32.5,'GRB':35,'DEN':26,'MGH':27,'SAV':23,'RAI':21,'SMI':23,'GWN':23,'MLR':21,'HNS':25,'MCM':36,'KNE':16,'OUG':16,'HUB':21,'MNY':19,'BRK':15,'PCAR':22,'LAW':20,'CSE':27,'CSE2':30,'LSB':32,'HRC':33,'HSEB':21,'IEB':28,'UMSA':39,'STD':41,'EDP':26,'CSH':14,'INT':11,'UWT':99,'UWTC':99,'HST':46,'HND':30,'HSH':28,'HSK':32,'PAT':28,'PAB':26,'PAA':15}
 REFS={'SUZ':'https://lib.uw.edu/locations-hours/suzzallo-and-allen-libraries-history/','DEN':'https://pcad.lib.washington.edu/building/5433/','STD':'https://gohuskies.com/sports/2013/7/2/208568068','IEB':'https://www.engr.washington.edu/about/facilities','INT':'https://www.washington.edu/diversity/tribal-relations/intellectual-house/','BRK':'https://www.burkemuseum.org/','CSH':'https://gohuskies.com/facilities/conibear-shellhouse/9'}
 ZH={'CNH':'ASUW学生会赛艇艇库'}
 for line in '''
@@ -107,7 +107,7 @@ LAN|兰德宿舍楼
 BLD|布洛德尔楼
 ATG|大气科学与地球物理楼
 SPG|南校区停车楼
-INT|Intellectual House（原住民文化交流中心）
+INT|原住民文化交流中心
 FLK|弗卢克楼
 HLL|戴维·C·霍尔楼
 JHN|约翰逊楼

@@ -10,7 +10,10 @@
     "check:seo": "python3 scripts/check_seo.py && node scripts/check_model_data.mjs",
     "build:worker": "esbuild scripts/model_worker.js --bundle --minify --format=iife --target=es2020 --outfile=tmp/model-worker.bundle.txt",
     "check:release": "python3 scripts/check_release.py",
-    "check:interaction": "node scripts/check_interaction.mjs"
+    "check:interaction": "node scripts/check_interaction.mjs",
+    "check:viewport": "node scripts/check_viewport.mjs",
+    "check:hover": "node scripts/check_outdoor_hover.mjs",
+    "check:locale": "node scripts/check_locale.mjs"
   },
   "dependencies": {
     "three": "0.186.1"

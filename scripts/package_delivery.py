@@ -6,7 +6,7 @@ readme=f'''# UW Campus 3D Model
 
 An independent, bilingual exterior model of the **University of Washington Seattle campus**. Open `index.html` by double-clicking it with the `assets` and `output` folders beside it, or open the single-file offline edition.
 
-华盛顿大学西雅图校区室外三维模型，覆盖中央校区、西校区、南校区与医学区、东校区与体育区。英文为默认语言；设备语言偏好中含中文时首次默认中文，可随时切换。
+华盛顿大学西雅图校区室外三维模型，覆盖中央校区、西校区、南校区与医学区、东校区与体育区。英文为默认语言；首次打开统一使用英文，可随时切换中英文。
 
 ## Deliverables
 
@@ -28,9 +28,9 @@ An independent, bilingual exterior model of the **University of Washington Seatt
 
 The model contains **{s['buildings']} mapped facility/building layers plus one Environment layer**, {s['landmarks']} architectural highlights, **{s['trees']:,} official tree positions** and {s['quad_cherry_trees']} cherry canopies around the Quad. Named wings and disconnected pieces sharing a facility code share a layer. The official facility layer's ponds and helipad belong to the environment, not building volumes. Excluded facilities are recorded in `output/excluded_records.json`.
 
-The initial Core view centers Red Square at a readable oblique angle. Reset restores it. Campus shows a wider overview; district and Plan controls provide other views. Left-drag pans, right-drag rotates, and the wheel zooms at the pointer. One finger pans; two fingers pan or pinch. Rotate enables one-finger rotation. Level reaches exactly horizontal without ground-ray jumps. Camera pivots stay grounded, there is no inertia, and zoom-out remains campus-wide after choosing a landmark.
+The initial Core view centers Red Square from the southwest, with north pointing upper-left. Persistent landmark labels start off; hovering a mapped outdoor place or building still shows its name. Reset restores it. Campus shows a wider overview; district and Plan controls provide other views. The East & Athletics preset focuses on Husky Stadium and the adjacent principal athletic facilities. Left-drag pans, right-drag rotates, and the wheel zooms at the pointer. One finger pans; two fingers pan or pinch. Rotate enables one-finger rotation. Camera pivots stay grounded, there is no inertia, and zoom-out remains campus-wide after choosing a landmark.
 
-Search works in both languages and by official code. Buildings can be selected, hidden, isolated or located. Selection retains a clear highlight. The viewer includes architectural tours, progress/percentage loading, shadows, metric scale, labels, elevation slicing, 3DS download and PNG export. Roof depth separation, fixed shadow filtering and continuous terrain lighting avoid unstable coplanar surfaces during navigation.
+Search works in both languages and by official code. Buildings can be selected, hidden, isolated or located. Selection retains a clear highlight. Mapped outdoor places have bilingual hover names; smaller pools take priority over enclosing plazas, while buildings retain priority. The viewer includes architectural tours, progress/percentage loading, shadows, metric scale, labels, elevation slicing, 3DS download and PNG export. Roof depth separation, fixed shadow filtering and continuous terrain lighting avoid unstable coplanar surfaces during navigation.
 
 ## Sources and measurement limits
 
@@ -38,10 +38,11 @@ Search works in both languages and by official code. Buildings can be selected, 
 - **OpenStreetMap contributors** supply supplementary road, path, plaza, lawn, field and shoreline geometry: https://www.openstreetmap.org/copyright . Some road widths use contributed tags; unrecorded widths are illustrative.
 - **USGS 3DEP** supplies bare-earth terrain at about 10m sampling: https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer . Building pads are locally flattened. Lake surfaces use an approximate common level.
 - Projection: **EPSG:32610**, with local meter offsets from WGS84 {s['origin_wgs84']}. Z uses the DEM meter elevation datum. The elevation slice is an elevation plane, not building-relative storeys.
+- Core refinements include aligned Gothic wing roofs, stone courses and entrances, Suzzallo reading-room window groups, Red Square brick courses and approximate monuments, the Quad’s unified mapped brick walks, Pierce Lane connection and 29 mapped Yoshino trees with their original simple canopy style, and Drumheller Fountain’s flat basin, coping, volumetric plume, arced jets, splash rings and restrained ripples. Small details and vertical dimensions remain approximate.
 - **All exterior heights, storeys, roof partitions, facade bays, canopies and detailed landscape forms are approximate.** Reported gross floor area can include basements and is not an exterior floor count. UW's published Suzzallo reading-room dimensions are interior dimensions, not the exterior building envelope. No whole-building height is presented as a measured survey.
 - The model is an independent exterior study, not official university BIM. Original English names remain available beside faithful independent Chinese translations. Trees around the Quad use illustrative spring cherry color; this does not represent current seasonal conditions.
 
-Sources, retrieval hashes and translation notes are in `sources`. See `THIRD_PARTY_NOTICES.md` for attribution and third-party licenses.
+Sources, retrieval hashes and translation notes are in `sources`. See `docs/THIRD_PARTY_NOTICES.md` for attribution and third-party licenses.
 
 ## Website and releases
 
@@ -69,14 +70,17 @@ python3 scripts/package_delivery.py
 
 Source snapshots are retained; geometry rebuilding needs no live map access. `fetch_sources.py` and `fetch_terrain.py` retrieve public sources when an updated snapshot is explicitly needed. `prepare_sources.py` also accepts the compressed OSM API snapshots. A GPU-exported preview can replace the lightweight footprint preview before the final website build. WebGL 2 and Compression Streams are required for interactive viewing.
 '''
+readme+='\n## Project layout\n\n- `index.html`: website entry; root SEO files and `CNAME` support publishing.\n- `assets/`: browser engine, fonts, icons and local model payload.\n- `config/`: custom site configuration.\n- `docs/`: project decisions and third-party license notices.\n- `scripts/`: model generators, packaging and necessary checks.\n- `sources/`: source snapshots and provenance.\n- `output/`: CAD files, offline edition, reports and delivery archive.\n- Root `VERSION`, `CHANGELOG.md` and package manifests record releases and builds.\n'
 (r/'README.md').write_text(readme)
-(r/'PROJECT_NOTES.md').write_text('''# Project decisions
+(r/'docs/PROJECT_NOTES.md').write_text('''# Project decisions
 
 - University of Washington, Seattle campus; independent public-source exterior model.
 - Chinese university name: 华盛顿大学; Seattle: 西雅图. Preserve original English proper names for comparison.
 - Individual official facility/building layers plus one Environment layer; unit meters.
-- Use established readable typography, selected highlights, grounded navigation, stable rendering, loading progress and exact Level views.
-- English default; Chinese default when the device prefers Chinese. Root double-click and single-file offline editions.
+- Use established readable typography, selected highlights, grounded navigation, stable rendering, and loading progress. Resize and redraw atomically. No Level toolbar option.
+- Default Core bearing matches the southwest reference; persistent labels off, contextual hover names on.
+- Red Square, Quad and fountain details are kept on the Environment layer; detailed core building parts remain on their building layers.
+- English default regardless of device language; retain manual Chinese switching. Root double-click and single-file offline editions.
 - Domain: https://uw.arch.songming.org/ . Repository: https://github.com/sd800/uw-3d-arch . Push on main with the existing sd800 key.
 - English title: UW Campus 3D Model. Chinese title: 华盛顿大学 · 三维校区.
 - Icon: independent pale-gold W and upright rectangular map on purple.
@@ -92,9 +96,11 @@ Snapshot: 13 October 2026.
 | [UW public building layer](https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1) | Facility codes, names, footprint geometry, year built and gross floor area | Footprint reference, not measured exterior height or BIM; mapped current status can lag changes |
 | [UW public data](https://gis.maps.uw.edu/federated/rest/services/PublicData/PublicData/MapServer) | Tree/bench positions and supplemental walk routes | Canopy forms, heights, path widths and furniture details are approximate |
 | [OpenStreetMap](https://www.openstreetmap.org/copyright) | Campus boundary, roads, paths, paved squares, landscape, fields and water banks | Contributed map data, estimated widths where no width tag exists; ODbL attribution retained |
+| [UW campus highlights](https://www.washington.edu/visit/campus-highlights-guide/) | Red Square brick surface, Quad landscape and Drumheller Fountain | Paving courses, step sections, sculpture forms and jets are approximate |
+| [UW cherry map](https://www.washington.edu/cherryblossoms/campus-map-of-cherry-trees/) | Species/landscape context for official tree-position data | The saved GIS has 29 Yoshino positions in the Quad; canopy and branches are illustrative |
 | [USGS 3DEP](https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer) | F32 bare-earth terrain in EPSG:32610 | About 10m sampling; flattened building pads; no survey certification |
 | [UW Suzzallo history](https://lib.uw.edu/locations-hours/suzzallo-and-allen-libraries-history/) | Reading-room dimensions and exterior-form reference | Published 250 × 52 × 65 ft dimensions are interior, not whole-building extents |
-| [Husky Stadium](https://gohuskies.com/sports/2013/7/2/208568068) | Bowl, opposing overhangs and open lake-facing exterior-form reference | Roof, stands and structural members are approximate; no certified stadium height |
+| [Husky Stadium / HOK](https://www.hok.com/projects/view/university-of-washington-husky-stadium-renovation-and-expansion/) | Mapped field axis, opposing metal cantilevers, stepped bowl and west operations building | Playing field uses standard 120 × 53⅓ yd dimensions; stand rows, roof elevations and structures are approximate, not surveyed |
 
 The university already offers its own rendered campus map: https://map.uw.edu/?id=2099 . This project creates an independent layered metric model from public mapping; it does not extract or distribute that map's proprietary rendered assets.
 
@@ -110,7 +116,7 @@ The raw official footprint and public tree/bench files retain coordinates. The n
 - Drumheller Fountain → 德拉姆赫勒喷泉.
 - Portage Bay → 波蒂奇湾; Union Bay → 联合湾; Lake Washington → 华盛顿湖.
 - Montlake Cut → 蒙特莱克水道; Cut denotes the connecting navigational channel.
-- Intellectual House retains its proper English name with the functional note 原住民文化交流中心.
+- Intellectual House → 原住民文化交流中心; the original English name remains available in building details.
 
 Chinese labels are independent project translations, not claimed as official UW translations. Full English and original GIS names remain available in the building detail and source CSV.
 ''')
@@ -119,19 +125,20 @@ usage=f'''# 华盛顿大学西雅图校区模型使用说明
 模型包含{s['buildings']}个建筑／设施图层、1个Environment环境层和{s['landmarks']}处建筑地标，单位为米。
 
 1. 保留根目录index.html与assets、output的相对位置，双击index.html打开；也可使用output/UW_Campus_Offline.html单文件离线版本。
-2. 设备语言偏好含中文时首次默认中文，其余设备默认英文；页眉按钮可切换语言。
-3. 左键拖动平移，右键拖动旋转，滚轮以指针位置缩放。触屏单指平移，双指平移或捏合；开启旋转后可单指旋转。水平视角可以完全平视，松手后立即停止。
+2. 首次打开统一使用英文，不受设备语言影响；页眉按钮可切换语言。
+3. 左键拖动平移，右键拖动旋转，滚轮以指针位置缩放。触屏单指平移，双指平移或捏合；开启旋转后可单指旋转。松手后立即停止。
 4. 初始核心镜头围绕红场取景；重置恢复该视角。校区鸟瞰、片区和总平面按钮提供其他取景。
 5. 点击建筑或左侧列表，查看尺寸、原英文名称与来源，可定位、隐藏或单独查看。3DS下载和保存视图在加载完成后可用。
 6. 高程剖切按DEM米制标高切割外部表面，并不表示室内结构或相对楼层。
-7. Rhino优先打开output/UW_Seattle_Layered.3dm。导入output/UW_Seattle.3ds时选择米，再运行scripts/apply_layers_rhino.py恢复图层。
+7. 场所和建筑的鼠标悬停提示独立于常驻地标标签；关闭环境层时不显示室外场所提示。
+8. Rhino优先打开output/UW_Seattle_Layered.3dm。导入output/UW_Seattle.3ds时选择米，再运行scripts/apply_layers_rhino.py恢复图层。
 
 建筑平面与树位有公开地图坐标依据；外部高度、屋顶、窗格、树冠与部分道路宽度为估算。地形来自约10米采样的USGS数据，建筑基座局部平整化。模型未经过实测校核，不是校方官方BIM。中文译名保持原义，详情保留英文专名供对照。
 '''
 (out/'usage_guide.md').write_text(usage)
 # Keep the archive independent of local dependencies and discovery diagnostics.
 ignored={'.git','node_modules','tmp','__pycache__','.venv'}
-files=[p for p in r.rglob('*') if p.is_file() and not any(part in ignored for part in p.relative_to(r).parts) and p.suffix not in ['.zip','.npz','.xml'] and not p.name.endswith(('_catalog.json','_layer.json','_page.html')) and p.name!='uw_legacy_map.js']
+files=[p for p in r.rglob('*') if p.is_file() and p.name!='.DS_Store' and not p.name.startswith('._') and not any(part in ignored for part in p.relative_to(r).parts) and p.suffix not in ['.zip','.npz','.xml'] and not p.name.endswith(('_catalog.json','_layer.json','_page.html')) and p.name!='uw_legacy_map.js']
 archive=out/'UW_Seattle_Delivery.zip'
 with zipfile.ZipFile(archive,'w',compression=zipfile.ZIP_DEFLATED,compresslevel=6) as z:
     for p in sorted(files):z.write(p,p.relative_to(r))

@@ -2,6 +2,25 @@
 
 All notable changes to UW Campus 3D Model are recorded here. Versions use `YY.M.D.NUM`, with a daily release sequence in America/Chicago.
 
+## 26.10.13.3 — 2026-10-13
+
+- Default to English regardless of device locale while preserving manual language switching and remembered choices. Ignore Finder metadata in Git and delivery archives without deleting local files.
+
+- Resize and redraw the WebGL canvas in the same animation frame, combining repeated resize notifications and skipping unchanged or hidden dimensions. Preserve navigation scale and framing while avoiding blank flashes and unnecessary shadow redraws.
+- Set campus and landmark presets to a southwest oblique view with north pointing about 45 degrees to the upper left. Keep Red Square at the core view center.
+- Display Intellectual House’s Chinese name without a parenthetical annotation while retaining its English name in building details.
+- Start with landmark-name labels hidden; keep the label toggle available for manual use.
+
+- Remove the Level button from the toolbar and update the interaction guide.
+
+- Focus East & Athletics on the principal waterfront sports cluster. Rebuild Husky Stadium around its mapped field axis with stepped lower/upper stands, two cantilever roofs, west support building and football markings; retain explicit approximate-height notes.
+
+- Group custom configuration under config/ and project/license documentation under docs/; update generators and references while preserving root website, SEO, release and build entry files.
+
+- Add bilingual hover names for mapped outdoor places, with building-first picking, smaller-area priority and drag/touch safeguards. Coalesce pointer moves to one lookup per frame.
+
+- Refine the core landscape with brick paving courses, Red Square monuments, Quad paths and the original simple faceted Yoshino canopies, plus a flat fountain basin, coping, a volumetric central plume, arced jets, splash rings and subtle ripples. Unify the Quad–Red Square approach along mapped Pierce Lane, remove duplicated path overlays and replace the misplaced stair overlay with two mapped three-step flights. Align Gothic roofs to mapped building axes and add core entrances, stone courses and Suzzallo reading-room window groups.
+
 ## 26.10.13.2 — 2026-10-13
 
 - Use consistent Chinese labels for The Quad and Red Square across the viewer, offline edition, sharing metadata and translation notes.

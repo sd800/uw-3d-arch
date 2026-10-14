@@ -19,7 +19,7 @@ COLORS={
  'Ground':(218,218,207),'Road':(81,86,89),'Paving':(195,186,164),'Walk':(215,210,191),
  'Grass':(116,149,96),'Garden':(93,127,83),'Water':(83,144,166),'Track':(159,83,62),
  'Court':(89,132,122),'Marking':(232,228,207),'Leaves':(67,116,75),'Trunk':(119,95,68),
- 'Furniture':(72,78,72),'Solar':(50,73,88),'Purple':(75,46,131),'Gold':(183,165,122),'Blossom':(225,172,185),'Sand':(213,198,159),
+ 'Furniture':(72,78,72),'Solar':(50,73,88),'Purple':(75,46,131),'Gold':(183,165,122),'Blossom':(225,172,185),'Sand':(213,198,159),'Seat':(197,199,194),'BrickPath':(166,120,94),'BrickPale':(150,78,56),'BrickWarm':(143,69,50),'BrickBand':(119,60,48),'StepStone':(182,175,157),'StoneEdge':(191,186,171),'StoneJoint':(141,143,136),'Corten':(117,63,43),'Spray':(194,221,225),'PoolWater':(65,123,145),'Foam':(228,239,235),'Ripple':(114,166,180),'BlossomPale':(237,198,208),
 }
 model=rh.File3dm();model.ApplicationName='University of Washington Seattle Public-source Exterior Model'
 model.Settings.ModelUnitSystem=rh.UnitSystem.Meters;model.Settings.ModelAbsoluteTolerance=.01

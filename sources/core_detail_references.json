@@ -1,0 +1,40 @@
+{
+  "mapped_objects": [
+    {
+      "name": "Broken Obelisk",
+      "osm_node": 2677761043,
+      "position_local_m": [
+        18.185,
+        32.373
+      ]
+    },
+    {
+      "name": "Three Brick Monoliths",
+      "osm_node": 4428337793,
+      "position_local_m": [
+        -40.366,
+        46.589
+      ]
+    }
+  ],
+  "source_snapshot": "osm_map_west.xml.gz",
+  "references": [
+    "https://www.washington.edu/visit/campus-highlights-guide/",
+    "https://www.washington.edu/cherryblossoms/campus-map-of-cherry-trees/",
+    "https://www.washington.edu/news/2026/03/06/peak-bloom-predictions-are-in-for-uws-cherry-trees/",
+    "https://lib.uw.edu/locations-hours/suzzallo-and-allen-libraries-history/",
+    "https://www.hok.com/projects/view/university-of-washington-husky-stadium-renovation-and-expansion/",
+    "https://cdn.uw.edu/wp-content/uploads/sites/57/2020/08/10204546/visit-campus-highlightsDJI_0005-e1597119390956.jpg"
+  ],
+  "limits": "Mapped exterior outlines and positions; secondary shapes, dimensions and elevations are independent exterior approximations.",
+  "mapped_step_flights": [
+    {
+      "osm_way": 445396671,
+      "steps": 3
+    },
+    {
+      "osm_way": 343612259,
+      "steps": 3
+    }
+  ]
+}
