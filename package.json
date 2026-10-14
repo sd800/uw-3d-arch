@@ -13,7 +13,9 @@
     "check:interaction": "node scripts/check_interaction.mjs",
     "check:viewport": "node scripts/check_viewport.mjs",
     "check:hover": "node scripts/check_outdoor_hover.mjs",
-    "check:locale": "node scripts/check_locale.mjs"
+    "check:locale": "node scripts/check_locale.mjs",
+    "build:model": "node scripts/pack_web_model.mjs",
+    "check:compression": "node scripts/check_compression.mjs"
   },
   "dependencies": {
     "three": "0.186.1"

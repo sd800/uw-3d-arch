@@ -8,6 +8,7 @@
 - Navigation: representative bearing/viewport checks preserve grounded pivots, pointer-aligned pan/zoom, immediate stopping and campus-wide zoom-out. The Level toolbar option is removed.
 - Language: English fallback on all device locales; explicit manual choices remain remembered.
 - Browser: all three final campus sites load with no console errors; UW labels begin unchecked. Inspect the revised Quad, approach, fountain and stadium in the actual WebGL viewer. Preview images are exported by the interactive model.
+- Web model: 20.72 MB → 10.10 MB; lossless geometry coding plus gzip. Exact restored CAD bytes, all positions/normals/indices/material groups, worker input transfer and bounded streaming blocks passed.
 - Model-byte checks: HTTP compressed binary, local classic-script and self-contained paths match the source 3DS SHA-256, with error handling verified.
 - SEO: canonical/domain, crawlable bilingual directory, model checksum, local assets, sharing metadata and offline edition.
 - Finder metadata is ignored at every depth and excluded from the delivery ZIP; local files are retained.
