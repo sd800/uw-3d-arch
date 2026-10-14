@@ -13,6 +13,7 @@ ROOT=pathlib.Path(__file__).resolve().parents[1]; OUT=ROOT/'output';OUT.mkdir(ex
 TF=Transformer.from_crs(4326,32610,always_xy=True)
 LON,LAT=-122.3093,47.6558;OX,OY=TF.transform(LON,LAT)
 COLORS={
+ 'Foundation':(179,177,155),
  'Limestone':(207,194,166),'LightStone':(225,217,195),'Brick':(144,86,67),
  'Slate':(71,75,79),'Tile':(137,67,47),'Concrete':(197,198,193),'WhitePanel':(225,226,219),
  'Metal':(113,124,128),'Glass':(113,157,174),'DarkGlass':(59,83,91),'Frame':(64,65,64),

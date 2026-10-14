@@ -1,5 +1,11 @@
 # Changelog
 
+## 26.10.13.5 — 2026-10-13
+
+- Fit terrain around exact building footprints, add flat grade pads and closed below-grade supports, and include full perimeter buildings in the ground extent.
+- Give overlapping mapped wings a shared visualization grade, avoiding intersecting pads that bury adjoining bases. Use the same grade lookup for camera pivots and hover.
+- Stop reading device language; default to English while retaining manual language choices.
+
 All notable changes to UW Campus 3D Model are recorded here. Versions use `YY.M.D.NUM`, with a daily release sequence in America/Chicago.
 
 ## 26.10.13.4 — 2026-10-13

@@ -3,10 +3,10 @@
   "layers": 272,
   "environment_layer": "Environment",
   "native_closed_solids": 370,
-  "objects_3ds": 1627,
-  "vertices": 1508413,
-  "triangles": 2598134,
-  "trees": 8427,
+  "objects_3ds": 1899,
+  "vertices": 1569061,
+  "triangles": 2714094,
+  "trees": 8435,
   "quad_cherry_trees": 29,
   "landmarks": 26,
   "unit": "meters",
@@ -24,7 +24,7 @@
     -985.0,
     -1005.0,
     1705.0,
-    1036.2289345527518
+    1078.0397546711283
   ],
   "district_bounds": {
     "central": [

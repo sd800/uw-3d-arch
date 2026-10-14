@@ -44,6 +44,7 @@ for id,fs in grouped.items():
     buildings.append({'id':id,'properties':t,'poly':p,'name':en,'name_zh':chinese(id,en),'zone':zone})
 buildings.sort(key=lambda f:(['central','west','south','east'].index(f['zone']),-f['poly'].centroid.y,f['poly'].centroid.x))
 footprints=unary_union([f['poly'] for f in buildings]);scope=unary_union([campus_boundary,water_context,*[f['poly'].buffer(18) for f in buildings]]).intersection(limit).buffer(5).simplify(.6).buffer(0)
+scope=unary_union([scope,footprints.buffer(2)]).buffer(0)
 meta=json.loads((ROOT/'sources/terrain_export_metadata.json').read_text());ex=meta['extent'];dem=np.asarray(Image.open(ROOT/'sources/terrain_dem.tif'),dtype=float)
 assert dem.shape==(meta['height'],meta['width']) and np.isfinite(dem).all() and dem.min()>-10 and dem.max()<200
 xs=np.linspace(ex['xmin'],ex['xmax'],dem.shape[1],endpoint=False)+(ex['xmax']-ex['xmin'])/dem.shape[1]/2-OX
@@ -53,6 +54,21 @@ def raw_ground(x,y):
     x,y=np.broadcast_arrays(x,y);return interpolate(np.column_stack([y.ravel(),x.ravel()])).reshape(x.shape)
 for f in buildings:
     c=f['poly'].representative_point();f['ground']=float(raw_ground(c.x,c.y))
+# Joined/overlapping mapped wings share one visualization grade. Otherwise two
+# pads can project into each other and bury the adjacent building base.
+contact_tree=STRtree([f['poly']for f in buildings]);parent=list(range(len(buildings)))
+def contact_root(k):
+    while parent[k]!=k:parent[k]=parent[parent[k]];k=parent[k]
+    return k
+for i,f in enumerate(buildings):
+    for j in contact_tree.query(f['poly']):
+        if j>i and f['poly'].intersection(buildings[j]['poly']).area>.025:parent[contact_root(j)]=contact_root(i)
+contact_groups={}
+for i,f in enumerate(buildings):contact_groups.setdefault(contact_root(i),[]).append(f)
+for group in contact_groups.values():
+    if len(group)>1:
+        grade=sum(f['ground']*f['poly'].area for f in group)/sum(f['poly'].area for f in group)
+        for f in group:f['ground']=grade
 pad_tree=STRtree([f['poly'].buffer(.4) for f in buildings]);pad_z=np.array([f['ground'] for f in buildings])
 def ground(x,y):
     x,y=np.broadcast_arrays(x,y);z=np.asarray(raw_ground(x,y));aa,bb=pad_tree.query(points(x.ravel(),y.ravel()),predicate='within');z.ravel()[aa]=pad_z[bb];return z
@@ -77,6 +93,11 @@ for j,f in enumerate(buildings,1):
     if id=='SUZ':mat='Limestone';levels=3
     if id in {'KNE','OUG','MNY','HUB'}:mat='Brick'
     layer(lay,mat);ms={m:[] for m in COLORS};info={'FacilityCode':id,'NameEN':f['name'],'NameZH':f['name_zh'],'FootprintSource':GIS,'HeightStatus':'Estimated exterior','Units':'meters'}
+    # Closed below-grade support joins simplified terrain to the actual building pad.
+    for q in polygons(segmentize(p,5)):
+        support=extrusion(q,base-1.5,1.51);bottom=support.vertices[:,2]<base-.7
+        support.vertices[bottom,2]=np.minimum(base-.2,raw_ground(support.vertices[bottom,0],support.vertices[bottom,1])-1.5)
+        ms['Foundation'].append(support)
     if id=='STD':
         field=next(o['poly'] for o in osm if o['properties'].get('osm_id')=='way/235758229')
         build_husky_stadium(ms,p,field,base,code,lay,info)
@@ -129,7 +150,7 @@ eg={k:[] for k in COLORS};counts={}
 def env(g,z,hh,mat,drape=True):
     g=g.intersection(scope).buffer(0)
     for q in polygons(g):
-        q=q.simplify(.10,preserve_topology=True);aa,bb,cc,dd=q.bounds
+        q=q if mat=='Ground'else q.simplify(.10,preserve_topology=True);aa,bb,cc,dd=q.bounds
         for gx in np.arange(math.floor(aa/60)*60,cc,60):
             for gy in np.arange(math.floor(bb/60)*60,dd,60):
                 for pp in polygons(q.intersection(box(gx,gy,gx+60,gy+60))):
@@ -161,7 +182,9 @@ fountain=next(f for f in osm if f['properties'].get('name')=='Drumheller Fountai
 core_layout=core_plan(red['poly'],quad['poly'],osm,footprints)
 core_mask=unary_union([red['poly'],quad['poly'],fountain['poly'].buffer(3.8),core_layout[0]])
 # Dedicated core surfaces replace generic overlapping lawn and path skins.
-env(scope,-3,3,'Ground');env(campus_boundary.difference(lakewater).difference(footprints).difference(roadarea).difference(walkarea).difference(core_mask),.10,.065,'Grass');env(roadarea,.03,.07,'Road');env(walkarea.difference(core_mask),.16,.055,'Walk')
+env(scope.difference(footprints),-3,3,'Ground')
+for f in buildings:env(f['poly'],f['ground']-.18,.18,'Ground',False)
+env(campus_boundary.difference(lakewater).difference(footprints).difference(roadarea).difference(walkarea).difference(core_mask),.10,.065,'Grass');env(roadarea,.03,.07,'Road');env(walkarea.difference(core_mask),.16,.055,'Walk')
 places=[]
 place_names={'Red Square':'红场','The Quad':'The Quad 庭院','Drumheller Fountain':'德拉姆赫勒喷泉','Rainier Vista':'雷尼尔山景观轴线','Union Bay':'联合湾','Portage Bay':'波蒂奇湾','Lake Washington':'华盛顿湖','Montlake Cut':'蒙特莱克水道'}
 seen=set()

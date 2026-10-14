@@ -12,3 +12,5 @@
 - Icon: independent pale-gold W and upright rectangular map on purple.
 - Calendar versions, English CHANGELOG, root VERSION and English filenames.
 - Necessary, concise checks; avoid unrelated or repeated test runs.
+
+- Building ground contacts use exact footprint holes, flat pads and closed below-grade visualization supports. Overlapping projected wings share an area-weighted pad elevation to avoid contradictory intersecting terrain skins. These simplified supports are not surveyed foundations. The exported 3DS is checked independently against footprint contact samples.

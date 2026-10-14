@@ -29,7 +29,7 @@ Object.assign(zh,{rotationMode:'旋转',load_local:'读取本地模型',load_rea
 Object.assign(en,{central:'Central',west:'West',south:'South & Medical',east:'East & Athletics',core:'Core',eyebrow:'SEATTLE · EXTERIOR ATLAS',intro:'Individual building layers, mapped outdoor spaces and official tree positions on sampled Seattle terrain. Exterior heights and details are approximate.',helpAccuracy:'Scale: 1 unit = 1 meter. Building outlines, tree and bench positions use public UW GIS; roads, walks and outdoor spaces combine UW and OpenStreetMap data. Ground uses sampled USGS 3DEP elevations with simplified building pads. Exterior heights, storeys, roofs, windows, tree shapes and unrecorded road widths are approximate. Model Z follows the DEM meter datum. This independent exterior study is not official UW BIM or a measured survey.',snapshot:'Public-data snapshot · 13 Oct 2026'});
 Object.assign(zh,{central:'中央校区',west:'西校区',south:'南校区与医学区',east:'东校区与体育区',core:'校园核心',eyebrow:'西雅图 · 校园空间图集',intro:'建筑逐栋分层，室外环境独立成层；采用学校公开建筑轮廓、树位与座椅位置，并结合道路景观和西雅图公开地形。外部高度与建筑细节为估算。',helpAccuracy:'1单位=1米。建筑平面轮廓、树木与座椅位置采用UW公开GIS；道路、步道和室外景观结合学校与OpenStreetMap资料；地形依据USGS 3DEP高程采样，建筑基座局部平整化。建筑外部高度、层数、屋顶、窗格、树冠与未记录的道路宽度为估算。模型Z采用DEM的米制高程基准。本项目是独立制作的室外研究模型，不是学校官方BIM或实测模型。',snapshot:'公开资料快照 · 2026年10月13日'});
 let stored=null;try{stored=localStorage.getItem('uw-model-language');}catch{}
-let lang=initialLanguage(navigator.languages?.length?navigator.languages:[navigator.language||'en'],stored);
+let lang=initialLanguage([],stored);
 const t=key=>(lang==='zh'?zh[key]:en[key])||en[key]||key;
 const loadingView=loadingIndicator($('load-progress'),$('load-status'),t);
 const reportLoad=event=>loadingView.update(event);
