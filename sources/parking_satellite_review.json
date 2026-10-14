@@ -1,0 +1,3089 @@
+{
+  "all_reference_crops_retrieved": true,
+  "all_groups_visually_reviewed": true,
+  "review_date": "2026-10-14",
+  "limits": "Satellite image capture vintage was not individually certified. Rows can be visible while exact paint is faded or occluded. This review is not a surveyed as-built inventory.",
+  "coverage": 83,
+  "lots": [
+    {
+      "id": "uw-001",
+      "campus": "uw",
+      "name": "E18 / E1",
+      "source_ids": [
+        "way/4921397",
+        "way/328048163"
+      ],
+      "area_m2": 75448.29,
+      "local_bounds": [
+        560.3515042172512,
+        -24.772716691717505,
+        810.6720373146236,
+        476.16217808425426
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.303711316592%2C47.65540835198973%2C-122.29657712613955%2C47.66014207264014&bboxSR=4326&imageSR=4326&size=1024%2C1024&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "Some row/parking-divider paint visible; exact geometry may remain uncertain",
+      "note": "Large E1/E18 surface lots. Repeated straight rows plus perimeter and island exceptions; no useful native CAD paint in these lots.",
+      "imagery_extent": {
+        "xmin": -122.303711316592,
+        "ymin": 47.65420811708871,
+        "xmax": -122.29657712613955,
+        "ymax": 47.661342307541155,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-002",
+      "campus": "uw",
+      "name": "E2",
+      "source_ids": [
+        "way/53537684"
+      ],
+      "area_m2": 4346.02,
+      "local_bounds": [
+        641.4586648360128,
+        543.1584979975596,
+        734.5557591209654,
+        596.0396538339555
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.3017494915964%2C47.65975470345438%2C-122.29839002990032%2C47.661983654378645&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "Some row/parking-divider paint visible; exact geometry may remain uncertain",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.3017494915964,
+        "ymin": 47.659189448068474,
+        "xmax": -122.29839002990032,
+        "ymax": 47.66254890976455,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-003",
+      "campus": "uw",
+      "name": "N6 / N6 - Staff Only",
+      "source_ids": [
+        "way/56008694",
+        "way/445259187"
+      ],
+      "area_m2": 468.41,
+      "local_bounds": [
+        288.00489174737595,
+        319.7369080930948,
+        349.2561051128432,
+        360.92227051686496
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.30669590841123%2C47.65772178314547%2C-122.30333678704257%2C47.65995088142117&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "No confident divider geometry observable at available resolution or because of cars, trees, shadows, service pavement, road strips or buildings",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.30669590841129,
+        "ymin": 47.657156771598984,
+        "xmax": -122.30333678704262,
+        "ymax": 47.660515892967645,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-004",
+      "campus": "uw",
+      "name": "N22",
+      "source_ids": [
+        "way/65504605"
+      ],
+      "area_m2": 2205.75,
+      "local_bounds": [
+        291.38197488419246,
+        22.60852994583547,
+        345.13333694904577,
+        91.8916758429259
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.30673458832588%2C47.65517492753006%2C-122.30337563315278%2C47.65740402876017&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "No confident divider geometry observable at available resolution or because of cars, trees, shadows, service pavement, road strips or buildings",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.30673458832588,
+        "ymin": 47.65461000055858,
+        "xmax": -122.30337563315278,
+        "ymax": 47.657968955731675,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-005",
+      "campus": "uw",
+      "name": "unnamed",
+      "source_ids": [
+        "way/155183328"
+      ],
+      "area_m2": 1678.27,
+      "local_bounds": [
+        632.0449230760759,
+        -462.0230440897867,
+        673.7488914194982,
+        -362.3305129511282
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.30233474068571%2C47.65092444984847%2C-122.29897587428995%2C47.6531534243423&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "No confident divider geometry observable at available resolution or because of cars, trees, shadows, service pavement, road strips or buildings",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.30233474068571,
+        "ymin": 47.65035950389751,
+        "xmax": -122.29897587428995,
+        "ymax": 47.65371837029327,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-006",
+      "campus": "uw",
+      "name": "unnamed",
+      "source_ids": [
+        "way/155183329"
+      ],
+      "area_m2": 1821.16,
+      "local_bounds": [
+        487.366048919037,
+        -319.591548923403,
+        524.655717941816,
+        -203.76505191531032
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.30427255375822%2C47.65229037213421%2C-122.30091368095714%2C47.65451940280664&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "Some row/parking-divider paint visible; exact geometry may remain uncertain",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.30427255375821,
+        "ymin": 47.651725451069886,
+        "xmax": -122.30091368095712,
+        "ymax": 47.65508432387097,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-007",
+      "campus": "uw",
+      "name": "E16",
+      "source_ids": [
+        "way/155186071"
+      ],
+      "area_m2": 1810.74,
+      "local_bounds": [
+        1509.6621464461787,
+        251.17177208326757,
+        1557.460377001902,
+        289.43079203367233
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.29052549182433%2C47.65699282695722%2C-122.28716573461399%2C47.659221448734&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "Some row/parking-divider paint visible; exact geometry may remain uncertain",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.29052549182434,
+        "ymin": 47.656427259240445,
+        "xmax": -122.287165734614,
+        "ymax": 47.65978701645078,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-008",
+      "campus": "uw",
+      "name": "E9",
+      "source_ids": [
+        "way/160065519"
+      ],
+      "area_m2": 138.88,
+      "local_bounds": [
+        699.8087277744198,
+        -367.11676198989153,
+        722.2901698814239,
+        -353.75345746520907
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.30155422881347%2C47.65138526190832%2C-122.29819529968803%2C47.653614213052194&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "No confident divider geometry observable at available resolution or because of cars, trees, shadows, service pavement, road strips or buildings",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.30155422881342,
+        "ymin": 47.65082027291753,
+        "xmax": -122.29819529968798,
+        "ymax": 47.65417920204297,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-009",
+      "campus": "uw",
+      "name": "unnamed",
+      "source_ids": [
+        "way/160065521"
+      ],
+      "area_m2": 71.17,
+      "local_bounds": [
+        650.364970168448,
+        -353.4593731537461,
+        664.2368716862984,
+        -345.9407067736611
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.3022686136304%2C47.65148620074308%2C-122.29890970815194%2C47.65371517288538&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "No confident divider geometry observable at available resolution or because of cars, trees, shadows, service pavement, road strips or buildings",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.3022686136304,
+        "ymin": 47.65092123407499,
+        "xmax": -122.29890970815194,
+        "ymax": 47.65428013955346,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-010",
+      "campus": "uw",
+      "name": "E06",
+      "source_ids": [
+        "way/160065616"
+      ],
+      "area_m2": 388.89,
+      "local_bounds": [
+        614.4416935066693,
+        -211.6445522699505,
+        643.9053137406008,
+        -192.49952528066933
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.30262545259075%2C47.652816696975584%2C-122.29926647622521%2C47.65504567869263&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "Some row/parking-divider paint visible; exact geometry may remain uncertain",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.30262545259073,
+        "ymin": 47.65225169965134,
+        "xmax": -122.2992664762252,
+        "ymax": 47.65561067601687,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-011",
+      "campus": "uw",
+      "name": "E7",
+      "source_ids": [
+        "way/160065617"
+      ],
+      "area_m2": 454.71,
+      "local_bounds": [
+        672.9036896940088,
+        -294.1835994794965,
+        694.2976042565424,
+        -208.33400421217084
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.30190662359831%2C47.65236975289409%2C-122.29854764575128%2C47.654598713728504&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "Some row/parking-divider paint visible; exact geometry may remain uncertain",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.3019066235983,
+        "ymin": 47.651804744387775,
+        "xmax": -122.29854764575127,
+        "ymax": 47.6551637222348,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-012",
+      "campus": "uw",
+      "name": "unnamed",
+      "source_ids": [
+        "way/160065739"
+      ],
+      "area_m2": 157.7,
+      "local_bounds": [
+        1205.2004517843015,
+        379.20328176021576,
+        1228.307072048192,
+        395.7266885973513
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.29473008904372%2C47.65807296493962%2C-122.29137043957037%2C47.66030170999165&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "No confident divider geometry observable at available resolution or because of cars, trees, shadows, service pavement, road strips or buildings",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.29473008904372,
+        "ymin": 47.65750751272896,
+        "xmax": -122.29137043957037,
+        "ymax": 47.660867162202315,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-013",
+      "campus": "uw",
+      "name": "E8",
+      "source_ids": [
+        "way/160546420"
+      ],
+      "area_m2": 2581.11,
+      "local_bounds": [
+        690.4170856195269,
+        -287.94151657260954,
+        740.1462965823011,
+        -211.19885900150985
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.30148457429662%2C47.6523823778469%2C-122.29812557781055%2C47.65461132622387&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "Some row/parking-divider paint visible; exact geometry may remain uncertain",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.30148457429661,
+        "ymin": 47.65181735379235,
+        "xmax": -122.29812557781054,
+        "ymax": 47.655176350278424,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-014",
+      "campus": "uw",
+      "name": "unnamed",
+      "source_ids": [
+        "way/252683138"
+      ],
+      "area_m2": 934.06,
+      "local_bounds": [
+        431.1521246491466,
+        -525.1656686691567,
+        465.03510996873956,
+        -470.13744539860636
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.3050719130058%2C47.65017197735125%2C-122.30171321080822%2C47.65240103310947&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "Some row/parking-divider paint visible; exact geometry may remain uncertain",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.30507191300579,
+        "ymin": 47.649607154131566,
+        "xmax": -122.3017132108082,
+        "ymax": 47.65296585632915,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-015",
+      "campus": "uw",
+      "name": "E12 / E19",
+      "source_ids": [
+        "way/252683144",
+        "relation/7030059"
+      ],
+      "area_m2": 33878.49,
+      "local_bounds": [
+        392.7028006274486,
+        -853.086066172461,
+        759.432784102275,
+        -573.51572281681
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.30437932782536%2C47.64756728678514%2C-122.29904942382981%2C47.65110454346681&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "Some row/parking-divider paint visible; exact geometry may remain uncertain",
+      "note": "E12/E19 Husky Stadium southern surface area. Tree islands, drive aisles and irregular edges; do not fill lot with a uniform grid.",
+      "imagery_extent": {
+        "xmin": -122.30437932782536,
+        "ymin": 47.6466709631282,
+        "xmax": -122.29904942382981,
+        "ymax": 47.652000867123746,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-016",
+      "campus": "uw",
+      "name": "N3",
+      "source_ids": [
+        "way/262230354"
+      ],
+      "area_m2": 425.1,
+      "local_bounds": [
+        170.83353520580567,
+        347.69787196908146,
+        203.1054532296257,
+        376.16204454097897
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.30844664642373%2C47.65792670485079%2C-122.30508758577287%2C47.6601558546164&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "No confident divider geometry observable at available resolution or because of cars, trees, shadows, service pavement, road strips or buildings",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.30844664642373,
+        "ymin": 47.65736174940816,
+        "xmax": -122.30508758577287,
+        "ymax": 47.660720810059026,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-017",
+      "campus": "uw",
+      "name": "E14",
+      "source_ids": [
+        "way/262266605"
+      ],
+      "area_m2": 1694.74,
+      "local_bounds": [
+        838.7802634409163,
+        277.37364031467587,
+        933.5618641083129,
+        312.0800008699298
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.29914358200617%2C47.657265572400085%2C-122.2957841711138%2C47.659494448232536&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "Some row/parking-divider paint visible; exact geometry may remain uncertain",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.29914358200617,
+        "ymin": 47.65670030487012,
+        "xmax": -122.2957841711138,
+        "ymax": 47.66005971576249,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-018",
+      "campus": "uw",
+      "name": "E3",
+      "source_ids": [
+        "way/262266609"
+      ],
+      "area_m2": 799.47,
+      "local_bounds": [
+        1226.403975354624,
+        421.00641341973096,
+        1263.9429273892893,
+        467.5552264424041
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.29434474009265%2C47.65858181229134%2C-122.29098504145418%2C47.660810545609316&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "Some row/parking-divider paint visible; exact geometry may remain uncertain",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.29434474009264,
+        "ymin": 47.658016329631096,
+        "xmax": -122.29098504145416,
+        "ymax": 47.66137602826957,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-019",
+      "campus": "uw",
+      "name": "unnamed",
+      "source_ids": [
+        "way/328697153"
+      ],
+      "area_m2": 268.84,
+      "local_bounds": [
+        797.6677622993418,
+        1026.0214219801128,
+        828.9176425486803,
+        1035.115118333318
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.30002558697595%2C47.66389189884107%2C-122.2966657850229%2C47.66612079595311&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "No confident divider geometry observable at available resolution or because of cars, trees, shadows, service pavement, road strips or buildings",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.30002558697593,
+        "ymin": 47.66332644642057,
+        "xmax": -122.29666578502288,
+        "ymax": 47.66668624837362,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-020",
+      "campus": "uw",
+      "name": "unnamed",
+      "source_ids": [
+        "way/332060204"
+      ],
+      "area_m2": 2197.74,
+      "local_bounds": [
+        574.7673987742746,
+        366.77233428973705,
+        606.1678603347391,
+        471.07994558569044
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.30306649805259%2C47.6584069884974%2C-122.29970717909023%2C47.660635979232765&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "Some row/parking-divider paint visible; exact geometry may remain uncertain",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.30306649805257,
+        "ymin": 47.657841824383894,
+        "xmax": -122.29970717909022,
+        "ymax": 47.66120114334625,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-021",
+      "campus": "uw",
+      "name": "E4",
+      "source_ids": [
+        "way/353077743"
+      ],
+      "area_m2": 4488.54,
+      "local_bounds": [
+        1043.5560525209876,
+        326.8194483080879,
+        1166.362935604644,
+        414.04733465611935
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.29622089727302%2C47.65792887290553%2C-122.29286132007368%2C47.66015766204275&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "Some row/parking-divider paint visible; exact geometry may remain uncertain",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.29622089727306,
+        "ymin": 47.65736347887449,
+        "xmax": -122.29286132007373,
+        "ymax": 47.66072305607382,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-022",
+      "campus": "uw",
+      "name": "unnamed",
+      "source_ids": [
+        "way/380901945"
+      ],
+      "area_m2": 31.28,
+      "local_bounds": [
+        1434.7860161365243,
+        549.2727366354877,
+        1437.3493071726025,
+        561.8205103632063
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.29178906704703%2C47.65956721099786%2C-122.2884291967791%2C47.66179586820509&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "No confident divider geometry observable at available resolution or because of cars, trees, shadows, service pavement, road strips or buildings",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.29178906704703,
+        "ymin": 47.6590016044675,
+        "xmax": -122.2884291967791,
+        "ymax": 47.66236147473543,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-023",
+      "campus": "uw",
+      "name": "unnamed",
+      "source_ids": [
+        "way/445392910"
+      ],
+      "area_m2": 51.34,
+      "local_bounds": [
+        294.1849040999077,
+        199.0113007351756,
+        302.2808109073667,
+        208.84997687023133
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.3069837792998%2C47.656496233601665%2C-122.30362474928141%2C47.65872534124043&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "No confident divider geometry observable at available resolution or because of cars, trees, shadows, service pavement, road strips or buildings",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.30698377929981,
+        "ymin": 47.65593127241184,
+        "xmax": -122.30362474928143,
+        "ymax": 47.65929030243023,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-024",
+      "campus": "uw",
+      "name": "unnamed",
+      "source_ids": [
+        "way/445392911"
+      ],
+      "area_m2": 94.93,
+      "local_bounds": [
+        305.62190550228115,
+        187.8950833166018,
+        315.8957623965107,
+        203.1074599903077
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.30681798101651%2C47.65641938632578%2C-122.30345894895987%2C47.65864848912926&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "No confident divider geometry observable at available resolution or because of cars, trees, shadows, service pavement, road strips or buildings",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.3068179810165,
+        "ymin": 47.6558544216992,
+        "xmax": -122.30345894895986,
+        "ymax": 47.65921345375584,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-025",
+      "campus": "uw",
+      "name": "unnamed",
+      "source_ids": [
+        "way/445396669"
+      ],
+      "area_m2": 171.47,
+      "local_bounds": [
+        250.31731950305402,
+        129.09647143259645,
+        273.4615513161989,
+        152.07470639888197
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.30747528242979%2C47.6559292360641%2C-122.30411630980831%2C47.65815835860248&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "No confident divider geometry observable at available resolution or because of cars, trees, shadows, service pavement, road strips or buildings",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.30747528242978,
+        "ymin": 47.655364311022545,
+        "xmax": -122.3041163098083,
+        "ymax": 47.65872328364403,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-026",
+      "campus": "uw",
+      "name": "unnamed",
+      "source_ids": [
+        "way/445396670"
+      ],
+      "area_m2": 78.21,
+      "local_bounds": [
+        232.11996647296473,
+        111.36501582711935,
+        244.8657840481028,
+        124.10371879674494
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.30778955657141%2C47.65572552216589%2C-122.30443061038736%2C47.65795465411806&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "No confident divider geometry observable at available resolution or because of cars, trees, shadows, service pavement, road strips or buildings",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.30778955657145,
+        "ymin": 47.655160615049965,
+        "xmax": -122.3044306103874,
+        "ymax": 47.658519561234016,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-027",
+      "campus": "uw",
+      "name": "unnamed",
+      "source_ids": [
+        "way/445398670"
+      ],
+      "area_m2": 97.44,
+      "local_bounds": [
+        170.7727177507477,
+        60.72899628151208,
+        188.67634179338347,
+        78.368088549003
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.30857785696199%2C47.655296709692834%2C-122.30521897178197%2C47.65752586519883&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "No confident divider geometry observable at available resolution or because of cars, trees, shadows, service pavement, road strips or buildings",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.30857785696197,
+        "ymin": 47.654731844855824,
+        "xmax": -122.30521897178195,
+        "ymax": 47.658090730035845,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-028",
+      "campus": "uw",
+      "name": "unnamed",
+      "source_ids": [
+        "way/445398672",
+        "way/445398671"
+      ],
+      "area_m2": 297.5,
+      "local_bounds": [
+        151.12665894289967,
+        37.4054511282593,
+        175.62250947370194,
+        61.76416194997728
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.30879794645367%2C47.65511840636022%2C-122.30543908209017%2C47.657347568483836&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "No confident divider geometry observable at available resolution or because of cars, trees, shadows, service pavement, road strips or buildings",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.30879794645365,
+        "ymin": 47.654553555240284,
+        "xmax": -122.30543908209016,
+        "ymax": 47.657912419603775,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-029",
+      "campus": "uw",
+      "name": "unnamed",
+      "source_ids": [
+        "way/447311562"
+      ],
+      "area_m2": 156.9,
+      "local_bounds": [
+        398.810274032061,
+        -188.92287440784276,
+        404.9083231444238,
+        -152.87311575748026
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.30564854868338%2C47.65311553065756%2C-122.30228968068862%2C47.65534460132413&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "Some row/parking-divider paint visible; exact geometry may remain uncertain",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.3056485486834,
+        "ymin": 47.65255063199346,
+        "xmax": -122.30228968068863,
+        "ymax": 47.655909499988226,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-030",
+      "campus": "uw",
+      "name": "unnamed",
+      "source_ids": [
+        "way/477379482"
+      ],
+      "area_m2": 87.39,
+      "local_bounds": [
+        288.8775014539715,
+        -304.09835419338197,
+        302.61108786263503,
+        -272.0383277768269
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.3070754832437%2C47.65206988310722%2C-122.30371674306593%2C47.65429899660196&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "No confident divider geometry observable at available resolution or because of cars, trees, shadows, service pavement, road strips or buildings",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.30707548324372,
+        "ymin": 47.651505069765705,
+        "xmax": -122.30371674306596,
+        "ymax": 47.654863809943464,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-031",
+      "campus": "uw",
+      "name": "unnamed",
+      "source_ids": [
+        "way/490751854"
+      ],
+      "area_m2": 780.03,
+      "local_bounds": [
+        1347.3996267110342,
+        237.81174569763243,
+        1394.953776253038,
+        271.424951874651
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.29268980410154%2C47.65686507866721%2C-122.28933014654082%2C47.65909376439204&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "Some row/parking-divider paint visible; exact geometry may remain uncertain",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.29268980410154,
+        "ymin": 47.65629959274926,
+        "xmax": -122.28933014654082,
+        "ymax": 47.65965925030998,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-032",
+      "campus": "uw",
+      "name": "C19",
+      "source_ids": [
+        "way/746003053"
+      ],
+      "area_m2": 332.6,
+      "local_bounds": [
+        397.31979839818086,
+        -45.51057417783886,
+        410.6920238988241,
+        5.889803562313318
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.30560194355692%2C47.65447470359783%2C-122.30224298578298%2C47.65670377192131&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "No confident divider geometry observable at available resolution or because of cars, trees, shadows, service pavement, road strips or buildings",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.30560194355692,
+        "ymin": 47.6539097588726,
+        "xmax": -122.30224298578298,
+        "ymax": 47.65726871664654,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-033",
+      "campus": "uw",
+      "name": "unnamed",
+      "source_ids": [
+        "way/951599134"
+      ],
+      "area_m2": 45.0,
+      "local_bounds": [
+        372.518596257898,
+        511.3879360239953,
+        378.6747869332321,
+        519.1196367656812
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.30591644207561%2C47.65929100064237%2C-122.30255718637379%2C47.6615200748101&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "No confident divider geometry observable at available resolution or because of cars, trees, shadows, service pavement, road strips or buildings",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.30591644207561,
+        "ymin": 47.65872590987532,
+        "xmax": -122.30255718637379,
+        "ymax": 47.662085165577146,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-034",
+      "campus": "uw",
+      "name": "unnamed",
+      "source_ids": [
+        "way/951599135"
+      ],
+      "area_m2": 48.28,
+      "local_bounds": [
+        381.9442853101651,
+        522.7885368689895,
+        391.83948151394725,
+        532.8514333264902
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.30576452289257%2C47.65940314942305%2C-122.30240525352532%2C47.66163221902993&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "No confident divider geometry observable at available resolution or because of cars, trees, shadows, service pavement, road strips or buildings",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.30576452289255,
+        "ymin": 47.65883804954286,
+        "xmax": -122.3024052535253,
+        "ymax": 47.66219731891011,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-035",
+      "campus": "uw",
+      "name": "unnamed",
+      "source_ids": [
+        "way/1112367164"
+      ],
+      "area_m2": 38.07,
+      "local_bounds": [
+        1161.5546520666685,
+        356.3184230355546,
+        1169.4762798201991,
+        365.004393607378
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.29541566684526%2C47.65783600438019%2C-122.29205606164146%2C47.660064769828324&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "No confident divider geometry observable at available resolution or because of cars, trees, shadows, service pavement, road strips or buildings",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.29541566684524,
+        "ymin": 47.657270584502356,
+        "xmax": -122.29205606164145,
+        "ymax": 47.660630189706154,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-036",
+      "campus": "uw",
+      "name": "E29",
+      "source_ids": [
+        "way/1112368074"
+      ],
+      "area_m2": 181.02,
+      "local_bounds": [
+        1141.7087808889337,
+        324.05932405684143,
+        1169.1960501195863,
+        343.43126767873764
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.29555293198283%2C47.65759466179005%2C-122.29219334817513%2C47.65982343146086&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "No confident divider geometry observable at available resolution or because of cars, trees, shadows, service pavement, road strips or buildings",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.29555293198277,
+        "ymin": 47.65702925472159,
+        "xmax": -122.29219334817508,
+        "ymax": 47.660388838529286,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-037",
+      "campus": "uw",
+      "name": "E8R",
+      "source_ids": [
+        "way/1159783343"
+      ],
+      "area_m2": 97.88,
+      "local_bounds": [
+        724.5069549111649,
+        -207.49224104266614,
+        742.4808277303819,
+        -199.33669932559133
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.30123653114383%2C47.652796167085384%2C-122.29787749744865%2C47.655025107850506&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "Some row/parking-divider paint visible; exact geometry may remain uncertain",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.30123653114387,
+        "ymin": 47.65223112062037,
+        "xmax": -122.2978774974487,
+        "ymax": 47.65559015431555,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-038",
+      "campus": "uw",
+      "name": "unnamed",
+      "source_ids": [
+        "way/1187427371"
+      ],
+      "area_m2": 35.97,
+      "local_bounds": [
+        580.3834210218629,
+        823.6016096649691,
+        606.105822560146,
+        825.4040829112608
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.30298094755426%2C47.662055760093885%2C-122.29962138914927%2C47.6642847457014&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "No confident divider geometry observable at available resolution or because of cars, trees, shadows, service pavement, road strips or buildings",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.30298094755425,
+        "ymin": 47.66149047369514,
+        "xmax": -122.29962138914925,
+        "ymax": 47.664850032100134,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-039",
+      "campus": "uw",
+      "name": "unnamed",
+      "source_ids": [
+        "way/1187427372"
+      ],
+      "area_m2": 46.17,
+      "local_bounds": [
+        570.5049114909489,
+        816.2935494175181,
+        606.6850578618469,
+        818.4145970605314
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.30304372703831%2C47.66199181838476%2C-122.2996841754186%2C47.66422080588981&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "No confident divider geometry observable at available resolution or because of cars, trees, shadows, service pavement, road strips or buildings",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.30304372703833,
+        "ymin": 47.66142653632742,
+        "xmax": -122.29968417541862,
+        "ymax": 47.66478608794713,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-040",
+      "campus": "uw",
+      "name": "C14",
+      "source_ids": [
+        "way/1408933133"
+      ],
+      "area_m2": 102.42,
+      "local_bounds": [
+        406.2468839843059,
+        -285.3894924847409,
+        412.0932041932829,
+        -266.29435565229505
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.30556371960122%2C47.65217075330932%2C-122.30220490905823%2C47.65439982214735&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "No confident divider geometry observable at available resolution or because of cars, trees, shadows, service pavement, road strips or buildings",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.30556371960125,
+        "ymin": 47.65160588245686,
+        "xmax": -122.30220490905826,
+        "ymax": 47.654964692999854,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-041",
+      "campus": "uw",
+      "name": "W35",
+      "source_ids": [
+        "way/50191492"
+      ],
+      "area_m2": 1588.84,
+      "local_bounds": [
+        -460.82358554704115,
+        -340.3862366825342,
+        -428.0262917431537,
+        -267.2828156799078
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.3169329748949%2C47.65198713522672%2C-122.31357465644746%2C47.654216539458425&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "Some row/parking-divider paint visible; exact geometry may remain uncertain",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.31693297489491,
+        "ymin": 47.65142267811886,
+        "xmax": -122.31357465644747,
+        "ymax": 47.6547809965663,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-042",
+      "campus": "uw",
+      "name": "LOT 1401",
+      "source_ids": [
+        "way/53533381"
+      ],
+      "area_m2": 84.73,
+      "local_bounds": [
+        -350.2413108438486,
+        -566.035076581873,
+        -301.8056999138879,
+        -498.70654105133394
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31538328970521%2C47.6499215755009%2C-122.31202503918882%2C47.6521509355026&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "Some row/parking-divider paint visible; exact geometry may remain uncertain",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.31538328970521,
+        "ymin": 47.64935713024356,
+        "xmax": -122.31202503918882,
+        "ymax": 47.65271538075994,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-043",
+      "campus": "uw",
+      "name": "W38",
+      "source_ids": [
+        "way/53533409"
+      ],
+      "area_m2": 2542.66,
+      "local_bounds": [
+        -605.4124015913112,
+        -328.77878848463297,
+        -551.6843883387046,
+        -261.29214644245803
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31871784984753%2C47.6520769202351%2C-122.31535960100634%2C47.65430637702875&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "Some row/parking-divider paint visible; exact geometry may remain uncertain",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.31871784984757,
+        "ymin": 47.651512524211334,
+        "xmax": -122.31535960100638,
+        "ymax": 47.65487077305253,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-044",
+      "campus": "uw",
+      "name": "N05",
+      "source_ids": [
+        "way/54029697"
+      ],
+      "area_m2": 5019.32,
+      "local_bounds": [
+        4.703545488417149,
+        447.162143281661,
+        51.58979732415173,
+        575.6440098909661
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31054396350052%2C47.659284254482316%2C-122.30718490373575%2C47.66151346513864&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "Some row/parking-divider paint visible; exact geometry may remain uncertain",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.31054396350052,
+        "ymin": 47.65871932992809,
+        "xmax": -122.30718490373575,
+        "ymax": 47.662078389692866,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-045",
+      "campus": "uw",
+      "name": "W10",
+      "source_ids": [
+        "way/65498556"
+      ],
+      "area_m2": 2227.95,
+      "local_bounds": [
+        -535.1326233494328,
+        -117.61267944797873,
+        -485.87789962871466,
+        -62.625901395455
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31778781568943%2C47.65391518683518%2C-122.31442940883245%2C47.65614461490807&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "Some row/parking-divider paint visible; exact geometry may remain uncertain",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.31778781568939,
+        "ymin": 47.65335069744313,
+        "xmax": -122.31442940883241,
+        "ymax": 47.656709104300106,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-046",
+      "campus": "uw",
+      "name": "W41",
+      "source_ids": [
+        "way/99063488"
+      ],
+      "area_m2": 1100.45,
+      "local_bounds": [
+        -598.2097435224568,
+        68.52548337448388,
+        -565.0262315295404,
+        104.79653974901885
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31871405475829%2C47.655511322677675%2C-122.31535558394069%2C47.657740776932556&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "Some row/parking-divider paint visible; exact geometry may remain uncertain",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.31871405475827,
+        "ymin": 47.654946814396325,
+        "xmax": -122.31535558394067,
+        "ymax": 47.65830528521393,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-047",
+      "campus": "uw",
+      "name": "S5",
+      "source_ids": [
+        "way/242182550"
+      ],
+      "area_m2": 170.67,
+      "local_bounds": [
+        -186.35225105390418,
+        -600.3851202633232,
+        -166.09531942766625,
+        -583.7028926117346
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31339576719667%2C47.64937277067337%2C-122.31003746816947%2C47.65160207246117&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "No confident divider geometry observable at available resolution or because of cars, trees, shadows, service pavement, road strips or buildings",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.31339576719667,
+        "ymin": 47.64880827205368,
+        "xmax": -122.31003746816947,
+        "ymax": 47.652166571080876,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-048",
+      "campus": "uw",
+      "name": "S12",
+      "source_ids": [
+        "way/242182551"
+      ],
+      "area_m2": 253.52,
+      "local_bounds": [
+        -196.17075741686858,
+        -657.0916025331244,
+        -166.13842694065534,
+        -618.4499419219792
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31346681111808%2C47.64896175559513%2C-122.31010854163424%2C47.651191059769175&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "No confident divider geometry observable at available resolution or because of cars, trees, shadows, service pavement, road strips or buildings",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.31346681111808,
+        "ymin": 47.648397272940244,
+        "xmax": -122.31010854163424,
+        "ymax": 47.651755542424084,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-049",
+      "campus": "uw",
+      "name": "C7",
+      "source_ids": [
+        "way/260962096",
+        "way/454017137"
+      ],
+      "area_m2": 366.17,
+      "local_bounds": [
+        -71.6120919889072,
+        -274.9992699865252,
+        -31.664475960074924,
+        -181.3257627375424
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31169393121348%2C47.652636704556194%2C-122.30833534949718%2C47.65486595384593&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "Some row/parking-divider paint visible; exact geometry may remain uncertain",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.31169393121348,
+        "ymin": 47.65207203834291,
+        "xmax": -122.30833534949718,
+        "ymax": 47.65543062005921,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-050",
+      "campus": "uw",
+      "name": "W13",
+      "source_ids": [
+        "way/262230355",
+        "way/388982484"
+      ],
+      "area_m2": 561.82,
+      "local_bounds": [
+        -339.75105999421794,
+        -209.26435943786055,
+        -311.0823534236988,
+        -122.68951210565865
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31533212357209%2C47.65321800697617%2C-122.31197365799838%2C47.65544736313471&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "Some row/parking-divider paint visible; exact geometry may remain uncertain",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.31533212357209,
+        "ymin": 47.65265345226858,
+        "xmax": -122.31197365799838,
+        "ymax": 47.65601191784229,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-051",
+      "campus": "uw",
+      "name": "W12",
+      "source_ids": [
+        "way/262230357"
+      ],
+      "area_m2": 2541.73,
+      "local_bounds": [
+        -376.4913991513895,
+        -185.66544118709862,
+        -345.9914653255837,
+        -97.974634738639
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31580631525004%2C47.65343819457911%2C-122.31244785548728%2C47.655667564563885&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "Some row/parking-divider paint visible; exact geometry may remain uncertain",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.31580631525006,
+        "ymin": 47.65287364969012,
+        "xmax": -122.31244785548729,
+        "ymax": 47.65623210945289,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-052",
+      "campus": "uw",
+      "name": "unnamed",
+      "source_ids": [
+        "way/262231088"
+      ],
+      "area_m2": 1255.75,
+      "local_bounds": [
+        -340.95624147960916,
+        -430.9497430501506,
+        -302.74056819896214,
+        -373.6688103703782
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31531240390069%2C47.65109141964552%2C-122.3119540748414%2C47.653320776728656&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "Some row/parking-divider paint visible; exact geometry may remain uncertain",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.31531240390075,
+        "ymin": 47.650526933657446,
+        "xmax": -122.31195407484145,
+        "ymax": 47.65388526271674,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-053",
+      "campus": "uw",
+      "name": "W24",
+      "source_ids": [
+        "way/262231091"
+      ],
+      "area_m2": 855.39,
+      "local_bounds": [
+        -376.83878353598993,
+        -450.57630732282996,
+        -348.83376408193726,
+        -414.2197796963155
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31586169892333%2C47.650823963921546%2C-122.3125034103403%2C47.653053337390105&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "Some row/parking-divider paint visible; exact geometry may remain uncertain",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.31586169892333,
+        "ymin": 47.65025950636432,
+        "xmax": -122.3125034103403,
+        "ymax": 47.65361779494735,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-054",
+      "campus": "uw",
+      "name": "unnamed",
+      "source_ids": [
+        "way/272728787"
+      ],
+      "area_m2": 69.16,
+      "local_bounds": [
+        -338.76688893011305,
+        122.3267565164715,
+        -324.2516868153022,
+        127.23697637310262
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31537905676919%2C47.65583447369394%2C-122.31202042417007%2C47.658063829383515&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "No confident divider geometry observable at available resolution or because of cars, trees, shadows, service pavement, road strips or buildings",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.31537905676919,
+        "ymin": 47.65526983523917,
+        "xmax": -122.31202042417007,
+        "ymax": 47.658628467838284,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-055",
+      "campus": "uw",
+      "name": "W11",
+      "source_ids": [
+        "way/388982483"
+      ],
+      "area_m2": 160.57,
+      "local_bounds": [
+        -428.6397683901014,
+        -139.29871746054118,
+        -423.1137236454524,
+        -109.3926622485742
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31666493132057%2C47.653600542337074%2C-122.3133064973459%2C47.655829937523954&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "Some row/parking-divider paint visible; exact geometry may remain uncertain",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.31666493132056,
+        "ymin": 47.653036022943155,
+        "xmax": -122.31330649734589,
+        "ymax": 47.65639445691782,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-056",
+      "campus": "uw",
+      "name": "W42",
+      "source_ids": [
+        "way/388982485"
+      ],
+      "area_m2": 398.35,
+      "local_bounds": [
+        -632.5889658719534,
+        -77.74932611081749,
+        -605.4207727501635,
+        -57.78179272077978
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31922996835978%2C47.6541248874318%2C-122.3158716088899%2C47.6563543578777&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "Some row/parking-divider paint visible; exact geometry may remain uncertain",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.31922996835974,
+        "ymin": 47.65356044291981,
+        "xmax": -122.31587160888986,
+        "ymax": 47.65691880238968,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-057",
+      "campus": "uw",
+      "name": "W40",
+      "source_ids": [
+        "way/388983898",
+        "way/388983899"
+      ],
+      "area_m2": 1021.05,
+      "local_bounds": [
+        -812.5090871152934,
+        -135.774900380522,
+        -737.7362771439366,
+        -73.82670214306563
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.321313139791%2C47.6538039941727%2C-122.31795488906386%2C47.65603352626393&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "Some row/parking-divider paint visible; exact geometry may remain uncertain",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.321313139791,
+        "ymin": 47.65323963485474,
+        "xmax": -122.31795488906386,
+        "ymax": 47.65659788558189,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-058",
+      "campus": "uw",
+      "name": "unnamed",
+      "source_ids": [
+        "way/388983900"
+      ],
+      "area_m2": 72.55,
+      "local_bounds": [
+        -851.1870006656973,
+        -109.30819176210383,
+        -836.4335661749016,
+        -102.80848166625947
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.32222792005562%2C47.653798086939666%2C-122.31886970836233%2C47.65602764600481&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "No confident divider geometry observable at available resolution or because of cars, trees, shadows, service pavement, road strips or buildings",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.32222792005562,
+        "ymin": 47.65323376062559,
+        "xmax": -122.31886970836233,
+        "ymax": 47.656591972318886,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-059",
+      "campus": "uw",
+      "name": "unnamed",
+      "source_ids": [
+        "way/429962552"
+      ],
+      "area_m2": 162.81,
+      "local_bounds": [
+        -272.6160529924993,
+        182.38820022158325,
+        -257.360580345965,
+        206.6906295678573
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31448502551767%2C47.65645679889601%2C-122.31112631494359%2C47.65868612778163&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "No confident divider geometry observable at available resolution or because of cars, trees, shadows, service pavement, road strips or buildings",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.31448502551768,
+        "ymin": 47.655892108051795,
+        "xmax": -122.3111263149436,
+        "ymax": 47.65925081862587,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-060",
+      "campus": "uw",
+      "name": "unnamed",
+      "source_ids": [
+        "way/430647911"
+      ],
+      "area_m2": 325.16,
+      "local_bounds": [
+        -256.1397273389157,
+        -182.0099065443501,
+        -224.42495963315014,
+        -171.51970258075744
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31419977237994%2C47.65311417682209%2C-122.3108412656764%2C47.65534349966491&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "No confident divider geometry observable at available resolution or because of cars, trees, shadows, service pavement, road strips or buildings",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.31419977237994,
+        "ymin": 47.65254958489172,
+        "xmax": -122.3108412656764,
+        "ymax": 47.65590809159526,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-061",
+      "campus": "uw",
+      "name": "unnamed",
+      "source_ids": [
+        "way/443482649"
+      ],
+      "area_m2": 142.43,
+      "local_bounds": [
+        -271.87774071826453,
+        135.16602914780378,
+        -258.73859770130366,
+        146.2434969596625
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31449562460529%2C47.65597246946665%2C-122.31113694576732%2C47.65820179900797&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "No confident divider geometry observable at available resolution or because of cars, trees, shadows, service pavement, road strips or buildings",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.31449562460529,
+        "ymin": 47.65540779481831,
+        "xmax": -122.31113694576732,
+        "ymax": 47.65876647365628,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-062",
+      "campus": "uw",
+      "name": "unnamed",
+      "source_ids": [
+        "way/445398674"
+      ],
+      "area_m2": 561.22,
+      "local_bounds": [
+        -41.198214873322286,
+        -89.89923522341996,
+        -13.335547637660056,
+        -58.97823202703148
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.3113512292372%2C47.65401782272782%2C-122.30799254383032%2C47.656247060931136&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "Some row/parking-divider paint visible; exact geometry may remain uncertain",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.31135122923719,
+        "ymin": 47.653453099126025,
+        "xmax": -122.30799254383031,
+        "ymax": 47.656811784532906,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-063",
+      "campus": "uw",
+      "name": "unnamed",
+      "source_ids": [
+        "way/446018995"
+      ],
+      "area_m2": 67.04,
+      "local_bounds": [
+        -114.07817379164044,
+        166.8264873372391,
+        -102.28853684198111,
+        178.66046848800033
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31239950688087%2C47.65624820365614%2C-122.30904072167284%2C47.658477471189684&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "No confident divider geometry observable at available resolution or because of cars, trees, shadows, service pavement, road strips or buildings",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.31239950688087,
+        "ymin": 47.65568344481889,
+        "xmax": -122.30904072167284,
+        "ymax": 47.65904223002691,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-064",
+      "campus": "uw",
+      "name": "unnamed",
+      "source_ids": [
+        "way/459452419"
+      ],
+      "area_m2": 129.0,
+      "local_bounds": [
+        31.479601518949494,
+        149.50793954730034,
+        47.58717914996669,
+        165.62134085409343
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31043424359862%2C47.65609983258002%2C-122.3070753849515%2C47.658329042262615&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "No confident divider geometry observable at available resolution or because of cars, trees, shadows, service pavement, road strips or buildings",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.31043424359858,
+        "ymin": 47.65553500809775,
+        "xmax": -122.30707538495146,
+        "ymax": 47.65889386674487,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-065",
+      "campus": "uw",
+      "name": "N02",
+      "source_ids": [
+        "way/475710217",
+        "way/475710218"
+      ],
+      "area_m2": 943.22,
+      "local_bounds": [
+        -15.802511949674226,
+        312.48752146214247,
+        41.41541583323851,
+        359.6047917176038
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.3107690172876%2C47.657707782888394%2C-122.30741006889467%2C47.65993700130172&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "Some row/parking-divider paint visible; exact geometry may remain uncertain",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.3107690172876,
+        "ymin": 47.6571429178986,
+        "xmax": -122.30741006889467,
+        "ymax": 47.660501866291526,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-066",
+      "campus": "uw",
+      "name": "unnamed",
+      "source_ids": [
+        "way/608192726"
+      ],
+      "area_m2": 889.03,
+      "local_bounds": [
+        -289.271425812738,
+        -183.83718603197485,
+        -263.7397186471532,
+        -143.9695153068751
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31468059435853%2C47.65323277466545%2C-122.31132210030687%2C47.655462111602176&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "Some row/parking-divider paint visible; exact geometry may remain uncertain",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.31468059435856,
+        "ymin": 47.65266819610799,
+        "xmax": -122.3113221003069,
+        "ymax": 47.656026690159656,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-067",
+      "campus": "uw",
+      "name": "N01",
+      "source_ids": [
+        "way/746508593"
+      ],
+      "area_m2": 5433.27,
+      "local_bounds": [
+        -145.1698815675918,
+        483.65932372491807,
+        -74.33940692630131,
+        566.1898252973333
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31237882773341%2C47.659416929641026%2C-122.30901983692023%2C47.661646194316546&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "Some row/parking-divider paint visible; exact geometry may remain uncertain",
+      "note": "N1 native CAD paint pattern visibly agrees with satellite rows. Genuine repeated divider extraction supplied separately.",
+      "imagery_extent": {
+        "xmin": -122.3123788277334,
+        "ymin": 47.65885206657219,
+        "xmax": -122.30901983692021,
+        "ymax": 47.66221105738537,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-068",
+      "campus": "uw",
+      "name": "unnamed",
+      "source_ids": [
+        "way/753499554"
+      ],
+      "area_m2": 2.98,
+      "local_bounds": [
+        -440.34299980767537,
+        616.6275881109759,
+        -431.4456045682309,
+        617.0099449773935
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31671132649203%2C47.66026965785322%2C-122.31335246364955%2C47.6624990496895&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "No confident divider geometry observable at available resolution or because of cars, trees, shadows, service pavement, road strips or buildings",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.31671132649203,
+        "ymin": 47.65970492235012,
+        "xmax": -122.31335246364955,
+        "ymax": 47.6630637851926,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-069",
+      "campus": "uw",
+      "name": "unnamed",
+      "source_ids": [
+        "way/904623128"
+      ],
+      "area_m2": 1.45,
+      "local_bounds": [
+        -578.2517896170689,
+        -352.5519986509123,
+        -576.316423964221,
+        -349.8892190307655
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31870759025207%2C47.65157131700356%2C-122.3153493736291%2C47.653800773852005&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "No confident divider geometry observable at available resolution or because of cars, trees, shadows, service pavement, road strips or buildings",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.31870759025203,
+        "ymin": 47.6510069371163,
+        "xmax": -122.31534937362906,
+        "ymax": 47.65436515373927,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-070",
+      "campus": "uw",
+      "name": "unnamed",
+      "source_ids": [
+        "way/940863685",
+        "way/1548948796"
+      ],
+      "area_m2": 616.88,
+      "local_bounds": [
+        -271.6930910027586,
+        -612.0038866568357,
+        -229.49760977679398,
+        -582.6321732602391
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31438662351484%2C47.64933124175594%2C-122.31102836902177%2C47.65156057278914&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "No confident divider geometry observable at available resolution or because of cars, trees, shadows, service pavement, road strips or buildings",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.31438662351484,
+        "ymin": 47.648766780026016,
+        "xmax": -122.31102836902177,
+        "ymax": 47.65212503451908,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-071",
+      "campus": "uw",
+      "name": "unnamed",
+      "source_ids": [
+        "way/953159793"
+      ],
+      "area_m2": 34.54,
+      "local_bounds": [
+        -570.8908034015913,
+        112.96234006434679,
+        -565.2497753514908,
+        119.09240263979882
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31853021203261%2C47.65577446310714%2C-122.31517171645011%2C47.658003911755415&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "No confident divider geometry observable at available resolution or because of cars, trees, shadows, service pavement, road strips or buildings",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.3185302120326,
+        "ymin": 47.65520993964004,
+        "xmax": -122.3151717164501,
+        "ymax": 47.65856843522254,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-072",
+      "campus": "uw",
+      "name": "unnamed",
+      "source_ids": [
+        "way/1049123409"
+      ],
+      "area_m2": 38.5,
+      "local_bounds": [
+        -570.604116602125,
+        174.82674535861608,
+        -566.6711129046254,
+        193.52359880161808
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31852978873916%2C47.65638763999147%2C-122.31517125353075%2C47.65861708819393&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "No confident divider geometry observable at available resolution or because of cars, trees, shadows, service pavement, road strips or buildings",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.31852978873916,
+        "ymin": 47.6558230964885,
+        "xmax": -122.31517125353075,
+        "ymax": 47.6591816316969,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-073",
+      "campus": "uw",
+      "name": "unnamed",
+      "source_ids": [
+        "way/1049123670"
+      ],
+      "area_m2": 360.96,
+      "local_bounds": [
+        -547.4999837534269,
+        184.67904782202095,
+        -528.1700344111305,
+        203.75010126413227
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31811842989421%2C47.6564755282698%2C-122.31475987162719%2C47.658704964280915&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "No confident divider geometry observable at available resolution or because of cars, trees, shadows, service pavement, road strips or buildings",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.31811842989423,
+        "ymin": 47.65591096714186,
+        "xmax": -122.3147598716272,
+        "ymax": 47.65926952540888,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-074",
+      "campus": "uw",
+      "name": "S06",
+      "source_ids": [
+        "way/1099475930"
+      ],
+      "area_m2": 74.4,
+      "local_bounds": [
+        -248.11797225277405,
+        -629.1196724483743,
+        -232.50484823493753,
+        -617.1551784202456
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31425273692726%2C47.64909812384887%2C-122.31089449183307%2C47.651327451099604&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "No confident divider geometry observable at available resolution or because of cars, trees, shadows, service pavement, road strips or buildings",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.31425273692726,
+        "ymin": 47.64853366492714,
+        "xmax": -122.31089449183307,
+        "ymax": 47.651891910021334,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-075",
+      "campus": "uw",
+      "name": "S07",
+      "source_ids": [
+        "way/1099475931"
+      ],
+      "area_m2": 192.29,
+      "local_bounds": [
+        -162.69259021128528,
+        -673.6216473188251,
+        -140.0983363033738,
+        -647.0800472022966
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31307324429244%2C47.64875622880661%2C-122.30971497145788%2C47.65098552152178&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "No confident divider geometry observable at available resolution or because of cars, trees, shadows, service pavement, road strips or buildings",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.31307324429244,
+        "ymin": 47.648191738746924,
+        "xmax": -122.30971497145788,
+        "ymax": 47.651550011581485,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-076",
+      "campus": "uw",
+      "name": "unnamed",
+      "source_ids": [
+        "way/1290081778"
+      ],
+      "area_m2": 1069.08,
+      "local_bounds": [
+        -290.6545893474249,
+        -28.368733453564346,
+        -258.6577502373839,
+        5.945418678224087
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31463799225028%2C47.654606408132025%2C-122.31127940767176%2C47.65683574283934&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "Some row/parking-divider paint visible; exact geometry may remain uncertain",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.3146379922503,
+        "ymin": 47.654041783196426,
+        "xmax": -122.31127940767178,
+        "ymax": 47.65740036777495,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-077",
+      "campus": "uw",
+      "name": "C10",
+      "source_ids": [
+        "relation/6640864"
+      ],
+      "area_m2": 2018.61,
+      "local_bounds": [
+        64.11117827682756,
+        -541.9854004597291,
+        219.53245903132483,
+        -457.1889332458377
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.30915011776108%2C47.65017919124854%2C-122.30579158733133%2C47.65240836727007&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "Some row/parking-divider paint visible; exact geometry may remain uncertain",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.30915011776106,
+        "ymin": 47.64961451404444,
+        "xmax": -122.30579158733131,
+        "ymax": 47.65297304447419,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-078",
+      "campus": "uw",
+      "name": "N24",
+      "source_ids": [
+        "relation/19282096"
+      ],
+      "area_m2": 1323.37,
+      "local_bounds": [
+        450.97425094083883,
+        -74.22105403989553,
+        494.3361121545313,
+        83.42108434531838
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.30468489606973%2C47.65468878918431%2C-122.30132588573024%2C47.65691783030789&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "Some row/parking-divider paint visible; exact geometry may remain uncertain",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.30468489606973,
+        "ymin": 47.65412380457635,
+        "xmax": -122.30132588573024,
+        "ymax": 47.657482814915845,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-079",
+      "campus": "uw",
+      "name": "C15",
+      "source_ids": [
+        "relation/19282097"
+      ],
+      "area_m2": 435.01,
+      "local_bounds": [
+        356.1920798434444,
+        -292.15034487936646,
+        388.7997103014495,
+        -175.54827188234776
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.30604704479472%2C47.65255151875633%2C-122.30268823006708%2C47.65478060157747&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "Some row/parking-divider paint visible; exact geometry may remain uncertain",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.3060470447947,
+        "ymin": 47.651986652803075,
+        "xmax": -122.30268823006705,
+        "ymax": 47.65534546753072,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-080",
+      "campus": "uw",
+      "name": "C23",
+      "source_ids": [
+        "relation/19282098"
+      ],
+      "area_m2": 986.24,
+      "local_bounds": [
+        411.4349032784812,
+        -188.77702641580254,
+        462.6522877479438,
+        -93.10963637009263
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.30517647250187%2C47.65338219850002%2C-122.30181756734076%2C47.65561125505356&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "Some row/parking-divider paint visible; exact geometry may remain uncertain",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.30517647250187,
+        "ymin": 47.65281727419624,
+        "xmax": -122.30181756734076,
+        "ymax": 47.656176179357345,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-081",
+      "campus": "uw",
+      "name": "C12",
+      "source_ids": [
+        "relation/19282099"
+      ],
+      "area_m2": 1372.66,
+      "local_bounds": [
+        307.69106467743404,
+        -516.9349136119708,
+        396.70509543223307,
+        -361.75069199874997
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.30634180402184%2C47.650704312727854%2C-122.30298312106814%2C47.65293340555786&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "Some row/parking-divider paint visible; exact geometry may remain uncertain",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.30634180402186,
+        "ymin": 47.650139517666005,
+        "xmax": -122.30298312106815,
+        "ymax": 47.65349820061971,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-082",
+      "campus": "uw",
+      "name": "C17",
+      "source_ids": [
+        "relation/19282100"
+      ],
+      "area_m2": 771.78,
+      "local_bounds": [
+        243.08245891344268,
+        -187.87366320658475,
+        295.44961287034675,
+        -125.46495624631643
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.3074124193029%2C47.653254219063015%2C-122.30405361684848%2C47.655483341651426&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "Some row/parking-divider paint visible; exact geometry may remain uncertain",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.30741241930292,
+        "ymin": 47.65268937913002,
+        "xmax": -122.30405361684849,
+        "ymax": 47.656048181584445,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    },
+    {
+      "id": "uw-083",
+      "campus": "uw",
+      "name": "S08",
+      "source_ids": [
+        "relation/14642649"
+      ],
+      "area_m2": 779.02,
+      "local_bounds": [
+        -79.51734158571344,
+        -800.7143215807155,
+        -16.298204660299234,
+        -752.2659697355703
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31170908212435%2C47.647703054537125%2C-122.30835081968438%2C47.649932307775856&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "local_origin_wgs84": [
+        -122.3093,
+        47.6558
+      ],
+      "local_crs": 32610,
+      "satellite_checked": true,
+      "check_method": "Visual inspection of lot-scale contact-sheet crop from Esri World Imagery, plus dedicated overlays for source-derived paint.",
+      "paint_observation": "No confident divider geometry observable at available resolution or because of cars, trees, shadows, service pavement, road strips or buildings",
+      "note": "Preserve clear aisles and islands. Do not interpolate paint through image occlusions.",
+      "imagery_extent": {
+        "xmin": -122.31170908212435,
+        "ymin": 47.6471385499365,
+        "xmax": -122.30835081968438,
+        "ymax": 47.650496812376474,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "snapshot_retrieval_date": "2026-10-14",
+      "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community"
+    }
+  ]
+}

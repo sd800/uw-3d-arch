@@ -1,5 +1,10 @@
 # Changelog
 
+## 26.10.14.1 — 2026-10-14
+
+- Add satellite-referenced rows in outdoor parking areas, including E1/E18 and the east-campus lots, with actual university CAD divider geometry for N1.
+- Clip paint clear of current buildings and planting, preserve drive aisles and retain all-area imagery source/review records; leave unmarked or obscured areas without invented stripe grids.
+
 ## 26.10.13.5 — 2026-10-13
 
 - Fit terrain around exact building footprints, add flat grade pads and closed below-grade supports, and include full perimeter buildings in the ground extent.

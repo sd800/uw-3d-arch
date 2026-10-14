@@ -208,6 +208,10 @@ for f in osm:
         else:env(q,.25 if mat in ['Tile','Paving','Water'] else .13,.035,mat)
     if name in place_names and name not in seen and g.area>100:
         c0=g.intersection(scope).centroid;places.append({'id':'P'+str(len(places)),'name':name,'name_zh':place_names[name],'position':[round(c0.x,2),round(c0.y,2),round(float(raw_ground(c0.x,c0.y))+1,2)]});seen.add(name)
+from parking_detail import parking_detail
+parking_green=unary_union([f['poly']for f in osm if f['poly'].geom_type in ['Polygon','MultiPolygon']and((f['properties'].get('landuse')in ['forest','grass','meadow','village_green'])or f['properties'].get('natural')in ['wood','scrub']or f['properties'].get('leisure')=='garden')])
+parking_paint=parking_detail(ROOT,scope,footprints,parking_green)
+env(parking_paint,.19,.014,'Marking')
 for f in raw:
     if f['properties'].get('FacCode')=='X08':env(f['poly'].difference(core_mask),.26,.04,'Water')
     if f['properties'].get('FacCode')=='X05':env(f['poly'],.26,.04,'Paving')

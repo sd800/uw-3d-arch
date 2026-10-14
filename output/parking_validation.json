@@ -1,0 +1,922 @@
+{
+  "line_width_m": 0.09,
+  "native_cad_or_observed_paint_segments": 118,
+  "interpreted_row_paths": 57,
+  "outlined_bays": 3585,
+  "row_results": [
+    {
+      "lot": "uw-001",
+      "name": "E18 / E1",
+      "outlined_bays": 26,
+      "path": [
+        [
+          681.186,
+          420.584
+        ],
+        [
+          717.325,
+          414.834
+        ]
+      ],
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.303711316592%2C47.65540835198973%2C-122.29657712613955%2C47.66014207264014&bboxSR=4326&imageSR=4326&size=1024%2C1024&format=png"
+    },
+    {
+      "lot": "uw-001",
+      "name": "E18 / E1",
+      "outlined_bays": 42,
+      "path": [
+        [
+          672.044,
+          405.312
+        ],
+        [
+          728.31,
+          397.212
+        ]
+      ],
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.303711316592%2C47.65540835198973%2C-122.29657712613955%2C47.66014207264014&bboxSR=4326&imageSR=4326&size=1024%2C1024&format=png"
+    },
+    {
+      "lot": "uw-001",
+      "name": "E18 / E1",
+      "outlined_bays": 52,
+      "path": [
+        [
+          666.511,
+          390.072
+        ],
+        [
+          736.723,
+          379.061
+        ]
+      ],
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.303711316592%2C47.65540835198973%2C-122.29657712613955%2C47.66014207264014&bboxSR=4326&imageSR=4326&size=1024%2C1024&format=png"
+    },
+    {
+      "lot": "uw-001",
+      "name": "E18 / E1",
+      "outlined_bays": 64,
+      "path": [
+        [
+          660.448,
+          376.347
+        ],
+        [
+          747.188,
+          361.94
+        ]
+      ],
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.303711316592%2C47.65540835198973%2C-122.29657712613955%2C47.66014207264014&bboxSR=4326&imageSR=4326&size=1024%2C1024&format=png"
+    },
+    {
+      "lot": "uw-001",
+      "name": "E18 / E1",
+      "outlined_bays": 76,
+      "path": [
+        [
+          654.91,
+          361.613
+        ],
+        [
+          758.68,
+          345.336
+        ]
+      ],
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.303711316592%2C47.65540835198973%2C-122.29657712613955%2C47.66014207264014&bboxSR=4326&imageSR=4326&size=1024%2C1024&format=png"
+    },
+    {
+      "lot": "uw-001",
+      "name": "E18 / E1",
+      "outlined_bays": 90,
+      "path": [
+        [
+          647.826,
+          346.866
+        ],
+        [
+          769.666,
+          327.714
+        ]
+      ],
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.303711316592%2C47.65540835198973%2C-122.29657712613955%2C47.66014207264014&bboxSR=4326&imageSR=4326&size=1024%2C1024&format=png"
+    },
+    {
+      "lot": "uw-001",
+      "name": "E18 / E1",
+      "outlined_bays": 104,
+      "path": [
+        [
+          640.76,
+          330.094
+        ],
+        [
+          780.661,
+          309.079
+        ]
+      ],
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.303711316592%2C47.65540835198973%2C-122.29657712613955%2C47.66014207264014&bboxSR=4326&imageSR=4326&size=1024%2C1024&format=png"
+    },
+    {
+      "lot": "uw-001",
+      "name": "E18 / E1",
+      "outlined_bays": 114,
+      "path": [
+        [
+          633.684,
+          314.334
+        ],
+        [
+          788.043,
+          290.918
+        ]
+      ],
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.303711316592%2C47.65540835198973%2C-122.29657712613955%2C47.66014207264014&bboxSR=4326&imageSR=4326&size=1024%2C1024&format=png"
+    },
+    {
+      "lot": "uw-001",
+      "name": "E18 / E1",
+      "outlined_bays": 116,
+      "path": [
+        [
+          628.169,
+          297.069
+        ],
+        [
+          783.55,
+          274.675
+        ]
+      ],
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.303711316592%2C47.65540835198973%2C-122.29657712613955%2C47.66014207264014&bboxSR=4326&imageSR=4326&size=1024%2C1024&format=png"
+    },
+    {
+      "lot": "uw-001",
+      "name": "E18 / E1",
+      "outlined_bays": 116,
+      "path": [
+        [
+          622.645,
+          280.817
+        ],
+        [
+          778.026,
+          258.423
+        ]
+      ],
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.303711316592%2C47.65540835198973%2C-122.29657712613955%2C47.66014207264014&bboxSR=4326&imageSR=4326&size=1024%2C1024&format=png"
+    },
+    {
+      "lot": "uw-001",
+      "name": "E18 / E1",
+      "outlined_bays": 114,
+      "path": [
+        [
+          617.125,
+          264.059
+        ],
+        [
+          771.982,
+          242.673
+        ]
+      ],
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.303711316592%2C47.65540835198973%2C-122.29657712613955%2C47.66014207264014&bboxSR=4326&imageSR=4326&size=1024%2C1024&format=png"
+    },
+    {
+      "lot": "uw-001",
+      "name": "E18 / E1",
+      "outlined_bays": 114,
+      "path": [
+        [
+          611.089,
+          247.296
+        ],
+        [
+          764.911,
+          226.406
+        ]
+      ],
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.303711316592%2C47.65540835198973%2C-122.29657712613955%2C47.66014207264014&bboxSR=4326&imageSR=4326&size=1024%2C1024&format=png"
+    },
+    {
+      "lot": "uw-001",
+      "name": "E18 / E1",
+      "outlined_bays": 114,
+      "path": [
+        [
+          605.058,
+          230.026
+        ],
+        [
+          758.37,
+          208.626
+        ]
+      ],
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.303711316592%2C47.65540835198973%2C-122.29657712613955%2C47.66014207264014&bboxSR=4326&imageSR=4326&size=1024%2C1024&format=png"
+    },
+    {
+      "lot": "uw-001",
+      "name": "E18 / E1",
+      "outlined_bays": 112,
+      "path": [
+        [
+          600.072,
+          211.247
+        ],
+        [
+          751.317,
+          190.335
+        ]
+      ],
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.303711316592%2C47.65540835198973%2C-122.29657712613955%2C47.66014207264014&bboxSR=4326&imageSR=4326&size=1024%2C1024&format=png"
+    },
+    {
+      "lot": "uw-001",
+      "name": "E18 / E1",
+      "outlined_bays": 110,
+      "path": [
+        [
+          596.126,
+          191.465
+        ],
+        [
+          744.279,
+          170.524
+        ]
+      ],
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.303711316592%2C47.65540835198973%2C-122.29657712613955%2C47.66014207264014&bboxSR=4326&imageSR=4326&size=1024%2C1024&format=png"
+    },
+    {
+      "lot": "uw-001",
+      "name": "E18 / E1",
+      "outlined_bays": 110,
+      "path": [
+        [
+          590.1,
+          173.69
+        ],
+        [
+          737.737,
+          152.744
+        ]
+      ],
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.303711316592%2C47.65540835198973%2C-122.29657712613955%2C47.66014207264014&bboxSR=4326&imageSR=4326&size=1024%2C1024&format=png"
+    },
+    {
+      "lot": "uw-001",
+      "name": "E18 / E1",
+      "outlined_bays": 108,
+      "path": [
+        [
+          584.58,
+          156.931
+        ],
+        [
+          730.671,
+          135.972
+        ]
+      ],
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.303711316592%2C47.65540835198973%2C-122.29657712613955%2C47.66014207264014&bboxSR=4326&imageSR=4326&size=1024%2C1024&format=png"
+    },
+    {
+      "lot": "uw-001",
+      "name": "E18 / E1",
+      "outlined_bays": 108,
+      "path": [
+        [
+          579.06,
+          140.173
+        ],
+        [
+          724.64,
+          118.702
+        ]
+      ],
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.303711316592%2C47.65540835198973%2C-122.29657712613955%2C47.66014207264014&bboxSR=4326&imageSR=4326&size=1024%2C1024&format=png"
+    },
+    {
+      "lot": "uw-001",
+      "name": "E18 / E1",
+      "outlined_bays": 108,
+      "path": [
+        [
+          573.544,
+          122.908
+        ],
+        [
+          718.605,
+          101.939
+        ]
+      ],
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.303711316592%2C47.65540835198973%2C-122.29657712613955%2C47.66014207264014&bboxSR=4326&imageSR=4326&size=1024%2C1024&format=png"
+    },
+    {
+      "lot": "uw-001",
+      "name": "E18 / E1",
+      "outlined_bays": 106,
+      "path": [
+        [
+          568.024,
+          106.15
+        ],
+        [
+          712.57,
+          85.176
+        ]
+      ],
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.303711316592%2C47.65540835198973%2C-122.29657712613955%2C47.66014207264014&bboxSR=4326&imageSR=4326&size=1024%2C1024&format=png"
+    },
+    {
+      "lot": "uw-001",
+      "name": "E18 / E1",
+      "outlined_bays": 102,
+      "path": [
+        [
+          562.517,
+          87.873
+        ],
+        [
+          706.534,
+          68.413
+        ]
+      ],
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.303711316592%2C47.65540835198973%2C-122.29657712613955%2C47.66014207264014&bboxSR=4326&imageSR=4326&size=1024%2C1024&format=png"
+    },
+    {
+      "lot": "uw-001",
+      "name": "E18 / E1",
+      "outlined_bays": 101,
+      "path": [
+        [
+          556.997,
+          71.115
+        ],
+        [
+          700.508,
+          50.637
+        ]
+      ],
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.303711316592%2C47.65540835198973%2C-122.29657712613955%2C47.66014207264014&bboxSR=4326&imageSR=4326&size=1024%2C1024&format=png"
+    },
+    {
+      "lot": "uw-001",
+      "name": "E18 / E1",
+      "outlined_bays": 94,
+      "path": [
+        [
+          551.481,
+          53.85
+        ],
+        [
+          694.988,
+          33.879
+        ]
+      ],
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.303711316592%2C47.65540835198973%2C-122.29657712613955%2C47.66014207264014&bboxSR=4326&imageSR=4326&size=1024%2C1024&format=png"
+    },
+    {
+      "lot": "uw-001",
+      "name": "E18 / E1",
+      "outlined_bays": 87,
+      "path": [
+        [
+          546.477,
+          37.096
+        ],
+        [
+          688.962,
+          16.103
+        ]
+      ],
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.303711316592%2C47.65540835198973%2C-122.29657712613955%2C47.66014207264014&bboxSR=4326&imageSR=4326&size=1024%2C1024&format=png"
+    },
+    {
+      "lot": "uw-001",
+      "name": "E18 / E1",
+      "outlined_bays": 70,
+      "path": [
+        [
+          540.961,
+          19.832
+        ],
+        [
+          682.927,
+          -0.66
+        ]
+      ],
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.303711316592%2C47.65540835198973%2C-122.29657712613955%2C47.66014207264014&bboxSR=4326&imageSR=4326&size=1024%2C1024&format=png"
+    },
+    {
+      "lot": "uw-002",
+      "name": "E2",
+      "outlined_bays": 54,
+      "path": [
+        [
+          650.422,
+          584.584
+        ],
+        [
+          724.276,
+          585.251
+        ]
+      ],
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.3017494915964%2C47.65975470345438%2C-122.29839002990032%2C47.661983654378645&bboxSR=4326&imageSR=4326&size=640%2C640&format=png"
+    },
+    {
+      "lot": "uw-002",
+      "name": "E2",
+      "outlined_bays": 52,
+      "path": [
+        [
+          652.641,
+          569.28
+        ],
+        [
+          723.374,
+          569.918
+        ]
+      ],
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.3017494915964%2C47.65975470345438%2C-122.29839002990032%2C47.661983654378645&bboxSR=4326&imageSR=4326&size=640%2C640&format=png"
+    },
+    {
+      "lot": "uw-002",
+      "name": "E2",
+      "outlined_bays": 15,
+      "path": [
+        [
+          663.26,
+          545.366
+        ],
+        [
+          703.809,
+          547.776
+        ]
+      ],
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.3017494915964%2C47.65975470345438%2C-122.29839002990032%2C47.661983654378645&bboxSR=4326&imageSR=4326&size=640%2C640&format=png"
+    },
+    {
+      "lot": "uw-007",
+      "name": "E16",
+      "outlined_bays": 14,
+      "path": [
+        [
+          1512.985,
+          287.866
+        ],
+        [
+          1551.479,
+          288.219
+        ]
+      ],
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.29052549182433%2C47.65699282695722%2C-122.28716573461399%2C47.659221448734&bboxSR=4326&imageSR=4326&size=640%2C640&format=png"
+    },
+    {
+      "lot": "uw-007",
+      "name": "E16",
+      "outlined_bays": 10,
+      "path": [
+        [
+          1514.288,
+          272.988
+        ],
+        [
+          1528.578,
+          273.119
+        ]
+      ],
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.29052549182433%2C47.65699282695722%2C-122.28716573461399%2C47.659221448734&bboxSR=4326&imageSR=4326&size=640%2C640&format=png"
+    },
+    {
+      "lot": "uw-007",
+      "name": "E16",
+      "outlined_bays": 12,
+      "path": [
+        [
+          1539.076,
+          273.215
+        ],
+        [
+          1555.698,
+          273.368
+        ]
+      ],
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.29052549182433%2C47.65699282695722%2C-122.28716573461399%2C47.659221448734&bboxSR=4326&imageSR=4326&size=640%2C640&format=png"
+    },
+    {
+      "lot": "uw-007",
+      "name": "E16",
+      "outlined_bays": 13,
+      "path": [
+        [
+          1515.316,
+          256.39
+        ],
+        [
+          1551.476,
+          256.721
+        ]
+      ],
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.29052549182433%2C47.65699282695722%2C-122.28716573461399%2C47.659221448734&bboxSR=4326&imageSR=4326&size=640%2C640&format=png"
+    },
+    {
+      "lot": "uw-013",
+      "name": "E8",
+      "outlined_bays": 40,
+      "path": [
+        [
+          718.55,
+          -223.753
+        ],
+        [
+          706.779,
+          -277.154
+        ]
+      ],
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.30148457429662%2C47.6523823778469%2C-122.29812557781055%2C47.65461132622387&bboxSR=4326&imageSR=4326&size=640%2C640&format=png"
+    },
+    {
+      "lot": "uw-013",
+      "name": "E8",
+      "outlined_bays": 15,
+      "path": [
+        [
+          738.722,
+          -228.299
+        ],
+        [
+          726.842,
+          -269.666
+        ]
+      ],
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.30148457429662%2C47.6523823778469%2C-122.29812557781055%2C47.65461132622387&bboxSR=4326&imageSR=4326&size=640%2C640&format=png"
+    },
+    {
+      "lot": "uw-013",
+      "name": "E8",
+      "outlined_bays": 0,
+      "path": [
+        [
+          699.358,
+          -230.803
+        ],
+        [
+          686.672,
+          -279.914
+        ]
+      ],
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.30148457429662%2C47.6523823778469%2C-122.29812557781055%2C47.65461132622387&bboxSR=4326&imageSR=4326&size=640%2C640&format=png"
+    },
+    {
+      "lot": "uw-015",
+      "name": "E12 / E19",
+      "outlined_bays": 176,
+      "path": [
+        [
+          407.379,
+          -764.475
+        ],
+        [
+          645.766,
+          -769.796
+        ]
+      ],
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.30437932782536%2C47.64756728678514%2C-122.29904942382981%2C47.65110454346681&bboxSR=4326&imageSR=4326&size=640%2C640&format=png"
+    },
+    {
+      "lot": "uw-015",
+      "name": "E12 / E19",
+      "outlined_bays": 176,
+      "path": [
+        [
+          407.57,
+          -785.753
+        ],
+        [
+          645.958,
+          -791.075
+        ]
+      ],
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.30437932782536%2C47.64756728678514%2C-122.29904942382981%2C47.65110454346681&bboxSR=4326&imageSR=4326&size=640%2C640&format=png"
+    },
+    {
+      "lot": "uw-015",
+      "name": "E12 / E19",
+      "outlined_bays": 176,
+      "path": [
+        [
+          407.757,
+          -806.658
+        ],
+        [
+          646.146,
+          -811.98
+        ]
+      ],
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.30437932782536%2C47.64756728678514%2C-122.29904942382981%2C47.65110454346681&bboxSR=4326&imageSR=4326&size=640%2C640&format=png"
+    },
+    {
+      "lot": "uw-015",
+      "name": "E12 / E19",
+      "outlined_bays": 156,
+      "path": [
+        [
+          407.942,
+          -827.19
+        ],
+        [
+          646.332,
+          -832.512
+        ]
+      ],
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.30437932782536%2C47.64756728678514%2C-122.29904942382981%2C47.65110454346681&bboxSR=4326&imageSR=4326&size=640%2C640&format=png"
+    },
+    {
+      "lot": "uw-015",
+      "name": "E12 / E19",
+      "outlined_bays": 0,
+      "path": [
+        [
+          413.848,
+          -849.911
+        ],
+        [
+          517.282,
+          -854.208
+        ]
+      ],
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.30437932782536%2C47.64756728678514%2C-122.29904942382981%2C47.65110454346681&bboxSR=4326&imageSR=4326&size=640%2C640&format=png"
+    },
+    {
+      "lot": "uw-017",
+      "name": "E14",
+      "outlined_bays": 0,
+      "path": [
+        [
+          847.952,
+          312.032
+        ],
+        [
+          927.159,
+          322.095
+        ]
+      ],
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.29914358200617%2C47.657265572400085%2C-122.2957841711138%2C47.659494448232536&bboxSR=4326&imageSR=4326&size=640%2C640&format=png"
+    },
+    {
+      "lot": "uw-017",
+      "name": "E14",
+      "outlined_bays": 23,
+      "path": [
+        [
+          848.243,
+          279.846
+        ],
+        [
+          926.403,
+          288.861
+        ]
+      ],
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.29914358200617%2C47.657265572400085%2C-122.2957841711138%2C47.659494448232536&bboxSR=4326&imageSR=4326&size=640%2C640&format=png"
+    },
+    {
+      "lot": "uw-043",
+      "name": "W38",
+      "outlined_bays": 16,
+      "path": [
+        [
+          -607.155,
+          -286.455
+        ],
+        [
+          -571.266,
+          -323.005
+        ]
+      ],
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31871784984753%2C47.6520769202351%2C-122.31535960100634%2C47.65430637702875&bboxSR=4326&imageSR=4326&size=640%2C640&format=png"
+    },
+    {
+      "lot": "uw-043",
+      "name": "W38",
+      "outlined_bays": 16,
+      "path": [
+        [
+          -585.226,
+          -291.254
+        ],
+        [
+          -567.517,
+          -304.923
+        ]
+      ],
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31871784984753%2C47.6520769202351%2C-122.31535960100634%2C47.65430637702875&bboxSR=4326&imageSR=4326&size=640%2C640&format=png"
+    },
+    {
+      "lot": "uw-043",
+      "name": "W38",
+      "outlined_bays": 14,
+      "path": [
+        [
+          -602.625,
+          -268.366
+        ],
+        [
+          -561.633,
+          -263.013
+        ]
+      ],
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31871784984753%2C47.6520769202351%2C-122.31535960100634%2C47.65430637702875&bboxSR=4326&imageSR=4326&size=640%2C640&format=png"
+    },
+    {
+      "lot": "uw-043",
+      "name": "W38",
+      "outlined_bays": 8,
+      "path": [
+        [
+          -551.428,
+          -267.915
+        ],
+        [
+          -551.035,
+          -312.458
+        ]
+      ],
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31871784984753%2C47.6520769202351%2C-122.31535960100634%2C47.65430637702875&bboxSR=4326&imageSR=4326&size=640%2C640&format=png"
+    },
+    {
+      "lot": "uw-044",
+      "name": "N05",
+      "outlined_bays": 64,
+      "path": [
+        [
+          29.251,
+          544.352
+        ],
+        [
+          35.61,
+          457.943
+        ]
+      ],
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31054396350052%2C47.659284254482316%2C-122.30718490373575%2C47.66151346513864&bboxSR=4326&imageSR=4326&size=640%2C640&format=png"
+    },
+    {
+      "lot": "uw-044",
+      "name": "N05",
+      "outlined_bays": 21,
+      "path": [
+        [
+          45.609,
+          543.125
+        ],
+        [
+          53.012,
+          464.96
+        ]
+      ],
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31054396350052%2C47.659284254482316%2C-122.30718490373575%2C47.66151346513864&bboxSR=4326&imageSR=4326&size=640%2C640&format=png"
+    },
+    {
+      "lot": "uw-044",
+      "name": "N05",
+      "outlined_bays": 30,
+      "path": [
+        [
+          11.114,
+          541.445
+        ],
+        [
+          17.424,
+          460.526
+        ]
+      ],
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31054396350052%2C47.659284254482316%2C-122.30718490373575%2C47.66151346513864&bboxSR=4326&imageSR=4326&size=640%2C640&format=png"
+    },
+    {
+      "lot": "uw-045",
+      "name": "W10",
+      "outlined_bays": 14,
+      "path": [
+        [
+          -518.841,
+          -74.09
+        ],
+        [
+          -517.671,
+          -95.336
+        ]
+      ],
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31778781568943%2C47.65391518683518%2C-122.31442940883245%2C47.65614461490807&bboxSR=4326&imageSR=4326&size=640%2C640&format=png"
+    },
+    {
+      "lot": "uw-045",
+      "name": "W10",
+      "outlined_bays": 20,
+      "path": [
+        [
+          -504.109,
+          -72.027
+        ],
+        [
+          -503.209,
+          -99.717
+        ]
+      ],
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31778781568943%2C47.65391518683518%2C-122.31442940883245%2C47.65614461490807&bboxSR=4326&imageSR=4326&size=640%2C640&format=png"
+    },
+    {
+      "lot": "uw-045",
+      "name": "W10",
+      "outlined_bays": 5,
+      "path": [
+        [
+          -533.848,
+          -82.274
+        ],
+        [
+          -532.081,
+          -96.751
+        ]
+      ],
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31778781568943%2C47.65391518683518%2C-122.31442940883245%2C47.65614461490807&bboxSR=4326&imageSR=4326&size=640%2C640&format=png"
+    },
+    {
+      "lot": "uw-045",
+      "name": "W10",
+      "outlined_bays": 5,
+      "path": [
+        [
+          -515.327,
+          -63.752
+        ],
+        [
+          -500.249,
+          -63.619
+        ]
+      ],
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31778781568943%2C47.65391518683518%2C-122.31442940883245%2C47.65614461490807&bboxSR=4326&imageSR=4326&size=640%2C640&format=png"
+    },
+    {
+      "lot": "uw-046",
+      "name": "W41",
+      "outlined_bays": 12,
+      "path": [
+        [
+          -588.366,
+          84.308
+        ],
+        [
+          -571.325,
+          84.0
+        ]
+      ],
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31871405475829%2C47.655511322677675%2C-122.31535558394069%2C47.657740776932556&bboxSR=4326&imageSR=4326&size=640%2C640&format=png"
+    },
+    {
+      "lot": "uw-051",
+      "name": "W12",
+      "outlined_bays": 28,
+      "path": [
+        [
+          -362.509,
+          -109.879
+        ],
+        [
+          -364.133,
+          -149.108
+        ]
+      ],
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31580631525004%2C47.65343819457911%2C-122.31244785548728%2C47.655667564563885&bboxSR=4326&imageSR=4326&size=640%2C640&format=png"
+    },
+    {
+      "lot": "uw-051",
+      "name": "W12",
+      "outlined_bays": 26,
+      "path": [
+        [
+          -347.252,
+          -107.807
+        ],
+        [
+          -349.09,
+          -178.507
+        ]
+      ],
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31580631525004%2C47.65343819457911%2C-122.31244785548728%2C47.655667564563885&bboxSR=4326&imageSR=4326&size=640%2C640&format=png"
+    },
+    {
+      "lot": "uw-051",
+      "name": "W12",
+      "outlined_bays": 16,
+      "path": [
+        [
+          -374.232,
+          -121.602
+        ],
+        [
+          -375.308,
+          -167.12
+        ]
+      ],
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31580631525004%2C47.65343819457911%2C-122.31244785548728%2C47.655667564563885&bboxSR=4326&imageSR=4326&size=640%2C640&format=png"
+    }
+  ],
+  "array_from_lot_envelope": false,
+  "planting_and_buildings_override_paint": true
+}

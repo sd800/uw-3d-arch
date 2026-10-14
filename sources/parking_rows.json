@@ -1,0 +1,3074 @@
+{
+  "reference_date": "2026-10-14",
+  "imagery_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community",
+  "overlay_review_complete": true,
+  "method": "Each listed row was manually interpreted from a dedicated satellite crop. No row arrays derived from lot envelopes. Listed geometric dimensions approximate; missing rows, occluded strips, construction, buildings and carports must stay unpainted.",
+  "local_crs": 32610,
+  "local_origin_wgs84": [
+    -122.3093,
+    47.6558
+  ],
+  "rows": [
+    {
+      "group_id": "uw-001",
+      "group_index": 1,
+      "source_ids": [
+        "way/4921397",
+        "way/328048163"
+      ],
+      "lot_name": "E18 / E1",
+      "path": [
+        [
+          681.186,
+          420.584
+        ],
+        [
+          717.325,
+          414.834
+        ]
+      ],
+      "sides": [
+        -1,
+        1
+      ],
+      "angle_deg": 90,
+      "spacing_m": 2.7,
+      "depth_m": 5.2,
+      "reference_image_id": "uw-001",
+      "reference_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.303711316592%2C47.65540835198973%2C-122.29657712613955%2C47.66014207264014&bboxSR=4326&imageSR=4326&size=1024%2C1024&format=png",
+      "observed_original_image_pixels": [
+        [
+          507.07,
+          260.26
+        ],
+        [
+          576.05,
+          268.11
+        ]
+      ],
+      "crop_normalized_pixels": [
+        [
+          495,
+          115
+        ],
+        [
+          565,
+          127
+        ]
+      ],
+      "basis": "Manually interpreted row back-edge or shared head-to-head edge from visible repeated paint/cars and clear drive aisles. Bay spacing, depth and member width approximate. Grass islands and current building clearance must override row geometry."
+    },
+    {
+      "group_id": "uw-001",
+      "group_index": 1,
+      "source_ids": [
+        "way/4921397",
+        "way/328048163"
+      ],
+      "lot_name": "E18 / E1",
+      "path": [
+        [
+          672.044,
+          405.312
+        ],
+        [
+          728.31,
+          397.212
+        ]
+      ],
+      "sides": [
+        -1,
+        1
+      ],
+      "angle_deg": 90,
+      "spacing_m": 2.7,
+      "depth_m": 5.2,
+      "reference_image_id": "uw-001",
+      "reference_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.303711316592%2C47.65540835198973%2C-122.29657712613955%2C47.66014207264014&bboxSR=4326&imageSR=4326&size=1024%2C1024&format=png",
+      "observed_original_image_pixels": [
+        [
+          489.33,
+          279.88
+        ],
+        [
+          596.74,
+          291.0
+        ]
+      ],
+      "crop_normalized_pixels": [
+        [
+          477,
+          145
+        ],
+        [
+          586,
+          162
+        ]
+      ],
+      "basis": "Manually interpreted row back-edge or shared head-to-head edge from visible repeated paint/cars and clear drive aisles. Bay spacing, depth and member width approximate. Grass islands and current building clearance must override row geometry."
+    },
+    {
+      "group_id": "uw-001",
+      "group_index": 1,
+      "source_ids": [
+        "way/4921397",
+        "way/328048163"
+      ],
+      "lot_name": "E18 / E1",
+      "path": [
+        [
+          666.511,
+          390.072
+        ],
+        [
+          736.723,
+          379.061
+        ]
+      ],
+      "sides": [
+        -1,
+        1
+      ],
+      "angle_deg": 90,
+      "spacing_m": 2.7,
+      "depth_m": 5.2,
+      "reference_image_id": "uw-001",
+      "reference_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.303711316592%2C47.65540835198973%2C-122.29657712613955%2C47.66014207264014&bboxSR=4326&imageSR=4326&size=1024%2C1024&format=png",
+      "observed_original_image_pixels": [
+        [
+          478.49,
+          299.5
+        ],
+        [
+          612.51,
+          314.53
+        ]
+      ],
+      "crop_normalized_pixels": [
+        [
+          466,
+          175
+        ],
+        [
+          602,
+          198
+        ]
+      ],
+      "basis": "Manually interpreted row back-edge or shared head-to-head edge from visible repeated paint/cars and clear drive aisles. Bay spacing, depth and member width approximate. Grass islands and current building clearance must override row geometry."
+    },
+    {
+      "group_id": "uw-001",
+      "group_index": 1,
+      "source_ids": [
+        "way/4921397",
+        "way/328048163"
+      ],
+      "lot_name": "E18 / E1",
+      "path": [
+        [
+          660.448,
+          376.347
+        ],
+        [
+          747.188,
+          361.94
+        ]
+      ],
+      "sides": [
+        -1,
+        1
+      ],
+      "angle_deg": 90,
+      "spacing_m": 2.7,
+      "depth_m": 5.2,
+      "reference_image_id": "uw-001",
+      "reference_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.303711316592%2C47.65540835198973%2C-122.29657712613955%2C47.66014207264014&bboxSR=4326&imageSR=4326&size=1024%2C1024&format=png",
+      "observed_original_image_pixels": [
+        [
+          466.67,
+          317.15
+        ],
+        [
+          632.22,
+          336.77
+        ]
+      ],
+      "crop_normalized_pixels": [
+        [
+          454,
+          202
+        ],
+        [
+          622,
+          232
+        ]
+      ],
+      "basis": "Manually interpreted row back-edge or shared head-to-head edge from visible repeated paint/cars and clear drive aisles. Bay spacing, depth and member width approximate. Grass islands and current building clearance must override row geometry."
+    },
+    {
+      "group_id": "uw-001",
+      "group_index": 1,
+      "source_ids": [
+        "way/4921397",
+        "way/328048163"
+      ],
+      "lot_name": "E18 / E1",
+      "path": [
+        [
+          654.91,
+          361.613
+        ],
+        [
+          758.68,
+          345.336
+        ]
+      ],
+      "sides": [
+        -1,
+        1
+      ],
+      "angle_deg": 90,
+      "spacing_m": 2.7,
+      "depth_m": 5.2,
+      "reference_image_id": "uw-001",
+      "reference_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.303711316592%2C47.65540835198973%2C-122.29657712613955%2C47.66014207264014&bboxSR=4326&imageSR=4326&size=1024%2C1024&format=png",
+      "observed_original_image_pixels": [
+        [
+          455.83,
+          336.11
+        ],
+        [
+          653.9,
+          358.34
+        ]
+      ],
+      "crop_normalized_pixels": [
+        [
+          443,
+          231
+        ],
+        [
+          644,
+          265
+        ]
+      ],
+      "basis": "Manually interpreted row back-edge or shared head-to-head edge from visible repeated paint/cars and clear drive aisles. Bay spacing, depth and member width approximate. Grass islands and current building clearance must override row geometry."
+    },
+    {
+      "group_id": "uw-001",
+      "group_index": 1,
+      "source_ids": [
+        "way/4921397",
+        "way/328048163"
+      ],
+      "lot_name": "E18 / E1",
+      "path": [
+        [
+          647.826,
+          346.866
+        ],
+        [
+          769.666,
+          327.714
+        ]
+      ],
+      "sides": [
+        -1,
+        1
+      ],
+      "angle_deg": 90,
+      "spacing_m": 2.7,
+      "depth_m": 5.2,
+      "reference_image_id": "uw-001",
+      "reference_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.303711316592%2C47.65540835198973%2C-122.29657712613955%2C47.66014207264014&bboxSR=4326&imageSR=4326&size=1024%2C1024&format=png",
+      "observed_original_image_pixels": [
+        [
+          442.03,
+          355.07
+        ],
+        [
+          674.59,
+          381.23
+        ]
+      ],
+      "crop_normalized_pixels": [
+        [
+          429,
+          260
+        ],
+        [
+          665,
+          300
+        ]
+      ],
+      "basis": "Manually interpreted row back-edge or shared head-to-head edge from visible repeated paint/cars and clear drive aisles. Bay spacing, depth and member width approximate. Grass islands and current building clearance must override row geometry."
+    },
+    {
+      "group_id": "uw-001",
+      "group_index": 1,
+      "source_ids": [
+        "way/4921397",
+        "way/328048163"
+      ],
+      "lot_name": "E18 / E1",
+      "path": [
+        [
+          640.76,
+          330.094
+        ],
+        [
+          780.661,
+          309.079
+        ]
+      ],
+      "sides": [
+        -1,
+        1
+      ],
+      "angle_deg": 90,
+      "spacing_m": 2.7,
+      "depth_m": 5.2,
+      "reference_image_id": "uw-001",
+      "reference_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.303711316592%2C47.65540835198973%2C-122.29657712613955%2C47.66014207264014&bboxSR=4326&imageSR=4326&size=1024%2C1024&format=png",
+      "observed_original_image_pixels": [
+        [
+          428.24,
+          376.65
+        ],
+        [
+          695.29,
+          405.42
+        ]
+      ],
+      "crop_normalized_pixels": [
+        [
+          415,
+          293
+        ],
+        [
+          686,
+          337
+        ]
+      ],
+      "basis": "Manually interpreted row back-edge or shared head-to-head edge from visible repeated paint/cars and clear drive aisles. Bay spacing, depth and member width approximate. Grass islands and current building clearance must override row geometry."
+    },
+    {
+      "group_id": "uw-001",
+      "group_index": 1,
+      "source_ids": [
+        "way/4921397",
+        "way/328048163"
+      ],
+      "lot_name": "E18 / E1",
+      "path": [
+        [
+          633.684,
+          314.334
+        ],
+        [
+          788.043,
+          290.918
+        ]
+      ],
+      "sides": [
+        -1,
+        1
+      ],
+      "angle_deg": 90,
+      "spacing_m": 2.7,
+      "depth_m": 5.2,
+      "reference_image_id": "uw-001",
+      "reference_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.303711316592%2C47.65540835198973%2C-122.29657712613955%2C47.66014207264014&bboxSR=4326&imageSR=4326&size=1024%2C1024&format=png",
+      "observed_original_image_pixels": [
+        [
+          414.44,
+          396.92
+        ],
+        [
+          709.08,
+          428.96
+        ]
+      ],
+      "crop_normalized_pixels": [
+        [
+          401,
+          324
+        ],
+        [
+          700,
+          373
+        ]
+      ],
+      "basis": "Manually interpreted row back-edge or shared head-to-head edge from visible repeated paint/cars and clear drive aisles. Bay spacing, depth and member width approximate. Grass islands and current building clearance must override row geometry."
+    },
+    {
+      "group_id": "uw-001",
+      "group_index": 1,
+      "source_ids": [
+        "way/4921397",
+        "way/328048163"
+      ],
+      "lot_name": "E18 / E1",
+      "path": [
+        [
+          628.169,
+          297.069
+        ],
+        [
+          783.55,
+          274.675
+        ]
+      ],
+      "sides": [
+        -1,
+        1
+      ],
+      "angle_deg": 90,
+      "spacing_m": 2.7,
+      "depth_m": 5.2,
+      "reference_image_id": "uw-001",
+      "reference_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.303711316592%2C47.65540835198973%2C-122.29657712613955%2C47.66014207264014&bboxSR=4326&imageSR=4326&size=1024%2C1024&format=png",
+      "observed_original_image_pixels": [
+        [
+          403.6,
+          419.15
+        ],
+        [
+          700.21,
+          449.88
+        ]
+      ],
+      "crop_normalized_pixels": [
+        [
+          390,
+          358
+        ],
+        [
+          691,
+          405
+        ]
+      ],
+      "basis": "Manually interpreted row back-edge or shared head-to-head edge from visible repeated paint/cars and clear drive aisles. Bay spacing, depth and member width approximate. Grass islands and current building clearance must override row geometry."
+    },
+    {
+      "group_id": "uw-001",
+      "group_index": 1,
+      "source_ids": [
+        "way/4921397",
+        "way/328048163"
+      ],
+      "lot_name": "E18 / E1",
+      "path": [
+        [
+          622.645,
+          280.817
+        ],
+        [
+          778.026,
+          258.423
+        ]
+      ],
+      "sides": [
+        -1,
+        1
+      ],
+      "angle_deg": 90,
+      "spacing_m": 2.7,
+      "depth_m": 5.2,
+      "reference_image_id": "uw-001",
+      "reference_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.303711316592%2C47.65540835198973%2C-122.29657712613955%2C47.66014207264014&bboxSR=4326&imageSR=4326&size=1024%2C1024&format=png",
+      "observed_original_image_pixels": [
+        [
+          392.76,
+          440.08
+        ],
+        [
+          689.38,
+          470.81
+        ]
+      ],
+      "crop_normalized_pixels": [
+        [
+          379,
+          390
+        ],
+        [
+          680,
+          437
+        ]
+      ],
+      "basis": "Manually interpreted row back-edge or shared head-to-head edge from visible repeated paint/cars and clear drive aisles. Bay spacing, depth and member width approximate. Grass islands and current building clearance must override row geometry."
+    },
+    {
+      "group_id": "uw-001",
+      "group_index": 1,
+      "source_ids": [
+        "way/4921397",
+        "way/328048163"
+      ],
+      "lot_name": "E18 / E1",
+      "path": [
+        [
+          617.125,
+          264.059
+        ],
+        [
+          771.982,
+          242.673
+        ]
+      ],
+      "sides": [
+        -1,
+        1
+      ],
+      "angle_deg": 90,
+      "spacing_m": 2.7,
+      "depth_m": 5.2,
+      "reference_image_id": "uw-001",
+      "reference_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.303711316592%2C47.65540835198973%2C-122.29657712613955%2C47.66014207264014&bboxSR=4326&imageSR=4326&size=1024%2C1024&format=png",
+      "observed_original_image_pixels": [
+        [
+          381.92,
+          461.65
+        ],
+        [
+          677.55,
+          491.08
+        ]
+      ],
+      "crop_normalized_pixels": [
+        [
+          368,
+          423
+        ],
+        [
+          668,
+          468
+        ]
+      ],
+      "basis": "Manually interpreted row back-edge or shared head-to-head edge from visible repeated paint/cars and clear drive aisles. Bay spacing, depth and member width approximate. Grass islands and current building clearance must override row geometry."
+    },
+    {
+      "group_id": "uw-001",
+      "group_index": 1,
+      "source_ids": [
+        "way/4921397",
+        "way/328048163"
+      ],
+      "lot_name": "E18 / E1",
+      "path": [
+        [
+          611.089,
+          247.296
+        ],
+        [
+          764.911,
+          226.406
+        ]
+      ],
+      "sides": [
+        -1,
+        1
+      ],
+      "angle_deg": 90,
+      "spacing_m": 2.7,
+      "depth_m": 5.2,
+      "reference_image_id": "uw-001",
+      "reference_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.303711316592%2C47.65540835198973%2C-122.29657712613955%2C47.66014207264014&bboxSR=4326&imageSR=4326&size=1024%2C1024&format=png",
+      "observed_original_image_pixels": [
+        [
+          370.1,
+          483.23
+        ],
+        [
+          663.75,
+          512.0
+        ]
+      ],
+      "crop_normalized_pixels": [
+        [
+          356,
+          456
+        ],
+        [
+          654,
+          500
+        ]
+      ],
+      "basis": "Manually interpreted row back-edge or shared head-to-head edge from visible repeated paint/cars and clear drive aisles. Bay spacing, depth and member width approximate. Grass islands and current building clearance must override row geometry."
+    },
+    {
+      "group_id": "uw-001",
+      "group_index": 1,
+      "source_ids": [
+        "way/4921397",
+        "way/328048163"
+      ],
+      "lot_name": "E18 / E1",
+      "path": [
+        [
+          605.058,
+          230.026
+        ],
+        [
+          758.37,
+          208.626
+        ]
+      ],
+      "sides": [
+        -1,
+        1
+      ],
+      "angle_deg": 90,
+      "spacing_m": 2.7,
+      "depth_m": 5.2,
+      "reference_image_id": "uw-001",
+      "reference_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.303711316592%2C47.65540835198973%2C-122.29657712613955%2C47.66014207264014&bboxSR=4326&imageSR=4326&size=1024%2C1024&format=png",
+      "observed_original_image_pixels": [
+        [
+          358.27,
+          505.46
+        ],
+        [
+          650.94,
+          534.88
+        ]
+      ],
+      "crop_normalized_pixels": [
+        [
+          344,
+          490
+        ],
+        [
+          641,
+          535
+        ]
+      ],
+      "basis": "Manually interpreted row back-edge or shared head-to-head edge from visible repeated paint/cars and clear drive aisles. Bay spacing, depth and member width approximate. Grass islands and current building clearance must override row geometry."
+    },
+    {
+      "group_id": "uw-001",
+      "group_index": 1,
+      "source_ids": [
+        "way/4921397",
+        "way/328048163"
+      ],
+      "lot_name": "E18 / E1",
+      "path": [
+        [
+          600.072,
+          211.247
+        ],
+        [
+          751.317,
+          190.335
+        ]
+      ],
+      "sides": [
+        -1,
+        1
+      ],
+      "angle_deg": 90,
+      "spacing_m": 2.7,
+      "depth_m": 5.2,
+      "reference_image_id": "uw-001",
+      "reference_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.303711316592%2C47.65540835198973%2C-122.29657712613955%2C47.66014207264014&bboxSR=4326&imageSR=4326&size=1024%2C1024&format=png",
+      "observed_original_image_pixels": [
+        [
+          348.42,
+          529.65
+        ],
+        [
+          637.15,
+          558.42
+        ]
+      ],
+      "crop_normalized_pixels": [
+        [
+          334,
+          527
+        ],
+        [
+          627,
+          571
+        ]
+      ],
+      "basis": "Manually interpreted row back-edge or shared head-to-head edge from visible repeated paint/cars and clear drive aisles. Bay spacing, depth and member width approximate. Grass islands and current building clearance must override row geometry."
+    },
+    {
+      "group_id": "uw-001",
+      "group_index": 1,
+      "source_ids": [
+        "way/4921397",
+        "way/328048163"
+      ],
+      "lot_name": "E18 / E1",
+      "path": [
+        [
+          596.126,
+          191.465
+        ],
+        [
+          744.279,
+          170.524
+        ]
+      ],
+      "sides": [
+        -1,
+        1
+      ],
+      "angle_deg": 90,
+      "spacing_m": 2.7,
+      "depth_m": 5.2,
+      "reference_image_id": "uw-001",
+      "reference_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.303711316592%2C47.65540835198973%2C-122.29657712613955%2C47.66014207264014&bboxSR=4326&imageSR=4326&size=1024%2C1024&format=png",
+      "observed_original_image_pixels": [
+        [
+          340.53,
+          555.15
+        ],
+        [
+          623.35,
+          583.92
+        ]
+      ],
+      "crop_normalized_pixels": [
+        [
+          326,
+          566
+        ],
+        [
+          613,
+          610
+        ]
+      ],
+      "basis": "Manually interpreted row back-edge or shared head-to-head edge from visible repeated paint/cars and clear drive aisles. Bay spacing, depth and member width approximate. Grass islands and current building clearance must override row geometry."
+    },
+    {
+      "group_id": "uw-001",
+      "group_index": 1,
+      "source_ids": [
+        "way/4921397",
+        "way/328048163"
+      ],
+      "lot_name": "E18 / E1",
+      "path": [
+        [
+          590.1,
+          173.69
+        ],
+        [
+          737.737,
+          152.744
+        ]
+      ],
+      "sides": [
+        -1,
+        1
+      ],
+      "angle_deg": 90,
+      "spacing_m": 2.7,
+      "depth_m": 5.2,
+      "reference_image_id": "uw-001",
+      "reference_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.303711316592%2C47.65540835198973%2C-122.29657712613955%2C47.66014207264014&bboxSR=4326&imageSR=4326&size=1024%2C1024&format=png",
+      "observed_original_image_pixels": [
+        [
+          328.71,
+          578.04
+        ],
+        [
+          610.54,
+          606.81
+        ]
+      ],
+      "crop_normalized_pixels": [
+        [
+          314,
+          601
+        ],
+        [
+          600,
+          645
+        ]
+      ],
+      "basis": "Manually interpreted row back-edge or shared head-to-head edge from visible repeated paint/cars and clear drive aisles. Bay spacing, depth and member width approximate. Grass islands and current building clearance must override row geometry."
+    },
+    {
+      "group_id": "uw-001",
+      "group_index": 1,
+      "source_ids": [
+        "way/4921397",
+        "way/328048163"
+      ],
+      "lot_name": "E18 / E1",
+      "path": [
+        [
+          584.58,
+          156.931
+        ],
+        [
+          730.671,
+          135.972
+        ]
+      ],
+      "sides": [
+        -1,
+        1
+      ],
+      "angle_deg": 90,
+      "spacing_m": 2.7,
+      "depth_m": 5.2,
+      "reference_image_id": "uw-001",
+      "reference_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.303711316592%2C47.65540835198973%2C-122.29657712613955%2C47.66014207264014&bboxSR=4326&imageSR=4326&size=1024%2C1024&format=png",
+      "observed_original_image_pixels": [
+        [
+          317.87,
+          599.62
+        ],
+        [
+          596.74,
+          628.39
+        ]
+      ],
+      "crop_normalized_pixels": [
+        [
+          303,
+          634
+        ],
+        [
+          586,
+          678
+        ]
+      ],
+      "basis": "Manually interpreted row back-edge or shared head-to-head edge from visible repeated paint/cars and clear drive aisles. Bay spacing, depth and member width approximate. Grass islands and current building clearance must override row geometry."
+    },
+    {
+      "group_id": "uw-001",
+      "group_index": 1,
+      "source_ids": [
+        "way/4921397",
+        "way/328048163"
+      ],
+      "lot_name": "E18 / E1",
+      "path": [
+        [
+          579.06,
+          140.173
+        ],
+        [
+          724.64,
+          118.702
+        ]
+      ],
+      "sides": [
+        -1,
+        1
+      ],
+      "angle_deg": 90,
+      "spacing_m": 2.7,
+      "depth_m": 5.2,
+      "reference_image_id": "uw-001",
+      "reference_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.303711316592%2C47.65540835198973%2C-122.29657712613955%2C47.66014207264014&bboxSR=4326&imageSR=4326&size=1024%2C1024&format=png",
+      "observed_original_image_pixels": [
+        [
+          307.03,
+          621.19
+        ],
+        [
+          584.92,
+          650.62
+        ]
+      ],
+      "crop_normalized_pixels": [
+        [
+          292,
+          667
+        ],
+        [
+          574,
+          712
+        ]
+      ],
+      "basis": "Manually interpreted row back-edge or shared head-to-head edge from visible repeated paint/cars and clear drive aisles. Bay spacing, depth and member width approximate. Grass islands and current building clearance must override row geometry."
+    },
+    {
+      "group_id": "uw-001",
+      "group_index": 1,
+      "source_ids": [
+        "way/4921397",
+        "way/328048163"
+      ],
+      "lot_name": "E18 / E1",
+      "path": [
+        [
+          573.544,
+          122.908
+        ],
+        [
+          718.605,
+          101.939
+        ]
+      ],
+      "sides": [
+        -1,
+        1
+      ],
+      "angle_deg": 90,
+      "spacing_m": 2.7,
+      "depth_m": 5.2,
+      "reference_image_id": "uw-001",
+      "reference_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.303711316592%2C47.65540835198973%2C-122.29657712613955%2C47.66014207264014&bboxSR=4326&imageSR=4326&size=1024%2C1024&format=png",
+      "observed_original_image_pixels": [
+        [
+          296.19,
+          643.42
+        ],
+        [
+          573.09,
+          672.19
+        ]
+      ],
+      "crop_normalized_pixels": [
+        [
+          281,
+          701
+        ],
+        [
+          562,
+          745
+        ]
+      ],
+      "basis": "Manually interpreted row back-edge or shared head-to-head edge from visible repeated paint/cars and clear drive aisles. Bay spacing, depth and member width approximate. Grass islands and current building clearance must override row geometry."
+    },
+    {
+      "group_id": "uw-001",
+      "group_index": 1,
+      "source_ids": [
+        "way/4921397",
+        "way/328048163"
+      ],
+      "lot_name": "E18 / E1",
+      "path": [
+        [
+          568.024,
+          106.15
+        ],
+        [
+          712.57,
+          85.176
+        ]
+      ],
+      "sides": [
+        -1,
+        1
+      ],
+      "angle_deg": 90,
+      "spacing_m": 2.7,
+      "depth_m": 5.2,
+      "reference_image_id": "uw-001",
+      "reference_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.303711316592%2C47.65540835198973%2C-122.29657712613955%2C47.66014207264014&bboxSR=4326&imageSR=4326&size=1024%2C1024&format=png",
+      "observed_original_image_pixels": [
+        [
+          285.35,
+          665.0
+        ],
+        [
+          561.27,
+          693.77
+        ]
+      ],
+      "crop_normalized_pixels": [
+        [
+          270,
+          734
+        ],
+        [
+          550,
+          778
+        ]
+      ],
+      "basis": "Manually interpreted row back-edge or shared head-to-head edge from visible repeated paint/cars and clear drive aisles. Bay spacing, depth and member width approximate. Grass islands and current building clearance must override row geometry."
+    },
+    {
+      "group_id": "uw-001",
+      "group_index": 1,
+      "source_ids": [
+        "way/4921397",
+        "way/328048163"
+      ],
+      "lot_name": "E18 / E1",
+      "path": [
+        [
+          562.517,
+          87.873
+        ],
+        [
+          706.534,
+          68.413
+        ]
+      ],
+      "sides": [
+        -1,
+        1
+      ],
+      "angle_deg": 90,
+      "spacing_m": 2.7,
+      "depth_m": 5.2,
+      "reference_image_id": "uw-001",
+      "reference_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.303711316592%2C47.65540835198973%2C-122.29657712613955%2C47.66014207264014&bboxSR=4326&imageSR=4326&size=1024%2C1024&format=png",
+      "observed_original_image_pixels": [
+        [
+          274.51,
+          688.54
+        ],
+        [
+          549.44,
+          715.35
+        ]
+      ],
+      "crop_normalized_pixels": [
+        [
+          259,
+          770
+        ],
+        [
+          538,
+          811
+        ]
+      ],
+      "basis": "Manually interpreted row back-edge or shared head-to-head edge from visible repeated paint/cars and clear drive aisles. Bay spacing, depth and member width approximate. Grass islands and current building clearance must override row geometry."
+    },
+    {
+      "group_id": "uw-001",
+      "group_index": 1,
+      "source_ids": [
+        "way/4921397",
+        "way/328048163"
+      ],
+      "lot_name": "E18 / E1",
+      "path": [
+        [
+          556.997,
+          71.115
+        ],
+        [
+          700.508,
+          50.637
+        ]
+      ],
+      "sides": [
+        -1,
+        1
+      ],
+      "angle_deg": 90,
+      "spacing_m": 2.7,
+      "depth_m": 5.2,
+      "reference_image_id": "uw-001",
+      "reference_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.303711316592%2C47.65540835198973%2C-122.29657712613955%2C47.66014207264014&bboxSR=4326&imageSR=4326&size=1024%2C1024&format=png",
+      "observed_original_image_pixels": [
+        [
+          263.67,
+          710.12
+        ],
+        [
+          537.62,
+          738.23
+        ]
+      ],
+      "crop_normalized_pixels": [
+        [
+          248,
+          803
+        ],
+        [
+          526,
+          846
+        ]
+      ],
+      "basis": "Manually interpreted row back-edge or shared head-to-head edge from visible repeated paint/cars and clear drive aisles. Bay spacing, depth and member width approximate. Grass islands and current building clearance must override row geometry."
+    },
+    {
+      "group_id": "uw-001",
+      "group_index": 1,
+      "source_ids": [
+        "way/4921397",
+        "way/328048163"
+      ],
+      "lot_name": "E18 / E1",
+      "path": [
+        [
+          551.481,
+          53.85
+        ],
+        [
+          694.988,
+          33.879
+        ]
+      ],
+      "sides": [
+        -1,
+        1
+      ],
+      "angle_deg": 90,
+      "spacing_m": 2.7,
+      "depth_m": 5.2,
+      "reference_image_id": "uw-001",
+      "reference_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.303711316592%2C47.65540835198973%2C-122.29657712613955%2C47.66014207264014&bboxSR=4326&imageSR=4326&size=1024%2C1024&format=png",
+      "observed_original_image_pixels": [
+        [
+          252.83,
+          732.35
+        ],
+        [
+          526.78,
+          759.81
+        ]
+      ],
+      "crop_normalized_pixels": [
+        [
+          237,
+          837
+        ],
+        [
+          515,
+          879
+        ]
+      ],
+      "basis": "Manually interpreted row back-edge or shared head-to-head edge from visible repeated paint/cars and clear drive aisles. Bay spacing, depth and member width approximate. Grass islands and current building clearance must override row geometry."
+    },
+    {
+      "group_id": "uw-001",
+      "group_index": 1,
+      "source_ids": [
+        "way/4921397",
+        "way/328048163"
+      ],
+      "lot_name": "E18 / E1",
+      "path": [
+        [
+          546.477,
+          37.096
+        ],
+        [
+          688.962,
+          16.103
+        ]
+      ],
+      "sides": [
+        -1,
+        1
+      ],
+      "angle_deg": 90,
+      "spacing_m": 2.7,
+      "depth_m": 5.2,
+      "reference_image_id": "uw-001",
+      "reference_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.303711316592%2C47.65540835198973%2C-122.29657712613955%2C47.66014207264014&bboxSR=4326&imageSR=4326&size=1024%2C1024&format=png",
+      "observed_original_image_pixels": [
+        [
+          242.98,
+          753.93
+        ],
+        [
+          514.95,
+          782.7
+        ]
+      ],
+      "crop_normalized_pixels": [
+        [
+          227,
+          870
+        ],
+        [
+          503,
+          914
+        ]
+      ],
+      "basis": "Manually interpreted row back-edge or shared head-to-head edge from visible repeated paint/cars and clear drive aisles. Bay spacing, depth and member width approximate. Grass islands and current building clearance must override row geometry."
+    },
+    {
+      "group_id": "uw-001",
+      "group_index": 1,
+      "source_ids": [
+        "way/4921397",
+        "way/328048163"
+      ],
+      "lot_name": "E18 / E1",
+      "path": [
+        [
+          540.961,
+          19.832
+        ],
+        [
+          682.927,
+          -0.66
+        ]
+      ],
+      "sides": [
+        -1,
+        1
+      ],
+      "angle_deg": 90,
+      "spacing_m": 2.7,
+      "depth_m": 5.2,
+      "reference_image_id": "uw-001",
+      "reference_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.303711316592%2C47.65540835198973%2C-122.29657712613955%2C47.66014207264014&bboxSR=4326&imageSR=4326&size=1024%2C1024&format=png",
+      "observed_original_image_pixels": [
+        [
+          232.14,
+          776.16
+        ],
+        [
+          503.13,
+          804.27
+        ]
+      ],
+      "crop_normalized_pixels": [
+        [
+          216,
+          904
+        ],
+        [
+          491,
+          947
+        ]
+      ],
+      "basis": "Manually interpreted row back-edge or shared head-to-head edge from visible repeated paint/cars and clear drive aisles. Bay spacing, depth and member width approximate. Grass islands and current building clearance must override row geometry."
+    },
+    {
+      "group_id": "uw-002",
+      "group_index": 2,
+      "source_ids": [
+        "way/53537684"
+      ],
+      "lot_name": "E2",
+      "path": [
+        [
+          650.422,
+          584.584
+        ],
+        [
+          724.276,
+          585.251
+        ]
+      ],
+      "sides": [
+        -1,
+        1
+      ],
+      "angle_deg": 90,
+      "spacing_m": 2.7,
+      "depth_m": 5.2,
+      "reference_image_id": "uw-002",
+      "reference_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.3017494915964%2C47.65975470345438%2C-122.29839002990032%2C47.661983654378645&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "observed_original_image_pixels": [
+        [
+          224.98,
+          293.73
+        ],
+        [
+          412.37,
+          293.73
+        ]
+      ],
+      "crop_normalized_pixels": [
+        [
+          140,
+          350
+        ],
+        [
+          850,
+          350
+        ]
+      ],
+      "basis": "Manually interpreted row back-edge or shared head-to-head edge from visible repeated paint/cars and clear drive aisles. Bay spacing, depth and member width approximate. Grass islands and current building clearance must override row geometry."
+    },
+    {
+      "group_id": "uw-002",
+      "group_index": 2,
+      "source_ids": [
+        "way/53537684"
+      ],
+      "lot_name": "E2",
+      "path": [
+        [
+          652.641,
+          569.28
+        ],
+        [
+          723.374,
+          569.918
+        ]
+      ],
+      "sides": [
+        -1,
+        1
+      ],
+      "angle_deg": 90,
+      "spacing_m": 2.7,
+      "depth_m": 5.2,
+      "reference_image_id": "uw-002",
+      "reference_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.3017494915964%2C47.65975470345438%2C-122.29839002990032%2C47.661983654378645&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "observed_original_image_pixels": [
+        [
+          230.26,
+          320.0
+        ],
+        [
+          409.73,
+          320.0
+        ]
+      ],
+      "crop_normalized_pixels": [
+        [
+          160,
+          500
+        ],
+        [
+          840,
+          500
+        ]
+      ],
+      "basis": "Manually interpreted row back-edge or shared head-to-head edge from visible repeated paint/cars and clear drive aisles. Bay spacing, depth and member width approximate. Grass islands and current building clearance must override row geometry."
+    },
+    {
+      "group_id": "uw-002",
+      "group_index": 2,
+      "source_ids": [
+        "way/53537684"
+      ],
+      "lot_name": "E2",
+      "path": [
+        [
+          663.26,
+          545.366
+        ],
+        [
+          703.809,
+          547.776
+        ]
+      ],
+      "sides": [
+        1
+      ],
+      "angle_deg": 90,
+      "spacing_m": 2.7,
+      "depth_m": 5.2,
+      "reference_image_id": "uw-002",
+      "reference_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.3017494915964%2C47.65975470345438%2C-122.29839002990032%2C47.661983654378645&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "observed_original_image_pixels": [
+        [
+          256.65,
+          361.15
+        ],
+        [
+          359.58,
+          357.65
+        ]
+      ],
+      "crop_normalized_pixels": [
+        [
+          260,
+          735
+        ],
+        [
+          650,
+          715
+        ]
+      ],
+      "basis": "Manually interpreted row back-edge or shared head-to-head edge from visible repeated paint/cars and clear drive aisles. Bay spacing, depth and member width approximate. Grass islands and current building clearance must override row geometry."
+    },
+    {
+      "group_id": "uw-007",
+      "group_index": 7,
+      "source_ids": [
+        "way/155186071"
+      ],
+      "lot_name": "E16",
+      "path": [
+        [
+          1512.985,
+          287.866
+        ],
+        [
+          1551.479,
+          288.219
+        ]
+      ],
+      "sides": [
+        -1
+      ],
+      "angle_deg": 90,
+      "spacing_m": 2.7,
+      "depth_m": 5.2,
+      "reference_image_id": "uw-007",
+      "reference_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.29052549182433%2C47.65699282695722%2C-122.28716573461399%2C47.659221448734&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "observed_original_image_pixels": [
+        [
+          268.21,
+          289.57
+        ],
+        [
+          365.86,
+          289.57
+        ]
+      ],
+      "crop_normalized_pixels": [
+        [
+          150,
+          190
+        ],
+        [
+          810,
+          190
+        ]
+      ],
+      "basis": "Manually interpreted row back-edge or shared head-to-head edge from visible repeated paint/cars and clear drive aisles. Bay spacing, depth and member width approximate. Grass islands and current building clearance must override row geometry."
+    },
+    {
+      "group_id": "uw-007",
+      "group_index": 7,
+      "source_ids": [
+        "way/155186071"
+      ],
+      "lot_name": "E16",
+      "path": [
+        [
+          1514.288,
+          272.988
+        ],
+        [
+          1528.578,
+          273.119
+        ]
+      ],
+      "sides": [
+        -1,
+        1
+      ],
+      "angle_deg": 90,
+      "spacing_m": 2.7,
+      "depth_m": 5.2,
+      "reference_image_id": "uw-007",
+      "reference_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.29052549182433%2C47.65699282695722%2C-122.28716573461399%2C47.659221448734&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "observed_original_image_pixels": [
+        [
+          271.17,
+          315.09
+        ],
+        [
+          307.42,
+          315.09
+        ]
+      ],
+      "crop_normalized_pixels": [
+        [
+          170,
+          450
+        ],
+        [
+          415,
+          450
+        ]
+      ],
+      "basis": "Manually interpreted row back-edge or shared head-to-head edge from visible repeated paint/cars and clear drive aisles. Bay spacing, depth and member width approximate. Grass islands and current building clearance must override row geometry."
+    },
+    {
+      "group_id": "uw-007",
+      "group_index": 7,
+      "source_ids": [
+        "way/155186071"
+      ],
+      "lot_name": "E16",
+      "path": [
+        [
+          1539.076,
+          273.215
+        ],
+        [
+          1555.698,
+          273.368
+        ]
+      ],
+      "sides": [
+        -1,
+        1
+      ],
+      "angle_deg": 90,
+      "spacing_m": 2.7,
+      "depth_m": 5.2,
+      "reference_image_id": "uw-007",
+      "reference_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.29052549182433%2C47.65699282695722%2C-122.28716573461399%2C47.659221448734&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "observed_original_image_pixels": [
+        [
+          334.05,
+          315.09
+        ],
+        [
+          376.22,
+          315.09
+        ]
+      ],
+      "crop_normalized_pixels": [
+        [
+          595,
+          450
+        ],
+        [
+          880,
+          450
+        ]
+      ],
+      "basis": "Manually interpreted row back-edge or shared head-to-head edge from visible repeated paint/cars and clear drive aisles. Bay spacing, depth and member width approximate. Grass islands and current building clearance must override row geometry."
+    },
+    {
+      "group_id": "uw-007",
+      "group_index": 7,
+      "source_ids": [
+        "way/155186071"
+      ],
+      "lot_name": "E16",
+      "path": [
+        [
+          1515.316,
+          256.39
+        ],
+        [
+          1551.476,
+          256.721
+        ]
+      ],
+      "sides": [
+        1
+      ],
+      "angle_deg": 90,
+      "spacing_m": 2.7,
+      "depth_m": 5.2,
+      "reference_image_id": "uw-007",
+      "reference_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.29052549182433%2C47.65699282695722%2C-122.28716573461399%2C47.659221448734&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "observed_original_image_pixels": [
+        [
+          273.39,
+          343.55
+        ],
+        [
+          365.12,
+          343.55
+        ]
+      ],
+      "crop_normalized_pixels": [
+        [
+          185,
+          740
+        ],
+        [
+          805,
+          740
+        ]
+      ],
+      "basis": "Manually interpreted row back-edge or shared head-to-head edge from visible repeated paint/cars and clear drive aisles. Bay spacing, depth and member width approximate. Grass islands and current building clearance must override row geometry."
+    },
+    {
+      "group_id": "uw-013",
+      "group_index": 13,
+      "source_ids": [
+        "way/160546420"
+      ],
+      "lot_name": "E8",
+      "path": [
+        [
+          718.55,
+          -223.753
+        ],
+        [
+          706.779,
+          -277.154
+        ]
+      ],
+      "sides": [
+        -1,
+        1
+      ],
+      "angle_deg": 90,
+      "spacing_m": 2.7,
+      "depth_m": 5.2,
+      "reference_image_id": "uw-013",
+      "reference_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.30148457429662%2C47.6523823778469%2C-122.29812557781055%2C47.65461132622387&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "observed_original_image_pixels": [
+        [
+          328.88,
+          275.79
+        ],
+        [
+          297.79,
+          367.15
+        ]
+      ],
+      "crop_normalized_pixels": [
+        [
+          540,
+          200
+        ],
+        [
+          400,
+          820
+        ]
+      ],
+      "basis": "Manually interpreted row back-edge or shared head-to-head edge from visible repeated paint/cars and clear drive aisles. Bay spacing, depth and member width approximate. Grass islands and current building clearance must override row geometry."
+    },
+    {
+      "group_id": "uw-013",
+      "group_index": 13,
+      "source_ids": [
+        "way/160546420"
+      ],
+      "lot_name": "E8",
+      "path": [
+        [
+          738.722,
+          -228.299
+        ],
+        [
+          726.842,
+          -269.666
+        ]
+      ],
+      "sides": [
+        -1
+      ],
+      "angle_deg": 90,
+      "spacing_m": 2.7,
+      "depth_m": 5.2,
+      "reference_image_id": "uw-013",
+      "reference_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.30148457429662%2C47.6523823778469%2C-122.29812557781055%2C47.65461132622387&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "observed_original_image_pixels": [
+        [
+          379.95,
+          283.9
+        ],
+        [
+          348.86,
+          354.63
+        ]
+      ],
+      "crop_normalized_pixels": [
+        [
+          770,
+          255
+        ],
+        [
+          630,
+          735
+        ]
+      ],
+      "basis": "Manually interpreted row back-edge or shared head-to-head edge from visible repeated paint/cars and clear drive aisles. Bay spacing, depth and member width approximate. Grass islands and current building clearance must override row geometry."
+    },
+    {
+      "group_id": "uw-013",
+      "group_index": 13,
+      "source_ids": [
+        "way/160546420"
+      ],
+      "lot_name": "E8",
+      "path": [
+        [
+          699.358,
+          -230.803
+        ],
+        [
+          686.672,
+          -279.914
+        ]
+      ],
+      "sides": [
+        1
+      ],
+      "angle_deg": 90,
+      "spacing_m": 2.7,
+      "depth_m": 5.2,
+      "reference_image_id": "uw-013",
+      "reference_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.30148457429662%2C47.6523823778469%2C-122.29812557781055%2C47.65461132622387&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "observed_original_image_pixels": [
+        [
+          280.02,
+          287.58
+        ],
+        [
+          246.71,
+          371.57
+        ]
+      ],
+      "crop_normalized_pixels": [
+        [
+          320,
+          280
+        ],
+        [
+          170,
+          850
+        ]
+      ],
+      "basis": "Manually interpreted row back-edge or shared head-to-head edge from visible repeated paint/cars and clear drive aisles. Bay spacing, depth and member width approximate. Grass islands and current building clearance must override row geometry."
+    },
+    {
+      "group_id": "uw-015",
+      "group_index": 15,
+      "source_ids": [
+        "way/252683144",
+        "relation/7030059"
+      ],
+      "lot_name": "E12 / E19",
+      "path": [
+        [
+          407.379,
+          -764.475
+        ],
+        [
+          645.766,
+          -769.796
+        ]
+      ],
+      "sides": [
+        -1,
+        1
+      ],
+      "angle_deg": 90,
+      "spacing_m": 2.7,
+      "depth_m": 5.2,
+      "reference_image_id": "uw-015",
+      "reference_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.30437932782536%2C47.64756728678514%2C-122.29904942382981%2C47.65110454346681&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "observed_original_image_pixels": [
+        [
+          49.56,
+          373.64
+        ],
+        [
+          430.61,
+          381.71
+        ]
+      ],
+      "crop_normalized_pixels": [
+        [
+          55,
+          633
+        ],
+        [
+          682,
+          653
+        ]
+      ],
+      "basis": "Manually interpreted row back-edge or shared head-to-head edge from visible repeated paint/cars and clear drive aisles. Bay spacing, depth and member width approximate. Grass islands and current building clearance must override row geometry."
+    },
+    {
+      "group_id": "uw-015",
+      "group_index": 15,
+      "source_ids": [
+        "way/252683144",
+        "relation/7030059"
+      ],
+      "lot_name": "E12 / E19",
+      "path": [
+        [
+          407.57,
+          -785.753
+        ],
+        [
+          645.958,
+          -791.075
+        ]
+      ],
+      "sides": [
+        -1,
+        1
+      ],
+      "angle_deg": 90,
+      "spacing_m": 2.7,
+      "depth_m": 5.2,
+      "reference_image_id": "uw-015",
+      "reference_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.30437932782536%2C47.64756728678514%2C-122.29904942382981%2C47.65110454346681&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "observed_original_image_pixels": [
+        [
+          49.56,
+          396.63
+        ],
+        [
+          430.61,
+          404.7
+        ]
+      ],
+      "crop_normalized_pixels": [
+        [
+          55,
+          690
+        ],
+        [
+          682,
+          710
+        ]
+      ],
+      "basis": "Manually interpreted row back-edge or shared head-to-head edge from visible repeated paint/cars and clear drive aisles. Bay spacing, depth and member width approximate. Grass islands and current building clearance must override row geometry."
+    },
+    {
+      "group_id": "uw-015",
+      "group_index": 15,
+      "source_ids": [
+        "way/252683144",
+        "relation/7030059"
+      ],
+      "lot_name": "E12 / E19",
+      "path": [
+        [
+          407.757,
+          -806.658
+        ],
+        [
+          646.146,
+          -811.98
+        ]
+      ],
+      "sides": [
+        -1,
+        1
+      ],
+      "angle_deg": 90,
+      "spacing_m": 2.7,
+      "depth_m": 5.2,
+      "reference_image_id": "uw-015",
+      "reference_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.30437932782536%2C47.64756728678514%2C-122.29904942382981%2C47.65110454346681&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "observed_original_image_pixels": [
+        [
+          49.56,
+          419.22
+        ],
+        [
+          430.61,
+          427.29
+        ]
+      ],
+      "crop_normalized_pixels": [
+        [
+          55,
+          746
+        ],
+        [
+          682,
+          766
+        ]
+      ],
+      "basis": "Manually interpreted row back-edge or shared head-to-head edge from visible repeated paint/cars and clear drive aisles. Bay spacing, depth and member width approximate. Grass islands and current building clearance must override row geometry."
+    },
+    {
+      "group_id": "uw-015",
+      "group_index": 15,
+      "source_ids": [
+        "way/252683144",
+        "relation/7030059"
+      ],
+      "lot_name": "E12 / E19",
+      "path": [
+        [
+          407.942,
+          -827.19
+        ],
+        [
+          646.332,
+          -832.512
+        ]
+      ],
+      "sides": [
+        -1,
+        1
+      ],
+      "angle_deg": 90,
+      "spacing_m": 2.7,
+      "depth_m": 5.2,
+      "reference_image_id": "uw-015",
+      "reference_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.30437932782536%2C47.64756728678514%2C-122.29904942382981%2C47.65110454346681&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "observed_original_image_pixels": [
+        [
+          49.56,
+          441.4
+        ],
+        [
+          430.61,
+          449.47
+        ]
+      ],
+      "crop_normalized_pixels": [
+        [
+          55,
+          801
+        ],
+        [
+          682,
+          821
+        ]
+      ],
+      "basis": "Manually interpreted row back-edge or shared head-to-head edge from visible repeated paint/cars and clear drive aisles. Bay spacing, depth and member width approximate. Grass islands and current building clearance must override row geometry."
+    },
+    {
+      "group_id": "uw-015",
+      "group_index": 15,
+      "source_ids": [
+        "way/252683144",
+        "relation/7030059"
+      ],
+      "lot_name": "E12 / E19",
+      "path": [
+        [
+          413.848,
+          -849.911
+        ],
+        [
+          517.282,
+          -854.208
+        ]
+      ],
+      "sides": [
+        1
+      ],
+      "angle_deg": 90,
+      "spacing_m": 2.7,
+      "depth_m": 5.2,
+      "reference_image_id": "uw-015",
+      "reference_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.30437932782536%2C47.64756728678514%2C-122.29904942382981%2C47.65110454346681&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "observed_original_image_pixels": [
+        [
+          58.67,
+          466.01
+        ],
+        [
+          223.98,
+          471.65
+        ]
+      ],
+      "crop_normalized_pixels": [
+        [
+          70,
+          862
+        ],
+        [
+          342,
+          876
+        ]
+      ],
+      "basis": "Manually interpreted row back-edge or shared head-to-head edge from visible repeated paint/cars and clear drive aisles. Bay spacing, depth and member width approximate. Grass islands and current building clearance must override row geometry."
+    },
+    {
+      "group_id": "uw-017",
+      "group_index": 17,
+      "source_ids": [
+        "way/262266605"
+      ],
+      "lot_name": "E14",
+      "path": [
+        [
+          847.952,
+          312.032
+        ],
+        [
+          927.159,
+          322.095
+        ]
+      ],
+      "sides": [
+        -1
+      ],
+      "angle_deg": 60,
+      "spacing_m": 2.7,
+      "depth_m": 5.2,
+      "reference_image_id": "uw-017",
+      "reference_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.29914358200617%2C47.657265572400085%2C-122.2957841711138%2C47.659494448232536&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "observed_original_image_pixels": [
+        [
+          223.43,
+          289.74
+        ],
+        [
+          424.61,
+          273.73
+        ]
+      ],
+      "crop_normalized_pixels": [
+        [
+          140,
+          330
+        ],
+        [
+          890,
+          240
+        ]
+      ],
+      "basis": "Manually interpreted row back-edge or shared head-to-head edge from visible repeated paint/cars and clear drive aisles. Bay spacing, depth and member width approximate. Grass islands and current building clearance must override row geometry."
+    },
+    {
+      "group_id": "uw-017",
+      "group_index": 17,
+      "source_ids": [
+        "way/262266605"
+      ],
+      "lot_name": "E14",
+      "path": [
+        [
+          848.243,
+          279.846
+        ],
+        [
+          926.403,
+          288.861
+        ]
+      ],
+      "sides": [
+        1
+      ],
+      "angle_deg": 60,
+      "spacing_m": 2.7,
+      "depth_m": 5.2,
+      "reference_image_id": "uw-017",
+      "reference_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.29914358200617%2C47.657265572400085%2C-122.2957841711138%2C47.659494448232536&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "observed_original_image_pixels": [
+        [
+          223.43,
+          344.91
+        ],
+        [
+          421.93,
+          330.68
+        ]
+      ],
+      "crop_normalized_pixels": [
+        [
+          140,
+          640
+        ],
+        [
+          880,
+          560
+        ]
+      ],
+      "basis": "Manually interpreted row back-edge or shared head-to-head edge from visible repeated paint/cars and clear drive aisles. Bay spacing, depth and member width approximate. Grass islands and current building clearance must override row geometry."
+    },
+    {
+      "group_id": "uw-043",
+      "group_index": 43,
+      "source_ids": [
+        "way/53533409"
+      ],
+      "lot_name": "W38",
+      "path": [
+        [
+          -607.155,
+          -286.455
+        ],
+        [
+          -571.266,
+          -323.005
+        ]
+      ],
+      "sides": [
+        1
+      ],
+      "angle_deg": 90,
+      "spacing_m": 2.7,
+      "depth_m": 5.2,
+      "reference_image_id": "uw-043",
+      "reference_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31871784984753%2C47.6520769202351%2C-122.31535960100634%2C47.65430637702875&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "observed_original_image_pixels": [
+        [
+          247.59,
+          304.85
+        ],
+        [
+          337.85,
+          368.06
+        ]
+      ],
+      "crop_normalized_pixels": [
+        [
+          135,
+          385
+        ],
+        [
+          590,
+          865
+        ]
+      ],
+      "basis": "Manually interpreted row back-edge or shared head-to-head edge from visible repeated paint/cars and clear drive aisles. Bay spacing, depth and member width approximate. Grass islands and current building clearance must override row geometry."
+    },
+    {
+      "group_id": "uw-043",
+      "group_index": 43,
+      "source_ids": [
+        "way/53533409"
+      ],
+      "lot_name": "W38",
+      "path": [
+        [
+          -585.226,
+          -291.254
+        ],
+        [
+          -567.517,
+          -304.923
+        ]
+      ],
+      "sides": [
+        -1,
+        1
+      ],
+      "angle_deg": 90,
+      "spacing_m": 2.7,
+      "depth_m": 5.2,
+      "reference_image_id": "uw-043",
+      "reference_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31871784984753%2C47.6520769202351%2C-122.31535960100634%2C47.65430637702875&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "observed_original_image_pixels": [
+        [
+          303.13,
+          313.41
+        ],
+        [
+          347.77,
+          337.12
+        ]
+      ],
+      "crop_normalized_pixels": [
+        [
+          415,
+          450
+        ],
+        [
+          640,
+          630
+        ]
+      ],
+      "basis": "Manually interpreted row back-edge or shared head-to-head edge from visible repeated paint/cars and clear drive aisles. Bay spacing, depth and member width approximate. Grass islands and current building clearance must override row geometry."
+    },
+    {
+      "group_id": "uw-043",
+      "group_index": 43,
+      "source_ids": [
+        "way/53533409"
+      ],
+      "lot_name": "W38",
+      "path": [
+        [
+          -602.625,
+          -268.366
+        ],
+        [
+          -561.633,
+          -263.013
+        ]
+      ],
+      "sides": [
+        -1
+      ],
+      "angle_deg": 90,
+      "spacing_m": 2.7,
+      "depth_m": 5.2,
+      "reference_image_id": "uw-043",
+      "reference_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31871784984753%2C47.6520769202351%2C-122.31535960100634%2C47.65430637702875&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "observed_original_image_pixels": [
+        [
+          259.49,
+          273.91
+        ],
+        [
+          363.63,
+          265.35
+        ]
+      ],
+      "crop_normalized_pixels": [
+        [
+          195,
+          150
+        ],
+        [
+          720,
+          85
+        ]
+      ],
+      "basis": "Manually interpreted row back-edge or shared head-to-head edge from visible repeated paint/cars and clear drive aisles. Bay spacing, depth and member width approximate. Grass islands and current building clearance must override row geometry."
+    },
+    {
+      "group_id": "uw-043",
+      "group_index": 43,
+      "source_ids": [
+        "way/53533409"
+      ],
+      "lot_name": "W38",
+      "path": [
+        [
+          -551.428,
+          -267.915
+        ],
+        [
+          -551.035,
+          -312.458
+        ]
+      ],
+      "sides": [
+        -1
+      ],
+      "angle_deg": 90,
+      "spacing_m": 2.7,
+      "depth_m": 5.2,
+      "reference_image_id": "uw-043",
+      "reference_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31871784984753%2C47.6520769202351%2C-122.31535960100634%2C47.65430637702875&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "observed_original_image_pixels": [
+        [
+          389.42,
+          273.91
+        ],
+        [
+          389.42,
+          350.29
+        ]
+      ],
+      "crop_normalized_pixels": [
+        [
+          850,
+          150
+        ],
+        [
+          850,
+          730
+        ]
+      ],
+      "basis": "Manually interpreted row back-edge or shared head-to-head edge from visible repeated paint/cars and clear drive aisles. Bay spacing, depth and member width approximate. Grass islands and current building clearance must override row geometry."
+    },
+    {
+      "group_id": "uw-044",
+      "group_index": 44,
+      "source_ids": [
+        "way/54029697"
+      ],
+      "lot_name": "N05",
+      "path": [
+        [
+          29.251,
+          544.352
+        ],
+        [
+          35.61,
+          457.943
+        ]
+      ],
+      "sides": [
+        -1,
+        1
+      ],
+      "angle_deg": 90,
+      "spacing_m": 2.7,
+      "depth_m": 5.2,
+      "reference_image_id": "uw-044",
+      "reference_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31054396350052%2C47.659284254482316%2C-122.30718490373575%2C47.66151346513864&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "observed_original_image_pixels": [
+        [
+          323.54,
+          263.53
+        ],
+        [
+          337.72,
+          411.75
+        ]
+      ],
+      "crop_normalized_pixels": [
+        [
+          510,
+          260
+        ],
+        [
+          550,
+          890
+        ]
+      ],
+      "basis": "Manually interpreted row back-edge or shared head-to-head edge from visible repeated paint/cars and clear drive aisles. Bay spacing, depth and member width approximate. Grass islands and current building clearance must override row geometry."
+    },
+    {
+      "group_id": "uw-044",
+      "group_index": 44,
+      "source_ids": [
+        "way/54029697"
+      ],
+      "lot_name": "N05",
+      "path": [
+        [
+          45.609,
+          543.125
+        ],
+        [
+          53.012,
+          464.96
+        ]
+      ],
+      "sides": [
+        -1
+      ],
+      "angle_deg": 90,
+      "spacing_m": 2.7,
+      "depth_m": 5.2,
+      "reference_image_id": "uw-044",
+      "reference_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31054396350052%2C47.659284254482316%2C-122.30718490373575%2C47.66151346513864&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "observed_original_image_pixels": [
+        [
+          365.02,
+          265.89
+        ],
+        [
+          382.04,
+          399.99
+        ]
+      ],
+      "crop_normalized_pixels": [
+        [
+          627,
+          270
+        ],
+        [
+          675,
+          840
+        ]
+      ],
+      "basis": "Manually interpreted row back-edge or shared head-to-head edge from visible repeated paint/cars and clear drive aisles. Bay spacing, depth and member width approximate. Grass islands and current building clearance must override row geometry."
+    },
+    {
+      "group_id": "uw-044",
+      "group_index": 44,
+      "source_ids": [
+        "way/54029697"
+      ],
+      "lot_name": "N05",
+      "path": [
+        [
+          11.114,
+          541.445
+        ],
+        [
+          17.424,
+          460.526
+        ]
+      ],
+      "sides": [
+        1
+      ],
+      "angle_deg": 90,
+      "spacing_m": 2.7,
+      "depth_m": 5.2,
+      "reference_image_id": "uw-044",
+      "reference_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31054396350052%2C47.659284254482316%2C-122.30718490373575%2C47.66151346513864&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "observed_original_image_pixels": [
+        [
+          277.45,
+          268.24
+        ],
+        [
+          291.63,
+          407.05
+        ]
+      ],
+      "crop_normalized_pixels": [
+        [
+          380,
+          280
+        ],
+        [
+          420,
+          870
+        ]
+      ],
+      "basis": "Manually interpreted row back-edge or shared head-to-head edge from visible repeated paint/cars and clear drive aisles. Bay spacing, depth and member width approximate. Grass islands and current building clearance must override row geometry."
+    },
+    {
+      "group_id": "uw-045",
+      "group_index": 45,
+      "source_ids": [
+        "way/65498556"
+      ],
+      "lot_name": "W10",
+      "path": [
+        [
+          -518.841,
+          -74.09
+        ],
+        [
+          -517.671,
+          -95.336
+        ]
+      ],
+      "sides": [
+        -1,
+        1
+      ],
+      "angle_deg": 90,
+      "spacing_m": 2.7,
+      "depth_m": 5.2,
+      "reference_image_id": "uw-045",
+      "reference_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31778781568943%2C47.65391518683518%2C-122.31442940883245%2C47.65614461490807&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "observed_original_image_pixels": [
+        [
+          299.2,
+          292.39
+        ],
+        [
+          301.69,
+          328.83
+        ]
+      ],
+      "crop_normalized_pixels": [
+        [
+          375,
+          250
+        ],
+        [
+          390,
+          580
+        ]
+      ],
+      "basis": "Manually interpreted row back-edge or shared head-to-head edge from visible repeated paint/cars and clear drive aisles. Bay spacing, depth and member width approximate. Grass islands and current building clearance must override row geometry."
+    },
+    {
+      "group_id": "uw-045",
+      "group_index": 45,
+      "source_ids": [
+        "way/65498556"
+      ],
+      "lot_name": "W10",
+      "path": [
+        [
+          -504.109,
+          -72.027
+        ],
+        [
+          -503.209,
+          -99.717
+        ]
+      ],
+      "sides": [
+        -1,
+        1
+      ],
+      "angle_deg": 90,
+      "spacing_m": 2.7,
+      "depth_m": 5.2,
+      "reference_image_id": "uw-045",
+      "reference_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31778781568943%2C47.65391518683518%2C-122.31442940883245%2C47.65614461490807&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "observed_original_image_pixels": [
+        [
+          336.63,
+          289.07
+        ],
+        [
+          338.29,
+          336.56
+        ]
+      ],
+      "crop_normalized_pixels": [
+        [
+          600,
+          220
+        ],
+        [
+          610,
+          650
+        ]
+      ],
+      "basis": "Manually interpreted row back-edge or shared head-to-head edge from visible repeated paint/cars and clear drive aisles. Bay spacing, depth and member width approximate. Grass islands and current building clearance must override row geometry."
+    },
+    {
+      "group_id": "uw-045",
+      "group_index": 45,
+      "source_ids": [
+        "way/65498556"
+      ],
+      "lot_name": "W10",
+      "path": [
+        [
+          -533.848,
+          -82.274
+        ],
+        [
+          -532.081,
+          -96.751
+        ]
+      ],
+      "sides": [
+        1
+      ],
+      "angle_deg": 90,
+      "spacing_m": 2.7,
+      "depth_m": 5.2,
+      "reference_image_id": "uw-045",
+      "reference_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31778781568943%2C47.65391518683518%2C-122.31442940883245%2C47.65614461490807&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "observed_original_image_pixels": [
+        [
+          260.93,
+          306.19
+        ],
+        [
+          265.09,
+          331.04
+        ]
+      ],
+      "crop_normalized_pixels": [
+        [
+          145,
+          375
+        ],
+        [
+          170,
+          600
+        ]
+      ],
+      "basis": "Manually interpreted row back-edge or shared head-to-head edge from visible repeated paint/cars and clear drive aisles. Bay spacing, depth and member width approximate. Grass islands and current building clearance must override row geometry."
+    },
+    {
+      "group_id": "uw-045",
+      "group_index": 45,
+      "source_ids": [
+        "way/65498556"
+      ],
+      "lot_name": "W10",
+      "path": [
+        [
+          -515.327,
+          -63.752
+        ],
+        [
+          -500.249,
+          -63.619
+        ]
+      ],
+      "sides": [
+        -1
+      ],
+      "angle_deg": 90,
+      "spacing_m": 2.7,
+      "depth_m": 5.2,
+      "reference_image_id": "uw-045",
+      "reference_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31778781568943%2C47.65391518683518%2C-122.31442940883245%2C47.65614461490807&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "observed_original_image_pixels": [
+        [
+          308.35,
+          274.72
+        ],
+        [
+          346.61,
+          274.72
+        ]
+      ],
+      "crop_normalized_pixels": [
+        [
+          430,
+          90
+        ],
+        [
+          660,
+          90
+        ]
+      ],
+      "basis": "Manually interpreted row back-edge or shared head-to-head edge from visible repeated paint/cars and clear drive aisles. Bay spacing, depth and member width approximate. Grass islands and current building clearance must override row geometry."
+    },
+    {
+      "group_id": "uw-046",
+      "group_index": 46,
+      "source_ids": [
+        "way/99063488"
+      ],
+      "lot_name": "W41",
+      "path": [
+        [
+          -588.366,
+          84.308
+        ],
+        [
+          -571.325,
+          84.0
+        ]
+      ],
+      "sides": [
+        -1,
+        1
+      ],
+      "angle_deg": 90,
+      "spacing_m": 2.7,
+      "depth_m": 5.2,
+      "reference_image_id": "uw-046",
+      "reference_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31871405475829%2C47.655511322677675%2C-122.31535558394069%2C47.657740776932556&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "observed_original_image_pixels": [
+        [
+          302.82,
+          323.93
+        ],
+        [
+          346.05,
+          324.72
+        ]
+      ],
+      "crop_normalized_pixels": [
+        [
+          355,
+          550
+        ],
+        [
+          720,
+          560
+        ]
+      ],
+      "basis": "Manually interpreted row back-edge or shared head-to-head edge from visible repeated paint/cars and clear drive aisles. Bay spacing, depth and member width approximate. Grass islands and current building clearance must override row geometry."
+    },
+    {
+      "group_id": "uw-051",
+      "group_index": 51,
+      "source_ids": [
+        "way/262230357"
+      ],
+      "lot_name": "W12",
+      "path": [
+        [
+          -362.509,
+          -109.879
+        ],
+        [
+          -364.133,
+          -149.108
+        ]
+      ],
+      "sides": [
+        -1,
+        1
+      ],
+      "angle_deg": 60,
+      "spacing_m": 2.7,
+      "depth_m": 5.2,
+      "reference_image_id": "uw-051",
+      "reference_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31580631525004%2C47.65343819457911%2C-122.31244785548728%2C47.655667564563885&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "observed_original_image_pixels": [
+        [
+          317.49,
+          265.21
+        ],
+        [
+          312.49,
+          332.45
+        ]
+      ],
+      "crop_normalized_pixels": [
+        [
+          490,
+          170
+        ],
+        [
+          470,
+          575
+        ]
+      ],
+      "basis": "Manually interpreted row back-edge or shared head-to-head edge from visible repeated paint/cars and clear drive aisles. Bay spacing, depth and member width approximate. Grass islands and current building clearance must override row geometry."
+    },
+    {
+      "group_id": "uw-051",
+      "group_index": 51,
+      "source_ids": [
+        "way/262230357"
+      ],
+      "lot_name": "W12",
+      "path": [
+        [
+          -347.252,
+          -107.807
+        ],
+        [
+          -349.09,
+          -178.507
+        ]
+      ],
+      "sides": [
+        -1
+      ],
+      "angle_deg": 90,
+      "spacing_m": 2.7,
+      "depth_m": 5.2,
+      "reference_image_id": "uw-051",
+      "reference_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31580631525004%2C47.65343819457911%2C-122.31244785548728%2C47.655667564563885&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "observed_original_image_pixels": [
+        [
+          356.26,
+          261.89
+        ],
+        [
+          350.0,
+          383.08
+        ]
+      ],
+      "crop_normalized_pixels": [
+        [
+          645,
+          150
+        ],
+        [
+          620,
+          880
+        ]
+      ],
+      "basis": "Manually interpreted row back-edge or shared head-to-head edge from visible repeated paint/cars and clear drive aisles. Bay spacing, depth and member width approximate. Grass islands and current building clearance must override row geometry."
+    },
+    {
+      "group_id": "uw-051",
+      "group_index": 51,
+      "source_ids": [
+        "way/262230357"
+      ],
+      "lot_name": "W12",
+      "path": [
+        [
+          -374.232,
+          -121.602
+        ],
+        [
+          -375.308,
+          -167.12
+        ]
+      ],
+      "sides": [
+        1
+      ],
+      "angle_deg": 60,
+      "spacing_m": 2.7,
+      "depth_m": 5.2,
+      "reference_image_id": "uw-051",
+      "reference_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31580631525004%2C47.65343819457911%2C-122.31244785548728%2C47.655667564563885&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "observed_original_image_pixels": [
+        [
+          287.48,
+          285.14
+        ],
+        [
+          283.73,
+          363.16
+        ]
+      ],
+      "crop_normalized_pixels": [
+        [
+          370,
+          290
+        ],
+        [
+          355,
+          760
+        ]
+      ],
+      "basis": "Manually interpreted row back-edge or shared head-to-head edge from visible repeated paint/cars and clear drive aisles. Bay spacing, depth and member width approximate. Grass islands and current building clearance must override row geometry."
+    }
+  ],
+  "references": [
+    {
+      "id": "uw-001",
+      "name": "E18 / E1",
+      "source_ids": [
+        "way/4921397",
+        "way/328048163"
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.303711316592%2C47.65540835198973%2C-122.29657712613955%2C47.66014207264014&bboxSR=4326&imageSR=4326&size=1024%2C1024&format=png",
+      "imagery_extent": {
+        "xmin": -122.303711316592,
+        "ymin": 47.65420811708871,
+        "xmax": -122.29657712613955,
+        "ymax": 47.661342307541155,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "crop_original_pixels": [
+        19.285023596478467,
+        185.07134915649002,
+        1004.7115557830217,
+        838.9274463987097
+      ],
+      "image_size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "id": "uw-002",
+      "name": "E2",
+      "source_ids": [
+        "way/53537684"
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.3017494915964%2C47.65975470345438%2C-122.29839002990032%2C47.661983654378645&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "imagery_extent": {
+        "xmin": -122.3017494915964,
+        "ymin": 47.659189448068474,
+        "xmax": -122.29839002990032,
+        "ymax": 47.66254890976455,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "crop_original_pixels": [
+        188.03006760244335,
+        232.44174893633658,
+        451.95862888064204,
+        407.5542711891309
+      ],
+      "image_size": [
+        640,
+        640
+      ]
+    },
+    {
+      "id": "uw-007",
+      "name": "E16",
+      "source_ids": [
+        "way/155186071"
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.29052549182433%2C47.65699282695722%2C-122.28716573461399%2C47.659221448734&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "imagery_extent": {
+        "xmin": -122.29052549182434,
+        "ymin": 47.656427259240445,
+        "xmax": -122.287165734614,
+        "ymax": 47.65978701645078,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "crop_original_pixels": [
+        246.01182062581182,
+        270.9235568911474,
+        393.97529078926317,
+        369.0719025574915
+      ],
+      "image_size": [
+        640,
+        640
+      ]
+    },
+    {
+      "id": "uw-013",
+      "name": "E8",
+      "source_ids": [
+        "way/160546420"
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.30148457429662%2C47.6523823778469%2C-122.29812557781055%2C47.65461132622387&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "imagery_extent": {
+        "xmin": -122.30148457429661,
+        "ymin": 47.65181735379235,
+        "xmax": -122.29812557781054,
+        "ymax": 47.655176350278424,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "crop_original_pixels": [
+        208.9634098646866,
+        246.32068413509296,
+        431.02461316873865,
+        393.6750982013359
+      ],
+      "image_size": [
+        640,
+        640
+      ]
+    },
+    {
+      "id": "uw-015",
+      "name": "E12 / E19",
+      "source_ids": [
+        "way/252683144",
+        "relation/7030059"
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.30437932782536%2C47.64756728678514%2C-122.29904942382981%2C47.65110454346681&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "imagery_extent": {
+        "xmin": -122.30437932782536,
+        "ymin": 47.6466709631282,
+        "xmax": -122.29904942382981,
+        "ymax": 47.652000867123746,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "crop_original_pixels": [
+        16.13081709539925,
+        118.33379064670638,
+        623.867059479482,
+        521.6654615961111
+      ],
+      "image_size": [
+        640,
+        640
+      ]
+    },
+    {
+      "id": "uw-017",
+      "name": "E14",
+      "source_ids": [
+        "way/262266605"
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.29914358200617%2C47.657265572400085%2C-122.2957841711138%2C47.659494448232536&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "imagery_extent": {
+        "xmin": -122.29914358200617,
+        "ymin": 47.65670030487012,
+        "xmax": -122.2957841711138,
+        "ymax": 47.66005971576249,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "crop_original_pixels": [
+        185.8739382711678,
+        231.0128302321624,
+        454.11483589221467,
+        408.9832165704539
+      ],
+      "image_size": [
+        640,
+        640
+      ]
+    },
+    {
+      "id": "uw-043",
+      "name": "W38",
+      "source_ids": [
+        "way/53533409"
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31871784984753%2C47.6520769202351%2C-122.31535960100634%2C47.65430637702875&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "imagery_extent": {
+        "xmin": -122.31871784984757,
+        "ymin": 47.651512524211334,
+        "xmax": -122.31535960100638,
+        "ymax": 47.65487077305253,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "crop_original_pixels": [
+        220.81094280761187,
+        254.15280447781106,
+        419.1767463604788,
+        385.8428636759009
+      ],
+      "image_size": [
+        640,
+        640
+      ]
+    },
+    {
+      "id": "uw-044",
+      "name": "N05",
+      "source_ids": [
+        "way/54029697"
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31054396350052%2C47.659284254482316%2C-122.30718490373575%2C47.66151346513864&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "imagery_extent": {
+        "xmin": -122.31054396350052,
+        "ymin": 47.65871932992809,
+        "xmax": -122.30718490373575,
+        "ymax": 47.662078389692866,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "crop_original_pixels": [
+        142.73848994985875,
+        202.36341939561387,
+        497.25206836887764,
+        437.6332575718602
+      ],
+      "image_size": [
+        640,
+        640
+      ]
+    },
+    {
+      "id": "uw-045",
+      "name": "W10",
+      "source_ids": [
+        "way/65498556"
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31778781568943%2C47.65391518683518%2C-122.31442940883245%2C47.65614461490807&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "imagery_extent": {
+        "xmin": -122.31778781568939,
+        "ymin": 47.65335069744313,
+        "xmax": -122.31442940883241,
+        "ymax": 47.656709104300106,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "crop_original_pixels": [
+        236.81057432940347,
+        264.77792704157173,
+        403.17672608056523,
+        375.2176042975995
+      ],
+      "image_size": [
+        640,
+        640
+      ]
+    },
+    {
+      "id": "uw-046",
+      "name": "W41",
+      "source_ids": [
+        "way/99063488"
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31871405475829%2C47.655511322677675%2C-122.31535558394069%2C47.657740776932556&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "imagery_extent": {
+        "xmin": -122.31871405475827,
+        "ymin": 47.654946814396325,
+        "xmax": -122.31535558394067,
+        "ymax": 47.65830528521393,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "crop_original_pixels": [
+        260.7664707478044,
+        280.68104809944384,
+        379.22037501460915,
+        359.31432361010764
+      ],
+      "image_size": [
+        640,
+        640
+      ]
+    },
+    {
+      "id": "uw-051",
+      "name": "W12",
+      "source_ids": [
+        "way/262230357"
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-122.31580631525004%2C47.65343819457911%2C-122.31244785548728%2C47.655667564563885&bboxSR=4326&imageSR=4326&size=640%2C640&format=png",
+      "imagery_extent": {
+        "xmin": -122.31580631525006,
+        "ymin": 47.65287364969012,
+        "xmax": -122.31244785548729,
+        "ymax": 47.65623210945289,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "crop_original_pixels": [
+        194.94999794329996,
+        236.99269987043954,
+        445.0384623601581,
+        403.00323919586526
+      ],
+      "image_size": [
+        640,
+        640
+      ]
+    }
+  ]
+}

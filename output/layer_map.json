@@ -9364,6 +9364,11 @@
     "category": "environment",
     "material": "Court"
   },
+  "E2100": {
+    "layer": "Environment",
+    "category": "environment",
+    "material": "Marking"
+  },
   "E2200": {
     "layer": "Environment",
     "category": "environment",
