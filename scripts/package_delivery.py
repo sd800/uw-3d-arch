@@ -1,6 +1,6 @@
-"""Write project notes and package the portable Seattle-campus delivery."""
+"""Package the portable delivery; --archive-only preserves edited project notes."""
 from pathlib import Path
-import json,zipfile,hashlib
+import json,zipfile,hashlib,sys
 r=Path(__file__).resolve().parents[1];out=r/'output';s=json.loads((out/'model_summary.json').read_text())
 readme=f'''# UW Campus 3D Model
 
@@ -85,8 +85,8 @@ Source snapshots are retained; geometry rebuilding needs no live map access. `fe
 readme+='\n## Project layout\n\n- `index.html`: website entry; root SEO files and `CNAME` support publishing.\n- `assets/`: browser engine, fonts, icons and local model payload.\n- `config/`: custom site configuration.\n- `docs/`: project decisions and third-party license notices.\n- `scripts/`: model generators, packaging and necessary checks.\n- `sources/`: source snapshots and provenance.\n- `output/`: CAD files, offline edition, reports and delivery archive.\n- Root `VERSION`, `CHANGELOG.md` and package manifests record releases and builds.\n'
 web_report=json.loads((out/'web_model_report.json').read_text())
 readme+=f'\n## Website model compression\n\nThe initial model transfer is **{web_report["transferBytes"]/1e6:.2f} MB**, down from **{web_report["previousTransferBytes"]/1e6:.2f} MB** ({100*(1-web_report["transferBytes"]/web_report["previousTransferBytes"]):.1f}% smaller). The web stream uses meshoptimizer 1.3.0 lossless vertex/index-sequence coding followed by gzip. No quantization or simplification is applied; its decoded SHA-256 matches the original 3DS. Rhino and original 3DS downloads stay unchanged.\n\nA single browser worker streams gzip decompression, restores small geometry blocks and parses the CAD model. Its compressed input and resulting geometry buffers are transferred rather than copied. The full intermediate archive is never retained. Scene setup yields to rendering between time slices; browsers that block workers use cooperative per-object parsing. Standalone HTML restores the downloadable CAD on demand in a worker. Decoder JavaScript/WebAssembly is bundled locally and requires no CDN. See `output/web_model_report.json` for byte counts, source digest and maximum block size. `npm run build:model` rebuilds the stream; `npm run check:compression` checks lossless restoration and worker behavior.\n'
-(r/'README.md').write_text(readme)
-(r/'docs/PROJECT_NOTES.md').write_text('''# Project decisions
+if '--archive-only' not in sys.argv:(r/'README.md').write_text(readme)
+if '--archive-only' not in sys.argv:(r/'docs/PROJECT_NOTES.md').write_text('''# Project decisions
 
 - University of Washington, Seattle campus; independent public-source exterior model.
 - Chinese university name: 华盛顿大学; Seattle: 西雅图. Preserve original English proper names for comparison.
@@ -114,7 +114,7 @@ readme+=f'\n## Website model compression\n\nThe initial model transfer is **{web
 
 The source audit reviews each model-scope grouped surface parking polygon against public Esri World Imagery. `sources/parking_satellite_review.json` retains stable export URLs, image extents, observation limits and original lot IDs; no imagery is redistributed. `sources/parking_rows.json` contains explicitly interpreted row paths, not a stripe array fitted to a lot envelope. `sources/parking_paint.geojson`, where present, retains primary CAD dividers or individually observed paint. Bay spacing and depth remain exterior approximations; faded/obscured paint, construction, service areas and unmarked parcels receive no invented grid. Current building footprints and planting override old paint. `output/parking_validation.json` records the rendered paths and clearance policy.
 ''')
-(r/'sources/SOURCES.md').write_text('''# Source notes
+if '--archive-only' not in sys.argv:(r/'sources/SOURCES.md').write_text('''# Source notes
 
 Snapshot: 13 October 2026.
 
@@ -133,7 +133,7 @@ The university already offers its own rendered campus map: https://map.uw.edu/?i
 
 The raw official footprint and public tree/bench files retain coordinates. The normalized OSM source includes data outside the rendered scope for boundary closure; the model clips it to the chosen campus/shore context. `retrieval_manifest.json` records source URLs and hashes. Original raw OSM extracts are compressed. Rebuilding uses saved data, not live APIs.
 ''')
-(r/'sources/TRANSLATION_NOTES.md').write_text('''# Translation notes
+if '--archive-only' not in sys.argv:(r/'sources/TRANSLATION_NOTES.md').write_text('''# Translation notes
 
 华盛顿大学 and 西雅图 are used consistently. Proper-name surnames are transliterated; building functions are translated faithfully. Court in a residential context is a courtyard/residential group, not a law court. Pavilion is translated according to its medical or athletic use. ASUW remains the student association acronym; its Shell House is a rowing boathouse.
 
@@ -162,7 +162,7 @@ usage=f'''# 华盛顿大学西雅图校区模型使用说明
 
 建筑平面与树位有公开地图坐标依据；外部高度、屋顶、窗格、树冠与部分道路宽度为估算。地形来自约10米采样的USGS数据，建筑基座局部平整化。模型未经过实测校核，不是校方官方BIM。中文译名保持原义，详情保留英文专名供对照。
 '''
-(out/'usage_guide.md').write_text(usage)
+if '--archive-only' not in sys.argv:(out/'usage_guide.md').write_text(usage)
 # Keep the archive independent of local dependencies and discovery diagnostics.
 ignored={'.git','node_modules','tmp','__pycache__','.venv'}
 files=[p for p in r.rglob('*') if p.is_file() and p.name!='.DS_Store' and not p.name.startswith('._') and not any(part in ignored for part in p.relative_to(r).parts) and p.suffix not in ['.zip','.npz','.xml'] and not p.name.endswith(('_catalog.json','_layer.json','_page.html')) and p.name!='uw_legacy_map.js']

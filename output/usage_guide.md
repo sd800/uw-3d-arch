@@ -1,6 +1,6 @@
 # 华盛顿大学西雅图校区模型使用说明
 
-模型包含271个校园建筑／设施图层、597个周边建筑图层、Environment与Neighboring_Environment环境层，以及26处校园建筑地标，单位为米。
+模型包含272个校园建筑／设施图层、597个周边建筑图层、Environment与Neighboring_Environment环境层，以及27处校园建筑地标，单位为米。
 
 1. 保留根目录index.html与assets、output的相对位置，双击index.html打开；也可使用output/UW_Campus_Offline.html单文件离线版本。
 2. 首次打开统一使用英文，不受设备语言影响；页眉按钮可切换语言。
@@ -12,3 +12,5 @@
 8. Rhino优先打开output/UW_Seattle_Layered.3dm。导入output/UW_Seattle.3ds时选择米，再运行scripts/apply_layers_rhino.py恢复图层。
 
 建筑平面与树位有公开地图坐标依据；外部高度、屋顶、窗格、树冠与部分道路宽度为估算。地形来自约10米采样的USGS数据，建筑基座局部平整化。模型未经过实测校核，不是校方官方BIM。中文译名保持原义，详情保留英文专名供对照。
+
+桤木宿舍楼街区包含 District Market 店面、公交候车雨棚、街角和铺地细节。华盛顿大学轻轨站可在校园建筑列表搜索；大学区轻轨站南入口及门户大楼底层北入口属于周边区域，可通过搜索查找。关闭周边区域后，相应入口与悬停提示一起隐藏。轻轨建模范围为地面建筑、入口和连接步行桥，不包含地下铁路工程。

@@ -1,14 +1,14 @@
 {
-  "buildings": 271,
-  "layers": 870,
+  "buildings": 272,
+  "layers": 871,
   "environment_layer": "Environment",
-  "native_closed_solids": 977,
-  "objects_3ds": 4867,
-  "vertices": 2796358,
-  "triangles": 4943120,
+  "native_closed_solids": 979,
+  "objects_3ds": 4894,
+  "vertices": 2811928,
+  "triangles": 4969732,
   "trees": 8602,
   "quad_cherry_trees": 29,
-  "landmarks": 26,
+  "landmarks": 27,
   "unit": "meters",
   "crs": "EPSG:32610 local offsets",
   "origin_wgs84": [
@@ -46,7 +46,7 @@
       -411.0757687035948
     ],
     "east": [
-      407.70482782286126,
+      381.52145963639487,
       -930.3027769187465,
       1576.5297514519189,
       1101.0419176975265
@@ -62,7 +62,7 @@
     "central": 91,
     "west": 59,
     "south": 50,
-    "east": 71
+    "east": 72
   },
   "accuracy": "Official mapped footprint/tree positions; all exterior heights, roof/facade geometry and tree forms approximate, not surveyed.",
   "water_frame": [

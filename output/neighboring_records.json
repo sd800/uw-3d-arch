@@ -12341,13 +12341,18 @@
     "peak_m": 107.458,
     "basis_en": "OSM mapped outline and available height/storey tags; selected project floor counts checked against the linked primary reference. Other exterior elevations are estimates.",
     "basis": "采用OpenStreetMap轮廓及已有高度、层数标记；部分项目层数参照所列一手资料，其余外部标高为估算。",
-    "partition_en": "Separate neighboring-area layer with mapped footprint and courtyard holes, attached street-front windows, entry glazing, roof and ground-reaching support. Secondary facade dimensions are approximate.",
+    "partition_en": "Separate neighboring-area layer with mapped footprint and courtyard holes, attached street-front windows, entry glazing, roof and ground-reaching support. Secondary facade dimensions are approximate. North light-rail entrance retained as a recessed opening at the mapped west podium.",
     "partition": "周边区域独立图层，保留映射轮廓和庭院，细化临街窗格、入口和屋顶，以闭合基座连接地形；次要构件尺寸为近似表达。",
     "source": "https://perkinswill.com/project/gateway-building/",
     "footprint_source": "https://www.openstreetmap.org/way/746277337",
     "address": "4320 Brooklyn Avenue Northeast",
     "roof_shape": "flat",
-    "height_tags": {}
+    "height_tags": {},
+    "aliases_zh": [
+      "U District Station North Entrance",
+      "大学区轻轨站北入口",
+      "Link light rail"
+    ]
   },
   {
     "code": "N370",
@@ -12700,7 +12705,7 @@
     "zone": "neighbors",
     "neighbor": true,
     "landmark": false,
-    "height": 6.1,
+    "height": 6.3,
     "height_status": "estimated",
     "levels": 1,
     "area": 726.64,
@@ -12711,11 +12716,11 @@
       463.906
     ],
     "ground_m": 55.885,
-    "peak_m": 61.985,
+    "peak_m": 62.185,
     "basis_en": "OSM mapped outline and available height/storey tags; selected project floor counts checked against the linked primary reference. Other exterior elevations are estimates.",
     "basis": "采用OpenStreetMap轮廓及已有高度、层数标记；部分项目层数参照所列一手资料，其余外部标高为估算。",
-    "partition_en": "Separate neighboring-area layer with mapped footprint and courtyard holes, attached street-front windows, entry glazing, roof and ground-reaching support. Secondary facade dimensions are approximate.",
-    "partition": "周边区域独立图层，保留映射轮廓和庭院，细化临街窗格、入口和屋顶，以闭合基座连接地形；次要构件尺寸为近似表达。",
+    "partition_en": "Mapped south entrance rebuilt as a low granite enclosure with a tapered canopy, exposed steel, ground portals and U District signage.",
+    "partition": "依据设计方照片重建低矮深色站房、渐变屋檐、支撑钢架、地面入口和站名标识。",
     "source": "https://www.soundtransit.org/ride-with-us/stops-stations/u-district-station",
     "footprint_source": "https://www.openstreetmap.org/way/746277336",
     "address": "4300 Brooklyn Avenue Northeast",

@@ -25,3 +25,7 @@
 ## Outdoor parking references
 
 The source audit reviews each model-scope grouped surface parking polygon against public Esri World Imagery. `sources/parking_satellite_review.json` retains stable export URLs, image extents, observation limits and original lot IDs; no imagery is redistributed. `sources/parking_rows.json` contains explicitly interpreted row paths, not a stripe array fitted to a lot envelope. `sources/parking_paint.geojson`, where present, retains primary CAD dividers or individually observed paint. Bay spacing and depth remain exterior approximations; faded/obscured paint, construction, service areas and unmarked parcels receive no invented grid. Current building footprints and planting override old paint. `output/parking_validation.json` records the rendered paths and clearance policy.
+
+## Alder block and surface transit
+
+See `../sources/TRANSIT_AND_ALDER_BLOCK.md` for the university/operator/architect evidence behind the whole Alder street block, custom UW bus canopies, both light-rail stations and the mapped Montlake pedestrian/bicycle bridge. The UW station is appended as LINK_UW, preserving existing layer codes. New public approach labels follow the neighboring-area switch. Closed structural supports and shared bridge/stair datums preserve low-angle continuity. Exterior/member dimensions remain approximate.

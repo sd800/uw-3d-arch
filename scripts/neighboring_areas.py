@@ -7,6 +7,7 @@ from shapely import segmentize,points,get_coordinates
 from shapely.strtree import STRtree
 from architecture_refinement import window,courses
 from university_inn import build_inn
+from transit_architecture import build_ud_south,ud_north_portal
 import gzip
 
 # Published project floor counts; metric envelope heights remain estimates except
@@ -20,7 +21,7 @@ PROFILES={
  'Neptune Building':(3,12.4,'ContextBrick','https://web.seattle.gov/DPD/HistoricalSite/QueryResult.aspx?ID=5'),
  'Wilsonian Apartments':(6,20,'ContextBrick','https://www.openstreetmap.org/way/223484924'),
  'University Presbyterian Church':(2,12.5,'ContextBrick','https://www.openstreetmap.org/way/52136493'),
- 'U District Station South Entrance':(1,6.1,'ContextStone','https://www.soundtransit.org/ride-with-us/stops-stations/u-district-station'),
+ 'U District Station South Entrance':(1,6.3,'ContextStone','https://www.soundtransit.org/ride-with-us/stops-stations/u-district-station'),
  'Gateway Building':(13,48,'ContextPanel','https://perkinswill.com/project/gateway-building/'),
 }
 
@@ -129,10 +130,16 @@ def build_neighbors(osm,campus_scope,campus_footprints,raw_ground,campus_ground,
         roofmat='RoofContextSlate'if pitched_roof or t.get('roof:colour')in ['black','darkgray','darkgrey']else 'RoofContextWarm'if t.get('roof:colour')in ['white','silver','beige']else 'RoofContext'
         lay=code+'_'+name.replace(':',' ').replace('/',' ');layer(lay,wall)
         ms={m:[]for m in COLORS};info={'NameEN':name,'Source':source,'FootprintSource':'https://www.openstreetmap.org/'+t['osm_id'],'Scope':'Campus neighboring areas','Approximation':'Exterior heights and facade members approximate; see neighboring_records.json','Units':'meters'}
+        south_station=name=='U District Station South Entrance'
         if hotel:build_inn(ms,p,z,code,lay,info,raw_ground)
-        for q in ([]if hotel else polygons(p)):
-            native_extrude(q,z,body,code+'_Volume',lay,wall,info)
-            ms[wall].append(extrusion(q,z,body))
+        if south_station:build_ud_south(ms,p,z,code,lay,info,raw_ground)
+        for q in ([]if hotel or south_station else polygons(p)):
+            if name=='Gateway Building':
+                opening=box(-376,547,-366,558.3)
+                for part,lo,hh in [(q.difference(opening),0,6.2),(q,6.2,body-6.2)]:
+                    for pp in polygons(part):native_extrude(pp,z+lo,hh,code+'_Volume',lay,wall,info);ms[wall].append(extrusion(pp,z+lo,hh))
+            else:
+                native_extrude(q,z,body,code+'_Volume',lay,wall,info);ms[wall].append(extrusion(q,z,body))
             support=extrusion(segmentize(q,5),z-1.5,1.51);bottom=support.vertices[:,2]<z-.7
             support.vertices[bottom,2]=np.minimum(z-1,raw_ground(support.vertices[bottom,0],support.vertices[bottom,1])-1.2)
             ms[wall].append(support)
@@ -158,6 +165,7 @@ def build_neighbors(osm,campus_scope,campus_footprints,raw_ground,campus_ground,
                         floor=body/levels;zz=z+k*floor+.72;wh=min(2.25,floor-1.05)
                         for b0 in range(count):
                             origin=a+u*(.4+(b0+.5)*spacing)
+                            if name=='Gateway Building'and k==0 and -376<origin[0]<-366 and 546<origin[1]<559:continue
                             width=min(1.45 if res else spacing*.72,spacing-.45)
                             store=k==0 and near and (kind in ['retail','commercial','office','yes']or levels>6)
                             if store:width=spacing-.3;wh=floor-1.0;zz=z+.28
@@ -178,12 +186,15 @@ def build_neighbors(osm,campus_scope,campus_footprints,raw_ground,campus_ground,
                             ms['ContextBrick'].append(extrusion(canopy,z+2.85,.12))
             if levels>=8:courses(ms,q,[z+k*body/levels for k in range(1,levels)],'ContextStone',.09,.035)
             elif levels>1:courses(ms,q,[z+.22,z+body-.3],'ContextStone',.15,.055)
+        if name=='Gateway Building':ud_north_portal(ms,p,z,raw_ground)
         for k,(mat,parts)in enumerate(ms.items()):
             if parts:chunk_meshes(code+('D'if mat in ['DarkGlass','Frame','ContextGlass']else 'M')+f'{k:02d}',parts,mat,lay,info)
         a,b,cx,d=p.bounds
         zh={'University Inn - A Staypineapple Hotel':'University Inn 酒店','University Book Store':'大学书店','Neptune Building':'海王星剧院大楼','University Presbyterian Church':'大学长老会教堂','U District Station South Entrance':'大学区轻轨站南入口','Gateway Building':'门户大楼'}.get(name,name)
         r={'code':code,'facility_id':t['osm_id'],'name':name,'name_zh':zh,'short':name,'short_zh':zh,'layer':lay,'zone':'neighbors','neighbor':True,'landmark':False,'height':round(h,3),'height_status':'estimated','levels':levels,'area':round(p.area,2),'width':round(cx-a,2),'depth':round(d-b,2),'center':[round(p.centroid.x,3),round(p.centroid.y,3)],'ground_m':round(z,3),'peak_m':round(z+h,3),'basis_en':'OSM mapped outline and available height/storey tags; selected project floor counts checked against the linked primary reference. Other exterior elevations are estimates.','basis':'采用OpenStreetMap轮廓及已有高度、层数标记；部分项目层数参照所列一手资料，其余外部标高为估算。','partition_en':'Separate neighboring-area layer with mapped footprint and courtyard holes, attached street-front windows, entry glazing, roof and ground-reaching support. Secondary facade dimensions are approximate.','partition':'周边区域独立图层，保留映射轮廓和庭院，细化临街窗格、入口和屋顶，以闭合基座连接地形；次要构件尺寸为近似表达。','source':source,'footprint_source':'https://www.openstreetmap.org/'+t['osm_id'],'address':address,'roof_shape':t.get('roof:shape','estimated pitched'if pitched_roof else 'flat'),'height_tags':{key:t[key]for key in ['height','building:levels','roof:shape','building:material']if key in t}}
         if hotel:r['partition_en']='Photo-referenced mid-century hotel with three guest-room floors over a recessed arrival/parking level, paired multi-pane windows, folded attached eaves, warm curved end, vertical sign and supported canopy. Member dimensions remain approximate.';r['partition']='参照官方外观照片重建三层客房及底层内凹入口与停车空间，细化成组窗格、折叠式挑檐、暖色转角、立面招牌和带支撑雨棚；构件尺寸为近似表达。'
+        if south_station:r['partition_en']='Mapped south entrance rebuilt as a low granite enclosure with a tapered canopy, exposed steel, ground portals and U District signage.';r['partition']='依据设计方照片重建低矮深色站房、渐变屋檐、支撑钢架、地面入口和站名标识。'
+        if name=='Gateway Building':r['aliases_zh']=['U District Station North Entrance','大学区轻轨站北入口','Link light rail'];r['partition_en']+=' North light-rail entrance retained as a recessed opening at the mapped west podium.'
         context_records.append(r);f['record']=r;pads.append({'code':code,'height':z,'bounds':list(p.bounds),'geometry':mapping(p)})
         for q in polygons(p):
             inner=q.buffer(-.15);inner=q if inner.is_empty else max(polygons(inner),key=lambda g:g.area)
@@ -246,9 +257,10 @@ def build_neighbors(osm,campus_scope,campus_footprints,raw_ground,campus_ground,
         elif entry['layer'].startswith('N'):entry['category']='neighbor-building'
     (OUT/'neighboring_records.json').write_text(json.dumps(context_records,ensure_ascii=False,indent=2))
     with (OUT/'neighboring_building_dimensions_and_sources.csv').open('w',encoding='utf-8-sig',newline='')as fp:
-        writer=csv.DictWriter(fp,fieldnames=list(context_records[0]));writer.writeheader();writer.writerows(context_records)
+        writer=csv.DictWriter(fp,fieldnames=list(dict.fromkeys(k for row in context_records for k in row)));writer.writeheader();writer.writerows(context_records)
     (OUT/'neighboring_footprints.geojson').write_text(json.dumps({'type':'FeatureCollection','features':[{'type':'Feature','properties':f['record'],'geometry':mapping(f['poly'])}for f in accepted]},ensure_ascii=False,separators=(',',':')))
-    report={'buildings':len(accepted),'trees':trees,'bounds':extent.bounds,'landscape_layer':'Neighboring_Environment','default_visible':True,'street_network':'University Way NE, Brooklyn Avenue NE, Roosevelt Way NE, NE 40th–50th streets and the north-campus residential blocks','building_triangles':detail_count,'pads':pads,'ground_samples':samples,'differentiation':'Muted neutral/brick wall palette, separate context ground; exact mapped footprint positions retained','scope_geometry':mapping(area)}
+    transit_places=[{'id':'udistrict-'+side,'name':'U District Station · '+side+' entrance','name_zh':'大学区轻轨站 · '+('南入口'if side=='south'else'北入口'),'neighbor':True,'position':[x,y,float(ground(x,y))+1.5],'hitArea':mapping(box(x-5,y-6,x+3,y+6)),'source':'https://lmnarchitects.com/project/u-district-station-sound-transit'}for side,x,y in [('south',-373,462),('north',-373,552)]]
+    report={'transit_places':transit_places,'buildings':len(accepted),'trees':trees,'bounds':extent.bounds,'landscape_layer':'Neighboring_Environment','default_visible':True,'street_network':'University Way NE, Brooklyn Avenue NE, Roosevelt Way NE, NE 40th–50th streets and the north-campus residential blocks','building_triangles':detail_count,'pads':pads,'ground_samples':samples,'differentiation':'Muted neutral/brick wall palette, separate context ground; exact mapped footprint positions retained','scope_geometry':mapping(area)}
     (OUT/'neighboring_areas.json').write_text(json.dumps(report,ensure_ascii=False,separators=(',',':')))
     print('Neighboring areas:',len(accepted),'buildings;',trees,'mapped trees;',detail_count,'building triangles',flush=True)
     return report

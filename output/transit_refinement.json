@@ -1,0 +1,61 @@
+{
+  "review_date": "2026-10-15",
+  "facilities": [
+    {
+      "facility_id": "LINK_UW",
+      "height_m": 10.72,
+      "levels": 2,
+      "volume_parts": [
+        {
+          "name": "Two-level glazed station headhouse",
+          "height_m": 10.4,
+          "area_m2": 575.17
+        }
+      ],
+      "details": [
+        "Mapped station footprint with a two-level glazed lobby, steel column/bay structure and thin silver roof",
+        "Upper lobby deck meets the mapped Montlake bicycle/pedestrian bridge",
+        "Ground entrances, east elevator projection and restrained vector signage",
+        "Above-ground exterior only; underground station and railway tunnels are not fabricated"
+      ],
+      "reference": "https://lmnarchitects.com/project/university-of-washington-station-sound-transit"
+    },
+    {
+      "facility_id": "UW_STATION_BRIDGE",
+      "source_ids": [
+        "way/369723298",
+        "way/370063488",
+        "way/524280882",
+        "way/524280883",
+        "way/524280884",
+        "way/570797482"
+      ],
+      "deck_height_m": 25.936,
+      "connected_parts": 1,
+      "source_stair_treads": 55,
+      "plan_area_m2": 1417.86,
+      "note": "Mapped curved surface bridge, descending cycle ramp, outdoor stairs and ground-reaching piers; deck elevations are approximate exterior interpretation."
+    },
+    {
+      "facility_id": "U_DISTRICT_NORTH",
+      "reference": "https://lmnarchitects.com/project/u-district-station-sound-transit",
+      "mapped_entrance_node": "10220232278",
+      "integrated_in": "Gateway Building",
+      "details": [
+        "Mapped north entrance retained at the base of the Gateway building; dark portal, framed glazing and supported canopy"
+      ]
+    },
+    {
+      "facility_id": "U_DISTRICT_SOUTH",
+      "mapped_id": "way/746277336",
+      "reference": "https://lmnarchitects.com/project/u-district-station-sound-transit",
+      "height_m": 6.3,
+      "details": [
+        "Low granite station enclosure, open entrance recess, tapered silver canopy and exposed supporting steel",
+        "Both street approaches and vector U District sign; exterior heights are photo-informed estimates"
+      ]
+    }
+  ],
+  "scope": "Surface exteriors, station entries, public approach and bridge; not underground railway engineering.",
+  "limits": "Mapped outlines and entrances are retained; heights, structural bay sizes, signage and furniture dimensions are approximate photo interpretations."
+}

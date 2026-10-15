@@ -1,0 +1,66 @@
+{
+  "architecture": {
+    "canopy_runs": 2,
+    "canopy_area_m2": 260.3,
+    "supported_columns": true,
+    "market_wraparound_glazing": true,
+    "source_observed_pv_area_m2": 138.68,
+    "reference": [
+      "https://hfs.uw.edu/live/undergraduates/undergraduate-communities/alder-hall/",
+      "https://www.washington.edu/news/2012/09/12/groceries-and-more-district-market-opens-in-alder-hall/"
+    ]
+  },
+  "bounds_local_m": [
+    -380.65,
+    -48.8,
+    -305.2,
+    10.85
+  ],
+  "block_streets": [
+    "NE Campus Parkway",
+    "Brooklyn Avenue NE",
+    "University Way NE",
+    "NE 40th Street"
+  ],
+  "paving_area_m2": 1538.75,
+  "mapped_tree_pits": 10,
+  "mapped_crossings": [
+    "4348094377",
+    "4348094378",
+    "4348094381",
+    "4348094383",
+    "4694737151",
+    "4694737152",
+    "4694737154",
+    "4694737155"
+  ],
+  "bus_stops": [
+    {
+      "bay": "2",
+      "stop_id": "9575",
+      "node_id": "4340397017",
+      "position_local_m": [
+        -325.639,
+        11.19
+      ],
+      "shelter_type": "UW building-integrated canopy"
+    },
+    {
+      "bay": "1",
+      "stop_id": "9580",
+      "node_id": "4340397018",
+      "position_local_m": [
+        -349.67,
+        11.233
+      ],
+      "shelter_type": "UW building-integrated canopy"
+    }
+  ],
+  "planting_and_paving_connected": true,
+  "references": [
+    "https://transportation.uw.edu/getting-around/shuttles/nightride",
+    "https://hfs.uw.edu/live/undergraduates/undergraduate-communities/alder-hall/",
+    "https://www.washington.edu/news/2012/09/12/groceries-and-more-district-market-opens-in-alder-hall/"
+  ],
+  "limits": "Official footprint, mapped stops/crossings/trees and aerial roof arrangement. Member dimensions and secondary furniture positions are approximate; no invented all-area crosswalk or parking grid."
+}

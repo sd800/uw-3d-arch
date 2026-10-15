@@ -1,5 +1,14 @@
 # Changelog
 
+## 26.10.15.1 — 2026-10-15
+
+- Refine the complete Alder Hall block between Campus Parkway, Brooklyn Avenue, University Way and NE 40th Street, with coherent paving, mapped tree pits, marked crossings, curb openings and connected street edges.
+- Add building-integrated Bay 1/Bay 2 bus canopies, supported steel framing, stop flags, benches and timetable displays at mapped stop positions; refine District Market glazing, signs, service entrance and aerial-visible roof PV strips.
+- Refine five nearby low-rise teaching/cultural buildings with separate roof profiles and use-specific facades, retaining their mapped footprints.
+- Add University of Washington Station's mapped two-level glass headhouse, upper lobby, elevator projection and ground entries; connect the actual curved pedestrian/bicycle bridge graph, ramps, outdoor stairs and ground-reaching supports.
+- Rebuild U District Station's south granite entrance/canopy and its north entrance within the Gateway podium; add station approach hover names that follow the neighboring-area visibility switch.
+- Preserve existing campus layer codes, hidden initial landmark labels, English default and lossless worker-based model delivery; document source evidence and approximate exterior dimensions.
+
 ## 26.10.14.2 — 2026-10-14
 
 - Refine Alder Hall’s four street frontages with graded entry aprons, mapped sidewalk paving/joints, curbs interrupted at pedestrian approaches, source-positioned tree pits and supported benches.

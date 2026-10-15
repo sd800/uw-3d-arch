@@ -4892,7 +4892,14 @@
     "short_zh": "桤木宿舍楼",
     "aliases_zh": [
       "ALD",
-      "1315 NE Campus Pkwy Seattle, WA 98195"
+      "1315 NE Campus Pkwy Seattle, WA 98195",
+      "District Market",
+      "Husky Grind",
+      "Bay 1",
+      "Bay 2",
+      "bus stop",
+      "公交站",
+      "街区"
     ],
     "layer": "W105_Alder Hall",
     "zone": "west",
@@ -4915,7 +4922,7 @@
     "basis": "平面采用 UW 官方 GIS；外部层数、层高与屋顶高度为估算。GIS 总建筑面积不能视为地上层数。",
     "basis_en": "Official UW footprint; exterior storeys, floor heights and roof elevations are approximate. Reported gross floor area may include basements and does not certify exterior storeys. The missing light-court inner ring is mapped in OpenStreetMap relation 6447992 and corroborated by UW HFS courtyard photos.",
     "partition": "依据公开内环轮廓恢复露天天井，细化六层灰砖宿舍楼、浅色内庭立面、成对窗格、底层入口和天井铺装种植；构件尺寸及景观位置为近似表达。",
-    "partition_en": "Mapped 618 m² stepped central light court, open from ground to sky; Six-storey charcoal-brick street elevations and pale inner-court panels; Paired white-framed windows, glazed lower storey, covered north passage and supported entry canopy; Continuous parapets and matte gray-green roof; no invented rooftop equipment. Exterior dimensions and partitions remain approximate.",
+    "partition_en": "Mapped 618 m² stepped central light court, open from ground to sky; Six-storey charcoal-brick street elevations and pale inner-court panels; Paired white-framed windows, glazed lower storey, covered north passage and supported entry canopy; Continuous parapets, matte roof and aerial-visible PV strips; no copied equipment boxes; Building-integrated Campus Parkway bus canopies and District Market glazing/signage. Exterior dimensions and partitions remain approximate. Building-integrated bus canopies, market glazing, connected whole-block paving and aerial-visible PV bands.",
     "source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "footprint_source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "architecture_reference": "https://hfs.uw.edu/live/undergraduates/undergraduate-communities/alder-hall/",
@@ -5044,9 +5051,9 @@
     "layer": "W108_3947 University Way NE",
     "zone": "west",
     "landmark": false,
-    "height": 8.3,
+    "height": 5.3,
     "height_status": "estimated",
-    "levels": 2,
+    "levels": 1,
     "year_built": 1984,
     "reported_gsf_ft2": 3136,
     "area": 177.15,
@@ -5058,11 +5065,11 @@
     ],
     "ground_m": 30.181,
     "bottom_m": 30.181,
-    "peak_m": 38.691,
+    "peak_m": 35.229,
     "basis": "平面采用 UW 官方 GIS；外部层数、层高与屋顶高度为估算。GIS 总建筑面积不能视为地上层数。",
     "basis_en": "Official UW footprint; exterior storeys, floor heights and roof elevations are approximate. Reported gross floor area may include basements and does not certify exterior storeys.",
-    "partition": "保留公开映射轮廓和庭院，按建筑用途及已有标记细化窗格、楼层线脚、屋顶与接地入口；外部高度与构件尺寸为近似表达。",
-    "partition_en": "Mapped footprint and courtyard openings retained; Use-specific window spacing, floor courses, grounded entry or service door; Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes. Exterior dimensions and partitions remain approximate.",
+    "partition": "按公开建筑资料和航拍细化体量、屋顶与立面；保留官方轮廓。外部高度及构件尺寸仍为近似表达。",
+    "partition_en": "Mapped low-rise envelope and use-specific street glazing, without an office-storey grid; Separate roof/parapet profile, grounded service/entry edge and retained footprint; Aerial-informed roof form; heights and facade bay sizes remain approximate. Exterior dimensions and partitions remain approximate.",
     "source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "footprint_source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "architecture_reference": null,
@@ -5070,8 +5077,7 @@
     "volume_parts": [
       {
         "area_m2": 177.14,
-        "height_m": 8.08,
-        "material": "Precast"
+        "height_m": 4.25
       }
     ]
   },
@@ -5182,9 +5188,9 @@
     "layer": "W111_Ethnic Cultural Center Theatre",
     "zone": "west",
     "landmark": false,
-    "height": 8.3,
+    "height": 7.9,
     "height_status": "estimated",
-    "levels": 2,
+    "levels": 1,
     "year_built": 1912,
     "reported_gsf_ft2": 12176,
     "area": 733.13,
@@ -5196,11 +5202,11 @@
     ],
     "ground_m": 27.832,
     "bottom_m": 27.832,
-    "peak_m": 36.342,
+    "peak_m": 35.732,
     "basis": "平面采用 UW 官方 GIS；外部层数、层高与屋顶高度为估算。GIS 总建筑面积不能视为地上层数。",
     "basis_en": "Official UW footprint; exterior storeys, floor heights and roof elevations are approximate. Reported gross floor area may include basements and does not certify exterior storeys.",
-    "partition": "保留公开映射轮廓和庭院，按建筑用途及已有标记细化窗格、楼层线脚、屋顶与接地入口；外部高度与构件尺寸为近似表达。",
-    "partition_en": "Mapped footprint and courtyard openings retained; Use-specific window spacing, floor courses, grounded entry or service door; Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes. Exterior dimensions and partitions remain approximate.",
+    "partition": "按公开建筑资料和航拍细化体量、屋顶与立面；保留官方轮廓。外部高度及构件尺寸仍为近似表达。",
+    "partition_en": "Mapped low-rise envelope and use-specific street glazing, without an office-storey grid; Separate roof/parapet profile, grounded service/entry edge and retained footprint; Aerial-informed roof form; heights and facade bay sizes remain approximate. Exterior dimensions and partitions remain approximate.",
     "source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "footprint_source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "architecture_reference": null,
@@ -5208,8 +5214,7 @@
     "volume_parts": [
       {
         "area_m2": 733.13,
-        "height_m": 8.08,
-        "material": "Precast"
+        "height_m": 7.5
       }
     ]
   },
@@ -5320,7 +5325,7 @@
     "layer": "W114_3941 University Way NE",
     "zone": "west",
     "landmark": false,
-    "height": 4.55,
+    "height": 4.85,
     "height_status": "estimated",
     "levels": 1,
     "year_built": 1941,
@@ -5334,11 +5339,11 @@
     ],
     "ground_m": 29.04,
     "bottom_m": 29.04,
-    "peak_m": 33.8,
+    "peak_m": 33.89,
     "basis": "平面采用 UW 官方 GIS；外部层数、层高与屋顶高度为估算。GIS 总建筑面积不能视为地上层数。",
     "basis_en": "Official UW footprint; exterior storeys, floor heights and roof elevations are approximate. Reported gross floor area may include basements and does not certify exterior storeys.",
-    "partition": "保留公开映射轮廓和庭院，按建筑用途及已有标记细化窗格、楼层线脚、屋顶与接地入口；外部高度与构件尺寸为近似表达。",
-    "partition_en": "Mapped footprint and courtyard openings retained; Use-specific window spacing, floor courses, grounded entry or service door; Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes. Exterior dimensions and partitions remain approximate.",
+    "partition": "按公开建筑资料和航拍细化体量、屋顶与立面；保留官方轮廓。外部高度及构件尺寸仍为近似表达。",
+    "partition_en": "Mapped low-rise envelope and use-specific street glazing, without an office-storey grid; Separate roof/parapet profile, grounded service/entry edge and retained footprint; Aerial-informed roof form; heights and facade bay sizes remain approximate. Exterior dimensions and partitions remain approximate.",
     "source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "footprint_source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "architecture_reference": null,
@@ -5346,8 +5351,7 @@
     "volume_parts": [
       {
         "area_m2": 669.82,
-        "height_m": 4.33,
-        "material": "Precast"
+        "height_m": 4.449999999999999
       }
     ]
   },
@@ -5412,7 +5416,7 @@
     "layer": "W116_Instructional Center Annex",
     "zone": "west",
     "landmark": false,
-    "height": 4.55,
+    "height": 3.75,
     "height_status": "estimated",
     "levels": 1,
     "year_built": 1940,
@@ -5426,11 +5430,11 @@
     ],
     "ground_m": 26.177,
     "bottom_m": 26.177,
-    "peak_m": 30.937,
+    "peak_m": 29.927,
     "basis": "平面采用 UW 官方 GIS；外部层数、层高与屋顶高度为估算。GIS 总建筑面积不能视为地上层数。",
     "basis_en": "Official UW footprint; exterior storeys, floor heights and roof elevations are approximate. Reported gross floor area may include basements and does not certify exterior storeys.",
-    "partition": "保留公开映射轮廓和庭院，按建筑用途及已有标记细化窗格、楼层线脚、屋顶与接地入口；外部高度与构件尺寸为近似表达。",
-    "partition_en": "Mapped footprint and courtyard openings retained; Use-specific window spacing, floor courses, grounded entry or service door; Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes. Exterior dimensions and partitions remain approximate.",
+    "partition": "按公开建筑资料和航拍细化体量、屋顶与立面；保留官方轮廓。外部高度及构件尺寸仍为近似表达。",
+    "partition_en": "Mapped low-rise envelope and use-specific street glazing, without an office-storey grid; Separate roof/parapet profile, grounded service/entry edge and retained footprint; Aerial-informed roof form; heights and facade bay sizes remain approximate. Exterior dimensions and partitions remain approximate.",
     "source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "footprint_source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "architecture_reference": null,
@@ -5438,8 +5442,7 @@
     "volume_parts": [
       {
         "area_m2": 111.52,
-        "height_m": 4.33,
-        "material": "Precast"
+        "height_m": 3.35
       }
     ]
   },
@@ -5550,7 +5553,7 @@
     "layer": "W119_3939 University Way NE",
     "zone": "west",
     "landmark": false,
-    "height": 4.55,
+    "height": 4.6,
     "height_status": "estimated",
     "levels": 1,
     "year_built": 1941,
@@ -5564,11 +5567,11 @@
     ],
     "ground_m": 27.759,
     "bottom_m": 27.759,
-    "peak_m": 32.519,
+    "peak_m": 32.359,
     "basis": "平面采用 UW 官方 GIS；外部层数、层高与屋顶高度为估算。GIS 总建筑面积不能视为地上层数。",
     "basis_en": "Official UW footprint; exterior storeys, floor heights and roof elevations are approximate. Reported gross floor area may include basements and does not certify exterior storeys.",
-    "partition": "保留公开映射轮廓和庭院，按建筑用途及已有标记细化窗格、楼层线脚、屋顶与接地入口；外部高度与构件尺寸为近似表达。",
-    "partition_en": "Mapped footprint and courtyard openings retained; Use-specific window spacing, floor courses, grounded entry or service door; Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes. Exterior dimensions and partitions remain approximate.",
+    "partition": "按公开建筑资料和航拍细化体量、屋顶与立面；保留官方轮廓。外部高度及构件尺寸仍为近似表达。",
+    "partition_en": "Mapped low-rise envelope and use-specific street glazing, without an office-storey grid; Separate roof/parapet profile, grounded service/entry edge and retained footprint; Aerial-informed roof form; heights and facade bay sizes remain approximate. Exterior dimensions and partitions remain approximate.",
     "source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "footprint_source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "architecture_reference": null,
@@ -5576,8 +5579,7 @@
     "volume_parts": [
       {
         "area_m2": 429.61,
-        "height_m": 4.33,
-        "material": "Precast"
+        "height_m": 4.199999999999999
       }
     ]
   },
@@ -12653,6 +12655,52 @@
         "area_m2": 895.65,
         "height_m": 4.33,
         "material": "Precast"
+      }
+    ]
+  },
+  {
+    "code": "W272",
+    "facility_id": "LINK_UW",
+    "name": "University of Washington Station",
+    "name_zh": "华盛顿大学轻轨站",
+    "official_name": "University of Washington Station",
+    "short": "University of Washington Station",
+    "short_zh": "华盛顿大学轻轨站",
+    "aliases_zh": [
+      "LINK_UW",
+      "3720 Montlake Boulevard NE"
+    ],
+    "layer": "W272_University of Washington Station",
+    "zone": "east",
+    "landmark": true,
+    "height": 10.72,
+    "height_status": "estimated",
+    "levels": 2,
+    "year_built": 2016,
+    "reported_gsf_ft2": null,
+    "area": 575.17,
+    "width": 16.35,
+    "depth": 56.48,
+    "center": [
+      414.154,
+      -664.087
+    ],
+    "ground_m": 20.336,
+    "bottom_m": 20.336,
+    "peak_m": 31.056,
+    "basis": "地面站房范围采用公开映射轮廓；两层玻璃站房及构件依据设计方照片近似表达，不包含地下铁路工程。",
+    "basis_en": "Mapped OSM surface envelope. Two-level exterior, structural bays and dimensions interpreted from the architect’s photographs; not underground engineering or a surveyed station model.",
+    "partition": "两层玻璃站房、钢柱与楼板、入口、电梯突出部分和轻薄金属屋顶；与映射人行桥和室外楼梯连接。",
+    "partition_en": "Mapped station footprint with a two-level glazed lobby, steel column/bay structure and thin silver roof; Upper lobby deck meets the mapped Montlake bicycle/pedestrian bridge; Ground entrances, east elevator projection and restrained vector signage; Above-ground exterior only; underground station and railway tunnels are not fabricated. Exterior dimensions and partitions remain approximate.",
+    "source": "https://lmnarchitects.com/project/university-of-washington-station-sound-transit",
+    "footprint_source": "https://www.openstreetmap.org/way/325150399",
+    "architecture_reference": "https://lmnarchitects.com/project/university-of-washington-station-sound-transit",
+    "construction_status": "Active",
+    "volume_parts": [
+      {
+        "name": "Two-level glazed station headhouse",
+        "height_m": 10.4,
+        "area_m2": 575.17
       }
     ]
   }

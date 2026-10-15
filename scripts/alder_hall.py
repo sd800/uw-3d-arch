@@ -57,12 +57,11 @@ def build_alder(ms,p,base,code,lay,info,ground):
         for pp in polygons(rim):ms['AlderFrame'].append(extrusion(pp,base+walltop+.58,.075))
     # North street entry and court passage share the same soffit and paving datum.
     for q in polygons(passage):ms['AlderSoffit'].append(extrusion(q,base+podium-.10,.10))
-    awning=box(-339.4,4.9,-327.7,6.7).difference(courts)
-    for q in polygons(awning):ms['RoofAlder'].append(extrusion(q,base+3.55,.16))
-    for x in [-338.7,-328.4]:ms['Frame'].append(cylinder((x,6.25,min(base,float(ground(x,6.25)))-.25),(x,6.25,base+3.55),.085,6))
+    from alder_block import street_architecture
+    street_architecture(ms,p,base,ground)
     for q in polygons(p):
         for ring in [q.exterior,*q.interiors]:model.Objects.AddCurve(rh.PolylineCurve([rh.Point3d(x,y,base)for x,y in ring.coords]),attr(code+'_Footprint',lay,'AlderBrick',info))
-    report={'facility_id':'ALD','height_m':height,'levels':levels,'volume_parts':volumes,'court_area_m2':round(courts.area,3),'open_sky':True,'details':['Mapped 618 m² stepped central light court, open from ground to sky','Six-storey charcoal-brick street elevations and pale inner-court panels','Paired white-framed windows, glazed lower storey, covered north passage and supported entry canopy','Continuous parapets and matte gray-green roof; no invented rooftop equipment']}
+    report={'facility_id':'ALD','height_m':height,'levels':levels,'volume_parts':volumes,'court_area_m2':round(courts.area,3),'open_sky':True,'details':['Mapped 618 m² stepped central light court, open from ground to sky','Six-storey charcoal-brick street elevations and pale inner-court panels','Paired white-framed windows, glazed lower storey, covered north passage and supported entry canopy','Continuous parapets, matte roof and aerial-visible PV strips; no copied equipment boxes','Building-integrated Campus Parkway bus canopies and District Market glazing/signage']}
     return report
 
 def detail_alder_court(eg,court,base):

@@ -1108,25 +1108,6 @@
       "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
     },
     {
-      "facility_id": "SGS",
-      "height_m": 8.3,
-      "levels": 2,
-      "volume_parts": [
-        {
-          "area_m2": 177.14,
-          "height_m": 8.08,
-          "material": "Precast"
-        }
-      ],
-      "ordinary": true,
-      "details": [
-        "Mapped footprint and courtyard openings retained",
-        "Use-specific window spacing, floor courses, grounded entry or service door",
-        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
-      ],
-      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
-    },
-    {
       "facility_id": "PSV",
       "height_m": 12.05,
       "levels": 3,
@@ -1153,25 +1134,6 @@
         {
           "area_m2": 2169.61,
           "height_m": 23.08,
-          "material": "Precast"
-        }
-      ],
-      "ordinary": true,
-      "details": [
-        "Mapped footprint and courtyard openings retained",
-        "Use-specific window spacing, floor courses, grounded entry or service door",
-        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
-      ],
-      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
-    },
-    {
-      "facility_id": "ICT",
-      "height_m": 8.3,
-      "levels": 2,
-      "volume_parts": [
-        {
-          "area_m2": 733.13,
-          "height_m": 8.08,
           "material": "Precast"
         }
       ],
@@ -1222,50 +1184,12 @@
       "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
     },
     {
-      "facility_id": "DSC",
-      "height_m": 4.55,
-      "levels": 1,
-      "volume_parts": [
-        {
-          "area_m2": 669.82,
-          "height_m": 4.33,
-          "material": "Precast"
-        }
-      ],
-      "ordinary": true,
-      "details": [
-        "Mapped footprint and courtyard openings retained",
-        "Use-specific window spacing, floor courses, grounded entry or service door",
-        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
-      ],
-      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
-    },
-    {
       "facility_id": "CCC",
       "height_m": 4.55,
       "levels": 1,
       "volume_parts": [
         {
           "area_m2": 452.78,
-          "height_m": 4.33,
-          "material": "Precast"
-        }
-      ],
-      "ordinary": true,
-      "details": [
-        "Mapped footprint and courtyard openings retained",
-        "Use-specific window spacing, floor courses, grounded entry or service door",
-        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
-      ],
-      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
-    },
-    {
-      "facility_id": "IC2",
-      "height_m": 4.55,
-      "levels": 1,
-      "volume_parts": [
-        {
-          "area_m2": 111.52,
           "height_m": 4.33,
           "material": "Precast"
         }
@@ -1305,25 +1229,6 @@
         {
           "area_m2": 2510.2,
           "height_m": 15.58,
-          "material": "Precast"
-        }
-      ],
-      "ordinary": true,
-      "details": [
-        "Mapped footprint and courtyard openings retained",
-        "Use-specific window spacing, floor courses, grounded entry or service door",
-        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
-      ],
-      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
-    },
-    {
-      "facility_id": "EIC",
-      "height_m": 4.55,
-      "levels": 1,
-      "volume_parts": [
-        {
-          "area_m2": 429.61,
-          "height_m": 4.33,
           "material": "Precast"
         }
       ],
@@ -3695,5 +3600,5 @@
       "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
     }
   ],
-  "count": 191
+  "count": 186
 }

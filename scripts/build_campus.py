@@ -2,6 +2,8 @@
 All heights and facade detail are approximate unless an explicit measurement is cited.
 """
 from cad_core import *
+from transit_architecture import build_uw_station,station_landscape,write_transit_report,BRIDGE_IDS
+from alder_block import BLOCK,detail_block,block_building
 from husky_stadium import build_husky_stadium
 from core_landscape import detail_core,core_plan
 from core_architecture import oriented_roofs,core_accents
@@ -51,6 +53,10 @@ for id,fs in grouped.items():
     if id=='BRK':en='Burke Museum of Natural History and Culture'
     buildings.append({'id':id,'properties':t,'poly':p,'name':en,'name_zh':chinese(id,en),'zone':zone})
 buildings.sort(key=lambda f:(['central','west','south','east'].index(f['zone']),-f['poly'].centroid.y,f['poly'].centroid.x))
+# Sound Transit station is outside the UW building inventory. Append its mapped
+# surface envelope without renumbering any existing campus building layer.
+station_osm=next(f for f in osm if f['properties'].get('osm_id')=='way/325150399')
+buildings.append({'id':'LINK_UW','properties':{'FacCode':'LINK_UW','FacName':'University of Washington Station','YearBuilt':2016,'Address':'3720 Montlake Boulevard NE'},'poly':station_osm['poly'],'name':'University of Washington Station','name_zh':'华盛顿大学轻轨站','zone':'east','footprint_source':'https://www.openstreetmap.org/way/325150399'})
 footprints=unary_union([f['poly'] for f in buildings]);land_scope=unary_union([campus_boundary,*[f['poly'].buffer(18) for f in buildings]]).intersection(limit).buffer(5).simplify(.6).buffer(0)
 # Buffer the land only: buffering cropped water invents a thin land fringe
 # around the artificial lake border and produces the pointed edge fragments.
@@ -100,7 +106,7 @@ def ground(x,y):
     return z
 anchor=model.Settings.EarthAnchorPoint;anchor.EarthBasepointElevation=0;model.Settings.EarthAnchorPoint=anchor
 obuildings=[f for f in osm if f['properties'].get('building')];otree=STRtree([f['poly'] for f in obuildings])
-print('Preparing',len(buildings),'official building layers',flush=True)
+print('Preparing',len(buildings),'campus building/transit layers',flush=True)
 for j,f in enumerate(buildings,1):
     id,p,t=f['id'],f['poly'],f['properties'];code=f'W{j:03d}';lay=code+'_'+f['name'];gothic=id in GOTHIC;pitched_roof=id in PITCHED;base=f['ground'];a,b,c,d=p.bounds;x,y=p.centroid.x,p.centroid.y
     candidates=otree.query(p);matches=[obuildings[k] for k in candidates if obuildings[k]['poly'].intersection(p).area>p.area*.45]
@@ -118,13 +124,13 @@ for j,f in enumerate(buildings,1):
     height=min(height,110);mat='Brick' if gothic or pitched_roof or residential else ('Glass' if id in {'LSB','CSE2','HRC','PCAR','IEB','BIOE','GNOM','HSEB','NAN'} else 'Limestone')
     if id=='SUZ':mat='Limestone';levels=3
     if id in {'KNE','OUG','MNY','HUB'}:mat='Brick'
-    layer(lay,mat);ms={m:[] for m in COLORS};info={'FacilityCode':id,'NameEN':f['name'],'NameZH':f['name_zh'],'FootprintSource':GIS,'HeightStatus':'Estimated exterior','Units':'meters'}
+    layer(lay,mat);ms={m:[] for m in COLORS};info={'FacilityCode':id,'NameEN':f['name'],'NameZH':f['name_zh'],'FootprintSource':f.get('footprint_source',GIS),'HeightStatus':'Estimated exterior','Units':'meters'}
     # Closed below-grade support joins simplified terrain to the actual building pad.
     for q in polygons(segmentize(p,5)):
         support=extrusion(q,base-1.5,1.51);bottom=support.vertices[:,2]<base-.7
         support.vertices[bottom,2]=np.minimum(base-.2,raw_ground(support.vertices[bottom,0],support.vertices[bottom,1])-1.5)
         ms['Foundation'].append(support)
-    refinement=build_refined(ms,p,base,id,height,levels,code,lay,info,raw_ground)
+    refinement=build_uw_station(ms,p,base,code,lay,info,raw_ground)if id=='LINK_UW'else block_building(ms,p,base,id,code,lay,info,raw_ground)if id in {'SGS','ICT','IC2','DSC','EIC'}else build_refined(ms,p,base,id,height,levels,code,lay,info,raw_ground)
     if not refinement and id!='STD':refinement=build_ordinary(ms,p,base,id,height,levels,code,lay,info,raw_ground,ot,f['name'])
     if refinement:
         height=refinement['height_m'];levels=refinement['levels']
@@ -175,6 +181,9 @@ for j,f in enumerate(buildings,1):
         r['architecture_reference']='https://www.hok.com/projects/view/university-of-washington-husky-stadium-renovation-and-expansion/'
     if id=='ALD':r['basis_en']+=' The missing light-court inner ring is mapped in OpenStreetMap relation 6447992 and corroborated by UW HFS courtyard photos.';r['partition']='依据公开内环轮廓恢复露天天井，细化六层灰砖宿舍楼、浅色内庭立面、成对窗格、底层入口和天井铺装种植；构件尺寸及景观位置为近似表达。'
     if id=='SUZ':r['basis_en']+=' UW documents the reading room as 250 × 52 × 65 ft; these are interior dimensions, not the exterior building envelope.';r['basis']+=' 校方公布的阅览室为250×52×65英尺，属于室内尺寸，不能当作整栋建筑的外部尺寸。'
+    if id=='LINK_UW':
+        r.update(footprint_source=f['footprint_source'],source='https://lmnarchitects.com/project/university-of-washington-station-sound-transit',architecture_reference='https://lmnarchitects.com/project/university-of-washington-station-sound-transit',basis_en='Mapped OSM surface envelope. Two-level exterior, structural bays and dimensions interpreted from the architect’s photographs; not underground engineering or a surveyed station model.',basis='地面站房范围采用公开映射轮廓；两层玻璃站房及构件依据设计方照片近似表达，不包含地下铁路工程。',partition='两层玻璃站房、钢柱与楼板、入口、电梯突出部分和轻薄金属屋顶；与映射人行桥和室外楼梯连接。')
+    if id=='ALD':r['aliases_zh']+=['District Market','Husky Grind','Bay 1','Bay 2','bus stop','公交站','街区'];r['partition_en']+=' Building-integrated bus canopies, market glazing, connected whole-block paving and aerial-visible PV bands.'
     records.append(r);f['record']=r
     if j%40==0:print('Buildings',j,flush=True)
 write_report();write_ordinary_report()
@@ -206,7 +215,7 @@ roadarea=set_precision(unary_union(roadparts).difference(bridge_mask).difference
 for f in osm:
     t=f['properties'];g=f['poly'];h=t.get('highway')
     if h in ['footway','path','steps','cycleway','pedestrian'] and g.geom_type in ['LineString','MultiLineString'] and g.intersects(scope):
-        if t.get('tunnel')=='yes' or t.get('layer')=='-1':continue
+        if t.get('tunnel')=='yes' or t.get('layer')=='-1' or t.get('osm_id')in BRIDGE_IDS or t.get('bridge')=='yes'and t.get('highway')=='steps'and g.distance(station_osm['poly'])<100:continue
         width=3 if h in ['footway','steps'] else (4 if h=='cycleway' else 2)
         try:width=float(t.get('width',width))
         except ValueError:pass
@@ -218,7 +227,7 @@ red=next(f for f in osm if f['properties'].get('name')=='Red Square' and f['poly
 quad=next(f for f in osm if f['properties'].get('name')=='The Quad')
 fountain=next(f for f in osm if f['properties'].get('name')=='Drumheller Fountain')
 core_layout=core_plan(red['poly'],quad['poly'],osm,footprints)
-core_mask=unary_union([red['poly'],quad['poly'],fountain['poly'].buffer(3.8),core_layout[0]])
+core_mask=unary_union([red['poly'],quad['poly'],fountain['poly'].buffer(3.8),core_layout[0],BLOCK])
 # Dedicated core surfaces replace generic overlapping lawn and path skins.
 alder=next(f for f in buildings if f['id']=='ALD');alder_court=courtyard_from_osm(osm,Polygon(alder['poly'].exterior))
 alder_apron=alder_envelope.buffer(2.4,join_style=2).difference(alder_envelope).difference(footprints).difference(roadarea)
@@ -266,6 +275,7 @@ for f in raw:
 rc=red['poly'].centroid
 detail_core(eg,env,red['poly'],quad['poly'],fountain['poly'],ground,footprints,core_layout)
 detail_shores(eg,env,osm,scope,footprints,lakewater,ground)
+station_landscape(eg,env,osm,next(f for f in buildings if f['id']=='LINK_UW'),ground,footprints,places)
 # Trees use official positions; canopy shape and size are illustrative.
 clearance=footprints.buffer(.65);trees=0;cherry=0
 for f in features('uw_trees.geojson'):
@@ -288,17 +298,19 @@ for f in features('uw_benches.geojson'):
             for dy in [-.18,.18]:eg['Furniture'].append(cylinder((q.x+dx,q.y+dy,zz-.04),(q.x+dx,q.y+dy,zz+.42),.035,5))
         for dz in [.72,.90]:eg['Cedar'].append(boxmesh(q.x,q.y+.23,zz+dz,1.70,.06,.11))
         for dx in [-.70,.70]:eg['Furniture'].append(cylinder((q.x+dx,q.y+.23,zz+.40),(q.x+dx,q.y+.23,zz+1.0),.035,5))
-alder_details=detail_alder_court(eg,alder_court,alder['ground']);alder_details['surroundings']=detail_alder_precinct(eg,env,alder_envelope,alder_grade,roadarea,walkarea,footprints,features('uw_trees.geojson'),ground)
+alder_details=detail_alder_court(eg,alder_court,alder['ground']);alder_details['surroundings']={'replaced_by':'alder_block_refinement.json'}
+detail_block(eg,env,osm,alder_envelope,footprints,roadarea,walkarea,features('uw_trees.geojson'),ground,places)
 (OUT/'alder_hall_refinement.json').write_text(json.dumps(alder_details,indent=2))
 for k,(mat,parts) in enumerate(eg.items()):
     if parts:chunk_meshes(f'E{k:02d}',parts,mat,'Environment',{'Source':'UW public tree/bench positions, OSM outdoor surfaces and USGS ground samples','Approximation':'Widths, surface thickness, canopy shapes and furniture detail are illustrative','Units':'meters'})
 print('Landscape complete:',trees,'trees;',cherry,'Quad cherry canopies',flush=True)
 neighbors=build_neighbors(osm,scope,footprints,raw_ground,ground,features('uw_trees.geojson'))
+places.extend(neighbors.get('transit_places',[]));write_transit_report()
 zone_shapes={z:unary_union([f['poly'] for f in buildings if f['zone']==z]).envelope.buffer(25) for z in ['central','west','south','east']}
 for name,g in [('Campus',scope),*zone_shapes.items()]:
     aa,bb,cc,dd=g.bounds;xx=(aa+cc)/2;yy=(bb+dd)/2;size=max(cc-aa,dd-bb)*.7
     v=rh.ViewInfo();v.Name=name;v.Viewport.SetCameraLocation(rh.Point3d(xx+size,yy-size,1400));v.Viewport.SetCameraDirection(rh.Vector3d(-size,size,-1300));v.Viewport.SetCameraUp(rh.Vector3d(0,0,1));v.Viewport.TargetPoint=rh.Point3d(xx,yy,50);v.Viewport.ChangeToParallelProjection(True);v.Viewport.SetFrustum(-size,size,-size,size,1,40000);model.NamedViews.Add(v)
-model.Strings['ModelNotes']='UW Seattle exterior approximation. Metric official footprint coordinates, sampled USGS 3DEP terrain, one layer per mapped facility and one Environment layer. Heights, roofs, facade bays and tree shapes are approximate. Not official university BIM or a measured as-built model.'
+model.Strings['ModelNotes']='UW Seattle exterior approximation. Official UW building footprints, mapped Sound Transit surface station and OSM neighboring/transit geometry, sampled USGS terrain. Individual campus/neighbor building layers and separate environment layers. Alder block, surface station entries and bridge/stairs interpreted from university/operator/architect sources; exterior heights and member dimensions approximate. No underground railway engineering or measured as-built BIM.'
 assert model.Write(str(OUT/'UW_Seattle_Layered.3dm'),7)
 def chunk(tag,data=b''):return struct.pack('<HI',tag,len(data)+6)+data
 def zs(s):return s.encode('ascii')+b'\0'
@@ -312,8 +324,11 @@ for o in objects:
 assert (OUT/'UW_Seattle.3ds').stat().st_size<100*1024**2,'3DS must remain below GitHub single-file limit'
 # Hover boundaries retain mapped outlines; they are independent of persistent labels.
 for place in places:
+    if place.get('hitArea'):continue
     candidates=[f['poly'] for f in osm if f['properties'].get('name')==place['name'] and f['poly'].geom_type in ['Polygon','MultiPolygon']]
     q=unary_union(candidates).intersection(scope).simplify(.20,preserve_topology=True)
+    # Clipping can leave line-only remnants; hover boundaries must remain polygonal.
+    q=unary_union(polygons(q))
     place['hitArea']=mapping(set_precision(q,.01))
     place['source']='https://www.openstreetmap.org/'
 for name,data in [('layer_map',layer_map),('palette',COLORS),('buildings',records),('viewer_records',records),('places',places)]:

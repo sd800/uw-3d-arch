@@ -116,7 +116,9 @@ def push(name,m,mat,lay,native=True,info=None):
     assert m.is_watertight and np.isfinite(m.vertices).all(),name
     objects.append({'name':name,'mesh':m,'mat':mat});meshdata.append((m,mat))
     layer_map[name]={'layer':lay,'category':'environment' if lay=='Environment' else 'building','material':mat}
-    if native:model.Objects.AddMesh(rhmesh(m),attr(name,lay,mat,info))
+    if native:
+        try:model.Objects.AddMesh(rhmesh(m),attr(name,lay,mat,info))
+        except AssertionError as exc:raise AssertionError('Invalid Rhino mesh: '+name+' / '+mat+' / '+lay)from exc
 def chunk_meshes(prefix,ms,mat,lay,info=None):
     part=[];nv=nf=0;idx=0
     def flush():

@@ -4114,6 +4114,11 @@
     "category": "building",
     "material": "Precast"
   },
+  "W105M6000": {
+    "layer": "W105_Alder Hall",
+    "category": "building",
+    "material": "Metal"
+  },
   "W105D6200": {
     "layer": "W105_Alder Hall",
     "category": "building",
@@ -4123,6 +4128,16 @@
     "layer": "W105_Alder Hall",
     "category": "building",
     "material": "Frame"
+  },
+  "W105M7300": {
+    "layer": "W105_Alder Hall",
+    "category": "building",
+    "material": "Marking"
+  },
+  "W105M7700": {
+    "layer": "W105_Alder Hall",
+    "category": "building",
+    "material": "Solar"
   },
   "W106M2100": {
     "layer": "W106_Terry Hall",
@@ -4194,20 +4209,15 @@
     "category": "building",
     "material": "Precast"
   },
-  "W108M4900": {
+  "W108M5000": {
     "layer": "W108_3947 University Way NE",
     "category": "building",
-    "material": "RoofMetal"
+    "material": "RoofSilver"
   },
-  "W108M5400": {
+  "W108M5800": {
     "layer": "W108_3947 University Way NE",
     "category": "building",
-    "material": "LightStone"
-  },
-  "W108D6100": {
-    "layer": "W108_3947 University Way NE",
-    "category": "building",
-    "material": "Glass"
+    "material": "Concrete"
   },
   "W108D6200": {
     "layer": "W108_3947 University Way NE",
@@ -4218,11 +4228,6 @@
     "layer": "W108_3947 University Way NE",
     "category": "building",
     "material": "Frame"
-  },
-  "W108M8700": {
-    "layer": "W108_3947 University Way NE",
-    "category": "building",
-    "material": "StepStone"
   },
   "W109M2100": {
     "layer": "W109_Publications Services Building",
@@ -4309,25 +4314,25 @@
     "category": "building",
     "material": "Foundation"
   },
+  "W111M3700": {
+    "layer": "W111_Ethnic Cultural Center Theatre",
+    "category": "building",
+    "material": "BrickUmber"
+  },
   "W111M4000": {
     "layer": "W111_Ethnic Cultural Center Theatre",
     "category": "building",
     "material": "Precast"
   },
-  "W111M4900": {
+  "W111M4700": {
     "layer": "W111_Ethnic Cultural Center Theatre",
     "category": "building",
-    "material": "RoofMetal"
+    "material": "RoofWarm"
   },
-  "W111M5400": {
+  "W111M5800": {
     "layer": "W111_Ethnic Cultural Center Theatre",
     "category": "building",
-    "material": "LightStone"
-  },
-  "W111D6100": {
-    "layer": "W111_Ethnic Cultural Center Theatre",
-    "category": "building",
-    "material": "Glass"
+    "material": "Concrete"
   },
   "W111D6200": {
     "layer": "W111_Ethnic Cultural Center Theatre",
@@ -4338,11 +4343,6 @@
     "layer": "W111_Ethnic Cultural Center Theatre",
     "category": "building",
     "material": "Frame"
-  },
-  "W111M8700": {
-    "layer": "W111_Ethnic Cultural Center Theatre",
-    "category": "building",
-    "material": "StepStone"
   },
   "W112M2100": {
     "layer": "W112_Henderson Hall",
@@ -4434,20 +4434,20 @@
     "category": "building",
     "material": "Precast"
   },
-  "W114M4900": {
+  "W114M4700": {
     "layer": "W114_3941 University Way NE",
     "category": "building",
-    "material": "RoofMetal"
+    "material": "RoofWarm"
   },
-  "W114M5400": {
+  "W114M5800": {
     "layer": "W114_3941 University Way NE",
     "category": "building",
-    "material": "LightStone"
+    "material": "Concrete"
   },
-  "W114D6100": {
+  "W114D6200": {
     "layer": "W114_3941 University Way NE",
     "category": "building",
-    "material": "Glass"
+    "material": "DarkGlass"
   },
   "W114D6300": {
     "layer": "W114_3941 University Way NE",
@@ -4489,25 +4489,30 @@
     "category": "building",
     "material": "Foundation"
   },
+  "W116M3500": {
+    "layer": "W116_Instructional Center Annex",
+    "category": "building",
+    "material": "BrickRed"
+  },
   "W116M4000": {
     "layer": "W116_Instructional Center Annex",
     "category": "building",
     "material": "Precast"
   },
-  "W116M4900": {
+  "W116M4700": {
     "layer": "W116_Instructional Center Annex",
     "category": "building",
-    "material": "RoofMetal"
+    "material": "RoofWarm"
   },
-  "W116M5400": {
+  "W116M5800": {
     "layer": "W116_Instructional Center Annex",
     "category": "building",
-    "material": "LightStone"
+    "material": "Concrete"
   },
-  "W116D6100": {
+  "W116D6200": {
     "layer": "W116_Instructional Center Annex",
     "category": "building",
-    "material": "Glass"
+    "material": "DarkGlass"
   },
   "W116D6300": {
     "layer": "W116_Instructional Center Annex",
@@ -4604,25 +4609,30 @@
     "category": "building",
     "material": "Foundation"
   },
+  "W119M3600": {
+    "layer": "W119_3939 University Way NE",
+    "category": "building",
+    "material": "BrickBuff"
+  },
   "W119M4000": {
     "layer": "W119_3939 University Way NE",
     "category": "building",
     "material": "Precast"
   },
-  "W119M4900": {
+  "W119M4700": {
     "layer": "W119_3939 University Way NE",
     "category": "building",
-    "material": "RoofMetal"
+    "material": "RoofWarm"
   },
-  "W119M5400": {
+  "W119M5800": {
     "layer": "W119_3939 University Way NE",
     "category": "building",
-    "material": "LightStone"
+    "material": "Concrete"
   },
-  "W119D6100": {
+  "W119D6200": {
     "layer": "W119_3939 University Way NE",
     "category": "building",
-    "material": "Glass"
+    "material": "DarkGlass"
   },
   "W119D6300": {
     "layer": "W119_3939 University Way NE",
@@ -9479,6 +9489,46 @@
     "category": "building",
     "material": "Frame"
   },
+  "W272M2100": {
+    "layer": "W272_University of Washington Station",
+    "category": "building",
+    "material": "Foundation"
+  },
+  "W272M4000": {
+    "layer": "W272_University of Washington Station",
+    "category": "building",
+    "material": "Precast"
+  },
+  "W272M5000": {
+    "layer": "W272_University of Washington Station",
+    "category": "building",
+    "material": "RoofSilver"
+  },
+  "W272M5800": {
+    "layer": "W272_University of Washington Station",
+    "category": "building",
+    "material": "Concrete"
+  },
+  "W272M6000": {
+    "layer": "W272_University of Washington Station",
+    "category": "building",
+    "material": "Metal"
+  },
+  "W272D6100": {
+    "layer": "W272_University of Washington Station",
+    "category": "building",
+    "material": "Glass"
+  },
+  "W272D6200": {
+    "layer": "W272_University of Washington Station",
+    "category": "building",
+    "material": "DarkGlass"
+  },
+  "W272M7300": {
+    "layer": "W272_University of Washington Station",
+    "category": "building",
+    "material": "Marking"
+  },
   "E0000": {
     "layer": "Environment",
     "category": "environment",
@@ -9524,6 +9574,11 @@
     "category": "environment",
     "material": "BridgePier"
   },
+  "E4300": {
+    "layer": "Environment",
+    "category": "environment",
+    "material": "Cedar"
+  },
   "E5500": {
     "layer": "Environment",
     "category": "environment",
@@ -9533,6 +9588,26 @@
     "layer": "Environment",
     "category": "environment",
     "material": "Tile"
+  },
+  "E5800": {
+    "layer": "Environment",
+    "category": "environment",
+    "material": "Concrete"
+  },
+  "E5900": {
+    "layer": "Environment",
+    "category": "environment",
+    "material": "WhitePanel"
+  },
+  "E6000": {
+    "layer": "Environment",
+    "category": "environment",
+    "material": "Metal"
+  },
+  "E6300": {
+    "layer": "Environment",
+    "category": "environment",
+    "material": "Frame"
   },
   "E6400": {
     "layer": "Environment",
@@ -9693,6 +9768,11 @@
     "layer": "Environment",
     "category": "environment",
     "material": "Furniture"
+  },
+  "E7900": {
+    "layer": "Environment",
+    "category": "environment",
+    "material": "Gold"
   },
   "E8000": {
     "layer": "Environment",
@@ -18739,10 +18819,35 @@
     "category": "neighbor-building",
     "material": "RoofContext"
   },
+  "N369M5000": {
+    "layer": "N369_Gateway Building",
+    "category": "neighbor-building",
+    "material": "RoofSilver"
+  },
+  "N369M5600": {
+    "layer": "N369_Gateway Building",
+    "category": "neighbor-building",
+    "material": "Slate"
+  },
+  "N369M6000": {
+    "layer": "N369_Gateway Building",
+    "category": "neighbor-building",
+    "material": "Metal"
+  },
   "N369D6200": {
     "layer": "N369_Gateway Building",
     "category": "neighbor-building",
     "material": "DarkGlass"
+  },
+  "N369D6300": {
+    "layer": "N369_Gateway Building",
+    "category": "neighbor-building",
+    "material": "Frame"
+  },
+  "N369M7300": {
+    "layer": "N369_Gateway Building",
+    "category": "neighbor-building",
+    "material": "Marking"
   },
   "N370M2200": {
     "layer": "N370_Davis Eye Clinic Building",
@@ -18989,20 +19094,50 @@
     "category": "neighbor-building",
     "material": "DarkGlass"
   },
-  "N380M2300": {
+  "N380M2100": {
     "layer": "N380_U District Station South Entrance",
     "category": "neighbor-building",
-    "material": "ContextStone"
+    "material": "Foundation"
   },
-  "N380M2600": {
+  "N380M5000": {
     "layer": "N380_U District Station South Entrance",
     "category": "neighbor-building",
-    "material": "RoofContext"
+    "material": "RoofSilver"
+  },
+  "N380M5600": {
+    "layer": "N380_U District Station South Entrance",
+    "category": "neighbor-building",
+    "material": "Slate"
+  },
+  "N380M5800": {
+    "layer": "N380_U District Station South Entrance",
+    "category": "neighbor-building",
+    "material": "Concrete"
+  },
+  "N380M6000": {
+    "layer": "N380_U District Station South Entrance",
+    "category": "neighbor-building",
+    "material": "Metal"
+  },
+  "N380M6100": {
+    "layer": "N380_U District Station South Entrance",
+    "category": "neighbor-building",
+    "material": "Glass"
   },
   "N380D6200": {
     "layer": "N380_U District Station South Entrance",
     "category": "neighbor-building",
     "material": "DarkGlass"
+  },
+  "N380D6300": {
+    "layer": "N380_U District Station South Entrance",
+    "category": "neighbor-building",
+    "material": "Frame"
+  },
+  "N380M7300": {
+    "layer": "N380_U District Station South Entrance",
+    "category": "neighbor-building",
+    "material": "Marking"
   },
   "N381M2200": {
     "layer": "N381_U District building 98531403",

@@ -26,7 +26,7 @@ An independent, bilingual exterior model of the **University of Washington Seatt
 
 Low-angle views retain a continuous closed terrain mass and occlude buried geometry. Terrain sides fade gently downward at the model boundary; roads, lawns and water retain stable map ordering. The browser derives this display shell without changing the source CAD elevations.
 
-The campus contains **271 mapped facility/building layers plus one Environment layer**, 26 architectural highlights, **8,602 official tree positions** and 29 cherry canopies around the Quad. Named wings and disconnected pieces sharing a facility code share a layer. The official facility layer's ponds and helipad belong to the environment, not building volumes. Excluded facilities are recorded in `output/excluded_records.json`.
+The campus contains **272 mapped facility/building layers plus one Environment layer** (271 UW inventory facilities and the mapped Sound Transit surface station), 27 architectural highlights, **8,602 official tree positions** and 29 cherry canopies around the Quad. Named wings and disconnected pieces sharing a facility code share a layer. The official facility layer's ponds and helipad belong to the environment, not building volumes. Excluded facilities are recorded in `output/excluded_records.json`.
 
 The surrounding U District adds **597 individually layered buildings** and a separate `Neighboring_Environment` layer. University Way (the Ave), Brooklyn Avenue, the U District station precinct, Roosevelt Way, north-campus residential blocks and the west-campus waterfront are included. Neighboring buildings use a subtly muted palette, with ⁺ prefixed to their displayed names. In **All**, the first row is **⁺Campus neighboring areas**, checked by default. Uncheck it to hide surrounding buildings, streets and landscape together without moving the camera; click its name to frame the area. Searching in All also finds neighboring buildings; while searching, only matching buildings are listed and the group row is hidden. Campus building counts stay separate.
 
@@ -66,14 +66,17 @@ source .venv/bin/activate
 python3 -m pip install -r scripts/requirements.txt
 npm ci
 python3 scripts/build_campus.py
+python3 scripts/ground_contact_samples.py
 python3 scripts/render_preview.py
 npm run build
 npm run check:3ds
+npm run check:ground
+npm run check:transit
 python3 scripts/validate_rhino.py
 npm run check:interaction
 npm run check:seo
 npm run check:release
-python3 scripts/package_delivery.py
+python3 scripts/package_delivery.py --archive-only
 ```
 
 Source snapshots are retained; geometry rebuilding needs no live map access. `fetch_sources.py` and `fetch_terrain.py` retrieve public sources when an updated snapshot is explicitly needed. `prepare_sources.py` also accepts the compressed OSM API snapshots. A GPU-exported preview can replace the lightweight footprint preview before the final website build. WebGL 2 and Compression Streams are required for interactive viewing.
@@ -94,3 +97,5 @@ Source snapshots are retained; geometry rebuilding needs no live map access. `fe
 The initial model transfer is **17.97 MB**, down from **38.81 MB** (53.7% smaller). The web stream uses meshoptimizer 1.3.0 lossless vertex/index-sequence coding followed by gzip. No quantization or simplification is applied; its decoded SHA-256 matches the original 3DS. Rhino and original 3DS downloads stay unchanged.
 
 A single browser worker streams gzip decompression, restores small geometry blocks and parses the CAD model. Its compressed input and resulting geometry buffers are transferred rather than copied. The full intermediate archive is never retained. Scene setup yields to rendering between time slices; browsers that block workers use cooperative per-object parsing. Standalone HTML restores the downloadable CAD on demand in a worker. Decoder JavaScript/WebAssembly is bundled locally and requires no CDN. See `output/web_model_report.json` for byte counts, source digest and maximum block size. `npm run build:model` rebuilds the stream; `npm run check:compression` checks lossless restoration and worker behavior.
+
+Alder Hall’s complete street block, its custom bus canopies, the two light-rail station precincts and their source/approximation notes are documented in [Transit and Alder block sources](sources/TRANSIT_AND_ALDER_BLOCK.md).

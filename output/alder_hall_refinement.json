@@ -9,26 +9,6 @@
   ],
   "approximation": "Outer envelope is UW GIS; courtyard inner boundary is public mapped geometry. Facade bay dimensions, ground passage and planting/furniture positions are photo-informed exterior approximations.",
   "surroundings": {
-    "streets": [
-      "NE Campus Parkway",
-      "Brooklyn Avenue NE",
-      "University Way NE",
-      "NE 40th Street"
-    ],
-    "bounds": [
-      -397.47787928797345,
-      -64.06584424193069,
-      -286.79841737933486,
-      28.71695890724019
-    ],
-    "sidewalk_area_m2": 1884.6,
-    "curb_length_m": 215.79,
-    "official_tree_pits": 12,
-    "paving_joints": "Within mapped sidewalks and immediately graded entry aprons only",
-    "geometry_sources": [
-      "UW GIS tree positions and walk routes",
-      "OpenStreetMap road/path geometry"
-    ],
-    "approximation": "Local curb widths, pavement module sizes and bench detailing are illustrative; retain mapped alignments and source tree/bench positions."
+    "replaced_by": "alder_block_refinement.json"
   }
 }
