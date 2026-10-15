@@ -3,7 +3,9 @@ from pathlib import Path
 import json
 from shapely.geometry import shape
 root=Path(__file__).resolve().parents[1];samples=[]
-for f in json.loads((root/'output/footprints_local_meters.geojson').read_text())['features']:
+files=['footprints_local_meters.geojson','neighboring_footprints.geojson']
+features=[f for name in files for f in json.loads((root/'output'/name).read_text())['features']]
+for f in features:
     p=shape(f['geometry']);props=f['properties'];z=props.get('ground_m',0)
     for part in [p]if p.geom_type=='Polygon'else p.geoms:
         q=part.buffer(-.15)

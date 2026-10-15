@@ -1,0 +1,8 @@
+{
+  "source": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0",
+  "query": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?f=geojson&where=CURRENT_STATUS+%3D+%27INSVC%27&geometry=-122.319%2C47.651%2C-122.303%2C47.666&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outSR=4326&outFields=OBJECTID%2CCOMMON_NAME%2CTREEHEIGHT&resultRecordCount=2000",
+  "retrieved": "2026-10-15T01:35:05.654964+00:00",
+  "features": 1935,
+  "sha256": "e54b36cf32f946cadad70aed26307ba73ea1cd0edea67716dbaee1276cfbff46",
+  "note": "SDOT in-service street-tree positions; canopy forms are illustrative."
+}

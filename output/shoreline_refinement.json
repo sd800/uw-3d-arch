@@ -1,0 +1,28 @@
+{
+  "mapped_wetland_m2": 148796.4,
+  "mapped_pier_parts": 17,
+  "bridge_segments": [
+    {
+      "side": "west",
+      "approximate_peak_deck_elevation_m": 19.62774570435806,
+      "endpoint_elevations_m": [
+        18.571812295990213,
+        19.62774570435806
+      ],
+      "mapped_span_m": 421.3,
+      "continuous_approach_profile": true
+    },
+    {
+      "side": "east",
+      "approximate_peak_deck_elevation_m": 20.059562793909546,
+      "endpoint_elevations_m": [
+        20.059562793909546,
+        15.266057153962155
+      ],
+      "mapped_span_m": 87.17,
+      "continuous_approach_profile": true
+    }
+  ],
+  "source": "OpenStreetMap mapped reserve, wetland, pier and bridge geometry; USGS shore terrain",
+  "accuracy": "Bridge deck/member heights and quay thicknesses are illustrative; plan geometry is mapped. No submerged bare-earth road decks."
+}

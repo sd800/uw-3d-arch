@@ -8,7 +8,7 @@ const root=new URL('../',import.meta.url),path=process.argv[2]||'output/UW_Seatt
 const bytes=readFileSync(new URL(path,root)),model=new TDSLoader().parse(bytes.buffer.slice(bytes.byteOffset,bytes.byteOffset+bytes.byteLength),'');model.updateMatrixWorld(true);
 const cells=new Map(),size=20;let triangles=0;
 model.traverse(m=>{
- if(!m.isMesh||!m.name.startsWith('E'))return;
+ if(!m.isMesh||!(m.name.startsWith('E')||m.name.startsWith('NE')))return;
  const mats=Array.isArray(m.material)?m.material:[m.material],p=m.geometry.attributes.position,idx=m.geometry.index;
  for(const group of m.geometry.groups.length?m.geometry.groups:[{start:0,count:idx.count,materialIndex:0}]){
   if(mats[group.materialIndex]?.name!=='Ground')continue;
@@ -39,7 +39,8 @@ console.log(JSON.stringify(result,null,2));if(!result.passed)process.exitCode=1;
 
 if(!process.argv[2]){
  const html=readFileSync(new URL('index.html',root),'utf8'),data=JSON.parse(html.match(/<script id="campus-data"[^>]*>(.*?)<\/script>/s)[1]);
- assert.equal(data.groundPads?.length??data.records.length,new Set(samples.map(s=>s.code)).size);
+ data.groundPads=[...(data.groundPads||[]),...(data.neighborPads||[])];
+ assert.equal(data.groundPads.length,new Set(samples.map(s=>s.code)).size);
  for(const sample of samples){const [x,y,z]=sample.position;assert.ok(Math.abs(groundHeight(data,x,y)-z)<.025,'Camera and hover use the same flat building grade: '+sample.code);}
  console.log('Camera/hover pad lookup matches all exported building samples.');
 }

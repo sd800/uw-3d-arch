@@ -13,7 +13,18 @@ ROOT=pathlib.Path(__file__).resolve().parents[1]; OUT=ROOT/'output';OUT.mkdir(ex
 TF=Transformer.from_crs(4326,32610,always_xy=True)
 LON,LAT=-122.3093,47.6558;OX,OY=TF.transform(LON,LAT)
 COLORS={
+ 'AlderSoil':(99,120,82),'AlderPaving':(188,185,171),'AlderBrick':(108,113,111),'AlderPanel':(174,180,174),'AlderFrame':(217,223,216),'RoofAlder':(125,131,125),'AlderSoffit':(178,158,121),
+ 'HotelCream':(202,198,178),'HotelOchre':(168,126,87),'HotelRoofEdge':(91,83,69),'HotelSign':(98,65,49),'RoofHotel':(155,149,131),
+ 'RoofContextSlate':(101,109,110),'RoofContextWarm':(156,151,137),
+ 'ShoreGround':(166,174,147),'ShoreGrass':(126,151,103),'ShoreWood':(99,132,88),'Wetland':(109,137,94),'ShoreSand':(190,182,145),'BridgeDeck':(84,89,91),'BridgePier':(159,158,146),
  'Foundation':(179,177,155),
+ 'ContextBrick':(157,128,113),'ContextStone':(178,173,158),'ContextPanel':(155,166,165),'ContextGlass':(111,142,151),'RoofContext':(133,137,131),
+ 'ContextGround':(174,181,165),'ContextGrass':(137,155,116),'ContextLeaves':(98,131,98),'ContextPaving':(180,177,159),'ContextWalk':(185,182,166),'ContextLot':(164,168,159),'ContextSoil':(157,143,117),'ContextGravel':(164,159,143),
+ 'BrickRed':(136,80,65),'BrickBuff':(167,139,108),'BrickUmber':(113,83,65),
+ 'SuzzalloStone':(193,174,141),'DennySandstone':(184,168,139),'Precast':(188,187,175),
+ 'WeatheredWood':(147,137,118),'CedarSilver':(159,154,134),'Cedar':(133,109,79),'FinGlass':(103,143,153),
+ 'RoofSlate':(89,99,105),'RoofMembrane':(176,172,158),'RoofWarm':(149,145,129),
+ 'RoofPatina':(105,128,126),'RoofMetal':(112,123,126),'RoofSilver':(167,171,164),'RoofGlass':(92,126,138),'RoofPaving':(180,175,156),
  'Limestone':(207,194,166),'LightStone':(225,217,195),'Brick':(144,86,67),
  'Slate':(71,75,79),'Tile':(137,67,47),'Concrete':(197,198,193),'WhitePanel':(225,226,219),
  'Metal':(113,124,128),'Glass':(113,157,174),'DarkGlass':(59,83,91),'Frame':(64,65,64),

@@ -17,6 +17,8 @@ An independent, bilingual exterior model of the **University of Washington Seatt
 | `output/UW_Seattle.3ds` | 3DS exterior mesh, 1 unit = 1 meter |
 | `output/UW_Seattle_Layered.3dm` | Rhino v7 with native building solids and layers |
 | `output/building_dimensions_and_sources.csv` | Mapped dimensions, estimated heights and source notes |
+| `output/neighboring_building_dimensions_and_sources.csv` | Neighboring building dimensions, storeys and sources |
+| `output/neighboring_areas.json` | Context scope, grade pads, ground samples and counts |
 | `output/layer_map.json` | 3DS object names → native building / environment layers |
 | `scripts/apply_layers_rhino.py` | Restore layers after importing the 3DS into Rhino |
 | `output/campus_aerial.png` | Campus preview and social sharing image |
@@ -26,7 +28,13 @@ An independent, bilingual exterior model of the **University of Washington Seatt
 
 ## Model and interaction
 
-The model contains **{s['buildings']} mapped facility/building layers plus one Environment layer**, {s['landmarks']} architectural highlights, **{s['trees']:,} official tree positions** and {s['quad_cherry_trees']} cherry canopies around the Quad. Named wings and disconnected pieces sharing a facility code share a layer. The official facility layer's ponds and helipad belong to the environment, not building volumes. Excluded facilities are recorded in `output/excluded_records.json`.
+Low-angle views retain a continuous closed terrain mass and occlude buried geometry. Terrain sides fade gently downward at the model boundary; roads, lawns and water retain stable map ordering. The browser derives this display shell without changing the source CAD elevations.
+
+The campus contains **{s['buildings']} mapped facility/building layers plus one Environment layer**, {s['landmarks']} architectural highlights, **{s['trees']:,} official tree positions** and {s['quad_cherry_trees']} cherry canopies around the Quad. Named wings and disconnected pieces sharing a facility code share a layer. The official facility layer's ponds and helipad belong to the environment, not building volumes. Excluded facilities are recorded in `output/excluded_records.json`.
+
+The surrounding U District adds **{s['neighboring_areas']['buildings']} individually layered buildings** and a separate `Neighboring_Environment` layer. University Way (the Ave), Brooklyn Avenue, the U District station precinct, Roosevelt Way, north-campus residential blocks and the west-campus waterfront are included. Neighboring buildings use a subtly muted palette, with ⁺ prefixed to their displayed names. In **All**, the first row is **⁺Campus neighboring areas**, checked by default. Uncheck it to hide surrounding buildings, streets and landscape together without moving the camera; click its name to frame the area. Searching in All also finds neighboring buildings; while searching, only matching buildings are listed and the group row is hidden. Campus building counts stay separate.
+
+Alder Hall retains its mapped open-air stepped light court, charcoal street brick, pale courtyard elevations and paired white-framed windows. Its four street frontages include graded entry aprons, mapped sidewalk modules, interrupted curbs, tree pits at published tree positions and grounded bench details. Courtyard planting and furnishings are photo-informed approximations.
 
 The initial Core view centers Red Square from the southwest, with north pointing upper-left. Persistent landmark labels start off; hovering a mapped outdoor place or building still shows its name. Reset restores it. Campus shows a wider overview; district and Plan controls provide other views. The East & Athletics preset focuses on Husky Stadium and the adjacent principal athletic facilities. Left-drag pans, right-drag rotates, and the wheel zooms at the pointer. One finger pans; two fingers pan or pinch. Rotate enables one-finger rotation. Camera pivots stay grounded, there is no inertia, and zoom-out remains campus-wide after choosing a landmark.
 
@@ -35,10 +43,14 @@ Search works in both languages and by official code. Buildings can be selected, 
 ## Sources and measurement limits
 
 - **UW public GIS** supplies georeferenced building footprints and names, tree positions, bench positions and supplemental path routes: https://facilities.uw.edu/services/space/gis-maps . The modeled snapshot includes the 2025 Interdisciplinary Engineering Building and basketball facility shown in the public layer.
+- **Seattle SDOT** supplies in-service street-tree positions in the neighboring streets: https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0 . The query, retrieval date and digest are retained in `sources/neighborhood_tree_provenance.json`; canopy dimensions are illustrative.
 - **OpenStreetMap contributors** supply supplementary road, path, plaza, lawn, field and shoreline geometry: https://www.openstreetmap.org/copyright . Some road widths use contributed tags; unrecorded widths are illustrative.
 - **USGS 3DEP** supplies bare-earth terrain at about 10m sampling: https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer . Building pads are locally flattened. Lake surfaces use an approximate common level.
 - Projection: **EPSG:32610**, with local meter offsets from WGS84 {s['origin_wgs84']}. Z uses the DEM meter elevation datum. The elevation slice is an elevation plane, not building-relative storeys.
 - Core refinements include aligned Gothic wing roofs, stone courses and entrances, Suzzallo reading-room window groups, Red Square brick courses and approximate monuments, the Quad’s unified mapped brick walks, Pierce Lane connection and 29 mapped Yoshino trees with their original simple canopy style, and Drumheller Fountain’s flat basin, coping, volumetric plume, arced jets, splash rings and restrained ripples. Small details and vertical dimensions remain approximate.
+- Architecture refinement distinguishes 79 principal facilities using primary architectural references and reviewed aerial imagery. The remaining secondary facilities now use purpose-specific windows, floor courses, attached roofs/parapets and grounded entries/service doors. Individual roof colors are preserved; unverified equipment boxes are omitted. `output/architecture_refinement.json` and `output/ordinary_architecture.json` distinguish these two levels of evidence.
+- University Inn is interpreted from the operator’s exterior gallery: three guest-room floors over a recessed arrival/parking level, paired glazing, attached folded eaves, a rounded warm-colored end, a vertical sign and supported canopy. No swimming-pool position is invented where the available map does not establish it.
+- Shoreline refinements retain mapped reserve, marsh/island, pier and bank geometry. The Union Bay Natural Area, Yesler Swamp and shoreside parks are included. Commercial/service parcels, residential forecourts and the former University Temple vacant site receive distinct ground materials and a mapped site boundary. Artificial outer lake limits are rounded and softly shaded into the background; ground skins beneath open water are omitted, while actual banks are retained. Closed dock decks stay above lake level, and bridge decks use continuous profiles joining their sampled bank approaches. Bridge elevations and members remain illustrative, not engineering measurements.
 - **All exterior heights, storeys, roof partitions, facade bays, canopies and detailed landscape forms are approximate.** Reported gross floor area can include basements and is not an exterior floor count. UW's published Suzzallo reading-room dimensions are interior dimensions, not the exterior building envelope. No whole-building height is presented as a measured survey.
 - The model is an independent exterior study, not official university BIM. Original English names remain available beside faithful independent Chinese translations. Trees around the Quad use illustrative spring cherry color; this does not represent current seasonal conditions.
 
@@ -78,7 +90,13 @@ readme+=f'\n## Website model compression\n\nThe initial model transfer is **{web
 
 - University of Washington, Seattle campus; independent public-source exterior model.
 - Chinese university name: 华盛顿大学; Seattle: 西雅图. Preserve original English proper names for comparison.
-- Individual official facility/building layers plus one Environment layer; unit meters.
+- Individual official facility/building layers plus one Environment layer; unit meters. Additional N-prefixed neighboring building layers and Neighboring_Environment can be toggled together.
+- All begins with a default-checked ⁺Campus neighboring areas row; selecting its name frames surrounding streets. Search in All includes neighboring buildings; the campus count remains campus-only.
+- Neighboring materials are muted subtly; SDOT supplies published street-tree positions. Mapped reserves, wetlands, quays and continuous road/bridge connections fill the previous gaps.
+- Alder Hall has its mapped open-air light court, six-storey street/courtyard facade systems and graded sidewalk approaches.
+- 79 principal buildings have photo/reference-specific profiles; remaining secondary facilities use use-specific details with tagged roof forms. University Inn follows the official exterior gallery.
+- See sources/ARCHITECTURE_REFERENCES.md and sources/NEIGHBORHOOD_REFERENCES.md for evidence and approximation limits.
+- Retain a closed continuous ground display mass and a separate depth barrier for horizontal/low-angle occlusion; preserve CAD source elevations and stable map paint.
 - Use established readable typography, selected highlights, grounded navigation, stable rendering, and loading progress. Resize and redraw atomically. No Level toolbar option.
 - Default Core bearing matches the southwest reference; persistent labels off, contextual hover names on.
 - Red Square, Quad and fountain details are kept on the Environment layer; detailed core building parts remain on their building layers.
@@ -131,13 +149,13 @@ Chinese labels are independent project translations, not claimed as official UW 
 ''')
 usage=f'''# 华盛顿大学西雅图校区模型使用说明
 
-模型包含{s['buildings']}个建筑／设施图层、1个Environment环境层和{s['landmarks']}处建筑地标，单位为米。
+模型包含{s['buildings']}个校园建筑／设施图层、{s['neighboring_areas']['buildings']}个周边建筑图层、Environment与Neighboring_Environment环境层，以及{s['landmarks']}处校园建筑地标，单位为米。
 
 1. 保留根目录index.html与assets、output的相对位置，双击index.html打开；也可使用output/UW_Campus_Offline.html单文件离线版本。
 2. 首次打开统一使用英文，不受设备语言影响；页眉按钮可切换语言。
 3. 左键拖动平移，右键拖动旋转，滚轮以指针位置缩放。触屏单指平移，双指平移或捏合；开启旋转后可单指旋转。松手后立即停止。
 4. 初始核心镜头围绕红场取景；重置恢复该视角。校区鸟瞰、片区和总平面按钮提供其他取景。
-5. 点击建筑或左侧列表，查看尺寸、原英文名称与来源，可定位、隐藏或单独查看。3DS下载和保存视图在加载完成后可用。
+5. All分类首项⁺Campus neighboring areas默认勾选，取消后隐藏周边建筑及道路景观；点击名称可取景周边。All分类搜索也可查找周边建筑。点击建筑或左侧列表，查看尺寸、原英文名称与来源，可定位、隐藏或单独查看。3DS下载和保存视图在加载完成后可用。
 6. 高程剖切按DEM米制标高切割外部表面，并不表示室内结构或相对楼层。
 7. 场所和建筑的鼠标悬停提示独立于常驻地标标签；关闭环境层时不显示室外场所提示。
 8. Rhino优先打开output/UW_Seattle_Layered.3dm。导入output/UW_Seattle.3ds时选择米，再运行scripts/apply_layers_rhino.py恢复图层。

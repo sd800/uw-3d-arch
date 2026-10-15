@@ -1,7 +1,7 @@
 import {createOutdoorPicker,groundPoint,installCampusHover} from './outdoor_hover.js';
 import {createViewportRenderLoop} from './viewport_rendering.js';
 import {createTerrainLighting,applyTerrainLighting} from './terrain_lighting.js';
-import {prepareLandscape,prepareBuildingRoofs,stabilizeBuildingMaterial,updateCampusDepthRange,setCampusClipping,updateCampusDetailDepth,stabilizeCampusShadows,fitCampusSun} from './surface_rendering.js';
+import {createTerrainMass,prepareLandscape,prepareBuildingRoofs,stabilizeBuildingMaterial,updateCampusDepthRange,setCampusClipping,updateCampusDetailDepth,stabilizeCampusShadows,fitCampusSun,softenWaterBoundary} from './surface_rendering.js';
 import {groundHeight} from './ground_height.js';
 import {installMapSelection} from './map_selection.js';
 import {CampusMapControls,setRotationMode,frameCampusBox} from './campus_controls.js';
@@ -16,7 +16,7 @@ const data=JSON.parse(document.getElementById('campus-data').textContent);
 const $=id=>document.getElementById(id), records=data.records;
 const en=Object.fromEntries([...document.querySelectorAll('[data-i18n]')].map(el=>[el.dataset.i18n,el.textContent]));
 Object.assign(en,{layers:'Building layers',mobileLayers:'Buildings',search:'Search building or ID',empty:'No matching buildings',exploreTitle:'Explore the campus',exploreSub:'Choose a building to see dimensions, geometry notes and sources.',intro:'Individual building layers, a separate landscape layer, and architectural highlights. The model combines official mapped footprints with labeled height estimates and USGS terrain.',published:'Published height',planning:'Planning drawing',estimated:'Estimated height',highest:'Model peak',area:'Mapped footprint',width:'East–west extent',depth:'North–south extent',focus:'Locate',isolate:'Isolate',clear:'Deselect',sourceHeight:'Height source',sourceMap:'Footprint source',precision:'Public map extents are approximate. Roof and facade details are simplified; no survey accuracy is claimed.',basisLabel:'Height basis: ',error:'Interactive rendering is unavailable. A static preview is shown. Use a WebGL 2 browser with graphics acceleration enabled. Dimensions and the 3DS download are still available.',static:'Static preview · WebGL unavailable',lost:'Graphics context interrupted. Reopen the HTML to restore the model.',hide:'Hide ',show:'Show ',status:'Meters · public-source exterior model',languageLabel:'Switch to Chinese',prevLabel:'Previous landmark',nextLabel:'Next landmark',cutLabel:'Height of horizontal slice',modelLabel:'Interactive University of Washington campus model',searchLabel:'Search buildings',sidebarLabel:'Building layers and dimensions',tourLabel:'Choose a landmark',snapshotTitle:'UW Campus 3D Model'});
-const zh={title:'华盛顿大学 · 三维校区',subtitle:'西雅图校区模型',offline:'离线可用',download:'下载 3DS',save:'保存视图',eyebrow:'西雅图 · 校园空间图集',closeSidebar:'收起',visible:'显示建筑',unit:'模型单位',environment:'环境景观',details:'建筑外部细节',labels:'地标名称',shadows:'光照阴影',layers:'建筑图层',mobileLayers:'建筑',showAll:'全部显示',all:'全部',landmarks:'地标建筑',quads:'主庭院区',north:'北校区',south:'南部片区',east:'东部片区',medical:'医学中心',aerial:'校区鸟瞰',core:'中央校区',plan:'总平面图',reset:'重置',help:'操作与来源',tourTitle:'建筑漫游 · 校园地标',explore:'查看',cut:'水平剖切',stone:'石灰岩',glass:'玻璃',roads:'道路',plazas:'广场',green:'绿地',loading:'正在打开校园模型…',mouseHelp:'拖动旋转 · 滚轮缩放 · 右键平移',helpHeading:'在三维空间中探索校园',helpOrbit:'鼠标左键拖动旋转，滚轮缩放，右键拖动平移。触屏设备使用单指旋转，双指缩放或平移。',helpSelect:'点击模型或列表中的建筑，查看尺寸、形态说明和资料来源。可以逐栋隐藏，也可以单独查看。',helpTour:'通过建筑漫游查看地标，切换外部细节，或用水平剖切对比体块。剖切仅表示外部表面，不表示内部楼层或室内结构。',helpOffline:'模型、三维引擎和预览均内嵌在 HTML 中。无需网络或服务器，直接用浏览器打开即可。交互显示需要 WebGL 2。',helpAccuracy:'1 单位 = 1 米。平面采用带地理坐标的公开地图，部分地标高度来自学校或项目公开资料；其他高度、屋顶、立面开窗、树位和道路宽度为近似。地面依据 USGS 公开地形采样。这是独立制作的室外空间研究模型，不是学校官方 BIM 或实测模型。',helpLanguages:'设备语言偏好中有中文时首次打开默认中文，其余设备默认英文。浏览器存储可用时会记住手动选择。中文建筑名为便于识别的译名。',sources:'资料来源',officialMap:'学校官方地图',architecture:'学校建筑介绍',cityData:'USGS 公开地形',snapshot:'公开资料快照 · 2026年10月12日',close:'关闭',search:'搜索建筑名称或编号',empty:'没有匹配的建筑',exploreTitle:'探索校园空间',exploreSub:'选择建筑，查看尺寸、形态说明与来源。',intro:'建筑逐栋分层，室外环境单独成层，包含校园地标。模型采用公开地图轮廓、公开资料所载高度及明确标注的估算尺寸。',published:'公开资料所载高度',planning:'规划图尺寸',estimated:'高度估算',highest:'建筑最高点',area:'平面占地面积',width:'东西向范围',depth:'南北向范围',focus:'定位建筑',isolate:'单独查看',clear:'取消选择',sourceHeight:'高度来源',sourceMap:'平面来源',precision:'平面轮廓取自公开地图，屋顶及立面细节为简化表达；尺寸未经过实测校核。',basisLabel:'高度依据：',error:'当前浏览器无法启动交互显示，已显示静态预览。请使用支持 WebGL 2 的浏览器并启用图形加速。尺寸查询与 3DS 下载仍可使用。',static:'静态预览 · WebGL 未启用',lost:'三维显示暂时中断，重新打开 HTML 可恢复模型。',hide:'隐藏 ',show:'显示 ',status:'单位：米 · 公开资料室外模型',languageLabel:'Switch to English',prevLabel:'上一个地标',nextLabel:'下一个地标',cutLabel:'水平剖切高度',modelLabel:'可旋转与缩放的华盛顿大学校园模型',searchLabel:'搜索建筑',sidebarLabel:'建筑图层与尺寸信息',tourLabel:'选择校园地标',snapshotTitle:'华盛顿大学 · 三维校区'};
+const zh={title:'华盛顿大学 · 三维校区',subtitle:'西雅图校区模型',offline:'离线可用',download:'下载 3DS',save:'保存视图',eyebrow:'西雅图 · 校园空间图集',closeSidebar:'收起',visible:'显示建筑',unit:'模型单位',environment:'环境景观',details:'建筑外部细节',labels:'地标名称',shadows:'光照阴影',layers:'建筑图层',mobileLayers:'建筑',showAll:'全部显示',all:'全部',landmarks:'地标建筑',quads:'主庭院区',north:'北校区',south:'南部片区',east:'东部片区',medical:'医学中心',aerial:'校区鸟瞰',core:'中央校区',plan:'总平面图',reset:'重置',help:'操作与来源',tourTitle:'建筑漫游 · 校园地标',explore:'查看',cut:'水平剖切',stone:'石灰岩',glass:'玻璃',roads:'道路',plazas:'广场',green:'绿地',loading:'正在打开校园模型…',mouseHelp:'拖动旋转 · 滚轮缩放 · 右键平移',helpHeading:'在三维空间中探索校园',helpOrbit:'鼠标左键拖动旋转，滚轮缩放，右键拖动平移。触屏设备使用单指旋转，双指缩放或平移。',helpSelect:'点击模型或列表中的建筑，查看尺寸、形态说明和资料来源。可以逐栋隐藏，也可以单独查看。',helpTour:'通过建筑漫游查看地标，切换外部细节，或用水平剖切对比体块。剖切仅表示外部表面，不表示内部楼层或室内结构。',helpOffline:'模型、三维引擎和预览均内嵌在 HTML 中。无需网络或服务器，直接用浏览器打开即可。交互显示需要 WebGL 2。',helpAccuracy:'1 单位 = 1 米。平面采用带地理坐标的公开地图，部分地标高度来自学校或项目公开资料；其他高度、屋顶、立面开窗、树位和道路宽度为近似。地面依据 USGS 公开地形采样。这是独立制作的室外空间研究模型，不是学校官方 BIM 或实测模型。',helpLanguages:'首次打开统一使用英文，不检测设备语言。浏览器存储可用时会记住手动选择。中文建筑名为独立译名，可与原英文名称对照。',sources:'资料来源',officialMap:'学校官方地图',architecture:'学校建筑介绍',cityData:'USGS 公开地形',snapshot:'公开资料快照 · 2026年10月12日',close:'关闭',search:'搜索建筑名称或编号',empty:'没有匹配的建筑',exploreTitle:'探索校园空间',exploreSub:'选择建筑，查看尺寸、形态说明与来源。',intro:'建筑逐栋分层，室外环境单独成层，包含校园地标。模型采用公开地图轮廓、公开资料所载高度及明确标注的估算尺寸。',published:'公开资料所载高度',planning:'规划图尺寸',estimated:'高度估算',highest:'建筑最高点',area:'平面占地面积',width:'东西向范围',depth:'南北向范围',focus:'定位建筑',isolate:'单独查看',clear:'取消选择',sourceHeight:'高度来源',sourceMap:'平面来源',precision:'平面轮廓取自公开地图，屋顶及立面细节为简化表达；尺寸未经过实测校核。',basisLabel:'高度依据：',error:'当前浏览器无法启动交互显示，已显示静态预览。请使用支持 WebGL 2 的浏览器并启用图形加速。尺寸查询与 3DS 下载仍可使用。',static:'静态预览 · WebGL 未启用',lost:'三维显示暂时中断，重新打开 HTML 可恢复模型。',hide:'隐藏 ',show:'显示 ',status:'单位：米 · 公开资料室外模型',languageLabel:'Switch to English',prevLabel:'上一个地标',nextLabel:'下一个地标',cutLabel:'水平剖切高度',modelLabel:'可旋转与缩放的华盛顿大学校园模型',searchLabel:'搜索建筑',sidebarLabel:'建筑图层与尺寸信息',tourLabel:'选择校园地标',snapshotTitle:'华盛顿大学 · 三维校区'};
 
 
 Object.assign(en,{cityData:'USGS terrain',architecture:'University buildings',cut:'Elevation slice'});
@@ -34,10 +34,16 @@ const t=key=>(lang==='zh'?zh[key]:en[key])||en[key]||key;
 const loadingView=loadingIndicator($('load-progress'),$('load-status'),t);
 const reportLoad=event=>loadingView.update(event);
 $('download-image').disabled=true;$('download-3ds').disabled=Boolean(data.model);
-const nameOf=r=>lang==='zh'?(r.name_zh||r.name):r.name;
-const brief=r=>lang==='zh'?(r.short_zh||r.name_zh||r.name):(r.short||r.name);
-const byLayer=new Map(records.map(r=>[r.layer,r]));const byCode=new Map(records.map(r=>[r.code,r]));
+Object.assign(en,{neighbors:'⁺Campus neighboring areas',neighborCount:'surrounding buildings'});Object.assign(zh,{neighbors:'⁺校园周边区域',neighborCount:'栋周边建筑'});
+const nameOf=r=>(r.neighbor?'⁺':'')+(lang==='zh'?(r.name_zh||r.name):r.name);
+const brief=r=>(r.neighbor?'⁺':'')+(lang==='zh'?(r.short_zh||r.name_zh||r.name):(r.short||r.name));
+const allRecords=[...records,...(data.neighbors||[])];
+const byLayer=new Map(allRecords.map(r=>[r.layer,r]));const byCode=new Map(allRecords.map(r=>[r.code,r]));
 const buildings=new Map(), envMeshes=[], pickMeshes=[], details=[];
+let neighborsVisible=true,neighborGroup=null;
+const contextGround={...data,groundPads:[...(data.groundPads||[]),...(data.neighborPads||[])]};
+const mapGround=(x,y)=>groundHeight(neighborsVisible?contextGround:data,x,y);
+function setNeighbors(value){neighborsVisible=value;if(neighborGroup)neighborGroup.visible=value;if(!value&&byCode.get(selected)?.neighbor)selectBuilding(null);refreshList();render();}
 let selected=null,category='all',renderer=null,scene,camera,controls,campus,sun,campusDiagonal=1,modelReady=false,pendingFocus=null,renderBounds=null,depthBits=24,frameHeight=1500,viewMode='aerial',staticMode=false;
 const sidebar=$('sidebar'),host=$('viewport'),compact=matchMedia('(max-width:760px)');
 const tour=data.landmarkOrder.map(id=>records.find(r=>r.facility_id===id)).filter(Boolean);let tourIndex=0;
@@ -55,13 +61,14 @@ function download(blob,name){const url=URL.createObjectURL(blob),a=document.crea
 let bytes=null;
 $('download-3ds').onclick=async()=>{if(!data.model){const a=document.createElement('a');a.href=data.downloadUrl;a.download='UW_Seattle.3ds';a.click();return;}const button=$('download-3ds');button.disabled=true;try{const input=await loadModelBytes(data);download(await recoverCampusDownload(input,data),'UW_Seattle.3ds');}catch(error){console.error(error);$('status-text').textContent=lang==='zh'?'模型下载失败，请重试':'Model download failed. Please try again.';}finally{button.disabled=false;}};
 $('download-image').onclick=()=>{if(!renderer||!modelReady)return;viewportLoop.drawNow();renderer.domElement.toBlob(b=>{if(b)download(b,'UW_Seattle_view.png');});};
-function listRecords(){const q=$('search').value.trim().toLowerCase();return records.filter(r=>(category==='all'||(category==='landmark'?r.landmark:r.zone===category))&&(!q||[r.name,r.name_zh,r.code,r.short,r.short_zh,...(r.aliases_zh||[])].some(s=>s?.toLowerCase().includes(q))));}
+function listRecords(){const q=$('search').value.trim().toLowerCase();return (q&&category==='all'?allRecords:records).filter(r=>(category==='all'||(category==='landmark'?r.landmark:r.zone===category))&&(!q||[r.name,r.name_zh,r.code,r.short,r.short_zh,...(r.aliases_zh||[])].some(s=>s?.toLowerCase().includes(q))));}
 function refreshList(){
  const list=$('building-list');list.replaceChildren();const shown=listRecords();
+ if(category==='all'&&!$('search').value.trim()&&data.neighbors?.length){const row=document.createElement('div');row.className='row neighboring-row';const cb=document.createElement('input');cb.id='neighboring-areas';cb.type='checkbox';cb.checked=neighborsVisible;cb.disabled=!modelReady;cb.setAttribute('aria-label',t('neighbors'));cb.onchange=()=>setNeighbors(cb.checked);const text=document.createElement('button');text.className='building-button';text.title=t('focus');text.onclick=()=>{setNeighbors(true);viewMode='neighbors';setViewButtons();const b=data.neighborBounds;fitBox(new THREE.Box3(new THREE.Vector3(b[0],b[1],20),new THREE.Vector3(b[2],b[3],145)),'aerial',1.1);};const name=document.createElement('span');name.className='building-name';name.textContent=t('neighbors');const meta=document.createElement('span');meta.className='building-meta';meta.textContent=data.neighbors.length+' '+t('neighborCount');text.append(name,meta);row.append(cb,text);list.append(row);}
  if(!shown.length){const el=document.createElement('p');el.className='empty';el.textContent=t('empty');list.append(el);}
  for(const r of shown){
   const row=document.createElement('div');row.className='row'+(selected===r.code?' selected':'');row.dataset.code=r.code;
-  const cb=document.createElement('input');cb.type='checkbox';cb.disabled=!modelReady;cb.checked=buildings.get(r.code)?.visible??true;cb.setAttribute('aria-label',t('show')+nameOf(r));cb.onchange=()=>setVisible(r.code,cb.checked);
+  const cb=document.createElement('input');cb.type='checkbox';cb.disabled=!modelReady;cb.checked=(buildings.get(r.code)?.visible??true)&&(!r.neighbor||neighborsVisible);cb.setAttribute('aria-label',t('show')+nameOf(r));cb.onchange=()=>setVisible(r.code,cb.checked);
   const btn=document.createElement('button');btn.className='building-button';btn.title=r.name;
   const nm=document.createElement('span');nm.className='building-name';nm.textContent=nameOf(r);
   const meta=document.createElement('span');meta.className='building-meta';meta.textContent=r.code+' · '+t(r.zone)+(r.landmark?'  ◆':'');
@@ -69,11 +76,11 @@ function refreshList(){
  }
  updateCount();
 }
-function updateCount(){const n=buildings.size?[...buildings.values()].filter(g=>g.visible).length:records.length;$('visible-count').innerHTML=n+'<small>/ '+records.length+'</small>';if(staticMode)$('status-text').textContent=t('static');else $('status-text').textContent=t('status');}
-function setVisible(code,value){const g=buildings.get(code);if(g)g.visible=value;if(!value&&code===selected)selectBuilding(null);updateCount();render();}
+function updateCount(){const n=buildings.size?records.filter(r=>buildings.get(r.code)?.visible).length:records.length;$('visible-count').innerHTML=n+'<small>/ '+records.length+'</small>';if(staticMode)$('status-text').textContent=t('static');else $('status-text').textContent=t('status');}
+function setVisible(code,value){if(value&&byCode.get(code)?.neighbor&&!neighborsVisible)setNeighbors(true);const g=buildings.get(code);if(g)g.visible=value;if(!value&&code===selected)selectBuilding(null);updateCount();render();}
 $('search').oninput=refreshList;
 for(const b of document.querySelectorAll('[data-category]'))b.onclick=()=>{category=b.dataset.category;for(const bb of document.querySelectorAll('[data-category]')){bb.classList.toggle('active',bb===b);bb.setAttribute('aria-pressed',String(bb===b));}refreshList();};
-$('show-all').onclick=()=>{for(const g of buildings.values())g.visible=true;$('environment').checked=true;envMeshes.forEach(m=>m.visible=true);refreshList();render();};
+$('show-all').onclick=()=>{setNeighbors(true);for(const g of buildings.values())g.visible=true;$('environment').checked=true;envMeshes.forEach(m=>m.visible=true);refreshList();render();};
 $('environment').onchange=()=>{envMeshes.forEach(m=>m.visible=$('environment').checked);render();};
 $('details').onchange=()=>{details.forEach(m=>m.visible=$('details').checked);render();};
 $('labels').onchange=render;
@@ -85,7 +92,7 @@ function emptyDetail(){const p=$('detail');p.replaceChildren();for(const [key,cl
 function refreshDetail(){
  if(!selected){emptyDetail();return;}const r=byCode.get(selected),p=$('detail');p.replaceChildren();
  const title=document.createElement('div');title.className='detail-title';title.textContent=nameOf(r);
- const sub=document.createElement('div');sub.className='detail-sub';const badge=document.createElement('span');badge.className='badge '+r.height_status;badge.textContent=t(r.height_status);sub.append(badge,document.createTextNode(r.code+' · '+t(r.zone)));if(lang==='zh'){const original=document.createElement('div');original.textContent=r.name;sub.append(original);}
+ const sub=document.createElement('div');sub.className='detail-sub';const badge=document.createElement('span');badge.className='badge '+r.height_status;badge.textContent=t(r.height_status);sub.append(badge,document.createTextNode(r.code+' · '+t(r.neighbor?'neighbors':r.zone)));if(lang==='zh'){const original=document.createElement('div');original.textContent=r.name;sub.append(original);}
  const dl=document.createElement('dl');dl.className='dimensions';
  for(const [key,value] of [['highest',r.height.toFixed(2)+' m'],['area',Math.round(r.area).toLocaleString(lang==='zh'?'zh-CN':'en-US')+' m²'],['width',r.width.toFixed(1)+' m'],['depth',r.depth.toFixed(1)+' m']]){const cell=document.createElement('div'),dt=document.createElement('dt'),dd=document.createElement('dd');dt.textContent=t(key);dd.textContent=value;cell.append(dt,dd);dl.append(cell);}
  const actions=document.createElement('div');actions.className='detail-actions';
@@ -99,7 +106,7 @@ function refreshDetail(){
 }
 function selectBuilding(code,focus=false){
  selected=code;for(const[c,g]of buildings)g.traverse(m=>{if(m.isMesh)(Array.isArray(m.material)?m.material:[m.material]).forEach(mat=>{mat.emissive.set(c===code?0x987200:0);mat.emissiveIntensity=c===code?.22:0;});});
- if(code){const g=buildings.get(code);if(g)g.visible=true;const idx=tour.findIndex(r=>r.code===code);if(idx>=0){tourIndex=idx;refreshTour();}}
+ if(code){const g=buildings.get(code);if(g)g.visible=true;if(byCode.get(code)?.neighbor&&!neighborsVisible){neighborsVisible=true;if(neighborGroup)neighborGroup.visible=true;}const idx=tour.findIndex(r=>r.code===code);if(idx>=0){tourIndex=idx;refreshTour();}}
  refreshDetail();refreshList();if(focus)focusBuilding(code);render();
 }
 function refreshTour(){const s=$('tour-select');s.replaceChildren();for(const r of tour){const op=document.createElement('option');op.value=r.code;op.textContent=brief(r);s.append(op);}s.value=tour[tourIndex]?.code||'';$('tour-step').textContent=(tourIndex+1)+' / '+tour.length;}
@@ -129,7 +136,7 @@ $('language').onclick=()=>{$('hover-tip').style.display='none';lang=lang==='en'?
 function aspect(){return Math.max(host.clientWidth,1)/Math.max(host.clientHeight,1);}
 function updateFrustum(){if(!camera)return;const a=aspect();camera.left=-frameHeight*a/2;camera.right=frameHeight*a/2;camera.top=frameHeight/2;camera.bottom=-frameHeight/2;camera.updateProjectionMatrix();if(controls){controls.syncViewOffset();updateCampusZoomLimit(camera,controls,campusDiagonal);}}
 function fitBox(b,mode='aerial',pad=1.16,focus=false,direction=new THREE.Vector3(-.9,-1.5,1.3),minimumHeight=50){
- if(!camera)return;frameHeight=frameCampusBox(camera,controls,b,{aspect:aspect(),mode,pad,direction,minimumHeight,distance:Math.max(3000,campusDiagonal*1.5),pivotHeight:focus?undefined:groundHeight(data,(b.min.x+b.max.x)/2,(b.min.y+b.max.y)/2)});updateFrustum();render();
+ if(!camera)return;frameHeight=frameCampusBox(camera,controls,b,{aspect:aspect(),mode,pad,direction,minimumHeight,distance:Math.max(3000,campusDiagonal*1.5),pivotHeight:focus?undefined:mapGround((b.min.x+b.max.x)/2,(b.min.y+b.max.y)/2)});updateFrustum();render();
 }
 function setViewButtons(){for(const key of ['aerial','core','west-view','south-view','east-view','plan']){$(key).classList.toggle('active',viewMode===key);$(key).setAttribute('aria-pressed',String(viewMode===key));}}
 function syncRotationButton(){const b=$('rotation-mode');b.classList.toggle('active',Boolean(controls?.rotationMode));b.setAttribute('aria-pressed',String(Boolean(controls?.rotationMode)));}
@@ -173,31 +180,34 @@ try{
  renderer.domElement.setAttribute('aria-label',t('modelLabel'));renderer.domElement.tabIndex=0;$('canvas-host').append(renderer.domElement);
  scene=new THREE.Scene();camera=new THREE.OrthographicCamera(-1000,1000,1000,-1000,.1,100000);camera.up.set(0,0,1);scene.add(new THREE.HemisphereLight(0xffffff,0x849177,2.0));
  sun=new THREE.DirectionalLight(0xffffff,2.2);const siteCenter=new THREE.Vector3(...data.siteCenter,50);sun.position.copy(siteCenter).add(new THREE.Vector3(-4000,-6000,9000));sun.target.position.copy(siteCenter);sun.castShadow=true;sun.shadow.mapSize.set(2048,2048);sun.shadow.camera.left=-6500;sun.shadow.camera.right=6500;sun.shadow.camera.top=6500;sun.shadow.camera.bottom=-6500;sun.shadow.camera.near=1;sun.shadow.camera.far=30000;sun.shadow.bias=-.00015;sun.shadow.normalBias=.35;scene.add(sun,sun.target);
+ const terrainBase=Math.min(-30,...(data.groundGrid?.heights||[]).flat().map(z=>z-30));
  const input=bytes;bytes=null;campus=await parseCampusModel(input,reportLoad,data);const meshes=[];campus.traverse(o=>{if(o.isMesh)meshes.push(o);});
+ const terrainMass=createTerrainMass(meshes,terrainBase);
+ neighborGroup=new THREE.Group();neighborGroup.name='Campus neighboring areas';campus.add(neighborGroup);
  const terrainLighting=createTerrainLighting(data.groundGrid);let prepared=0,lastPrepared=performance.now();
  for(const m of meshes){
-  const old=Array.isArray(m.material)?m.material:[m.material];const materials=old.map(mm=>{const mat=mm.clone();const co=data.palette[mat.name];if(co)mat.color.setRGB(co[0]/255,co[1]/255,co[2]/255,THREE.SRGBColorSpace);mat.shininess=mat.name==='Glass'?25:0;mat.specular.set(mat.name==='Glass'?0x222222:0);mat.flatShading=true;mat.emissiveIntensity=0;stabilizeBuildingMaterial(mat,m.name.includes('D'));stabilizeCampusShadows(mat);return mat;});
+  const old=Array.isArray(m.material)?m.material:[m.material];const materials=old.map(mm=>{const mat=mm.clone();const co=data.palette[mat.name];if(co)mat.color.setRGB(co[0]/255,co[1]/255,co[2]/255,THREE.SRGBColorSpace);mat.shininess=['Glass','ContextGlass'].includes(mat.name)?25:0;mat.specular.set(['Glass','ContextGlass'].includes(mat.name)?0x222222:0);mat.flatShading=true;mat.emissiveIntensity=0;stabilizeBuildingMaterial(mat,m.name.includes('D'));stabilizeCampusShadows(mat);softenWaterBoundary(mat,data.waterFrame);return mat;});
   m.material=Array.isArray(m.material)?materials:materials[0];m.receiveShadow=true;
   const r=byLayer.get(data.layers[m.name]?.layer);
-  if(r){let g=buildings.get(r.code);if(!g){g=new THREE.Group();g.name=r.code;buildings.set(r.code,g);campus.add(g);}const center=new THREE.Box3().setFromObject(m).getCenter(new THREE.Vector3());for(const part of prepareBuildingRoofs(m,groundHeight(data,center.x,center.y),m.name.includes('D'),true)){g.attach(part);part.castShadow=true;part.userData.code=r.code;pickMeshes.push(part);if(part.name.includes('D'))details.push(part);}}
-  else{m.castShadow=materials.some(mat=>['Leaves','Trunk','Furniture'].includes(mat.name));const parts=prepareLandscape(m);for(const part of parts)if(part.renderOrder<0)applyTerrainLighting(part.material,terrainLighting);envMeshes.push(...parts);}
+  if(r){let g=buildings.get(r.code);if(!g){g=new THREE.Group();g.name=r.code;buildings.set(r.code,g);(r.neighbor?neighborGroup:campus).add(g);}const center=new THREE.Box3().setFromObject(m).getCenter(new THREE.Vector3());for(const part of prepareBuildingRoofs(m,mapGround(center.x,center.y),m.name.includes('D'),true)){g.attach(part);part.castShadow=true;part.userData.code=r.code;pickMeshes.push(part);if(part.name.includes('D'))details.push(part);}}
+  else{m.castShadow=materials.some(mat=>['Leaves','ContextLeaves','Trunk','Furniture','BridgePier'].includes(mat.name));const parts=prepareLandscape(m,terrainMass);for(const part of parts){if(part.material.userData.campusTerrainWall)softenWaterBoundary(part.material,data.waterFrame);if(part.renderOrder<0)applyTerrainLighting(part.material,terrainLighting);}if(data.layers[m.name]?.category==='neighbor-environment')for(const part of parts)neighborGroup.attach(part);envMeshes.push(...parts);}
   prepared++;if(performance.now()-lastPrepared>8){reportLoad({phase:'scene',loaded:meshes.length+prepared,total:meshes.length*2});await nextPaint();lastPrepared=performance.now();}
  }
  reportLoad({phase:'scene',loaded:1,total:1});
- scene.add(campus);renderBounds=new THREE.Box3().setFromObject(campus);fitCampusSun(sun,renderBounds);renderer.shadowMap.autoUpdate=false;renderer.shadowMap.needsUpdate=true;campusDiagonal=new THREE.Box3().setFromObject(campus).getSize(new THREE.Vector3()).length();envMeshes.forEach(m=>m.visible=$('environment').checked);details.forEach(m=>m.visible=$('details').checked);renderer.shadowMap.enabled=$('shadows').checked;sun.castShadow=$('shadows').checked;updateCut();controls=new CampusMapControls(camera,renderer.domElement);controls.groundHeight=(x,y)=>groundHeight(data,x,y);controls.addEventListener('change',()=>render(false));controls.listenToKeyEvents(renderer.domElement);syncRotationButton();
+ scene.add(campus);renderBounds=new THREE.Box3().setFromObject(campus);fitCampusSun(sun,renderBounds);renderer.shadowMap.autoUpdate=false;renderer.shadowMap.needsUpdate=true;campusDiagonal=new THREE.Box3().setFromObject(campus).getSize(new THREE.Vector3()).length();envMeshes.forEach(m=>m.visible=$('environment').checked);details.forEach(m=>m.visible=$('details').checked);renderer.shadowMap.enabled=$('shadows').checked;sun.castShadow=$('shadows').checked;updateCut();controls=new CampusMapControls(camera,renderer.domElement);controls.groundHeight=mapGround;controls.addEventListener('change',()=>render(false));controls.listenToKeyEvents(renderer.domElement);syncRotationButton();
  renderer.domElement.addEventListener('keydown',e=>{if(e.ctrlKey||e.metaKey||e.altKey)return;if(['+','=','-','_'].includes(e.key)){e.preventDefault();if(e.key==='+'||e.key==='=')controls.dollyIn(.9);else controls.dollyOut(.9);}if(!e.repeat&&e.key.toLowerCase()==='r'){$('rotation-mode').click();}});
  viewportLoop=createViewportRenderLoop({host,renderer,resize:ratio=>{frameHeight*=ratio;updateFrustum();},draw:drawScene});
  const observer=new ResizeObserver(()=>{if(viewportLoop.needsResize())render(false);});observer.observe(host);
  reportLoad({phase:'render',loaded:0,total:1});await nextPaint();modelReady=true;
  fullView('core');if(selected)selectBuilding(selected,Boolean(pendingFocus));pendingFocus=null;refreshList();
  const ray=new THREE.Raycaster(),pointer=new THREE.Vector2();
- function pick(e){const b=renderer.domElement.getBoundingClientRect();pointer.set((e.clientX-b.left)/b.width*2-1,-(e.clientY-b.top)/b.height*2+1);ray.setFromCamera(pointer,camera);return ray.intersectObjects(pickMeshes.filter(m=>m.visible&&m.parent.visible),false).find(h=>!$('cut-enabled').checked||h.point.z<=clipPlane.constant)?.object.userData.code||null;}
+ function pick(e){const b=renderer.domElement.getBoundingClientRect();pointer.set((e.clientX-b.left)/b.width*2-1,-(e.clientY-b.top)/b.height*2+1);ray.setFromCamera(pointer,camera);return ray.intersectObjects(pickMeshes.filter(m=>m.visible&&m.parent.visible&&(neighborsVisible||!byCode.get(m.userData.code)?.neighbor)),false).find(h=>!$('cut-enabled').checked||h.point.z<=clipPlane.constant)?.object.userData.code||null;}
  installMapSelection(renderer.domElement,e=>selectBuilding(pick(e)));
  const outdoorPicker=createOutdoorPicker(data.hoverPlaces||data.places||[]);
  installCampusHover(renderer.domElement,{resolve:e=>{
   const code=pick(e);if(code){const r=byCode.get(code);return {text:nameOf(r)+' · '+r.height.toFixed(2)+' m',building:true};}
   if(!$('environment').checked)return null;
-  const p=groundPoint(ray.ray,(x,y)=>groundHeight(data,x,y),controls.target.z,Math.max(5000,campusDiagonal*8));
+  const p=groundPoint(ray.ray,mapGround,controls.target.z,Math.max(5000,campusDiagonal*8));
   if(!p||($('cut-enabled').checked&&p.z>clipPlane.constant))return null;
   const place=outdoorPicker(p.x,p.y);return place?{text:nameOf(place),building:false}:null;
  },show:(value,e)=>{const tip=$('hover-tip');tip.textContent=value.text;tip.style.display='block';const b=host.getBoundingClientRect();tip.style.left=Math.min(e.clientX-b.left+14,host.clientWidth-tip.offsetWidth-10)+'px';tip.style.top=Math.min(e.clientY-b.top+14,host.clientHeight-tip.offsetHeight-38)+'px';renderer.domElement.style.cursor=value.building?'pointer':'grab';},hide:()=>{$('hover-tip').style.display='none';renderer.domElement.style.cursor='grab';}});

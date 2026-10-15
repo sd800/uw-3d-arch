@@ -1,17 +1,17 @@
 {
   "parser": "Three.js TDSLoader (independent 3DS importer)",
-  "objects": 1900,
-  "triangles": 2762818,
-  "vertices": 1594371,
+  "objects": 4867,
+  "triangles": 4943120,
+  "vertices": 2796358,
   "box_min": [
-    -985,
-    -1005,
-    2.0292611122131348
+    -1031.3050537109375,
+    -1120,
+    2.252847671508789
   ],
   "box_max": [
-    1705,
+    1810,
     1078.0400390625,
-    157.34979248046875
+    157.1597900390625
   ],
   "all_names_preserved": true
 }

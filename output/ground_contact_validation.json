@@ -1,11 +1,11 @@
 {
   "source": "output/UW_Seattle.3ds",
-  "buildings": 271,
-  "samples": 1995,
-  "ground_top_triangles": 38590,
+  "buildings": 868,
+  "samples": 6174,
+  "ground_top_triangles": 36234,
   "missing_ground_samples": 0,
-  "max_floating_gap_m": 0.0004960784912118044,
-  "max_intrusion_m": 0.0004980468749984368,
+  "max_floating_gap_m": 0.0004992065429689774,
+  "max_intrusion_m": 0.0004981689453131821,
   "passed": true,
   "failures": []
 }

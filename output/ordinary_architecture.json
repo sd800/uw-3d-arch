@@ -1,0 +1,3699 @@
+{
+  "facilities": [
+    {
+      "facility_id": "HPT",
+      "height_m": 11.8,
+      "levels": 2,
+      "volume_parts": [
+        {
+          "area_m2": 659.4,
+          "height_m": 8.75,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "OBS",
+      "height_m": 11.8,
+      "levels": 2,
+      "volume_parts": [
+        {
+          "area_m2": 163.4,
+          "height_m": 8.75,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "GH2",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 8.14,
+          "height_m": 3.24,
+          "material": "Precast"
+        },
+        {
+          "area_m2": 8.31,
+          "height_m": 3.24,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "EXED",
+      "height_m": 19.55,
+      "levels": 5,
+      "volume_parts": [
+        {
+          "area_m2": 540.32,
+          "height_m": 15.93,
+          "material": "BrickRed"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "DEM",
+      "height_m": 15.8,
+      "levels": 4,
+      "volume_parts": [
+        {
+          "area_m2": 1373.3,
+          "height_m": 15.58,
+          "material": "BrickRed"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "LEW",
+      "height_m": 15.55,
+      "levels": 3,
+      "volume_parts": [
+        {
+          "area_m2": 598.43,
+          "height_m": 11.93,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "FNDR",
+      "height_m": 19.55,
+      "levels": 5,
+      "volume_parts": [
+        {
+          "area_m2": 1866.38,
+          "height_m": 19.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "ART",
+      "height_m": 12.05,
+      "levels": 3,
+      "volume_parts": [
+        {
+          "area_m2": 3080.02,
+          "height_m": 11.83,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "EGL",
+      "height_m": 8.3,
+      "levels": 2,
+      "volume_parts": [
+        {
+          "area_m2": 672.52,
+          "height_m": 6.09,
+          "material": "BrickRed"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "CLK",
+      "height_m": 15.55,
+      "levels": 3,
+      "volume_parts": [
+        {
+          "area_m2": 708.66,
+          "height_m": 11.93,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "PAR",
+      "height_m": 12.05,
+      "levels": 3,
+      "volume_parts": [
+        {
+          "area_m2": 1305.05,
+          "height_m": 8.94,
+          "material": "BrickRed"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "SWS",
+      "height_m": 15.8,
+      "levels": 4,
+      "volume_parts": [
+        {
+          "area_m2": 2202.0,
+          "height_m": 15.58,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "ICH",
+      "height_m": 8.3,
+      "levels": 2,
+      "volume_parts": [
+        {
+          "area_m2": 239.77,
+          "height_m": 6.09,
+          "material": "WeatheredWood"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "PDL",
+      "height_m": 27.05,
+      "levels": 7,
+      "volume_parts": [
+        {
+          "area_m2": 1837.31,
+          "height_m": 26.83,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "CMU",
+      "height_m": 23.3,
+      "levels": 6,
+      "volume_parts": [
+        {
+          "area_m2": 1764.21,
+          "height_m": 23.08,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "AVA",
+      "height_m": 12.05,
+      "levels": 3,
+      "volume_parts": [
+        {
+          "area_m2": 1864.9,
+          "height_m": 11.83,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "HLL",
+      "height_m": 15.8,
+      "levels": 4,
+      "volume_parts": [
+        {
+          "area_m2": 1555.8,
+          "height_m": 15.58,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "FAC",
+      "height_m": 8.3,
+      "levels": 2,
+      "volume_parts": [
+        {
+          "area_m2": 1006.45,
+          "height_m": 8.08,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "CDA",
+      "height_m": 28.25,
+      "levels": 9,
+      "volume_parts": [
+        {
+          "area_m2": 1070.13,
+          "height_m": 28.03,
+          "material": "BrickBuff"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "GH5",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 5.5,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "SIG",
+      "height_m": 15.8,
+      "levels": 4,
+      "volume_parts": [
+        {
+          "area_m2": 1233.95,
+          "height_m": 15.58,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "PO4",
+      "height_m": 8.3,
+      "levels": 2,
+      "volume_parts": [
+        {
+          "area_m2": 492.43,
+          "height_m": 8.08,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "ELB",
+      "height_m": 19.55,
+      "levels": 5,
+      "volume_parts": [
+        {
+          "area_m2": 735.37,
+          "height_m": 19.33,
+          "material": "BrickRed"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "GUA",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 375.22,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "ARC",
+      "height_m": 15.55,
+      "levels": 3,
+      "volume_parts": [
+        {
+          "area_m2": 1564.37,
+          "height_m": 11.93,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "PO6",
+      "height_m": 8.3,
+      "levels": 2,
+      "volume_parts": [
+        {
+          "area_m2": 200.23,
+          "height_m": 8.08,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "KIR",
+      "height_m": 12.05,
+      "levels": 3,
+      "volume_parts": [
+        {
+          "area_m2": 705.67,
+          "height_m": 11.83,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "UWPD",
+      "height_m": 12.05,
+      "levels": 3,
+      "volume_parts": [
+        {
+          "area_m2": 893.81,
+          "height_m": 11.83,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "LOW",
+      "height_m": 12.05,
+      "levels": 3,
+      "volume_parts": [
+        {
+          "area_m2": 1724.6,
+          "height_m": 11.83,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "POB",
+      "height_m": 12.05,
+      "levels": 3,
+      "volume_parts": [
+        {
+          "area_m2": 311.38,
+          "height_m": 11.83,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "ERS",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 196.13,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "ADL",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 167.11,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "ATG",
+      "height_m": 23.3,
+      "levels": 6,
+      "volume_parts": [
+        {
+          "area_m2": 603.35,
+          "height_m": 23.08,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "AER",
+      "height_m": 15.8,
+      "levels": 4,
+      "volume_parts": [
+        {
+          "area_m2": 880.95,
+          "height_m": 15.58,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "GTH",
+      "height_m": 12.05,
+      "levels": 3,
+      "volume_parts": [
+        {
+          "area_m2": 1370.88,
+          "height_m": 11.83,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "PWR",
+      "height_m": 15.8,
+      "levels": 4,
+      "volume_parts": [
+        {
+          "area_m2": 4311.1,
+          "height_m": 15.58,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "MEB",
+      "height_m": 15.8,
+      "levels": 4,
+      "volume_parts": [
+        {
+          "area_m2": 2032.03,
+          "height_m": 15.58,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "EGA",
+      "height_m": 12.05,
+      "levels": 3,
+      "volume_parts": [
+        {
+          "area_m2": 1694.12,
+          "height_m": 11.83,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "WRS",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 363.62,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "PAB",
+      "height_m": 26,
+      "levels": 8,
+      "volume_parts": [
+        {
+          "area_m2": 1873.5,
+          "height_m": 25.78,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "ECE",
+      "height_m": 19.55,
+      "levels": 5,
+      "volume_parts": [
+        {
+          "area_m2": 2992.36,
+          "height_m": 19.33,
+          "material": "BrickRed"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "BAG",
+      "height_m": 12.05,
+      "levels": 3,
+      "volume_parts": [
+        {
+          "area_m2": 3914.43,
+          "height_m": 11.83,
+          "material": "BrickRed"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "PAT",
+      "height_m": 28,
+      "levels": 6,
+      "volume_parts": [
+        {
+          "area_m2": 699.91,
+          "height_m": 27.78,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "BNS",
+      "height_m": 12.05,
+      "levels": 3,
+      "volume_parts": [
+        {
+          "area_m2": 2607.91,
+          "height_m": 11.83,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "PAA",
+      "height_m": 15,
+      "levels": 3,
+      "volume_parts": [
+        {
+          "area_m2": 1815.75,
+          "height_m": 14.78,
+          "material": "BrickRed"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "CHB",
+      "height_m": 19.55,
+      "levels": 5,
+      "volume_parts": [
+        {
+          "area_m2": 1936.82,
+          "height_m": 19.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "KIN",
+      "height_m": 27.05,
+      "levels": 7,
+      "volume_parts": [
+        {
+          "area_m2": 1169.82,
+          "height_m": 26.83,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "MOR",
+      "height_m": 12.05,
+      "levels": 3,
+      "volume_parts": [
+        {
+          "area_m2": 2263.99,
+          "height_m": 11.83,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "RAX",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 167.05,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "LSG",
+      "height_m": 23.3,
+      "levels": 6,
+      "volume_parts": [
+        {
+          "area_m2": 1854.91,
+          "height_m": 23.08,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "HCK",
+      "height_m": 19.55,
+      "levels": 5,
+      "volume_parts": [
+        {
+          "area_m2": 1636.57,
+          "height_m": 19.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "WIL",
+      "height_m": 12.05,
+      "levels": 3,
+      "volume_parts": [
+        {
+          "area_m2": 1299.52,
+          "height_m": 11.83,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "CDRW",
+      "height_m": 22.15,
+      "levels": 7,
+      "volume_parts": [
+        {
+          "area_m2": 1708.51,
+          "height_m": 21.93,
+          "material": "BrickBuff"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "CDRE",
+      "height_m": 22.15,
+      "levels": 7,
+      "volume_parts": [
+        {
+          "area_m2": 1326.62,
+          "height_m": 21.93,
+          "material": "BrickBuff"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "PHT",
+      "height_m": 11.8,
+      "levels": 2,
+      "volume_parts": [
+        {
+          "area_m2": 741.97,
+          "height_m": 8.75,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "CDH",
+      "height_m": 27.05,
+      "levels": 7,
+      "volume_parts": [
+        {
+          "area_m2": 2156.79,
+          "height_m": 26.83,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "SMZ",
+      "height_m": 15.8,
+      "levels": 4,
+      "volume_parts": [
+        {
+          "area_m2": 2576.54,
+          "height_m": 15.58,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "TSB",
+      "height_m": 12.05,
+      "levels": 3,
+      "volume_parts": [
+        {
+          "area_m2": 367.17,
+          "height_m": 11.83,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "SGS",
+      "height_m": 8.3,
+      "levels": 2,
+      "volume_parts": [
+        {
+          "area_m2": 177.14,
+          "height_m": 8.08,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "PSV",
+      "height_m": 12.05,
+      "levels": 3,
+      "volume_parts": [
+        {
+          "area_m2": 1985.03,
+          "height_m": 11.83,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "RTB",
+      "height_m": 23.3,
+      "levels": 6,
+      "volume_parts": [
+        {
+          "area_m2": 2169.61,
+          "height_m": 23.08,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "ICT",
+      "height_m": 8.3,
+      "levels": 2,
+      "volume_parts": [
+        {
+          "area_m2": 733.13,
+          "height_m": 8.08,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "HND",
+      "height_m": 30,
+      "levels": 7,
+      "volume_parts": [
+        {
+          "area_m2": 1519.56,
+          "height_m": 29.78,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "ECC",
+      "height_m": 12.05,
+      "levels": 3,
+      "volume_parts": [
+        {
+          "area_m2": 1147.99,
+          "height_m": 11.83,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "DSC",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 669.82,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "CCC",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 452.78,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "IC2",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 111.52,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "NLB",
+      "height_m": 15.8,
+      "levels": 4,
+      "volume_parts": [
+        {
+          "area_m2": 491.03,
+          "height_m": 15.58,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "GLD",
+      "height_m": 15.8,
+      "levels": 4,
+      "volume_parts": [
+        {
+          "area_m2": 2510.2,
+          "height_m": 15.58,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "EIC",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 429.61,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "MRCA",
+      "height_m": 25.2,
+      "levels": 8,
+      "volume_parts": [
+        {
+          "area_m2": 1449.89,
+          "height_m": 24.98,
+          "material": "BrickBuff"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "URC",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 667.79,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "SSB",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 947.49,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "MRCE",
+      "height_m": 25.2,
+      "levels": 8,
+      "volume_parts": [
+        {
+          "area_m2": 891.35,
+          "height_m": 24.98,
+          "material": "BrickBuff"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "SCL",
+      "height_m": 13.0,
+      "levels": 4,
+      "volume_parts": [
+        {
+          "area_m2": 1071.07,
+          "height_m": 12.78,
+          "material": "BrickBuff"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "MRCD",
+      "height_m": 25.2,
+      "levels": 8,
+      "volume_parts": [
+        {
+          "area_m2": 896.19,
+          "height_m": 24.98,
+          "material": "BrickBuff"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "MRCC",
+      "height_m": 25.2,
+      "levels": 8,
+      "volume_parts": [
+        {
+          "area_m2": 1249.12,
+          "height_m": 24.98,
+          "material": "BrickBuff"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "SCA",
+      "height_m": 9.95,
+      "levels": 3,
+      "volume_parts": [
+        {
+          "area_m2": 573.2,
+          "height_m": 9.73,
+          "material": "BrickBuff"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "SCK",
+      "height_m": 13.0,
+      "levels": 4,
+      "volume_parts": [
+        {
+          "area_m2": 755.33,
+          "height_m": 12.78,
+          "material": "BrickBuff"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "MRCB",
+      "height_m": 25.2,
+      "levels": 8,
+      "volume_parts": [
+        {
+          "area_m2": 1367.72,
+          "height_m": 24.98,
+          "material": "BrickBuff"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "SCM",
+      "height_m": 13.0,
+      "levels": 4,
+      "volume_parts": [
+        {
+          "area_m2": 647.52,
+          "height_m": 12.78,
+          "material": "BrickBuff"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "SCB",
+      "height_m": 13.0,
+      "levels": 4,
+      "volume_parts": [
+        {
+          "area_m2": 618.47,
+          "height_m": 12.78,
+          "material": "BrickBuff"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "SCH",
+      "height_m": 9.95,
+      "levels": 3,
+      "volume_parts": [
+        {
+          "area_m2": 260.61,
+          "height_m": 9.73,
+          "material": "BrickBuff"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "WCUP",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 805.11,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "SCD",
+      "height_m": 9.95,
+      "levels": 3,
+      "volume_parts": [
+        {
+          "area_m2": 469.6,
+          "height_m": 9.73,
+          "material": "BrickBuff"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "SCC",
+      "height_m": 13.0,
+      "levels": 4,
+      "volume_parts": [
+        {
+          "area_m2": 933.38,
+          "height_m": 12.78,
+          "material": "BrickBuff"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "SCJ",
+      "height_m": 13.0,
+      "levels": 4,
+      "volume_parts": [
+        {
+          "area_m2": 568.77,
+          "height_m": 12.78,
+          "material": "BrickBuff"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "TL65",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 164.64,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "FSH",
+      "height_m": 15.8,
+      "levels": 4,
+      "volume_parts": [
+        {
+          "area_m2": 3874.91,
+          "height_m": 15.58,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "TL67",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 164.64,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "TL68",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 165.06,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "ACC",
+      "height_m": 8.3,
+      "levels": 2,
+      "volume_parts": [
+        {
+          "area_m2": 1322.79,
+          "height_m": 8.08,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "TL69",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 154.41,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "WCP",
+      "height_m": 23.3,
+      "levels": 6,
+      "volume_parts": [
+        {
+          "area_m2": 2288.93,
+          "height_m": 23.08,
+          "material": "Precast"
+        },
+        {
+          "area_m2": 3210.62,
+          "height_m": 23.08,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "TL70",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 154.99,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "FTR",
+      "height_m": 12.05,
+      "levels": 3,
+      "volume_parts": [
+        {
+          "area_m2": 998.96,
+          "height_m": 11.83,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "MAR",
+      "height_m": 8.3,
+      "levels": 2,
+      "volume_parts": [
+        {
+          "area_m2": 1499.04,
+          "height_m": 8.08,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "OR2",
+      "height_m": 8.3,
+      "levels": 2,
+      "volume_parts": [
+        {
+          "area_m2": 194.29,
+          "height_m": 8.08,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "WSP",
+      "height_m": 8.3,
+      "levels": 2,
+      "volume_parts": [
+        {
+          "area_m2": 249.67,
+          "height_m": 6.09,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "WSG",
+      "height_m": 8.3,
+      "levels": 2,
+      "volume_parts": [
+        {
+          "area_m2": 251.03,
+          "height_m": 6.09,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "WCL",
+      "height_m": 8.3,
+      "levels": 2,
+      "volume_parts": [
+        {
+          "area_m2": 278.58,
+          "height_m": 8.08,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "WFS",
+      "height_m": 8.3,
+      "levels": 2,
+      "volume_parts": [
+        {
+          "area_m2": 1385.44,
+          "height_m": 8.08,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "WLA",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 463.48,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "BLD",
+      "height_m": 12.05,
+      "levels": 3,
+      "volume_parts": [
+        {
+          "area_m2": 2222.8,
+          "height_m": 11.83,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "OCN",
+      "height_m": 15.8,
+      "levels": 4,
+      "volume_parts": [
+        {
+          "area_m2": 2321.14,
+          "height_m": 15.58,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "WNX",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 24.82,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "GH6",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 8.18,
+          "height_m": 4.33,
+          "material": "Precast"
+        },
+        {
+          "area_m2": 8.27,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "OTS",
+      "height_m": 8.3,
+      "levels": 2,
+      "volume_parts": [
+        {
+          "area_m2": 69.48,
+          "height_m": 8.08,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "OTB",
+      "height_m": 15.8,
+      "levels": 4,
+      "volume_parts": [
+        {
+          "area_m2": 905.7,
+          "height_m": 15.58,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "OTS2",
+      "height_m": 8.3,
+      "levels": 2,
+      "volume_parts": [
+        {
+          "area_m2": 413.12,
+          "height_m": 8.08,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "HHL",
+      "height_m": 12.05,
+      "levels": 3,
+      "volume_parts": [
+        {
+          "area_m2": 789.71,
+          "height_m": 11.83,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "MSB",
+      "height_m": 19.55,
+      "levels": 5,
+      "volume_parts": [
+        {
+          "area_m2": 1031.58,
+          "height_m": 19.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "SPG",
+      "height_m": 15.8,
+      "levels": 4,
+      "volume_parts": [
+        {
+          "area_m2": 6573.88,
+          "height_m": 15.58,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "SOCC",
+      "height_m": 8.3,
+      "levels": 2,
+      "volume_parts": [
+        {
+          "area_m2": 2927.23,
+          "height_m": 8.08,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "OCE",
+      "height_m": 12.05,
+      "levels": 3,
+      "volume_parts": [
+        {
+          "area_m2": 721.88,
+          "height_m": 11.83,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "ODB",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 136.31,
+          "height_m": 3.24,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "PBB",
+      "height_m": 12.05,
+      "levels": 3,
+      "volume_parts": [
+        {
+          "area_m2": 3391.62,
+          "height_m": 11.83,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "OSS",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 198.95,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "CHCL",
+      "height_m": 19.55,
+      "levels": 5,
+      "volume_parts": [
+        {
+          "area_m2": 1528.25,
+          "height_m": 19.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "CHSC",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 4309.49,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "CHSB",
+      "height_m": 8.3,
+      "levels": 2,
+      "volume_parts": [
+        {
+          "area_m2": 761.24,
+          "height_m": 8.08,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "NC3",
+      "height_m": 9.95,
+      "levels": 3,
+      "volume_parts": [
+        {
+          "area_m2": 256.4,
+          "height_m": 9.73,
+          "material": "BrickBuff"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "NC4",
+      "height_m": 13.0,
+      "levels": 4,
+      "volume_parts": [
+        {
+          "area_m2": 256.86,
+          "height_m": 12.78,
+          "material": "BrickBuff"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "NC7",
+      "height_m": 13.0,
+      "levels": 4,
+      "volume_parts": [
+        {
+          "area_m2": 520.2,
+          "height_m": 12.78,
+          "material": "BrickBuff"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "NC5",
+      "height_m": 13.0,
+      "levels": 4,
+      "volume_parts": [
+        {
+          "area_m2": 508.76,
+          "height_m": 12.78,
+          "material": "BrickBuff"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "NC8",
+      "height_m": 13.0,
+      "levels": 4,
+      "volume_parts": [
+        {
+          "area_m2": 741.85,
+          "height_m": 12.78,
+          "material": "BrickBuff"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "NC1",
+      "height_m": 13.0,
+      "levels": 4,
+      "volume_parts": [
+        {
+          "area_m2": 910.55,
+          "height_m": 12.78,
+          "material": "BrickBuff"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "FSB",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 549.12,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "PSB",
+      "height_m": 8.3,
+      "levels": 2,
+      "volume_parts": [
+        {
+          "area_m2": 6260.68,
+          "height_m": 8.08,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "NPV",
+      "height_m": 8.3,
+      "levels": 2,
+      "volume_parts": [
+        {
+          "area_m2": 2037.96,
+          "height_m": 8.08,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "CMA",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 472.05,
+          "height_m": 4.33,
+          "material": "Precast"
+        },
+        {
+          "area_m2": 1893.67,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "ESB",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 531.09,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "NPC",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 489.38,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "CY24",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 50.62,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "CY23",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 28.6,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "CY22",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 25.45,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "CY21",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 34.37,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "CY29",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 13.85,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "CY20",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 83.93,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "CY30",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 61.22,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "CY18",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 29.35,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "CY25",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 62.88,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "CY17",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 34.74,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "CY26",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 75.92,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "CY31",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 78.02,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "CY16",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 33.57,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "CY27",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 60.34,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "CY15",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 71.09,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "CY14",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 30.91,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "CY13",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 35.71,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "CY28",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 52.13,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "CY12",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 87.99,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "CY11",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 26.31,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "CY10",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 29.87,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "CY9",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 14.38,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "CY6",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 15.2,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "CY7",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 21.01,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "NPS",
+      "height_m": 8.3,
+      "levels": 2,
+      "volume_parts": [
+        {
+          "area_m2": 515.12,
+          "height_m": 8.08,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "CY5",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 112.44,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "CY4",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 24.84,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "CY3",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 23.67,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "CY2",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 109.19,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "CY1",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 23.45,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "CYCO",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 148.26,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "ESO",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 257.24,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "GDR",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 605.8,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "CY19",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 19.34,
+          "height_m": 4.33,
+          "material": "Precast"
+        },
+        {
+          "area_m2": 20.53,
+          "height_m": 4.33,
+          "material": "Precast"
+        },
+        {
+          "area_m2": 34.2,
+          "height_m": 4.33,
+          "material": "Precast"
+        },
+        {
+          "area_m2": 27.98,
+          "height_m": 4.33,
+          "material": "Precast"
+        },
+        {
+          "area_m2": 86.69,
+          "height_m": 4.33,
+          "material": "Precast"
+        },
+        {
+          "area_m2": 13.3,
+          "height_m": 4.33,
+          "material": "Precast"
+        },
+        {
+          "area_m2": 14.74,
+          "height_m": 4.33,
+          "material": "Precast"
+        },
+        {
+          "area_m2": 18.2,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "GH3",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 5.74,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "NHS",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 449.1,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "NMH",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 1241.6,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "ISA",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 265.01,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "DRC",
+      "height_m": 8.3,
+      "levels": 2,
+      "volume_parts": [
+        {
+          "area_m2": 683.52,
+          "height_m": 8.08,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "UHF",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 237.8,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "FLK",
+      "height_m": 12.05,
+      "levels": 3,
+      "volume_parts": [
+        {
+          "area_m2": 2555.32,
+          "height_m": 11.83,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "PO5",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 43.9,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "BSG",
+      "height_m": 8.3,
+      "levels": 2,
+      "volume_parts": [
+        {
+          "area_m2": 458.8,
+          "height_m": 8.08,
+          "material": "Precast"
+        },
+        {
+          "area_m2": 2736.2,
+          "height_m": 8.08,
+          "material": "Precast"
+        },
+        {
+          "area_m2": 848.79,
+          "height_m": 8.08,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "PO3",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 192.25,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "PO2",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 45.3,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "IMA",
+      "height_m": 15.8,
+      "levels": 4,
+      "volume_parts": [
+        {
+          "area_m2": 11093.75,
+          "height_m": 15.58,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "TGB",
+      "height_m": 8.3,
+      "levels": 2,
+      "volume_parts": [
+        {
+          "area_m2": 1403.74,
+          "height_m": 8.08,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "CSH",
+      "height_m": 14,
+      "levels": 2,
+      "volume_parts": [
+        {
+          "area_m2": 1826.72,
+          "height_m": 13.78,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "SHA",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 340.85,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "GAB",
+      "height_m": 8.3,
+      "levels": 2,
+      "volume_parts": [
+        {
+          "area_m2": 1442.71,
+          "height_m": 8.08,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "EDP",
+      "height_m": 26,
+      "levels": 2,
+      "volume_parts": [
+        {
+          "area_m2": 11285.87,
+          "height_m": 22.38,
+          "material": "BrickRed"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "NTC",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 4350.94,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "BOHC",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 2827.15,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "IPF",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 9054.07,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "SBPC",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 488.91,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "SBS",
+      "height_m": 8.3,
+      "levels": 2,
+      "volume_parts": [
+        {
+          "area_m2": 730.27,
+          "height_m": 8.08,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "WAC",
+      "height_m": 8.3,
+      "levels": 2,
+      "volume_parts": [
+        {
+          "area_m2": 1180.69,
+          "height_m": 8.08,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    },
+    {
+      "facility_id": "CNH",
+      "height_m": 4.55,
+      "levels": 1,
+      "volume_parts": [
+        {
+          "area_m2": 895.65,
+          "height_m": 4.33,
+          "material": "Precast"
+        }
+      ],
+      "ordinary": true,
+      "details": [
+        "Mapped footprint and courtyard openings retained",
+        "Use-specific window spacing, floor courses, grounded entry or service door",
+        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
+      ],
+      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
+    }
+  ],
+  "count": 191
+}

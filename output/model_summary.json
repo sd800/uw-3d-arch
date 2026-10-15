@@ -1,12 +1,12 @@
 {
   "buildings": 271,
-  "layers": 272,
+  "layers": 870,
   "environment_layer": "Environment",
-  "native_closed_solids": 370,
-  "objects_3ds": 1900,
-  "vertices": 1594371,
-  "triangles": 2762818,
-  "trees": 8435,
+  "native_closed_solids": 977,
+  "objects_3ds": 4867,
+  "vertices": 2796358,
+  "triangles": 4943120,
+  "trees": 8602,
   "quad_cherry_trees": 29,
   "landmarks": 26,
   "unit": "meters",
@@ -21,9 +21,9 @@
   ],
   "local_z_zero_m": 0,
   "bounds": [
-    -985.0,
-    -1005.0,
-    1705.0,
+    -1031.305,
+    -1120.0,
+    1810.0,
     1078.0397546711283
   ],
   "district_bounds": {
@@ -64,5 +64,26 @@
     "south": 50,
     "east": 71
   },
-  "accuracy": "Official mapped footprint/tree positions; all exterior heights, roof/facade geometry and tree forms approximate, not surveyed."
+  "accuracy": "Official mapped footprint/tree positions; all exterior heights, roof/facade geometry and tree forms approximate, not surveyed.",
+  "water_frame": [
+    -1090,
+    -1120,
+    1810,
+    1140,
+    160,
+    120
+  ],
+  "neighboring_areas": {
+    "buildings": 597,
+    "trees": 1121,
+    "bounds": [
+      -975.0,
+      -628.8290429725859,
+      423.9704074744988,
+      1042.8331923334792
+    ],
+    "landscape_layer": "Neighboring_Environment",
+    "default_visible": true,
+    "street_network": "University Way NE, Brooklyn Avenue NE, Roosevelt Way NE, NE 40th–50th streets and the north-campus residential blocks"
+  }
 }

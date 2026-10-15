@@ -5,7 +5,7 @@ MAP='https://map.uw.edu/?id=2099'
 LANDMARKS=['SUZ','GRB','DEN','MGH','SAV','RAI','SMI','GWN','KNE','OUG','HUB','BRK','HAG','PCAR','LAW','CSE','CSE2','LSB','HRC','HSEB','UMSA','STD','EDP','CSH','INT','IEB']
 GOTHIC={'SUZ','GRB','MGH','SAV','RAI','SMI','GWN','MLR','MUS','HUT','THO','HNS','JHN','GUG','AND','ROB'}
 PITCHED=GOTHIC|{'DEN','LEW','CLK','ARC','OBS','HPT','INT','EDP','PHT'}
-HEIGHTS={'SUZ':32.5,'GRB':35,'DEN':26,'MGH':27,'SAV':23,'RAI':21,'SMI':23,'GWN':23,'MLR':21,'HNS':25,'MCM':36,'KNE':16,'OUG':16,'HUB':21,'MNY':19,'BRK':15,'PCAR':22,'LAW':20,'CSE':27,'CSE2':30,'LSB':32,'HRC':33,'HSEB':21,'IEB':28,'UMSA':39,'STD':41,'EDP':26,'CSH':14,'INT':11,'UWT':99,'UWTC':99,'HST':46,'HND':30,'HSH':28,'HSK':32,'PAT':28,'PAB':26,'PAA':15}
+HEIGHTS={'SUZ':32.5,'GRB':35,'DEN':26,'MGH':27,'SAV':23,'RAI':21,'SMI':23,'GWN':23,'MLR':21,'HNS':25,'MCM':36,'KNE':16,'OUG':16,'HUB':21,'MNY':19,'BRK':15,'PCAR':22,'LAW':20,'CSE':27,'CSE2':30,'LSB':32,'HRC':33,'HSEB':21,'IEB':28,'UMSA':39,'STD':41,'EDP':26,'CSH':14,'INT':11,'UWT':99,'UWTC':18.2,'HST':46,'HND':30,'HSH':28,'HSK':32,'PAT':28,'PAB':26,'PAA':15}
 REFS={'SUZ':'https://lib.uw.edu/locations-hours/suzzallo-and-allen-libraries-history/','DEN':'https://pcad.lib.washington.edu/building/5433/','STD':'https://gohuskies.com/sports/2013/7/2/208568068','IEB':'https://www.engr.washington.edu/about/facilities','INT':'https://www.washington.edu/diversity/tribal-relations/intellectual-house/','BRK':'https://www.burkemuseum.org/','CSH':'https://gohuskies.com/facilities/conibear-shellhouse/9'}
 ZH={'CNH':'ASUW学生会赛艇艇库'}
 for line in '''
@@ -203,3 +203,22 @@ def chinese(code,en):
     if en[0].isdigit():
         return en.replace('University Way NE','东北大学路').replace('Brooklyn Ave NE','东北布鲁克林大道').replace('NE Boat St','东北船街').replace('NE Northlake Way','东北北湖路')+'号楼'
     return en+'（校园设施）'
+
+# Primary architectural references used for individual exterior refinements.
+REFS.update({
+ 'ALD':'https://hfs.uw.edu/live/undergraduates/undergraduate-communities/alder-hall/',
+ 'MGH':'https://www.bassettiarch.com/portfoliodetails/marygates',
+ 'GRB':'https://www.washington.edu/news/2008/05/01/gerberding-a-real-bell-tower-at-last/',
+ 'BRK':'https://olsonkundig.com/projects/burke-museum-of-natural-history-and-culture/',
+ 'INT':'https://www.washington.edu/news/2015/03/10/as-home-for-native-learning-opens-a-dream-is-realized/',
+ 'PCAR':'https://lmnarchitects.com/project/paccar-hall-foster-school-of-business-university-of-washington',
+ 'CSE2':'https://lmnarchitects.com/project/bill-melinda-gates-center',
+ 'LSB':'https://perkinswill.com/project/university-of-washington-life-sciences-building/',
+ 'HRC':'https://www.washington.edu/populationhealth/hans-rosling-center-tour/',
+ 'HSEB':'https://millerhull.com/project/health-sciences-education-building/',
+ 'IEB':'https://www.engr.washington.edu/about/ieb',
+ 'UWTC':'https://facilities.uw.edu/files/media/map/floor-plan-uw-tower-floor-4-map-file.pdf',
+ 'UWTT':'https://facilities.uw.edu/buildings/uw-tower',
+ 'UWTO':'https://facilities.uw.edu/buildings/uw-tower',
+ 'UWTS':'https://facilities.uw.edu/buildings/uw-tower'
+})

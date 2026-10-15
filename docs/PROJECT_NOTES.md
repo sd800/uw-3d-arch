@@ -2,7 +2,13 @@
 
 - University of Washington, Seattle campus; independent public-source exterior model.
 - Chinese university name: 华盛顿大学; Seattle: 西雅图. Preserve original English proper names for comparison.
-- Individual official facility/building layers plus one Environment layer; unit meters.
+- Individual official facility/building layers plus one Environment layer; unit meters. Additional N-prefixed neighboring building layers and Neighboring_Environment can be toggled together.
+- All begins with a default-checked ⁺Campus neighboring areas row; selecting its name frames surrounding streets. Search in All includes neighboring buildings; the campus count remains campus-only.
+- Neighboring materials are muted subtly; SDOT supplies published street-tree positions. Mapped reserves, wetlands, quays and continuous road/bridge connections fill the previous gaps.
+- Alder Hall has its mapped open-air light court, six-storey street/courtyard facade systems and graded sidewalk approaches.
+- 79 principal buildings have photo/reference-specific profiles; remaining secondary facilities use use-specific details with tagged roof forms. University Inn follows the official exterior gallery.
+- See sources/ARCHITECTURE_REFERENCES.md and sources/NEIGHBORHOOD_REFERENCES.md for evidence and approximation limits.
+- Retain a closed continuous ground display mass and a separate depth barrier for horizontal/low-angle occlusion; preserve CAD source elevations and stable map paint.
 - Use established readable typography, selected highlights, grounded navigation, stable rendering, and loading progress. Resize and redraw atomically. No Level toolbar option.
 - Default Core bearing matches the southwest reference; persistent labels off, contextual hover names on.
 - Red Square, Quad and fountain details are kept on the Environment layer; detailed core building parts remain on their building layers.

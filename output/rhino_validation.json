@@ -1,12 +1,12 @@
 {
   "format": "Rhino 3DM v7",
   "units": "meters",
-  "layers": 272,
-  "nonempty_layers": 272,
-  "objects": 2556,
-  "closed_native_solids": 370,
-  "closed_mesh_objects": 1900,
-  "plan_curves": 286,
+  "layers": 870,
+  "nonempty_layers": 870,
+  "objects": 5848,
+  "closed_native_solids": 977,
+  "closed_mesh_objects": 4867,
+  "plan_curves": 4,
   "all_geometry_valid": true,
   "named_views": [
     "Campus",
