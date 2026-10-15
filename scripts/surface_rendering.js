@@ -2,7 +2,7 @@ import {Color,Vector4,Vector2,BufferAttribute,BufferGeometry,Float32BufferAttrib
 
 // Map surfaces are a cartographic stack. Independently draped CAD triangles
 // can cross by meters; no depth bias can repair those crossings reliably.
-export const SURFACE_ORDER=Object.freeze({Ground:-100,ContextGround:-99,ShoreGround:-99,ShoreGrass:-94,ShoreWood:-93,ContextWalk:-75,ContextLot:-86,ContextSoil:-97,ContextGravel:-96,ContextGrass:-94,ContextPaving:-70,Wetland:-92,ShoreSand:-95,Sand:-95,Grass:-94,Garden:-93,Road:-80,Walk:-75,Paving:-70,AlderPaving:-69.5,Tile:-69,BrickPath:-68,BrickPale:-67,BrickWarm:-67,BrickBand:-66,Court:-65,Track:-64,Water:-60,PoolWater:-60,Marking:-50});
+export const SURFACE_ORDER=Object.freeze({Ground:-100,ContextGround:-99,ShoreGround:-99,ShoreGrass:-94,ShoreWood:-93,ContextWalk:-75,ContextLot:-86,ContextSoil:-97,ContextGravel:-96,ContextGrass:-94,ContextPaving:-70,Wetland:-92,ShoreSand:-95,Sand:-95,Grass:-94,Garden:-93,Road:-80,ParkwayConcrete:-79,Walk:-75,Paving:-70,AlderPaving:-69.5,Tile:-69,BrickPath:-68,BrickPale:-67,BrickWarm:-67,BrickBand:-66,Court:-65,Track:-64,Water:-60,PoolWater:-60,Marking:-50});
 /** Smooth only upward landscape skins; closed sides must not affect lighting. */
 export function smoothLandscapeNormals(geometry) {
   const position=geometry.attributes.position,index=geometry.index,records=new Map(),byVertex=new Array(position.count);

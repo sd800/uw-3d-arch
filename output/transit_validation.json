@@ -1,5 +1,5 @@
 {
-  "release": "26.10.15.1",
+  "release": "26.10.15.2",
   "station": "University of Washington Station",
   "stable_layer_codes": [
     "W272",
@@ -7,7 +7,8 @@
     "N380"
   ],
   "bridge_landing_probes": 20,
-  "bus_canopies": 2,
+  "independent_bus_shelters": 2,
+  "north_arcade_recess": true,
   "grounded_south_entrance": true,
   "neighbor_hover_visibility": true,
   "passed": true

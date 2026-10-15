@@ -4922,14 +4922,14 @@
     "basis": "平面采用 UW 官方 GIS；外部层数、层高与屋顶高度为估算。GIS 总建筑面积不能视为地上层数。",
     "basis_en": "Official UW footprint; exterior storeys, floor heights and roof elevations are approximate. Reported gross floor area may include basements and does not certify exterior storeys. The missing light-court inner ring is mapped in OpenStreetMap relation 6447992 and corroborated by UW HFS courtyard photos.",
     "partition": "依据公开内环轮廓恢复露天天井，细化六层灰砖宿舍楼、浅色内庭立面、成对窗格、底层入口和天井铺装种植；构件尺寸及景观位置为近似表达。",
-    "partition_en": "Mapped 618 m² stepped central light court, open from ground to sky; Six-storey charcoal-brick street elevations and pale inner-court panels; Paired white-framed windows, glazed lower storey, covered north passage and supported entry canopy; Continuous parapets, matte roof and aerial-visible PV strips; no copied equipment boxes; Building-integrated Campus Parkway bus canopies and District Market glazing/signage. Exterior dimensions and partitions remain approximate. Building-integrated bus canopies, market glazing, connected whole-block paving and aerial-visible PV bands.",
+    "partition_en": "Mapped 618 m² stepped central light court, open from ground to sky; Six-storey charcoal-brick street elevations and pale inner-court panels; Paired white-framed windows, weathered-steel lower classrooms, mapped entrance recess and supported commercial arcade; Continuous parapets, matte roof and aerial-visible PV strips; no copied equipment boxes; Photo-referenced recessed north shopfront, round concrete arcade piers and independent Metro shelters. Exterior dimensions and partitions remain approximate. Independent Metro shelters, a recessed timber/glass market arcade, connected whole-block paving and aerial-visible PV bands.",
     "source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "footprint_source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "architecture_reference": "https://hfs.uw.edu/live/undergraduates/undergraduate-communities/alder-hall/",
     "construction_status": "Active",
     "volume_parts": [
       {
-        "area_m2": 2174.72,
+        "area_m2": 2099.18,
         "base_offset_m": 0.0,
         "height_m": 4.25,
         "material": "AlderBrick"

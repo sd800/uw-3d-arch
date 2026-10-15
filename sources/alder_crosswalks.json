@@ -1,0 +1,715 @@
+{
+  "reviewed": "2026-10-15",
+  "projection": "EPSG:32610",
+  "origin_wgs84": [
+    -122.3093,
+    47.6558
+  ],
+  "imagery": [
+    {
+      "source": "https://www.google.com/maps/@?api=1&map_action=map&center=47.65565,-122.31388&zoom=19&basemap=satellite",
+      "credits": "Airbus, Maxar Technologies, Google; capture date not certified by the viewer"
+    },
+    {
+      "source": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+      "tile_frame": {
+        "zoom": 19,
+        "min_tile_x": 84009,
+        "min_tile_y": 182995,
+        "columns": 5,
+        "rows": 5,
+        "source": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "center": [
+          -122.31388,
+          47.65565
+        ]
+      },
+      "review_crop_sha256": "b825f5d5995ad28d8974345c1152cf624ce4165bb280d06a148551693bc8d78f"
+    }
+  ],
+  "scope": "Four intersections around Alder Hall; north intersections are split by the Campus Parkway median",
+  "limits": "Centerlines retain publicly mapped curb approaches, cross-checked visually against satellite imagery. Paint width, stripe widths/gaps and pitch are estimated from imagery, not a surveyed traffic-control drawing. Copyrighted imagery pixels are not distributed.",
+  "crossings": [
+    {
+      "id": "435212057",
+      "centerline_local_m": [
+        [
+          -289.16,
+          -57.22
+        ],
+        [
+          -289.266,
+          -53.698
+        ],
+        [
+          -289.575,
+          -45.131
+        ]
+      ],
+      "width_m": 2.8,
+      "stripe_width_m": 0.2,
+      "paired_gap_m": 0.16,
+      "pair_pitch_m": 1.25,
+      "pattern": "paired",
+      "osm_tags": {
+        "crossing": "marked",
+        "footway": "crossing",
+        "highway": "footway",
+        "lit": "dusk-dawn",
+        "surface": "asphalt"
+      },
+      "intersection": "NE 40th Street / University Way",
+      "reference": "https://www.openstreetmap.org/way/435212057",
+      "review": "Matched to visible curb-to-curb crossing in Esri aerials and Google Maps satellite; stripe pairing checked in the latter."
+    },
+    {
+      "id": "436160298",
+      "centerline_local_m": [
+        [
+          -293.157,
+          -43.474
+        ],
+        [
+          -300.624,
+          -43.162
+        ],
+        [
+          -304.485,
+          -42.996
+        ]
+      ],
+      "width_m": 2.8,
+      "stripe_width_m": 0.2,
+      "paired_gap_m": 0.16,
+      "pair_pitch_m": 1.25,
+      "pattern": "paired",
+      "osm_tags": {
+        "crossing": "marked",
+        "footway": "crossing",
+        "highway": "footway",
+        "lit": "dusk-dawn",
+        "surface": "asphalt",
+        "wheelchair": "yes"
+      },
+      "intersection": "NE 40th Street / University Way",
+      "reference": "https://www.openstreetmap.org/way/436160298",
+      "review": "Matched to visible curb-to-curb crossing in Esri aerials and Google Maps satellite; stripe pairing checked in the latter."
+    },
+    {
+      "id": "436160301",
+      "centerline_local_m": [
+        [
+          -293.386,
+          -60.781
+        ],
+        [
+          -300.845,
+          -59.803
+        ],
+        [
+          -307.115,
+          -58.98
+        ]
+      ],
+      "width_m": 2.8,
+      "stripe_width_m": 0.2,
+      "paired_gap_m": 0.16,
+      "pair_pitch_m": 1.25,
+      "pattern": "paired",
+      "osm_tags": {
+        "crossing": "marked",
+        "footway": "crossing",
+        "highway": "footway",
+        "lit": "dusk-dawn",
+        "surface": "asphalt",
+        "wheelchair": "yes"
+      },
+      "intersection": "NE 40th Street / University Way",
+      "reference": "https://www.openstreetmap.org/way/436160301",
+      "review": "Matched to visible curb-to-curb crossing in Esri aerials and Google Maps satellite; stripe pairing checked in the latter."
+    },
+    {
+      "id": "436161747",
+      "centerline_local_m": [
+        [
+          -308.479,
+          -47.366
+        ],
+        [
+          -307.762,
+          -53.795
+        ],
+        [
+          -307.115,
+          -58.98
+        ]
+      ],
+      "width_m": 2.8,
+      "stripe_width_m": 0.2,
+      "paired_gap_m": 0.16,
+      "pair_pitch_m": 1.25,
+      "pattern": "paired",
+      "osm_tags": {
+        "crossing": "marked",
+        "footway": "crossing",
+        "highway": "footway",
+        "lit": "dusk-dawn",
+        "surface": "asphalt",
+        "wheelchair": "yes"
+      },
+      "intersection": "NE 40th Street / University Way",
+      "reference": "https://www.openstreetmap.org/way/436161747",
+      "review": "Matched to visible curb-to-curb crossing in Esri aerials and Google Maps satellite; stripe pairing checked in the latter."
+    },
+    {
+      "id": "436161751",
+      "centerline_local_m": [
+        [
+          -303.912,
+          8.437
+        ],
+        [
+          -299.705,
+          8.196
+        ],
+        [
+          -292.717,
+          7.803
+        ]
+      ],
+      "width_m": 3.0,
+      "stripe_width_m": 0.2,
+      "paired_gap_m": 0.16,
+      "pair_pitch_m": 1.25,
+      "pattern": "paired",
+      "osm_tags": {
+        "crossing": "traffic_signals",
+        "crossing:markings": "zebra:paired",
+        "footway": "crossing",
+        "highway": "footway",
+        "lit": "dusk-dawn",
+        "surface": "concrete"
+      },
+      "intersection": "Campus Parkway / University Way",
+      "reference": "https://www.openstreetmap.org/way/436161751",
+      "review": "Matched to visible curb-to-curb crossing in Esri aerials and Google Maps satellite; stripe pairing checked in the latter."
+    },
+    {
+      "id": "436161792",
+      "centerline_local_m": [
+        [
+          -308.115,
+          25.15
+        ],
+        [
+          -307.711,
+          15.995
+        ],
+        [
+          -307.563,
+          13.662
+        ]
+      ],
+      "width_m": 3.0,
+      "stripe_width_m": 0.2,
+      "paired_gap_m": 0.16,
+      "pair_pitch_m": 1.25,
+      "pattern": "paired",
+      "osm_tags": {
+        "crossing": "traffic_signals",
+        "crossing:markings": "zebra:paired",
+        "footway": "crossing",
+        "highway": "footway",
+        "lit": "dusk-dawn",
+        "surface": "asphalt"
+      },
+      "intersection": "Campus Parkway / University Way",
+      "reference": "https://www.openstreetmap.org/way/436161792",
+      "review": "Matched to visible curb-to-curb crossing in Esri aerials and Google Maps satellite; stripe pairing checked in the latter."
+    },
+    {
+      "id": "436161794",
+      "centerline_local_m": [
+        [
+          -309.402,
+          51.713
+        ],
+        [
+          -308.764,
+          42.427
+        ],
+        [
+          -308.293,
+          36.763
+        ]
+      ],
+      "width_m": 3.0,
+      "stripe_width_m": 0.2,
+      "paired_gap_m": 0.16,
+      "pair_pitch_m": 1.25,
+      "pattern": "paired",
+      "osm_tags": {
+        "crossing": "traffic_signals",
+        "crossing:markings": "zebra:paired",
+        "footway": "crossing",
+        "highway": "footway",
+        "lit": "dusk-dawn",
+        "surface": "concrete"
+      },
+      "intersection": "Campus Parkway / University Way",
+      "reference": "https://www.openstreetmap.org/way/436161794",
+      "review": "Matched to visible curb-to-curb crossing in Esri aerials and Google Maps satellite; stripe pairing checked in the latter."
+    },
+    {
+      "id": "436161795",
+      "centerline_local_m": [
+        [
+          -306.571,
+          54.262
+        ],
+        [
+          -298.807,
+          53.519
+        ],
+        [
+          -292.238,
+          52.888
+        ]
+      ],
+      "width_m": 3.0,
+      "stripe_width_m": 0.2,
+      "paired_gap_m": 0.16,
+      "pair_pitch_m": 1.25,
+      "pattern": "paired",
+      "osm_tags": {
+        "crossing": "traffic_signals",
+        "crossing:markings": "zebra:paired",
+        "footway": "crossing",
+        "highway": "footway",
+        "lit": "dusk-dawn",
+        "surface": "concrete"
+      },
+      "intersection": "Campus Parkway / University Way",
+      "reference": "https://www.openstreetmap.org/way/436161795",
+      "review": "Matched to visible curb-to-curb crossing in Esri aerials and Google Maps satellite; stripe pairing checked in the latter."
+    },
+    {
+      "id": "436162471",
+      "centerline_local_m": [
+        [
+          -289.179,
+          49.203
+        ],
+        [
+          -289.492,
+          42.187
+        ],
+        [
+          -289.664,
+          36.139
+        ]
+      ],
+      "width_m": 3.0,
+      "stripe_width_m": 0.2,
+      "paired_gap_m": 0.16,
+      "pair_pitch_m": 1.25,
+      "pattern": "paired",
+      "osm_tags": {
+        "crossing": "traffic_signals",
+        "crossing:markings": "zebra:paired",
+        "footway": "crossing",
+        "highway": "footway",
+        "lit": "dusk-dawn",
+        "surface": "concrete"
+      },
+      "intersection": "Campus Parkway / University Way",
+      "reference": "https://www.openstreetmap.org/way/436162471",
+      "review": "Matched to visible curb-to-curb crossing in Esri aerials and Google Maps satellite; stripe pairing checked in the latter."
+    },
+    {
+      "id": "436162473",
+      "centerline_local_m": [
+        [
+          -289.788,
+          24.678
+        ],
+        [
+          -290.25,
+          15.816
+        ],
+        [
+          -290.491,
+          10.823
+        ]
+      ],
+      "width_m": 3.0,
+      "stripe_width_m": 0.2,
+      "paired_gap_m": 0.16,
+      "pair_pitch_m": 1.25,
+      "pattern": "paired",
+      "osm_tags": {
+        "crossing": "traffic_signals",
+        "crossing:markings": "zebra:paired",
+        "footway": "crossing",
+        "highway": "footway",
+        "lit": "dusk-dawn",
+        "surface": "concrete:plates"
+      },
+      "intersection": "Campus Parkway / University Way",
+      "reference": "https://www.openstreetmap.org/way/436162473",
+      "review": "Matched to visible curb-to-curb crossing in Esri aerials and Google Maps satellite; stripe pairing checked in the latter."
+    },
+    {
+      "id": "475732191",
+      "centerline_local_m": [
+        [
+          -391.662,
+          53.508
+        ],
+        [
+          -385.382,
+          53.308
+        ],
+        [
+          -379.102,
+          53.097
+        ]
+      ],
+      "width_m": 3.0,
+      "stripe_width_m": 0.2,
+      "paired_gap_m": 0.16,
+      "pair_pitch_m": 1.25,
+      "pattern": "paired",
+      "osm_tags": {
+        "crossing": "marked",
+        "crossing:island": "no",
+        "crossing:markings": "zebra:paired",
+        "crossing:markings:colour": "white",
+        "footway": "crossing",
+        "highway": "footway",
+        "lit": "dusk-dawn",
+        "surface": "paved",
+        "tactile_paving": "no"
+      },
+      "intersection": "Campus Parkway / Brooklyn Avenue",
+      "reference": "https://www.openstreetmap.org/way/475732191",
+      "review": "Matched to visible curb-to-curb crossing in Esri aerials and Google Maps satellite; stripe pairing checked in the latter."
+    },
+    {
+      "id": "475732545",
+      "centerline_local_m": [
+        [
+          -375.433,
+          37.247
+        ],
+        [
+          -375.501,
+          43.259
+        ],
+        [
+          -375.456,
+          48.35
+        ]
+      ],
+      "width_m": 3.0,
+      "stripe_width_m": 0.2,
+      "paired_gap_m": 0.16,
+      "pair_pitch_m": 1.25,
+      "pattern": "paired",
+      "osm_tags": {
+        "crossing": "marked",
+        "crossing:island": "no",
+        "crossing:markings": "zebra:paired",
+        "crossing:markings:colour": "white",
+        "footway": "crossing",
+        "highway": "footway",
+        "lit": "dusk-dawn",
+        "surface": "paved",
+        "tactile_paving": "no"
+      },
+      "intersection": "Campus Parkway / Brooklyn Avenue",
+      "reference": "https://www.openstreetmap.org/way/475732545",
+      "review": "Matched to visible curb-to-curb crossing in Esri aerials and Google Maps satellite; stripe pairing checked in the latter."
+    },
+    {
+      "id": "475734691",
+      "centerline_local_m": [
+        [
+          -396.748,
+          47.839
+        ],
+        [
+          -396.447,
+          43.518
+        ],
+        [
+          -396.318,
+          39.974
+        ],
+        [
+          -396.237,
+          37.596
+        ]
+      ],
+      "width_m": 3.0,
+      "stripe_width_m": 0.2,
+      "paired_gap_m": 0.16,
+      "pair_pitch_m": 1.25,
+      "pattern": "paired",
+      "osm_tags": {
+        "crossing": "marked",
+        "crossing:island": "no",
+        "crossing:markings": "zebra:paired",
+        "crossing:markings:colour": "white",
+        "footway": "crossing",
+        "highway": "footway",
+        "lit": "dusk-dawn",
+        "surface": "paved",
+        "tactile_paving": "no"
+      },
+      "intersection": "Campus Parkway / Brooklyn Avenue",
+      "reference": "https://www.openstreetmap.org/way/475734691",
+      "review": "Matched to visible curb-to-curb crossing in Esri aerials and Google Maps satellite; stripe pairing checked in the latter."
+    },
+    {
+      "id": "475734692",
+      "centerline_local_m": [
+        [
+          -395.724,
+          14.36
+        ],
+        [
+          -395.72,
+          17.361
+        ],
+        [
+          -395.69,
+          23.219
+        ],
+        [
+          -395.68,
+          25.564
+        ]
+      ],
+      "width_m": 3.0,
+      "stripe_width_m": 0.2,
+      "paired_gap_m": 0.16,
+      "pair_pitch_m": 1.25,
+      "pattern": "paired",
+      "osm_tags": {
+        "crossing": "marked",
+        "crossing:island": "no",
+        "crossing:markings": "zebra:paired",
+        "crossing:markings:colour": "white",
+        "footway": "crossing",
+        "highway": "footway",
+        "lit": "dusk-dawn",
+        "surface": "concrete",
+        "tactile_paving": "no"
+      },
+      "intersection": "Campus Parkway / Brooklyn Avenue",
+      "reference": "https://www.openstreetmap.org/way/475734692",
+      "review": "Matched to visible curb-to-curb crossing in Esri aerials and Google Maps satellite; stripe pairing checked in the latter."
+    },
+    {
+      "id": "475759277",
+      "centerline_local_m": [
+        [
+          -380.434,
+          -59.551
+        ],
+        [
+          -385.21,
+          -59.571
+        ],
+        [
+          -390.497,
+          -59.585
+        ]
+      ],
+      "width_m": 2.8,
+      "stripe_width_m": 0.2,
+      "paired_gap_m": 0.16,
+      "pair_pitch_m": 1.25,
+      "pattern": "paired",
+      "osm_tags": {
+        "crossing": "marked",
+        "footway": "crossing",
+        "highway": "footway",
+        "lit": "dusk-dawn",
+        "surface": "asphalt"
+      },
+      "intersection": "NE 40th Street / Brooklyn Avenue",
+      "reference": "https://www.openstreetmap.org/way/475759277",
+      "review": "Matched to visible curb-to-curb crossing in Esri aerials and Google Maps satellite; stripe pairing checked in the latter."
+    },
+    {
+      "id": "475759278",
+      "centerline_local_m": [
+        [
+          -374.367,
+          -57.752
+        ],
+        [
+          -374.459,
+          -53.274
+        ],
+        [
+          -374.535,
+          -47.284
+        ]
+      ],
+      "width_m": 2.8,
+      "stripe_width_m": 0.2,
+      "paired_gap_m": 0.16,
+      "pair_pitch_m": 1.25,
+      "pattern": "paired",
+      "osm_tags": {
+        "crossing": "marked",
+        "footway": "crossing",
+        "highway": "footway",
+        "lit": "dusk-dawn",
+        "surface": "asphalt"
+      },
+      "intersection": "NE 40th Street / Brooklyn Avenue",
+      "reference": "https://www.openstreetmap.org/way/475759278",
+      "review": "Matched to visible curb-to-curb crossing in Esri aerials and Google Maps satellite; stripe pairing checked in the latter."
+    },
+    {
+      "id": "475760104",
+      "centerline_local_m": [
+        [
+          -377.255,
+          14.034
+        ],
+        [
+          -377.004,
+          17.071
+        ],
+        [
+          -376.154,
+          25.414
+        ]
+      ],
+      "width_m": 3.0,
+      "stripe_width_m": 0.2,
+      "paired_gap_m": 0.16,
+      "pair_pitch_m": 1.25,
+      "pattern": "paired",
+      "osm_tags": {
+        "crossing": "marked",
+        "crossing:island": "no",
+        "crossing:markings": "zebra:paired",
+        "crossing:markings:colour": "white",
+        "footway": "crossing",
+        "highway": "footway",
+        "lit": "dusk-dawn",
+        "surface": "concrete",
+        "tactile_paving": "no"
+      },
+      "intersection": "Campus Parkway / Brooklyn Avenue",
+      "reference": "https://www.openstreetmap.org/way/475760104",
+      "review": "Matched to visible curb-to-curb crossing in Esri aerials and Google Maps satellite; stripe pairing checked in the latter."
+    },
+    {
+      "id": "475760105",
+      "centerline_local_m": [
+        [
+          -380.531,
+          -40.123
+        ],
+        [
+          -384.698,
+          -41.027
+        ],
+        [
+          -392.673,
+          -42.765
+        ]
+      ],
+      "width_m": 2.8,
+      "stripe_width_m": 0.2,
+      "paired_gap_m": 0.16,
+      "pair_pitch_m": 1.25,
+      "pattern": "paired",
+      "osm_tags": {
+        "crossing": "marked",
+        "footway": "crossing",
+        "highway": "footway",
+        "lit": "dusk-dawn",
+        "surface": "asphalt"
+      },
+      "intersection": "NE 40th Street / Brooklyn Avenue",
+      "reference": "https://www.openstreetmap.org/way/475760105",
+      "review": "Matched to visible curb-to-curb crossing in Esri aerials and Google Maps satellite; stripe pairing checked in the latter."
+    },
+    {
+      "id": "475760106",
+      "centerline_local_m": [
+        [
+          -392.461,
+          9.654
+        ],
+        [
+          -383.886,
+          9.774
+        ],
+        [
+          -380.146,
+          9.807
+        ]
+      ],
+      "width_m": 3.0,
+      "stripe_width_m": 0.2,
+      "paired_gap_m": 0.16,
+      "pair_pitch_m": 1.25,
+      "pattern": "paired",
+      "osm_tags": {
+        "crossing": "marked",
+        "crossing:island": "no",
+        "crossing:markings": "zebra:paired",
+        "crossing:markings:colour": "white",
+        "footway": "crossing",
+        "highway": "footway",
+        "lit": "dusk-dawn",
+        "surface": "asphalt",
+        "tactile_paving": "no"
+      },
+      "intersection": "Campus Parkway / Brooklyn Avenue",
+      "reference": "https://www.openstreetmap.org/way/475760106",
+      "review": "Matched to visible curb-to-curb crossing in Esri aerials and Google Maps satellite; stripe pairing checked in the latter."
+    },
+    {
+      "id": "477384071",
+      "centerline_local_m": [
+        [
+          -394.99,
+          -57.59
+        ],
+        [
+          -395.166,
+          -53.024
+        ],
+        [
+          -395.33,
+          -48.902
+        ]
+      ],
+      "width_m": 2.8,
+      "stripe_width_m": 0.2,
+      "paired_gap_m": 0.16,
+      "pair_pitch_m": 1.25,
+      "pattern": "paired",
+      "osm_tags": {
+        "crossing": "marked",
+        "footway": "crossing",
+        "highway": "footway",
+        "lit": "dusk-dawn",
+        "surface": "concrete"
+      },
+      "intersection": "NE 40th Street / Brooklyn Avenue",
+      "reference": "https://www.openstreetmap.org/way/477384071",
+      "review": "Matched to visible curb-to-curb crossing in Esri aerials and Google Maps satellite; stripe pairing checked in the latter."
+    }
+  ]
+}

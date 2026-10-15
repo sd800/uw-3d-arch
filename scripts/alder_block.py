@@ -2,6 +2,7 @@
 from cad_core import *
 from transit_architecture import add,letter_sign
 from architecture_refinement import window,flat_roof
+from alder_north import bus_shelter,north_landscape,planting_areas,FRONT_REPORT
 import gzip
 
 HFS='https://hfs.uw.edu/live/undergraduates/undergraduate-communities/alder-hall/'
@@ -11,35 +12,17 @@ BLOCK=Polygon([(-379.5,10.85),(-305.2,10.20),(-306.0,-48.8),(-380.65,-48.15)])
 BLOCK_REPORT={}
 
 def street_architecture(ms,p,base,ground):
-    # UW custom shelters are attached to the building, not generic isolated kiosks.
-    bays=[(-372.3,-341.3),(-330.1,-314.2)]
-    for a,b in bays:
-        canopy=box(a,5.0,b,10.55)
-        add(ms,canopy,base+3.55,.12,'AlderSoffit');add(ms,canopy,base+3.67,.15,'RoofAlder')
-        add(ms,LineString([(a,10.55),(b,10.55)]).buffer(.08,cap_style=2),base+3.64,.25,'AlderBrick')
-        for x in np.arange(a+.8,b-.4,7.4):
-            y=10.02;bottom=min(base,float(ground(x,y)))-.35;ms['Metal'].append(cylinder((x,y,bottom),(x,y,base+3.67),.085,6));add(ms,box(x-.075,5,x+.075,10.5),base+3.42,.14,'Metal')
-    # Wrap-around market frontage and east-facing door bank are at ground level.
-    window(ms,np.array([-309.45,-18.4]),np.array([0.,-1]),np.array([1.,0]),base+.16,13.2,3.0,False,'AlderFrame',5)
-    add(ms,box(-319.9,5.50,-310.9,5.68),base+2.98,.60,'AlderBrick')
-    add(ms,box(-309.60,-22.5,-309.20,-10.1),base+3.17,.68,'AlderBrick')
-    letter_sign(ms,'DISTRICT MARKET',(-315.4,5.72),np.array([1.,0]),np.array([0.,1]),base+3.02,8.8,.42)
-    letter_sign(ms,'DISTRICT MARKET',(-309.18,-16.3),np.array([0.,-1]),np.array([1.,0]),base+3.24,12.2,.52)
+    from alder_north import north_architecture,FRONT_REPORT
+    north_architecture(ms,p,base,ground)
     # South loading recess is distinct from the public market/commuter entrance.
     window(ms,np.array([-328.8,-29.68]),np.array([-1.,0]),np.array([0.,-1]),base+.10,3.55,3.05,False,'Metal',0)
     # Aerial-visible perimeter PV bands; no copied equipment blocks on every roof.
     solar=unary_union([box(-372.0,1.6,-352.9,3.9),box(-348.4,1.5,-338.0,3.8),box(-326.0,1.4,-316.0,3.7),box(-372.0,-39.6,-344.7,-37.1)]).intersection(p.buffer(-1.0))
     add(ms,solar,base+19.23,.045,'Metal');add(ms,solar,base+19.275,.055,'Solar')
     for x in np.arange(-372,-315,1.5):add(ms,LineString([(x,-40),(x,5)]).buffer(.018).intersection(solar),base+19.335,.012,'Metal')
-    BLOCK_REPORT['architecture']={'canopy_runs':2,'canopy_area_m2':round(sum((b-a)*5.55 for a,b in bays),2),'supported_columns':True,'market_wraparound_glazing':True,'source_observed_pv_area_m2':round(solar.area,2),'reference':[HFS,MARKET]}
+    BLOCK_REPORT['architecture']={**FRONT_REPORT,'supported_columns':True,'market_wraparound_glazing':True,'source_observed_pv_area_m2':round(solar.area,2),'reference':[HFS,MARKET]}
 
-def seat(eg,x,y,ground):
-    z=float(ground(x,y));add(eg,box(x-.82,y-.24,x+.82,y+.24),z+.47,.07,'Cedar')
-    for dx in [-.57,.57]:
-        for dy in [-.16,.16]:eg['Furniture'].append(cylinder((x+dx,y+dy,z-.12),(x+dx,y+dy,z+.48),.035,5))
-    add(eg,box(x-.82,y-.25,x+.82,y-.20),z+.66,.28,'Cedar')
-
-def detail_block(eg,env,osm,outer,footprints,roads,walks,trees,ground,places):
+def detail_block(eg,env,osm,outer,footprints,roads,walks,trees,ground,places,scope):
     # One coherent pavement domain, with true footprint/court voids and mapped routes.
     court=unary_union([Polygon(r)for r in outer.interiors])if outer.interiors else Polygon()
     building_envelope=Polygon(outer.exterior)
@@ -49,7 +32,7 @@ def detail_block(eg,env,osm,outer,footprints,roads,walks,trees,ground,places):
         pt=f['poly']
         if domain.contains(pt)and pt.distance(building_envelope)>.55:
             pits.append(pt.buffer(.63,quad_segs=8).intersection(domain))
-    planted=unary_union(pits);paved=domain.difference(planted)
+    planted=unary_union([*pits,*planting_areas()]).intersection(domain);paved=domain.difference(planted)
     env(paved,.155,.055,'AlderPaving');env(planted,.205,.025,'AlderSoil')
     seams=unary_union([LineString([(x,-50),(x,12)]).buffer(.014)for x in np.arange(-380,-304,2.4)]+[LineString([(-382,y),(-303,y)]).buffer(.014)for y in np.arange(-49,12,2.4)]).intersection(paved)
     env(seams,.212,.008,'StoneJoint')
@@ -60,35 +43,27 @@ def detail_block(eg,env,osm,outer,footprints,roads,walks,trees,ground,places):
         if node.attrib['id']in ['4340397017','4340397018']:
             bay='2'if node.attrib['id']=='4340397017'else'1';z=float(ground(x,y));post_y=min(10.2,y-.45)
             eg['Metal'].append(cylinder((x,post_y,z-.40),(x,post_y,z+3.0),.045,6))
-            add(eg,box(x-.27,post_y-.055,x+.27,post_y+.055),z+2.25,.72,'Garden');add(eg,box(x-.27,post_y-.065,x+.27,post_y+.065),z+2.86,.11,'Gold')
-            letter_sign(eg,'METRO',(x,post_y+.072),np.array([1.,0]),np.array([0.,1]),z+2.65,.46,.14)
-            letter_sign(eg,bay,(x,post_y+.074),np.array([1.,0]),np.array([0.,1]),z+2.31,.30,.26)
-            seat(eg,x-2.5,8.0,ground)
+            add(eg,box(x-.27,post_y-.055,x+.27,post_y+.055),z+2.25,.72,'AlderShrub');add(eg,box(x-.27,post_y-.065,x+.27,post_y+.065),z+2.86,.11,'Gold')
+            letter_sign(eg,'METRO',(x,post_y+.072),np.array([1.,0]),np.array([0.,1]),z+2.65,.46,.14,'AlderConcrete')
+            letter_sign(eg,bay,(x,post_y+.074),np.array([1.,0]),np.array([0.,1]),z+2.31,.30,.26,'AlderConcrete')
+            shelter=bus_shelter(eg,x,y,ground)
             # Timetable/arrival display anchored on a closed base clear of boarding space.
-            eg['Metal'].append(cylinder((x+1.25,8.6,z-.3),(x+1.25,8.6,z+2.25),.055,6));add(eg,box(x+.75,8.52,x+1.75,8.68),z+1.25,.85,'Frame');add(eg,box(x+.81,8.69,x+1.69,8.73),z+1.32,.70,'WhitePanel')
+            eg['Metal'].append(cylinder((x-1.1,9.5,z-.3),(x-1.1,9.5,z+2.25),.055,6));add(eg,box(x-1.4,9.42,x-.8,9.58),z+1.25,.85,'Frame');add(eg,box(x-1.35,9.59,x-.85,9.63),z+1.32,.70,'WhitePanel')
             add(eg,box(x-4.4,7.3,x-3.85,7.9),z,.82,'Furniture')
             hit=box(x-4.8,6.2,x+2.0,11.8);places.append({'id':'alder-bus-bay-'+bay,'name':'Alder Hall / Campus Parkway · Bay '+bay,'name_zh':'桤木宿舍楼／校园大道公交站 · '+bay+'号站台','position':[x,9.5,z+1.5],'hitArea':mapping(hit),'source':NIGHTRIDE})
-            stopinfo.append({'bay':bay,'stop_id':t.get('ref'),'node_id':node.attrib['id'],'position_local_m':[round(x,3),round(y,3)],'shelter_type':'UW building-integrated canopy'})
-        if t.get('highway')=='crossing'and pt.distance(BLOCK)<12:
-            if t.get('crossing')in ['unmarked','no']:continue
-            # Paint only the mapped marked crossings at the four street corners.
-            if abs(x+300)<10 or abs(x+384)<8:
-                line=LineString([(x-6,y),(x+6,y)])
-            elif abs(y+53)<8:line=LineString([(x,y-5),(x,y+5)])
-            else:continue
-            area=line.buffer(1.6,cap_style=2).intersection(roads).difference(footprints)
-            if area.is_empty:continue
-            u=np.array(line.coords[-1])-np.array(line.coords[0]);u/=np.linalg.norm(u);v=np.array([-u[1],u[0]])
-            for d in np.arange(0,line.length,.95):
-                p0=np.array(line.interpolate(d).coords[0]);q=Polygon([p0-v*1.6,p0+v*1.6,p0+v*1.6+u*.42,p0-v*1.6+u*.42]).intersection(area);env(q,.105,.015,'Marking')
-            crossings.append(node.attrib['id'])
+            stopinfo.append({'bay':bay,'stop_id':t.get('ref'),'node_id':node.attrib['id'],'position_local_m':[round(x,3),round(y,3)],'shelter':shelter})
+    from alder_crosswalks import paint_crosswalks
+    crossing_review=paint_crosswalks(env,roads,footprints,scope)
+    crossings=[row['id']for row in crossing_review['crossings']]
     # Street curb is open at actual sidewalks/crossings; no solid barrier across the entry.
     curb=roads.boundary.buffer(.11).intersection(BLOCK.buffer(1.8)).difference(roads.buffer(-.02)).difference(walks.buffer(.50)).difference(footprints.buffer(.1));env(curb,.02,.18,'StoneEdge')
     # Compact U-racks occupy the west public paving, clear of corner and door routes.
     for x,y in [(-378.3,-15),(-378.3,-18),(-378.3,-21)]:
         if not paved.buffer(.1).covers(Point(x,y)):continue
         z=float(ground(x,y));eg['Metal'].extend([cylinder((x-.35,y,z-.15),(x-.35,y,z+.78),.035,6),cylinder((x+.35,y,z-.15),(x+.35,y,z+.78),.035,6),cylinder((x-.35,y,z+.78),(x+.35,y,z+.78),.035,6)])
-    BLOCK_REPORT.update({'bounds_local_m':list(BLOCK.bounds),'block_streets':['NE Campus Parkway','Brooklyn Avenue NE','University Way NE','NE 40th Street'],'paving_area_m2':round(paved.area,2),'mapped_tree_pits':len(pits),'mapped_crossings':list(dict.fromkeys(crossings)),'bus_stops':stopinfo,'planting_and_paving_connected':True,'references':[NIGHTRIDE,HFS,MARKET],'limits':'Official footprint, mapped stops/crossings/trees and aerial roof arrangement. Member dimensions and secondary furniture positions are approximate; no invented all-area crosswalk or parking grid.'})
+    north_landscape(eg,env,roads,footprints,ground)
+    BLOCK_REPORT['architecture'].update(FRONT_REPORT)
+    BLOCK_REPORT.update({'bounds_local_m':list(BLOCK.bounds),'block_streets':['NE Campus Parkway','Brooklyn Avenue NE','University Way NE','NE 40th Street'],'paving_area_m2':round(paved.area,2),'mapped_tree_pits':len(pits),'mapped_crossings':crossings,'crosswalk_review':'alder_crosswalk_review.json','bus_stops':stopinfo,'planting_and_paving_connected':True,'references':[NIGHTRIDE,HFS,MARKET],'limits':'Official footprint, mapped stops/crossings/trees and aerial roof arrangement. Member dimensions and secondary furniture positions are approximate; no invented all-area crosswalk or parking grid.'})
     (OUT/'alder_block_refinement.json').write_text(json.dumps(BLOCK_REPORT,indent=2)+'\n')
 
 def block_building(ms,p,base,id,code,lay,info,ground):

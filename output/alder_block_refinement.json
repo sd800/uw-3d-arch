@@ -1,14 +1,46 @@
 {
   "architecture": {
-    "canopy_runs": 2,
-    "canopy_area_m2": 260.3,
+    "reviewed_imagery": "Google Street View, September 2025; UW HFS 2012 exterior photograph",
+    "sources": [
+      "https://www.google.com/maps/@?api=1&map_action=pano&pano=7XvmFN0PZ18dn7vtSTBACQ&heading=180",
+      "https://www.flickr.com/photos/90311612@N05/9355693564/",
+      "https://www.spectrumdevsolutions.com/projects/alder-hall/"
+    ],
+    "north_ground_floor": [
+      "Western weathered-steel classrooms with narrow lights",
+      "Mapped recessed Alder entrance",
+      "Recessed timber/glass cafe and market arcade with concrete piers",
+      "Independent silver-framed Metro shelters, separate from the building canopy"
+    ],
+    "arcade_columns_local_m": [
+      [
+        -334.4,
+        4.4
+      ],
+      [
+        -326.1,
+        4.3
+      ],
+      [
+        -317.4,
+        4.2
+      ],
+      [
+        -312.1,
+        -1.9
+      ]
+    ],
+    "false_passage_removed": true,
+    "limits": "Photo-interpreted facade bays, canopy projections, grades and members; not measured construction documents.",
     "supported_columns": true,
     "market_wraparound_glazing": true,
     "source_observed_pv_area_m2": 138.68,
     "reference": [
       "https://hfs.uw.edu/live/undergraduates/undergraduate-communities/alder-hall/",
       "https://www.washington.edu/news/2012/09/12/groceries-and-more-district-market-opens-in-alder-hall/"
-    ]
+    ],
+    "north_planting_pockets": 3,
+    "parkway_carriageway_width_m": 9.4
   },
   "bounds_local_m": [
     -380.65,
@@ -22,18 +54,31 @@
     "University Way NE",
     "NE 40th Street"
   ],
-  "paving_area_m2": 1538.75,
+  "paving_area_m2": 1452.25,
   "mapped_tree_pits": 10,
   "mapped_crossings": [
-    "4348094377",
-    "4348094378",
-    "4348094381",
-    "4348094383",
-    "4694737151",
-    "4694737152",
-    "4694737154",
-    "4694737155"
+    "435212057",
+    "436160298",
+    "436160301",
+    "436161747",
+    "436161751",
+    "436161792",
+    "436161794",
+    "436161795",
+    "436162471",
+    "436162473",
+    "475732191",
+    "475732545",
+    "475734691",
+    "475734692",
+    "475759277",
+    "475759278",
+    "475760104",
+    "475760105",
+    "475760106",
+    "477384071"
   ],
+  "crosswalk_review": "alder_crosswalk_review.json",
   "bus_stops": [
     {
       "bay": "2",
@@ -43,7 +88,16 @@
         -325.639,
         11.19
       ],
-      "shelter_type": "UW building-integrated canopy"
+      "shelter": {
+        "center": [
+          -321.939,
+          9.22
+        ],
+        "span_m": 6.4,
+        "depth_m": 1.86,
+        "roof_elevation_m": 36.724,
+        "type": "Independent silver portal frame / glass screen shelter"
+      }
     },
     {
       "bay": "1",
@@ -53,7 +107,16 @@
         -349.67,
         11.233
       ],
-      "shelter_type": "UW building-integrated canopy"
+      "shelter": {
+        "center": [
+          -345.97,
+          9.22
+        ],
+        "span_m": 6.4,
+        "depth_m": 1.86,
+        "roof_elevation_m": 35.717,
+        "type": "Independent silver portal frame / glass screen shelter"
+      }
     }
   ],
   "planting_and_paving_connected": true,

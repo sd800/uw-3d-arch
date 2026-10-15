@@ -14,9 +14,10 @@ def build_alder(ms,p,base,code,lay,info,ground):
     from architecture_refinement import window,flat_roof
     courts=unary_union([Polygon(ring)for q in polygons(p)for ring in q.interiors]);assert courts.area>580
     height=19.7;podium=4.25;walltop=19.05;levels=6
-    # Open a ground-level approach below the continuous upper north wing.
-    passage=box(-334.8,-4.4,-331.1,7.8).intersection(p)
-    lower=p.difference(passage)
+    # Retain the mapped entry recess and set the shopfront behind its arcade piers.
+    from alder_north import ARCADE,ENTRY
+    passage=ENTRY.intersection(p)
+    lower=p.difference(ARCADE).difference(passage)
     volumes=[]
     for plan,z,h,mat in [(lower,base,podium,'AlderBrick'),(p,base+podium,walltop-podium,'AlderBrick')]:
         for q in polygons(plan):
@@ -44,7 +45,7 @@ def build_alder(ms,p,base,code,lay,info,ground):
                         off=(-.47 if (j+k)%3 else .47)
                         window(ms,center+u*off,u,n,z,wide,1.72,False,'AlderFrame',0)
                         window(ms,center-u*(.63 if off<0 else -.63),u,n,z,narrow,1.72,False,'AlderFrame',0)
-                    if ln>8 and not passage.buffer(.25).contains(Point(*center)):
+                    if ln>8 and not passage.buffer(.25).contains(Point(*center)) and not (ri==0 and (n[1]>.5 or n[0]>.5 and center[1]>-26)):
                         window(ms,center,u,n,base+.3,min(2.65,pitch-.20),3.05,False,'Frame',1)
                 if ri:
                     # The planted court has a clearly supported covered edge.
@@ -61,7 +62,7 @@ def build_alder(ms,p,base,code,lay,info,ground):
     street_architecture(ms,p,base,ground)
     for q in polygons(p):
         for ring in [q.exterior,*q.interiors]:model.Objects.AddCurve(rh.PolylineCurve([rh.Point3d(x,y,base)for x,y in ring.coords]),attr(code+'_Footprint',lay,'AlderBrick',info))
-    report={'facility_id':'ALD','height_m':height,'levels':levels,'volume_parts':volumes,'court_area_m2':round(courts.area,3),'open_sky':True,'details':['Mapped 618 m² stepped central light court, open from ground to sky','Six-storey charcoal-brick street elevations and pale inner-court panels','Paired white-framed windows, glazed lower storey, covered north passage and supported entry canopy','Continuous parapets, matte roof and aerial-visible PV strips; no copied equipment boxes','Building-integrated Campus Parkway bus canopies and District Market glazing/signage']}
+    report={'facility_id':'ALD','height_m':height,'levels':levels,'volume_parts':volumes,'court_area_m2':round(courts.area,3),'open_sky':True,'details':['Mapped 618 m² stepped central light court, open from ground to sky','Six-storey charcoal-brick street elevations and pale inner-court panels','Paired white-framed windows, weathered-steel lower classrooms, mapped entrance recess and supported commercial arcade','Continuous parapets, matte roof and aerial-visible PV strips; no copied equipment boxes','Photo-referenced recessed north shopfront, round concrete arcade piers and independent Metro shelters']}
     return report
 
 def detail_alder_court(eg,court,base):

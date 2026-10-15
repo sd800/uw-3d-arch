@@ -1,0 +1,368 @@
+{
+  "crossings": [
+    {
+      "id": "435212057",
+      "intersection": "NE 40th Street / University Way",
+      "path_length_m": 12.096,
+      "paint_area_m2": 7.277,
+      "width_m": 2.8,
+      "paired_stripe_count": 13,
+      "probe_points": [
+        [
+          -289.2425,
+          -54.4725
+        ],
+        [
+          -289.3276,
+          -51.9725
+        ]
+      ]
+    },
+    {
+      "id": "436160298",
+      "intersection": "NE 40th Street / University Way",
+      "path_length_m": 11.338,
+      "paint_area_m2": 7.789,
+      "width_m": 2.8,
+      "paired_stripe_count": 22,
+      "probe_points": [
+        [
+          -297.5399,
+          -43.96
+        ],
+        [
+          -299.9814,
+          -42.4775
+        ]
+      ]
+    },
+    {
+      "id": "436160301",
+      "intersection": "NE 40th Street / University Way",
+      "path_length_m": 13.847,
+      "paint_area_m2": 9.793,
+      "width_m": 2.8,
+      "paired_stripe_count": 19,
+      "probe_points": [
+        [
+          -298.9473,
+          -60.05
+        ],
+        [
+          -302.6675,
+          -59.565
+        ]
+      ]
+    },
+    {
+      "id": "436161747",
+      "intersection": "NE 40th Street / University Way",
+      "path_length_m": 11.694,
+      "paint_area_m2": 8.101,
+      "width_m": 2.8,
+      "paired_stripe_count": 16,
+      "probe_points": [
+        [
+          -307.8971,
+          -52.585
+        ],
+        [
+          -307.5618,
+          -55.425
+        ]
+      ]
+    },
+    {
+      "id": "436161751",
+      "intersection": "Campus Parkway / University Way",
+      "path_length_m": 11.213,
+      "paint_area_m2": 9.568,
+      "width_m": 3.0,
+      "paired_stripe_count": 23,
+      "probe_points": [
+        [
+          -302.0151,
+          9.04
+        ],
+        [
+          -298.67,
+          8.1375
+        ]
+      ]
+    },
+    {
+      "id": "436161792",
+      "intersection": "Campus Parkway / University Way",
+      "path_length_m": 11.502,
+      "paint_area_m2": 6.368,
+      "width_m": 3.0,
+      "paired_stripe_count": 12,
+      "probe_points": [
+        [
+          -307.8125,
+          18.2975
+        ],
+        [
+          -307.6977,
+          15.8
+        ]
+      ]
+    },
+    {
+      "id": "436161794",
+      "intersection": "Campus Parkway / University Way",
+      "path_length_m": 14.991,
+      "paint_area_m2": 8.732,
+      "width_m": 3.0,
+      "paired_stripe_count": 15,
+      "probe_points": [
+        [
+          -308.8475,
+          43.6225
+        ],
+        [
+          -308.5825,
+          40.2425
+        ]
+      ]
+    },
+    {
+      "id": "436161795",
+      "intersection": "Campus Parkway / University Way",
+      "path_length_m": 14.399,
+      "paint_area_m2": 10.778,
+      "width_m": 3.0,
+      "paired_stripe_count": 18,
+      "probe_points": [
+        [
+          -300.1013,
+          53.6425
+        ],
+        [
+          -296.3674,
+          53.285
+        ]
+      ]
+    },
+    {
+      "id": "436162471",
+      "intersection": "Campus Parkway / University Way",
+      "path_length_m": 13.073,
+      "paint_area_m2": 8.999,
+      "width_m": 3.0,
+      "paired_stripe_count": 15,
+      "probe_points": [
+        [
+          -289.4279,
+          43.5975
+        ],
+        [
+          -289.5475,
+          40.2125
+        ]
+      ]
+    },
+    {
+      "id": "436162473",
+      "intersection": "Campus Parkway / University Way",
+      "path_length_m": 13.873,
+      "paint_area_m2": 8.997,
+      "width_m": 3.0,
+      "paired_stripe_count": 15,
+      "probe_points": [
+        [
+          -290.1925,
+          16.9375
+        ],
+        [
+          -290.3325,
+          14.0825
+        ]
+      ]
+    },
+    {
+      "id": "475732191",
+      "intersection": "Campus Parkway / Brooklyn Avenue",
+      "path_length_m": 12.567,
+      "paint_area_m2": 8.761,
+      "width_m": 3.0,
+      "paired_stripe_count": 22,
+      "probe_points": [
+        [
+          -387.6413,
+          54.075
+        ],
+        [
+          -385.165,
+          53.3
+        ]
+      ]
+    },
+    {
+      "id": "475732545",
+      "intersection": "Campus Parkway / Brooklyn Avenue",
+      "path_length_m": 11.104,
+      "paint_area_m2": 9.583,
+      "width_m": 3.0,
+      "paired_stripe_count": 16,
+      "probe_points": [
+        [
+          -375.4825,
+          41.6075
+        ],
+        [
+          -375.485,
+          44.9975
+        ]
+      ]
+    },
+    {
+      "id": "475734691",
+      "intersection": "Campus Parkway / Brooklyn Avenue",
+      "path_length_m": 10.257,
+      "paint_area_m2": 8.77,
+      "width_m": 3.0,
+      "paired_stripe_count": 15,
+      "probe_points": [
+        [
+          -396.5333,
+          44.735
+        ],
+        [
+          -396.3681,
+          41.35
+        ]
+      ]
+    },
+    {
+      "id": "475734692",
+      "intersection": "Campus Parkway / Brooklyn Avenue",
+      "path_length_m": 11.204,
+      "paint_area_m2": 7.328,
+      "width_m": 3.0,
+      "paired_stripe_count": 13,
+      "probe_points": [
+        [
+          -395.72,
+          17.11
+        ],
+        [
+          -395.71,
+          19.61
+        ]
+      ]
+    },
+    {
+      "id": "475759277",
+      "intersection": "NE 40th Street / Brooklyn Avenue",
+      "path_length_m": 10.063,
+      "paint_area_m2": 8.039,
+      "width_m": 2.8,
+      "paired_stripe_count": 15,
+      "probe_points": [
+        [
+          -383.545,
+          -59.565
+        ],
+        [
+          -386.935,
+          -59.575
+        ]
+      ]
+    },
+    {
+      "id": "475759278",
+      "intersection": "NE 40th Street / Brooklyn Avenue",
+      "path_length_m": 10.469,
+      "paint_area_m2": 8.051,
+      "width_m": 2.8,
+      "paired_stripe_count": 15,
+      "probe_points": [
+        [
+          -374.4305,
+          -54.675
+        ],
+        [
+          -374.485,
+          -51.2525
+        ]
+      ]
+    },
+    {
+      "id": "475760104",
+      "intersection": "Campus Parkway / Brooklyn Avenue",
+      "path_length_m": 11.434,
+      "paint_area_m2": 7.514,
+      "width_m": 3.0,
+      "paired_stripe_count": 13,
+      "probe_points": [
+        [
+          -377.0275,
+          16.775
+        ],
+        [
+          -376.7825,
+          19.2625
+        ]
+      ]
+    },
+    {
+      "id": "475760105",
+      "intersection": "NE 40th Street / Brooklyn Avenue",
+      "path_length_m": 12.426,
+      "paint_area_m2": 7.957,
+      "width_m": 2.8,
+      "paired_stripe_count": 22,
+      "probe_points": [
+        [
+          -382.1394,
+          -41.4875
+        ],
+        [
+          -384.645,
+          -41.7175
+        ]
+      ]
+    },
+    {
+      "id": "475760106",
+      "intersection": "Campus Parkway / Brooklyn Avenue",
+      "path_length_m": 12.316,
+      "paint_area_m2": 7.827,
+      "width_m": 3.0,
+      "paired_stripe_count": 20,
+      "probe_points": [
+        [
+          -384.7125,
+          9.7625
+        ],
+        [
+          -382.2175,
+          10.5275
+        ]
+      ]
+    },
+    {
+      "id": "477384071",
+      "intersection": "NE 40th Street / Brooklyn Avenue",
+      "path_length_m": 8.695,
+      "paint_area_m2": 6.275,
+      "width_m": 2.8,
+      "paired_stripe_count": 12,
+      "probe_points": [
+        [
+          -395.1431,
+          -53.5925
+        ],
+        [
+          -395.2431,
+          -51.095
+        ]
+      ]
+    }
+  ],
+  "count": 20,
+  "paint_on_road_only": true,
+  "reviewed_source": "sources/alder_crosswalks.json",
+  "generation": "Mapped footway crossing paths, visually checked in satellite imagery; paired stripes, road/footprint clipping; no node-coordinate orientation heuristic"
+}

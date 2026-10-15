@@ -1,8 +1,8 @@
 {
   "parser": "Three.js TDSLoader (independent 3DS importer)",
-  "objects": 4894,
-  "triangles": 4969732,
-  "vertices": 2811928,
+  "objects": 4901,
+  "triangles": 4974108,
+  "vertices": 2814924,
   "box_min": [
     -1031.3050537109375,
     -1120,

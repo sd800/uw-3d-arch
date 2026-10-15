@@ -1,3 +1,4 @@
+from alder_north import parkway_width
 """Seattle-campus exterior model with official footprints, trees and sampled terrain.
 All heights and facade detail are approximate unless an explicit measurement is cited.
 """
@@ -183,7 +184,7 @@ for j,f in enumerate(buildings,1):
     if id=='SUZ':r['basis_en']+=' UW documents the reading room as 250 × 52 × 65 ft; these are interior dimensions, not the exterior building envelope.';r['basis']+=' 校方公布的阅览室为250×52×65英尺，属于室内尺寸，不能当作整栋建筑的外部尺寸。'
     if id=='LINK_UW':
         r.update(footprint_source=f['footprint_source'],source='https://lmnarchitects.com/project/university-of-washington-station-sound-transit',architecture_reference='https://lmnarchitects.com/project/university-of-washington-station-sound-transit',basis_en='Mapped OSM surface envelope. Two-level exterior, structural bays and dimensions interpreted from the architect’s photographs; not underground engineering or a surveyed station model.',basis='地面站房范围采用公开映射轮廓；两层玻璃站房及构件依据设计方照片近似表达，不包含地下铁路工程。',partition='两层玻璃站房、钢柱与楼板、入口、电梯突出部分和轻薄金属屋顶；与映射人行桥和室外楼梯连接。')
-    if id=='ALD':r['aliases_zh']+=['District Market','Husky Grind','Bay 1','Bay 2','bus stop','公交站','街区'];r['partition_en']+=' Building-integrated bus canopies, market glazing, connected whole-block paving and aerial-visible PV bands.'
+    if id=='ALD':r['aliases_zh']+=['District Market','Husky Grind','Bay 1','Bay 2','bus stop','公交站','街区'];r['partition_en']+=' Independent Metro shelters, a recessed timber/glass market arcade, connected whole-block paving and aerial-visible PV bands.'
     records.append(r);f['record']=r
     if j%40==0:print('Buildings',j,flush=True)
 write_report();write_ordinary_report()
@@ -209,6 +210,7 @@ for f in roadfs:
     t=f['properties'];h=t['highway'];width={'primary':14,'secondary':11,'tertiary':9,'residential':7,'unclassified':7,'service':4.5,'living_street':5}[h]
     try:width=float(t.get('width',width))
     except ValueError:pass
+    width=parkway_width(t,f['poly'],width)
     roadparts.append(f['poly'].buffer(width/2,cap_style=2,join_style=2))
 bridge_mask=unary_union([f['poly'].buffer(7,cap_style=2,join_style=2)for f in osm if f['properties'].get('bridge')in ['yes','movable','viaduct']and f['properties'].get('highway')in ['primary','secondary','tertiary']and f['poly'].intersects(lakewater.buffer(25))])
 roadarea=set_precision(unary_union(roadparts).difference(bridge_mask).difference(footprints).intersection(scope).buffer(0),.01)
@@ -299,7 +301,7 @@ for f in features('uw_benches.geojson'):
         for dz in [.72,.90]:eg['Cedar'].append(boxmesh(q.x,q.y+.23,zz+dz,1.70,.06,.11))
         for dx in [-.70,.70]:eg['Furniture'].append(cylinder((q.x+dx,q.y+.23,zz+.40),(q.x+dx,q.y+.23,zz+1.0),.035,5))
 alder_details=detail_alder_court(eg,alder_court,alder['ground']);alder_details['surroundings']={'replaced_by':'alder_block_refinement.json'}
-detail_block(eg,env,osm,alder_envelope,footprints,roadarea,walkarea,features('uw_trees.geojson'),ground,places)
+detail_block(eg,env,osm,alder_envelope,footprints,roadarea,walkarea,features('uw_trees.geojson'),ground,places,scope)
 (OUT/'alder_hall_refinement.json').write_text(json.dumps(alder_details,indent=2))
 for k,(mat,parts) in enumerate(eg.items()):
     if parts:chunk_meshes(f'E{k:02d}',parts,mat,'Environment',{'Source':'UW public tree/bench positions, OSM outdoor surfaces and USGS ground samples','Approximation':'Widths, surface thickness, canopy shapes and furniture detail are illustrative','Units':'meters'})

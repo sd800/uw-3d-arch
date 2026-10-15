@@ -1,5 +1,13 @@
 # Changelog
 
+## 26.10.15.2 — 2026-10-15
+
+- Replace the Alder block’s coordinate-guessed crosswalks with 20 satellite-reviewed curb-to-curb crossing paths around Brooklyn Avenue, University Way, Campus Parkway and NE 40th Street. Use paired stripes aligned with each actual walking path, and clip every marking to the road while preserving median and sidewalk gaps.
+
+- Rebuild Alder Hall’s north ground-floor frontage from September 2025 Street View and UW HFS entrance photographs: weathered-steel classroom panels and narrow lights, the mapped recessed hall entrance, timber/glass cafe and market frontage, and concrete arcade piers. Remove the misplaced through-passage and floating market sign.
+- Replace the oversized building-connected bus canopies with two separate silver-framed glass Metro shelters at the mapped stops; retain a distinct shallow building canopy over the recessed shopfront.
+- Refine Campus Parkway’s boarding sidewalk, planted pockets, supported seating edges, carriageway width, concrete road finish and restrained lane/joint markings. Preserve the mapped courtyard, building layer and surrounding transit models.
+
 ## 26.10.15.1 — 2026-10-15
 
 - Refine the complete Alder Hall block between Campus Parkway, Brooklyn Avenue, University Way and NE 40th Street, with coherent paving, mapped tree pits, marked crossings, curb openings and connected street edges.

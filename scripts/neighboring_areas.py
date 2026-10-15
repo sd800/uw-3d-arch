@@ -1,3 +1,4 @@
+from alder_north import parkway_width
 """Mapped U District context; separate layers let the viewer restore campus only.
 OSM outlines and tagged heights are retained. Unrecorded facade bays, widths,
 materials and heights are conservative exterior approximations.
@@ -95,6 +96,7 @@ def build_neighbors(osm,campus_scope,campus_footprints,raw_ground,campus_ground,
         if h in widths:
             try:w=float(t.get('width',widths[h]))
             except ValueError:w=widths[h]
+            w=parkway_width(t,g,w)
             roadparts.append(g.buffer(w/2,cap_style=2,join_style=2));roadlines.append((g,w,t))
         elif h in ['footway','path','steps','cycleway']:
             try:w=float(t.get('width',2.4 if h!='cycleway'else 3))

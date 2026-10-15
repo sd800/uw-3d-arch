@@ -20,7 +20,8 @@
     "check:terrain": "node scripts/check_terrain_occlusion.mjs",
     "build:terrain-check": "esbuild scripts/check_terrain_gpu.js --bundle --format=iife --target=es2020 --outfile=tmp/terrain-check.js && python3 scripts/package_terrain_check.py",
     "check:alder": "node scripts/check_alder.mjs",
-    "check:transit": "node scripts/check_transit.mjs"
+    "check:transit": "node scripts/check_transit.mjs",
+    "check:crosswalks": "node scripts/check_alder_crosswalks.mjs"
   },
   "dependencies": {
     "three": "0.186.1"

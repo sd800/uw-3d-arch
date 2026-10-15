@@ -13,6 +13,7 @@ ROOT=pathlib.Path(__file__).resolve().parents[1]; OUT=ROOT/'output';OUT.mkdir(ex
 TF=Transformer.from_crs(4326,32610,always_xy=True)
 LON,LAT=-122.3093,47.6558;OX,OY=TF.transform(LON,LAT)
 COLORS={
+ 'AlderCorten':(121,81,62),'MarketWood':(141,103,68),'MarketFrame':(87,67,57),'AlderConcrete':(180,183,176),'AlderShrub':(88,117,77),'ParkwayConcrete':(151,153,146),
  'AlderSoil':(99,120,82),'AlderPaving':(188,185,171),'AlderBrick':(108,113,111),'AlderPanel':(174,180,174),'AlderFrame':(217,223,216),'RoofAlder':(125,131,125),'AlderSoffit':(178,158,121),
  'HotelCream':(202,198,178),'HotelOchre':(168,126,87),'HotelRoofEdge':(91,83,69),'HotelSign':(98,65,49),'RoofHotel':(155,149,131),
  'RoofContextSlate':(101,109,110),'RoofContextWarm':(156,151,137),

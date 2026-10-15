@@ -1,4 +1,34 @@
 {
+  "AlderCorten": [
+    121,
+    81,
+    62
+  ],
+  "MarketWood": [
+    141,
+    103,
+    68
+  ],
+  "MarketFrame": [
+    87,
+    67,
+    57
+  ],
+  "AlderConcrete": [
+    180,
+    183,
+    176
+  ],
+  "AlderShrub": [
+    88,
+    117,
+    77
+  ],
+  "ParkwayConcrete": [
+    151,
+    153,
+    146
+  ],
   "AlderSoil": [
     99,
     120,
