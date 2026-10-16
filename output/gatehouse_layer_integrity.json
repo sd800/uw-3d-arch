@@ -1,0 +1,10 @@
+{
+  "release": "26.10.16.6",
+  "baseline": "26.10.16.5",
+  "changed_layers": [
+    "W047_Gatehouse 5 - NE 40th/West Stevens",
+    "Environment"
+  ],
+  "unchanged_layers": 869,
+  "passed": true
+}

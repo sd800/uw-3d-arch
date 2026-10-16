@@ -1889,10 +1889,20 @@
     "category": "building",
     "material": "RoofMetal"
   },
-  "W047D6900": {
+  "W047D6800": {
     "layer": "W047_Gatehouse 5 - NE 40th/West Stevens",
     "category": "building",
-    "material": "Frame"
+    "material": "DarkGlass"
+  },
+  "W047M8400": {
+    "layer": "W047_Gatehouse 5 - NE 40th/West Stevens",
+    "category": "building",
+    "material": "Purple"
+  },
+  "W047M10200": {
+    "layer": "W047_Gatehouse 5 - NE 40th/West Stevens",
+    "category": "building",
+    "material": "HousingCharcoal"
   },
   "W048M2700": {
     "layer": "W048_Interdisciplinary Engineering Building",
@@ -9974,6 +9984,11 @@
     "category": "environment",
     "material": "BridgePier"
   },
+  "E4100": {
+    "layer": "Environment",
+    "category": "environment",
+    "material": "BrickRed"
+  },
   "E4400": {
     "layer": "Environment",
     "category": "environment",
@@ -9983,6 +9998,11 @@
     "layer": "Environment",
     "category": "environment",
     "material": "Cedar"
+  },
+  "E5100": {
+    "layer": "Environment",
+    "category": "environment",
+    "material": "RoofSlate"
   },
   "E6000": {
     "layer": "Environment",

@@ -1,4 +1,5 @@
 from alder_north import parkway_width
+from gatehouse import gate_lane_width,island_plan,build_gatehouse,gatehouse_landscape
 """Seattle-campus exterior model with official footprints, trees and sampled terrain.
 All heights and facade detail are approximate unless an explicit measurement is cited.
 """
@@ -155,7 +156,7 @@ for j,f in enumerate(buildings,1):
         support=extrusion(q,base-1.5,1.51);bottom=support.vertices[:,2]<base-.7
         support.vertices[bottom,2]=np.minimum(base-.2,raw_ground(support.vertices[bottom,0],support.vertices[bottom,1])-1.5)
         ms['Foundation'].append(support)
-    refinement=build_housing(ms,p,base,id,height,levels,code,lay,info,raw_ground)
+    refinement=build_gatehouse(ms,p,base,code,lay,info) if id=='GH5' else build_housing(ms,p,base,id,height,levels,code,lay,info,raw_ground)
     if not refinement and id=='SUZ':refinement=build_suzzallo(ms,p,base,code,lay,info,raw_ground,library_entry)
     if not refinement and id=='MNY':refinement=build_meany(ms,p,base,code,lay,info,raw_ground)
     if not refinement:refinement=build_highlight(ms,p,base,id,height,levels,code,lay,info,raw_ground)
@@ -247,10 +248,12 @@ for f in roadfs:
     t=f['properties'];h=t['highway'];width={'primary':14,'secondary':11,'tertiary':9,'residential':7,'unclassified':7,'service':4.5,'living_street':5}[h]
     try:width=float(t.get('width',width))
     except ValueError:pass
-    width=parkway_width(t,f['poly'],width)
+    width=gate_lane_width(t,parkway_width(t,f['poly'],width))
     roadparts.append(f['poly'].buffer(width/2,cap_style=2,join_style=2))
 bridge_mask=unary_union([f['poly'].buffer(7,cap_style=2,join_style=2)for f in osm if f['properties'].get('bridge')in ['yes','movable','viaduct']and f['properties'].get('highway')in ['primary','secondary','tertiary']and f['poly'].intersects(lakewater.buffer(25))])
-roadarea=set_precision(unary_union(roadparts).difference(bridge_mask).difference(footprints).intersection(scope).buffer(0),.01)
+gate_booth=next(f['poly'] for f in buildings if f['id']=='GH5')
+gate_island=island_plan(osm,gate_booth)
+roadarea=set_precision(unary_union(roadparts).difference(gate_island).difference(bridge_mask).difference(footprints).intersection(scope).buffer(0),.01)
 for f in osm:
     t=f['properties'];g=f['poly'];h=t.get('highway')
     if h in ['footway','path','steps','cycleway','pedestrian'] and g.geom_type in ['LineString','MultiLineString'] and g.intersects(scope):
@@ -268,7 +271,7 @@ fountain=next(f for f in osm if f['properties'].get('name')=='Drumheller Fountai
 core_layout=core_plan(red['poly'],quad['poly'],osm,footprints)
 red_links=connection_plan(red['poly'],osm,footprints,buildings,unary_union([library_entry['domain'],core_layout[0],quad['poly']]))
 core_mask=unary_union([red_links['domain'],red['poly'],quad['poly'],fountain['poly'].buffer(3.8),core_layout[0],BLOCK,library_entry['domain']])
-fine_ground=unary_union([red['poly'].buffer(22),station_osm['poly'].buffer(10)])
+fine_ground=unary_union([red['poly'].buffer(22),station_osm['poly'].buffer(10),gate_island.buffer(2)])
 # Dedicated core surfaces replace generic overlapping lawn and path skins.
 alder=next(f for f in buildings if f['id']=='ALD');alder_court=courtyard_from_osm(osm,Polygon(alder['poly'].exterior))
 alder_apron=alder_envelope.buffer(2.4,join_style=2).difference(alder_envelope).difference(footprints).difference(roadarea)
@@ -347,6 +350,7 @@ for f in features('uw_benches.geojson'):
         for dz in [.72,.90]:eg['Cedar'].append(boxmesh(q.x,q.y+.23,zz+dz,1.70,.06,.11))
         for dx in [-.70,.70]:eg['Furniture'].append(cylinder((q.x+dx,q.y+.23,zz+.40),(q.x+dx,q.y+.23,zz+1.0),.035,5))
 alder_details=detail_alder_court(eg,alder_court,alder['ground']);alder_details['surroundings']={'replaced_by':'alder_block_refinement.json'}
+gatehouse_landscape(eg,env,gate_booth,gate_island,ground)
 detail_block(eg,env,osm,alder_envelope,footprints,roadarea,walkarea,features('uw_trees.geojson'),ground,places,scope)
 (OUT/'alder_hall_refinement.json').write_text(json.dumps(alder_details,indent=2))
 housing_site=housing_landscape(eg,env,buildings,footprints,roadarea,walkarea,ground)

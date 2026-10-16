@@ -348,25 +348,6 @@
       "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
     },
     {
-      "facility_id": "GH5",
-      "height_m": 4.55,
-      "levels": 1,
-      "volume_parts": [
-        {
-          "area_m2": 5.5,
-          "height_m": 4.33,
-          "material": "Precast"
-        }
-      ],
-      "ordinary": true,
-      "details": [
-        "Mapped footprint and courtyard openings retained",
-        "Use-specific window spacing, floor courses, grounded entry or service door",
-        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
-      ],
-      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
-    },
-    {
       "facility_id": "SIG",
       "height_m": 15.8,
       "levels": 4,
@@ -3239,5 +3220,5 @@
       "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
     }
   ],
-  "count": 167
+  "count": 166
 }

@@ -2273,7 +2273,7 @@
     "layer": "W047_Gatehouse 5 - NE 40th/West Stevens",
     "zone": "central",
     "landmark": false,
-    "height": 4.55,
+    "height": 3.08,
     "height_status": "estimated",
     "levels": 1,
     "year_built": 1969,
@@ -2287,20 +2287,20 @@
     ],
     "ground_m": 34.962,
     "bottom_m": 34.962,
-    "peak_m": 39.722,
+    "peak_m": 38.042,
     "basis": "平面采用 UW 官方 GIS；外部层数、层高与屋顶高度为估算。GIS 总建筑面积不能视为地上层数。",
     "basis_en": "Official UW footprint; exterior storeys, floor heights and roof elevations are approximate. Reported gross floor area may include basements and does not certify exterior storeys.",
-    "partition": "保留公开映射轮廓和庭院，按建筑用途及已有标记细化窗格、楼层线脚、屋顶与接地入口；外部高度与构件尺寸为近似表达。",
-    "partition_en": "Mapped footprint and courtyard openings retained; Use-specific window spacing, floor courses, grounded entry or service door; Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes. Exterior dimensions and partitions remain approximate.",
+    "partition": "按公开建筑资料和航拍细化体量、屋顶与立面；保留官方轮廓。外部高度及构件尺寸仍为近似表达。",
+    "partition_en": "Official GH5 footprint and mapped traffic-island location retained; Single-storey dark-framed glazed observation booth, counter sill, roadside doors and purple lower sign bands; Low shallow gabled metal roof; no generic tall service-box parapet. Exterior dimensions and partitions remain approximate.",
     "source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "footprint_source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "architecture_reference": null,
     "construction_status": "Active",
     "volume_parts": [
       {
-        "area_m2": 5.5,
-        "height_m": 4.33,
-        "material": "Precast"
+        "area_m2": 5.495,
+        "height_m": 2.58,
+        "material": "HousingCharcoal"
       }
     ]
   },

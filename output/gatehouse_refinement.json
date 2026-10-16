@@ -1,0 +1,69 @@
+{
+  "facility_id": "GH5",
+  "height_m": 3.08,
+  "body_height_m": 2.58,
+  "source_photo": "https://transportation.uw.edu/files/media/west-gatehouse-525x384.jpg",
+  "lane_widths_m": {
+    "way/361455661": 3.6,
+    "way/361455663": 6.2,
+    "way/459082636": 6.2
+  },
+  "details": [
+    "Official GH5 footprint and mapped traffic-island location retained",
+    "Single-storey dark-framed glazed observation booth, counter sill, roadside doors and purple lower sign bands",
+    "Low shallow gabled metal roof; no generic tall service-box parapet"
+  ],
+  "accuracy": "Mapped booth position; exterior heights, lane widths and island curbs are photo-informed approximations.",
+  "island": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -159.395,
+          -63.965
+        ],
+        [
+          -159.755,
+          -63.395
+        ],
+        [
+          -164.495,
+          -59.605
+        ],
+        [
+          -169.935,
+          -56.1
+        ],
+        [
+          -174.87,
+          -54.0
+        ],
+        [
+          -180.19,
+          -53.28
+        ],
+        [
+          -184.57,
+          -53.68
+        ],
+        [
+          -182.485,
+          -54.51
+        ],
+        [
+          -169.07,
+          -60.025
+        ],
+        [
+          -161.54,
+          -63.295
+        ],
+        [
+          -159.395,
+          -63.965
+        ]
+      ]
+    ]
+  },
+  "island_area_m2": 61.386
+}

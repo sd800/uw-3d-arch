@@ -1,0 +1,9 @@
+{
+  "facility": "GH5",
+  "height_m": 3.08,
+  "glazed_booth": true,
+  "low_gabled_roof": true,
+  "island_asphalt_clearance_probes": 50,
+  "carriageways_retained": 2,
+  "passed": true
+}

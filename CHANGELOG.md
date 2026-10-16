@@ -1,5 +1,10 @@
 # Changelog
 
+## 26.10.16.6 — 2026-10-16
+
+- Correct the West Gatehouse (GH5) from UW Transportation Services’ exterior photo: replace the tall opaque service box with a low glazed booth, dark frames, purple sign bands and a shallow gabled roof.
+- Restore the connected curbed traffic island and brick planter; give its separately mapped one-way carriageways individual widths so asphalt no longer swallows the median. Retain the official facility position.
+
 ## 26.10.16.5 — 2026-10-16
 
 - Keep buildings selected in Highlights Explore, previous/next and dropdown navigation while preserving their original material colors. Direct model/list clicks retain the existing selection highlight. Preserve this distinction during loading and regional-detail updates.
