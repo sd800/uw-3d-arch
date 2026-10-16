@@ -1,0 +1,377 @@
+{
+  "review_date": "2026-10-16",
+  "highlight_count": 28,
+  "highlight_order": [
+    "SUZ",
+    "ALD",
+    "GRB",
+    "DEN",
+    "MGH",
+    "SAV",
+    "RAI",
+    "SMI",
+    "GWN",
+    "KNE",
+    "OUG",
+    "HUB",
+    "BRK",
+    "HAG",
+    "PCAR",
+    "LAW",
+    "CSE",
+    "CSE2",
+    "LSB",
+    "HRC",
+    "HSEB",
+    "UMSA",
+    "STD",
+    "EDP",
+    "CSH",
+    "INT",
+    "IEB",
+    "LINK_UW"
+  ],
+  "rebuilt_highlights": 15,
+  "rebuilt_companion_facilities": [
+    "AVA"
+  ],
+  "retained_highlights": 13,
+  "audit": [
+    {
+      "facility_id": "SUZ",
+      "name": "Suzzallo Library",
+      "action": "retain_existing_custom_model",
+      "notes": "Retain separate reading hall and later wings, tall triplet windows, buttresses and supported west portal.",
+      "reference": "https://lib.uw.edu/locations-hours/suzzallo-and-allen-libraries-history/"
+    },
+    {
+      "facility_id": "ALD",
+      "name": "Alder Hall",
+      "action": "retain_existing_custom_model",
+      "notes": "Retain the dedicated open courtyard, shopfront/arcade, whole-block and transit modeling. No geometry changes.",
+      "reference": "https://hfs.uw.edu/live/undergraduates/undergraduate-communities/alder-hall/"
+    },
+    {
+      "facility_id": "GRB",
+      "name": "Gerberding Hall",
+      "action": "retain_existing_custom_model",
+      "notes": "Retain the junction tower, lower mapped wings, louvres, stone courses and attached pinnacles.",
+      "reference": "https://www.washington.edu/news/2008/05/01/gerberding-a-real-bell-tower-at-last/"
+    },
+    {
+      "facility_id": "DEN",
+      "name": "Denny Hall",
+      "action": "retain_existing_custom_model",
+      "notes": "Retain sandstone walls, slate silhouette and supported octagonal cupola.",
+      "reference": "https://pcad.lib.washington.edu/building/5433/"
+    },
+    {
+      "facility_id": "MGH",
+      "name": "Mary Gates Hall",
+      "action": "retain_existing_custom_model",
+      "notes": "Retain Gothic perimeter wings, lower commons roof and central glazing.",
+      "reference": "https://www.bassettiarch.com/portfoliodetails/marygates"
+    },
+    {
+      "facility_id": "SAV",
+      "name": "Savery Hall",
+      "action": "retain_existing_custom_model",
+      "notes": "Retain mapped wings, sloped slate roof margins, inner flat roof and masonry/stone window bays; reviewed against core aerial.",
+      "reference": "sources/ARCHITECTURE_REFERENCES.md"
+    },
+    {
+      "facility_id": "RAI",
+      "name": "Raitt Hall",
+      "action": "retain_existing_custom_model",
+      "notes": "Retain mapped wings and existing Gothic facade/roof system; reviewed against core aerial.",
+      "reference": "sources/ARCHITECTURE_REFERENCES.md"
+    },
+    {
+      "facility_id": "SMI",
+      "name": "Smith Hall",
+      "action": "retain_existing_custom_model",
+      "notes": "Retain mapped wings and existing Gothic facade/roof system; reviewed against core aerial.",
+      "reference": "sources/ARCHITECTURE_REFERENCES.md"
+    },
+    {
+      "facility_id": "GWN",
+      "name": "Gowen Hall",
+      "action": "retain_existing_custom_model",
+      "notes": "Retain mapped wings and existing Gothic facade/roof system; reviewed against core aerial.",
+      "reference": "sources/ARCHITECTURE_REFERENCES.md"
+    },
+    {
+      "facility_id": "KNE",
+      "name": "Kane Hall",
+      "action": "rebuilt",
+      "notes": "Recessed south portico, continuous concrete piers and tall back-set glazing replace stacked small windows.",
+      "reference": "https://www.washington.edu/news/2019/12/17/beauty-in-brutalism-architecture-professor-alex-anderson-reviews-the-uws-bunkerlike-behemoths/"
+    },
+    {
+      "facility_id": "OUG",
+      "name": "Odegaard Library",
+      "action": "rebuilt",
+      "notes": "Three-storey brick/glass library behind a concrete bay frame; broad central skylight follows the aerial.",
+      "reference": "https://millerhull.com/project/odegaard-library/"
+    },
+    {
+      "facility_id": "HUB",
+      "name": "Student Union Building",
+      "action": "rebuilt",
+      "notes": "Historic brick east enclosure, lower central volumes and distinct glazed north/south public entries.",
+      "reference": "https://www.nwpart.com/projects/university-of-washington-husky-union-building/"
+    },
+    {
+      "facility_id": "BRK",
+      "name": "Burke Museum of Natural History and Culture",
+      "action": "retain_existing_custom_model",
+      "notes": "Retain the existing timber enclosure, tall narrow glazing and closed street-aligned shed roof.",
+      "reference": "https://olsonkundig.com/projects/burke-museum-of-natural-history-and-culture/"
+    },
+    {
+      "facility_id": "HAG",
+      "name": "Henry Art Gallery",
+      "action": "rebuilt",
+      "notes": "Two-storey original gallery with masonry/stone courses and slate margins; AVA is its separately mapped modern addition.",
+      "reference": "https://www.gwathmey-siegel.com/2013/08/university-of-washington/"
+    },
+    {
+      "facility_id": "PCAR",
+      "name": "PACCAR Hall",
+      "action": "rebuilt",
+      "notes": "Brick wings, public glass atrium and a supported projecting glazed meeting-room volume.",
+      "reference": "https://lmnarchitects.com/project/paccar-hall-foster-school-of-business-university-of-washington"
+    },
+    {
+      "facility_id": "LAW",
+      "name": "William H. Gates Hall",
+      "action": "rebuilt",
+      "notes": "Warm masonry outer L, south/east glazed elevations and four grounded law-library lawn skylights.",
+      "reference": "https://www.kpf.com/project/william-h-gates-hall"
+    },
+    {
+      "facility_id": "CSE",
+      "name": "Paul G. Allen Center for Computer Science & Engineering",
+      "action": "rebuilt",
+      "notes": "Brick teaching wings, seven-storey bay rhythm, shallow window cheeks and a separately glazed circulation atrium.",
+      "reference": "https://lazowska.cs.washington.edu/psj.allen.center.html"
+    },
+    {
+      "facility_id": "CSE2",
+      "name": "Bill & Melinda Gates Center for Computer Science & Engineering",
+      "action": "rebuilt",
+      "notes": "Staggered terracotta/brick piers, larger glazing, roof event enclosure, terrace and narrow roof lanterns.",
+      "reference": "https://lmnarchitects.com/project/bill-melinda-gates-center"
+    },
+    {
+      "facility_id": "LSB",
+      "name": "Life Sciences Building",
+      "action": "rebuilt",
+      "notes": "Glazed laboratory bar, reddish circulation end, teaching plinth, bounded south solar-glass fins and roof PV.",
+      "reference": "https://perkinswill.com/project/university-of-washington-life-sciences-building/"
+    },
+    {
+      "facility_id": "HRC",
+      "name": "Hans Rosling Center for Population Health",
+      "action": "rebuilt",
+      "notes": "Recessed glazed base, concrete pilotis, west solar sails, quieter precast service face and two inset roof terraces.",
+      "reference": "https://www.washington.edu/populationhealth/hans-rosling-center-tour/"
+    },
+    {
+      "facility_id": "HSEB",
+      "name": "Health Sciences Education Building",
+      "action": "rebuilt",
+      "notes": "Opaque corrugated silver classroom skin, varied tall openings, glazed north active edge and timber floor-edge accents.",
+      "reference": "https://millerhull.com/project/health-sciences-education-building/"
+    },
+    {
+      "facility_id": "UMSA",
+      "name": "UW Medical Center - Montlake, Wing SA - Montlake Tower",
+      "action": "rebuilt",
+      "notes": "Separate diagnostic/service podium, glazed patient tower, repeated pale bay edges and lower companion roofs.",
+      "reference": "https://www.laminart.com/case-study/montlake-tower-university-washington-medical-center"
+    },
+    {
+      "facility_id": "STD",
+      "name": "Husky Stadium",
+      "action": "retain_existing_custom_model",
+      "notes": "Retain the dedicated stepped bowl, separate upper decks, cantilever roofs, field axis and supports; aerial checked.",
+      "reference": "https://www.hok.com/projects/view/university-of-washington-husky-stadium-renovation-and-expansion/"
+    },
+    {
+      "facility_id": "EDP",
+      "name": "Hec Edmundson Pavilion",
+      "action": "rebuilt",
+      "notes": "Pitched main arena roof, lower north gym/east annex volumes and the historic west brick/window/pier rhythm.",
+      "reference": "https://gohuskies.com/news/2013/4/18/208237508"
+    },
+    {
+      "facility_id": "CSH",
+      "name": "Conibear Shellhouse",
+      "action": "rebuilt",
+      "notes": "Lower shell-storage bays, upper olive/wood-clad dining/academic enclosure and a supported lake-facing deck. The lake-facing DEM sample is the lower floor datum, rather than the central uphill entrance sample.",
+      "reference": "https://millerhull.com/project/conibear-shellhouse/"
+    },
+    {
+      "facility_id": "INT",
+      "name": "Intellectual House",
+      "action": "retain_existing_custom_model",
+      "notes": "Retain the existing cedar longhouse, sloped closed roof, timber posts and grounded approach.",
+      "reference": "https://www.washington.edu/news/2015/03/10/as-home-for-native-learning-opens-a-dream-is-realized/"
+    },
+    {
+      "facility_id": "IEB",
+      "name": "Interdisciplinary Engineering Building",
+      "action": "rebuilt",
+      "notes": "Completed dark-brick building, open lower covered arrival, varied tall openings and rooftop PV.",
+      "reference": "https://www.engr.washington.edu/about/ieb"
+    },
+    {
+      "facility_id": "LINK_UW",
+      "name": "University of Washington Station",
+      "action": "retain_existing_custom_model",
+      "notes": "Retain the dedicated glass station, lobby decks, structural bays and connected pedestrian bridge/landings.",
+      "reference": "https://lmnarchitects.com/project/university-of-washington-station-sound-transit"
+    }
+  ],
+  "primary_page_snapshots": [
+    {
+      "facility_id": "LAW",
+      "url": "https://www.kpf.com/project/william-h-gates-hall",
+      "retrieved_bytes": 153502,
+      "sha256": "06618d6e29840a9e4d87666c5f5e77e7bea85d53a234d8d2cb6b2bb44b9eb6cd"
+    },
+    {
+      "facility_id": "PCAR",
+      "url": "https://lmnarchitects.com/project/paccar-hall-foster-school-of-business-university-of-washington",
+      "retrieved_bytes": 80123,
+      "sha256": "b423bc16fe0ada7b0716b1690f6e54068d82b5bb9985d17a43d22125a59e146a"
+    },
+    {
+      "facility_id": "KNE",
+      "url": "https://www.washington.edu/news/2019/12/17/beauty-in-brutalism-architecture-professor-alex-anderson-reviews-the-uws-bunkerlike-behemoths/",
+      "retrieved_bytes": 80946,
+      "sha256": "bee98aa0d2a6a11ad89123a4636bf3928c58f78101517b424f43252e93762641"
+    },
+    {
+      "facility_id": "HAG",
+      "url": "https://www.gwathmey-siegel.com/2013/08/university-of-washington/",
+      "retrieved_bytes": 47899,
+      "sha256": "e285124c8cac86ac611d2d281813b84c433cf18c3cad14a03af68a4d42c30ae0"
+    },
+    {
+      "facility_id": "HUB",
+      "url": "https://www.nwpart.com/projects/university-of-washington-husky-union-building/",
+      "retrieved_bytes": 38037,
+      "sha256": "fa95895a4c62e6f66cdd21e657edc4a9e9f63b77bb90f0e9038d8f40763c4949"
+    },
+    {
+      "facility_id": "IEB",
+      "url": "https://www.engr.washington.edu/about/ieb",
+      "retrieved_bytes": 104582,
+      "sha256": "7e9e67cd0794ec8f3849828d19155175ffedebc266d4179cb06c93e5b52ca631"
+    },
+    {
+      "facility_id": "HRC",
+      "url": "https://www.washington.edu/populationhealth/hans-rosling-center-tour/",
+      "retrieved_bytes": 89773,
+      "sha256": "19e634a752039780ccda073fe46c7a76ea6abcb3b44a7a3626528c6862aebe7b"
+    },
+    {
+      "facility_id": "CSE",
+      "url": "https://lazowska.cs.washington.edu/psj.allen.center.html",
+      "retrieved_bytes": 14732,
+      "sha256": "16470f40a35f3355eb599a8fe198e92c4d113116538b001a0f4bac937a10a180"
+    },
+    {
+      "facility_id": "CSE2",
+      "url": "https://lmnarchitects.com/project/bill-melinda-gates-center",
+      "retrieved_bytes": 98160,
+      "sha256": "e72d65e174ffb2c8c74414178ddc6d0c2af84182a452d639e8bf3563e8332eac"
+    },
+    {
+      "facility_id": "LSB",
+      "url": "https://perkinswill.com/project/university-of-washington-life-sciences-building/",
+      "retrieved_bytes": 146988,
+      "sha256": "c5ab1048609024b91be78fa093a3738086d85587948decbf5092dda7237f7da2"
+    },
+    {
+      "facility_id": "UMSA",
+      "url": "https://www.laminart.com/case-study/montlake-tower-university-washington-medical-center",
+      "retrieved_bytes": 229625,
+      "sha256": "8819ef03726ebef4a0ff08216b6bc5f7973f032d6277017249562ca8f3e7e51b"
+    },
+    {
+      "facility_id": "CSH",
+      "url": "https://www.huskycrew.com/shellhouse.htm",
+      "retrieved_bytes": 32675,
+      "sha256": "630f7a29f19040f4c9f6eba92f0d455e7c81ba25ec32f7cc983afe95d387107d"
+    },
+    {
+      "facility_id": "EDP",
+      "url": "https://gohuskies.com/news/2013/4/18/208237508",
+      "retrieved_bytes": 839356,
+      "sha256": "f0679b975e355ccfe0f06c3c55d49406245b1ca811d5c4f4f4911249bd61e2d2"
+    }
+  ],
+  "aerial_review": [
+    {
+      "area": "north",
+      "bounds_local_utm_m": [
+        -250,
+        -30,
+        450,
+        450
+      ],
+      "origin_utm_m": [
+        551864.7842745285,
+        5278276.038903566
+      ],
+      "resolution_width_px": 1400,
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+      "acquisition_date": "Unknown",
+      "sha256": "1c52243a1f12002ea3808f267f952c4e592cc9ce4987b3005940570c2d338687"
+    },
+    {
+      "area": "south",
+      "bounds_local_utm_m": [
+        -240,
+        -850,
+        480,
+        -230
+      ],
+      "origin_utm_m": [
+        551864.7842745285,
+        5278276.038903566
+      ],
+      "resolution_width_px": 1400,
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+      "acquisition_date": "Unknown",
+      "sha256": "be88dce0ee597022d738118cd4a41e8a25672df2256dd2c98ea7dbe9391ec24e"
+    },
+    {
+      "area": "east",
+      "bounds_local_utm_m": [
+        440,
+        -730,
+        800,
+        -250
+      ],
+      "origin_utm_m": [
+        551864.7842745285,
+        5278276.038903566
+      ],
+      "resolution_width_px": 1100,
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+      "acquisition_date": "Unknown",
+      "sha256": "6efe933f037b207721d7eb601ed7c1df2326a776edaadbbabe058a479bc42ef4"
+    }
+  ],
+  "reference_photographs_redistributed": false,
+  "alder_baseline": {
+    "release": "26.10.15.8",
+    "layer": "W105_Alder Hall",
+    "geometry_sha256": "af9add3e9bbb491f741183cda7127c6076caf735ac63bb386e3bc133a281eb07",
+    "digest_method": "Sorted [3DS object name, SHA256(vertices + face indices/flags + material assignment)] pairs serialized as Python JSON; smoothing metadata excluded."
+  }
+}

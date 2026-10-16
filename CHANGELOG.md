@@ -1,5 +1,12 @@
 # Changelog
 
+## 26.10.16.1 — 2026-10-16
+
+- Review all 28 architectural highlights, add Alder Hall in second place and retain its existing geometry. Rebuild 15 landmark exteriors plus the separately layered Henry Art Gallery addition using university, architect and construction photographs and reviewed aerials.
+- Replace generic masses with Kane’s recessed concrete portico, PACCAR’s supported glazed meeting room, the two-part Henry gallery complex, individual library and student-center envelopes, laboratory/health-sciences facade systems and separate athletic building roofs.
+- Detail framed glazing, attached solar sails, metal skins, lower public spaces, upper event/garden terraces and grounded entrances. Split pitched/curved roof meshes at their ridges and cross-sections to prevent false diagonal folds. Correct Conibear’s lower boat-bay datum to the lake-facing terrain sample.
+- Frame the original Henry gallery and its AVA addition together during landmark exploration. Preserve building layers, existing detailed Gothic/core/station/stadium models and the optimized housing revision. Regenerate Rhino, 3DS, compressed web and offline deliverables with focused geometry and display checks.
+
 ## 26.10.15.9 — 2026-10-15
 
 - Rebuild Elm, Poplar, Lander, Maple and Terry Hall exteriors from university and original architect photographs, with distinct masonry/panel finishes, bounded window modules, public ground-floor glazing, supported entries and matte roof edges.

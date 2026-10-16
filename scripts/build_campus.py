@@ -12,6 +12,7 @@ from architecture_refinement import build_refined,write_report
 from neighboring_areas import build_neighbors
 from campus_detail import build_ordinary,write_ordinary_report
 from west_housing import build_housing,housing_landscape,write_housing_report
+from highlight_architecture import build_highlight,write_highlight_report
 from shore_detail import detail_shores
 from alder_hall import courtyard_from_osm,detail_alder_court,detail_alder_precinct
 from curation import GIS,MAP,LANDMARKS,GOTHIC,PITCHED,HEIGHTS,REFS,SHORT,chinese
@@ -78,6 +79,12 @@ def raw_ground(x,y):
     x,y=np.broadcast_arrays(x,y);return interpolate(np.column_stack([y.ravel(),x.ravel()])).reshape(x.shape)
 for f in buildings:
     c=f['poly'].representative_point();f['ground']=float(raw_ground(c.x,c.y))
+    if f['id']=='CSH':
+        # The boathouse's lower crew level meets the lake-facing bank. The
+        # central DEM sample is the uphill dining/academic entrance grade.
+        aa,bb,cc,dd=f['poly'].bounds
+        edge=f['poly'].intersection(LineString([(cc-.8,bb),(cc-.8,dd)]))
+        q=edge.representative_point();f['ground']=float(raw_ground(q.x,q.y))
 # Joined/overlapping mapped wings share one visualization grade. Otherwise two
 # pads can project into each other and bury the adjacent building base.
 contact_tree=STRtree([f['poly']for f in buildings]);parent=list(range(len(buildings)))
@@ -133,6 +140,7 @@ for j,f in enumerate(buildings,1):
         support.vertices[bottom,2]=np.minimum(base-.2,raw_ground(support.vertices[bottom,0],support.vertices[bottom,1])-1.5)
         ms['Foundation'].append(support)
     refinement=build_housing(ms,p,base,id,height,levels,code,lay,info,raw_ground)
+    if not refinement:refinement=build_highlight(ms,p,base,id,height,levels,code,lay,info,raw_ground)
     if not refinement:refinement=build_uw_station(ms,p,base,code,lay,info,raw_ground)if id=='LINK_UW'else block_building(ms,p,base,id,code,lay,info,raw_ground)if id in {'SGS','ICT','IC2','DSC','EIC'}else build_refined(ms,p,base,id,height,levels,code,lay,info,raw_ground)
     if not refinement and id!='STD':refinement=build_ordinary(ms,p,base,id,height,levels,code,lay,info,raw_ground,ot,f['name'])
     if refinement:
@@ -178,6 +186,8 @@ for j,f in enumerate(buildings,1):
         r['partition']='按公开建筑资料和航拍细化体量、屋顶与立面；保留官方轮廓。外部高度及构件尺寸仍为近似表达。'
         r['volume_parts']=refinement['volume_parts']
         if refinement.get('ordinary'):r['partition']='保留公开映射轮廓和庭院，按建筑用途及已有标记细化窗格、楼层线脚、屋顶与接地入口；外部高度与构件尺寸为近似表达。'
+    if id=='HAG':r['focus_facilities']=['HAG','AVA']
+    if id=='CSH':r['basis_en']+=' The lower boat-bay grade uses the lake-facing DEM sample rather than the uphill central entrance sample.'
     if id=='STD':
         r['partition']='沿公开球场轮廓的长轴重建下层环形看台、南北上层看台及两片悬挑屋顶；球场按120码×53⅓码表达。看台排数、立面、屋顶标高与支撑结构为简化估算。'
         r['partition_en']='Mapped field axis with stepped lower bowl, north/south upper decks and two cantilever roofs. A 120 by 53 1/3 yard field is shown; row count, exterior elevations, roof heights and supports are illustrative estimates.'
@@ -189,7 +199,7 @@ for j,f in enumerate(buildings,1):
     if id=='ALD':r['aliases_zh']+=['District Market','Husky Grind','Bay 1','Bay 2','bus stop','公交站','街区'];r['partition_en']+=' Independent Metro shelters, a recessed timber/glass market arcade, connected whole-block paving and aerial-visible PV bands.'
     records.append(r);f['record']=r
     if j%40==0:print('Buildings',j,flush=True)
-write_report();write_ordinary_report()
+write_report();write_ordinary_report();write_highlight_report()
 print('Building geometry complete',len(records),flush=True)
 
 # Terrain and mapped outdoor spaces, roads and paths; patching avoids large facets.
@@ -343,7 +353,7 @@ for place in places:
 for name,data in [('layer_map',layer_map),('palette',COLORS),('buildings',records),('viewer_records',records),('places',places)]:
     (OUT/(name+'.json')).write_text(json.dumps(data,ensure_ascii=False,indent=2))
 with (OUT/'building_dimensions_and_sources.csv').open('w',encoding='utf-8-sig',newline='') as fd:
-    w=csv.DictWriter(fd,fieldnames=list(records[0]));w.writeheader();w.writerows(records)
+    w=csv.DictWriter(fd,fieldnames=list(dict.fromkeys(k for r in records for k in r)));w.writeheader();w.writerows(records)
 (OUT/'footprints_local_meters.geojson').write_text(json.dumps({'type':'FeatureCollection','coordinate_system':{'epsg':32610,'origin_easting':OX,'origin_northing':OY,'origin_wgs84':[LON,LAT],'unit':'m','note':'Local projected meters, not RFC7946 longitude/latitude'},'features':[{'type':'Feature','properties':f['record'],'geometry':mapping(f['poly'])} for f in buildings]},ensure_ascii=False,separators=(',',':')))
 av=[];af=[];co=[];offset=0
 for m,mat in meshdata:av.append(m.vertices);af.append(m.faces+offset);co.extend([COLORS[mat]]*len(m.faces));offset+=len(m.vertices)

@@ -1,0 +1,26 @@
+{
+  "release": "26.10.16.1",
+  "changed_layers": [
+    "Environment",
+    "W012_William H. Gates Hall",
+    "W014_PACCAR Hall",
+    "W033_Kane Hall",
+    "W035_Henry Art Gallery",
+    "W036_Odegaard Library",
+    "W038_Faye G. Allen Center for the Visual Arts",
+    "W045_Student Union Building",
+    "W048_Interdisciplinary Engineering Building",
+    "W057_Hans Rosling Center for Population Health",
+    "W078_Paul G. Allen Center for Computer Science & Engineering",
+    "W082_Bill & Melinda Gates Center for Computer Science & Engineering",
+    "W086_Life Sciences Building",
+    "W153_Health Sciences Education Building",
+    "W193_UW Medical Center - Montlake, Wing SA - Montlake Tower",
+    "W260_Conibear Shellhouse",
+    "W263_Hec Edmundson Pavilion"
+  ],
+  "untouched_layers": 854,
+  "housing_geometry_unchanged": true,
+  "alder_geometry_unchanged": true,
+  "passed": true
+}

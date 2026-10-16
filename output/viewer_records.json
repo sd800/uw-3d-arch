@@ -546,20 +546,20 @@
     ],
     "ground_m": 59.472,
     "bottom_m": 59.472,
-    "peak_m": 77.932,
+    "peak_m": 77.852,
     "basis": "平面采用 UW 官方 GIS；外部层数、层高与屋顶高度为估算。GIS 总建筑面积不能视为地上层数。",
     "basis_en": "Official UW footprint; exterior storeys, floor heights and roof elevations are approximate. Reported gross floor area may include basements and does not certify exterior storeys.",
     "partition": "按公开建筑资料和航拍细化体量、屋顶与立面；保留官方轮廓。外部高度及构件尺寸仍为近似表达。",
-    "partition_en": "Brick and stone law-school wings with recessed glazing. Exterior dimensions and partitions remain approximate.",
+    "partition_en": "Distinct warm-masonry outer L and glazed south/east library-facing elevations; Four grounded roof-lawn library skylights corroborated by KPF photographs and aerial; Separate stone floor edges, recessed entry and a continuous roof cap. Exterior dimensions and partitions remain approximate.",
     "source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "footprint_source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
-    "architecture_reference": null,
+    "architecture_reference": "https://www.kpf.com/project/william-h-gates-hall",
     "construction_status": "Active",
     "volume_parts": [
       {
         "area_m2": 3749.75,
         "base_offset_m": 0,
-        "height_m": 17.900000000000002,
+        "height_m": 17.9,
         "material": "BrickBuff"
       }
     ]
@@ -639,21 +639,45 @@
     ],
     "ground_m": 62.176,
     "bottom_m": 62.176,
-    "peak_m": 80.836,
+    "peak_m": 80.726,
     "basis": "平面采用 UW 官方 GIS；外部层数、层高与屋顶高度为估算。GIS 总建筑面积不能视为地上层数。",
     "basis_en": "Official UW footprint; exterior storeys, floor heights and roof elevations are approximate. Reported gross floor area may include basements and does not certify exterior storeys.",
     "partition": "按公开建筑资料和航拍细化体量、屋顶与立面；保留官方轮廓。外部高度及构件尺寸仍为近似表达。",
-    "partition_en": "Glazed atrium roof spine clipped to the mapped hall; Four-storey brick teaching hall with an atrium spine. Exterior dimensions and partitions remain approximate.",
+    "partition_en": "Separate brick teaching wings and a glazed longitudinal public atrium; Projecting upper meeting-room enclosure, supported lower arrival bays and thin metal roof edge; Multi-light glazing, masonry reveals and grounded entrance canopy. Exterior dimensions and partitions remain approximate.",
     "source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "footprint_source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "architecture_reference": "https://lmnarchitects.com/project/paccar-hall-foster-school-of-business-university-of-washington",
     "construction_status": "Active",
     "volume_parts": [
       {
-        "area_m2": 2833.43,
+        "area_m2": 969.87,
         "base_offset_m": 0,
-        "height_m": 18.1,
+        "height_m": 18.05,
         "material": "BrickBuff"
+      },
+      {
+        "area_m2": 930.06,
+        "base_offset_m": 0,
+        "height_m": 18.05,
+        "material": "BrickBuff"
+      },
+      {
+        "area_m2": 569.06,
+        "base_offset_m": 0,
+        "height_m": 17.5,
+        "material": "DarkGlass"
+      },
+      {
+        "area_m2": 194.74,
+        "base_offset_m": 0,
+        "height_m": 7.5,
+        "material": "DarkGlass"
+      },
+      {
+        "area_m2": 364.44,
+        "base_offset_m": 7.5,
+        "height_m": 8.8,
+        "material": "DarkGlass"
       }
     ]
   },
@@ -1534,20 +1558,26 @@
     ],
     "ground_m": 50.411,
     "bottom_m": 50.411,
-    "peak_m": 65.871,
+    "peak_m": 65.731,
     "basis": "平面采用 UW 官方 GIS；外部层数、层高与屋顶高度为估算。GIS 总建筑面积不能视为地上层数。",
     "basis_en": "Official UW footprint; exterior storeys, floor heights and roof elevations are approximate. Reported gross floor area may include basements and does not certify exterior storeys.",
     "partition": "按公开建筑资料和航拍细化体量、屋顶与立面；保留官方轮廓。外部高度及构件尺寸仍为近似表达。",
-    "partition_en": "Lecture-hall masonry and limited upper openings. Exterior dimensions and partitions remain approximate.",
+    "partition_en": "Deep south-facing concrete portico with continuous ground-to-beam piers; Tall recessed upper lights and low glazed entrance bays, replacing small stacked template windows; Quiet brick lecture volumes behind a separate matte roof. Exterior dimensions and partitions remain approximate.",
     "source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "footprint_source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
-    "architecture_reference": null,
+    "architecture_reference": "https://www.washington.edu/news/2019/12/17/beauty-in-brutalism-architecture-professor-alex-anderson-reviews-the-uws-bunkerlike-behemoths/",
     "construction_status": "Active",
     "volume_parts": [
       {
-        "area_m2": 3893.35,
+        "area_m2": 3793.41,
         "base_offset_m": 0,
         "height_m": 14.9,
+        "material": "BrickBuff"
+      },
+      {
+        "area_m2": 99.94,
+        "base_offset_m": 14.25,
+        "height_m": 0.65,
         "material": "Precast"
       }
     ]
@@ -1614,9 +1644,9 @@
     "layer": "W035_Henry Art Gallery",
     "zone": "central",
     "landmark": true,
-    "height": 14.2,
+    "height": 12.0,
     "height_status": "estimated",
-    "levels": 3,
+    "levels": 2,
     "year_built": 1927,
     "reported_gsf_ft2": 18848,
     "area": 707.96,
@@ -1628,22 +1658,26 @@
     ],
     "ground_m": 41.759,
     "bottom_m": 41.759,
-    "peak_m": 55.819,
+    "peak_m": 53.389,
     "basis": "平面采用 UW 官方 GIS；外部层数、层高与屋顶高度为估算。GIS 总建筑面积不能视为地上层数。",
     "basis_en": "Official UW footprint; exterior storeys, floor heights and roof elevations are approximate. Reported gross floor area may include basements and does not certify exterior storeys.",
     "partition": "按公开建筑资料和航拍细化体量、屋顶与立面；保留官方轮廓。外部高度及构件尺寸仍为近似表达。",
-    "partition_en": "Quiet stone gallery mass with glazed entry. Exterior dimensions and partitions remain approximate.",
+    "partition_en": "Original Gould gallery distinguished from the separate AVA modern addition; Two-storey stone/brick classical enclosure, grouped upper lights and sloping slate roof margins. Exterior dimensions and partitions remain approximate.",
     "source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "footprint_source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
-    "architecture_reference": null,
+    "architecture_reference": "https://www.gwathmey-siegel.com/2013/08/university-of-washington/",
     "construction_status": "Active",
     "volume_parts": [
       {
         "area_m2": 707.91,
         "base_offset_m": 0,
-        "height_m": 13.5,
-        "material": "Precast"
+        "height_m": 8.2,
+        "material": "BrickBuff"
       }
+    ],
+    "focus_facilities": [
+      "HAG",
+      "AVA"
     ]
   },
   {
@@ -1675,20 +1709,20 @@
     ],
     "ground_m": 46.69,
     "bottom_m": 46.69,
-    "peak_m": 62.35,
+    "peak_m": 62.84,
     "basis": "平面采用 UW 官方 GIS；外部层数、层高与屋顶高度为估算。GIS 总建筑面积不能视为地上层数。",
     "basis_en": "Official UW footprint; exterior storeys, floor heights and roof elevations are approximate. Reported gross floor area may include basements and does not certify exterior storeys.",
     "partition": "按公开建筑资料和航拍细化体量、屋顶与立面；保留官方轮廓。外部高度及构件尺寸仍为近似表达。",
-    "partition_en": "Glazed atrium roof spine clipped to the mapped hall; Brick library enclosure and central glazed skylight. Exterior dimensions and partitions remain approximate.",
+    "partition_en": "Concrete perimeter bay frame over brick/glass library elevations; Three-storey glazing differentiated from the deep solid piers of adjacent Kane; Large central atrium skylight with closed curb and physically separated mullions. Exterior dimensions and partitions remain approximate.",
     "source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "footprint_source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
-    "architecture_reference": null,
+    "architecture_reference": "https://millerhull.com/project/odegaard-library/",
     "construction_status": "Active",
     "volume_parts": [
       {
         "area_m2": 3567.24,
         "base_offset_m": 0,
-        "height_m": 15.100000000000001,
+        "height_m": 15.1,
         "material": "BrickBuff"
       }
     ]
@@ -1755,7 +1789,7 @@
     "layer": "W038_Faye G. Allen Center for the Visual Arts",
     "zone": "central",
     "landmark": false,
-    "height": 12.05,
+    "height": 12.8,
     "height_status": "estimated",
     "levels": 3,
     "year_built": 1997,
@@ -1769,20 +1803,27 @@
     ],
     "ground_m": 40.383,
     "bottom_m": 40.383,
-    "peak_m": 52.643,
+    "peak_m": 52.963,
     "basis": "平面采用 UW 官方 GIS；外部层数、层高与屋顶高度为估算。GIS 总建筑面积不能视为地上层数。",
     "basis_en": "Official UW footprint; exterior storeys, floor heights and roof elevations are approximate. Reported gross floor area may include basements and does not certify exterior storeys.",
-    "partition": "保留公开映射轮廓和庭院，按建筑用途及已有标记细化窗格、楼层线脚、屋顶与接地入口；外部高度与构件尺寸为近似表达。",
-    "partition_en": "Mapped footprint and courtyard openings retained; Use-specific window spacing, floor courses, grounded entry or service door; Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes. Exterior dimensions and partitions remain approximate.",
+    "partition": "按公开建筑资料和航拍细化体量、屋顶与立面；保留官方轮廓。外部高度及构件尺寸仍为近似表达。",
+    "partition_en": "Modern metal/concrete gallery wing kept on its own AVA building layer; Three closed curved roof monitors and a taller round entrance/stair volume; Glazed campus-facing entry and articulated facade bands; no invented exhibition graphics. Exterior dimensions and partitions remain approximate.",
     "source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "footprint_source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
-    "architecture_reference": null,
+    "architecture_reference": "https://www.gwathmey-siegel.com/2013/08/university-of-washington/",
     "construction_status": "Active",
     "volume_parts": [
       {
         "area_m2": 1864.9,
-        "height_m": 11.83,
-        "material": "Precast"
+        "base_offset_m": 0,
+        "height_m": 7.6,
+        "material": "HousingSilver"
+      },
+      {
+        "area_m2": 36.27,
+        "base_offset_m": 7.6,
+        "height_m": 4.5,
+        "material": "HousingSilver"
       }
     ]
   },
@@ -2124,21 +2165,33 @@
     ],
     "ground_m": 43.833,
     "bottom_m": 43.833,
-    "peak_m": 64.493,
+    "peak_m": 64.313,
     "basis": "平面采用 UW 官方 GIS；外部层数、层高与屋顶高度为估算。GIS 总建筑面积不能视为地上层数。",
     "basis_en": "Official UW footprint; exterior storeys, floor heights and roof elevations are approximate. Reported gross floor area may include basements and does not certify exterior storeys.",
     "partition": "按公开建筑资料和航拍细化体量、屋顶与立面；保留官方轮廓。外部高度及构件尺寸仍为近似表达。",
-    "partition_en": "Brick student-center elevations and glazed entrances. Exterior dimensions and partitions remain approximate.",
+    "partition_en": "Restored brick east-front enclosure separated from contemporary north/south glass entrances; Larger west-facing public glazing and lower ballroom/student-service roof volumes; Attached canopy and visible floor/mullion structure rather than a uniform brick box. Exterior dimensions and partitions remain approximate.",
     "source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "footprint_source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
-    "architecture_reference": null,
+    "architecture_reference": "https://www.nwpart.com/projects/university-of-washington-husky-union-building/",
     "construction_status": "Active",
     "volume_parts": [
       {
-        "area_m2": 6335.93,
+        "area_m2": 5632.57,
+        "base_offset_m": 0,
+        "height_m": 17.6,
+        "material": "BrickRed"
+      },
+      {
+        "area_m2": 471.74,
         "base_offset_m": 0,
         "height_m": 20.1,
-        "material": "BrickBuff"
+        "material": "DarkGlass"
+      },
+      {
+        "area_m2": 231.64,
+        "base_offset_m": 0,
+        "height_m": 20.1,
+        "material": "DarkGlass"
       }
     ]
   },
@@ -2270,20 +2323,32 @@
     ],
     "ground_m": 34.801,
     "bottom_m": 34.801,
-    "peak_m": 55.661,
+    "peak_m": 55.521,
     "basis": "平面采用 UW 官方 GIS；外部层数、层高与屋顶高度为估算。GIS 总建筑面积不能视为地上层数。",
     "basis_en": "Official UW footprint; exterior storeys, floor heights and roof elevations are approximate. Reported gross floor area may include basements and does not certify exterior storeys.",
     "partition": "按公开建筑资料和航拍细化体量、屋顶与立面；保留官方轮廓。外部高度及构件尺寸仍为近似表达。",
-    "partition_en": "Dark brick teaching wings and deliberately varied tall window groups. Exterior dimensions and partitions remain approximate.",
+    "partition_en": "Dark brick upper teaching wings and a genuine open lower arrival passage; Varied narrow/full-height glazing modules and shallow attached masonry reveals; Thin supported entrance canopy and documented roof PV; completed-building photographs used ahead of renderings. Exterior dimensions and partitions remain approximate.",
     "source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "footprint_source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "architecture_reference": "https://www.engr.washington.edu/about/ieb",
     "construction_status": "Active",
     "volume_parts": [
       {
-        "area_m2": 1713.13,
+        "area_m2": 814.8,
         "base_offset_m": 0,
-        "height_m": 20.3,
+        "height_m": 4.1,
+        "material": "BrickUmber"
+      },
+      {
+        "area_m2": 579.67,
+        "base_offset_m": 0,
+        "height_m": 4.1,
+        "material": "BrickUmber"
+      },
+      {
+        "area_m2": 1713.13,
+        "base_offset_m": 4.1,
+        "height_m": 16.15,
         "material": "BrickUmber"
       }
     ]
@@ -2687,21 +2752,33 @@
     ],
     "ground_m": 32.236,
     "bottom_m": 32.236,
-    "peak_m": 64.976,
+    "peak_m": 64.766,
     "basis": "平面采用 UW 官方 GIS；外部层数、层高与屋顶高度为估算。GIS 总建筑面积不能视为地上层数。",
     "basis_en": "Official UW footprint; exterior storeys, floor heights and roof elevations are approximate. Reported gross floor area may include basements and does not certify exterior storeys.",
     "partition": "按公开建筑资料和航拍细化体量、屋顶与立面；保留官方轮廓。外部高度及构件尺寸仍为近似表达。",
-    "partition_en": "Two inset roof garden terraces with low planting and flush paving, interpreted from UW tour photographs; West solar-shading sails over storey-height glazing, with a quieter precast enclosure. Exterior dimensions and partitions remain approximate.",
+    "partition_en": "Recessed glass public base with grounded concrete pilotis; West glazed elevation with shallow angled pale solar sails bounded by floor slabs; Two genuinely inset upper roof terraces with supported garden edges; quieter precast service elevation. Exterior dimensions and partitions remain approximate.",
     "source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "footprint_source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "architecture_reference": "https://www.washington.edu/populationhealth/hans-rosling-center-tour/",
     "construction_status": "Active",
     "volume_parts": [
       {
-        "area_m2": 2758.38,
+        "area_m2": 2197.78,
         "base_offset_m": 0,
-        "height_m": 32.099999999999994,
-        "material": "Precast"
+        "height_m": 5.2,
+        "material": "DarkGlass"
+      },
+      {
+        "area_m2": 2758.38,
+        "base_offset_m": 5.2,
+        "height_m": 23.2,
+        "material": "DarkGlass"
+      },
+      {
+        "area_m2": 1926.93,
+        "base_offset_m": 28.4,
+        "height_m": 3.7,
+        "material": "DarkGlass"
       }
     ]
   },
@@ -3645,7 +3722,7 @@
     "landmark": true,
     "height": 24.2,
     "height_status": "estimated",
-    "levels": 5,
+    "levels": 7,
     "year_built": 2003,
     "reported_gsf_ft2": 164689,
     "area": 2025.84,
@@ -3657,21 +3734,27 @@
     ],
     "ground_m": 33.35,
     "bottom_m": 33.35,
-    "peak_m": 57.41,
+    "peak_m": 57.28,
     "basis": "平面采用 UW 官方 GIS；外部层数、层高与屋顶高度为估算。GIS 总建筑面积不能视为地上层数。",
     "basis_en": "Official UW footprint; exterior storeys, floor heights and roof elevations are approximate. Reported gross floor area may include basements and does not certify exterior storeys.",
     "partition": "按公开建筑资料和航拍细化体量、屋顶与立面；保留官方轮廓。外部高度及构件尺寸仍为近似表达。",
-    "partition_en": "Warm masonry teaching/research elevations with grouped glazing. Exterior dimensions and partitions remain approximate.",
+    "partition_en": "Brick academic wings separated from the glazed circulation atrium; Seven-storey bay rhythm with shallow attached pale surrounds and separate roof glazing; Mapped plan and entrance axis retained; no repeated blank metal cap. Exterior dimensions and partitions remain approximate.",
     "source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "footprint_source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
-    "architecture_reference": null,
+    "architecture_reference": "https://lazowska.cs.washington.edu/psj.allen.center.html",
     "construction_status": "Active",
     "volume_parts": [
       {
-        "area_m2": 2025.94,
+        "area_m2": 1696.14,
         "base_offset_m": 0,
-        "height_m": 23.5,
+        "height_m": 23.45,
         "material": "BrickRed"
+      },
+      {
+        "area_m2": 329.81,
+        "base_offset_m": 0,
+        "height_m": 22.35,
+        "material": "DarkGlass"
       }
     ]
   },
@@ -3842,11 +3925,11 @@
     ],
     "ground_m": 34.271,
     "bottom_m": 34.271,
-    "peak_m": 59.731,
+    "peak_m": 59.501,
     "basis": "平面采用 UW 官方 GIS；外部层数、层高与屋顶高度为估算。GIS 总建筑面积不能视为地上层数。",
     "basis_en": "Official UW footprint; exterior storeys, floor heights and roof elevations are approximate. Reported gross floor area may include basements and does not certify exterior storeys.",
     "partition": "按公开建筑资料和航拍细化体量、屋顶与立面；保留官方轮廓。外部高度及构件尺寸仍为近似表达。",
-    "partition_en": "Glazed atrium roof spine clipped to the mapped hall; Curving brick/glass computer-science elevations and a patinated roof edge. Exterior dimensions and partitions remain approximate.",
+    "partition_en": "Dark brick enclosure with staggered warm terracotta piers and larger glazed bays; Separate recessed upper event pavilion and accessible terrace parapet; Three narrow atrium roof lanterns instead of a single invented broad ridge. Exterior dimensions and partitions remain approximate.",
     "source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "footprint_source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "architecture_reference": "https://lmnarchitects.com/project/bill-melinda-gates-center",
@@ -3855,8 +3938,14 @@
       {
         "area_m2": 3205.88,
         "base_offset_m": 0,
-        "height_m": 24.900000000000002,
-        "material": "BrickRed"
+        "height_m": 21.05,
+        "material": "BrickUmber"
+      },
+      {
+        "area_m2": 678.87,
+        "base_offset_m": 21.05,
+        "height_m": 3.8,
+        "material": "DarkGlass"
       }
     ]
   },
@@ -4028,21 +4117,33 @@
     ],
     "ground_m": 26.185,
     "bottom_m": 26.185,
-    "peak_m": 50.845,
+    "peak_m": 50.715,
     "basis": "平面采用 UW 官方 GIS；外部层数、层高与屋顶高度为估算。GIS 总建筑面积不能视为地上层数。",
     "basis_en": "Official UW footprint; exterior storeys, floor heights and roof elevations are approximate. Reported gross floor area may include basements and does not certify exterior storeys.",
     "partition": "按公开建筑资料和航拍细化体量、屋顶与立面；保留官方轮廓。外部高度及构件尺寸仍为近似表达。",
-    "partition_en": "Laboratory glazing and bounded facade modules. Exterior dimensions and partitions remain approximate.",
+    "partition_en": "Distinct reddish circulation end, glazed laboratory bar and teaching plinth; South photovoltaic glass fins in two bounded groups, with continuous floor support; Glazed west stair front, offset roof edges, attached columns and referenced rooftop PV. Exterior dimensions and partitions remain approximate.",
     "source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "footprint_source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "architecture_reference": "https://perkinswill.com/project/university-of-washington-life-sciences-building/",
     "construction_status": "Active",
     "volume_parts": [
       {
-        "area_m2": 2066.91,
+        "area_m2": 1785.54,
         "base_offset_m": 0,
-        "height_m": 24.1,
+        "height_m": 5.2,
         "material": "Precast"
+      },
+      {
+        "area_m2": 1670.94,
+        "base_offset_m": 5.2,
+        "height_m": 18.85,
+        "material": "DarkGlass"
+      },
+      {
+        "area_m2": 395.93,
+        "base_offset_m": 0,
+        "height_m": 24.05,
+        "material": "Corten"
       }
     ]
   },
@@ -4935,7 +5036,7 @@
     ],
     "layer": "W105_Alder Hall",
     "zone": "west",
-    "landmark": false,
+    "landmark": true,
     "height": 19.7,
     "height_status": "estimated",
     "levels": 6,
@@ -7351,21 +7452,27 @@
     ],
     "ground_m": 17.143,
     "bottom_m": 17.143,
-    "peak_m": 34.803,
+    "peak_m": 34.623,
     "basis": "平面采用 UW 官方 GIS；外部层数、层高与屋顶高度为估算。GIS 总建筑面积不能视为地上层数。",
     "basis_en": "Official UW footprint; exterior storeys, floor heights and roof elevations are approximate. Reported gross floor area may include basements and does not certify exterior storeys.",
     "partition": "按公开建筑资料和航拍细化体量、屋顶与立面；保留官方轮廓。外部高度及构件尺寸仍为近似表达。",
-    "partition_en": "Mass-timber education building expressed by warm structure and large glazing. Exterior dimensions and partitions remain approximate.",
+    "partition_en": "Corrugated silver opaque classroom skin with varied tall window openings; Glazed north active edge and a recessed ground commons supported by concrete columns; Warm timber floor edges remain wall-attached; no full-building detached decorative fins. Exterior dimensions and partitions remain approximate.",
     "source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "footprint_source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "architecture_reference": "https://millerhull.com/project/health-sciences-education-building/",
     "construction_status": "Active",
     "volume_parts": [
       {
-        "area_m2": 1629.29,
+        "area_m2": 1407.09,
         "base_offset_m": 0,
-        "height_m": 17.1,
-        "material": "Precast"
+        "height_m": 4.1,
+        "material": "DarkGlass"
+      },
+      {
+        "area_m2": 1629.29,
+        "base_offset_m": 4.1,
+        "height_m": 12.95,
+        "material": "HousingSilver"
       }
     ]
   },
@@ -9207,9 +9314,9 @@
     "layer": "W193_UW Medical Center - Montlake, Wing SA - Montlake Tower",
     "zone": "south",
     "landmark": true,
-    "height": 39,
+    "height": 39.0,
     "height_status": "estimated",
-    "levels": 6,
+    "levels": 8,
     "year_built": 2012,
     "reported_gsf_ft2": 284956,
     "area": 4178.97,
@@ -9221,20 +9328,32 @@
     ],
     "ground_m": 15.746,
     "bottom_m": 15.746,
-    "peak_m": 54.606,
+    "peak_m": 54.476,
     "basis": "平面采用 UW 官方 GIS；外部层数、层高与屋顶高度为估算。GIS 总建筑面积不能视为地上层数。",
     "basis_en": "Official UW footprint; exterior storeys, floor heights and roof elevations are approximate. Reported gross floor area may include basements and does not certify exterior storeys.",
     "partition": "按公开建筑资料和航拍细化体量、屋顶与立面；保留官方轮廓。外部高度及构件尺寸仍为近似表达。",
-    "partition_en": "Separate mapped hospital/research wings with restrained glazing and roof edges. Exterior dimensions and partitions remain approximate.",
+    "partition_en": "Glazed inpatient tower rises above a lower continuous diagnostic/service podium; Pale projecting patient-room bay edges and repeated turquoise/blue glazing bands; Separate lower companion roofs and ground-connected arrival; no fabricated interior departments. Exterior dimensions and partitions remain approximate.",
     "source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "footprint_source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
-    "architecture_reference": null,
+    "architecture_reference": "https://www.laminart.com/case-study/montlake-tower-university-washington-medical-center",
     "construction_status": "Active",
     "volume_parts": [
       {
         "area_m2": 4178.93,
         "base_offset_m": 0,
-        "height_m": 38.3,
+        "height_m": 9.1,
+        "material": "Precast"
+      },
+      {
+        "area_m2": 2546.75,
+        "base_offset_m": 9.1,
+        "height_m": 29.15,
+        "material": "DarkGlass"
+      },
+      {
+        "area_m2": 1632.17,
+        "base_offset_m": 9.1,
+        "height_m": 7.1,
         "material": "Precast"
       }
     ]
@@ -12342,9 +12461,9 @@
     "layer": "W260_Conibear Shellhouse",
     "zone": "east",
     "landmark": true,
-    "height": 14,
+    "height": 13.0,
     "height_status": "estimated",
-    "levels": 2,
+    "levels": 3,
     "year_built": 1949,
     "reported_gsf_ft2": 48088,
     "area": 1826.72,
@@ -12354,22 +12473,29 @@
       718.28,
       -314.454
     ],
-    "ground_m": 10.18,
-    "bottom_m": 10.18,
-    "peak_m": 24.39,
+    "ground_m": 6.499,
+    "bottom_m": 6.499,
+    "peak_m": 19.169,
     "basis": "平面采用 UW 官方 GIS；外部层数、层高与屋顶高度为估算。GIS 总建筑面积不能视为地上层数。",
-    "basis_en": "Official UW footprint; exterior storeys, floor heights and roof elevations are approximate. Reported gross floor area may include basements and does not certify exterior storeys.",
-    "partition": "保留公开映射轮廓和庭院，按建筑用途及已有标记细化窗格、楼层线脚、屋顶与接地入口；外部高度与构件尺寸为近似表达。",
-    "partition_en": "Mapped footprint and courtyard openings retained; Use-specific window spacing, floor courses, grounded entry or service door; Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes. Exterior dimensions and partitions remain approximate.",
+    "basis_en": "Official UW footprint; exterior storeys, floor heights and roof elevations are approximate. Reported gross floor area may include basements and does not certify exterior storeys. The lower boat-bay grade uses the lake-facing DEM sample rather than the uphill central entrance sample.",
+    "partition": "按公开建筑资料和航拍细化体量、屋顶与立面；保留官方轮廓。外部高度及构件尺寸仍为近似表达。",
+    "partition_en": "Separate lower shell-storage bays and upper dining/academic enclosure; Olive silver/wood siding, lake-facing glazed dining edge and flat metal roof; Grounded boat-bay thresholds and a supported deck above the storage volume, with continuous parapets. Exterior dimensions and partitions remain approximate.",
     "source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "footprint_source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
-    "architecture_reference": "https://gohuskies.com/facilities/conibear-shellhouse/9",
+    "architecture_reference": "https://millerhull.com/project/conibear-shellhouse/",
     "construction_status": "Active",
     "volume_parts": [
       {
         "area_m2": 1826.72,
-        "height_m": 13.78,
+        "base_offset_m": 0,
+        "height_m": 3.3,
         "material": "Precast"
+      },
+      {
+        "area_m2": 1439.87,
+        "base_offset_m": 3.3,
+        "height_m": 8.95,
+        "material": "CedarSilver"
       }
     ]
   },
@@ -12480,7 +12606,7 @@
     "layer": "W263_Hec Edmundson Pavilion",
     "zone": "east",
     "landmark": true,
-    "height": 26,
+    "height": 26.0,
     "height_status": "estimated",
     "levels": 2,
     "year_built": 1928,
@@ -12494,19 +12620,26 @@
     ],
     "ground_m": 15.162,
     "bottom_m": 15.162,
-    "peak_m": 41.062,
+    "peak_m": 40.602,
     "basis": "平面采用 UW 官方 GIS；外部层数、层高与屋顶高度为估算。GIS 总建筑面积不能视为地上层数。",
     "basis_en": "Official UW footprint; exterior storeys, floor heights and roof elevations are approximate. Reported gross floor area may include basements and does not certify exterior storeys.",
-    "partition": "保留公开映射轮廓和庭院，按建筑用途及已有标记细化窗格、楼层线脚、屋顶与接地入口；外部高度与构件尺寸为近似表达。",
-    "partition_en": "Mapped footprint and courtyard openings retained; Use-specific window spacing, floor courses, grounded entry or service door; Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes. Exterior dimensions and partitions remain approximate.",
+    "partition": "按公开建筑资料和航拍细化体量、屋顶与立面；保留官方轮廓。外部高度及构件尺寸仍为近似表达。",
+    "partition_en": "Long pitched main arena roof separated from north gymnasium and east service wings; Brick historic west frontage with tall grouped windows, stone bands and attached pier rhythm; Lower annex roofs and continuous entrance contact; no generic flat roof over the whole complex. Exterior dimensions and partitions remain approximate.",
     "source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "footprint_source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
-    "architecture_reference": null,
+    "architecture_reference": "https://gohuskies.com/news/2013/4/18/208237508",
     "construction_status": "Active",
     "volume_parts": [
       {
-        "area_m2": 11285.87,
-        "height_m": 22.38,
+        "area_m2": 8179.2,
+        "base_offset_m": 0,
+        "height_m": 19.5,
+        "material": "BrickRed"
+      },
+      {
+        "area_m2": 3106.62,
+        "base_offset_m": 0,
+        "height_m": 12.0,
         "material": "BrickRed"
       }
     ]

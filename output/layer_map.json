@@ -399,15 +399,20 @@
     "category": "building",
     "material": "Precast"
   },
-  "W012M5200": {
-    "layer": "W012_William H. Gates Hall",
-    "category": "building",
-    "material": "RoofMembrane"
-  },
   "W012M5500": {
     "layer": "W012_William H. Gates Hall",
     "category": "building",
     "material": "RoofMetal"
+  },
+  "W012M5600": {
+    "layer": "W012_William H. Gates Hall",
+    "category": "building",
+    "material": "RoofSilver"
+  },
+  "W012M5700": {
+    "layer": "W012_William H. Gates Hall",
+    "category": "building",
+    "material": "RoofGlass"
   },
   "W012D6800": {
     "layer": "W012_William H. Gates Hall",
@@ -423,6 +428,16 @@
     "layer": "W012_William H. Gates Hall",
     "category": "building",
     "material": "StepStone"
+  },
+  "W012M10300": {
+    "layer": "W012_William H. Gates Hall",
+    "category": "building",
+    "material": "HousingFrame"
+  },
+  "W012M11100": {
+    "layer": "W012_William H. Gates Hall",
+    "category": "building",
+    "material": "HousingConcrete"
   },
   "W013M2700": {
     "layer": "W013_Dempsey Hall",
@@ -484,10 +499,10 @@
     "category": "building",
     "material": "Precast"
   },
-  "W014M5200": {
+  "W014M5300": {
     "layer": "W014_PACCAR Hall",
     "category": "building",
-    "material": "RoofMembrane"
+    "material": "RoofWarm"
   },
   "W014M5500": {
     "layer": "W014_PACCAR Hall",
@@ -513,6 +528,16 @@
     "layer": "W014_PACCAR Hall",
     "category": "building",
     "material": "StepStone"
+  },
+  "W014M10300": {
+    "layer": "W014_PACCAR Hall",
+    "category": "building",
+    "material": "HousingFrame"
+  },
+  "W014M11100": {
+    "layer": "W014_PACCAR Hall",
+    "category": "building",
+    "material": "HousingConcrete"
   },
   "W015M2700": {
     "layer": "W015_Lewis Hall",
@@ -1234,6 +1259,11 @@
     "category": "building",
     "material": "Foundation"
   },
+  "W033M4200": {
+    "layer": "W033_Kane Hall",
+    "category": "building",
+    "material": "BrickBuff"
+  },
   "W033M4600": {
     "layer": "W033_Kane Hall",
     "category": "building",
@@ -1244,11 +1274,6 @@
     "category": "building",
     "material": "RoofWarm"
   },
-  "W033M5500": {
-    "layer": "W033_Kane Hall",
-    "category": "building",
-    "material": "RoofMetal"
-  },
   "W033D6800": {
     "layer": "W033_Kane Hall",
     "category": "building",
@@ -1258,11 +1283,6 @@
     "layer": "W033_Kane Hall",
     "category": "building",
     "material": "Frame"
-  },
-  "W033M9300": {
-    "layer": "W033_Kane Hall",
-    "category": "building",
-    "material": "StepStone"
   },
   "W034M2700": {
     "layer": "W034_Thomson Hall",
@@ -1304,10 +1324,20 @@
     "category": "building",
     "material": "Foundation"
   },
+  "W035M4200": {
+    "layer": "W035_Henry Art Gallery",
+    "category": "building",
+    "material": "BrickBuff"
+  },
   "W035M4600": {
     "layer": "W035_Henry Art Gallery",
     "category": "building",
     "material": "Precast"
+  },
+  "W035M5100": {
+    "layer": "W035_Henry Art Gallery",
+    "category": "building",
+    "material": "RoofSlate"
   },
   "W035M5200": {
     "layer": "W035_Henry Art Gallery",
@@ -1319,20 +1349,30 @@
     "category": "building",
     "material": "RoofMetal"
   },
+  "W035M6000": {
+    "layer": "W035_Henry Art Gallery",
+    "category": "building",
+    "material": "LightStone"
+  },
   "W035D6800": {
     "layer": "W035_Henry Art Gallery",
     "category": "building",
     "material": "DarkGlass"
   },
-  "W035D6900": {
-    "layer": "W035_Henry Art Gallery",
-    "category": "building",
-    "material": "Frame"
-  },
   "W035M9300": {
     "layer": "W035_Henry Art Gallery",
     "category": "building",
     "material": "StepStone"
+  },
+  "W035M10300": {
+    "layer": "W035_Henry Art Gallery",
+    "category": "building",
+    "material": "HousingFrame"
+  },
+  "W035M11100": {
+    "layer": "W035_Henry Art Gallery",
+    "category": "building",
+    "material": "HousingConcrete"
   },
   "W036M2700": {
     "layer": "W036_Odegaard Library",
@@ -1379,6 +1419,16 @@
     "category": "building",
     "material": "StepStone"
   },
+  "W036M10300": {
+    "layer": "W036_Odegaard Library",
+    "category": "building",
+    "material": "HousingFrame"
+  },
+  "W036M11100": {
+    "layer": "W036_Odegaard Library",
+    "category": "building",
+    "material": "HousingConcrete"
+  },
   "W037M2700": {
     "layer": "W037_Gowen Hall",
     "category": "building",
@@ -1424,20 +1474,15 @@
     "category": "building",
     "material": "Precast"
   },
-  "W038M5500": {
+  "W038M5600": {
     "layer": "W038_Faye G. Allen Center for the Visual Arts",
     "category": "building",
-    "material": "RoofMetal"
+    "material": "RoofSilver"
   },
-  "W038M6000": {
+  "W038M5700": {
     "layer": "W038_Faye G. Allen Center for the Visual Arts",
     "category": "building",
-    "material": "LightStone"
-  },
-  "W038D6700": {
-    "layer": "W038_Faye G. Allen Center for the Visual Arts",
-    "category": "building",
-    "material": "Glass"
+    "material": "RoofGlass"
   },
   "W038D6800": {
     "layer": "W038_Faye G. Allen Center for the Visual Arts",
@@ -1449,10 +1494,10 @@
     "category": "building",
     "material": "Frame"
   },
-  "W038M9300": {
+  "W038M11000": {
     "layer": "W038_Faye G. Allen Center for the Visual Arts",
     "category": "building",
-    "material": "StepStone"
+    "material": "HousingSilver"
   },
   "W039M2700": {
     "layer": "W039_David C. Hall Building",
@@ -1724,25 +1769,30 @@
     "category": "building",
     "material": "Foundation"
   },
-  "W045M4200": {
+  "W045M4100": {
     "layer": "W045_Student Union Building",
     "category": "building",
-    "material": "BrickBuff"
+    "material": "BrickRed"
   },
   "W045M4600": {
     "layer": "W045_Student Union Building",
     "category": "building",
     "material": "Precast"
   },
-  "W045M5200": {
+  "W045M5300": {
     "layer": "W045_Student Union Building",
     "category": "building",
-    "material": "RoofMembrane"
+    "material": "RoofWarm"
   },
   "W045M5500": {
     "layer": "W045_Student Union Building",
     "category": "building",
     "material": "RoofMetal"
+  },
+  "W045M6000": {
+    "layer": "W045_Student Union Building",
+    "category": "building",
+    "material": "LightStone"
   },
   "W045D6800": {
     "layer": "W045_Student Union Building",
@@ -1758,6 +1808,16 @@
     "layer": "W045_Student Union Building",
     "category": "building",
     "material": "StepStone"
+  },
+  "W045M10300": {
+    "layer": "W045_Student Union Building",
+    "category": "building",
+    "material": "HousingFrame"
+  },
+  "W045M11100": {
+    "layer": "W045_Student Union Building",
+    "category": "building",
+    "material": "HousingConcrete"
   },
   "W046M2700": {
     "layer": "W046_Gerberding Hall",
@@ -1829,10 +1889,10 @@
     "category": "building",
     "material": "Precast"
   },
-  "W048M5200": {
+  "W048M5300": {
     "layer": "W048_Interdisciplinary Engineering Building",
     "category": "building",
-    "material": "RoofMembrane"
+    "material": "RoofWarm"
   },
   "W048M5500": {
     "layer": "W048_Interdisciplinary Engineering Building",
@@ -1858,6 +1918,16 @@
     "layer": "W048_Interdisciplinary Engineering Building",
     "category": "building",
     "material": "StepStone"
+  },
+  "W048M10300": {
+    "layer": "W048_Interdisciplinary Engineering Building",
+    "category": "building",
+    "material": "HousingFrame"
+  },
+  "W048M11100": {
+    "layer": "W048_Interdisciplinary Engineering Building",
+    "category": "building",
+    "material": "HousingConcrete"
   },
   "W049M2700": {
     "layer": "W049_Sieg Building",
@@ -2248,6 +2318,16 @@
     "layer": "W057_Hans Rosling Center for Population Health",
     "category": "building",
     "material": "StepStone"
+  },
+  "W057M10300": {
+    "layer": "W057_Hans Rosling Center for Population Health",
+    "category": "building",
+    "material": "HousingFrame"
+  },
+  "W057M11100": {
+    "layer": "W057_Hans Rosling Center for Population Health",
+    "category": "building",
+    "material": "HousingConcrete"
   },
   "W058M2700": {
     "layer": "W058_Kirsten Wind Tunnel",
@@ -3044,6 +3124,11 @@
     "category": "building",
     "material": "RoofMetal"
   },
+  "W078M5700": {
+    "layer": "W078_Paul G. Allen Center for Computer Science & Engineering",
+    "category": "building",
+    "material": "RoofGlass"
+  },
   "W078D6800": {
     "layer": "W078_Paul G. Allen Center for Computer Science & Engineering",
     "category": "building",
@@ -3058,6 +3143,16 @@
     "layer": "W078_Paul G. Allen Center for Computer Science & Engineering",
     "category": "building",
     "material": "StepStone"
+  },
+  "W078M10300": {
+    "layer": "W078_Paul G. Allen Center for Computer Science & Engineering",
+    "category": "building",
+    "material": "HousingFrame"
+  },
+  "W078M11100": {
+    "layer": "W078_Paul G. Allen Center for Computer Science & Engineering",
+    "category": "building",
+    "material": "HousingConcrete"
   },
   "W079M2700": {
     "layer": "W079_Benson Hall",
@@ -3194,20 +3289,20 @@
     "category": "building",
     "material": "Foundation"
   },
-  "W082M4100": {
+  "W082M4300": {
     "layer": "W082_Bill & Melinda Gates Center for Computer Science & Engineering",
     "category": "building",
-    "material": "BrickRed"
+    "material": "BrickUmber"
   },
   "W082M4600": {
     "layer": "W082_Bill & Melinda Gates Center for Computer Science & Engineering",
     "category": "building",
     "material": "Precast"
   },
-  "W082M5400": {
+  "W082M5300": {
     "layer": "W082_Bill & Melinda Gates Center for Computer Science & Engineering",
     "category": "building",
-    "material": "RoofPatina"
+    "material": "RoofWarm"
   },
   "W082M5500": {
     "layer": "W082_Bill & Melinda Gates Center for Computer Science & Engineering",
@@ -3233,6 +3328,21 @@
     "layer": "W082_Bill & Melinda Gates Center for Computer Science & Engineering",
     "category": "building",
     "material": "StepStone"
+  },
+  "W082M9600": {
+    "layer": "W082_Bill & Melinda Gates Center for Computer Science & Engineering",
+    "category": "building",
+    "material": "Corten"
+  },
+  "W082M10300": {
+    "layer": "W082_Bill & Melinda Gates Center for Computer Science & Engineering",
+    "category": "building",
+    "material": "HousingFrame"
+  },
+  "W082M11100": {
+    "layer": "W082_Bill & Melinda Gates Center for Computer Science & Engineering",
+    "category": "building",
+    "material": "HousingConcrete"
   },
   "W083M2700": {
     "layer": "W083_Kincaid Hall",
@@ -3374,10 +3484,20 @@
     "category": "building",
     "material": "RoofMembrane"
   },
+  "W086M5300": {
+    "layer": "W086_Life Sciences Building",
+    "category": "building",
+    "material": "RoofWarm"
+  },
   "W086M5500": {
     "layer": "W086_Life Sciences Building",
     "category": "building",
     "material": "RoofMetal"
+  },
+  "W086M6500": {
+    "layer": "W086_Life Sciences Building",
+    "category": "building",
+    "material": "WhitePanel"
   },
   "W086D6800": {
     "layer": "W086_Life Sciences Building",
@@ -3398,6 +3518,21 @@
     "layer": "W086_Life Sciences Building",
     "category": "building",
     "material": "StepStone"
+  },
+  "W086M9600": {
+    "layer": "W086_Life Sciences Building",
+    "category": "building",
+    "material": "Corten"
+  },
+  "W086M10300": {
+    "layer": "W086_Life Sciences Building",
+    "category": "building",
+    "material": "HousingFrame"
+  },
+  "W086M11100": {
+    "layer": "W086_Life Sciences Building",
+    "category": "building",
+    "material": "HousingConcrete"
   },
   "W087M2700": {
     "layer": "W087_Roberts Annex",
@@ -6114,15 +6249,15 @@
     "category": "building",
     "material": "Cedar"
   },
-  "W153M5200": {
-    "layer": "W153_Health Sciences Education Building",
-    "category": "building",
-    "material": "RoofMembrane"
-  },
   "W153M5500": {
     "layer": "W153_Health Sciences Education Building",
     "category": "building",
     "material": "RoofMetal"
+  },
+  "W153M5600": {
+    "layer": "W153_Health Sciences Education Building",
+    "category": "building",
+    "material": "RoofSilver"
   },
   "W153D6800": {
     "layer": "W153_Health Sciences Education Building",
@@ -6138,6 +6273,21 @@
     "layer": "W153_Health Sciences Education Building",
     "category": "building",
     "material": "StepStone"
+  },
+  "W153M10300": {
+    "layer": "W153_Health Sciences Education Building",
+    "category": "building",
+    "material": "HousingFrame"
+  },
+  "W153M11000": {
+    "layer": "W153_Health Sciences Education Building",
+    "category": "building",
+    "material": "HousingSilver"
+  },
+  "W153M11100": {
+    "layer": "W153_Health Sciences Education Building",
+    "category": "building",
+    "material": "HousingConcrete"
   },
   "W154M2700": {
     "layer": "W154_Winkenwerder Forest Sciences Laboratory",
@@ -7329,10 +7479,20 @@
     "category": "building",
     "material": "Precast"
   },
+  "W193M5200": {
+    "layer": "W193_UW Medical Center - Montlake, Wing SA - Montlake Tower",
+    "category": "building",
+    "material": "RoofMembrane"
+  },
   "W193M5300": {
     "layer": "W193_UW Medical Center - Montlake, Wing SA - Montlake Tower",
     "category": "building",
     "material": "RoofWarm"
+  },
+  "W193M5500": {
+    "layer": "W193_UW Medical Center - Montlake, Wing SA - Montlake Tower",
+    "category": "building",
+    "material": "RoofMetal"
   },
   "W193D6800": {
     "layer": "W193_UW Medical Center - Montlake, Wing SA - Montlake Tower",
@@ -7343,6 +7503,21 @@
     "layer": "W193_UW Medical Center - Montlake, Wing SA - Montlake Tower",
     "category": "building",
     "material": "Frame"
+  },
+  "W193M9300": {
+    "layer": "W193_UW Medical Center - Montlake, Wing SA - Montlake Tower",
+    "category": "building",
+    "material": "StepStone"
+  },
+  "W193M10300": {
+    "layer": "W193_UW Medical Center - Montlake, Wing SA - Montlake Tower",
+    "category": "building",
+    "material": "HousingFrame"
+  },
+  "W193M11100": {
+    "layer": "W193_UW Medical Center - Montlake, Wing SA - Montlake Tower",
+    "category": "building",
+    "material": "HousingConcrete"
   },
   "W194M2700": {
     "layer": "W194_Portage Bay Building",
@@ -9214,20 +9389,25 @@
     "category": "building",
     "material": "Precast"
   },
+  "W260M4800": {
+    "layer": "W260_Conibear Shellhouse",
+    "category": "building",
+    "material": "CedarSilver"
+  },
   "W260M5500": {
     "layer": "W260_Conibear Shellhouse",
     "category": "building",
     "material": "RoofMetal"
   },
-  "W260M6000": {
+  "W260M5600": {
     "layer": "W260_Conibear Shellhouse",
     "category": "building",
-    "material": "LightStone"
+    "material": "RoofSilver"
   },
-  "W260D6700": {
+  "W260M5800": {
     "layer": "W260_Conibear Shellhouse",
     "category": "building",
-    "material": "Glass"
+    "material": "RoofPaving"
   },
   "W260D6800": {
     "layer": "W260_Conibear Shellhouse",
@@ -9243,6 +9423,16 @@
     "layer": "W260_Conibear Shellhouse",
     "category": "building",
     "material": "StepStone"
+  },
+  "W260M10300": {
+    "layer": "W260_Conibear Shellhouse",
+    "category": "building",
+    "material": "HousingFrame"
+  },
+  "W260M11100": {
+    "layer": "W260_Conibear Shellhouse",
+    "category": "building",
+    "material": "HousingConcrete"
   },
   "W261M2700": {
     "layer": "W261_Shellhouse Annex",
@@ -9324,6 +9514,21 @@
     "category": "building",
     "material": "BrickRed"
   },
+  "W263M4600": {
+    "layer": "W263_Hec Edmundson Pavilion",
+    "category": "building",
+    "material": "Precast"
+  },
+  "W263M5200": {
+    "layer": "W263_Hec Edmundson Pavilion",
+    "category": "building",
+    "material": "RoofMembrane"
+  },
+  "W263M5300": {
+    "layer": "W263_Hec Edmundson Pavilion",
+    "category": "building",
+    "material": "RoofWarm"
+  },
   "W263M5500": {
     "layer": "W263_Hec Edmundson Pavilion",
     "category": "building",
@@ -9333,16 +9538,6 @@
     "layer": "W263_Hec Edmundson Pavilion",
     "category": "building",
     "material": "LightStone"
-  },
-  "W263M6200": {
-    "layer": "W263_Hec Edmundson Pavilion",
-    "category": "building",
-    "material": "Slate"
-  },
-  "W263D6700": {
-    "layer": "W263_Hec Edmundson Pavilion",
-    "category": "building",
-    "material": "Glass"
   },
   "W263D6800": {
     "layer": "W263_Hec Edmundson Pavilion",
@@ -9358,6 +9553,16 @@
     "layer": "W263_Hec Edmundson Pavilion",
     "category": "building",
     "material": "StepStone"
+  },
+  "W263M10300": {
+    "layer": "W263_Hec Edmundson Pavilion",
+    "category": "building",
+    "material": "HousingFrame"
+  },
+  "W263M11100": {
+    "layer": "W263_Hec Edmundson Pavilion",
+    "category": "building",
+    "material": "HousingConcrete"
   },
   "W264M2700": {
     "layer": "W264_Nordstrom Tennis Center",

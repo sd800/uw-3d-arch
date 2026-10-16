@@ -26,7 +26,7 @@ An independent, bilingual exterior model of the **University of Washington Seatt
 
 Low-angle views retain a continuous closed terrain mass and occlude buried geometry. Terrain sides fade gently downward at the model boundary; roads, lawns and water retain stable map ordering. The browser derives this display shell without changing the source CAD elevations.
 
-The campus contains **272 mapped facility/building layers plus one Environment layer** (271 UW inventory facilities and the mapped Sound Transit surface station), 27 architectural highlights, **8,602 official tree positions** and 29 cherry canopies around the Quad. Named wings and disconnected pieces sharing a facility code share a layer. The official facility layer's ponds and helipad belong to the environment, not building volumes. Excluded facilities are recorded in `output/excluded_records.json`.
+The campus contains **272 mapped facility/building layers plus one Environment layer** (271 UW inventory facilities and the mapped Sound Transit surface station), 28 architectural highlights, **8,602 official tree positions** and 29 cherry canopies around the Quad. Named wings and disconnected pieces sharing a facility code share a layer. The official facility layer's ponds and helipad belong to the environment, not building volumes. Excluded facilities are recorded in `output/excluded_records.json`.
 
 The surrounding U District adds **597 individually layered buildings** and a separate `Neighboring_Environment` layer. University Way (the Ave), Brooklyn Avenue, the U District station precinct, Roosevelt Way, north-campus residential blocks and the west-campus waterfront are included. Neighboring buildings use a subtly muted palette, with ⁺ prefixed to their displayed names. In **All**, the first row is **⁺Campus neighboring areas**, checked by default. Uncheck it to hide surrounding buildings, streets and landscape together without moving the camera; click its name to frame the area. Searching in All also finds neighboring buildings; while searching, only matching buildings are listed and the group row is hidden. Campus building counts stay separate.
 
@@ -94,7 +94,7 @@ Source snapshots are retained; geometry rebuilding needs no live map access. `fe
 
 ## Website model compression
 
-The initial model transfer is **18.12 MB**, down from **39.92 MB** (54.6% smaller). The web stream uses meshoptimizer 1.3.0 lossless vertex/index-sequence coding followed by gzip. No quantization or simplification is applied; its decoded SHA-256 matches the original 3DS. Rhino and original 3DS downloads stay unchanged.
+The initial model transfer is **18.55 MB**, down from **41.21 MB** (55.0% smaller). The web stream uses meshoptimizer 1.3.0 lossless vertex/index-sequence coding followed by gzip. No quantization or simplification is applied; its decoded SHA-256 matches the original 3DS. Web compression preserves the source Rhino/3DS geometry without simplification.
 
 A single browser worker streams gzip decompression, restores small geometry blocks and parses the CAD model. Its compressed input and resulting geometry buffers are transferred rather than copied. The full intermediate archive is never retained. Scene setup yields to rendering between time slices; browsers that block workers use cooperative per-object parsing. Standalone HTML restores the downloadable CAD on demand in a worker. Decoder JavaScript/WebAssembly is bundled locally and requires no CDN. See `output/web_model_report.json` for byte counts, source digest and maximum block size. `npm run build:model` rebuilds the stream; `npm run check:compression` checks lossless restoration and worker behavior.
 
@@ -103,3 +103,8 @@ Alder Hall’s complete street block, its independent custom bus shelters, the s
 ## West Campus housing
 
 Elm, Poplar, Lander, Maple and Terry halls now have individual exterior profiles. Cedar East/West, all five Mercer blocks and nine Stevens apartment blocks are also refined (21 facilities total). Alder Hall remains in its existing dedicated builder. See [West housing reference review](sources/WEST_HOUSING_REFERENCES.md) and `output/west_housing_refinement.json`. Upper setbacks, facade and landscape dimensions are photo-informed approximations. The 3DS exporter omits redundant all-zero smoothing groups; vertices, faces, materials and default faceted shading are preserved.
+
+
+## Architectural highlights
+
+The 28-stop tour now lists Alder Hall second. Fifteen landmark exteriors and Henry’s separately layered AVA addition have individual rebuilt assemblies; other detailed highlights and all housing from the preceding release are retained. See [Highlights reference review](sources/HIGHLIGHTS_REFERENCES.md), `sources/highlights_review.json` and `output/highlight_refinement.json`. The tour frames the two visible Henry gallery wings together.

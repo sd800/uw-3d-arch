@@ -1,8 +1,8 @@
 # Delivery validation
 
-Release 26.10.15.9.
+Release 26.10.16.1.
 
-- Rhino v7 uses meter units with 871 nonempty layers, 1012 valid closed native solids and 4928 closed mesh objects. All read-back geometry is valid.
+- Rhino v7 uses meter units with 871 nonempty layers, 1033 valid closed native solids and 4969 closed mesh objects. All read-back geometry is valid.
 - Independent Three.js 3DS import preserves object names and their campus, neighboring and environment layer mappings.
 - All 20 satellite-reviewed Alder-area crosswalk paths have exported paint: 40 direct ray probes passed. Crossings follow their mapped walking paths, use paired stripes and remain clipped inside roadway bounds.
 - Alder Hall retains its mapped open-sky courtyard and enclosing roof wings. The north shopfront is recessed behind the column arcade; two independent shelter roofs keep the boarding lane clear. Twenty light-rail bridge/landing probes remain continuous.
@@ -13,6 +13,8 @@ Release 26.10.15.9.
 - Browser review uses the actual local WebGL viewer for Alder’s north frontage, shopfront recess, shelter/street relationship and surrounding crossing layout. Preview images are exported from that viewer.
 - West housing: 21 facility layers have individual exterior systems. Focused ray probes retain open courts and recessed decks; all facade members stay within their roof bounds. Lander copper lounge panels remain confined to its northeast exterior corner. Alder and the other 848 unaffected layers have exactly the previous vertex/index/material data.
 - Browser review also covers the rebuilt Lander frontage/court and Maple/Terry precinct; the housing preview is exported from the actual WebGL viewer.
+- Highlights: all 28 tour stops are audited; Alder is second. Sixteen rebuilt facility assemblies pass roof bounds; direct export probes confirm Kane’s 2.645 m recessed glazing, the IEB open lower passage with an upper spanning volume, four lawn-level law-library skylights and Conibear’s lower lake-facing grade. All 854 unaffected layers, including the complete housing revision and Alder, exactly match their previous vertex/index/material data.
+- Actual local WebGL review covers Kane, PACCAR, both Henry wings, Rosling, Conibear from the lake at low angle, and the repaired continuous arena roof. No browser errors/warnings were observed. Updated preview images are viewer exports or direct browser captures.
 - Finder metadata is ignored and retained locally, and excluded from the delivery ZIP.
 
 These checks validate deliverable integrity and interaction, not as-built survey accuracy. External dimensions, grades and detail are public-source approximations. Direct file:// navigation is unavailable in the browser test interface; local/offline loader paths and exact embedded bytes are checked independently.

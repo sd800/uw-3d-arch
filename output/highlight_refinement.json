@@ -1,0 +1,704 @@
+{
+  "buildings": [
+    {
+      "facility_id": "LAW",
+      "height_m": 18.6,
+      "levels": 4,
+      "volume_parts": [
+        {
+          "area_m2": 3749.75,
+          "base_offset_m": 0,
+          "height_m": 17.9,
+          "material": "BrickBuff"
+        }
+      ],
+      "window_bays": 384,
+      "bounded_shade_panels": 0,
+      "entries": [
+        {
+          "position": [
+            -76.77,
+            386.13,
+            63.26
+          ],
+          "attached_canopy": true,
+          "ground_fitted_threshold": true
+        }
+      ],
+      "validation_probes": {},
+      "details": [
+        "Distinct warm-masonry outer L and glazed south/east library-facing elevations",
+        "Four grounded roof-lawn library skylights corroborated by KPF photographs and aerial",
+        "Separate stone floor edges, recessed entry and a continuous roof cap"
+      ],
+      "source": "https://www.kpf.com/project/william-h-gates-hall",
+      "accuracy": "Official mapped main envelope retained. Secondary massing, storey datums, facade/roof members and landscape details are approximate public-photo/aerial interpretations; no as-built survey accuracy is claimed."
+    },
+    {
+      "facility_id": "PCAR",
+      "height_m": 18.8,
+      "levels": 4,
+      "volume_parts": [
+        {
+          "area_m2": 969.87,
+          "base_offset_m": 0,
+          "height_m": 18.05,
+          "material": "BrickBuff"
+        },
+        {
+          "area_m2": 930.06,
+          "base_offset_m": 0,
+          "height_m": 18.05,
+          "material": "BrickBuff"
+        },
+        {
+          "area_m2": 569.06,
+          "base_offset_m": 0,
+          "height_m": 17.5,
+          "material": "DarkGlass"
+        },
+        {
+          "area_m2": 194.74,
+          "base_offset_m": 0,
+          "height_m": 7.5,
+          "material": "DarkGlass"
+        },
+        {
+          "area_m2": 364.44,
+          "base_offset_m": 7.5,
+          "height_m": 8.8,
+          "material": "DarkGlass"
+        }
+      ],
+      "window_bays": 584,
+      "bounded_shade_panels": 0,
+      "entries": [
+        {
+          "position": [
+            73.7,
+            338.84,
+            62.26
+          ],
+          "attached_canopy": true,
+          "ground_fitted_threshold": true
+        }
+      ],
+      "validation_probes": {},
+      "details": [
+        "Separate brick teaching wings and a glazed longitudinal public atrium",
+        "Projecting upper meeting-room enclosure, supported lower arrival bays and thin metal roof edge",
+        "Multi-light glazing, masonry reveals and grounded entrance canopy"
+      ],
+      "source": "https://lmnarchitects.com/project/paccar-hall-foster-school-of-business-university-of-washington",
+      "accuracy": "Official mapped main envelope retained. Secondary massing, storey datums, facade/roof members and landscape details are approximate public-photo/aerial interpretations; no as-built survey accuracy is claimed."
+    },
+    {
+      "facility_id": "KNE",
+      "height_m": 15.6,
+      "levels": 3,
+      "volume_parts": [
+        {
+          "area_m2": 3793.41,
+          "base_offset_m": 0,
+          "height_m": 14.9,
+          "material": "BrickBuff"
+        },
+        {
+          "area_m2": 99.94,
+          "base_offset_m": 14.25,
+          "height_m": 0.65,
+          "material": "Precast"
+        }
+      ],
+      "window_bays": 129,
+      "bounded_shade_panels": 0,
+      "entries": [],
+      "validation_probes": {
+        "recessed_portico": {
+          "origin": [
+            -26.57601305570632,
+            67.28005290933028,
+            51.610842952775705
+          ],
+          "direction": [
+            0.4559835561904346,
+            0.8899882001936458,
+            0
+          ],
+          "minimum_recess_m": 2.4
+        }
+      },
+      "details": [
+        "Deep south-facing concrete portico with continuous ground-to-beam piers",
+        "Tall recessed upper lights and low glazed entrance bays, replacing small stacked template windows",
+        "Quiet brick lecture volumes behind a separate matte roof"
+      ],
+      "source": "https://www.washington.edu/news/2019/12/17/beauty-in-brutalism-architecture-professor-alex-anderson-reviews-the-uws-bunkerlike-behemoths/",
+      "accuracy": "Official mapped main envelope retained. Secondary massing, storey datums, facade/roof members and landscape details are approximate public-photo/aerial interpretations; no as-built survey accuracy is claimed."
+    },
+    {
+      "facility_id": "HAG",
+      "height_m": 12.0,
+      "levels": 2,
+      "volume_parts": [
+        {
+          "area_m2": 707.91,
+          "base_offset_m": 0,
+          "height_m": 8.2,
+          "material": "BrickBuff"
+        }
+      ],
+      "window_bays": 54,
+      "bounded_shade_panels": 0,
+      "entries": [
+        {
+          "position": [
+            -173.12,
+            77.24,
+            42.59
+          ],
+          "attached_canopy": true,
+          "ground_fitted_threshold": true
+        }
+      ],
+      "validation_probes": {},
+      "details": [
+        "Original Gould gallery distinguished from the separate AVA modern addition",
+        "Two-storey stone/brick classical enclosure, grouped upper lights and sloping slate roof margins"
+      ],
+      "source": "https://www.gwathmey-siegel.com/2013/08/university-of-washington/",
+      "accuracy": "Official mapped main envelope retained. Secondary massing, storey datums, facade/roof members and landscape details are approximate public-photo/aerial interpretations; no as-built survey accuracy is claimed."
+    },
+    {
+      "facility_id": "OUG",
+      "height_m": 15.8,
+      "levels": 3,
+      "volume_parts": [
+        {
+          "area_m2": 3567.24,
+          "base_offset_m": 0,
+          "height_m": 15.1,
+          "material": "BrickBuff"
+        }
+      ],
+      "window_bays": 219,
+      "bounded_shade_panels": 0,
+      "entries": [
+        {
+          "position": [
+            -46.93,
+            82.28,
+            49.22
+          ],
+          "attached_canopy": true,
+          "ground_fitted_threshold": true
+        }
+      ],
+      "validation_probes": {},
+      "details": [
+        "Concrete perimeter bay frame over brick/glass library elevations",
+        "Three-storey glazing differentiated from the deep solid piers of adjacent Kane",
+        "Large central atrium skylight with closed curb and physically separated mullions"
+      ],
+      "source": "https://millerhull.com/project/odegaard-library/",
+      "accuracy": "Official mapped main envelope retained. Secondary massing, storey datums, facade/roof members and landscape details are approximate public-photo/aerial interpretations; no as-built survey accuracy is claimed."
+    },
+    {
+      "facility_id": "AVA",
+      "height_m": 12.8,
+      "levels": 3,
+      "volume_parts": [
+        {
+          "area_m2": 1864.9,
+          "base_offset_m": 0,
+          "height_m": 7.6,
+          "material": "HousingSilver"
+        },
+        {
+          "area_m2": 36.27,
+          "base_offset_m": 7.6,
+          "height_m": 4.5,
+          "material": "HousingSilver"
+        }
+      ],
+      "window_bays": 68,
+      "bounded_shade_panels": 0,
+      "entries": [],
+      "validation_probes": {},
+      "details": [
+        "Modern metal/concrete gallery wing kept on its own AVA building layer",
+        "Three closed curved roof monitors and a taller round entrance/stair volume",
+        "Glazed campus-facing entry and articulated facade bands; no invented exhibition graphics"
+      ],
+      "source": "https://www.gwathmey-siegel.com/2013/08/university-of-washington/",
+      "accuracy": "Official mapped main envelope retained. Secondary massing, storey datums, facade/roof members and landscape details are approximate public-photo/aerial interpretations; no as-built survey accuracy is claimed."
+    },
+    {
+      "facility_id": "HUB",
+      "height_m": 20.8,
+      "levels": 4,
+      "volume_parts": [
+        {
+          "area_m2": 5632.57,
+          "base_offset_m": 0,
+          "height_m": 17.6,
+          "material": "BrickRed"
+        },
+        {
+          "area_m2": 471.74,
+          "base_offset_m": 0,
+          "height_m": 20.1,
+          "material": "DarkGlass"
+        },
+        {
+          "area_m2": 231.64,
+          "base_offset_m": 0,
+          "height_m": 20.1,
+          "material": "DarkGlass"
+        }
+      ],
+      "window_bays": 436,
+      "bounded_shade_panels": 0,
+      "entries": [
+        {
+          "position": [
+            309.08,
+            -117.66,
+            43.91
+          ],
+          "attached_canopy": true,
+          "ground_fitted_threshold": true
+        }
+      ],
+      "validation_probes": {},
+      "details": [
+        "Restored brick east-front enclosure separated from contemporary north/south glass entrances",
+        "Larger west-facing public glazing and lower ballroom/student-service roof volumes",
+        "Attached canopy and visible floor/mullion structure rather than a uniform brick box"
+      ],
+      "source": "https://www.nwpart.com/projects/university-of-washington-husky-union-building/",
+      "accuracy": "Official mapped main envelope retained. Secondary massing, storey datums, facade/roof members and landscape details are approximate public-photo/aerial interpretations; no as-built survey accuracy is claimed."
+    },
+    {
+      "facility_id": "IEB",
+      "height_m": 21.0,
+      "levels": 5,
+      "volume_parts": [
+        {
+          "area_m2": 814.8,
+          "base_offset_m": 0,
+          "height_m": 4.1,
+          "material": "BrickUmber"
+        },
+        {
+          "area_m2": 579.67,
+          "base_offset_m": 0,
+          "height_m": 4.1,
+          "material": "BrickUmber"
+        },
+        {
+          "area_m2": 1713.13,
+          "base_offset_m": 4.1,
+          "height_m": 16.15,
+          "material": "BrickUmber"
+        }
+      ],
+      "window_bays": 338,
+      "bounded_shade_panels": 0,
+      "entries": [
+        {
+          "position": [
+            378.06,
+            -60.39,
+            39.54
+          ],
+          "attached_canopy": true,
+          "ground_fitted_threshold": true
+        }
+      ],
+      "validation_probes": {
+        "arrival_passage": {
+          "origin": [
+            436.97739037488304,
+            -84.92116857997631,
+            36.80076320425262
+          ],
+          "direction": [
+            -0.981720355530951,
+            0.19032904018090108,
+            0
+          ],
+          "length_m": 86.11306522463121
+        }
+      },
+      "details": [
+        "Dark brick upper teaching wings and a genuine open lower arrival passage",
+        "Varied narrow/full-height glazing modules and shallow attached masonry reveals",
+        "Thin supported entrance canopy and documented roof PV; completed-building photographs used ahead of renderings"
+      ],
+      "source": "https://www.engr.washington.edu/about/ieb",
+      "accuracy": "Official mapped main envelope retained. Secondary massing, storey datums, facade/roof members and landscape details are approximate public-photo/aerial interpretations; no as-built survey accuracy is claimed."
+    },
+    {
+      "facility_id": "HRC",
+      "height_m": 32.8,
+      "levels": 8,
+      "volume_parts": [
+        {
+          "area_m2": 2197.78,
+          "base_offset_m": 0,
+          "height_m": 5.2,
+          "material": "DarkGlass"
+        },
+        {
+          "area_m2": 2758.38,
+          "base_offset_m": 5.2,
+          "height_m": 23.2,
+          "material": "DarkGlass"
+        },
+        {
+          "area_m2": 1926.93,
+          "base_offset_m": 28.4,
+          "height_m": 3.7,
+          "material": "DarkGlass"
+        }
+      ],
+      "window_bays": 369,
+      "bounded_shade_panels": 333,
+      "entries": [
+        {
+          "position": [
+            -194.72,
+            -167.37,
+            32.32
+          ],
+          "attached_canopy": true,
+          "ground_fitted_threshold": true
+        }
+      ],
+      "validation_probes": {},
+      "details": [
+        "Recessed glass public base with grounded concrete pilotis",
+        "West glazed elevation with shallow angled pale solar sails bounded by floor slabs",
+        "Two genuinely inset upper roof terraces with supported garden edges; quieter precast service elevation"
+      ],
+      "source": "https://www.washington.edu/populationhealth/hans-rosling-center-tour/",
+      "accuracy": "Official mapped main envelope retained. Secondary massing, storey datums, facade/roof members and landscape details are approximate public-photo/aerial interpretations; no as-built survey accuracy is claimed."
+    },
+    {
+      "facility_id": "CSE",
+      "height_m": 24.2,
+      "levels": 7,
+      "volume_parts": [
+        {
+          "area_m2": 1696.14,
+          "base_offset_m": 0,
+          "height_m": 23.45,
+          "material": "BrickRed"
+        },
+        {
+          "area_m2": 329.81,
+          "base_offset_m": 0,
+          "height_m": 22.35,
+          "material": "DarkGlass"
+        }
+      ],
+      "window_bays": 543,
+      "bounded_shade_panels": 0,
+      "entries": [
+        {
+          "position": [
+            293.34,
+            -262.86,
+            37.21
+          ],
+          "attached_canopy": true,
+          "ground_fitted_threshold": true
+        }
+      ],
+      "validation_probes": {},
+      "details": [
+        "Brick academic wings separated from the glazed circulation atrium",
+        "Seven-storey bay rhythm with shallow attached pale surrounds and separate roof glazing",
+        "Mapped plan and entrance axis retained; no repeated blank metal cap"
+      ],
+      "source": "https://lazowska.cs.washington.edu/psj.allen.center.html",
+      "accuracy": "Official mapped main envelope retained. Secondary massing, storey datums, facade/roof members and landscape details are approximate public-photo/aerial interpretations; no as-built survey accuracy is claimed."
+    },
+    {
+      "facility_id": "CSE2",
+      "height_m": 25.6,
+      "levels": 5,
+      "volume_parts": [
+        {
+          "area_m2": 3205.88,
+          "base_offset_m": 0,
+          "height_m": 21.05,
+          "material": "BrickUmber"
+        },
+        {
+          "area_m2": 678.87,
+          "base_offset_m": 21.05,
+          "height_m": 3.8,
+          "material": "DarkGlass"
+        }
+      ],
+      "window_bays": 119,
+      "bounded_shade_panels": 0,
+      "entries": [
+        {
+          "position": [
+            318.66,
+            -293.73,
+            36.14
+          ],
+          "attached_canopy": true,
+          "ground_fitted_threshold": true
+        }
+      ],
+      "validation_probes": {},
+      "details": [
+        "Dark brick enclosure with staggered warm terracotta piers and larger glazed bays",
+        "Separate recessed upper event pavilion and accessible terrace parapet",
+        "Three narrow atrium roof lanterns instead of a single invented broad ridge"
+      ],
+      "source": "https://lmnarchitects.com/project/bill-melinda-gates-center",
+      "accuracy": "Official mapped main envelope retained. Secondary massing, storey datums, facade/roof members and landscape details are approximate public-photo/aerial interpretations; no as-built survey accuracy is claimed."
+    },
+    {
+      "facility_id": "LSB",
+      "height_m": 24.8,
+      "levels": 5,
+      "volume_parts": [
+        {
+          "area_m2": 1785.54,
+          "base_offset_m": 0,
+          "height_m": 5.2,
+          "material": "Precast"
+        },
+        {
+          "area_m2": 1670.94,
+          "base_offset_m": 5.2,
+          "height_m": 18.85,
+          "material": "DarkGlass"
+        },
+        {
+          "area_m2": 395.93,
+          "base_offset_m": 0,
+          "height_m": 24.05,
+          "material": "Corten"
+        }
+      ],
+      "window_bays": 317,
+      "bounded_shade_panels": 94,
+      "entries": [
+        {
+          "position": [
+            -67.85,
+            -374.51,
+            26.27
+          ],
+          "attached_canopy": true,
+          "ground_fitted_threshold": true
+        }
+      ],
+      "validation_probes": {},
+      "details": [
+        "Distinct reddish circulation end, glazed laboratory bar and teaching plinth",
+        "South photovoltaic glass fins in two bounded groups, with continuous floor support",
+        "Glazed west stair front, offset roof edges, attached columns and referenced rooftop PV"
+      ],
+      "source": "https://perkinswill.com/project/university-of-washington-life-sciences-building/",
+      "accuracy": "Official mapped main envelope retained. Secondary massing, storey datums, facade/roof members and landscape details are approximate public-photo/aerial interpretations; no as-built survey accuracy is claimed."
+    },
+    {
+      "facility_id": "HSEB",
+      "height_m": 17.8,
+      "levels": 4,
+      "volume_parts": [
+        {
+          "area_m2": 1407.09,
+          "base_offset_m": 0,
+          "height_m": 4.1,
+          "material": "DarkGlass"
+        },
+        {
+          "area_m2": 1629.29,
+          "base_offset_m": 4.1,
+          "height_m": 12.95,
+          "material": "HousingSilver"
+        }
+      ],
+      "window_bays": 213,
+      "bounded_shade_panels": 0,
+      "entries": [
+        {
+          "position": [
+            -57.37,
+            -476.95,
+            19.31
+          ],
+          "attached_canopy": true,
+          "ground_fitted_threshold": true
+        }
+      ],
+      "validation_probes": {},
+      "details": [
+        "Corrugated silver opaque classroom skin with varied tall window openings",
+        "Glazed north active edge and a recessed ground commons supported by concrete columns",
+        "Warm timber floor edges remain wall-attached; no full-building detached decorative fins"
+      ],
+      "source": "https://millerhull.com/project/health-sciences-education-building/",
+      "accuracy": "Official mapped main envelope retained. Secondary massing, storey datums, facade/roof members and landscape details are approximate public-photo/aerial interpretations; no as-built survey accuracy is claimed."
+    },
+    {
+      "facility_id": "UMSA",
+      "height_m": 39.0,
+      "levels": 8,
+      "volume_parts": [
+        {
+          "area_m2": 4178.93,
+          "base_offset_m": 0,
+          "height_m": 9.1,
+          "material": "Precast"
+        },
+        {
+          "area_m2": 2546.75,
+          "base_offset_m": 9.1,
+          "height_m": 29.15,
+          "material": "DarkGlass"
+        },
+        {
+          "area_m2": 1632.17,
+          "base_offset_m": 9.1,
+          "height_m": 7.1,
+          "material": "Precast"
+        }
+      ],
+      "window_bays": 1000,
+      "bounded_shade_panels": 234,
+      "entries": [
+        {
+          "position": [
+            187.1,
+            -804.54,
+            15.83
+          ],
+          "attached_canopy": true,
+          "ground_fitted_threshold": true
+        }
+      ],
+      "validation_probes": {},
+      "details": [
+        "Glazed inpatient tower rises above a lower continuous diagnostic/service podium",
+        "Pale projecting patient-room bay edges and repeated turquoise/blue glazing bands",
+        "Separate lower companion roofs and ground-connected arrival; no fabricated interior departments"
+      ],
+      "source": "https://www.laminart.com/case-study/montlake-tower-university-washington-medical-center",
+      "accuracy": "Official mapped main envelope retained. Secondary massing, storey datums, facade/roof members and landscape details are approximate public-photo/aerial interpretations; no as-built survey accuracy is claimed."
+    },
+    {
+      "facility_id": "CSH",
+      "height_m": 13.0,
+      "levels": 3,
+      "volume_parts": [
+        {
+          "area_m2": 1826.72,
+          "base_offset_m": 0,
+          "height_m": 3.3,
+          "material": "Precast"
+        },
+        {
+          "area_m2": 1439.87,
+          "base_offset_m": 3.3,
+          "height_m": 8.95,
+          "material": "CedarSilver"
+        }
+      ],
+      "window_bays": 92,
+      "bounded_shade_panels": 0,
+      "entries": [
+        {
+          "position": [
+            691.17,
+            -315.04,
+            9.71
+          ],
+          "attached_canopy": true,
+          "ground_fitted_threshold": true
+        }
+      ],
+      "validation_probes": {},
+      "details": [
+        "Separate lower shell-storage bays and upper dining/academic enclosure",
+        "Olive silver/wood siding, lake-facing glazed dining edge and flat metal roof",
+        "Grounded boat-bay thresholds and a supported deck above the storage volume, with continuous parapets"
+      ],
+      "source": "https://millerhull.com/project/conibear-shellhouse/",
+      "accuracy": "Official mapped main envelope retained. Secondary massing, storey datums, facade/roof members and landscape details are approximate public-photo/aerial interpretations; no as-built survey accuracy is claimed."
+    },
+    {
+      "facility_id": "EDP",
+      "height_m": 26.0,
+      "levels": 2,
+      "volume_parts": [
+        {
+          "area_m2": 8179.2,
+          "base_offset_m": 0,
+          "height_m": 19.5,
+          "material": "BrickRed"
+        },
+        {
+          "area_m2": 3106.62,
+          "base_offset_m": 0,
+          "height_m": 12.0,
+          "material": "BrickRed"
+        }
+      ],
+      "window_bays": 370,
+      "bounded_shade_panels": 0,
+      "entries": [
+        {
+          "position": [
+            481.01,
+            -424.99,
+            18.13
+          ],
+          "attached_canopy": true,
+          "ground_fitted_threshold": true
+        }
+      ],
+      "validation_probes": {
+        "arena_ridge": [
+          [
+            563.4316816293665,
+            -425.48017738160314,
+            40.60230231686425
+          ],
+          [
+            538.7121094612144,
+            -420.4206372926654,
+            40.60230231686425
+          ],
+          [
+            513.9925372930622,
+            -415.36109720372764,
+            40.60230231686425
+          ]
+        ]
+      },
+      "details": [
+        "Long pitched main arena roof separated from north gymnasium and east service wings",
+        "Brick historic west frontage with tall grouped windows, stone bands and attached pier rhythm",
+        "Lower annex roofs and continuous entrance contact; no generic flat roof over the whole complex"
+      ],
+      "source": "https://gohuskies.com/news/2013/4/18/208237508",
+      "accuracy": "Official mapped main envelope retained. Secondary massing, storey datums, facade/roof members and landscape details are approximate public-photo/aerial interpretations; no as-built survey accuracy is claimed."
+    }
+  ],
+  "refined_facilities": 16,
+  "source_notes": "sources/HIGHLIGHTS_REFERENCES.md",
+  "alder_geometry_unchanged": true,
+  "automatic_rooftop_boxes": false,
+  "members_wall_or_roof_supported": true
+}

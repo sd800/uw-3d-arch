@@ -291,25 +291,6 @@
       "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
     },
     {
-      "facility_id": "AVA",
-      "height_m": 12.05,
-      "levels": 3,
-      "volume_parts": [
-        {
-          "area_m2": 1864.9,
-          "height_m": 11.83,
-          "material": "Precast"
-        }
-      ],
-      "ordinary": true,
-      "details": [
-        "Mapped footprint and courtyard openings retained",
-        "Use-specific window spacing, floor courses, grounded entry or service door",
-        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
-      ],
-      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
-    },
-    {
       "facility_id": "HLL",
       "height_m": 15.8,
       "levels": 4,
@@ -3087,25 +3068,6 @@
       "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
     },
     {
-      "facility_id": "CSH",
-      "height_m": 14,
-      "levels": 2,
-      "volume_parts": [
-        {
-          "area_m2": 1826.72,
-          "height_m": 13.78,
-          "material": "Precast"
-        }
-      ],
-      "ordinary": true,
-      "details": [
-        "Mapped footprint and courtyard openings retained",
-        "Use-specific window spacing, floor courses, grounded entry or service door",
-        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
-      ],
-      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
-    },
-    {
       "facility_id": "SHA",
       "height_m": 4.55,
       "levels": 1,
@@ -3133,25 +3095,6 @@
           "area_m2": 1442.71,
           "height_m": 8.08,
           "material": "Precast"
-        }
-      ],
-      "ordinary": true,
-      "details": [
-        "Mapped footprint and courtyard openings retained",
-        "Use-specific window spacing, floor courses, grounded entry or service door",
-        "Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes"
-      ],
-      "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
-    },
-    {
-      "facility_id": "EDP",
-      "height_m": 26,
-      "levels": 2,
-      "volume_parts": [
-        {
-          "area_m2": 11285.87,
-          "height_m": 22.38,
-          "material": "BrickRed"
         }
       ],
       "ordinary": true,
@@ -3296,5 +3239,5 @@
       "accuracy": "Footprint and available tags are mapped; secondary facade, roof and entry dimensions are approximate."
     }
   ],
-  "count": 170
+  "count": 167
 }

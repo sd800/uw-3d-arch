@@ -2,7 +2,7 @@
 GIS='https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1'
 MAP='https://map.uw.edu/?id=2099'
 # These heights describe public-source exterior approximations, not a survey.
-LANDMARKS=['SUZ','GRB','DEN','MGH','SAV','RAI','SMI','GWN','KNE','OUG','HUB','BRK','HAG','PCAR','LAW','CSE','CSE2','LSB','HRC','HSEB','UMSA','STD','EDP','CSH','INT','IEB','LINK_UW']
+LANDMARKS=['SUZ','ALD','GRB','DEN','MGH','SAV','RAI','SMI','GWN','KNE','OUG','HUB','BRK','HAG','PCAR','LAW','CSE','CSE2','LSB','HRC','HSEB','UMSA','STD','EDP','CSH','INT','IEB','LINK_UW']
 GOTHIC={'SUZ','GRB','MGH','SAV','RAI','SMI','GWN','MLR','MUS','HUT','THO','HNS','JHN','GUG','AND','ROB'}
 PITCHED=GOTHIC|{'DEN','LEW','CLK','ARC','OBS','HPT','INT','EDP','PHT'}
 HEIGHTS={'SUZ':32.5,'GRB':35,'DEN':26,'MGH':27,'SAV':23,'RAI':21,'SMI':23,'GWN':23,'MLR':21,'HNS':25,'MCM':36,'KNE':16,'OUG':16,'HUB':21,'MNY':19,'BRK':15,'PCAR':22,'LAW':20,'CSE':27,'CSE2':30,'LSB':32,'HRC':33,'HSEB':21,'IEB':28,'UMSA':39,'STD':41,'EDP':26,'CSH':14,'INT':11,'UWT':99,'UWTC':18.2,'HST':46,'HND':30,'HSH':28,'HSK':32,'PAT':28,'PAB':26,'PAA':15}
@@ -233,3 +233,6 @@ REFS.update({id:PHASE1 for id in ['ELM','POP','CDRE','CDRW']})
 REFS.update({'LAN':LANDER,'MAH':MAPLE_TERRY,'TEH':MAPLE_TERRY})
 REFS.update({id:MERCER for id in ['MRCA','MRCB','MRCC','MRCD','MRCE']})
 REFS.update({id:STEVENS for id in ['SCA','SCB','SCC','SCD','SCH','SCJ','SCK','SCL','SCM']})
+
+# Exterior assemblies reviewed against the original project evidence.
+REFS.update({'LAW': 'https://www.kpf.com/project/william-h-gates-hall', 'PCAR': 'https://lmnarchitects.com/project/paccar-hall-foster-school-of-business-university-of-washington', 'KNE': 'https://www.washington.edu/news/2019/12/17/beauty-in-brutalism-architecture-professor-alex-anderson-reviews-the-uws-bunkerlike-behemoths/', 'HAG': 'https://www.gwathmey-siegel.com/2013/08/university-of-washington/', 'AVA': 'https://www.gwathmey-siegel.com/2013/08/university-of-washington/', 'OUG': 'https://millerhull.com/project/odegaard-library/', 'HUB': 'https://www.nwpart.com/projects/university-of-washington-husky-union-building/', 'IEB': 'https://www.engr.washington.edu/about/ieb', 'HRC': 'https://www.washington.edu/populationhealth/hans-rosling-center-tour/', 'CSE': 'https://lazowska.cs.washington.edu/psj.allen.center.html', 'CSE2': 'https://lmnarchitects.com/project/bill-melinda-gates-center', 'LSB': 'https://perkinswill.com/project/university-of-washington-life-sciences-building/', 'HSEB': 'https://millerhull.com/project/health-sciences-education-building/', 'UMSA': 'https://www.laminart.com/case-study/montlake-tower-university-washington-medical-center', 'CSH': 'https://millerhull.com/project/conibear-shellhouse/', 'EDP': 'https://gohuskies.com/news/2013/4/18/208237508'})

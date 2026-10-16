@@ -144,47 +144,6 @@
       "accuracy": "Official footprint retained; exterior partitions, heights and members are approximate public-photo interpretations."
     },
     {
-      "facility_id": "LAW",
-      "mapped_footprint_m2": 3749.79,
-      "height_m": 18.6,
-      "levels": 4,
-      "volume_parts": [
-        {
-          "area_m2": 3749.75,
-          "base_offset_m": 0,
-          "height_m": 17.900000000000002,
-          "material": "BrickBuff"
-        }
-      ],
-      "bounded_shade_panels": 0,
-      "illustrative_pv_modules": 0,
-      "details": [
-        "Brick and stone law-school wings with recessed glazing"
-      ],
-      "accuracy": "Official footprint retained; exterior partitions, heights and members are approximate public-photo interpretations."
-    },
-    {
-      "facility_id": "PCAR",
-      "mapped_footprint_m2": 2833.58,
-      "height_m": 18.8,
-      "levels": 4,
-      "volume_parts": [
-        {
-          "area_m2": 2833.43,
-          "base_offset_m": 0,
-          "height_m": 18.1,
-          "material": "BrickBuff"
-        }
-      ],
-      "bounded_shade_panels": 0,
-      "illustrative_pv_modules": 0,
-      "details": [
-        "Glazed atrium roof spine clipped to the mapped hall",
-        "Four-storey brick teaching hall with an atrium spine"
-      ],
-      "accuracy": "Official footprint retained; exterior partitions, heights and members are approximate public-photo interpretations."
-    },
-    {
       "facility_id": "DEN",
       "mapped_footprint_m2": 1963.75,
       "height_m": 26.2,
@@ -365,26 +324,6 @@
       "accuracy": "Official footprint retained; exterior partitions, heights and members are approximate public-photo interpretations."
     },
     {
-      "facility_id": "KNE",
-      "mapped_footprint_m2": 3893.41,
-      "height_m": 15.6,
-      "levels": 3,
-      "volume_parts": [
-        {
-          "area_m2": 3893.35,
-          "base_offset_m": 0,
-          "height_m": 14.9,
-          "material": "Precast"
-        }
-      ],
-      "bounded_shade_panels": 0,
-      "illustrative_pv_modules": 0,
-      "details": [
-        "Lecture-hall masonry and limited upper openings"
-      ],
-      "accuracy": "Official footprint retained; exterior partitions, heights and members are approximate public-photo interpretations."
-    },
-    {
       "facility_id": "THO",
       "mapped_footprint_m2": 925.7,
       "height_m": 15.55,
@@ -402,47 +341,6 @@
       "details": [
         "Mapped slate slope perimeter and flat inner roof",
         "Grouped masonry window bays, mullions, stone sills, string courses and grounded entry"
-      ],
-      "accuracy": "Official footprint retained; exterior partitions, heights and members are approximate public-photo interpretations."
-    },
-    {
-      "facility_id": "HAG",
-      "mapped_footprint_m2": 707.96,
-      "height_m": 14.2,
-      "levels": 3,
-      "volume_parts": [
-        {
-          "area_m2": 707.91,
-          "base_offset_m": 0,
-          "height_m": 13.5,
-          "material": "Precast"
-        }
-      ],
-      "bounded_shade_panels": 0,
-      "illustrative_pv_modules": 0,
-      "details": [
-        "Quiet stone gallery mass with glazed entry"
-      ],
-      "accuracy": "Official footprint retained; exterior partitions, heights and members are approximate public-photo interpretations."
-    },
-    {
-      "facility_id": "OUG",
-      "mapped_footprint_m2": 3567.28,
-      "height_m": 15.8,
-      "levels": 3,
-      "volume_parts": [
-        {
-          "area_m2": 3567.24,
-          "base_offset_m": 0,
-          "height_m": 15.100000000000001,
-          "material": "BrickBuff"
-        }
-      ],
-      "bounded_shade_panels": 0,
-      "illustrative_pv_modules": 0,
-      "details": [
-        "Glazed atrium roof spine clipped to the mapped hall",
-        "Brick library enclosure and central glazed skylight"
       ],
       "accuracy": "Official footprint retained; exterior partitions, heights and members are approximate public-photo interpretations."
     },
@@ -559,26 +457,6 @@
       "accuracy": "Official footprint retained; exterior partitions, heights and members are approximate public-photo interpretations."
     },
     {
-      "facility_id": "HUB",
-      "mapped_footprint_m2": 6336.02,
-      "height_m": 20.8,
-      "levels": 4,
-      "volume_parts": [
-        {
-          "area_m2": 6335.93,
-          "base_offset_m": 0,
-          "height_m": 20.1,
-          "material": "BrickBuff"
-        }
-      ],
-      "bounded_shade_panels": 0,
-      "illustrative_pv_modules": 0,
-      "details": [
-        "Brick student-center elevations and glazed entrances"
-      ],
-      "accuracy": "Official footprint retained; exterior partitions, heights and members are approximate public-photo interpretations."
-    },
-    {
       "facility_id": "GRB",
       "mapped_footprint_m2": 1380.64,
       "height_m": 35,
@@ -602,26 +480,6 @@
       "details": [
         "Two mapped wings, lower slate perimeter roofs and a separate junction bell tower",
         "Tower louvres, stone courses and corner pinnacles remain attached to its masonry"
-      ],
-      "accuracy": "Official footprint retained; exterior partitions, heights and members are approximate public-photo interpretations."
-    },
-    {
-      "facility_id": "IEB",
-      "mapped_footprint_m2": 1713.12,
-      "height_m": 21.0,
-      "levels": 5,
-      "volume_parts": [
-        {
-          "area_m2": 1713.13,
-          "base_offset_m": 0,
-          "height_m": 20.3,
-          "material": "BrickUmber"
-        }
-      ],
-      "bounded_shade_panels": 0,
-      "illustrative_pv_modules": 132,
-      "details": [
-        "Dark brick teaching wings and deliberately varied tall window groups"
       ],
       "accuracy": "Official footprint retained; exterior partitions, heights and members are approximate public-photo interpretations."
     },
@@ -663,27 +521,6 @@
       "illustrative_pv_modules": 0,
       "details": [
         "Laboratory glazing and bounded facade modules"
-      ],
-      "accuracy": "Official footprint retained; exterior partitions, heights and members are approximate public-photo interpretations."
-    },
-    {
-      "facility_id": "HRC",
-      "mapped_footprint_m2": 2758.37,
-      "height_m": 32.8,
-      "levels": 8,
-      "volume_parts": [
-        {
-          "area_m2": 2758.38,
-          "base_offset_m": 0,
-          "height_m": 32.099999999999994,
-          "material": "Precast"
-        }
-      ],
-      "bounded_shade_panels": 168,
-      "illustrative_pv_modules": 0,
-      "details": [
-        "Two inset roof garden terraces with low planting and flush paving, interpreted from UW tour photographs",
-        "West solar-shading sails over storey-height glazing, with a quieter precast enclosure"
       ],
       "accuracy": "Official footprint retained; exterior partitions, heights and members are approximate public-photo interpretations."
     },
@@ -750,47 +587,6 @@
       "accuracy": "Official footprint retained; exterior partitions, heights and members are approximate public-photo interpretations."
     },
     {
-      "facility_id": "CSE",
-      "mapped_footprint_m2": 2025.84,
-      "height_m": 24.2,
-      "levels": 5,
-      "volume_parts": [
-        {
-          "area_m2": 2025.94,
-          "base_offset_m": 0,
-          "height_m": 23.5,
-          "material": "BrickRed"
-        }
-      ],
-      "bounded_shade_panels": 0,
-      "illustrative_pv_modules": 0,
-      "details": [
-        "Warm masonry teaching/research elevations with grouped glazing"
-      ],
-      "accuracy": "Official footprint retained; exterior partitions, heights and members are approximate public-photo interpretations."
-    },
-    {
-      "facility_id": "CSE2",
-      "mapped_footprint_m2": 3205.85,
-      "height_m": 25.6,
-      "levels": 5,
-      "volume_parts": [
-        {
-          "area_m2": 3205.88,
-          "base_offset_m": 0,
-          "height_m": 24.900000000000002,
-          "material": "BrickRed"
-        }
-      ],
-      "bounded_shade_panels": 0,
-      "illustrative_pv_modules": 0,
-      "details": [
-        "Glazed atrium roof spine clipped to the mapped hall",
-        "Curving brick/glass computer-science elevations and a patinated roof edge"
-      ],
-      "accuracy": "Official footprint retained; exterior partitions, heights and members are approximate public-photo interpretations."
-    },
-    {
       "facility_id": "BIOE",
       "mapped_footprint_m2": 1983.96,
       "height_m": 26.0,
@@ -807,26 +603,6 @@
       "illustrative_pv_modules": 0,
       "details": [
         "Warm masonry teaching/research elevations with grouped glazing"
-      ],
-      "accuracy": "Official footprint retained; exterior partitions, heights and members are approximate public-photo interpretations."
-    },
-    {
-      "facility_id": "LSB",
-      "mapped_footprint_m2": 2066.87,
-      "height_m": 24.8,
-      "levels": 5,
-      "volume_parts": [
-        {
-          "area_m2": 2066.91,
-          "base_offset_m": 0,
-          "height_m": 24.1,
-          "material": "Precast"
-        }
-      ],
-      "bounded_shade_panels": 92,
-      "illustrative_pv_modules": 125,
-      "details": [
-        "Laboratory glazing and bounded facade modules"
       ],
       "accuracy": "Official footprint retained; exterior partitions, heights and members are approximate public-photo interpretations."
     },
@@ -997,26 +773,6 @@
       "details": [
         "Mapped slate slope perimeter and flat inner roof",
         "Grouped masonry window bays, mullions, stone sills, string courses and grounded entry"
-      ],
-      "accuracy": "Official footprint retained; exterior partitions, heights and members are approximate public-photo interpretations."
-    },
-    {
-      "facility_id": "HSEB",
-      "mapped_footprint_m2": 1629.19,
-      "height_m": 17.8,
-      "levels": 4,
-      "volume_parts": [
-        {
-          "area_m2": 1629.29,
-          "base_offset_m": 0,
-          "height_m": 17.1,
-          "material": "Precast"
-        }
-      ],
-      "bounded_shade_panels": 0,
-      "illustrative_pv_modules": 0,
-      "details": [
-        "Mass-timber education building expressed by warm structure and large glazing"
       ],
       "accuracy": "Official footprint retained; exterior partitions, heights and members are approximate public-photo interpretations."
     },
@@ -1501,26 +1257,6 @@
       "accuracy": "Official footprint retained; exterior partitions, heights and members are approximate public-photo interpretations."
     },
     {
-      "facility_id": "UMSA",
-      "mapped_footprint_m2": 4178.97,
-      "height_m": 39,
-      "levels": 6,
-      "volume_parts": [
-        {
-          "area_m2": 4178.93,
-          "base_offset_m": 0,
-          "height_m": 38.3,
-          "material": "Precast"
-        }
-      ],
-      "bounded_shade_panels": 0,
-      "illustrative_pv_modules": 0,
-      "details": [
-        "Separate mapped hospital/research wings with restrained glazing and roof edges"
-      ],
-      "accuracy": "Official footprint retained; exterior partitions, heights and members are approximate public-photo interpretations."
-    },
-    {
       "facility_id": "UMPH",
       "mapped_footprint_m2": 35.17,
       "height_m": 4.55,
@@ -1561,7 +1297,7 @@
       "accuracy": "Official footprint retained; exterior partitions, heights and members are approximate public-photo interpretations."
     }
   ],
-  "refined_facilities": 74,
+  "refined_facilities": 61,
   "automatic_rooftop_boxes": false,
   "shade_panels_bound_to_own_floor": true,
   "source_notes": "sources/ARCHITECTURE_REFERENCES.md"

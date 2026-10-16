@@ -33,3 +33,8 @@ See `../sources/TRANSIT_AND_ALDER_BLOCK.md` for the university/operator/architec
 ## West Campus housing
 
 Five residence halls and the Cedar, Mercer and Stevens apartment groups use independent photo-referenced exterior systems. Alder remains in its existing dedicated builder. See [West housing sources](../sources/WEST_HOUSING_REFERENCES.md) and `output/west_housing_refinement.json` for the 21 facilities, upper courts/decks, wall materials, window modules and ground-fitted thresholds. Public floor-count tags do not certify above-ground storeys at every uphill frontage.
+
+
+## Highlights review
+
+The 28-stop tour includes Alder Hall second, with no Alder geometry changes. Fifteen tour buildings and the separately mapped AVA gallery addition have independent assemblies, including deep Kane portico voids, supported PACCAR arrival/meeting-room geometry, distinct science/health facade skins, lower boat-bay contact at Conibear and a pitched main Hec Edmundson roof. Existing custom Gothic/core, longhouse, museum, stadium and station models are retained after review. See [reference decisions](../sources/HIGHLIGHTS_REFERENCES.md).

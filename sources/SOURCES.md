@@ -20,3 +20,8 @@ The raw official footprint and public tree/bench files retain coordinates. The n
 ## West Campus housing refinements
 
 See [West Campus housing evidence](WEST_HOUSING_REFERENCES.md) and `west_housing_review.json` for the HFS/Mahlum/Mithun/Ankrom Moisan exterior review. Original licensed reference photos and aerial imagery are not redistributed.
+
+
+## Architectural highlights review
+
+See [HIGHLIGHTS_REFERENCES.md](HIGHLIGHTS_REFERENCES.md) and `highlights_review.json` for the 28-stop audit, primary exterior references, aerial extents/hashes and interpretation limits. Reference photographs are not redistributed.
