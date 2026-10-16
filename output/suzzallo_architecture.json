@@ -1,0 +1,95 @@
+{
+  "facility_id": "SUZ",
+  "height_m": 32.5,
+  "levels": 3,
+  "volume_parts": [
+    {
+      "name": "Stone lower front with three recessed portals",
+      "area_m2": 1176.77,
+      "height_m": 8.8,
+      "base_offset_m": 0.0
+    },
+    {
+      "name": "Reading-room brick upper hall",
+      "area_m2": 1196.29,
+      "height_m": 19.3,
+      "base_offset_m": 8.8
+    },
+    {
+      "name": "Southeast Gothic wing",
+      "area_m2": 647.22,
+      "height_m": 21.4,
+      "base_offset_m": 0.0
+    },
+    {
+      "name": "Lower modern addition",
+      "area_m2": 3458.16,
+      "height_m": 18.8,
+      "base_offset_m": 0.0
+    }
+  ],
+  "details": [
+    "Thirteen Gothic reading-room window bays, brick spandrels, stone piers and patinated pitched roof",
+    "Three physically recessed pointed portals with layered archivolts, gables, paired doors and restrained banner/sculpture forms",
+    "Continuous west terrace, broad short stone stair, balustrades and north side ramp from UW/GLY photographs",
+    "Separate southeast Gothic wing and lower modern library addition"
+  ],
+  "reference": "https://www.gly.com/uw-seismic-improvements",
+  "focus_bounds": [
+    24.84133817136242,
+    -24.29146730545381,
+    48.17224056951956,
+    61.80720941463764,
+    41.01578456371538,
+    83.29224056951956
+  ],
+  "focus_direction": [
+    -0.96,
+    -0.28,
+    0.65
+  ],
+  "validation_probes": {
+    "recessed_portals": [
+      {
+        "origin": [
+          47.89420031086043,
+          11.282937778890487,
+          52.292240569519564
+        ],
+        "direction": [
+          0.9832011076044274,
+          -0.18252556534750752,
+          0
+        ],
+        "minimum_recess_m": 1.7
+      },
+      {
+        "origin": [
+          47.035738772398894,
+          6.658707009659715,
+          52.292240569519564
+        ],
+        "direction": [
+          0.9832011076044274,
+          -0.18252556534750752,
+          0
+        ],
+        "minimum_recess_m": 1.7
+      },
+      {
+        "origin": [
+          46.17727723393735,
+          2.0344762404289525,
+          52.292240569519564
+        ],
+        "direction": [
+          0.9832011076044274,
+          -0.18252556534750752,
+          0
+        ],
+        "minimum_recess_m": 1.7
+      }
+    ]
+  },
+  "limits": "Mapped envelope retained. Bay organization and portal/terrace forms are photo-referenced; secondary dimensions, grades and sculptural silhouettes are approximate."
+}

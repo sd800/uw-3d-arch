@@ -1,5 +1,14 @@
 # Changelog
 
+## 26.10.16.2 — 2026-10-16
+
+- Keep Guide on the toolbar row when there is room for Guide alone; place collapsed Explore directly below it. Retain Explore to the left of Guide when both fit.
+- Add Drumheller Fountain as the third Highlights stop, following Suzzallo Library and Alder Hall, with a dedicated outdoor-space view.
+- Rebuild Suzzallo’s Red Square frontage from exterior photographs: a continuous raised brick/stone terrace, broad short 14-step central flight, stone balustrades, side ramp, three recessed Gothic portals and thirteen reading-room window bays. Fit the entrance grade to the plaza and make Explore face the west entrance from the west with a slight southern offset.
+- Join the stair foot and both flanks to Red Square with flush brick paving and closed stone stair cheeks; remove exposed lawn/road wedges and the raised red apron edge.
+- Unify mapped pedestrian approaches on all sides of Red Square, close plaza-edge seams and grade entrance shelves around Kane, Odegaard, Meany and Gerberding. Optimize Meany Hall with separate performance/stage volumes, gray sloping roof edges and restrained lobby glazing.
+- Repair University of Washington Station’s intermediate circulation void, stair/escalator forms, open ground/bridge portals and railing clearance at the outdoor stair landing.
+
 ## 26.10.16.1 — 2026-10-16
 
 - Review all 28 architectural highlights, add Alder Hall in second place and retain its existing geometry. Rebuild 15 landmark exteriors plus the separately layered Henry Art Gallery addition using university, architect and construction photographs and reviewed aerials.

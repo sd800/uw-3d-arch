@@ -24,7 +24,12 @@
     "https://www.washington.edu/news/2026/03/06/peak-bloom-predictions-are-in-for-uws-cherry-trees/",
     "https://lib.uw.edu/locations-hours/suzzallo-and-allen-libraries-history/",
     "https://www.hok.com/projects/view/university-of-washington-husky-stadium-renovation-and-expansion/",
-    "https://cdn.uw.edu/wp-content/uploads/sites/57/2020/08/10204546/visit-campus-highlightsDJI_0005-e1597119390956.jpg"
+    "https://cdn.uw.edu/wp-content/uploads/sites/57/2020/08/10204546/visit-campus-highlightsDJI_0005-e1597119390956.jpg",
+    "https://www.washington.edu/admin/ada/suzzall.htm",
+    "https://www.openstreetmap.org/way/1106705315",
+    "https://meanycenter.org/visit/visitor-information",
+    "https://www.gly.com/uw-seismic-improvements",
+    "https://uw.pressbooks.pub/uwlibrariestour/chapter/suzzallo-library-4/"
   ],
   "limits": "Mapped exterior outlines and positions; secondary shapes, dimensions and elevations are independent exterior approximations.",
   "mapped_step_flights": [
@@ -36,5 +41,14 @@
       "osm_way": 343612259,
       "steps": 3
     }
-  ]
+  ],
+  "review_date": "2026-10-16",
+  "suzzallo_main_entry": {
+    "osm_way": 1106705315,
+    "steps": 14,
+    "mapped_route_width_m": 10,
+    "photo_interpreted_stair_width_top_m": 21.6,
+    "photo_interpreted_stair_run_m": 4.5,
+    "estimated_riser_m": 0.16
+  }
 }

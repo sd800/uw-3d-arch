@@ -1,0 +1,29 @@
+{
+  "facility_id": "MNY",
+  "height_m": 18.6,
+  "levels": 3,
+  "volume_parts": [
+    {
+      "name": "North teaching and lobby wing",
+      "height_m": 11.4,
+      "area_m2": 2383.29
+    },
+    {
+      "name": "Performance volume",
+      "height_m": 13.4,
+      "area_m2": 1163.2
+    },
+    {
+      "name": "Stage/service volume",
+      "height_m": 17.9,
+      "area_m2": 1031.77
+    }
+  ],
+  "details": [
+    "Separate teaching/lobby wing, performance enclosure and taller stage volume",
+    "Gray sloping roof perimeter and individual flat metal caps",
+    "Mostly opaque brick theater elevations with limited ground-level lobby glazing; no office window grid"
+  ],
+  "reference": "https://meanycenter.org/visit/visitor-information",
+  "limits": "Mapped envelope retained; exterior partitions, heights and roof sections are approximate. Moderate exterior optimization, not detailed theater BIM."
+}

@@ -1,20 +1,18 @@
 # Delivery validation
 
-Release 26.10.16.1.
+Release 26.10.16.2.
 
-- Rhino v7 uses meter units with 871 nonempty layers, 1033 valid closed native solids and 4969 closed mesh objects. All read-back geometry is valid.
-- Independent Three.js 3DS import preserves object names and their campus, neighboring and environment layer mappings.
-- All 20 satellite-reviewed Alder-area crosswalk paths have exported paint: 40 direct ray probes passed. Crossings follow their mapped walking paths, use paired stripes and remain clipped inside roadway bounds.
-- Alder Hall retains its mapped open-sky courtyard and enclosing roof wings. The north shopfront is recessed behind the column arcade; two independent shelter roofs keep the boarding lane clear. Twenty light-rail bridge/landing probes remain continuous.
-- Ground contact: 6181 samples across 869 campus and neighboring buildings; no missing ground samples. Maximum numerical contact gap is below 0.001 m. Opaque terrain is retained at horizontal/low viewing angles.
-- Navigation and loading checks cover grounded pivots, pointer-aligned pan/zoom, no inertia, drag/selection safeguards, atomic viewport resize/draw and English default with remembered manual language choices.
-- Compressed web, local classic-script and standalone payloads restore the exact source 3DS bytes. Positions, normals, material groups and indices round-trip without geometry loss; worker decode and bounded blocks remain enabled.
-- SEO checks cover canonical/domain, the 272-building bilingual directory, local assets, model digest and offline edition.
-- Browser review uses the actual local WebGL viewer for Alder’s north frontage, shopfront recess, shelter/street relationship and surrounding crossing layout. Preview images are exported from that viewer.
-- West housing: 21 facility layers have individual exterior systems. Focused ray probes retain open courts and recessed decks; all facade members stay within their roof bounds. Lander copper lounge panels remain confined to its northeast exterior corner. Alder and the other 848 unaffected layers have exactly the previous vertex/index/material data.
-- Browser review also covers the rebuilt Lander frontage/court and Maple/Terry precinct; the housing preview is exported from the actual WebGL viewer.
-- Highlights: all 28 tour stops are audited; Alder is second. Sixteen rebuilt facility assemblies pass roof bounds; direct export probes confirm Kane’s 2.645 m recessed glazing, the IEB open lower passage with an upper spanning volume, four lawn-level law-library skylights and Conibear’s lower lake-facing grade. All 854 unaffected layers, including the complete housing revision and Alder, exactly match their previous vertex/index/material data.
-- Actual local WebGL review covers Kane, PACCAR, both Henry wings, Rosling, Conibear from the lake at low angle, and the repaired continuous arena roof. No browser errors/warnings were observed. Updated preview images are viewer exports or direct browser captures.
+- Rhino v7 read-back: meter units, 871 nonempty layers, 1036 valid closed native solids, 4977 closed meshes and 6017 total objects; all geometry is valid.
+- Independent Three.js 3DS import: 4977 objects and 5,533,776 triangles; object names and layer mappings are preserved.
+- Direct export rays verify all 14 Suzzallo treads, three physically recessed portals, the common entry/terrace datum, the lower brick forecourt at the foot and both flanks, and 28 Red Square perimeter stair samples. The library Explore direction faces its west entrance from the west with a slight southern offset.
+- Station probes retain open south/bridge portals, an open intermediate circulation void, bridge-level upper lobby and clear outdoor stair landing. The main upper roof remains rectangular; lower canopy projections stay below it.
+- Tour order starts Suzzallo, Alder, Drumheller Fountain. The 29 stops comprise 28 building highlights and one outdoor stop; the campus building inventory remains 272.
+- Ground contact: 6,181 samples across 869 campus and neighboring buildings, zero missing samples and maximum numerical contact gap below 0.001 m.
+- Vertex/index/material comparison with the previous release changes only Suzzallo, Meany, UW Station and Environment. All other 867 layers, including Alder, the optimized housing and neighboring buildings, are unchanged.
+- Navigation/loading regression checks cover grounded pivots, pointer-aligned mouse/touch pan and zoom, no inertia, selection safeguards, horizontal views and viewport resize/reset. Previous loading behavior and English defaults remain intact.
+- Compressed HTTP, local classic-script and standalone payloads restore the exact source 3DS SHA-256. Browser parsing remains worker-based with bounded blocks.
+- SEO checks cover the canonical domain, bilingual 272-building directory, assets, current model digest and offline edition. Release metadata follows calendar versioning.
+- Actual local WebGL review covers Suzzallo’s frontal entrance/terrace, brief pan/zoom, UW Station’s roof/entrances and the third fountain stop. A lightweight real-controller fixture verifies wide, Guide-only and wrapped action layouts; a mobile UW check verifies toolbar behavior. No browser errors/warnings were observed.
 - Finder metadata is ignored and retained locally, and excluded from the delivery ZIP.
 
-These checks validate deliverable integrity and interaction, not as-built survey accuracy. External dimensions, grades and detail are public-source approximations. Direct file:// navigation is unavailable in the browser test interface; local/offline loader paths and exact embedded bytes are checked independently.
+These checks validate deliverable integrity and interaction, not as-built survey accuracy. Exterior dimensions, grades and details are public-source approximations. Direct file:// navigation is unavailable in the browser test interface; local/offline loader paths and exact embedded bytes are checked independently.

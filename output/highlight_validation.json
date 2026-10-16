@@ -1,6 +1,7 @@
 {
-  "release": "26.10.16.1",
-  "highlights": 28,
+  "release": "26.10.16.2",
+  "building_highlights": 28,
+  "highlight_stops": 29,
   "rebuilt_facilities": 16,
   "alder_second": true,
   "kane_recess_m": 2.644999510214965,

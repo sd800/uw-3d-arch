@@ -46,30 +46,64 @@ def glass_shell(ms,p,base,h,bay=2.7,opening=None,trim='Metal'):
                 ms[trim].append(cylinder((a[0]+u[0]*j*length/count,a[1]+u[1]*j*length/count,base),(a[0]+u[0]*j*length/count,a[1]+u[1]*j*length/count,base+h),.045,5))
 
 def build_uw_station(ms,p,base,code,lay,info,ground):
-    h=10.4;upper=5.6;opening=unary_union([box(405,-692,414,-684),box(408,-636,420,-632),box(420,-663,425,-650)])
-    add(ms,p,base,.18,'Concrete');add(ms,p,base+upper-.30,.30,'Concrete')
-    glass_shell(ms,p,base,h-.3,2.5,opening,'Metal')
+    h=10.4;upper=5.6
+    main=Polygon([(410.434,-634.492),(417.951,-634.369),(419.602,-687.771),(411.553,-687.988)])
+    lower_open=unary_union([box(405,-693,421,-684),box(420,-663,425,-650)])
+    upper_open=box(411.1,-636,416.4,-632)
+    # The circulation void remains open in the intermediate floor. The old
+    # full slab and one ten-metre glass infill erased the two-level entrance.
+    void=p.intersection(box(411.8,-683,418.4,-665))
+    add(ms,p,base,.18,'Concrete');add(ms,p.difference(void),base+upper-.30,.30,'Concrete')
+    glass_shell(ms,p,base,upper-.35,2.5,lower_open,'Metal')
+    glass_shell(ms,main,base+upper,h-upper-.3,2.5,upper_open,'Metal')
+    # Internal stair and paired escalator envelopes rise to the same upper
+    # lobby datum. Secondary dimensions are photograph-informed estimates.
+    run=10.5;start=-680.5;end=start+run;low=base+.18;top=base+upper
+    for i in range(32):
+        q=box(414.0,start+i*run/32,416.2,start+(i+1)*run/32)
+        z=low+(top-low)*(i+1)/32
+        add(ms,q,z-.22,.22,'StepStone')
+    for x in [412.8,417.4]:
+        q=segmentize(box(x-.56,start,x+.56,end),.7)
+        m=extrusion(q,-.24,.24);t=np.clip((m.vertices[:,1]-start)/run,0,1);m.vertices[:,2]+=low+(top-low)*t;trimesh.repair.fix_normals(m);ms['Metal'].append(m)
+        for side in [-1,1]:
+            a=(x+side*.58,start,low+.83);b=(x+side*.58,end,top+.83)
+            ms['Frame'].append(cylinder(a,b,.075,8))
+    for x in [413.83,416.37]:ms['Metal'].append(cylinder((x,start,low+.95),(x,end,top+.95),.04,6))
     # Photo-visible upper/lower lobby structure and narrow east elevator projection.
     for y in np.arange(-685,-635,5.4):
         for x in [411.3,417.7]:
             if p.buffer(.4).covers(Point(x,y)):ms['Metal'].append(cylinder((x,y,base-.3),(x,y,base+h-.2),.14,6))
     core=p.intersection(box(418.3,-663,423,-652));add(ms,core,base,upper+.1,'Precast')
-    roof=p.buffer(.65,join_style=2)
+    # The mapped outer envelope includes lower canopies and service bays.
+    # The upper glass bar and thin roof are a simple rectangle in LMN photos,
+    # rather than an extrusion of those ground-level projections.
+    roof=main.buffer(.35,join_style=2)
+    add(ms,p.difference(main),base+upper,.12,'RoofSilver')
     add(ms,roof,base+h,.20,'RoofSilver')
     add(ms,roof.boundary.buffer(.09),base+h+.20,.12,'Metal')
-    add(ms,p.buffer(-.12).difference(p.buffer(-.38)),base+upper,.48,'Precast')
+    # Keep the bridge portal clear of the intermediate edge beam.
+    beam=p.buffer(-.12).difference(p.buffer(-.38)).difference(upper_open)
+    add(ms,beam,base+upper-.12,.20,'Metal')
     for y in np.arange(-684,-638,3.0):
         beam=box(410.5,y-.075,418.3,y+.075).intersection(roof);add(ms,beam,base+h-.3,.25,'Metal')
-    # Darkened door portals remain at grade, with individually framed leaves.
+    # A supported portal and shallow west canopy frame the actual south entry;
+    # do not fill that public passage with an opaque fake window rectangle.
     from architecture_refinement import window
-    window(ms,np.array([409.1,-690.7]),np.array([1.,0]),np.array([0.,-1]),base+.12,2.6,3.1,False,'Metal',1)
     sa=np.array([411.55,-687.99]);sb=np.array([419.60,-687.77]);su=(sb-sa)/np.linalg.norm(sb-sa);sn=np.array([su[1],-su[0]]);sc=(sa+sb)/2
-    window(ms,sc,su,sn,base+3.0,7.6,.70,False,'Metal',0)
-    letter_sign(ms,'UNIVERSITY OF WASHINGTON',sc+sn*.265,su,sn,base+3.13,7.4,.42)
+    for at in [sa+su*.28,sb-su*.28]:
+        q=Polygon([at-su*.24-sn*.24,at+su*.24-sn*.24,at+su*.24+sn*.24,at-su*.24+sn*.24]);add(ms,q,base,3.25,'Concrete')
+    q=Polygon([sa-sn*.26,sb-sn*.26,sb+sn*.26,sa+sn*.26]);add(ms,q,base+3.20,.48,'Precast')
+    letter_sign(ms,'UNIVERSITY OF WASHINGTON',sc+sn*.285,su,sn,base+3.27,7.2,.25)
+    canopy=box(406.4,-685,411.8,-665).intersection(p.buffer(1.1,join_style=2));add(ms,canopy,base+3.55,.24,'RoofSilver')
+    for x,y in [(407.2,-682.5),(407.2,-668)]:
+        if canopy.covers(Point(x,y)):ms['Metal'].append(cylinder((x,y,min(base,float(ground(x,y)))-.3),(x,y,base+3.55),.12,8))
     window(ms,np.array([422.8,-657.4]),np.array([0.,1]),np.array([1.,0]),base+3.0,3.6,.9,False,'Metal',0)
     letter_sign(ms,'LINK',(423.065,-657.4),np.array([0.,1]),np.array([1.,0]),base+3.12,3.3,.62)
     for q in polygons(p):native_extrude(q,base,.18,code+'_Plinth',lay,'Concrete',info)
-    result={'facility_id':'LINK_UW','height_m':h+.32,'levels':2,'volume_parts':[{'name':'Two-level glazed station headhouse','height_m':h,'area_m2':round(p.area,2)}],'details':['Mapped station footprint with a two-level glazed lobby, steel column/bay structure and thin silver roof','Upper lobby deck meets the mapped Montlake bicycle/pedestrian bridge','Ground entrances, east elevator projection and restrained vector signage','Above-ground exterior only; underground station and railway tunnels are not fabricated'],'reference':UW_STATION}
+    result={'facility_id':'LINK_UW','height_m':h+.32,'levels':2,'volume_parts':[{'name':'Two-level glazed station headhouse','height_m':h,'area_m2':round(p.area,2)}],'details':['Mapped station footprint with a two-level glazed lobby, steel column/bay structure and thin silver roof','Intermediate floor has an open circulation void, a stair and paired escalator envelopes; upper bridge portal has no blocking edge beam','Rectangular upper glass bar and thin roof; lower canopy/service projections remain below the main roof'
+        ,'Ground entrances, east elevator projection and restrained vector signage','Above-ground exterior only; underground station and railway tunnels are not fabricated'],'reference':UW_STATION}
+    result['validation_probes']={'south_entry':{'origin':[415.5,-689.0,base+1.8],'direction':[0,1,0],'clear_distance_m':5},'upper_portal':{'origin':[413.66,-635.5,base+upper+1.0],'direction':[0,1,0],'clear_distance_m':3},'floor_void':[415.0,-681.5,base+upper],'upper_lobby':[414,-640,base+upper]}
     REPORT.append(result);return result
 
 def build_ud_south(ms,p,z,code,lay,info,ground):
@@ -131,8 +165,8 @@ def station_landscape(eg,env,osm,station,ground,footprints,places):
         return np.array(zz)
     for q in polygons(segmentize(plan,2.5)):
         m=extrusion(q,-.48,.48);m.vertices[:,2]+=z_at(m.vertices[:,0],m.vertices[:,1]);trimesh.repair.fix_normals(m);eg['BridgeDeck'].append(m)
-    ends=[Point(g.coords[0] if z0<z1 else g.coords[-1])for g,_,z0,z1 in lines if abs(z0-z1)>.1]+[Point(413.66,-634.44)]
-    guards=plan.boundary.difference(unary_union([pt.buffer(1.8)for pt in ends]))
+    ends=[Point(g.coords[0] if z0<z1 else g.coords[-1])for g,_,z0,z1 in lines if abs(z0-z1)>.1]+[Point(413.66,-634.44),Point(406.188742,-614.189949)]
+    guards=plan.boundary.difference(unary_union([pt.buffer(2.65)for pt in ends]))
     for line in ([guards]if guards.geom_type=='LineString'else list(guards.geoms)):
         if line.geom_type!='LineString':continue
         pts=[line.interpolate(d)for d in np.linspace(0,line.length,max(2,math.ceil(line.length/2)+1))]
@@ -154,7 +188,7 @@ def station_landscape(eg,env,osm,station,ground,footprints,places):
     plaza=p.buffer(6.0,join_style=2).difference(footprints).difference(plan).buffer(0);env(plaza,.18,.055,'Paving')
     for x in np.arange(400,430,3):env(LineString([(x,-696),(x,-628)]).buffer(.018).intersection(plaza),.237,.012,'StoneJoint')
     hit=unary_union([p,plan]);places.append({'id':'transit-uw-station','name':'University of Washington Station','name_zh':'华盛顿大学轻轨站','position':[414,-659,base+2],'hitArea':mapping(hit),'source':UW_STATION})
-    REPORT.append({'facility_id':'UW_STATION_BRIDGE','source_ids':[f['properties']['osm_id']for f in fs],'deck_height_m':round(level,3),'connected_parts':len(polygons(plan)),'source_stair_treads':N,'plan_area_m2':round(plan.area,2),'note':'Mapped curved surface bridge, descending cycle ramp, outdoor stairs and ground-reaching piers; deck elevations are approximate exterior interpretation.'})
+    REPORT.append({'facility_id':'UW_STATION_BRIDGE','source_ids':[f['properties']['osm_id']for f in fs],'deck_height_m':round(level,3),'connected_parts':len(polygons(plan)),'source_stair_treads':N,'open_stair_landing':[406.188742,-614.189949,level+1.0],'plan_area_m2':round(plan.area,2),'note':'Mapped curved surface bridge, descending cycle ramp, outdoor stairs and ground-reaching piers; deck elevations are approximate exterior interpretation.'})
 
 def write_transit_report():
-    (OUT/'transit_refinement.json').write_text(json.dumps({'review_date':'2026-10-15','facilities':REPORT,'scope':'Surface exteriors, station entries, public approach and bridge; not underground railway engineering.','limits':'Mapped outlines and entrances are retained; heights, structural bay sizes, signage and furniture dimensions are approximate photo interpretations.'},ensure_ascii=False,indent=2)+'\n')
+    (OUT/'transit_refinement.json').write_text(json.dumps({'review_date':'2026-10-16','facilities':REPORT,'scope':'Surface exteriors, station entries, public approach and bridge; not underground railway engineering.','limits':'Mapped outlines and entrances are retained; heights, structural bay sizes, signage and furniture dimensions are approximate photo interpretations.'},ensure_ascii=False,indent=2)+'\n')

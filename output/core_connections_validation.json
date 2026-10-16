@@ -1,0 +1,15 @@
+{
+  "release": "26.10.16.2",
+  "library_treads": 14,
+  "library_recessed_portals": 3,
+  "library_front_explore": true,
+  "flush_forecourt_probes": 3,
+  "perimeter_tread_probes": 28,
+  "station_portals_open": true,
+  "station_floor_void_open": true,
+  "rectangular_upper_roof": true,
+  "exterior_stair_landing_open": true,
+  "highlight_stops": 29,
+  "fountain_position": 3,
+  "passed": true
+}

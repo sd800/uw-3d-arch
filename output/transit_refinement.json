@@ -1,5 +1,5 @@
 {
-  "review_date": "2026-10-15",
+  "review_date": "2026-10-16",
   "facilities": [
     {
       "facility_id": "LINK_UW",
@@ -14,11 +14,50 @@
       ],
       "details": [
         "Mapped station footprint with a two-level glazed lobby, steel column/bay structure and thin silver roof",
-        "Upper lobby deck meets the mapped Montlake bicycle/pedestrian bridge",
+        "Intermediate floor has an open circulation void, a stair and paired escalator envelopes; upper bridge portal has no blocking edge beam",
+        "Rectangular upper glass bar and thin roof; lower canopy/service projections remain below the main roof",
         "Ground entrances, east elevator projection and restrained vector signage",
         "Above-ground exterior only; underground station and railway tunnels are not fabricated"
       ],
-      "reference": "https://lmnarchitects.com/project/university-of-washington-station-sound-transit"
+      "reference": "https://lmnarchitects.com/project/university-of-washington-station-sound-transit",
+      "validation_probes": {
+        "south_entry": {
+          "origin": [
+            415.5,
+            -689.0,
+            22.135557160074292
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "clear_distance_m": 5
+        },
+        "upper_portal": {
+          "origin": [
+            413.66,
+            -635.5,
+            26.93555716007429
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "clear_distance_m": 3
+        },
+        "floor_void": [
+          415.0,
+          -681.5,
+          25.93555716007429
+        ],
+        "upper_lobby": [
+          414,
+          -640,
+          25.93555716007429
+        ]
+      }
     },
     {
       "facility_id": "UW_STATION_BRIDGE",
@@ -33,6 +72,11 @@
       "deck_height_m": 25.936,
       "connected_parts": 1,
       "source_stair_treads": 55,
+      "open_stair_landing": [
+        406.188742,
+        -614.189949,
+        26.93555716007429
+      ],
       "plan_area_m2": 1417.86,
       "note": "Mapped curved surface bridge, descending cycle ramp, outdoor stairs and ground-reaching piers; deck elevations are approximate exterior interpretation."
     },

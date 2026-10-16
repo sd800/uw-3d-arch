@@ -24,7 +24,8 @@
     "check:crosswalks": "node scripts/check_alder_crosswalks.mjs",
     "check:touch": "node scripts/check_touch.mjs",
     "check:west-housing": "node scripts/check_west_housing.mjs",
-    "check:highlights": "node scripts/check_highlights.mjs"
+    "check:highlights": "node scripts/check_highlights.mjs",
+    "check:core-connections": "node scripts/check_core_connections.mjs"
   },
   "dependencies": {
     "three": "0.186.1"

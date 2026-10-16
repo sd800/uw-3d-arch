@@ -31,7 +31,9 @@ for record in data['records']:
     assert record['height_status'] in ['estimated','published','municipal']
 assert data['compression']=='gzip' and (r/urlsplit(data['modelUrl']).path).is_file()
 assert {b['zone'] for b in data['records']}=={'central','west','south','east'}
-assert len(data['landmarkOrder'])==len([b for b in data['records'] if b['landmark']])
+expected_stops={b['facility_id']for b in data['records']if b['landmark']}|{p['facility_id']for p in data.get('tourPlaces',[])}
+assert len(data['landmarkOrder'])==len(expected_stops) and set(data['landmarkOrder'])==expected_stops
+assert all(p.get('outdoor')for p in data.get('tourPlaces',[]))
 entity=next(x for x in schema['@graph'] if x['@type']=='3DModel')
 assert entity['sha256']==hashlib.sha256((r/'output/UW_Seattle.3ds').read_bytes()).hexdigest()
 assert entity['contentUrl']==site+'output/UW_Seattle.3ds'

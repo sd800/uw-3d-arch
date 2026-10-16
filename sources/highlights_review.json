@@ -35,14 +35,14 @@
   "rebuilt_companion_facilities": [
     "AVA"
   ],
-  "retained_highlights": 13,
+  "retained_highlights": 12,
   "audit": [
     {
       "facility_id": "SUZ",
       "name": "Suzzallo Library",
-      "action": "retain_existing_custom_model",
-      "notes": "Retain separate reading hall and later wings, tall triplet windows, buttresses and supported west portal.",
-      "reference": "https://lib.uw.edu/locations-hours/suzzallo-and-allen-libraries-history/"
+      "action": "refined_west_front",
+      "notes": "Photo-referenced west reading hall, thirteen Gothic window bays, three physically recessed portals, broad short stair and continuous raised terrace; Explore faces the entrance from Red Square.",
+      "reference": "https://www.gly.com/uw-seismic-improvements"
     },
     {
       "facility_id": "ALD",
@@ -373,5 +373,15 @@
     "layer": "W105_Alder Hall",
     "geometry_sha256": "af9add3e9bbb491f741183cda7127c6076caf735ac63bb386e3bc133a281eb07",
     "digest_method": "Sorted [3DS object name, SHA256(vertices + face indices/flags + material assignment)] pairs serialized as Python JSON; smoothing metadata excluded."
-  }
+  },
+  "outdoor_highlights": [
+    {
+      "name": "Drumheller Fountain",
+      "facility_id": "DRUMHELLER",
+      "tour_position": 3,
+      "layer": "Environment",
+      "action": "retain existing detailed fountain and add its own tour view"
+    }
+  ],
+  "refined_existing_highlights": 1
 }

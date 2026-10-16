@@ -1569,6 +1569,11 @@
     "category": "building",
     "material": "RoofMembrane"
   },
+  "W040M5400": {
+    "layer": "W040_Suzzallo Library",
+    "category": "building",
+    "material": "RoofPatina"
+  },
   "W040M6000": {
     "layer": "W040_Suzzallo Library",
     "category": "building",
@@ -1589,10 +1594,15 @@
     "category": "building",
     "material": "Frame"
   },
-  "W040M9300": {
+  "W040M8400": {
     "layer": "W040_Suzzallo Library",
     "category": "building",
-    "material": "StepStone"
+    "material": "Purple"
+  },
+  "W040M8500": {
+    "layer": "W040_Suzzallo Library",
+    "category": "building",
+    "material": "Gold"
   },
   "W041M2700": {
     "layer": "W041_University of Washington Club (Faculty Center)",
@@ -1729,20 +1739,25 @@
     "category": "building",
     "material": "Foundation"
   },
-  "W044M4300": {
+  "W044M4100": {
     "layer": "W044_Meany Hall",
     "category": "building",
-    "material": "BrickUmber"
+    "material": "BrickRed"
   },
   "W044M4600": {
     "layer": "W044_Meany Hall",
     "category": "building",
     "material": "Precast"
   },
-  "W044M5300": {
+  "W044M5100": {
     "layer": "W044_Meany Hall",
     "category": "building",
-    "material": "RoofWarm"
+    "material": "RoofSlate"
+  },
+  "W044M5200": {
+    "layer": "W044_Meany Hall",
+    "category": "building",
+    "material": "RoofMembrane"
   },
   "W044M5500": {
     "layer": "W044_Meany Hall",
@@ -9879,10 +9894,20 @@
     "category": "building",
     "material": "DarkGlass"
   },
+  "W272D6900": {
+    "layer": "W272_University of Washington Station",
+    "category": "building",
+    "material": "Frame"
+  },
   "W272M7900": {
     "layer": "W272_University of Washington Station",
     "category": "building",
     "material": "Marking"
+  },
+  "W272M9300": {
+    "layer": "W272_University of Washington Station",
+    "category": "building",
+    "material": "StepStone"
   },
   "E0300": {
     "layer": "Environment",
@@ -9949,6 +9974,11 @@
     "category": "environment",
     "material": "Cedar"
   },
+  "E6000": {
+    "layer": "Environment",
+    "category": "environment",
+    "material": "LightStone"
+  },
   "E6100": {
     "layer": "Environment",
     "category": "environment",
@@ -9990,6 +10020,16 @@
     "material": "Ground"
   },
   "E7002": {
+    "layer": "Environment",
+    "category": "environment",
+    "material": "Ground"
+  },
+  "E7003": {
+    "layer": "Environment",
+    "category": "environment",
+    "material": "Ground"
+  },
+  "E7004": {
     "layer": "Environment",
     "category": "environment",
     "material": "Ground"

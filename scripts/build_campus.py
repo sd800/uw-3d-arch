@@ -7,6 +7,10 @@ from transit_architecture import build_uw_station,station_landscape,write_transi
 from alder_block import BLOCK,detail_block,block_building
 from husky_stadium import build_husky_stadium
 from core_landscape import detail_core,core_plan
+from suzzallo_approach import entry_plan,approach_grade,build_approach
+from red_square_connections import connection_plan,frontage_grade,build_connections
+from meany_refinement import build_meany
+from suzzallo_architecture import build_suzzallo
 from core_architecture import oriented_roofs,core_accents
 from architecture_refinement import build_refined,write_report
 from neighboring_areas import build_neighbors
@@ -77,6 +81,7 @@ ys=np.linspace(ex['ymin'],ex['ymax'],dem.shape[0],endpoint=False)+(ex['ymax']-ex
 interpolate=RegularGridInterpolator((ys,xs),dem[::-1],bounds_error=False,fill_value=None)
 def raw_ground(x,y):
     x,y=np.broadcast_arrays(x,y);return interpolate(np.column_stack([y.ravel(),x.ravel()])).reshape(x.shape)
+library_entry=entry_plan(osm,next(f['poly']for f in buildings if f['id']=='SUZ'),raw_ground)
 for f in buildings:
     c=f['poly'].representative_point();f['ground']=float(raw_ground(c.x,c.y))
     if f['id']=='CSH':
@@ -85,6 +90,7 @@ for f in buildings:
         aa,bb,cc,dd=f['poly'].bounds
         edge=f['poly'].intersection(LineString([(cc-.8,bb),(cc-.8,dd)]))
         q=edge.representative_point();f['ground']=float(raw_ground(q.x,q.y))
+next(f for f in buildings if f['id']=='SUZ')['ground']=library_entry['base']
 # Joined/overlapping mapped wings share one visualization grade. Otherwise two
 # pads can project into each other and bury the adjacent building base.
 contact_tree=STRtree([f['poly']for f in buildings]);parent=list(range(len(buildings)))
@@ -112,7 +118,17 @@ def ground(x,y):
         pt=Point(xx[k],yy[k]);distance=alder_envelope.distance(pt)
         if distance<2.4:
             blend=np.clip(distance/2.4,0,1);blend=blend*blend*(3-2*blend);zz[k]=alder_grade+(zz[k]-alder_grade)*blend
-    return z
+    # Resolve the station's locally level public plaza, which the 10 m DEM
+    # otherwise pushes up into the south doors by more than a metre.
+    station=buildings[-1];sp=station['poly'];sa,sb,sc,sd=sp.buffer(6).bounds
+    ids=np.flatnonzero((xx>=sa)&(xx<=sc)&(yy>=sb)&(yy<=sd))
+    for k in ids:
+        distance=sp.distance(Point(xx[k],yy[k]))
+        if distance<6:
+            blend=np.clip((distance-1.5)/4.5,0,1);blend=blend*blend*(3-2*blend)
+            zz[k]=station['ground']+(zz[k]-station['ground'])*blend
+    z=frontage_grade(buildings,x,y,z)
+    return approach_grade(library_entry,x,y,z)
 anchor=model.Settings.EarthAnchorPoint;anchor.EarthBasepointElevation=0;model.Settings.EarthAnchorPoint=anchor
 obuildings=[f for f in osm if f['properties'].get('building')];otree=STRtree([f['poly'] for f in obuildings])
 print('Preparing',len(buildings),'campus building/transit layers',flush=True)
@@ -140,6 +156,8 @@ for j,f in enumerate(buildings,1):
         support.vertices[bottom,2]=np.minimum(base-.2,raw_ground(support.vertices[bottom,0],support.vertices[bottom,1])-1.5)
         ms['Foundation'].append(support)
     refinement=build_housing(ms,p,base,id,height,levels,code,lay,info,raw_ground)
+    if not refinement and id=='SUZ':refinement=build_suzzallo(ms,p,base,code,lay,info,raw_ground,library_entry)
+    if not refinement and id=='MNY':refinement=build_meany(ms,p,base,code,lay,info,raw_ground)
     if not refinement:refinement=build_highlight(ms,p,base,id,height,levels,code,lay,info,raw_ground)
     if not refinement:refinement=build_uw_station(ms,p,base,code,lay,info,raw_ground)if id=='LINK_UW'else block_building(ms,p,base,id,code,lay,info,raw_ground)if id in {'SGS','ICT','IC2','DSC','EIC'}else build_refined(ms,p,base,id,height,levels,code,lay,info,raw_ground)
     if not refinement and id!='STD':refinement=build_ordinary(ms,p,base,id,height,levels,code,lay,info,raw_ground,ot,f['name'])
@@ -185,6 +203,8 @@ for j,f in enumerate(buildings,1):
         r['partition_en']='; '.join(refinement['details'])+'. Exterior dimensions and partitions remain approximate.'
         r['partition']='按公开建筑资料和航拍细化体量、屋顶与立面；保留官方轮廓。外部高度及构件尺寸仍为近似表达。'
         r['volume_parts']=refinement['volume_parts']
+        for key in ['focus_bounds','focus_direction']:
+            if key in refinement:r[key]=refinement[key]
         if refinement.get('ordinary'):r['partition']='保留公开映射轮廓和庭院，按建筑用途及已有标记细化窗格、楼层线脚、屋顶与接地入口；外部高度与构件尺寸为近似表达。'
     if id=='HAG':r['focus_facilities']=['HAG','AVA']
     if id=='CSH':r['basis_en']+=' The lower boat-bay grade uses the lake-facing DEM sample rather than the uphill central entrance sample.'
@@ -209,13 +229,18 @@ def env(g,z,hh,mat,drape=True):
     if drape and mat in ['Ground','Grass','Garden','Road','Walk','Paving','Tile','Marking','Court','Track']:g=g.difference(lakewater).buffer(0)
     for q in polygons(g):
         if q.area<10 and q.distance(water_clip.boundary)<5 and mat!='Ground':continue
-        q=q if mat=='Ground'else q.simplify(.10,preserve_topology=True);aa,bb,cc,dd=q.bounds
+        q=q if mat=='Ground'or q.intersects(library_entry['domain'])else q.simplify(.10,preserve_topology=True);aa,bb,cc,dd=q.bounds
         for gx in np.arange(math.floor(aa/60)*60,cc,60):
             for gy in np.arange(math.floor(bb/60)*60,dd,60):
-                for pp in polygons(q.intersection(box(gx,gy,gx+60,gy+60))):
-                    pp=segmentize(pp,12);m=extrusion(pp,z,hh)
-                    if drape:m.vertices[:,2]+=ground(m.vertices[:,0],m.vertices[:,1])
-                    eg[mat].append(m)
+                cell=box(gx,gy,gx+60,gy+60)
+                fine=mat in ['Ground','BrickPath','Paving','StoneEdge','Tile','BrickPale','BrickWarm','BrickBand']and cell.intersects(fine_ground)
+                patch=5 if fine else 60
+                for fx in np.arange(gx,gx+60,patch):
+                    for fy in np.arange(gy,gy+60,patch):
+                        for pp in polygons(q.intersection(box(fx,fy,fx+patch,fy+patch))):
+                            pp=segmentize(pp,1.7 if fine else 12);m=extrusion(pp,z,hh)
+                            if drape:m.vertices[:,2]+=ground(m.vertices[:,0],m.vertices[:,1])
+                            eg[mat].append(m)
 roadfs=[f for f in osm if f['properties'].get('highway') in ['primary','secondary','tertiary','residential','service','unclassified','living_street'] and f['poly'].geom_type in ['LineString','MultiLineString'] and f['poly'].intersects(scope) and int(f['properties'].get('layer','0').split(';')[0])>=0]
 roadparts=[];walkparts=[]
 for f in roadfs:
@@ -241,7 +266,9 @@ red=next(f for f in osm if f['properties'].get('name')=='Red Square' and f['poly
 quad=next(f for f in osm if f['properties'].get('name')=='The Quad')
 fountain=next(f for f in osm if f['properties'].get('name')=='Drumheller Fountain')
 core_layout=core_plan(red['poly'],quad['poly'],osm,footprints)
-core_mask=unary_union([red['poly'],quad['poly'],fountain['poly'].buffer(3.8),core_layout[0],BLOCK])
+red_links=connection_plan(red['poly'],osm,footprints,buildings,unary_union([library_entry['domain'],core_layout[0],quad['poly']]))
+core_mask=unary_union([red_links['domain'],red['poly'],quad['poly'],fountain['poly'].buffer(3.8),core_layout[0],BLOCK,library_entry['domain']])
+fine_ground=unary_union([red['poly'].buffer(22),station_osm['poly'].buffer(10)])
 # Dedicated core surfaces replace generic overlapping lawn and path skins.
 alder=next(f for f in buildings if f['id']=='ALD');alder_court=courtyard_from_osm(osm,Polygon(alder['poly'].exterior))
 alder_apron=alder_envelope.buffer(2.4,join_style=2).difference(alder_envelope).difference(footprints).difference(roadarea)
@@ -251,7 +278,7 @@ env(alder_court,alder['ground']-.18,.18,'Ground',False)
 env(shore_green.difference(land_scope).difference(footprints),-3,3,'ShoreGround')
 env(shore_green.difference(footprints),.10,.045,'ShoreGrass')
 for f in buildings:env(f['poly'],f['ground']-.18,.18,'Ground',False)
-env(campus_boundary.difference(lakewater).difference(footprints).difference(roadarea).difference(walkarea).difference(core_mask),.10,.065,'Grass');env(roadarea,.03,.07,'Road');env(walkarea.difference(core_mask),.16,.055,'Walk')
+env(campus_boundary.difference(lakewater).difference(footprints).difference(roadarea).difference(walkarea).difference(core_mask),.10,.065,'Grass');env(roadarea.difference(library_entry['domain']),.03,.07,'Road');env(walkarea.difference(core_mask),.16,.055,'Walk')
 places=[]
 place_names={'Red Square':'红场','The Quad':'The Quad 庭院','Drumheller Fountain':'德拉姆赫勒喷泉','Rainier Vista':'雷尼尔山景观轴线','Union Bay':'联合湾','Portage Bay':'波蒂奇湾','Lake Washington':'华盛顿湖','Montlake Cut':'蒙特莱克水道'}
 seen=set()
@@ -287,14 +314,17 @@ for f in raw:
     if f['properties'].get('FacCode')=='X08':env(f['poly'].difference(core_mask),.26,.04,'Water')
     if f['properties'].get('FacCode')=='X05':env(f['poly'],.26,.04,'Paving')
 rc=red['poly'].centroid
-detail_core(eg,env,red['poly'],quad['poly'],fountain['poly'],ground,footprints,core_layout)
+detail_core(eg,env,red['poly'].difference(library_entry['domain']),quad['poly'],fountain['poly'],ground,footprints,core_layout)
+build_approach(eg,library_entry,footprints,env)
+build_connections(eg,env,red_links,ground,footprints,library_entry['domain'])
 detail_shores(eg,env,osm,scope,footprints,lakewater,ground)
 station_landscape(eg,env,osm,next(f for f in buildings if f['id']=='LINK_UW'),ground,footprints,places)
 # Trees use official positions; canopy shape and size are illustrative.
 clearance=footprints.buffer(.65);trees=0;cherry=0
+transit_tree_clearance=unary_union([f['poly'].buffer(2.6)for f in osm if f['properties'].get('osm_id')in BRIDGE_IDS|{'way/393899772'}])
 for f in features('uw_trees.geojson'):
     q=f['poly'];t=f['properties'];xx,yy=q.x,q.y
-    if lakewater.contains(q):continue
+    if lakewater.contains(q)or transit_tree_clearance.contains(q):continue
     if not scope.contains(q) or clearance.contains(q):continue
     rng=np.random.default_rng(int(t['OBJECTID']));species=t.get('SpeciesName') or '';is_cherry='yedoensis' in species and q.distance(quad['poly'])<1
     h=8+rng.uniform(-1,5);rad=2.8+rng.uniform(0,2);base=float(ground(xx,yy));conifer=t.get('TreeType')=='Conifer'
@@ -363,3 +393,7 @@ summary['water_frame']=water_frame
 summary['neighboring_areas']={k:v for k,v in neighbors.items() if k in ['buildings','trees','bounds','landscape_layer','street_network','default_visible']}
 summary['native_closed_solids']=sum(isinstance(o.Geometry,rh.Extrusion) for o in model.Objects)
 (OUT/'model_summary.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2));(OUT/'excluded_records.json').write_text(json.dumps(excluded,ensure_ascii=False,indent=2));print(json.dumps(summary,indent=2),flush=True)
+
+# Contact probes must follow current grades, including corrected entrances.
+from runpy import run_path
+run_path(str(ROOT/'scripts/ground_contact_samples.py'))

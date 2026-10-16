@@ -26,11 +26,13 @@ An independent, bilingual exterior model of the **University of Washington Seatt
 
 Low-angle views retain a continuous closed terrain mass and occlude buried geometry. Terrain sides fade gently downward at the model boundary; roads, lawns and water retain stable map ordering. The browser derives this display shell without changing the source CAD elevations.
 
-The campus contains **272 mapped facility/building layers plus one Environment layer** (271 UW inventory facilities and the mapped Sound Transit surface station), 28 architectural highlights, **8,602 official tree positions** and 29 cherry canopies around the Quad. Named wings and disconnected pieces sharing a facility code share a layer. The official facility layer's ponds and helipad belong to the environment, not building volumes. Excluded facilities are recorded in `output/excluded_records.json`.
+The campus contains **272 mapped facility/building layers plus one Environment layer** (271 UW inventory facilities and the mapped Sound Transit surface station), 28 building highlights plus Drumheller Fountain (29 tour stops), **8,602 official tree positions** and 29 cherry canopies around the Quad. Named wings and disconnected pieces sharing a facility code share a layer. The official facility layer's ponds and helipad belong to the environment, not building volumes. Excluded facilities are recorded in `output/excluded_records.json`.
 
 The surrounding U District adds **597 individually layered buildings** and a separate `Neighboring_Environment` layer. University Way (the Ave), Brooklyn Avenue, the U District station precinct, Roosevelt Way, north-campus residential blocks and the west-campus waterfront are included. Neighboring buildings use a subtly muted palette, with ⁺ prefixed to their displayed names. In **All**, the first row is **⁺Campus neighboring areas**, checked by default. Uncheck it to hide surrounding buildings, streets and landscape together without moving the camera; click its name to frame the area. Searching in All also finds neighboring buildings; while searching, only matching buildings are listed and the group row is hidden. Campus building counts stay separate.
 
 Alder Hall retains its mapped open-air stepped light court, charcoal street brick, pale courtyard elevations and paired white-framed windows. Its four street frontages include graded entry aprons, mapped sidewalk modules, interrupted curbs, tree pits at published tree positions and grounded bench details. Courtyard planting and furnishings are photo-informed approximations.
+
+Suzzallo’s west entrance is modeled from exterior photographs with three recessed pointed portals, thirteen reading-room window bays, a continuous brick/stone terrace and a broad, short central stair with closed stone cheeks and flush brick paving at its foot and flanks. Its Explore view faces the entrance from the west with a slight southern offset. Plaza-side walks connect Kane, Odegaard, Meany and Gerberding through graded entrance shelves; Meany has separate teaching, performance and stage volumes. University of Washington Station has a rectangular upper glass bar, lower canopies, open bridge/ground portals and an intermediate circulation void.
 
 The initial Core view centers Red Square from the southwest, with north pointing upper-left. Persistent landmark labels start off; hovering a mapped outdoor place or building still shows its name. Reset restores it. Campus shows a wider overview; district and Plan controls provide other views. The East & Athletics preset focuses on Husky Stadium and the adjacent principal athletic facilities. Left-drag pans, right-drag rotates, and the wheel zooms at the pointer. One finger pans; move two fingers together up or down to tilt, twist to turn, and pinch to zoom. Two-finger tilt works without enabling Rotate; Rotate also enables one-finger orbit. Camera pivots stay grounded, there is no inertia, and zoom-out remains campus-wide after choosing a landmark.
 
@@ -72,6 +74,7 @@ npm run build
 npm run check:3ds
 npm run check:ground
 npm run check:transit
+npm run check:core-connections
 python3 scripts/validate_rhino.py
 npm run check:interaction
 npm run check:seo
@@ -94,7 +97,7 @@ Source snapshots are retained; geometry rebuilding needs no live map access. `fe
 
 ## Website model compression
 
-The initial model transfer is **18.55 MB**, down from **41.21 MB** (55.0% smaller). The web stream uses meshoptimizer 1.3.0 lossless vertex/index-sequence coding followed by gzip. No quantization or simplification is applied; its decoded SHA-256 matches the original 3DS. Web compression preserves the source Rhino/3DS geometry without simplification.
+The initial model transfer is **19.59 MB**, down from **43.23 MB** (54.7% smaller than ordinary gzip). The web stream uses meshoptimizer 1.3.0 lossless vertex/index-sequence coding followed by gzip. No quantization or simplification is applied; its decoded SHA-256 matches the original 3DS. Web compression preserves the source Rhino/3DS geometry without simplification.
 
 A single browser worker streams gzip decompression, restores small geometry blocks and parses the CAD model. Its compressed input and resulting geometry buffers are transferred rather than copied. The full intermediate archive is never retained. Scene setup yields to rendering between time slices; browsers that block workers use cooperative per-object parsing. Standalone HTML restores the downloadable CAD on demand in a worker. Decoder JavaScript/WebAssembly is bundled locally and requires no CDN. See `output/web_model_report.json` for byte counts, source digest and maximum block size. `npm run build:model` rebuilds the stream; `npm run check:compression` checks lossless restoration and worker behavior.
 

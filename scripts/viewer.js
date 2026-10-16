@@ -50,7 +50,7 @@ const mapGround=(x,y)=>groundHeight(neighborsVisible?contextGround:data,x,y);
 function setNeighbors(value){neighborsVisible=value;if(neighborGroup)neighborGroup.visible=value;if(!value&&byCode.get(selected)?.neighbor)selectBuilding(null);refreshList();render();}
 let selected=null,category='all',renderer=null,scene,camera,controls,campus,sun,campusDiagonal=1,modelReady=false,pendingFocus=null,renderBounds=null,depthBits=24,frameHeight=1500,viewMode='aerial',staticMode=false;
 const sidebar=$('sidebar'),host=$('viewport'),compact=matchMedia('(max-width:760px)');
-const tour=data.landmarkOrder.map(id=>records.find(r=>r.facility_id===id)).filter(Boolean);let tourIndex=0;
+const tour=data.landmarkOrder.map(id=>[...records,...(data.tourPlaces||[])].find(r=>r.facility_id===id)).filter(Boolean);let tourIndex=0;
 const placeNodes=new Map();
 for(const p of data.places){const el=document.createElement("div");el.className="map-label place-label";$("map-labels").append(el);placeNodes.set(p.id,{el,p});}
 const labelNodes=new Map();
@@ -117,13 +117,22 @@ function refreshDetail(){
  p.append(title,sub,dl,actions,note,basis,prec,links);
 }
 function selectBuilding(code,focus=false){
- selected=code;for(const[c,g]of buildings)g.traverse(m=>{if(m.isMesh)(Array.isArray(m.material)?m.material:[m.material]).forEach(mat=>{mat.emissive.set(c===code?0x987200:0);mat.emissiveIntensity=c===code?.22:0;});});
+ pendingPlace=null;selected=code;for(const[c,g]of buildings)g.traverse(m=>{if(m.isMesh)(Array.isArray(m.material)?m.material:[m.material]).forEach(mat=>{mat.emissive.set(c===code?0x987200:0);mat.emissiveIntensity=c===code?.22:0;});});
  if(code){const g=buildings.get(code);if(g)g.visible=true;if(byCode.get(code)?.neighbor&&!neighborsVisible){neighborsVisible=true;if(neighborGroup)neighborGroup.visible=true;}const idx=tour.findIndex(r=>r.code===code);if(idx>=0){tourIndex=idx;refreshTour();}}
  refreshDetail();refreshList();if(focus)focusBuilding(code);render();
 }
 function refreshTour(){const s=$('tour-select');s.replaceChildren();for(const r of tour){const op=document.createElement('option');op.value=r.code;op.textContent=brief(r);s.append(op);}s.value=tour[tourIndex]?.code||'';$('tour-step').textContent=(tourIndex+1)+' / '+tour.length;}
-function stepTour(delta){tourIndex=(tourIndex+delta+tour.length)%tour.length;refreshTour();selectBuilding(tour[tourIndex].code,true);}
-$('tour-prev').onclick=()=>stepTour(-1);$('tour-next').onclick=()=>stepTour(1);$('tour-go').onclick=()=>selectBuilding(tour[tourIndex].code,true);$('tour-select').onchange=e=>{tourIndex=tour.findIndex(r=>r.code===e.target.value);refreshTour();selectBuilding(tour[tourIndex].code,true);};
+function visitTour(r){
+ if(!r)return;
+ if(!r.outdoor){selectBuilding(r.code,true);return;}
+ selectBuilding(null);
+ if(!modelReady){pendingPlace=r;return;}
+ $('environment').checked=true;envMeshes.forEach(m=>m.visible=true);
+ const a=r.bounds;viewMode='focus';setViewButtons();fitBox(new THREE.Box3(new THREE.Vector3(...a.slice(0,3)),new THREE.Vector3(...a.slice(3))),'aerial',1.5,true);
+}
+let pendingPlace=null;
+function stepTour(delta){tourIndex=(tourIndex+delta+tour.length)%tour.length;refreshTour();visitTour(tour[tourIndex]);}
+$('tour-prev').onclick=()=>stepTour(-1);$('tour-next').onclick=()=>stepTour(1);$('tour-go').onclick=()=>visitTour(tour[tourIndex]);$('tour-select').onchange=e=>{tourIndex=tour.findIndex(r=>r.code===e.target.value);refreshTour();visitTour(tour[tourIndex]);};
 function applyLanguage(){
  document.documentElement.lang=lang==='zh'?'zh-CN':'en';
  const seo=data.seo[lang];document.title=seo.title;
@@ -162,7 +171,7 @@ function fullView(mode){
  if(mode==='aerial'||mode==='core'){const c=b.getCenter(new THREE.Vector3()),[x,y]=data.overviewCenter;b.translate(new THREE.Vector3(x-c.x,y-c.y,0));}
  fitBox(b,mode==='plan'?'plan':'aerial',1.16,false,new THREE.Vector3(-.9,-1.5,mode==='east-view'?2.1:1.3),mode==='aerial'?1500:50);
 }
-function focusBuilding(code){if(!modelReady){pendingFocus=code;return;}const g=buildings.get(code);if(!g||!camera)return;g.visible=true;g.updateWorldMatrix(true,true);viewMode='focus';setViewButtons();const stadium=byCode.get(code)?.facility_id==='STD';const b=new THREE.Box3().setFromObject(g);for(const id of byCode.get(code)?.focus_facilities||[]){const r=records.find(r=>r.facility_id===id),part=r&&buildings.get(r.code);if(part?.visible)b.union(new THREE.Box3().setFromObject(part));}fitBox(b,'aerial',stadium?1.35:1.55,true,stadium?new THREE.Vector3(-.9,-1.5,2.1):undefined);}
+function focusBuilding(code){if(!modelReady){pendingFocus=code;return;}const g=buildings.get(code);if(!g||!camera)return;g.visible=true;g.updateWorldMatrix(true,true);viewMode='focus';setViewButtons();const stadium=byCode.get(code)?.facility_id==='STD';const preset=byCode.get(code),bb=preset?.focus_bounds;const b=bb?new THREE.Box3(new THREE.Vector3(...bb.slice(0,3)),new THREE.Vector3(...bb.slice(3))):new THREE.Box3().setFromObject(g);for(const id of byCode.get(code)?.focus_facilities||[]){const r=records.find(r=>r.facility_id===id),part=r&&buildings.get(r.code);if(part?.visible)b.union(new THREE.Box3().setFromObject(part));}fitBox(b,'aerial',stadium?1.35:1.55,true,stadium?new THREE.Vector3(-.9,-1.5,2.1):preset?.focus_direction?new THREE.Vector3(...preset.focus_direction):undefined);}
 for(const id of ['west-view','south-view','east-view'])$(id).onclick=()=>fullView(id);
 $('aerial').onclick=()=>fullView('aerial');$('plan').onclick=()=>fullView('plan');$('core').onclick=()=>fullView('core');$('reset-view').onclick=()=>{resetInteraction();selectBuilding(null);$('cut-enabled').checked=false;updateCut();fullView('core');};
 function updateLabels(){
@@ -212,7 +221,7 @@ try{
  viewportLoop=createViewportRenderLoop({host,renderer,resize:ratio=>{frameHeight*=ratio;updateFrustum();},draw:drawScene});
  const observer=new ResizeObserver(()=>{if(viewportLoop.needsResize())render(false);});observer.observe(host);
  reportLoad({phase:'render',loaded:0,total:1});await nextPaint();modelReady=true;
- fullView('core');if(selected)selectBuilding(selected,Boolean(pendingFocus));pendingFocus=null;refreshList();
+ fullView('core');if(selected)selectBuilding(selected,Boolean(pendingFocus));pendingFocus=null;if(pendingPlace){visitTour(pendingPlace);pendingPlace=null;}refreshList();
  const ray=new THREE.Raycaster(),pointer=new THREE.Vector2();
  function pick(e){const b=renderer.domElement.getBoundingClientRect();pointer.set((e.clientX-b.left)/b.width*2-1,-(e.clientY-b.top)/b.height*2+1);ray.setFromCamera(pointer,camera);return ray.intersectObjects(pickMeshes.filter(m=>m.visible&&m.parent.visible&&(neighborsVisible||!byCode.get(m.userData.code)?.neighbor)),false).find(h=>!$('cut-enabled').checked||h.point.z<=clipPlane.constant)?.object.userData.code||null;}
  installMapSelection(renderer.domElement,e=>selectBuilding(pick(e)));

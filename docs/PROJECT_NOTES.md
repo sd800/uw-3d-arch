@@ -38,3 +38,10 @@ Five residence halls and the Cedar, Mercer and Stevens apartment groups use inde
 ## Highlights review
 
 The 28-stop tour includes Alder Hall second, with no Alder geometry changes. Fifteen tour buildings and the separately mapped AVA gallery addition have independent assemblies, including deep Kane portico voids, supported PACCAR arrival/meeting-room geometry, distinct science/health facade skins, lower boat-bay contact at Conibear and a pitched main Hec Edmundson roof. Existing custom Gothic/core, longhouse, museum, stadium and station models are retained after review. See [reference decisions](../sources/HIGHLIGHTS_REFERENCES.md).
+
+
+## Release 26.10.16.2
+
+Drumheller Fountain is the third Highlights stop, after Suzzallo and Alder; it stays on Environment and does not inflate the 272-building inventory. Red Square perimeter walks, entry shelves and the photo-referenced continuous library terrace and broad short 14-step central flight now form one coordinated connection system, with denser local terrain sampling. Meany Hall receives moderate massing and roof optimization. UW Station separates the upper glass bar from lower canopy projections, opens the intermediate circulation and bridge portals, clears the outdoor stair landing and grades the entrance plaza. See sources/CORE_CONNECTIONS_REFERENCES.md and output/core_connections_validation.json. Shared toolbar actions prioritize Guide when only one button fits.
+
+Suzzallo’s mapped pedestrian route width is not treated as the architectural stair width. Exterior photographs guide the full west terrace, three physically recessed Gothic portals, thirteen tall reading-room bays, brick spandrels and patinated pitched roof. Secondary dimensions remain approximate. Explore uses a front-only focus envelope and a direction slightly south of west, looking from Red Square.

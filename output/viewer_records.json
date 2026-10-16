@@ -1900,54 +1900,55 @@
       86.011,
       -2.756
     ],
-    "ground_m": 45.477,
-    "bottom_m": 45.477,
-    "peak_m": 77.897,
+    "ground_m": 50.292,
+    "bottom_m": 50.292,
+    "peak_m": 82.712,
     "basis": "平面采用 UW 官方 GIS；外部层数、层高与屋顶高度为估算。GIS 总建筑面积不能视为地上层数。 校方公布的阅览室为250×52×65英尺，属于室内尺寸，不能当作整栋建筑的外部尺寸。",
     "basis_en": "Official UW footprint; exterior storeys, floor heights and roof elevations are approximate. Reported gross floor area may include basements and does not certify exterior storeys. UW documents the reading room as 250 × 52 × 65 ft; these are interior dimensions, not the exterior building envelope.",
     "partition": "按公开建筑资料和航拍细化体量、屋顶与立面；保留官方轮廓。外部高度及构件尺寸仍为近似表达。",
-    "partition_en": "Separate original reading hall, southeast Gothic wing and lower flat-roofed 1963 addition; Tall triplet reading-room windows, stepped wall-attached buttresses and a recessed west portal. Exterior dimensions and partitions remain approximate.",
+    "partition_en": "Thirteen Gothic reading-room window bays, brick spandrels, stone piers and patinated pitched roof; Three physically recessed pointed portals with layered archivolts, gables, paired doors and restrained banner/sculpture forms; Continuous west terrace, broad short stone stair, balustrades and north side ramp from UW/GLY photographs; Separate southeast Gothic wing and lower modern library addition. Exterior dimensions and partitions remain approximate.",
     "source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "footprint_source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "architecture_reference": "https://lib.uw.edu/locations-hours/suzzallo-and-allen-libraries-history/",
     "construction_status": "Active",
     "volume_parts": [
       {
-        "area_m2": 1196.24,
-        "base_offset_m": 0,
-        "height_m": 28.1,
-        "material": "SuzzalloStone"
+        "name": "Stone lower front with three recessed portals",
+        "area_m2": 1176.77,
+        "height_m": 8.8,
+        "base_offset_m": 0.0
       },
       {
-        "area_m2": 647.18,
-        "base_offset_m": 0,
+        "name": "Reading-room brick upper hall",
+        "area_m2": 1196.29,
+        "height_m": 19.3,
+        "base_offset_m": 8.8
+      },
+      {
+        "name": "Southeast Gothic wing",
+        "area_m2": 647.22,
         "height_m": 21.4,
-        "material": "BrickRed"
+        "base_offset_m": 0.0
       },
       {
-        "area_m2": 3447.81,
-        "base_offset_m": 0,
+        "name": "Lower modern addition",
+        "area_m2": 3458.16,
         "height_m": 18.8,
-        "material": "BrickBuff"
-      },
-      {
-        "area_m2": 9.44,
-        "base_offset_m": 0,
-        "height_m": 18.8,
-        "material": "BrickBuff"
-      },
-      {
-        "area_m2": 0.42,
-        "base_offset_m": 0,
-        "height_m": 18.8,
-        "material": "BrickBuff"
-      },
-      {
-        "area_m2": 0.61,
-        "base_offset_m": 0,
-        "height_m": 18.8,
-        "material": "BrickBuff"
+        "base_offset_m": 0.0
       }
+    ],
+    "focus_bounds": [
+      24.84133817136242,
+      -24.29146730545381,
+      48.17224056951956,
+      61.80720941463764,
+      41.01578456371538,
+      83.29224056951956
+    ],
+    "focus_direction": [
+      -0.96,
+      -0.28,
+      0.65
     ]
   },
   {
@@ -2118,21 +2119,30 @@
     ],
     "ground_m": 43.372,
     "bottom_m": 43.372,
-    "peak_m": 61.832,
+    "peak_m": 61.702,
     "basis": "平面采用 UW 官方 GIS；外部层数、层高与屋顶高度为估算。GIS 总建筑面积不能视为地上层数。",
     "basis_en": "Official UW footprint; exterior storeys, floor heights and roof elevations are approximate. Reported gross floor area may include basements and does not certify exterior storeys.",
     "partition": "按公开建筑资料和航拍细化体量、屋顶与立面；保留官方轮廓。外部高度及构件尺寸仍为近似表达。",
-    "partition_en": "Larger opaque performance volumes and restrained openings. Exterior dimensions and partitions remain approximate.",
+    "partition_en": "Separate teaching/lobby wing, performance enclosure and taller stage volume; Gray sloping roof perimeter and individual flat metal caps; Mostly opaque brick theater elevations with limited ground-level lobby glazing; no office window grid. Exterior dimensions and partitions remain approximate.",
     "source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "footprint_source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "architecture_reference": null,
     "construction_status": "Active",
     "volume_parts": [
       {
-        "area_m2": 4578.22,
-        "base_offset_m": 0,
-        "height_m": 17.900000000000002,
-        "material": "BrickUmber"
+        "name": "North teaching and lobby wing",
+        "height_m": 11.4,
+        "area_m2": 2383.29
+      },
+      {
+        "name": "Performance volume",
+        "height_m": 13.4,
+        "area_m2": 1163.2
+      },
+      {
+        "name": "Stage/service volume",
+        "height_m": 17.9,
+        "area_m2": 1031.77
       }
     ]
   },
@@ -13038,7 +13048,7 @@
     "basis": "地面站房范围采用公开映射轮廓；两层玻璃站房及构件依据设计方照片近似表达，不包含地下铁路工程。",
     "basis_en": "Mapped OSM surface envelope. Two-level exterior, structural bays and dimensions interpreted from the architect’s photographs; not underground engineering or a surveyed station model.",
     "partition": "两层玻璃站房、钢柱与楼板、入口、电梯突出部分和轻薄金属屋顶；与映射人行桥和室外楼梯连接。",
-    "partition_en": "Mapped station footprint with a two-level glazed lobby, steel column/bay structure and thin silver roof; Upper lobby deck meets the mapped Montlake bicycle/pedestrian bridge; Ground entrances, east elevator projection and restrained vector signage; Above-ground exterior only; underground station and railway tunnels are not fabricated. Exterior dimensions and partitions remain approximate.",
+    "partition_en": "Mapped station footprint with a two-level glazed lobby, steel column/bay structure and thin silver roof; Intermediate floor has an open circulation void, a stair and paired escalator envelopes; upper bridge portal has no blocking edge beam; Rectangular upper glass bar and thin roof; lower canopy/service projections remain below the main roof; Ground entrances, east elevator projection and restrained vector signage; Above-ground exterior only; underground station and railway tunnels are not fabricated. Exterior dimensions and partitions remain approximate.",
     "source": "https://lmnarchitects.com/project/university-of-washington-station-sound-transit",
     "footprint_source": "https://www.openstreetmap.org/way/325150399",
     "architecture_reference": "https://lmnarchitects.com/project/university-of-washington-station-sound-transit",

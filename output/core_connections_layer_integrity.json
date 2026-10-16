@@ -1,0 +1,13 @@
+{
+  "release": "26.10.16.2",
+  "comparison": "Vertex/index/material geometry compared with Release 26.10.16.1",
+  "changed_layers": [
+    "W040_Suzzallo Library",
+    "W044_Meany Hall",
+    "W272_University of Washington Station",
+    "Environment"
+  ],
+  "unchanged_layer_count": 867,
+  "alder_unchanged": true,
+  "passed": true
+}

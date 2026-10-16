@@ -50,6 +50,6 @@ for(const [x,y,z]of detail('EDP').validation_probes.arena_ridge){
 }
 assert.ok(r('CSH').ground_m>6&&r('CSH').ground_m<8.5,'Conibear lower boat bay uses the lake-facing grade');
 const html=readFileSync(new URL('index.html',root),'utf8'),data=JSON.parse(html.match(/<script id="campus-data"[^>]*>(.*?)<\/script>/s)[1]);
-assert.deepEqual(data.landmarkOrder,review.highlight_order);
-const result={release:readFileSync(new URL('VERSION',root),'utf8').trim(),highlights:28,rebuilt_facilities:16,alder_second:true,kane_recess_m:portico.distance,ieb_arrival_open:true,law_library_skylights:skylights,conibear_lower_grade_m:r('CSH').ground_m,roof_bounds:true,arena_ridge_continuous:true,subset_parse_bytes:mini.length,passed:true};
+assert.deepEqual(data.landmarkOrder.filter(id=>id!=='DRUMHELLER'),review.highlight_order);assert.equal(data.landmarkOrder[2],'DRUMHELLER');assert.equal(data.landmarkOrder.length,29);
+const result={release:readFileSync(new URL('VERSION',root),'utf8').trim(),building_highlights:28,highlight_stops:29,rebuilt_facilities:16,alder_second:true,kane_recess_m:portico.distance,ieb_arrival_open:true,law_library_skylights:skylights,conibear_lower_grade_m:r('CSH').ground_m,roof_bounds:true,arena_ridge_continuous:true,subset_parse_bytes:mini.length,passed:true};
 writeFileSync(new URL('output/highlight_validation.json',root),JSON.stringify(result,null,2)+'\n');console.log(JSON.stringify(result,null,2));

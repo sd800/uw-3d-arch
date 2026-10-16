@@ -1,15 +1,15 @@
 {
-  "buildSignature": "e36b9bfee119eb61f12c4bd19f846074e231c5fc4ab36eac698a81825527359b",
+  "buildSignature": "6fa2d706454fa2962b04b2110aecad2ee5003198af69b56fbc37fc21e0de4f83",
   "format": "campus-3ds-v1",
   "codec": "meshoptimizer 1.3.0 lossless vertex/index-sequence codecs + gzip",
   "source": "output/UW_Seattle.3ds",
-  "sourceBytes": 89002214,
-  "sourceSha256": "c5cd6dac31a11126897ca0483e6f2ccd186979479e7da2ebd5b8205f0deb0f73",
-  "ordinaryGzipBytes": 41208566,
-  "previousTransferBytes": 41208566,
-  "packedBytes": 56394954,
-  "transferBytes": 18549770,
-  "transferSha256": "16654256fd89493665cb4b0922a20d2f284165f1c9a7a68197ee3338530dd0b4",
+  "sourceBytes": 93180388,
+  "sourceSha256": "8df2014270c6d6dbd55e2a3b49c7215f7fe20534a6096f14197cf957b032964e",
+  "ordinaryGzipBytes": 43225138,
+  "previousTransferBytes": 43225138,
+  "packedBytes": 59008886,
+  "transferBytes": 19588896,
+  "transferSha256": "5f50ecb33d699804456ed948a1b0ebe1488152d38d342ce0449bcfad9a2c69a2",
   "maxEncodedBlockBytes": 297244,
   "decodedGeometryChanged": false
 }
