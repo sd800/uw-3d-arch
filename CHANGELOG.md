@@ -1,5 +1,11 @@
 # Changelog
 
+## 26.10.16.4 — 2026-10-16
+
+- Refine Suzzallo’s three entrance portals with paired inner arches, recessed door frames and handles, tracery, supported figure/canopy silhouettes and connected stone thresholds.
+- Replace interpolated terrace/apron skins with level brick assemblies, align stair railing feet to real treads and remove triangular white paving exposures.
+- Match Suzzallo Explore to the supplied near-west, moderately elevated front view, retaining Red Square in the foreground.
+
 ## 26.10.16.3 — 2026-10-16
 
 - Rename the English Guide source heading to Reference and add arch.Songming.org after the model download links, linking to the campus model collection.

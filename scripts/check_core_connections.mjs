@@ -9,7 +9,7 @@ const station=records.find(r=>r.facility_id==='LINK_UW'),library=records.find(r=
 const bytes=readFileSync(new URL('output/UW_Seattle.3ds',root));
 function chunks(from,to){const out=[];for(let a=from;a+6<=to;){const tag=bytes.readUInt16LE(a),n=bytes.readUInt32LE(a+2);assert.ok(n>=6&&a+n<=to);out.push({tag,a,z:a+n});a+=n;}return out;}
 const edit=chunks(6,bytes.length).find(c=>c.tag===0x3d3d),kept=[];
-const materials=new Set(['StepStone','Metal','BridgeDeck','Concrete','StoneEdge','Tile','BrickPale','BrickWarm','Road','Grass']);
+const materials=new Set(['Ground','StepStone','Metal','BridgeDeck','Concrete','StoneEdge','Tile','BrickPale','BrickWarm','Road','Grass']);
 for(const c of chunks(edit.a+6,edit.z)){
  if(c.tag!==0x4000){kept.push(bytes.subarray(c.a,c.z));continue;}
  const end=bytes.indexOf(0,c.a+6),name=bytes.toString('ascii',c.a+6,end),r=layers[name];
@@ -35,5 +35,5 @@ assert.ok(top(408.5,-672,stationMeshes)<station.ground_m+6,'Lower canopy project
 const bridge=transit.facilities.find(r=>r.facility_id==='UW_STATION_BRIDGE'),p=bridge.open_stair_landing;
 assert.equal(new Raycaster(new Vector3(p[0],p[1]-1.5,p[2]),new Vector3(0,1,0),0,3).intersectObjects(surfaces,false).length,0,'No railing crosses the exterior stair landing');
 const html=readFileSync(new URL('index.html',root),'utf8'),data=JSON.parse(html.match(/<script id="campus-data"[^>]*>(.*?)<\/script>/s)[1]);
-assert.deepEqual(data.landmarkOrder.slice(0,3),['SUZ','ALD','DRUMHELLER']);assert.equal(data.landmarkOrder.length,29);assert.equal(records.filter(r=>r.landmark).length,28);assert.ok(library.focus_direction[0]<-.9&&library.focus_direction[1]<-.15&&library.focus_direction[1]>-.45&&library.focus_bounds.length===6,'Library Explore faces the entrance from west, slightly south');assert.ok(data.tourPlaces[0].outdoor&&data.tourPlaces[0].bounds.every(Number.isFinite));
+assert.deepEqual(data.landmarkOrder.slice(0,3),['SUZ','ALD','DRUMHELLER']);assert.equal(data.landmarkOrder.length,29);assert.equal(records.filter(r=>r.landmark).length,28);assert.ok(library.focus_direction[0]===-1&&Math.abs(library.focus_direction[1])<.03&&library.focus_direction[2]===.7&&library.focus_bounds.length===6,'Library Explore matches the near-due-west reference with a modest elevated angle');assert.ok(data.tourPlaces[0].outdoor&&data.tourPlaces[0].bounds.every(Number.isFinite));
 const result={release:readFileSync(new URL('VERSION',root),'utf8').trim(),library_treads:14,library_recessed_portals:3,library_front_explore:true,flush_forecourt_probes:3,perimeter_tread_probes:linkProbes,station_portals_open:true,station_floor_void_open:true,rectangular_upper_roof:true,exterior_stair_landing_open:true,highlight_stops:29,fountain_position:3,passed:true};writeFileSync(new URL('output/core_connections_validation.json',root),JSON.stringify(result,null,2)+'\n');console.log(JSON.stringify(result,null,2));

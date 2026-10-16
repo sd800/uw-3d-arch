@@ -16,6 +16,8 @@
       48.17224056951956
     ]
   ],
+  "level_terrace_and_apron": true,
+  "brick_terrace": true,
   "flush_brick_apron": true,
   "closed_stair_cheeks": true,
   "source": "https://www.openstreetmap.org/way/1106705315",

@@ -1906,7 +1906,7 @@
     "basis": "平面采用 UW 官方 GIS；外部层数、层高与屋顶高度为估算。GIS 总建筑面积不能视为地上层数。 校方公布的阅览室为250×52×65英尺，属于室内尺寸，不能当作整栋建筑的外部尺寸。",
     "basis_en": "Official UW footprint; exterior storeys, floor heights and roof elevations are approximate. Reported gross floor area may include basements and does not certify exterior storeys. UW documents the reading room as 250 × 52 × 65 ft; these are interior dimensions, not the exterior building envelope.",
     "partition": "按公开建筑资料和航拍细化体量、屋顶与立面；保留官方轮廓。外部高度及构件尺寸仍为近似表达。",
-    "partition_en": "Thirteen Gothic reading-room window bays, brick spandrels, stone piers and patinated pitched roof; Three physically recessed pointed portals with layered archivolts, gables, paired doors and restrained banner/sculpture forms; Continuous west terrace, broad short stone stair, balustrades and north side ramp from UW/GLY photographs; Separate southeast Gothic wing and lower modern library addition. Exterior dimensions and partitions remain approximate.",
+    "partition_en": "Thirteen Gothic reading-room window bays, brick spandrels, stone piers and patinated pitched roof; Three physically recessed pointed portals with layered archivolts, gables, paired inner lancets, inset doors, bronze handles, stone tracery and supported figure/canopy silhouettes; Continuous west terrace, broad short stone stair, balustrades and north side ramp from UW/GLY photographs; Separate southeast Gothic wing and lower modern library addition. Exterior dimensions and partitions remain approximate.",
     "source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "footprint_source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "architecture_reference": "https://lib.uw.edu/locations-hours/suzzallo-and-allen-libraries-history/",
@@ -1946,9 +1946,9 @@
       83.29224056951956
     ],
     "focus_direction": [
-      -0.96,
-      -0.28,
-      0.65
+      -1.0,
+      -0.015,
+      0.7
     ]
   },
   {

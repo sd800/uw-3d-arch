@@ -47,7 +47,7 @@ def approach_grade(plan,x,y,z):
         t=0.0
         # Shared apron/terrace vertices belong to the lower forecourt.
         # Otherwise terrain interpolation lifts the paving into a wedge.
-        if plan['apron'].distance(pt)<.03:t=0.0
+        if plan['apron'].distance(pt)<.08:t=0.0
         elif plan['terrace'].covers(pt):t=1.0
         elif plan['flight'].covers(pt):t=np.clip((along[k]-plan['start'])/plan['run'],0,1)
         elif plan['ramp'].covers(pt):t=np.clip((hi+2-across[k])/(hi+2-11.4),0,1)
@@ -60,20 +60,23 @@ def build_approach(eg,plan,footprints,env):
     w=plan['world'];L=plan['length'];S=plan['start'];low=plan['lower'];high=plan['upper'];N=plan['count'];head=plan['head'];lo,hi=plan['span']
     def add(g,z,h,mat):
         for q in polygons(g.difference(footprints)):eg[mat].append(extrusion(q,z,h))
-    add(plan['terrace'],low-.75,high-low+.70,'Concrete')
-    central=plan['terrace'].intersection(w(box(L,-11.5,head+2,11.5)))
-    add(central,high-.05,.05,'Concrete');add(plan['terrace'].difference(central),high-.05,.05,'BrickWarm')
-    # Use the same thin draped brick courses as Red Square, rather than a
-    # raised red box at the stair foot. The matched datum leaves no curb.
-    env(plan['apron'],.26,.055,'Tile')
-    aa,bb,cc,dd=plan['local'](plan['apron']).bounds;tiles=[[],[]]
-    for j,yy in enumerate(np.arange(bb,dd,1.8)):
-        for k,xx in enumerate(np.arange(aa-3.6,cc,3.6)):
-            shift=(j%2)*1.8
-            q=w(box(xx+shift+.025,yy+.02,xx+shift+3.575,yy+1.78)).intersection(plan['apron'])
-            if not q.is_empty:tiles[(j+k)%2].append(q)
-    for mat,parts in zip(['BrickPale','BrickWarm'],tiles):
-        if parts:env(unary_union(parts),.32,.018,mat)
+    # Separate level assemblies for the terrace and the lower apron. Draped
+    # thin skins interpolated across the two datums produced white triangular
+    # slab exposures; each finished surface now has one explicit top datum.
+    add(plan['terrace'],low-.75,high-low+.67,'SuzzalloStone')
+    add(plan['terrace'],high-.08,.08,'BrickWarm')
+    threshold=plan['terrace'].intersection(w(box(head-1.0,lo,head+2,hi)))
+    add(threshold,high,.035,'SuzzalloStone')
+    add(plan['apron'],low-.40,.40,'Tile')
+    for region,z in [(plan['apron'],low),(plan['terrace'].difference(threshold),high)]:
+        aa,bb,cc,dd=plan['local'](region).bounds;tiles=[[],[]]
+        for j,yy in enumerate(np.arange(bb,dd,1.8)):
+            for k,xx in enumerate(np.arange(aa-3.6,cc,3.6)):
+                shift=(j%2)*1.8
+                q=w(box(xx+shift+.025,yy+.02,xx+shift+3.575,yy+1.78)).intersection(region)
+                if not q.is_empty:tiles[(j+k)%2].append(q)
+        for mat,parts in zip(['BrickPale','BrickWarm'],tiles):
+            if parts:add(unary_union(parts),z,.018,mat)
     probes=[]
     for i in range(N):
         x0=S+i*plan['run']/N;x1=S+(i+1)*plan['run']/N;w0=12.2-1.4*i/N;w1=12.2-1.4*(i+1)/N;top=low+(high-low)*(i+1)/N
@@ -92,7 +95,10 @@ def build_approach(eg,plan,footprints,env):
         aa=plan['a']+plan['u']*(S-.35)+plan['v']*y;bb=plan['a']+plan['u']*(L+.55)+plan['v']*y
         for h in [.62,.96]:eg['Frame'].append(cylinder((*aa,low+h),(*bb,high+h),.035,6))
         for t in np.linspace(0,1,6):
-            c=aa+(bb-aa)*t;z=low+(high-low)*t;eg['Frame'].append(cylinder((*c,z-.08),(*c,z+.96),.035,6))
+            c=aa+(bb-aa)*t;x=(c-plan['a'])@plan['u']
+            step=np.clip(math.floor((x-S)/plan['run']*N)+1,0,N)
+            z=low+(high-low)*step/N;rail=low+(high-low)*t+.96
+            eg['Frame'].append(cylinder((*c,z-.06),(*c,rail),.035,6))
     # Low open stone balustrade on both terrace wings; central arrival open.
     for y0,y1 in [(lo,-10.96),(10.96,hi)]:
         band=w(box(L-.24,y0,L+.24,y1));add(band,high,.22,'Concrete');add(band,high+.94,.15,'LightStone')
@@ -113,5 +119,5 @@ def build_approach(eg,plan,footprints,env):
     for x,y in [(S-.45,0),((S+L)/2,-14),((S+L)/2,15)]:
         pt=w(Point(x,y))
         if plan['apron'].covers(pt):forecourt_probes.append([pt.x,pt.y,low])
-    result={'forecourt_probes':forecourt_probes,'flush_brick_apron':True,'closed_stair_cheeks':True,'source':'https://www.openstreetmap.org/way/1106705315','photographic_references':['https://www.gly.com/uw-seismic-improvements','https://uw.pressbooks.pub/uwlibrariestour/chapter/suzzallo-library-4/'],'step_count':N,'mapped_route_length_m':round(L,3),'run_m':plan['run'],'stair_width_bottom_m':24.4,'stair_width_top_m':21.6,'terrace_frontage_m':round(hi-lo,3),'estimated_riser_m':.16,'lower_landing_m':round(low,3),'upper_landing_m':round(high,3),'library_grade_m':round(plan['base'],3),'upper_landing_depth_m':round(head-L,3),'tread_probes':probes,'domain':mapping(plan['domain']),'limits':'OSM maps the route and count; its route width is not the full stair/terrace width. Broad stair, continuous brick/stone terrace, balustrade and north side ramp interpreted from photos. Secondary dimensions and grades are approximate, not surveyed.'}
+    result={'forecourt_probes':forecourt_probes,'level_terrace_and_apron':True,'brick_terrace':True,'flush_brick_apron':True,'closed_stair_cheeks':True,'source':'https://www.openstreetmap.org/way/1106705315','photographic_references':['https://www.gly.com/uw-seismic-improvements','https://uw.pressbooks.pub/uwlibrariestour/chapter/suzzallo-library-4/'],'step_count':N,'mapped_route_length_m':round(L,3),'run_m':plan['run'],'stair_width_bottom_m':24.4,'stair_width_top_m':21.6,'terrace_frontage_m':round(hi-lo,3),'estimated_riser_m':.16,'lower_landing_m':round(low,3),'upper_landing_m':round(high,3),'library_grade_m':round(plan['base'],3),'upper_landing_depth_m':round(head-L,3),'tread_probes':probes,'domain':mapping(plan['domain']),'limits':'OSM maps the route and count; its route width is not the full stair/terrace width. Broad stair, continuous brick/stone terrace, balustrade and north side ramp interpreted from photos. Secondary dimensions and grades are approximate, not surveyed.'}
     (OUT/'suzzallo_entry_refinement.json').write_text(json.dumps(result,indent=2)+'\n');return result

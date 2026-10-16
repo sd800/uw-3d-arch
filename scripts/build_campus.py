@@ -272,7 +272,11 @@ fine_ground=unary_union([red['poly'].buffer(22),station_osm['poly'].buffer(10)])
 # Dedicated core surfaces replace generic overlapping lawn and path skins.
 alder=next(f for f in buildings if f['id']=='ALD');alder_court=courtyard_from_osm(osm,Polygon(alder['poly'].exterior))
 alder_apron=alder_envelope.buffer(2.4,join_style=2).difference(alder_envelope).difference(footprints).difference(roadarea)
-env(land_scope.difference(footprints).difference(lakewater).difference(alder_court).difference(alder_apron),-3,3,'Ground')
+# Cut the entrance domain out before triangulating terrain: otherwise a
+# triangle spans lower forecourt and upper terrace vertices and pierces the
+# finished apron as white wedges. Closed stairs/terrace supply the upper mass.
+env(land_scope.difference(footprints).difference(lakewater).difference(alder_court).difference(alder_apron).difference(library_entry['domain']),-3,3,'Ground')
+env(library_entry['domain'],library_entry['lower']-.338-3,3,'Ground',False)
 env(alder_apron,-3,3,'Ground')
 env(alder_court,alder['ground']-.18,.18,'Ground',False)
 env(shore_green.difference(land_scope).difference(footprints),-3,3,'ShoreGround')

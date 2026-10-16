@@ -1564,6 +1564,11 @@
     "category": "building",
     "material": "Precast"
   },
+  "W040M4900": {
+    "layer": "W040_Suzzallo Library",
+    "category": "building",
+    "material": "Cedar"
+  },
   "W040M5200": {
     "layer": "W040_Suzzallo Library",
     "category": "building",
@@ -9968,6 +9973,11 @@
     "layer": "Environment",
     "category": "environment",
     "material": "BridgePier"
+  },
+  "E4400": {
+    "layer": "Environment",
+    "category": "environment",
+    "material": "SuzzalloStone"
   },
   "E4900": {
     "layer": "Environment",

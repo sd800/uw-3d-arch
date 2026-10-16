@@ -46,12 +46,43 @@ def build_suzzallo(ms,p,base,code,lay,info,ground,plan):
         for side in [-1,1]:
             window(ms,c+u*side*.78,u,n,base+.12,1.45,3.0,False,'Frame',0)
             for mat in ['DarkGlass','Frame']:ms[mat][-1].apply_translation([-n[0]*1.52,-n[1]*1.52,0])
-        vertical(box(-.12,0,.12,5.55),c,base,.14,.22,'LightStone')
-        at=c+n*.34;m=trimesh.creation.cone(radius=.23,height=.9,sections=8);m.apply_translation([*at,base+5.55]);ms['LightStone'].append(m)
-        head=trimesh.creation.icosphere(subdivisions=1,radius=.17);head.apply_translation([*at,base+6.62]);ms['LightStone'].append(head)
+        # Paired inner lancets and stone tracery sit in front of the recessed
+        # doors. The central trumeau carries a small figure and canopy, rather
+        # than the earlier needle-like post standing across plain dark glass.
+        for side in [-1,1]:
+            inner=affinity.translate(arch(1.78,5.72),xoff=side*.99)
+            vertical(inner.buffer(.105,join_style=2).difference(inner),c,base+.12,-.55,.18,'LightStone')
+            vertical(box(side*.99-.73,3.18,side*.99+.73,3.28),c,base,-.62,.14,'LightStone')
+            for dx in [-.43,.43]:
+                vertical(box(side*.99+dx-.035,3.28,side*.99+dx+.035,4.45),c,base,-.61,.11,'LightStone')
+            # Bronze-colored door frames, kick panels and attached handles.
+            for dx in [-.38,.38]:
+                at=c+u*(side*.78+dx)-n*1.37
+                ms['Cedar'].append(cylinder((*at,base+.24),(*at,base+2.86),.035,5))
+            vertical(box(side*.78-.65,.16,side*.78+.65,.38),c,base,-1.34,.045,'Cedar')
+            at=c+u*(side*.78-side*.20)-n*1.28
+            ms['Gold'].append(cylinder((*at,base+1.05),(*at,base+1.42),.027,6))
+        for side in [-1,1]:
+            rosette=Point(side*.65,6.27).buffer(.28,quad_segs=10)
+            vertical(rosette.buffer(.07).difference(rosette),c,base,-.44,.12,'LightStone')
+        vertical(box(-.16,0,.16,4.45),c,base,-.35,.44,'LightStone')
+        vertical(box(-.34,4.28,.34,4.45),c,base,-.38,.56,'SuzzalloStone')
+        at=c+n*.02
+        robe=trimesh.creation.cone(radius=.23,height=.87,sections=8);robe.apply_translation([*at,base+4.45]);ms['LightStone'].append(robe)
+        ms['LightStone'].append(cylinder((*at,base+4.96),(*at,base+5.46),.16,8))
+        head=trimesh.creation.icosphere(subdivisions=1,radius=.16);head.apply_translation([*at,base+5.62]);ms['LightStone'].append(head)
+        for side in [-1,1]:
+            arm=at+u*side*.20;hand=at+u*side*.13+n*.13
+            ms['LightStone'].append(cylinder((*arm,base+5.28),(*hand,base+4.98),.065,6))
+        canopy=Polygon([(-.40,5.92),(0,6.53),(.40,5.92)])
+        vertical(canopy,c,base,-.30,.62,'SuzzalloStone')
+        vertical(LineString([(-.40,5.92),(0,6.53),(.40,5.92)]).buffer(.055),c,base,.34,.08,'LightStone')
+        # A flush stone threshold joins the brick terrace to each door recess.
+        threshold=Polygon([c-u*1.96+n*.30,c+u*1.96+n*.30,c+u*1.96-n*1.50,c-u*1.96-n*1.50])
+        ms['SuzzalloStone'].append(extrusion(threshold,base-.04,.16))
     for i in [5,6,7,8]:
         c=a+u*i*pitch;vertical(box(-.40,0,.40,2.7),c,base+3.05,.73,.055,'Purple');vertical(box(-.33,2.42,.33,2.58),c,base+3.05,.80,.025,'Gold')
     courses(ms,reading,[base+8.65,base+24.4,base+27.8],'LightStone',.18,.16)
     bb=LineString([a,b]).buffer(8.5,cap_style=2).union(plan['domain']).bounds
-    report={'facility_id':'SUZ','height_m':32.5,'levels':3,'volume_parts':parts,'details':['Thirteen Gothic reading-room window bays, brick spandrels, stone piers and patinated pitched roof','Three physically recessed pointed portals with layered archivolts, gables, paired doors and restrained banner/sculpture forms','Continuous west terrace, broad short stone stair, balustrades and north side ramp from UW/GLY photographs','Separate southeast Gothic wing and lower modern library addition'],'reference':'https://www.gly.com/uw-seismic-improvements','focus_bounds':[bb[0],bb[1],plan['lower'],bb[2],bb[3],base+33.0],'focus_direction':[-.96,-.28,.65],'validation_probes':{'recessed_portals':[{'origin':[*map(float,c+u*.8+n*.7),base+2.0],'direction':[-float(n[0]),-float(n[1]),0],'minimum_recess_m':1.7}for c in portals]},'limits':'Mapped envelope retained. Bay organization and portal/terrace forms are photo-referenced; secondary dimensions, grades and sculptural silhouettes are approximate.'}
+    report={'facility_id':'SUZ','height_m':32.5,'levels':3,'volume_parts':parts,'details':['Thirteen Gothic reading-room window bays, brick spandrels, stone piers and patinated pitched roof','Three physically recessed pointed portals with layered archivolts, gables, paired inner lancets, inset doors, bronze handles, stone tracery and supported figure/canopy silhouettes','Continuous west terrace, broad short stone stair, balustrades and north side ramp from UW/GLY photographs','Separate southeast Gothic wing and lower modern library addition'],'reference':'https://www.gly.com/uw-seismic-improvements','focus_bounds':[bb[0],bb[1],plan['lower'],bb[2],bb[3],base+33.0],'focus_direction':[-1.0,-.015,.70],'validation_probes':{'recessed_portals':[{'origin':[*map(float,c+u*.8+n*.7),base+2.0],'direction':[-float(n[0]),-float(n[1]),0],'minimum_recess_m':1.7}for c in portals]},'entrance_detail':{'paired_inner_lancets':6,'recessed_door_pairs':3,'supported_statue_silhouettes':3,'flush_thresholds':3},'limits':'Mapped envelope retained. Bay organization and portal/terrace forms are photo-referenced; secondary dimensions, grades and sculptural silhouettes are approximate.'}
     (OUT/'suzzallo_architecture.json').write_text(json.dumps(report,indent=2)+'\n');return report
