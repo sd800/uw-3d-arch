@@ -1,5 +1,9 @@
 # Changelog
 
+## 26.10.16.7 — 2026-10-16
+
+- Declare the campus sitemap hosted by the Campus 3D Models collection for cross-site discovery, alongside the existing campus sitemap. Preserve both declarations when packaging future website releases.
+
 ## 26.10.16.6 — 2026-10-16
 
 - Correct the West Gatehouse (GH5) from UW Transportation Services’ exterior photo: replace the tall opaque service box with a low glazed booth, dark frames, purple sign bands and a shallow gabled roof.
