@@ -222,3 +222,14 @@ REFS.update({
  'UWTO':'https://facilities.uw.edu/buildings/uw-tower',
  'UWTS':'https://facilities.uw.edu/buildings/uw-tower'
 })
+
+# Dedicated West Campus housing exteriors (Alder remains in its existing builder).
+PHASE1='https://www.mahlum.com/projects/west-campus-student-housing-phase-i/'
+LANDER='https://mithun.com/project/university-of-washington-lander-hall/'
+MAPLE_TERRY='https://mithun.com/project/university-of-washington-terry-and-maple-halls/'
+MERCER='https://ankrommoisan.com/projects/uw-mercer-court/'
+STEVENS='https://hfs.uw.edu/live/undergraduates/undergraduate-communities/stevens-court/'
+REFS.update({id:PHASE1 for id in ['ELM','POP','CDRE','CDRW']})
+REFS.update({'LAN':LANDER,'MAH':MAPLE_TERRY,'TEH':MAPLE_TERRY})
+REFS.update({id:MERCER for id in ['MRCA','MRCB','MRCC','MRCD','MRCE']})
+REFS.update({id:STEVENS for id in ['SCA','SCB','SCC','SCD','SCH','SCJ','SCK','SCL','SCM']})

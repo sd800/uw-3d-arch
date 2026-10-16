@@ -11,6 +11,7 @@ from core_architecture import oriented_roofs,core_accents
 from architecture_refinement import build_refined,write_report
 from neighboring_areas import build_neighbors
 from campus_detail import build_ordinary,write_ordinary_report
+from west_housing import build_housing,housing_landscape,write_housing_report
 from shore_detail import detail_shores
 from alder_hall import courtyard_from_osm,detail_alder_court,detail_alder_precinct
 from curation import GIS,MAP,LANDMARKS,GOTHIC,PITCHED,HEIGHTS,REFS,SHORT,chinese
@@ -131,7 +132,8 @@ for j,f in enumerate(buildings,1):
         support=extrusion(q,base-1.5,1.51);bottom=support.vertices[:,2]<base-.7
         support.vertices[bottom,2]=np.minimum(base-.2,raw_ground(support.vertices[bottom,0],support.vertices[bottom,1])-1.5)
         ms['Foundation'].append(support)
-    refinement=build_uw_station(ms,p,base,code,lay,info,raw_ground)if id=='LINK_UW'else block_building(ms,p,base,id,code,lay,info,raw_ground)if id in {'SGS','ICT','IC2','DSC','EIC'}else build_refined(ms,p,base,id,height,levels,code,lay,info,raw_ground)
+    refinement=build_housing(ms,p,base,id,height,levels,code,lay,info,raw_ground)
+    if not refinement:refinement=build_uw_station(ms,p,base,code,lay,info,raw_ground)if id=='LINK_UW'else block_building(ms,p,base,id,code,lay,info,raw_ground)if id in {'SGS','ICT','IC2','DSC','EIC'}else build_refined(ms,p,base,id,height,levels,code,lay,info,raw_ground)
     if not refinement and id!='STD':refinement=build_ordinary(ms,p,base,id,height,levels,code,lay,info,raw_ground,ot,f['name'])
     if refinement:
         height=refinement['height_m'];levels=refinement['levels']
@@ -303,6 +305,8 @@ for f in features('uw_benches.geojson'):
 alder_details=detail_alder_court(eg,alder_court,alder['ground']);alder_details['surroundings']={'replaced_by':'alder_block_refinement.json'}
 detail_block(eg,env,osm,alder_envelope,footprints,roadarea,walkarea,features('uw_trees.geojson'),ground,places,scope)
 (OUT/'alder_hall_refinement.json').write_text(json.dumps(alder_details,indent=2))
+housing_site=housing_landscape(eg,env,buildings,footprints,roadarea,walkarea,ground)
+write_housing_report(housing_site)
 for k,(mat,parts) in enumerate(eg.items()):
     if parts:chunk_meshes(f'E{k:02d}',parts,mat,'Environment',{'Source':'UW public tree/bench positions, OSM outdoor surfaces and USGS ground samples','Approximation':'Widths, surface thickness, canopy shapes and furniture detail are illustrative','Units':'meters'})
 print('Landscape complete:',trees,'trees;',cherry,'Quad cherry canopies',flush=True)
@@ -321,8 +325,11 @@ mb=b''
 for name,co in COLORS.items():mb+=chunk(0xAFFF,chunk(0xA000,zs(name))+chunk(0xA010,rgb(tuple(int(v*.5) for v in co)))+chunk(0xA020,rgb(co))+chunk(0xA030,rgb((10,10,10))))
 ob=b''
 for o in objects:
-    m=o['mesh'];v=np.asarray(m.vertices,dtype='<f4');ff=np.column_stack((m.faces,np.full(len(m.faces),7))).astype('<u2');fc0=struct.pack('<H',len(ff))+ff.tobytes()+chunk(0x4130,zs(o['mat'])+struct.pack('<H',len(ff))+np.arange(len(ff),dtype='<u2').tobytes())+chunk(0x4150,np.zeros(len(ff),dtype='<u4').tobytes());ob+=chunk(0x4000,zs(o['name'])+chunk(0x4100,chunk(0x4110,struct.pack('<H',len(v))+v.tobytes())+chunk(0x4120,fc0)))
+    m=o['mesh'];v=np.asarray(m.vertices,dtype='<f4');ff=np.column_stack((m.faces,np.full(len(m.faces),7))).astype('<u2');fc0=struct.pack('<H',len(ff))+ff.tobytes()+chunk(0x4130,zs(o['mat'])+struct.pack('<H',len(ff))+np.arange(len(ff),dtype='<u2').tobytes());ob+=chunk(0x4000,zs(o['name'])+chunk(0x4100,chunk(0x4110,struct.pack('<H',len(v))+v.tobytes())+chunk(0x4120,fc0)))
 (OUT/'UW_Seattle.3ds').write_bytes(chunk(0x4D4D,chunk(0x0002,struct.pack('<I',3))+chunk(0x3D3D,chunk(0x3D3E,struct.pack('<I',3))+chunk(0x0100,struct.pack('<f',1))+mb+ob)))
+# Omitted smoothing groups default to faceted faces, identical to the previous
+# all-zero groups. Removing those redundant blocks saves 4 bytes per triangle
+# without changing vertices, faces, materials, layers or imported shading.
 assert (OUT/'UW_Seattle.3ds').stat().st_size<100*1024**2,'3DS must remain below GitHub single-file limit'
 # Hover boundaries retain mapped outlines; they are independent of persistent labels.
 for place in places:

@@ -1,5 +1,12 @@
 # Changelog
 
+## 26.10.15.9 — 2026-10-15
+
+- Rebuild Elm, Poplar, Lander, Maple and Terry Hall exteriors from university and original architect photographs, with distinct masonry/panel finishes, bounded window modules, public ground-floor glazing, supported entries and matte roof edges.
+- Refine Cedar East/West, the five Mercer Court blocks and nine Stevens Court apartment buildings with their own housing forms, upper light courts/decks, stepped volumes or wing-aligned pitched roofs. Retain building layers and leave Alder Hall unchanged.
+- Improve narrow dorm approaches and selected courts with ground-fitted paving and supported planter seating; document source interpretation and dimensional limits. Regenerate the layered Rhino/3DS model and compressed web/offline editions.
+- Omit redundant all-zero 3DS smoothing groups, preserving faceted shading and exact vertex/index/material data while reducing CAD size. Add focused open-court, deck, roof-bound and unchanged-Alder export checks.
+
 ## 26.10.15.8 — 2026-10-15
 
 - Place collapsed Explore immediately to the left of Guide in a right-aligned action group, retaining the 6 px spacing and matching button styles. Wrap the pair together when the toolbar row has insufficient room.

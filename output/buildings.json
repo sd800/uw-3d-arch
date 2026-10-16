@@ -4494,20 +4494,27 @@
     ],
     "ground_m": 34.268,
     "bottom_m": 34.268,
-    "peak_m": 56.628,
+    "peak_m": 56.278,
     "basis": "平面采用 UW 官方 GIS；外部层数、层高与屋顶高度为估算。GIS 总建筑面积不能视为地上层数。",
     "basis_en": "Official UW footprint; exterior storeys, floor heights and roof elevations are approximate. Reported gross floor area may include basements and does not certify exterior storeys.",
-    "partition": "保留公开映射轮廓和庭院，按建筑用途及已有标记细化窗格、楼层线脚、屋顶与接地入口；外部高度与构件尺寸为近似表达。",
-    "partition_en": "Mapped footprint and courtyard openings retained; Use-specific window spacing, floor courses, grounded entry or service door; Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes. Exterior dimensions and partitions remain approximate.",
+    "partition": "按公开建筑资料和航拍细化体量、屋顶与立面；保留官方轮廓。外部高度及构件尺寸仍为近似表达。",
+    "partition_en": "Charcoal masonry and paired pale-framed residential lights; Ground-fitted public/amenity glazing with a restrained weathered-metal fascia; Separate matte roof, attached parapets and bounded deck edges; Opposing C-shaped upper residential wings and lower light-court decks, interpreted from aerial and UW PCAD. Exterior dimensions and partitions remain approximate.",
     "source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "footprint_source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
-    "architecture_reference": null,
+    "architecture_reference": "https://www.mahlum.com/projects/west-campus-student-housing-phase-i/",
     "construction_status": "Active",
     "volume_parts": [
       {
         "area_m2": 1708.51,
-        "height_m": 21.93,
-        "material": "BrickBuff"
+        "base_offset_m": 0,
+        "height_m": 4.7,
+        "material": "HousingCharcoal"
+      },
+      {
+        "area_m2": 1270.93,
+        "base_offset_m": 4.7,
+        "height_m": 16.83,
+        "material": "HousingCharcoal"
       }
     ]
   },
@@ -4540,20 +4547,27 @@
     ],
     "ground_m": 33.818,
     "bottom_m": 33.818,
-    "peak_m": 56.178,
+    "peak_m": 55.828,
     "basis": "平面采用 UW 官方 GIS；外部层数、层高与屋顶高度为估算。GIS 总建筑面积不能视为地上层数。",
     "basis_en": "Official UW footprint; exterior storeys, floor heights and roof elevations are approximate. Reported gross floor area may include basements and does not certify exterior storeys.",
-    "partition": "保留公开映射轮廓和庭院，按建筑用途及已有标记细化窗格、楼层线脚、屋顶与接地入口；外部高度与构件尺寸为近似表达。",
-    "partition_en": "Mapped footprint and courtyard openings retained; Use-specific window spacing, floor courses, grounded entry or service door; Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes. Exterior dimensions and partitions remain approximate.",
+    "partition": "按公开建筑资料和航拍细化体量、屋顶与立面；保留官方轮廓。外部高度及构件尺寸仍为近似表达。",
+    "partition_en": "Charcoal masonry and paired pale-framed residential lights; Ground-fitted public/amenity glazing with a restrained weathered-metal fascia; Separate matte roof, attached parapets and bounded deck edges; Opposing C-shaped upper residential wings and lower light-court decks, interpreted from aerial and UW PCAD. Exterior dimensions and partitions remain approximate.",
     "source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "footprint_source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
-    "architecture_reference": null,
+    "architecture_reference": "https://www.mahlum.com/projects/west-campus-student-housing-phase-i/",
     "construction_status": "Active",
     "volume_parts": [
       {
         "area_m2": 1326.62,
-        "height_m": 21.93,
-        "material": "BrickBuff"
+        "base_offset_m": 0,
+        "height_m": 4.7,
+        "material": "HousingCharcoal"
+      },
+      {
+        "area_m2": 986.3,
+        "base_offset_m": 4.7,
+        "height_m": 16.83,
+        "material": "HousingCharcoal"
       }
     ]
   },
@@ -4682,17 +4696,23 @@
     "basis": "平面采用 UW 官方 GIS；外部层数、层高与屋顶高度为估算。GIS 总建筑面积不能视为地上层数。",
     "basis_en": "Official UW footprint; exterior storeys, floor heights and roof elevations are approximate. Reported gross floor area may include basements and does not certify exterior storeys.",
     "partition": "按公开建筑资料和航拍细化体量、屋顶与立面；保留官方轮廓。外部高度及构件尺寸仍为近似表达。",
-    "partition_en": "Brick residence with smaller paired window modules. Exterior dimensions and partitions remain approximate.",
+    "partition_en": "Charcoal masonry and paired pale-framed residential lights; Ground-fitted public/amenity glazing with a restrained weathered-metal fascia; Separate matte roof, attached parapets and bounded deck edges. Exterior dimensions and partitions remain approximate.",
     "source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "footprint_source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
-    "architecture_reference": null,
+    "architecture_reference": "https://www.mahlum.com/projects/west-campus-student-housing-phase-i/",
     "construction_status": "Active",
     "volume_parts": [
       {
         "area_m2": 2084.82,
         "base_offset_m": 0,
-        "height_m": 21.45,
-        "material": "BrickBuff"
+        "height_m": 4.25,
+        "material": "HousingCharcoal"
+      },
+      {
+        "area_m2": 2084.82,
+        "base_offset_m": 4.25,
+        "height_m": 17.28,
+        "material": "HousingCharcoal"
       }
     ]
   },
@@ -4775,17 +4795,23 @@
     "basis": "平面采用 UW 官方 GIS；外部层数、层高与屋顶高度为估算。GIS 总建筑面积不能视为地上层数。",
     "basis_en": "Official UW footprint; exterior storeys, floor heights and roof elevations are approximate. Reported gross floor area may include basements and does not certify exterior storeys.",
     "partition": "按公开建筑资料和航拍细化体量、屋顶与立面；保留官方轮廓。外部高度及构件尺寸仍为近似表达。",
-    "partition_en": "Brick residence with smaller paired window modules. Exterior dimensions and partitions remain approximate.",
+    "partition_en": "Charcoal masonry and paired pale-framed residential lights; Ground-fitted public/amenity glazing with a restrained weathered-metal fascia; Separate matte roof, attached parapets and bounded deck edges; Recessed west-facing communal deck instead of a full-height rectangular wall. Exterior dimensions and partitions remain approximate.",
     "source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "footprint_source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
-    "architecture_reference": null,
+    "architecture_reference": "https://www.mahlum.com/projects/west-campus-student-housing-phase-i/",
     "construction_status": "Active",
     "volume_parts": [
       {
         "area_m2": 1357.61,
         "base_offset_m": 0,
-        "height_m": 21.45,
-        "material": "BrickBuff"
+        "height_m": 4.25,
+        "material": "HousingCharcoal"
+      },
+      {
+        "area_m2": 1281.4,
+        "base_offset_m": 4.25,
+        "height_m": 17.28,
+        "material": "HousingCharcoal"
       }
     ]
   },
@@ -4864,21 +4890,27 @@
     ],
     "ground_m": 27.23,
     "bottom_m": 27.23,
-    "peak_m": 52.29,
+    "peak_m": 52.32,
     "basis": "平面采用 UW 官方 GIS；外部层数、层高与屋顶高度为估算。GIS 总建筑面积不能视为地上层数。",
     "basis_en": "Official UW footprint; exterior storeys, floor heights and roof elevations are approximate. Reported gross floor area may include basements and does not certify exterior storeys.",
     "partition": "按公开建筑资料和航拍细化体量、屋顶与立面；保留官方轮廓。外部高度及构件尺寸仍为近似表达。",
-    "partition_en": "Brick residence with smaller paired window modules. Exterior dimensions and partitions remain approximate.",
+    "partition_en": "Pale panel enclosure with shallow checkerboard spandrels; Copper northeast lounge corner with stacked double-height glazed bays; Transparent Local Point/student-services street edge; uphill pavement controls entry level; Mapped U-shaped courtyard and terraced north-to-south approach remain open. Exterior dimensions and partitions remain approximate.",
     "source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "footprint_source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
-    "architecture_reference": null,
+    "architecture_reference": "https://mithun.com/project/university-of-washington-lander-hall/",
     "construction_status": "Active",
     "volume_parts": [
       {
         "area_m2": 2734.28,
         "base_offset_m": 0,
-        "height_m": 24.5,
-        "material": "BrickBuff"
+        "height_m": 9.5,
+        "material": "HousingConcrete"
+      },
+      {
+        "area_m2": 2734.28,
+        "base_offset_m": 9.5,
+        "height_m": 15.08,
+        "material": "HousingPanel"
       }
     ]
   },
@@ -4975,17 +5007,29 @@
     "basis": "平面采用 UW 官方 GIS；外部层数、层高与屋顶高度为估算。GIS 总建筑面积不能视为地上层数。",
     "basis_en": "Official UW footprint; exterior storeys, floor heights and roof elevations are approximate. Reported gross floor area may include basements and does not certify exterior storeys.",
     "partition": "按公开建筑资料和航拍细化体量、屋顶与立面；保留官方轮廓。外部高度及构件尺寸仍为近似表达。",
-    "partition_en": "Brick residence with smaller paired window modules. Exterior dimensions and partitions remain approximate.",
+    "partition_en": "Warm red brick, varied window widths and restrained blue/ochre infill panels; Taller street-level public glazing and grounded entrance canopies; Matte roof and continuous attached parapets; Recessed upper south roof terrace and taller HFS office/entry glazing. Exterior dimensions and partitions remain approximate.",
     "source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "footprint_source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
-    "architecture_reference": null,
+    "architecture_reference": "https://mithun.com/project/university-of-washington-terry-and-maple-halls/",
     "construction_status": "Active",
     "volume_parts": [
       {
         "area_m2": 1465.26,
         "base_offset_m": 0,
-        "height_m": 24.5,
-        "material": "BrickBuff"
+        "height_m": 6.6,
+        "material": "HousingBrick"
+      },
+      {
+        "area_m2": 1465.26,
+        "base_offset_m": 6.6,
+        "height_m": 14.98,
+        "material": "HousingBrick"
+      },
+      {
+        "area_m2": 1191.81,
+        "base_offset_m": 21.58,
+        "height_m": 3.0,
+        "material": "HousingBrick"
       }
     ]
   },
@@ -5022,17 +5066,23 @@
     "basis": "平面采用 UW 官方 GIS；外部层数、层高与屋顶高度为估算。GIS 总建筑面积不能视为地上层数。",
     "basis_en": "Official UW footprint; exterior storeys, floor heights and roof elevations are approximate. Reported gross floor area may include basements and does not certify exterior storeys.",
     "partition": "按公开建筑资料和航拍细化体量、屋顶与立面；保留官方轮廓。外部高度及构件尺寸仍为近似表达。",
-    "partition_en": "Brick residence with smaller paired window modules. Exterior dimensions and partitions remain approximate.",
+    "partition_en": "Warm red brick, varied window widths and restrained blue/ochre infill panels; Taller street-level public glazing and grounded entrance canopies; Matte roof and continuous attached parapets; Existing mapped open-air light court retained; Great Room/Area 01 face the pedestrian plaza. Exterior dimensions and partitions remain approximate.",
     "source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "footprint_source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
-    "architecture_reference": null,
+    "architecture_reference": "https://mithun.com/project/university-of-washington-terry-and-maple-halls/",
     "construction_status": "Active",
     "volume_parts": [
       {
         "area_m2": 2833.42,
         "base_offset_m": 0,
-        "height_m": 24.5,
-        "material": "BrickBuff"
+        "height_m": 6.6,
+        "material": "HousingBrick"
+      },
+      {
+        "area_m2": 2833.42,
+        "base_offset_m": 6.6,
+        "height_m": 17.98,
+        "material": "HousingBrick"
       }
     ]
   },
@@ -5612,20 +5662,51 @@
     ],
     "ground_m": 18.58,
     "bottom_m": 18.58,
-    "peak_m": 43.99,
+    "peak_m": 43.59,
     "basis": "平面采用 UW 官方 GIS；外部层数、层高与屋顶高度为估算。GIS 总建筑面积不能视为地上层数。",
     "basis_en": "Official UW footprint; exterior storeys, floor heights and roof elevations are approximate. Reported gross floor area may include basements and does not certify exterior storeys.",
-    "partition": "保留公开映射轮廓和庭院，按建筑用途及已有标记细化窗格、楼层线脚、屋顶与接地入口；外部高度与构件尺寸为近似表达。",
-    "partition_en": "Mapped footprint and courtyard openings retained; Use-specific window spacing, floor courses, grounded entry or service door; Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes. Exterior dimensions and partitions remain approximate.",
+    "partition": "按公开建筑资料和航拍细化体量、屋顶与立面；保留官方轮廓。外部高度及构件尺寸仍为近似表达。",
+    "partition_en": "Five separately mapped finger-like blocks retained; Dark masonry bases and pale silver metal upper enclosures; Tall framed lights with shallow attached flared bay cheeks; Stepped bay-facing roof volumes and ground-fitted plaza entries. Exterior dimensions and partitions remain approximate.",
     "source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "footprint_source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
-    "architecture_reference": null,
+    "architecture_reference": "https://ankrommoisan.com/projects/uw-mercer-court/",
     "construction_status": "Active",
     "volume_parts": [
       {
-        "area_m2": 1449.89,
-        "height_m": 24.98,
-        "material": "BrickBuff"
+        "area_m2": 292.63,
+        "base_offset_m": 0,
+        "height_m": 4.4,
+        "material": "HousingUmber"
+      },
+      {
+        "area_m2": 292.63,
+        "base_offset_m": 4.4,
+        "height_m": 17.18,
+        "material": "HousingSilver"
+      },
+      {
+        "area_m2": 749.98,
+        "base_offset_m": 0,
+        "height_m": 4.4,
+        "material": "HousingUmber"
+      },
+      {
+        "area_m2": 749.98,
+        "base_offset_m": 4.4,
+        "height_m": 19.18,
+        "material": "HousingSilver"
+      },
+      {
+        "area_m2": 407.24,
+        "base_offset_m": 0,
+        "height_m": 4.4,
+        "material": "HousingUmber"
+      },
+      {
+        "area_m2": 407.24,
+        "base_offset_m": 4.4,
+        "height_m": 20.18,
+        "material": "HousingSilver"
       }
     ]
   },
@@ -5750,20 +5831,51 @@
     ],
     "ground_m": 15.35,
     "bottom_m": 15.35,
-    "peak_m": 40.76,
+    "peak_m": 40.36,
     "basis": "平面采用 UW 官方 GIS；外部层数、层高与屋顶高度为估算。GIS 总建筑面积不能视为地上层数。",
     "basis_en": "Official UW footprint; exterior storeys, floor heights and roof elevations are approximate. Reported gross floor area may include basements and does not certify exterior storeys.",
-    "partition": "保留公开映射轮廓和庭院，按建筑用途及已有标记细化窗格、楼层线脚、屋顶与接地入口；外部高度与构件尺寸为近似表达。",
-    "partition_en": "Mapped footprint and courtyard openings retained; Use-specific window spacing, floor courses, grounded entry or service door; Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes. Exterior dimensions and partitions remain approximate.",
+    "partition": "按公开建筑资料和航拍细化体量、屋顶与立面；保留官方轮廓。外部高度及构件尺寸仍为近似表达。",
+    "partition_en": "Five separately mapped finger-like blocks retained; Dark masonry bases and pale silver metal upper enclosures; Tall framed lights with shallow attached flared bay cheeks; Stepped bay-facing roof volumes and ground-fitted plaza entries. Exterior dimensions and partitions remain approximate.",
     "source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "footprint_source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
-    "architecture_reference": null,
+    "architecture_reference": "https://ankrommoisan.com/projects/uw-mercer-court/",
     "construction_status": "Active",
     "volume_parts": [
       {
-        "area_m2": 891.35,
-        "height_m": 24.98,
-        "material": "BrickBuff"
+        "area_m2": 169.29,
+        "base_offset_m": 0,
+        "height_m": 4.4,
+        "material": "HousingUmber"
+      },
+      {
+        "area_m2": 169.29,
+        "base_offset_m": 4.4,
+        "height_m": 17.18,
+        "material": "HousingSilver"
+      },
+      {
+        "area_m2": 473.42,
+        "base_offset_m": 0,
+        "height_m": 4.4,
+        "material": "HousingUmber"
+      },
+      {
+        "area_m2": 473.42,
+        "base_offset_m": 4.4,
+        "height_m": 19.18,
+        "material": "HousingSilver"
+      },
+      {
+        "area_m2": 248.61,
+        "base_offset_m": 0,
+        "height_m": 4.4,
+        "material": "HousingUmber"
+      },
+      {
+        "area_m2": 248.61,
+        "base_offset_m": 4.4,
+        "height_m": 20.18,
+        "material": "HousingSilver"
       }
     ]
   },
@@ -5796,20 +5908,21 @@
     ],
     "ground_m": 19.53,
     "bottom_m": 19.53,
-    "peak_m": 32.74,
+    "peak_m": 32.4,
     "basis": "平面采用 UW 官方 GIS；外部层数、层高与屋顶高度为估算。GIS 总建筑面积不能视为地上层数。",
     "basis_en": "Official UW footprint; exterior storeys, floor heights and roof elevations are approximate. Reported gross floor area may include basements and does not certify exterior storeys.",
-    "partition": "保留公开映射轮廓和庭院，按建筑用途及已有标记细化窗格、楼层线脚、屋顶与接地入口；外部高度与构件尺寸为近似表达。",
-    "partition_en": "Mapped footprint and courtyard openings retained; Use-specific window spacing, floor courses, grounded entry or service door; Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes. Exterior dimensions and partitions remain approximate.",
+    "partition": "按公开建筑资料和航拍细化体量、屋顶与立面；保留官方轮廓。外部高度及构件尺寸仍为近似表达。",
+    "partition_en": "Low-rise red-brown apartment blocks with narrow domestic window groups; Attached upper-wall courses and slate pitched roofs following each mapped wing; Grounded entrances and continuous support to sampled terrain. Exterior dimensions and partitions remain approximate.",
     "source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "footprint_source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
-    "architecture_reference": null,
+    "architecture_reference": "https://hfs.uw.edu/live/undergraduates/undergraduate-communities/stevens-court/",
     "construction_status": "Active",
     "volume_parts": [
       {
         "area_m2": 1071.07,
-        "height_m": 12.78,
-        "material": "BrickBuff"
+        "base_offset_m": 0,
+        "height_m": 11.05,
+        "material": "HousingBrick"
       }
     ]
   },
@@ -5842,20 +5955,51 @@
     ],
     "ground_m": 14.582,
     "bottom_m": 14.582,
-    "peak_m": 39.992,
+    "peak_m": 39.592,
     "basis": "平面采用 UW 官方 GIS；外部层数、层高与屋顶高度为估算。GIS 总建筑面积不能视为地上层数。",
     "basis_en": "Official UW footprint; exterior storeys, floor heights and roof elevations are approximate. Reported gross floor area may include basements and does not certify exterior storeys.",
-    "partition": "保留公开映射轮廓和庭院，按建筑用途及已有标记细化窗格、楼层线脚、屋顶与接地入口；外部高度与构件尺寸为近似表达。",
-    "partition_en": "Mapped footprint and courtyard openings retained; Use-specific window spacing, floor courses, grounded entry or service door; Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes. Exterior dimensions and partitions remain approximate.",
+    "partition": "按公开建筑资料和航拍细化体量、屋顶与立面；保留官方轮廓。外部高度及构件尺寸仍为近似表达。",
+    "partition_en": "Five separately mapped finger-like blocks retained; Dark masonry bases and pale silver metal upper enclosures; Tall framed lights with shallow attached flared bay cheeks; Stepped bay-facing roof volumes and ground-fitted plaza entries. Exterior dimensions and partitions remain approximate.",
     "source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "footprint_source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
-    "architecture_reference": null,
+    "architecture_reference": "https://ankrommoisan.com/projects/uw-mercer-court/",
     "construction_status": "Active",
     "volume_parts": [
       {
-        "area_m2": 896.19,
-        "height_m": 24.98,
-        "material": "BrickBuff"
+        "area_m2": 162.49,
+        "base_offset_m": 0,
+        "height_m": 4.4,
+        "material": "HousingUmber"
+      },
+      {
+        "area_m2": 162.49,
+        "base_offset_m": 4.4,
+        "height_m": 17.18,
+        "material": "HousingSilver"
+      },
+      {
+        "area_m2": 480.85,
+        "base_offset_m": 0,
+        "height_m": 4.4,
+        "material": "HousingUmber"
+      },
+      {
+        "area_m2": 480.85,
+        "base_offset_m": 4.4,
+        "height_m": 19.18,
+        "material": "HousingSilver"
+      },
+      {
+        "area_m2": 252.91,
+        "base_offset_m": 0,
+        "height_m": 4.4,
+        "material": "HousingUmber"
+      },
+      {
+        "area_m2": 252.91,
+        "base_offset_m": 4.4,
+        "height_m": 20.18,
+        "material": "HousingSilver"
       }
     ]
   },
@@ -5888,20 +6032,51 @@
     ],
     "ground_m": 14.833,
     "bottom_m": 14.833,
-    "peak_m": 40.243,
+    "peak_m": 39.843,
     "basis": "平面采用 UW 官方 GIS；外部层数、层高与屋顶高度为估算。GIS 总建筑面积不能视为地上层数。",
     "basis_en": "Official UW footprint; exterior storeys, floor heights and roof elevations are approximate. Reported gross floor area may include basements and does not certify exterior storeys.",
-    "partition": "保留公开映射轮廓和庭院，按建筑用途及已有标记细化窗格、楼层线脚、屋顶与接地入口；外部高度与构件尺寸为近似表达。",
-    "partition_en": "Mapped footprint and courtyard openings retained; Use-specific window spacing, floor courses, grounded entry or service door; Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes. Exterior dimensions and partitions remain approximate.",
+    "partition": "按公开建筑资料和航拍细化体量、屋顶与立面；保留官方轮廓。外部高度及构件尺寸仍为近似表达。",
+    "partition_en": "Five separately mapped finger-like blocks retained; Dark masonry bases and pale silver metal upper enclosures; Tall framed lights with shallow attached flared bay cheeks; Stepped bay-facing roof volumes and ground-fitted plaza entries. Exterior dimensions and partitions remain approximate.",
     "source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "footprint_source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
-    "architecture_reference": null,
+    "architecture_reference": "https://ankrommoisan.com/projects/uw-mercer-court/",
     "construction_status": "Active",
     "volume_parts": [
       {
-        "area_m2": 1249.12,
-        "height_m": 24.98,
-        "material": "BrickBuff"
+        "area_m2": 237.99,
+        "base_offset_m": 0,
+        "height_m": 4.4,
+        "material": "HousingUmber"
+      },
+      {
+        "area_m2": 237.99,
+        "base_offset_m": 4.4,
+        "height_m": 17.18,
+        "material": "HousingSilver"
+      },
+      {
+        "area_m2": 658.29,
+        "base_offset_m": 0,
+        "height_m": 4.4,
+        "material": "HousingUmber"
+      },
+      {
+        "area_m2": 658.29,
+        "base_offset_m": 4.4,
+        "height_m": 19.18,
+        "material": "HousingSilver"
+      },
+      {
+        "area_m2": 352.8,
+        "base_offset_m": 0,
+        "height_m": 4.4,
+        "material": "HousingUmber"
+      },
+      {
+        "area_m2": 352.8,
+        "base_offset_m": 4.4,
+        "height_m": 20.18,
+        "material": "HousingSilver"
       }
     ]
   },
@@ -5934,20 +6109,21 @@
     ],
     "ground_m": 18.071,
     "bottom_m": 18.071,
-    "peak_m": 28.231,
+    "peak_m": 27.891,
     "basis": "平面采用 UW 官方 GIS；外部层数、层高与屋顶高度为估算。GIS 总建筑面积不能视为地上层数。",
     "basis_en": "Official UW footprint; exterior storeys, floor heights and roof elevations are approximate. Reported gross floor area may include basements and does not certify exterior storeys.",
-    "partition": "保留公开映射轮廓和庭院，按建筑用途及已有标记细化窗格、楼层线脚、屋顶与接地入口；外部高度与构件尺寸为近似表达。",
-    "partition_en": "Mapped footprint and courtyard openings retained; Use-specific window spacing, floor courses, grounded entry or service door; Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes. Exterior dimensions and partitions remain approximate.",
+    "partition": "按公开建筑资料和航拍细化体量、屋顶与立面；保留官方轮廓。外部高度及构件尺寸仍为近似表达。",
+    "partition_en": "Low-rise red-brown apartment blocks with narrow domestic window groups; Attached upper-wall courses and slate pitched roofs following each mapped wing; Grounded entrances and continuous support to sampled terrain. Exterior dimensions and partitions remain approximate.",
     "source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "footprint_source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
-    "architecture_reference": null,
+    "architecture_reference": "https://hfs.uw.edu/live/undergraduates/undergraduate-communities/stevens-court/",
     "construction_status": "Active",
     "volume_parts": [
       {
         "area_m2": 573.2,
-        "height_m": 9.73,
-        "material": "BrickBuff"
+        "base_offset_m": 0,
+        "height_m": 8.0,
+        "material": "HousingBrick"
       }
     ]
   },
@@ -5980,20 +6156,21 @@
     ],
     "ground_m": 16.481,
     "bottom_m": 16.481,
-    "peak_m": 29.691,
+    "peak_m": 29.351,
     "basis": "平面采用 UW 官方 GIS；外部层数、层高与屋顶高度为估算。GIS 总建筑面积不能视为地上层数。",
     "basis_en": "Official UW footprint; exterior storeys, floor heights and roof elevations are approximate. Reported gross floor area may include basements and does not certify exterior storeys.",
-    "partition": "保留公开映射轮廓和庭院，按建筑用途及已有标记细化窗格、楼层线脚、屋顶与接地入口；外部高度与构件尺寸为近似表达。",
-    "partition_en": "Mapped footprint and courtyard openings retained; Use-specific window spacing, floor courses, grounded entry or service door; Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes. Exterior dimensions and partitions remain approximate.",
+    "partition": "按公开建筑资料和航拍细化体量、屋顶与立面；保留官方轮廓。外部高度及构件尺寸仍为近似表达。",
+    "partition_en": "Low-rise red-brown apartment blocks with narrow domestic window groups; Attached upper-wall courses and slate pitched roofs following each mapped wing; Grounded entrances and continuous support to sampled terrain. Exterior dimensions and partitions remain approximate.",
     "source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "footprint_source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
-    "architecture_reference": null,
+    "architecture_reference": "https://hfs.uw.edu/live/undergraduates/undergraduate-communities/stevens-court/",
     "construction_status": "Active",
     "volume_parts": [
       {
         "area_m2": 755.33,
-        "height_m": 12.78,
-        "material": "BrickBuff"
+        "base_offset_m": 0,
+        "height_m": 11.05,
+        "material": "HousingBrick"
       }
     ]
   },
@@ -6026,20 +6203,51 @@
     ],
     "ground_m": 14.612,
     "bottom_m": 14.612,
-    "peak_m": 40.022,
+    "peak_m": 39.622,
     "basis": "平面采用 UW 官方 GIS；外部层数、层高与屋顶高度为估算。GIS 总建筑面积不能视为地上层数。",
     "basis_en": "Official UW footprint; exterior storeys, floor heights and roof elevations are approximate. Reported gross floor area may include basements and does not certify exterior storeys.",
-    "partition": "保留公开映射轮廓和庭院，按建筑用途及已有标记细化窗格、楼层线脚、屋顶与接地入口；外部高度与构件尺寸为近似表达。",
-    "partition_en": "Mapped footprint and courtyard openings retained; Use-specific window spacing, floor courses, grounded entry or service door; Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes. Exterior dimensions and partitions remain approximate.",
+    "partition": "按公开建筑资料和航拍细化体量、屋顶与立面；保留官方轮廓。外部高度及构件尺寸仍为近似表达。",
+    "partition_en": "Five separately mapped finger-like blocks retained; Dark masonry bases and pale silver metal upper enclosures; Tall framed lights with shallow attached flared bay cheeks; Stepped bay-facing roof volumes and ground-fitted plaza entries. Exterior dimensions and partitions remain approximate.",
     "source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "footprint_source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
-    "architecture_reference": null,
+    "architecture_reference": "https://ankrommoisan.com/projects/uw-mercer-court/",
     "construction_status": "Active",
     "volume_parts": [
       {
-        "area_m2": 1367.72,
-        "height_m": 24.98,
-        "material": "BrickBuff"
+        "area_m2": 265.53,
+        "base_offset_m": 0,
+        "height_m": 4.4,
+        "material": "HousingUmber"
+      },
+      {
+        "area_m2": 265.53,
+        "base_offset_m": 4.4,
+        "height_m": 17.18,
+        "material": "HousingSilver"
+      },
+      {
+        "area_m2": 718.33,
+        "base_offset_m": 0,
+        "height_m": 4.4,
+        "material": "HousingUmber"
+      },
+      {
+        "area_m2": 718.33,
+        "base_offset_m": 4.4,
+        "height_m": 19.18,
+        "material": "HousingSilver"
+      },
+      {
+        "area_m2": 383.86,
+        "base_offset_m": 0,
+        "height_m": 4.4,
+        "material": "HousingUmber"
+      },
+      {
+        "area_m2": 383.86,
+        "base_offset_m": 4.4,
+        "height_m": 20.18,
+        "material": "HousingSilver"
       }
     ]
   },
@@ -6072,20 +6280,21 @@
     ],
     "ground_m": 17.872,
     "bottom_m": 17.872,
-    "peak_m": 31.082,
+    "peak_m": 30.742,
     "basis": "平面采用 UW 官方 GIS；外部层数、层高与屋顶高度为估算。GIS 总建筑面积不能视为地上层数。",
     "basis_en": "Official UW footprint; exterior storeys, floor heights and roof elevations are approximate. Reported gross floor area may include basements and does not certify exterior storeys.",
-    "partition": "保留公开映射轮廓和庭院，按建筑用途及已有标记细化窗格、楼层线脚、屋顶与接地入口；外部高度与构件尺寸为近似表达。",
-    "partition_en": "Mapped footprint and courtyard openings retained; Use-specific window spacing, floor courses, grounded entry or service door; Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes. Exterior dimensions and partitions remain approximate.",
+    "partition": "按公开建筑资料和航拍细化体量、屋顶与立面；保留官方轮廓。外部高度及构件尺寸仍为近似表达。",
+    "partition_en": "Low-rise red-brown apartment blocks with narrow domestic window groups; Attached upper-wall courses and slate pitched roofs following each mapped wing; Grounded entrances and continuous support to sampled terrain. Exterior dimensions and partitions remain approximate.",
     "source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "footprint_source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
-    "architecture_reference": null,
+    "architecture_reference": "https://hfs.uw.edu/live/undergraduates/undergraduate-communities/stevens-court/",
     "construction_status": "Active",
     "volume_parts": [
       {
         "area_m2": 647.52,
-        "height_m": 12.78,
-        "material": "BrickBuff"
+        "base_offset_m": 0,
+        "height_m": 11.05,
+        "material": "HousingBrick"
       }
     ]
   },
@@ -6118,20 +6327,21 @@
     ],
     "ground_m": 17.992,
     "bottom_m": 17.992,
-    "peak_m": 31.202,
+    "peak_m": 30.862,
     "basis": "平面采用 UW 官方 GIS；外部层数、层高与屋顶高度为估算。GIS 总建筑面积不能视为地上层数。",
     "basis_en": "Official UW footprint; exterior storeys, floor heights and roof elevations are approximate. Reported gross floor area may include basements and does not certify exterior storeys.",
-    "partition": "保留公开映射轮廓和庭院，按建筑用途及已有标记细化窗格、楼层线脚、屋顶与接地入口；外部高度与构件尺寸为近似表达。",
-    "partition_en": "Mapped footprint and courtyard openings retained; Use-specific window spacing, floor courses, grounded entry or service door; Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes. Exterior dimensions and partitions remain approximate.",
+    "partition": "按公开建筑资料和航拍细化体量、屋顶与立面；保留官方轮廓。外部高度及构件尺寸仍为近似表达。",
+    "partition_en": "Low-rise red-brown apartment blocks with narrow domestic window groups; Attached upper-wall courses and slate pitched roofs following each mapped wing; Grounded entrances and continuous support to sampled terrain. Exterior dimensions and partitions remain approximate.",
     "source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "footprint_source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
-    "architecture_reference": null,
+    "architecture_reference": "https://hfs.uw.edu/live/undergraduates/undergraduate-communities/stevens-court/",
     "construction_status": "Active",
     "volume_parts": [
       {
         "area_m2": 618.47,
-        "height_m": 12.78,
-        "material": "BrickBuff"
+        "base_offset_m": 0,
+        "height_m": 11.05,
+        "material": "HousingBrick"
       }
     ]
   },
@@ -6164,20 +6374,21 @@
     ],
     "ground_m": 16.876,
     "bottom_m": 16.876,
-    "peak_m": 27.036,
+    "peak_m": 26.696,
     "basis": "平面采用 UW 官方 GIS；外部层数、层高与屋顶高度为估算。GIS 总建筑面积不能视为地上层数。",
     "basis_en": "Official UW footprint; exterior storeys, floor heights and roof elevations are approximate. Reported gross floor area may include basements and does not certify exterior storeys.",
-    "partition": "保留公开映射轮廓和庭院，按建筑用途及已有标记细化窗格、楼层线脚、屋顶与接地入口；外部高度与构件尺寸为近似表达。",
-    "partition_en": "Mapped footprint and courtyard openings retained; Use-specific window spacing, floor courses, grounded entry or service door; Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes. Exterior dimensions and partitions remain approximate.",
+    "partition": "按公开建筑资料和航拍细化体量、屋顶与立面；保留官方轮廓。外部高度及构件尺寸仍为近似表达。",
+    "partition_en": "Low-rise red-brown apartment blocks with narrow domestic window groups; Attached upper-wall courses and slate pitched roofs following each mapped wing; Grounded entrances and continuous support to sampled terrain. Exterior dimensions and partitions remain approximate.",
     "source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "footprint_source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
-    "architecture_reference": null,
+    "architecture_reference": "https://hfs.uw.edu/live/undergraduates/undergraduate-communities/stevens-court/",
     "construction_status": "Active",
     "volume_parts": [
       {
         "area_m2": 260.61,
-        "height_m": 9.73,
-        "material": "BrickBuff"
+        "base_offset_m": 0,
+        "height_m": 8.0,
+        "material": "HousingBrick"
       }
     ]
   },
@@ -6256,20 +6467,21 @@
     ],
     "ground_m": 15.565,
     "bottom_m": 15.565,
-    "peak_m": 25.725,
+    "peak_m": 25.385,
     "basis": "平面采用 UW 官方 GIS；外部层数、层高与屋顶高度为估算。GIS 总建筑面积不能视为地上层数。",
     "basis_en": "Official UW footprint; exterior storeys, floor heights and roof elevations are approximate. Reported gross floor area may include basements and does not certify exterior storeys.",
-    "partition": "保留公开映射轮廓和庭院，按建筑用途及已有标记细化窗格、楼层线脚、屋顶与接地入口；外部高度与构件尺寸为近似表达。",
-    "partition_en": "Mapped footprint and courtyard openings retained; Use-specific window spacing, floor courses, grounded entry or service door; Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes. Exterior dimensions and partitions remain approximate.",
+    "partition": "按公开建筑资料和航拍细化体量、屋顶与立面；保留官方轮廓。外部高度及构件尺寸仍为近似表达。",
+    "partition_en": "Low-rise red-brown apartment blocks with narrow domestic window groups; Attached upper-wall courses and slate pitched roofs following each mapped wing; Grounded entrances and continuous support to sampled terrain. Exterior dimensions and partitions remain approximate.",
     "source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "footprint_source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
-    "architecture_reference": null,
+    "architecture_reference": "https://hfs.uw.edu/live/undergraduates/undergraduate-communities/stevens-court/",
     "construction_status": "Active",
     "volume_parts": [
       {
         "area_m2": 469.6,
-        "height_m": 9.73,
-        "material": "BrickBuff"
+        "base_offset_m": 0,
+        "height_m": 8.0,
+        "material": "HousingBrick"
       }
     ]
   },
@@ -6302,20 +6514,21 @@
     ],
     "ground_m": 17.379,
     "bottom_m": 17.379,
-    "peak_m": 30.589,
+    "peak_m": 30.249,
     "basis": "平面采用 UW 官方 GIS；外部层数、层高与屋顶高度为估算。GIS 总建筑面积不能视为地上层数。",
     "basis_en": "Official UW footprint; exterior storeys, floor heights and roof elevations are approximate. Reported gross floor area may include basements and does not certify exterior storeys.",
-    "partition": "保留公开映射轮廓和庭院，按建筑用途及已有标记细化窗格、楼层线脚、屋顶与接地入口；外部高度与构件尺寸为近似表达。",
-    "partition_en": "Mapped footprint and courtyard openings retained; Use-specific window spacing, floor courses, grounded entry or service door; Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes. Exterior dimensions and partitions remain approximate.",
+    "partition": "按公开建筑资料和航拍细化体量、屋顶与立面；保留官方轮廓。外部高度及构件尺寸仍为近似表达。",
+    "partition_en": "Low-rise red-brown apartment blocks with narrow domestic window groups; Attached upper-wall courses and slate pitched roofs following each mapped wing; Grounded entrances and continuous support to sampled terrain. Exterior dimensions and partitions remain approximate.",
     "source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "footprint_source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
-    "architecture_reference": null,
+    "architecture_reference": "https://hfs.uw.edu/live/undergraduates/undergraduate-communities/stevens-court/",
     "construction_status": "Active",
     "volume_parts": [
       {
         "area_m2": 933.38,
-        "height_m": 12.78,
-        "material": "BrickBuff"
+        "base_offset_m": 0,
+        "height_m": 11.05,
+        "material": "HousingBrick"
       }
     ]
   },
@@ -6348,20 +6561,21 @@
     ],
     "ground_m": 15.903,
     "bottom_m": 15.903,
-    "peak_m": 29.113,
+    "peak_m": 28.773,
     "basis": "平面采用 UW 官方 GIS；外部层数、层高与屋顶高度为估算。GIS 总建筑面积不能视为地上层数。",
     "basis_en": "Official UW footprint; exterior storeys, floor heights and roof elevations are approximate. Reported gross floor area may include basements and does not certify exterior storeys.",
-    "partition": "保留公开映射轮廓和庭院，按建筑用途及已有标记细化窗格、楼层线脚、屋顶与接地入口；外部高度与构件尺寸为近似表达。",
-    "partition_en": "Mapped footprint and courtyard openings retained; Use-specific window spacing, floor courses, grounded entry or service door; Tagged roof form with discrete roof surface and attached parapet; no automatic equipment boxes. Exterior dimensions and partitions remain approximate.",
+    "partition": "按公开建筑资料和航拍细化体量、屋顶与立面；保留官方轮廓。外部高度及构件尺寸仍为近似表达。",
+    "partition_en": "Low-rise red-brown apartment blocks with narrow domestic window groups; Attached upper-wall courses and slate pitched roofs following each mapped wing; Grounded entrances and continuous support to sampled terrain. Exterior dimensions and partitions remain approximate.",
     "source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "footprint_source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
-    "architecture_reference": null,
+    "architecture_reference": "https://hfs.uw.edu/live/undergraduates/undergraduate-communities/stevens-court/",
     "construction_status": "Active",
     "volume_parts": [
       {
         "area_m2": 568.77,
-        "height_m": 12.78,
-        "material": "BrickBuff"
+        "base_offset_m": 0,
+        "height_m": 11.05,
+        "material": "HousingBrick"
       }
     ]
   },

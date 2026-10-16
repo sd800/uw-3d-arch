@@ -1,0 +1,12 @@
+{
+  "release": "26.10.15.9",
+  "facilities": 21,
+  "alder_geometry_unchanged": true,
+  "court_and_deck_rays": 8,
+  "distinct_facade_materials": true,
+  "roof_member_bounds": true,
+  "lander_lounge_confined_to_northeast": true,
+  "redundant_smoothing_groups": 0,
+  "subset_parse_bytes": 7638408,
+  "passed": true
+}

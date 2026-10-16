@@ -34,6 +34,13 @@ COLORS={
  'Court':(89,132,122),'Marking':(232,228,207),'Leaves':(67,116,75),'Trunk':(119,95,68),
  'Furniture':(72,78,72),'Solar':(50,73,88),'Purple':(75,46,131),'Gold':(183,165,122),'Blossom':(225,172,185),'Sand':(213,198,159),'Seat':(197,199,194),'BrickPath':(166,120,94),'BrickPale':(150,78,56),'BrickWarm':(143,69,50),'BrickBand':(119,60,48),'StepStone':(182,175,157),'StoneEdge':(191,186,171),'StoneJoint':(141,143,136),'Corten':(117,63,43),'Spray':(194,221,225),'PoolWater':(65,123,145),'Foam':(228,239,235),'Ripple':(114,166,180),'BlossomPale':(237,198,208),
 }
+# Photo-referenced West Campus housing finishes; keep roof materials explicit.
+COLORS.update({'HousingCharcoal':(91,94,90),'HousingFrame':(217,222,212),
+ 'HousingPanel':(190,190,175),'HousingCopper':(162,111,79),
+ 'HousingUmber':(108,100,86),'HousingBrick':(143,91,76),
+ 'HousingBlue':(133,160,170),'HousingOchre':(179,155,79),
+ 'HousingSilver':(178,187,182),'HousingConcrete':(173,174,161),
+ 'RoofHousing':(159,165,156)})
 model=rh.File3dm();model.ApplicationName='University of Washington Seattle Public-source Exterior Model'
 model.Settings.ModelUnitSystem=rh.UnitSystem.Meters;model.Settings.ModelAbsoluteTolerance=.01
 model.Settings.ModelAngleToleranceDegrees=1

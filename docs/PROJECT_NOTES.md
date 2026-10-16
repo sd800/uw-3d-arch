@@ -6,7 +6,7 @@
 - All begins with a default-checked ⁺Campus neighboring areas row; selecting its name frames surrounding streets. Search in All includes neighboring buildings; the campus count remains campus-only.
 - Neighboring materials are muted subtly; SDOT supplies published street-tree positions. Mapped reserves, wetlands, quays and continuous road/bridge connections fill the previous gaps.
 - Alder Hall has its mapped open-air light court, six-storey street/courtyard facade systems and graded sidewalk approaches.
-- 79 principal buildings have photo/reference-specific profiles; remaining secondary facilities use use-specific details with tagged roof forms. University Inn follows the official exterior gallery.
+- Core facilities and West Campus housing have photo/reference-specific profiles; remaining secondary facilities use use-specific details with tagged roof forms. University Inn follows the official exterior gallery.
 - See sources/ARCHITECTURE_REFERENCES.md and sources/NEIGHBORHOOD_REFERENCES.md for evidence and approximation limits.
 - Retain a closed continuous ground display mass and a separate depth barrier for horizontal/low-angle occlusion; preserve CAD source elevations and stable map paint.
 - Use established readable typography, selected highlights, grounded navigation, stable rendering, and loading progress. Resize and redraw atomically. No Level toolbar option.
@@ -29,3 +29,7 @@ The source audit reviews each model-scope grouped surface parking polygon agains
 ## Alder block and surface transit
 
 See `../sources/TRANSIT_AND_ALDER_BLOCK.md` for the university/operator/architect evidence behind the whole Alder street block, custom UW bus canopies, both light-rail stations and the mapped Montlake pedestrian/bicycle bridge. The UW station is appended as LINK_UW, preserving existing layer codes. New public approach labels follow the neighboring-area switch. Closed structural supports and shared bridge/stair datums preserve low-angle continuity. Exterior/member dimensions remain approximate.
+
+## West Campus housing
+
+Five residence halls and the Cedar, Mercer and Stevens apartment groups use independent photo-referenced exterior systems. Alder remains in its existing dedicated builder. See [West housing sources](../sources/WEST_HOUSING_REFERENCES.md) and `output/west_housing_refinement.json` for the 21 facilities, upper courts/decks, wall materials, window modules and ground-fitted thresholds. Public floor-count tags do not certify above-ground storeys at every uphill frontage.

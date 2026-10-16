@@ -508,5 +508,60 @@
     237,
     198,
     208
+  ],
+  "HousingCharcoal": [
+    91,
+    94,
+    90
+  ],
+  "HousingFrame": [
+    217,
+    222,
+    212
+  ],
+  "HousingPanel": [
+    190,
+    190,
+    175
+  ],
+  "HousingCopper": [
+    162,
+    111,
+    79
+  ],
+  "HousingUmber": [
+    108,
+    100,
+    86
+  ],
+  "HousingBrick": [
+    143,
+    91,
+    76
+  ],
+  "HousingBlue": [
+    133,
+    160,
+    170
+  ],
+  "HousingOchre": [
+    179,
+    155,
+    79
+  ],
+  "HousingSilver": [
+    178,
+    187,
+    182
+  ],
+  "HousingConcrete": [
+    173,
+    174,
+    161
+  ],
+  "RoofHousing": [
+    159,
+    165,
+    156
   ]
 }

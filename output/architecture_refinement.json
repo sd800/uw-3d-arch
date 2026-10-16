@@ -932,66 +932,6 @@
       "accuracy": "Official footprint retained; exterior partitions, heights and members are approximate public-photo interpretations."
     },
     {
-      "facility_id": "ELM",
-      "mapped_footprint_m2": 2084.8,
-      "height_m": 22.15,
-      "levels": 7,
-      "volume_parts": [
-        {
-          "area_m2": 2084.82,
-          "base_offset_m": 0,
-          "height_m": 21.45,
-          "material": "BrickBuff"
-        }
-      ],
-      "bounded_shade_panels": 0,
-      "illustrative_pv_modules": 0,
-      "details": [
-        "Brick residence with smaller paired window modules"
-      ],
-      "accuracy": "Official footprint retained; exterior partitions, heights and members are approximate public-photo interpretations."
-    },
-    {
-      "facility_id": "POP",
-      "mapped_footprint_m2": 1357.58,
-      "height_m": 22.15,
-      "levels": 7,
-      "volume_parts": [
-        {
-          "area_m2": 1357.61,
-          "base_offset_m": 0,
-          "height_m": 21.45,
-          "material": "BrickBuff"
-        }
-      ],
-      "bounded_shade_panels": 0,
-      "illustrative_pv_modules": 0,
-      "details": [
-        "Brick residence with smaller paired window modules"
-      ],
-      "accuracy": "Official footprint retained; exterior partitions, heights and members are approximate public-photo interpretations."
-    },
-    {
-      "facility_id": "LAN",
-      "mapped_footprint_m2": 2734.35,
-      "height_m": 25.2,
-      "levels": 8,
-      "volume_parts": [
-        {
-          "area_m2": 2734.28,
-          "base_offset_m": 0,
-          "height_m": 24.5,
-          "material": "BrickBuff"
-        }
-      ],
-      "bounded_shade_panels": 0,
-      "illustrative_pv_modules": 0,
-      "details": [
-        "Brick residence with smaller paired window modules"
-      ],
-      "accuracy": "Official footprint retained; exterior partitions, heights and members are approximate public-photo interpretations."
-    },
-    {
       "facility_id": "ALD",
       "height_m": 19.7,
       "levels": 6,
@@ -1018,46 +958,6 @@
         "Continuous parapets, matte roof and aerial-visible PV strips; no copied equipment boxes",
         "Photo-referenced recessed north shopfront, round concrete arcade piers and independent Metro shelters"
       ]
-    },
-    {
-      "facility_id": "TEH",
-      "mapped_footprint_m2": 1465.18,
-      "height_m": 25.2,
-      "levels": 8,
-      "volume_parts": [
-        {
-          "area_m2": 1465.26,
-          "base_offset_m": 0,
-          "height_m": 24.5,
-          "material": "BrickBuff"
-        }
-      ],
-      "bounded_shade_panels": 0,
-      "illustrative_pv_modules": 0,
-      "details": [
-        "Brick residence with smaller paired window modules"
-      ],
-      "accuracy": "Official footprint retained; exterior partitions, heights and members are approximate public-photo interpretations."
-    },
-    {
-      "facility_id": "MAH",
-      "mapped_footprint_m2": 2833.54,
-      "height_m": 25.2,
-      "levels": 8,
-      "volume_parts": [
-        {
-          "area_m2": 2833.42,
-          "base_offset_m": 0,
-          "height_m": 24.5,
-          "material": "BrickBuff"
-        }
-      ],
-      "bounded_shade_panels": 0,
-      "illustrative_pv_modules": 0,
-      "details": [
-        "Brick residence with smaller paired window modules"
-      ],
-      "accuracy": "Official footprint retained; exterior partitions, heights and members are approximate public-photo interpretations."
     },
     {
       "facility_id": "GNOM",
@@ -1661,7 +1561,7 @@
       "accuracy": "Official footprint retained; exterior partitions, heights and members are approximate public-photo interpretations."
     }
   ],
-  "refined_facilities": 79,
+  "refined_facilities": 74,
   "automatic_rooftop_boxes": false,
   "shade_panels_bound_to_own_floor": true,
   "source_notes": "sources/ARCHITECTURE_REFERENCES.md"

@@ -16,3 +16,7 @@ Snapshot: 13 October 2026.
 The university already offers its own rendered campus map: https://map.uw.edu/?id=2099 . This project creates an independent layered metric model from public mapping; it does not extract or distribute that map's proprietary rendered assets.
 
 The raw official footprint and public tree/bench files retain coordinates. The normalized OSM source includes data outside the rendered scope for boundary closure; the model clips it to the chosen campus/shore context. `retrieval_manifest.json` records source URLs and hashes. Original raw OSM extracts are compressed. Rebuilding uses saved data, not live APIs.
+
+## West Campus housing refinements
+
+See [West Campus housing evidence](WEST_HOUSING_REFERENCES.md) and `west_housing_review.json` for the HFS/Mahlum/Mithun/Ankrom Moisan exterior review. Original licensed reference photos and aerial imagery are not redistributed.

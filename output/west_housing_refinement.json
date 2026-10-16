@@ -1,0 +1,945 @@
+{
+  "buildings": [
+    {
+      "facility_id": "CDRW",
+      "height_m": 22.15,
+      "levels": 7,
+      "volume_parts": [
+        {
+          "area_m2": 1708.51,
+          "base_offset_m": 0,
+          "height_m": 4.7,
+          "material": "HousingCharcoal"
+        },
+        {
+          "area_m2": 1270.93,
+          "base_offset_m": 4.7,
+          "height_m": 16.83,
+          "material": "HousingCharcoal"
+        }
+      ],
+      "window_bays": 324,
+      "courts": [
+        {
+          "type": "upper_light_court",
+          "area_m2": 437.59,
+          "deck_offset_m": 4.7
+        }
+      ],
+      "entries": [
+        {
+          "position": [
+            -539.55,
+            124.46,
+            34.35
+          ],
+          "attached_canopy": true,
+          "ground_fitted_threshold": true
+        }
+      ],
+      "details": [
+        "Charcoal masonry and paired pale-framed residential lights",
+        "Ground-fitted public/amenity glazing with a restrained weathered-metal fascia",
+        "Separate matte roof, attached parapets and bounded deck edges",
+        "Opposing C-shaped upper residential wings and lower light-court decks, interpreted from aerial and UW PCAD"
+      ],
+      "source": "https://www.mahlum.com/projects/west-campus-student-housing-phase-i/",
+      "accuracy": "UW mapped outer envelope retained. Cladding, upper setbacks, decks, floor datums and member dimensions are approximate public-photo/aerial interpretations, not surveyed as-built geometry."
+    },
+    {
+      "facility_id": "CDRE",
+      "height_m": 22.15,
+      "levels": 7,
+      "volume_parts": [
+        {
+          "area_m2": 1326.62,
+          "base_offset_m": 0,
+          "height_m": 4.7,
+          "material": "HousingCharcoal"
+        },
+        {
+          "area_m2": 986.3,
+          "base_offset_m": 4.7,
+          "height_m": 16.83,
+          "material": "HousingCharcoal"
+        }
+      ],
+      "window_bays": 288,
+      "courts": [
+        {
+          "type": "upper_light_court",
+          "area_m2": 340.33,
+          "deck_offset_m": 4.7
+        }
+      ],
+      "entries": [
+        {
+          "position": [
+            -489.33,
+            124.69,
+            33.9
+          ],
+          "attached_canopy": true,
+          "ground_fitted_threshold": true
+        }
+      ],
+      "details": [
+        "Charcoal masonry and paired pale-framed residential lights",
+        "Ground-fitted public/amenity glazing with a restrained weathered-metal fascia",
+        "Separate matte roof, attached parapets and bounded deck edges",
+        "Opposing C-shaped upper residential wings and lower light-court decks, interpreted from aerial and UW PCAD"
+      ],
+      "source": "https://www.mahlum.com/projects/west-campus-student-housing-phase-i/",
+      "accuracy": "UW mapped outer envelope retained. Cladding, upper setbacks, decks, floor datums and member dimensions are approximate public-photo/aerial interpretations, not surveyed as-built geometry."
+    },
+    {
+      "facility_id": "ELM",
+      "height_m": 22.15,
+      "levels": 7,
+      "volume_parts": [
+        {
+          "area_m2": 2084.82,
+          "base_offset_m": 0,
+          "height_m": 4.25,
+          "material": "HousingCharcoal"
+        },
+        {
+          "area_m2": 2084.82,
+          "base_offset_m": 4.25,
+          "height_m": 17.28,
+          "material": "HousingCharcoal"
+        }
+      ],
+      "window_bays": 354,
+      "courts": [],
+      "entries": [
+        {
+          "position": [
+            -435.72,
+            56.36,
+            32.02
+          ],
+          "attached_canopy": true,
+          "ground_fitted_threshold": true
+        }
+      ],
+      "details": [
+        "Charcoal masonry and paired pale-framed residential lights",
+        "Ground-fitted public/amenity glazing with a restrained weathered-metal fascia",
+        "Separate matte roof, attached parapets and bounded deck edges"
+      ],
+      "source": "https://www.mahlum.com/projects/west-campus-student-housing-phase-i/",
+      "accuracy": "UW mapped outer envelope retained. Cladding, upper setbacks, decks, floor datums and member dimensions are approximate public-photo/aerial interpretations, not surveyed as-built geometry."
+    },
+    {
+      "facility_id": "POP",
+      "height_m": 22.15,
+      "levels": 7,
+      "volume_parts": [
+        {
+          "area_m2": 1357.61,
+          "base_offset_m": 0,
+          "height_m": 4.25,
+          "material": "HousingCharcoal"
+        },
+        {
+          "area_m2": 1281.4,
+          "base_offset_m": 4.25,
+          "height_m": 17.28,
+          "material": "HousingCharcoal"
+        }
+      ],
+      "window_bays": 198,
+      "courts": [
+        {
+          "type": "recessed_west_deck",
+          "area_m2": 76.15,
+          "deck_offset_m": 4.25
+        }
+      ],
+      "entries": [
+        {
+          "position": [
+            -373.83,
+            72.15,
+            35.88
+          ],
+          "attached_canopy": true,
+          "ground_fitted_threshold": true
+        }
+      ],
+      "details": [
+        "Charcoal masonry and paired pale-framed residential lights",
+        "Ground-fitted public/amenity glazing with a restrained weathered-metal fascia",
+        "Separate matte roof, attached parapets and bounded deck edges",
+        "Recessed west-facing communal deck instead of a full-height rectangular wall"
+      ],
+      "source": "https://www.mahlum.com/projects/west-campus-student-housing-phase-i/",
+      "accuracy": "UW mapped outer envelope retained. Cladding, upper setbacks, decks, floor datums and member dimensions are approximate public-photo/aerial interpretations, not surveyed as-built geometry."
+    },
+    {
+      "facility_id": "LAN",
+      "height_m": 25.2,
+      "levels": 8,
+      "volume_parts": [
+        {
+          "area_m2": 2734.28,
+          "base_offset_m": 0,
+          "height_m": 9.5,
+          "material": "HousingConcrete"
+        },
+        {
+          "area_m2": 2734.28,
+          "base_offset_m": 9.5,
+          "height_m": 15.08,
+          "material": "HousingPanel"
+        }
+      ],
+      "window_bays": 475,
+      "courts": [],
+      "entries": [
+        {
+          "position": [
+            -402.05,
+            10.27,
+            30.74
+          ],
+          "attached_canopy": true,
+          "ground_fitted_threshold": true
+        }
+      ],
+      "details": [
+        "Pale panel enclosure with shallow checkerboard spandrels",
+        "Copper northeast lounge corner with stacked double-height glazed bays",
+        "Transparent Local Point/student-services street edge; uphill pavement controls entry level",
+        "Mapped U-shaped courtyard and terraced north-to-south approach remain open"
+      ],
+      "source": "https://mithun.com/project/university-of-washington-lander-hall/",
+      "accuracy": "UW mapped outer envelope retained. Cladding, upper setbacks, decks, floor datums and member dimensions are approximate public-photo/aerial interpretations, not surveyed as-built geometry."
+    },
+    {
+      "facility_id": "TEH",
+      "height_m": 25.2,
+      "levels": 8,
+      "volume_parts": [
+        {
+          "area_m2": 1465.26,
+          "base_offset_m": 0,
+          "height_m": 6.6,
+          "material": "HousingBrick"
+        },
+        {
+          "area_m2": 1465.26,
+          "base_offset_m": 6.6,
+          "height_m": 14.98,
+          "material": "HousingBrick"
+        },
+        {
+          "area_m2": 1191.81,
+          "base_offset_m": 21.58,
+          "height_m": 3.0,
+          "material": "HousingBrick"
+        }
+      ],
+      "window_bays": 308,
+      "courts": [
+        {
+          "type": "south_roof_terrace",
+          "area_m2": 273.44,
+          "deck_offset_m": 21.58
+        }
+      ],
+      "entries": [
+        {
+          "position": [
+            -570.39,
+            8.09,
+            29.55
+          ],
+          "attached_canopy": true,
+          "ground_fitted_threshold": true
+        }
+      ],
+      "details": [
+        "Warm red brick, varied window widths and restrained blue/ochre infill panels",
+        "Taller street-level public glazing and grounded entrance canopies",
+        "Matte roof and continuous attached parapets",
+        "Recessed upper south roof terrace and taller HFS office/entry glazing"
+      ],
+      "source": "https://mithun.com/project/university-of-washington-terry-and-maple-halls/",
+      "accuracy": "UW mapped outer envelope retained. Cladding, upper setbacks, decks, floor datums and member dimensions are approximate public-photo/aerial interpretations, not surveyed as-built geometry."
+    },
+    {
+      "facility_id": "MAH",
+      "height_m": 25.2,
+      "levels": 8,
+      "volume_parts": [
+        {
+          "area_m2": 2833.42,
+          "base_offset_m": 0,
+          "height_m": 6.6,
+          "material": "HousingBrick"
+        },
+        {
+          "area_m2": 2833.42,
+          "base_offset_m": 6.6,
+          "height_m": 17.98,
+          "material": "HousingBrick"
+        }
+      ],
+      "window_bays": 582,
+      "courts": [],
+      "entries": [
+        {
+          "position": [
+            -481.61,
+            3.32,
+            27.91
+          ],
+          "attached_canopy": true,
+          "ground_fitted_threshold": true
+        }
+      ],
+      "details": [
+        "Warm red brick, varied window widths and restrained blue/ochre infill panels",
+        "Taller street-level public glazing and grounded entrance canopies",
+        "Matte roof and continuous attached parapets",
+        "Existing mapped open-air light court retained; Great Room/Area 01 face the pedestrian plaza"
+      ],
+      "source": "https://mithun.com/project/university-of-washington-terry-and-maple-halls/",
+      "accuracy": "UW mapped outer envelope retained. Cladding, upper setbacks, decks, floor datums and member dimensions are approximate public-photo/aerial interpretations, not surveyed as-built geometry."
+    },
+    {
+      "facility_id": "MRCA",
+      "height_m": 25.2,
+      "levels": 8,
+      "volume_parts": [
+        {
+          "area_m2": 292.63,
+          "base_offset_m": 0,
+          "height_m": 4.4,
+          "material": "HousingUmber"
+        },
+        {
+          "area_m2": 292.63,
+          "base_offset_m": 4.4,
+          "height_m": 17.18,
+          "material": "HousingSilver"
+        },
+        {
+          "area_m2": 749.98,
+          "base_offset_m": 0,
+          "height_m": 4.4,
+          "material": "HousingUmber"
+        },
+        {
+          "area_m2": 749.98,
+          "base_offset_m": 4.4,
+          "height_m": 19.18,
+          "material": "HousingSilver"
+        },
+        {
+          "area_m2": 407.24,
+          "base_offset_m": 0,
+          "height_m": 4.4,
+          "material": "HousingUmber"
+        },
+        {
+          "area_m2": 407.24,
+          "base_offset_m": 4.4,
+          "height_m": 20.18,
+          "material": "HousingSilver"
+        }
+      ],
+      "window_bays": 506,
+      "courts": [],
+      "entries": [
+        {
+          "position": [
+            -632.79,
+            -118.3,
+            18.66
+          ],
+          "attached_canopy": true,
+          "ground_fitted_threshold": true
+        }
+      ],
+      "details": [
+        "Five separately mapped finger-like blocks retained",
+        "Dark masonry bases and pale silver metal upper enclosures",
+        "Tall framed lights with shallow attached flared bay cheeks",
+        "Stepped bay-facing roof volumes and ground-fitted plaza entries"
+      ],
+      "source": "https://ankrommoisan.com/projects/uw-mercer-court/",
+      "accuracy": "UW mapped outer envelope retained. Cladding, upper setbacks, decks, floor datums and member dimensions are approximate public-photo/aerial interpretations, not surveyed as-built geometry."
+    },
+    {
+      "facility_id": "MRCE",
+      "height_m": 25.2,
+      "levels": 8,
+      "volume_parts": [
+        {
+          "area_m2": 169.29,
+          "base_offset_m": 0,
+          "height_m": 4.4,
+          "material": "HousingUmber"
+        },
+        {
+          "area_m2": 169.29,
+          "base_offset_m": 4.4,
+          "height_m": 17.18,
+          "material": "HousingSilver"
+        },
+        {
+          "area_m2": 473.42,
+          "base_offset_m": 0,
+          "height_m": 4.4,
+          "material": "HousingUmber"
+        },
+        {
+          "area_m2": 473.42,
+          "base_offset_m": 4.4,
+          "height_m": 19.18,
+          "material": "HousingSilver"
+        },
+        {
+          "area_m2": 248.61,
+          "base_offset_m": 0,
+          "height_m": 4.4,
+          "material": "HousingUmber"
+        },
+        {
+          "area_m2": 248.61,
+          "base_offset_m": 4.4,
+          "height_m": 20.18,
+          "material": "HousingSilver"
+        }
+      ],
+      "window_bays": 254,
+      "courts": [],
+      "entries": [
+        {
+          "position": [
+            -667.68,
+            -120.76,
+            16.94
+          ],
+          "attached_canopy": true,
+          "ground_fitted_threshold": true
+        }
+      ],
+      "details": [
+        "Five separately mapped finger-like blocks retained",
+        "Dark masonry bases and pale silver metal upper enclosures",
+        "Tall framed lights with shallow attached flared bay cheeks",
+        "Stepped bay-facing roof volumes and ground-fitted plaza entries"
+      ],
+      "source": "https://ankrommoisan.com/projects/uw-mercer-court/",
+      "accuracy": "UW mapped outer envelope retained. Cladding, upper setbacks, decks, floor datums and member dimensions are approximate public-photo/aerial interpretations, not surveyed as-built geometry."
+    },
+    {
+      "facility_id": "SCL",
+      "height_m": 13.0,
+      "levels": 4,
+      "volume_parts": [
+        {
+          "area_m2": 1071.07,
+          "base_offset_m": 0,
+          "height_m": 11.05,
+          "material": "HousingBrick"
+        }
+      ],
+      "window_bays": 184,
+      "courts": [],
+      "entries": [
+        {
+          "position": [
+            -482.7,
+            -167.3,
+            19.61
+          ],
+          "attached_canopy": true,
+          "ground_fitted_threshold": true
+        }
+      ],
+      "details": [
+        "Low-rise red-brown apartment blocks with narrow domestic window groups",
+        "Attached upper-wall courses and slate pitched roofs following each mapped wing",
+        "Grounded entrances and continuous support to sampled terrain"
+      ],
+      "source": "https://hfs.uw.edu/live/undergraduates/undergraduate-communities/stevens-court/",
+      "accuracy": "UW mapped outer envelope retained. Cladding, upper setbacks, decks, floor datums and member dimensions are approximate public-photo/aerial interpretations, not surveyed as-built geometry."
+    },
+    {
+      "facility_id": "MRCD",
+      "height_m": 25.2,
+      "levels": 8,
+      "volume_parts": [
+        {
+          "area_m2": 162.49,
+          "base_offset_m": 0,
+          "height_m": 4.4,
+          "material": "HousingUmber"
+        },
+        {
+          "area_m2": 162.49,
+          "base_offset_m": 4.4,
+          "height_m": 17.18,
+          "material": "HousingSilver"
+        },
+        {
+          "area_m2": 480.85,
+          "base_offset_m": 0,
+          "height_m": 4.4,
+          "material": "HousingUmber"
+        },
+        {
+          "area_m2": 480.85,
+          "base_offset_m": 4.4,
+          "height_m": 19.18,
+          "material": "HousingSilver"
+        },
+        {
+          "area_m2": 252.91,
+          "base_offset_m": 0,
+          "height_m": 4.4,
+          "material": "HousingUmber"
+        },
+        {
+          "area_m2": 252.91,
+          "base_offset_m": 4.4,
+          "height_m": 20.18,
+          "material": "HousingSilver"
+        }
+      ],
+      "window_bays": 288,
+      "courts": [],
+      "entries": [
+        {
+          "position": [
+            -639.71,
+            -134.19,
+            15.65
+          ],
+          "attached_canopy": true,
+          "ground_fitted_threshold": true
+        }
+      ],
+      "details": [
+        "Five separately mapped finger-like blocks retained",
+        "Dark masonry bases and pale silver metal upper enclosures",
+        "Tall framed lights with shallow attached flared bay cheeks",
+        "Stepped bay-facing roof volumes and ground-fitted plaza entries"
+      ],
+      "source": "https://ankrommoisan.com/projects/uw-mercer-court/",
+      "accuracy": "UW mapped outer envelope retained. Cladding, upper setbacks, decks, floor datums and member dimensions are approximate public-photo/aerial interpretations, not surveyed as-built geometry."
+    },
+    {
+      "facility_id": "MRCC",
+      "height_m": 25.2,
+      "levels": 8,
+      "volume_parts": [
+        {
+          "area_m2": 237.99,
+          "base_offset_m": 0,
+          "height_m": 4.4,
+          "material": "HousingUmber"
+        },
+        {
+          "area_m2": 237.99,
+          "base_offset_m": 4.4,
+          "height_m": 17.18,
+          "material": "HousingSilver"
+        },
+        {
+          "area_m2": 658.29,
+          "base_offset_m": 0,
+          "height_m": 4.4,
+          "material": "HousingUmber"
+        },
+        {
+          "area_m2": 658.29,
+          "base_offset_m": 4.4,
+          "height_m": 19.18,
+          "material": "HousingSilver"
+        },
+        {
+          "area_m2": 352.8,
+          "base_offset_m": 0,
+          "height_m": 4.4,
+          "material": "HousingUmber"
+        },
+        {
+          "area_m2": 352.8,
+          "base_offset_m": 4.4,
+          "height_m": 20.18,
+          "material": "HousingSilver"
+        }
+      ],
+      "window_bays": 298,
+      "courts": [],
+      "entries": [
+        {
+          "position": [
+            -616.63,
+            -136.74,
+            17.8
+          ],
+          "attached_canopy": true,
+          "ground_fitted_threshold": true
+        }
+      ],
+      "details": [
+        "Five separately mapped finger-like blocks retained",
+        "Dark masonry bases and pale silver metal upper enclosures",
+        "Tall framed lights with shallow attached flared bay cheeks",
+        "Stepped bay-facing roof volumes and ground-fitted plaza entries"
+      ],
+      "source": "https://ankrommoisan.com/projects/uw-mercer-court/",
+      "accuracy": "UW mapped outer envelope retained. Cladding, upper setbacks, decks, floor datums and member dimensions are approximate public-photo/aerial interpretations, not surveyed as-built geometry."
+    },
+    {
+      "facility_id": "SCA",
+      "height_m": 9.95,
+      "levels": 3,
+      "volume_parts": [
+        {
+          "area_m2": 573.2,
+          "base_offset_m": 0,
+          "height_m": 8.0,
+          "material": "HousingBrick"
+        }
+      ],
+      "window_bays": 102,
+      "courts": [],
+      "entries": [
+        {
+          "position": [
+            -477.28,
+            -168.49,
+            18.64
+          ],
+          "attached_canopy": true,
+          "ground_fitted_threshold": true
+        }
+      ],
+      "details": [
+        "Low-rise red-brown apartment blocks with narrow domestic window groups",
+        "Attached upper-wall courses and slate pitched roofs following each mapped wing",
+        "Grounded entrances and continuous support to sampled terrain"
+      ],
+      "source": "https://hfs.uw.edu/live/undergraduates/undergraduate-communities/stevens-court/",
+      "accuracy": "UW mapped outer envelope retained. Cladding, upper setbacks, decks, floor datums and member dimensions are approximate public-photo/aerial interpretations, not surveyed as-built geometry."
+    },
+    {
+      "facility_id": "SCK",
+      "height_m": 13.0,
+      "levels": 4,
+      "volume_parts": [
+        {
+          "area_m2": 755.33,
+          "base_offset_m": 0,
+          "height_m": 11.05,
+          "material": "HousingBrick"
+        }
+      ],
+      "window_bays": 152,
+      "courts": [],
+      "entries": [
+        {
+          "position": [
+            -549.04,
+            -209.52,
+            16.56
+          ],
+          "attached_canopy": true,
+          "ground_fitted_threshold": true
+        }
+      ],
+      "details": [
+        "Low-rise red-brown apartment blocks with narrow domestic window groups",
+        "Attached upper-wall courses and slate pitched roofs following each mapped wing",
+        "Grounded entrances and continuous support to sampled terrain"
+      ],
+      "source": "https://hfs.uw.edu/live/undergraduates/undergraduate-communities/stevens-court/",
+      "accuracy": "UW mapped outer envelope retained. Cladding, upper setbacks, decks, floor datums and member dimensions are approximate public-photo/aerial interpretations, not surveyed as-built geometry."
+    },
+    {
+      "facility_id": "MRCB",
+      "height_m": 25.2,
+      "levels": 8,
+      "volume_parts": [
+        {
+          "area_m2": 265.53,
+          "base_offset_m": 0,
+          "height_m": 4.4,
+          "material": "HousingUmber"
+        },
+        {
+          "area_m2": 265.53,
+          "base_offset_m": 4.4,
+          "height_m": 17.18,
+          "material": "HousingSilver"
+        },
+        {
+          "area_m2": 718.33,
+          "base_offset_m": 0,
+          "height_m": 4.4,
+          "material": "HousingUmber"
+        },
+        {
+          "area_m2": 718.33,
+          "base_offset_m": 4.4,
+          "height_m": 19.18,
+          "material": "HousingSilver"
+        },
+        {
+          "area_m2": 383.86,
+          "base_offset_m": 0,
+          "height_m": 4.4,
+          "material": "HousingUmber"
+        },
+        {
+          "area_m2": 383.86,
+          "base_offset_m": 4.4,
+          "height_m": 20.18,
+          "material": "HousingSilver"
+        }
+      ],
+      "window_bays": 320,
+      "courts": [],
+      "entries": [
+        {
+          "position": [
+            -595.5,
+            -146.55,
+            17.78
+          ],
+          "attached_canopy": true,
+          "ground_fitted_threshold": true
+        }
+      ],
+      "details": [
+        "Five separately mapped finger-like blocks retained",
+        "Dark masonry bases and pale silver metal upper enclosures",
+        "Tall framed lights with shallow attached flared bay cheeks",
+        "Stepped bay-facing roof volumes and ground-fitted plaza entries"
+      ],
+      "source": "https://ankrommoisan.com/projects/uw-mercer-court/",
+      "accuracy": "UW mapped outer envelope retained. Cladding, upper setbacks, decks, floor datums and member dimensions are approximate public-photo/aerial interpretations, not surveyed as-built geometry."
+    },
+    {
+      "facility_id": "SCM",
+      "height_m": 13.0,
+      "levels": 4,
+      "volume_parts": [
+        {
+          "area_m2": 647.52,
+          "base_offset_m": 0,
+          "height_m": 11.05,
+          "material": "HousingBrick"
+        }
+      ],
+      "window_bays": 144,
+      "courts": [],
+      "entries": [
+        {
+          "position": [
+            -487.78,
+            -180.35,
+            17.95
+          ],
+          "attached_canopy": true,
+          "ground_fitted_threshold": true
+        }
+      ],
+      "details": [
+        "Low-rise red-brown apartment blocks with narrow domestic window groups",
+        "Attached upper-wall courses and slate pitched roofs following each mapped wing",
+        "Grounded entrances and continuous support to sampled terrain"
+      ],
+      "source": "https://hfs.uw.edu/live/undergraduates/undergraduate-communities/stevens-court/",
+      "accuracy": "UW mapped outer envelope retained. Cladding, upper setbacks, decks, floor datums and member dimensions are approximate public-photo/aerial interpretations, not surveyed as-built geometry."
+    },
+    {
+      "facility_id": "SCB",
+      "height_m": 13.0,
+      "levels": 4,
+      "volume_parts": [
+        {
+          "area_m2": 618.47,
+          "base_offset_m": 0,
+          "height_m": 11.05,
+          "material": "HousingBrick"
+        }
+      ],
+      "window_bays": 132,
+      "courts": [],
+      "entries": [
+        {
+          "position": [
+            -440.63,
+            -182.95,
+            18.19
+          ],
+          "attached_canopy": true,
+          "ground_fitted_threshold": true
+        }
+      ],
+      "details": [
+        "Low-rise red-brown apartment blocks with narrow domestic window groups",
+        "Attached upper-wall courses and slate pitched roofs following each mapped wing",
+        "Grounded entrances and continuous support to sampled terrain"
+      ],
+      "source": "https://hfs.uw.edu/live/undergraduates/undergraduate-communities/stevens-court/",
+      "accuracy": "UW mapped outer envelope retained. Cladding, upper setbacks, decks, floor datums and member dimensions are approximate public-photo/aerial interpretations, not surveyed as-built geometry."
+    },
+    {
+      "facility_id": "SCH",
+      "height_m": 9.95,
+      "levels": 3,
+      "volume_parts": [
+        {
+          "area_m2": 260.61,
+          "base_offset_m": 0,
+          "height_m": 8.0,
+          "material": "HousingBrick"
+        }
+      ],
+      "window_bays": 57,
+      "courts": [],
+      "entries": [
+        {
+          "position": [
+            -479.06,
+            -192.66,
+            17.0
+          ],
+          "attached_canopy": true,
+          "ground_fitted_threshold": true
+        }
+      ],
+      "details": [
+        "Low-rise red-brown apartment blocks with narrow domestic window groups",
+        "Attached upper-wall courses and slate pitched roofs following each mapped wing",
+        "Grounded entrances and continuous support to sampled terrain"
+      ],
+      "source": "https://hfs.uw.edu/live/undergraduates/undergraduate-communities/stevens-court/",
+      "accuracy": "UW mapped outer envelope retained. Cladding, upper setbacks, decks, floor datums and member dimensions are approximate public-photo/aerial interpretations, not surveyed as-built geometry."
+    },
+    {
+      "facility_id": "SCD",
+      "height_m": 9.95,
+      "levels": 3,
+      "volume_parts": [
+        {
+          "area_m2": 469.6,
+          "base_offset_m": 0,
+          "height_m": 8.0,
+          "material": "HousingBrick"
+        }
+      ],
+      "window_bays": 87,
+      "courts": [],
+      "entries": [
+        {
+          "position": [
+            -513.37,
+            -217.63,
+            16.08
+          ],
+          "attached_canopy": true,
+          "ground_fitted_threshold": true
+        }
+      ],
+      "details": [
+        "Low-rise red-brown apartment blocks with narrow domestic window groups",
+        "Attached upper-wall courses and slate pitched roofs following each mapped wing",
+        "Grounded entrances and continuous support to sampled terrain"
+      ],
+      "source": "https://hfs.uw.edu/live/undergraduates/undergraduate-communities/stevens-court/",
+      "accuracy": "UW mapped outer envelope retained. Cladding, upper setbacks, decks, floor datums and member dimensions are approximate public-photo/aerial interpretations, not surveyed as-built geometry."
+    },
+    {
+      "facility_id": "SCC",
+      "height_m": 13.0,
+      "levels": 4,
+      "volume_parts": [
+        {
+          "area_m2": 933.38,
+          "base_offset_m": 0,
+          "height_m": 11.05,
+          "material": "HousingBrick"
+        }
+      ],
+      "window_bays": 224,
+      "courts": [],
+      "entries": [
+        {
+          "position": [
+            -466.07,
+            -218.71,
+            17.46
+          ],
+          "attached_canopy": true,
+          "ground_fitted_threshold": true
+        }
+      ],
+      "details": [
+        "Low-rise red-brown apartment blocks with narrow domestic window groups",
+        "Attached upper-wall courses and slate pitched roofs following each mapped wing",
+        "Grounded entrances and continuous support to sampled terrain"
+      ],
+      "source": "https://hfs.uw.edu/live/undergraduates/undergraduate-communities/stevens-court/",
+      "accuracy": "UW mapped outer envelope retained. Cladding, upper setbacks, decks, floor datums and member dimensions are approximate public-photo/aerial interpretations, not surveyed as-built geometry."
+    },
+    {
+      "facility_id": "SCJ",
+      "height_m": 13.0,
+      "levels": 4,
+      "volume_parts": [
+        {
+          "area_m2": 568.77,
+          "base_offset_m": 0,
+          "height_m": 11.05,
+          "material": "HousingBrick"
+        }
+      ],
+      "window_bays": 124,
+      "courts": [],
+      "entries": [
+        {
+          "position": [
+            -516.4,
+            -219.97,
+            16.06
+          ],
+          "attached_canopy": true,
+          "ground_fitted_threshold": true
+        }
+      ],
+      "details": [
+        "Low-rise red-brown apartment blocks with narrow domestic window groups",
+        "Attached upper-wall courses and slate pitched roofs following each mapped wing",
+        "Grounded entrances and continuous support to sampled terrain"
+      ],
+      "source": "https://hfs.uw.edu/live/undergraduates/undergraduate-communities/stevens-court/",
+      "accuracy": "UW mapped outer envelope retained. Cladding, upper setbacks, decks, floor datums and member dimensions are approximate public-photo/aerial interpretations, not surveyed as-built geometry."
+    }
+  ],
+  "count": 21,
+  "landscape": {
+    "refined_buildings": 21,
+    "courtyard_names": [
+      "ELM",
+      "LAN",
+      "MAH"
+    ],
+    "supported_planter_benches": 3,
+    "roads_preserved": true,
+    "alder_excluded": true
+  },
+  "reference_notes": "sources/WEST_HOUSING_REFERENCES.md",
+  "alder_unchanged": true,
+  "automatic_rooftop_boxes": false
+}

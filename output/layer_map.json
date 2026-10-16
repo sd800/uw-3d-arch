@@ -3729,35 +3729,20 @@
     "category": "building",
     "material": "Foundation"
   },
-  "W096M4200": {
-    "layer": "W096_Cedar West Apartments",
-    "category": "building",
-    "material": "BrickBuff"
-  },
   "W096M4600": {
     "layer": "W096_Cedar West Apartments",
     "category": "building",
     "material": "Precast"
-  },
-  "W096M5300": {
-    "layer": "W096_Cedar West Apartments",
-    "category": "building",
-    "material": "RoofWarm"
   },
   "W096M5500": {
     "layer": "W096_Cedar West Apartments",
     "category": "building",
     "material": "RoofMetal"
   },
-  "W096M6000": {
+  "W096M5800": {
     "layer": "W096_Cedar West Apartments",
     "category": "building",
-    "material": "LightStone"
-  },
-  "W096D6700": {
-    "layer": "W096_Cedar West Apartments",
-    "category": "building",
-    "material": "Glass"
+    "material": "RoofPaving"
   },
   "W096D6800": {
     "layer": "W096_Cedar West Apartments",
@@ -3774,40 +3759,50 @@
     "category": "building",
     "material": "StepStone"
   },
+  "W096M10200": {
+    "layer": "W096_Cedar West Apartments",
+    "category": "building",
+    "material": "HousingCharcoal"
+  },
+  "W096M10300": {
+    "layer": "W096_Cedar West Apartments",
+    "category": "building",
+    "material": "HousingFrame"
+  },
+  "W096M10400": {
+    "layer": "W096_Cedar West Apartments",
+    "category": "building",
+    "material": "HousingPanel"
+  },
+  "W096M11100": {
+    "layer": "W096_Cedar West Apartments",
+    "category": "building",
+    "material": "HousingConcrete"
+  },
+  "W096M11200": {
+    "layer": "W096_Cedar West Apartments",
+    "category": "building",
+    "material": "RoofHousing"
+  },
   "W097M2700": {
     "layer": "W097_Cedar East Apartments",
     "category": "building",
     "material": "Foundation"
-  },
-  "W097M4200": {
-    "layer": "W097_Cedar East Apartments",
-    "category": "building",
-    "material": "BrickBuff"
   },
   "W097M4600": {
     "layer": "W097_Cedar East Apartments",
     "category": "building",
     "material": "Precast"
   },
-  "W097M5300": {
-    "layer": "W097_Cedar East Apartments",
-    "category": "building",
-    "material": "RoofWarm"
-  },
   "W097M5500": {
     "layer": "W097_Cedar East Apartments",
     "category": "building",
     "material": "RoofMetal"
   },
-  "W097M6000": {
+  "W097M5800": {
     "layer": "W097_Cedar East Apartments",
     "category": "building",
-    "material": "LightStone"
-  },
-  "W097D6700": {
-    "layer": "W097_Cedar East Apartments",
-    "category": "building",
-    "material": "Glass"
+    "material": "RoofPaving"
   },
   "W097D6800": {
     "layer": "W097_Cedar East Apartments",
@@ -3823,6 +3818,31 @@
     "layer": "W097_Cedar East Apartments",
     "category": "building",
     "material": "StepStone"
+  },
+  "W097M10200": {
+    "layer": "W097_Cedar East Apartments",
+    "category": "building",
+    "material": "HousingCharcoal"
+  },
+  "W097M10300": {
+    "layer": "W097_Cedar East Apartments",
+    "category": "building",
+    "material": "HousingFrame"
+  },
+  "W097M10400": {
+    "layer": "W097_Cedar East Apartments",
+    "category": "building",
+    "material": "HousingPanel"
+  },
+  "W097M11100": {
+    "layer": "W097_Cedar East Apartments",
+    "category": "building",
+    "material": "HousingConcrete"
+  },
+  "W097M11200": {
+    "layer": "W097_Cedar East Apartments",
+    "category": "building",
+    "material": "RoofHousing"
   },
   "W098M2700": {
     "layer": "W098_Floyd and Delores Jones Playhouse",
@@ -3914,20 +3934,15 @@
     "category": "building",
     "material": "Foundation"
   },
-  "W100M4200": {
-    "layer": "W100_Elm Hall",
-    "category": "building",
-    "material": "BrickBuff"
-  },
   "W100M4600": {
     "layer": "W100_Elm Hall",
     "category": "building",
     "material": "Precast"
   },
-  "W100M5200": {
+  "W100M5500": {
     "layer": "W100_Elm Hall",
     "category": "building",
-    "material": "RoofMembrane"
+    "material": "RoofMetal"
   },
   "W100D6800": {
     "layer": "W100_Elm Hall",
@@ -3938,6 +3953,31 @@
     "layer": "W100_Elm Hall",
     "category": "building",
     "material": "Frame"
+  },
+  "W100M9300": {
+    "layer": "W100_Elm Hall",
+    "category": "building",
+    "material": "StepStone"
+  },
+  "W100M10200": {
+    "layer": "W100_Elm Hall",
+    "category": "building",
+    "material": "HousingCharcoal"
+  },
+  "W100M10300": {
+    "layer": "W100_Elm Hall",
+    "category": "building",
+    "material": "HousingFrame"
+  },
+  "W100M11100": {
+    "layer": "W100_Elm Hall",
+    "category": "building",
+    "material": "HousingConcrete"
+  },
+  "W100M11200": {
+    "layer": "W100_Elm Hall",
+    "category": "building",
+    "material": "RoofHousing"
   },
   "W101M2700": {
     "layer": "W101_Schmitz Hall",
@@ -3984,20 +4024,20 @@
     "category": "building",
     "material": "Foundation"
   },
-  "W102M4200": {
-    "layer": "W102_Poplar Hall",
-    "category": "building",
-    "material": "BrickBuff"
-  },
   "W102M4600": {
     "layer": "W102_Poplar Hall",
     "category": "building",
     "material": "Precast"
   },
-  "W102M5200": {
+  "W102M5500": {
     "layer": "W102_Poplar Hall",
     "category": "building",
-    "material": "RoofMembrane"
+    "material": "RoofMetal"
+  },
+  "W102M5800": {
+    "layer": "W102_Poplar Hall",
+    "category": "building",
+    "material": "RoofPaving"
   },
   "W102D6800": {
     "layer": "W102_Poplar Hall",
@@ -4008,6 +4048,36 @@
     "layer": "W102_Poplar Hall",
     "category": "building",
     "material": "Frame"
+  },
+  "W102M9300": {
+    "layer": "W102_Poplar Hall",
+    "category": "building",
+    "material": "StepStone"
+  },
+  "W102M10200": {
+    "layer": "W102_Poplar Hall",
+    "category": "building",
+    "material": "HousingCharcoal"
+  },
+  "W102M10300": {
+    "layer": "W102_Poplar Hall",
+    "category": "building",
+    "material": "HousingFrame"
+  },
+  "W102M10400": {
+    "layer": "W102_Poplar Hall",
+    "category": "building",
+    "material": "HousingPanel"
+  },
+  "W102M11100": {
+    "layer": "W102_Poplar Hall",
+    "category": "building",
+    "material": "HousingConcrete"
+  },
+  "W102M11200": {
+    "layer": "W102_Poplar Hall",
+    "category": "building",
+    "material": "RoofHousing"
   },
   "W103M2700": {
     "layer": "W103_Transportation Services Building",
@@ -4054,20 +4124,15 @@
     "category": "building",
     "material": "Foundation"
   },
-  "W104M4200": {
-    "layer": "W104_Lander Hall",
-    "category": "building",
-    "material": "BrickBuff"
-  },
   "W104M4600": {
     "layer": "W104_Lander Hall",
     "category": "building",
     "material": "Precast"
   },
-  "W104M5200": {
+  "W104M5500": {
     "layer": "W104_Lander Hall",
     "category": "building",
-    "material": "RoofMembrane"
+    "material": "RoofMetal"
   },
   "W104D6800": {
     "layer": "W104_Lander Hall",
@@ -4078,6 +4143,41 @@
     "layer": "W104_Lander Hall",
     "category": "building",
     "material": "Frame"
+  },
+  "W104M9300": {
+    "layer": "W104_Lander Hall",
+    "category": "building",
+    "material": "StepStone"
+  },
+  "W104M10300": {
+    "layer": "W104_Lander Hall",
+    "category": "building",
+    "material": "HousingFrame"
+  },
+  "W104M10400": {
+    "layer": "W104_Lander Hall",
+    "category": "building",
+    "material": "HousingPanel"
+  },
+  "W104M10500": {
+    "layer": "W104_Lander Hall",
+    "category": "building",
+    "material": "HousingCopper"
+  },
+  "W104M10600": {
+    "layer": "W104_Lander Hall",
+    "category": "building",
+    "material": "HousingUmber"
+  },
+  "W104M11100": {
+    "layer": "W104_Lander Hall",
+    "category": "building",
+    "material": "HousingConcrete"
+  },
+  "W104M11200": {
+    "layer": "W104_Lander Hall",
+    "category": "building",
+    "material": "RoofHousing"
   },
   "W105M0000": {
     "layer": "W105_Alder Hall",
@@ -4164,20 +4264,20 @@
     "category": "building",
     "material": "Foundation"
   },
-  "W106M4200": {
-    "layer": "W106_Terry Hall",
-    "category": "building",
-    "material": "BrickBuff"
-  },
   "W106M4600": {
     "layer": "W106_Terry Hall",
     "category": "building",
     "material": "Precast"
   },
-  "W106M5200": {
+  "W106M5500": {
     "layer": "W106_Terry Hall",
     "category": "building",
-    "material": "RoofMembrane"
+    "material": "RoofMetal"
+  },
+  "W106M5800": {
+    "layer": "W106_Terry Hall",
+    "category": "building",
+    "material": "RoofPaving"
   },
   "W106D6800": {
     "layer": "W106_Terry Hall",
@@ -4189,25 +4289,50 @@
     "category": "building",
     "material": "Frame"
   },
+  "W106M9300": {
+    "layer": "W106_Terry Hall",
+    "category": "building",
+    "material": "StepStone"
+  },
+  "W106M10300": {
+    "layer": "W106_Terry Hall",
+    "category": "building",
+    "material": "HousingFrame"
+  },
+  "W106M10400": {
+    "layer": "W106_Terry Hall",
+    "category": "building",
+    "material": "HousingPanel"
+  },
+  "W106M10700": {
+    "layer": "W106_Terry Hall",
+    "category": "building",
+    "material": "HousingBrick"
+  },
+  "W106M11100": {
+    "layer": "W106_Terry Hall",
+    "category": "building",
+    "material": "HousingConcrete"
+  },
+  "W106M11200": {
+    "layer": "W106_Terry Hall",
+    "category": "building",
+    "material": "RoofHousing"
+  },
   "W107M2700": {
     "layer": "W107_Maple Hall",
     "category": "building",
     "material": "Foundation"
-  },
-  "W107M4200": {
-    "layer": "W107_Maple Hall",
-    "category": "building",
-    "material": "BrickBuff"
   },
   "W107M4600": {
     "layer": "W107_Maple Hall",
     "category": "building",
     "material": "Precast"
   },
-  "W107M5200": {
+  "W107M5500": {
     "layer": "W107_Maple Hall",
     "category": "building",
-    "material": "RoofMembrane"
+    "material": "RoofMetal"
   },
   "W107D6800": {
     "layer": "W107_Maple Hall",
@@ -4218,6 +4343,31 @@
     "layer": "W107_Maple Hall",
     "category": "building",
     "material": "Frame"
+  },
+  "W107M9300": {
+    "layer": "W107_Maple Hall",
+    "category": "building",
+    "material": "StepStone"
+  },
+  "W107M10300": {
+    "layer": "W107_Maple Hall",
+    "category": "building",
+    "material": "HousingFrame"
+  },
+  "W107M10700": {
+    "layer": "W107_Maple Hall",
+    "category": "building",
+    "material": "HousingBrick"
+  },
+  "W107M11100": {
+    "layer": "W107_Maple Hall",
+    "category": "building",
+    "material": "HousingConcrete"
+  },
+  "W107M11200": {
+    "layer": "W107_Maple Hall",
+    "category": "building",
+    "material": "RoofHousing"
   },
   "W108M2700": {
     "layer": "W108_3947 University Way NE",
@@ -4664,35 +4814,15 @@
     "category": "building",
     "material": "Foundation"
   },
-  "W120M4200": {
-    "layer": "W120_Mercer Court Building A",
-    "category": "building",
-    "material": "BrickBuff"
-  },
   "W120M4600": {
     "layer": "W120_Mercer Court Building A",
     "category": "building",
     "material": "Precast"
   },
-  "W120M5300": {
-    "layer": "W120_Mercer Court Building A",
-    "category": "building",
-    "material": "RoofWarm"
-  },
   "W120M5500": {
     "layer": "W120_Mercer Court Building A",
     "category": "building",
     "material": "RoofMetal"
-  },
-  "W120M6000": {
-    "layer": "W120_Mercer Court Building A",
-    "category": "building",
-    "material": "LightStone"
-  },
-  "W120D6700": {
-    "layer": "W120_Mercer Court Building A",
-    "category": "building",
-    "material": "Glass"
   },
   "W120D6800": {
     "layer": "W120_Mercer Court Building A",
@@ -4708,6 +4838,31 @@
     "layer": "W120_Mercer Court Building A",
     "category": "building",
     "material": "StepStone"
+  },
+  "W120M10300": {
+    "layer": "W120_Mercer Court Building A",
+    "category": "building",
+    "material": "HousingFrame"
+  },
+  "W120M10600": {
+    "layer": "W120_Mercer Court Building A",
+    "category": "building",
+    "material": "HousingUmber"
+  },
+  "W120M11000": {
+    "layer": "W120_Mercer Court Building A",
+    "category": "building",
+    "material": "HousingSilver"
+  },
+  "W120M11100": {
+    "layer": "W120_Mercer Court Building A",
+    "category": "building",
+    "material": "HousingConcrete"
+  },
+  "W120M11200": {
+    "layer": "W120_Mercer Court Building A",
+    "category": "building",
+    "material": "RoofHousing"
   },
   "W121M2700": {
     "layer": "W121_Southwest Maintenance Building",
@@ -4764,35 +4919,15 @@
     "category": "building",
     "material": "Foundation"
   },
-  "W123M4200": {
-    "layer": "W123_Mercer Court Building E",
-    "category": "building",
-    "material": "BrickBuff"
-  },
   "W123M4600": {
     "layer": "W123_Mercer Court Building E",
     "category": "building",
     "material": "Precast"
   },
-  "W123M5300": {
-    "layer": "W123_Mercer Court Building E",
-    "category": "building",
-    "material": "RoofWarm"
-  },
   "W123M5500": {
     "layer": "W123_Mercer Court Building E",
     "category": "building",
     "material": "RoofMetal"
-  },
-  "W123M6000": {
-    "layer": "W123_Mercer Court Building E",
-    "category": "building",
-    "material": "LightStone"
-  },
-  "W123D6700": {
-    "layer": "W123_Mercer Court Building E",
-    "category": "building",
-    "material": "Glass"
   },
   "W123D6800": {
     "layer": "W123_Mercer Court Building E",
@@ -4809,90 +4944,90 @@
     "category": "building",
     "material": "StepStone"
   },
+  "W123M10300": {
+    "layer": "W123_Mercer Court Building E",
+    "category": "building",
+    "material": "HousingFrame"
+  },
+  "W123M10600": {
+    "layer": "W123_Mercer Court Building E",
+    "category": "building",
+    "material": "HousingUmber"
+  },
+  "W123M11000": {
+    "layer": "W123_Mercer Court Building E",
+    "category": "building",
+    "material": "HousingSilver"
+  },
+  "W123M11100": {
+    "layer": "W123_Mercer Court Building E",
+    "category": "building",
+    "material": "HousingConcrete"
+  },
+  "W123M11200": {
+    "layer": "W123_Mercer Court Building E",
+    "category": "building",
+    "material": "RoofHousing"
+  },
   "W124M2700": {
     "layer": "W124_Stevens Court L",
     "category": "building",
     "material": "Foundation"
-  },
-  "W124M4200": {
-    "layer": "W124_Stevens Court L",
-    "category": "building",
-    "material": "BrickBuff"
-  },
-  "W124M4600": {
-    "layer": "W124_Stevens Court L",
-    "category": "building",
-    "material": "Precast"
-  },
-  "W124M5300": {
-    "layer": "W124_Stevens Court L",
-    "category": "building",
-    "material": "RoofWarm"
   },
   "W124M5500": {
     "layer": "W124_Stevens Court L",
     "category": "building",
     "material": "RoofMetal"
   },
-  "W124M6000": {
+  "W124M6200": {
     "layer": "W124_Stevens Court L",
     "category": "building",
-    "material": "LightStone"
-  },
-  "W124D6700": {
-    "layer": "W124_Stevens Court L",
-    "category": "building",
-    "material": "Glass"
+    "material": "Slate"
   },
   "W124D6800": {
     "layer": "W124_Stevens Court L",
     "category": "building",
     "material": "DarkGlass"
   },
-  "W124D6900": {
-    "layer": "W124_Stevens Court L",
-    "category": "building",
-    "material": "Frame"
-  },
   "W124M9300": {
     "layer": "W124_Stevens Court L",
     "category": "building",
     "material": "StepStone"
+  },
+  "W124M10300": {
+    "layer": "W124_Stevens Court L",
+    "category": "building",
+    "material": "HousingFrame"
+  },
+  "W124M10400": {
+    "layer": "W124_Stevens Court L",
+    "category": "building",
+    "material": "HousingPanel"
+  },
+  "W124M10700": {
+    "layer": "W124_Stevens Court L",
+    "category": "building",
+    "material": "HousingBrick"
+  },
+  "W124M11100": {
+    "layer": "W124_Stevens Court L",
+    "category": "building",
+    "material": "HousingConcrete"
   },
   "W125M2700": {
     "layer": "W125_Mercer Court Building D",
     "category": "building",
     "material": "Foundation"
   },
-  "W125M4200": {
-    "layer": "W125_Mercer Court Building D",
-    "category": "building",
-    "material": "BrickBuff"
-  },
   "W125M4600": {
     "layer": "W125_Mercer Court Building D",
     "category": "building",
     "material": "Precast"
   },
-  "W125M5300": {
-    "layer": "W125_Mercer Court Building D",
-    "category": "building",
-    "material": "RoofWarm"
-  },
   "W125M5500": {
     "layer": "W125_Mercer Court Building D",
     "category": "building",
     "material": "RoofMetal"
-  },
-  "W125M6000": {
-    "layer": "W125_Mercer Court Building D",
-    "category": "building",
-    "material": "LightStone"
-  },
-  "W125D6700": {
-    "layer": "W125_Mercer Court Building D",
-    "category": "building",
-    "material": "Glass"
   },
   "W125D6800": {
     "layer": "W125_Mercer Court Building D",
@@ -4909,40 +5044,45 @@
     "category": "building",
     "material": "StepStone"
   },
+  "W125M10300": {
+    "layer": "W125_Mercer Court Building D",
+    "category": "building",
+    "material": "HousingFrame"
+  },
+  "W125M10600": {
+    "layer": "W125_Mercer Court Building D",
+    "category": "building",
+    "material": "HousingUmber"
+  },
+  "W125M11000": {
+    "layer": "W125_Mercer Court Building D",
+    "category": "building",
+    "material": "HousingSilver"
+  },
+  "W125M11100": {
+    "layer": "W125_Mercer Court Building D",
+    "category": "building",
+    "material": "HousingConcrete"
+  },
+  "W125M11200": {
+    "layer": "W125_Mercer Court Building D",
+    "category": "building",
+    "material": "RoofHousing"
+  },
   "W126M2700": {
     "layer": "W126_Mercer Court Building C",
     "category": "building",
     "material": "Foundation"
-  },
-  "W126M4200": {
-    "layer": "W126_Mercer Court Building C",
-    "category": "building",
-    "material": "BrickBuff"
   },
   "W126M4600": {
     "layer": "W126_Mercer Court Building C",
     "category": "building",
     "material": "Precast"
   },
-  "W126M5300": {
-    "layer": "W126_Mercer Court Building C",
-    "category": "building",
-    "material": "RoofWarm"
-  },
   "W126M5500": {
     "layer": "W126_Mercer Court Building C",
     "category": "building",
     "material": "RoofMetal"
-  },
-  "W126M6000": {
-    "layer": "W126_Mercer Court Building C",
-    "category": "building",
-    "material": "LightStone"
-  },
-  "W126D6700": {
-    "layer": "W126_Mercer Court Building C",
-    "category": "building",
-    "material": "Glass"
   },
   "W126D6800": {
     "layer": "W126_Mercer Court Building C",
@@ -4959,140 +5099,135 @@
     "category": "building",
     "material": "StepStone"
   },
+  "W126M10300": {
+    "layer": "W126_Mercer Court Building C",
+    "category": "building",
+    "material": "HousingFrame"
+  },
+  "W126M10600": {
+    "layer": "W126_Mercer Court Building C",
+    "category": "building",
+    "material": "HousingUmber"
+  },
+  "W126M11000": {
+    "layer": "W126_Mercer Court Building C",
+    "category": "building",
+    "material": "HousingSilver"
+  },
+  "W126M11100": {
+    "layer": "W126_Mercer Court Building C",
+    "category": "building",
+    "material": "HousingConcrete"
+  },
+  "W126M11200": {
+    "layer": "W126_Mercer Court Building C",
+    "category": "building",
+    "material": "RoofHousing"
+  },
   "W127M2700": {
     "layer": "W127_Stevens Court A",
     "category": "building",
     "material": "Foundation"
-  },
-  "W127M4200": {
-    "layer": "W127_Stevens Court A",
-    "category": "building",
-    "material": "BrickBuff"
-  },
-  "W127M4600": {
-    "layer": "W127_Stevens Court A",
-    "category": "building",
-    "material": "Precast"
-  },
-  "W127M5300": {
-    "layer": "W127_Stevens Court A",
-    "category": "building",
-    "material": "RoofWarm"
   },
   "W127M5500": {
     "layer": "W127_Stevens Court A",
     "category": "building",
     "material": "RoofMetal"
   },
-  "W127M6000": {
+  "W127M6200": {
     "layer": "W127_Stevens Court A",
     "category": "building",
-    "material": "LightStone"
-  },
-  "W127D6700": {
-    "layer": "W127_Stevens Court A",
-    "category": "building",
-    "material": "Glass"
+    "material": "Slate"
   },
   "W127D6800": {
     "layer": "W127_Stevens Court A",
     "category": "building",
     "material": "DarkGlass"
   },
-  "W127D6900": {
-    "layer": "W127_Stevens Court A",
-    "category": "building",
-    "material": "Frame"
-  },
   "W127M9300": {
     "layer": "W127_Stevens Court A",
     "category": "building",
     "material": "StepStone"
+  },
+  "W127M10300": {
+    "layer": "W127_Stevens Court A",
+    "category": "building",
+    "material": "HousingFrame"
+  },
+  "W127M10400": {
+    "layer": "W127_Stevens Court A",
+    "category": "building",
+    "material": "HousingPanel"
+  },
+  "W127M10700": {
+    "layer": "W127_Stevens Court A",
+    "category": "building",
+    "material": "HousingBrick"
+  },
+  "W127M11100": {
+    "layer": "W127_Stevens Court A",
+    "category": "building",
+    "material": "HousingConcrete"
   },
   "W128M2700": {
     "layer": "W128_Stevens Court K",
     "category": "building",
     "material": "Foundation"
   },
-  "W128M4200": {
-    "layer": "W128_Stevens Court K",
-    "category": "building",
-    "material": "BrickBuff"
-  },
-  "W128M4600": {
-    "layer": "W128_Stevens Court K",
-    "category": "building",
-    "material": "Precast"
-  },
-  "W128M5300": {
-    "layer": "W128_Stevens Court K",
-    "category": "building",
-    "material": "RoofWarm"
-  },
   "W128M5500": {
     "layer": "W128_Stevens Court K",
     "category": "building",
     "material": "RoofMetal"
   },
-  "W128M6000": {
+  "W128M6200": {
     "layer": "W128_Stevens Court K",
     "category": "building",
-    "material": "LightStone"
-  },
-  "W128D6700": {
-    "layer": "W128_Stevens Court K",
-    "category": "building",
-    "material": "Glass"
+    "material": "Slate"
   },
   "W128D6800": {
     "layer": "W128_Stevens Court K",
     "category": "building",
     "material": "DarkGlass"
   },
-  "W128D6900": {
-    "layer": "W128_Stevens Court K",
-    "category": "building",
-    "material": "Frame"
-  },
   "W128M9300": {
     "layer": "W128_Stevens Court K",
     "category": "building",
     "material": "StepStone"
+  },
+  "W128M10300": {
+    "layer": "W128_Stevens Court K",
+    "category": "building",
+    "material": "HousingFrame"
+  },
+  "W128M10400": {
+    "layer": "W128_Stevens Court K",
+    "category": "building",
+    "material": "HousingPanel"
+  },
+  "W128M10700": {
+    "layer": "W128_Stevens Court K",
+    "category": "building",
+    "material": "HousingBrick"
+  },
+  "W128M11100": {
+    "layer": "W128_Stevens Court K",
+    "category": "building",
+    "material": "HousingConcrete"
   },
   "W129M2700": {
     "layer": "W129_Mercer Court Building B",
     "category": "building",
     "material": "Foundation"
   },
-  "W129M4200": {
-    "layer": "W129_Mercer Court Building B",
-    "category": "building",
-    "material": "BrickBuff"
-  },
   "W129M4600": {
     "layer": "W129_Mercer Court Building B",
     "category": "building",
     "material": "Precast"
   },
-  "W129M5300": {
-    "layer": "W129_Mercer Court Building B",
-    "category": "building",
-    "material": "RoofWarm"
-  },
   "W129M5500": {
     "layer": "W129_Mercer Court Building B",
     "category": "building",
     "material": "RoofMetal"
-  },
-  "W129M6000": {
-    "layer": "W129_Mercer Court Building B",
-    "category": "building",
-    "material": "LightStone"
-  },
-  "W129D6700": {
-    "layer": "W129_Mercer Court Building B",
-    "category": "building",
-    "material": "Glass"
   },
   "W129D6800": {
     "layer": "W129_Mercer Court Building B",
@@ -5109,155 +5244,165 @@
     "category": "building",
     "material": "StepStone"
   },
+  "W129M10300": {
+    "layer": "W129_Mercer Court Building B",
+    "category": "building",
+    "material": "HousingFrame"
+  },
+  "W129M10600": {
+    "layer": "W129_Mercer Court Building B",
+    "category": "building",
+    "material": "HousingUmber"
+  },
+  "W129M11000": {
+    "layer": "W129_Mercer Court Building B",
+    "category": "building",
+    "material": "HousingSilver"
+  },
+  "W129M11100": {
+    "layer": "W129_Mercer Court Building B",
+    "category": "building",
+    "material": "HousingConcrete"
+  },
+  "W129M11200": {
+    "layer": "W129_Mercer Court Building B",
+    "category": "building",
+    "material": "RoofHousing"
+  },
   "W130M2700": {
     "layer": "W130_Stevens Court M",
     "category": "building",
     "material": "Foundation"
-  },
-  "W130M4200": {
-    "layer": "W130_Stevens Court M",
-    "category": "building",
-    "material": "BrickBuff"
-  },
-  "W130M4600": {
-    "layer": "W130_Stevens Court M",
-    "category": "building",
-    "material": "Precast"
-  },
-  "W130M5300": {
-    "layer": "W130_Stevens Court M",
-    "category": "building",
-    "material": "RoofWarm"
   },
   "W130M5500": {
     "layer": "W130_Stevens Court M",
     "category": "building",
     "material": "RoofMetal"
   },
-  "W130M6000": {
+  "W130M6200": {
     "layer": "W130_Stevens Court M",
     "category": "building",
-    "material": "LightStone"
-  },
-  "W130D6700": {
-    "layer": "W130_Stevens Court M",
-    "category": "building",
-    "material": "Glass"
+    "material": "Slate"
   },
   "W130D6800": {
     "layer": "W130_Stevens Court M",
     "category": "building",
     "material": "DarkGlass"
   },
-  "W130D6900": {
-    "layer": "W130_Stevens Court M",
-    "category": "building",
-    "material": "Frame"
-  },
   "W130M9300": {
     "layer": "W130_Stevens Court M",
     "category": "building",
     "material": "StepStone"
+  },
+  "W130M10300": {
+    "layer": "W130_Stevens Court M",
+    "category": "building",
+    "material": "HousingFrame"
+  },
+  "W130M10400": {
+    "layer": "W130_Stevens Court M",
+    "category": "building",
+    "material": "HousingPanel"
+  },
+  "W130M10700": {
+    "layer": "W130_Stevens Court M",
+    "category": "building",
+    "material": "HousingBrick"
+  },
+  "W130M11100": {
+    "layer": "W130_Stevens Court M",
+    "category": "building",
+    "material": "HousingConcrete"
   },
   "W131M2700": {
     "layer": "W131_Stevens Court B",
     "category": "building",
     "material": "Foundation"
   },
-  "W131M4200": {
-    "layer": "W131_Stevens Court B",
-    "category": "building",
-    "material": "BrickBuff"
-  },
-  "W131M4600": {
-    "layer": "W131_Stevens Court B",
-    "category": "building",
-    "material": "Precast"
-  },
-  "W131M5300": {
-    "layer": "W131_Stevens Court B",
-    "category": "building",
-    "material": "RoofWarm"
-  },
   "W131M5500": {
     "layer": "W131_Stevens Court B",
     "category": "building",
     "material": "RoofMetal"
   },
-  "W131M6000": {
+  "W131M6200": {
     "layer": "W131_Stevens Court B",
     "category": "building",
-    "material": "LightStone"
-  },
-  "W131D6700": {
-    "layer": "W131_Stevens Court B",
-    "category": "building",
-    "material": "Glass"
+    "material": "Slate"
   },
   "W131D6800": {
     "layer": "W131_Stevens Court B",
     "category": "building",
     "material": "DarkGlass"
   },
-  "W131D6900": {
-    "layer": "W131_Stevens Court B",
-    "category": "building",
-    "material": "Frame"
-  },
   "W131M9300": {
     "layer": "W131_Stevens Court B",
     "category": "building",
     "material": "StepStone"
+  },
+  "W131M10300": {
+    "layer": "W131_Stevens Court B",
+    "category": "building",
+    "material": "HousingFrame"
+  },
+  "W131M10400": {
+    "layer": "W131_Stevens Court B",
+    "category": "building",
+    "material": "HousingPanel"
+  },
+  "W131M10700": {
+    "layer": "W131_Stevens Court B",
+    "category": "building",
+    "material": "HousingBrick"
+  },
+  "W131M11100": {
+    "layer": "W131_Stevens Court B",
+    "category": "building",
+    "material": "HousingConcrete"
   },
   "W132M2700": {
     "layer": "W132_Stevens Court H",
     "category": "building",
     "material": "Foundation"
   },
-  "W132M4200": {
-    "layer": "W132_Stevens Court H",
-    "category": "building",
-    "material": "BrickBuff"
-  },
-  "W132M4600": {
-    "layer": "W132_Stevens Court H",
-    "category": "building",
-    "material": "Precast"
-  },
-  "W132M5300": {
-    "layer": "W132_Stevens Court H",
-    "category": "building",
-    "material": "RoofWarm"
-  },
   "W132M5500": {
     "layer": "W132_Stevens Court H",
     "category": "building",
     "material": "RoofMetal"
   },
-  "W132M6000": {
+  "W132M6200": {
     "layer": "W132_Stevens Court H",
     "category": "building",
-    "material": "LightStone"
-  },
-  "W132D6700": {
-    "layer": "W132_Stevens Court H",
-    "category": "building",
-    "material": "Glass"
+    "material": "Slate"
   },
   "W132D6800": {
     "layer": "W132_Stevens Court H",
     "category": "building",
     "material": "DarkGlass"
   },
-  "W132D6900": {
-    "layer": "W132_Stevens Court H",
-    "category": "building",
-    "material": "Frame"
-  },
   "W132M9300": {
     "layer": "W132_Stevens Court H",
     "category": "building",
     "material": "StepStone"
+  },
+  "W132M10300": {
+    "layer": "W132_Stevens Court H",
+    "category": "building",
+    "material": "HousingFrame"
+  },
+  "W132M10400": {
+    "layer": "W132_Stevens Court H",
+    "category": "building",
+    "material": "HousingPanel"
+  },
+  "W132M10700": {
+    "layer": "W132_Stevens Court H",
+    "category": "building",
+    "material": "HousingBrick"
+  },
+  "W132M11100": {
+    "layer": "W132_Stevens Court H",
+    "category": "building",
+    "material": "HousingConcrete"
   },
   "W133M2700": {
     "layer": "W133_West Campus Utility Plant",
@@ -5294,150 +5439,135 @@
     "category": "building",
     "material": "Foundation"
   },
-  "W134M4200": {
-    "layer": "W134_Stevens Court D",
-    "category": "building",
-    "material": "BrickBuff"
-  },
-  "W134M4600": {
-    "layer": "W134_Stevens Court D",
-    "category": "building",
-    "material": "Precast"
-  },
-  "W134M5300": {
-    "layer": "W134_Stevens Court D",
-    "category": "building",
-    "material": "RoofWarm"
-  },
   "W134M5500": {
     "layer": "W134_Stevens Court D",
     "category": "building",
     "material": "RoofMetal"
   },
-  "W134M6000": {
+  "W134M6200": {
     "layer": "W134_Stevens Court D",
     "category": "building",
-    "material": "LightStone"
-  },
-  "W134D6700": {
-    "layer": "W134_Stevens Court D",
-    "category": "building",
-    "material": "Glass"
+    "material": "Slate"
   },
   "W134D6800": {
     "layer": "W134_Stevens Court D",
     "category": "building",
     "material": "DarkGlass"
   },
-  "W134D6900": {
-    "layer": "W134_Stevens Court D",
-    "category": "building",
-    "material": "Frame"
-  },
   "W134M9300": {
     "layer": "W134_Stevens Court D",
     "category": "building",
     "material": "StepStone"
+  },
+  "W134M10300": {
+    "layer": "W134_Stevens Court D",
+    "category": "building",
+    "material": "HousingFrame"
+  },
+  "W134M10400": {
+    "layer": "W134_Stevens Court D",
+    "category": "building",
+    "material": "HousingPanel"
+  },
+  "W134M10700": {
+    "layer": "W134_Stevens Court D",
+    "category": "building",
+    "material": "HousingBrick"
+  },
+  "W134M11100": {
+    "layer": "W134_Stevens Court D",
+    "category": "building",
+    "material": "HousingConcrete"
   },
   "W135M2700": {
     "layer": "W135_Stevens Court C",
     "category": "building",
     "material": "Foundation"
   },
-  "W135M4200": {
-    "layer": "W135_Stevens Court C",
-    "category": "building",
-    "material": "BrickBuff"
-  },
-  "W135M4600": {
-    "layer": "W135_Stevens Court C",
-    "category": "building",
-    "material": "Precast"
-  },
-  "W135M5300": {
-    "layer": "W135_Stevens Court C",
-    "category": "building",
-    "material": "RoofWarm"
-  },
   "W135M5500": {
     "layer": "W135_Stevens Court C",
     "category": "building",
     "material": "RoofMetal"
   },
-  "W135M6000": {
+  "W135M6200": {
     "layer": "W135_Stevens Court C",
     "category": "building",
-    "material": "LightStone"
-  },
-  "W135D6700": {
-    "layer": "W135_Stevens Court C",
-    "category": "building",
-    "material": "Glass"
+    "material": "Slate"
   },
   "W135D6800": {
     "layer": "W135_Stevens Court C",
     "category": "building",
     "material": "DarkGlass"
   },
-  "W135D6900": {
-    "layer": "W135_Stevens Court C",
-    "category": "building",
-    "material": "Frame"
-  },
   "W135M9300": {
     "layer": "W135_Stevens Court C",
     "category": "building",
     "material": "StepStone"
+  },
+  "W135M10300": {
+    "layer": "W135_Stevens Court C",
+    "category": "building",
+    "material": "HousingFrame"
+  },
+  "W135M10400": {
+    "layer": "W135_Stevens Court C",
+    "category": "building",
+    "material": "HousingPanel"
+  },
+  "W135M10700": {
+    "layer": "W135_Stevens Court C",
+    "category": "building",
+    "material": "HousingBrick"
+  },
+  "W135M11100": {
+    "layer": "W135_Stevens Court C",
+    "category": "building",
+    "material": "HousingConcrete"
   },
   "W136M2700": {
     "layer": "W136_Stevens Court J",
     "category": "building",
     "material": "Foundation"
   },
-  "W136M4200": {
-    "layer": "W136_Stevens Court J",
-    "category": "building",
-    "material": "BrickBuff"
-  },
-  "W136M4600": {
-    "layer": "W136_Stevens Court J",
-    "category": "building",
-    "material": "Precast"
-  },
-  "W136M5300": {
-    "layer": "W136_Stevens Court J",
-    "category": "building",
-    "material": "RoofWarm"
-  },
   "W136M5500": {
     "layer": "W136_Stevens Court J",
     "category": "building",
     "material": "RoofMetal"
   },
-  "W136M6000": {
+  "W136M6200": {
     "layer": "W136_Stevens Court J",
     "category": "building",
-    "material": "LightStone"
-  },
-  "W136D6700": {
-    "layer": "W136_Stevens Court J",
-    "category": "building",
-    "material": "Glass"
+    "material": "Slate"
   },
   "W136D6800": {
     "layer": "W136_Stevens Court J",
     "category": "building",
     "material": "DarkGlass"
   },
-  "W136D6900": {
-    "layer": "W136_Stevens Court J",
-    "category": "building",
-    "material": "Frame"
-  },
   "W136M9300": {
     "layer": "W136_Stevens Court J",
     "category": "building",
     "material": "StepStone"
+  },
+  "W136M10300": {
+    "layer": "W136_Stevens Court J",
+    "category": "building",
+    "material": "HousingFrame"
+  },
+  "W136M10400": {
+    "layer": "W136_Stevens Court J",
+    "category": "building",
+    "material": "HousingPanel"
+  },
+  "W136M10700": {
+    "layer": "W136_Stevens Court J",
+    "category": "building",
+    "material": "HousingBrick"
+  },
+  "W136M11100": {
+    "layer": "W136_Stevens Court J",
+    "category": "building",
+    "material": "HousingConcrete"
   },
   "W137M2700": {
     "layer": "W137_Children's Center at Laurel Village Modular 1 (W35 Parking Lot)",
@@ -9873,6 +10003,11 @@
     "layer": "Environment",
     "category": "environment",
     "material": "Ripple"
+  },
+  "E11100": {
+    "layer": "Environment",
+    "category": "environment",
+    "material": "HousingConcrete"
   },
   "N001M2800": {
     "layer": "N001_U District building 223484668",

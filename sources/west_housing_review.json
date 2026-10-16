@@ -1,0 +1,57 @@
+{
+  "review_date": "2026-10-15",
+  "method": "Visual comparison of primary university/architect exterior photos and north-up aerial; no licensed imagery redistributed.",
+  "references": [
+    {
+      "url": "https://www.mahlum.com/projects/west-campus-student-housing-phase-i/",
+      "retrieved_bytes": 53448,
+      "sha256": "98445d70c90bedba49727f80280b8362f5a48aecbb10c1ed7904fbb0441109ca"
+    },
+    {
+      "url": "https://mithun.com/project/university-of-washington-lander-hall/",
+      "retrieved_bytes": 61401,
+      "sha256": "b36f7a11a1087b1df079b256c047880efd76355cc3530dafa190ebc111fd156e"
+    },
+    {
+      "url": "https://mithun.com/project/university-of-washington-terry-and-maple-halls/",
+      "retrieved_bytes": 64474,
+      "sha256": "e2837de7e4f860e1b20c3bd4c439edc65738d4f2a1c09cdee8830a537b5209b5"
+    },
+    {
+      "url": "https://hfs.uw.edu/live/undergraduates/undergraduate-communities/elm-hall/",
+      "retrieved_bytes": 38816,
+      "sha256": "e46571e0a1a33493b0e2d3bb287db4f1ccf9f7bc3d5ffe8ca91050674d0f7414"
+    },
+    {
+      "url": "https://hfs.uw.edu/live/undergraduates/undergraduate-communities/poplar-hall/",
+      "retrieved_bytes": 40283,
+      "sha256": "098aef96ecea3a85e533186371f042c632edf1ed83ba0e367838811384226b22"
+    },
+    {
+      "url": "https://hfs.uw.edu/live/undergraduates/undergraduate-communities/cedar-apartments/",
+      "retrieved_bytes": 39004,
+      "sha256": "00f59ad17063c989e66e518eda7a664d72281a9ddba601279b22461bc827919d"
+    },
+    {
+      "url": "https://hfs.uw.edu/live/undergraduates/undergraduate-communities/mercer-court-a-c/",
+      "retrieved_bytes": 40977,
+      "sha256": "f7014f9cdae6e3538dc4f851966b3f0e748d465c7c7b5a103b0eda45b28545ca"
+    },
+    {
+      "url": "https://hfs.uw.edu/live/undergraduates/undergraduate-communities/stevens-court/",
+      "retrieved_bytes": 35829,
+      "sha256": "6bbb7bf173fd95a911cbcafb242f5992f7a79c9dfbead9ec56cea740755b408e"
+    },
+    {
+      "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=551124.7842745285%2C5278006.038903566%2C551574.7842745285%2C5278486.038903566&bboxSR=32610&imageSR=32610&size=1500%2C1600&format=png&f=image",
+      "retrieved_bytes": 1873148,
+      "sha256": "550bf024ba39bf359e5d6e4a3e15d699ee5424bb986e22ee449d17c5f9ecded7"
+    }
+  ],
+  "alder_baseline": {
+    "release": "26.10.15.8",
+    "layer": "W105_Alder Hall",
+    "geometry_sha256": "af9add3e9bbb491f741183cda7127c6076caf735ac63bb386e3bc133a281eb07",
+    "digest_method": "Sorted [3DS object name, SHA256(vertices + face indices/flags + material assignment)] pairs serialized as Python JSON; smoothing metadata excluded."
+  }
+}
