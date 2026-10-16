@@ -36,7 +36,7 @@ The surrounding U District adds **{s['neighboring_areas']['buildings']} individu
 
 Alder Hall retains its mapped open-air stepped light court, charcoal street brick, pale courtyard elevations and paired white-framed windows. Its four street frontages include graded entry aprons, mapped sidewalk modules, interrupted curbs, tree pits at published tree positions and grounded bench details. Courtyard planting and furnishings are photo-informed approximations.
 
-The initial Core view centers Red Square from the southwest, with north pointing upper-left. Persistent landmark labels start off; hovering a mapped outdoor place or building still shows its name. Reset restores it. Campus shows a wider overview; district and Plan controls provide other views. The East & Athletics preset focuses on Husky Stadium and the adjacent principal athletic facilities. Left-drag pans, right-drag rotates, and the wheel zooms at the pointer. One finger pans; two fingers pan or pinch. Rotate enables one-finger rotation. Camera pivots stay grounded, there is no inertia, and zoom-out remains campus-wide after choosing a landmark.
+The initial Core view centers Red Square from the southwest, with north pointing upper-left. Persistent landmark labels start off; hovering a mapped outdoor place or building still shows its name. Reset restores it. Campus shows a wider overview; district and Plan controls provide other views. The East & Athletics preset focuses on Husky Stadium and the adjacent principal athletic facilities. Left-drag pans, right-drag rotates, and the wheel zooms at the pointer. One or two fingers pan; pinch to zoom and twist two fingers to turn the map around their midpoint. Rotate enables one-finger orbit and tilt. Camera pivots stay grounded, there is no inertia, and zoom-out remains campus-wide after choosing a landmark.
 
 Search works in both languages and by official code. Buildings can be selected, hidden, isolated or located. Selection retains a clear highlight. Mapped outdoor places have bilingual hover names; smaller pools take priority over enclosing plazas, while buildings retain priority. The viewer includes architectural tours, progress/percentage loading, shadows, metric scale, labels, elevation slicing, 3DS download and PNG export. Roof depth separation, fixed shadow filtering and continuous terrain lighting avoid unstable coplanar surfaces during navigation.
 
@@ -153,7 +153,7 @@ usage=f'''# 华盛顿大学西雅图校区模型使用说明
 
 1. 保留根目录index.html与assets、output的相对位置，双击index.html打开；也可使用output/UW_Campus_Offline.html单文件离线版本。
 2. 首次打开统一使用英文，不受设备语言影响；页眉按钮可切换语言。
-3. 左键拖动平移，右键拖动旋转，滚轮以指针位置缩放。触屏单指平移，双指平移或捏合；开启旋转后可单指旋转。松手后立即停止。
+3. 左键拖动平移，右键拖动旋转，滚轮以指针位置缩放。触屏单指或双指平移，双指捏合缩放、扭转旋转朝向；开启旋转后可单指调整朝向与俯仰。松手后立即停止。
 4. 初始核心镜头围绕红场取景；重置恢复该视角。校区鸟瞰、片区和总平面按钮提供其他取景。
 5. All分类首项⁺Campus neighboring areas默认勾选，取消后隐藏周边建筑及道路景观；点击名称可取景周边。All分类搜索也可查找周边建筑。点击建筑或左侧列表，查看尺寸、原英文名称与来源，可定位、隐藏或单独查看。3DS下载和保存视图在加载完成后可用。
 6. 高程剖切按DEM米制标高切割外部表面，并不表示室内结构或相对楼层。

@@ -1,5 +1,11 @@
 # Changelog
 
+## 26.10.15.3 — 2026-10-15
+
+- Add two-finger twist rotation around the gesture midpoint while preserving touch pan, pinch zoom, single-finger rotation mode and desktop navigation.
+- Batch the two contacts once per frame, require a small intentional twist, and reset gesture baselines when fingers change or a gesture is canceled. Keep pitch, ground pivots and immediate stopping stable.
+- Correct pinch centers when page and viewport coordinates differ; update English and Chinese controls help and verify combined gestures at plan, oblique and horizontal angles.
+
 ## 26.10.15.2 — 2026-10-15
 
 - Replace the Alder block’s coordinate-guessed crosswalks with 20 satellite-reviewed curb-to-curb crossing paths around Brooklyn Avenue, University Way, Campus Parkway and NE 40th Street. Use paired stripes aligned with each actual walking path, and clip every marking to the road while preserving median and sidewalk gaps.
