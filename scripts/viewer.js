@@ -48,6 +48,7 @@ let neighborsVisible=true,neighborGroup=null;
 const contextGround={...data,groundPads:[...(data.groundPads||[]),...(data.neighborPads||[])]};
 const mapGround=(x,y)=>groundHeight(neighborsVisible?contextGround:data,x,y);
 function setNeighbors(value){neighborsVisible=value;if(neighborGroup)neighborGroup.visible=value;if(!value&&byCode.get(selected)?.neighbor)selectBuilding(null);refreshList();render();}
+let selectionHighlight=true;
 let selected=null,category='all',renderer=null,scene,camera,controls,campus,sun,campusDiagonal=1,modelReady=false,pendingFocus=null,renderBounds=null,depthBits=24,frameHeight=1500,viewMode='aerial',staticMode=false;
 const sidebar=$('sidebar'),host=$('viewport'),compact=matchMedia('(max-width:760px)');
 const tour=data.landmarkOrder.map(id=>[...records,...(data.tourPlaces||[])].find(r=>r.facility_id===id)).filter(Boolean);let tourIndex=0;
@@ -116,15 +117,16 @@ function refreshDetail(){
  for(const[key,url]of [['sourceHeight',r.source],['sourceMap',r.footprint_source]]){const a=document.createElement('a');a.href=url;a.target='_blank';a.rel='noopener';a.textContent=t(key);links.append(a,document.createTextNode(' · '));}
  p.append(title,sub,dl,actions,note,basis,prec,links);
 }
-function selectBuilding(code,focus=false){
- pendingPlace=null;selected=code;for(const[c,g]of buildings)g.traverse(m=>{if(m.isMesh)(Array.isArray(m.material)?m.material:[m.material]).forEach(mat=>{mat.emissive.set(c===code?0x987200:0);mat.emissiveIntensity=c===code?.22:0;});});
+function selectBuilding(code,focus=false,highlight=true){
+ selectionHighlight=highlight;
+ pendingPlace=null;selected=code;for(const[c,g]of buildings)g.traverse(m=>{if(m.isMesh)(Array.isArray(m.material)?m.material:[m.material]).forEach(mat=>{mat.emissive.set(highlight&&c===code?0x987200:0);mat.emissiveIntensity=highlight&&c===code?.22:0;});});
  if(code){const g=buildings.get(code);if(g)g.visible=true;if(byCode.get(code)?.neighbor&&!neighborsVisible){neighborsVisible=true;if(neighborGroup)neighborGroup.visible=true;}const idx=tour.findIndex(r=>r.code===code);if(idx>=0){tourIndex=idx;refreshTour();}}
  refreshDetail();refreshList();if(focus)focusBuilding(code);render();
 }
 function refreshTour(){const s=$('tour-select');s.replaceChildren();for(const r of tour){const op=document.createElement('option');op.value=r.code;op.textContent=brief(r);s.append(op);}s.value=tour[tourIndex]?.code||'';$('tour-step').textContent=(tourIndex+1)+' / '+tour.length;}
 function visitTour(r){
  if(!r)return;
- if(!r.outdoor){selectBuilding(r.code,true);return;}
+ if(!r.outdoor){selectBuilding(r.code,true,false);return;}
  selectBuilding(null);
  if(!modelReady){pendingPlace=r;return;}
  $('environment').checked=true;envMeshes.forEach(m=>m.visible=true);
@@ -221,7 +223,7 @@ try{
  viewportLoop=createViewportRenderLoop({host,renderer,resize:ratio=>{frameHeight*=ratio;updateFrustum();},draw:drawScene});
  const observer=new ResizeObserver(()=>{if(viewportLoop.needsResize())render(false);});observer.observe(host);
  reportLoad({phase:'render',loaded:0,total:1});await nextPaint();modelReady=true;
- fullView('core');if(selected)selectBuilding(selected,Boolean(pendingFocus));pendingFocus=null;if(pendingPlace){visitTour(pendingPlace);pendingPlace=null;}refreshList();
+ fullView('core');if(selected)selectBuilding(selected,Boolean(pendingFocus),selectionHighlight);pendingFocus=null;if(pendingPlace){visitTour(pendingPlace);pendingPlace=null;}refreshList();
  const ray=new THREE.Raycaster(),pointer=new THREE.Vector2();
  function pick(e){const b=renderer.domElement.getBoundingClientRect();pointer.set((e.clientX-b.left)/b.width*2-1,-(e.clientY-b.top)/b.height*2+1);ray.setFromCamera(pointer,camera);return ray.intersectObjects(pickMeshes.filter(m=>m.visible&&m.parent.visible&&(neighborsVisible||!byCode.get(m.userData.code)?.neighbor)),false).find(h=>!$('cut-enabled').checked||h.point.z<=clipPlane.constant)?.object.userData.code||null;}
  installMapSelection(renderer.domElement,e=>selectBuilding(pick(e)));
