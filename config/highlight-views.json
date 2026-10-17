@@ -1,0 +1,220 @@
+{
+  "review_date": "2026-10-17",
+  "coordinate_convention": "Camera-side azimuth clockwise from model north (+Y); elevation above ground. +X is east.",
+  "basis": "Editorial presentation choices inferred from the retained mapped plans and university/architect exterior references; not surveyed entrance bearings or a reproduction of a particular photograph.",
+  "views": {
+    "BRK": {
+      "name": "Burke Museum of Natural History and Culture",
+      "azimuth_deg": 295,
+      "elevation_deg": 28,
+      "padding": 1.6,
+      "composition": "West public landscape and timber/glass museum frontage",
+      "reference": "https://olsonkundig.com/projects/burke-museum-of-natural-history-and-culture/"
+    },
+    "LAW": {
+      "name": "William H. Gates Hall",
+      "azimuth_deg": 145,
+      "elevation_deg": 30,
+      "padding": 1.6,
+      "composition": "Southeast glazed library/arrival elevations and roof-lawn skylights",
+      "reference": "https://www.kpf.com/project/william-h-gates-hall"
+    },
+    "PCAR": {
+      "name": "PACCAR Hall",
+      "azimuth_deg": 230,
+      "elevation_deg": 30,
+      "padding": 1.6,
+      "composition": "Southwest projecting glazed meeting room, atrium and brick wings",
+      "reference": "https://lmnarchitects.com/project/paccar-hall-foster-school-of-business-university-of-washington"
+    },
+    "DEN": {
+      "name": "Denny Hall",
+      "azimuth_deg": 195,
+      "elevation_deg": 26,
+      "padding": 1.65,
+      "composition": "South lawn entrance and central sandstone cupola",
+      "reference": "https://pcad.lib.washington.edu/building/5433/"
+    },
+    "INT": {
+      "name": "Intellectual House",
+      "azimuth_deg": 225,
+      "elevation_deg": 26,
+      "padding": 1.6,
+      "composition": "Southwest longhouse entry and timber roof silhouette",
+      "reference": "https://www.washington.edu/news/2015/03/10/as-home-for-native-learning-opens-a-dream-is-realized/"
+    },
+    "RAI": {
+      "name": "Raitt Hall",
+      "azimuth_deg": 220,
+      "elevation_deg": 28,
+      "padding": 1.6,
+      "composition": "The Quad-facing southwest entrance and Gothic window bays",
+      "reference": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1"
+    },
+    "SAV": {
+      "name": "Savery Hall",
+      "azimuth_deg": 55,
+      "elevation_deg": 28,
+      "padding": 1.6,
+      "composition": "The Quad-facing northeast masonry and pitched roof",
+      "reference": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1"
+    },
+    "SMI": {
+      "name": "Smith Hall",
+      "azimuth_deg": 330,
+      "elevation_deg": 28,
+      "padding": 1.6,
+      "composition": "The Quad-facing northwest elevation and entrance",
+      "reference": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1"
+    },
+    "KNE": {
+      "name": "Kane Hall",
+      "azimuth_deg": 165,
+      "elevation_deg": 25,
+      "padding": 1.6,
+      "composition": "Red Square south portico with recessed entrance and tall concrete piers",
+      "reference": "https://www.washington.edu/news/2019/12/17/beauty-in-brutalism-architecture-professor-alex-anderson-reviews-the-uws-bunkerlike-behemoths/"
+    },
+    "HAG": {
+      "name": "Henry Art Gallery",
+      "azimuth_deg": 105,
+      "elevation_deg": 30,
+      "padding": 1.65,
+      "composition": "Campus-facing original gallery and modern addition together",
+      "reference": "https://www.gwathmey-siegel.com/2013/08/university-of-washington/"
+    },
+    "OUG": {
+      "name": "Odegaard Library",
+      "azimuth_deg": 125,
+      "elevation_deg": 27,
+      "padding": 1.6,
+      "composition": "Red Square east/southeast entrance and concrete/glass bays",
+      "reference": "https://millerhull.com/project/odegaard-library/"
+    },
+    "GWN": {
+      "name": "Gowen Hall",
+      "azimuth_deg": 330,
+      "elevation_deg": 28,
+      "padding": 1.6,
+      "composition": "The Quad-facing north/northwest entrance",
+      "reference": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1"
+    },
+    "HUB": {
+      "name": "Student Union Building",
+      "azimuth_deg": 245,
+      "elevation_deg": 30,
+      "padding": 1.6,
+      "composition": "West public glazing and south glass arrival volume",
+      "reference": "https://www.nwpart.com/projects/university-of-washington-husky-union-building/"
+    },
+    "GRB": {
+      "name": "Gerberding Hall",
+      "azimuth_deg": 15,
+      "elevation_deg": 25,
+      "padding": 1.65,
+      "composition": "Red Square north frontage with the separate bell tower",
+      "reference": "https://www.washington.edu/news/2008/05/01/gerberding-a-real-bell-tower-at-last/"
+    },
+    "IEB": {
+      "name": "Interdisciplinary Engineering Building",
+      "azimuth_deg": 300,
+      "elevation_deg": 28,
+      "padding": 1.6,
+      "composition": "Northwest arrival passage and dark-brick teaching facade",
+      "reference": "https://www.engr.washington.edu/about/ieb"
+    },
+    "MGH": {
+      "name": "Mary Gates Hall",
+      "azimuth_deg": 335,
+      "elevation_deg": 27,
+      "padding": 1.6,
+      "composition": "North campus entrance, Gothic facade and roof perimeter",
+      "reference": "https://www.bassettiarch.com/portfoliodetails/marygates"
+    },
+    "HRC": {
+      "name": "Hans Rosling Center for Population Health",
+      "azimuth_deg": 245,
+      "elevation_deg": 27,
+      "padding": 1.65,
+      "composition": "West glazed public base, solar sails and upper terraces",
+      "reference": "https://www.washington.edu/populationhealth/hans-rosling-center-tour/"
+    },
+    "CSE": {
+      "name": "Paul G. Allen Center for Computer Science & Engineering",
+      "azimuth_deg": 65,
+      "elevation_deg": 28,
+      "padding": 1.6,
+      "composition": "Northeast entry and brick/glass atrium wings",
+      "reference": "https://lazowska.cs.washington.edu/psj.allen.center.html"
+    },
+    "CSE2": {
+      "name": "Bill & Melinda Gates Center for Computer Science & Engineering",
+      "azimuth_deg": 315,
+      "elevation_deg": 28,
+      "padding": 1.6,
+      "composition": "Northwest entry, staggered masonry bays and rooftop event room",
+      "reference": "https://lmnarchitects.com/project/bill-melinda-gates-center"
+    },
+    "LSB": {
+      "name": "Life Sciences Building",
+      "azimuth_deg": 230,
+      "elevation_deg": 28,
+      "padding": 1.65,
+      "composition": "Southwest photovoltaic glass fins and glazed circulation end",
+      "reference": "https://perkinswill.com/project/university-of-washington-life-sciences-building/"
+    },
+    "ALD": {
+      "name": "Alder Hall",
+      "azimuth_deg": 325,
+      "elevation_deg": 31,
+      "padding": 1.65,
+      "composition": "North street frontage with an oblique view into the light court",
+      "reference": "https://hfs.uw.edu/live/undergraduates/undergraduate-communities/alder-hall/"
+    },
+    "HSEB": {
+      "name": "Health Sciences Education Building",
+      "azimuth_deg": 25,
+      "elevation_deg": 28,
+      "padding": 1.6,
+      "composition": "North active glazed edge and corner commons",
+      "reference": "https://millerhull.com/project/health-sciences-education-building/"
+    },
+    "UMSA": {
+      "name": "UW Medical Center - Montlake, Wing SA - Montlake Tower",
+      "azimuth_deg": 145,
+      "elevation_deg": 30,
+      "padding": 1.65,
+      "composition": "Southeast inpatient glazing and lower arrival podium",
+      "reference": "https://www.laminart.com/case-study/montlake-tower-university-washington-medical-center"
+    },
+    "CSH": {
+      "name": "Conibear Shellhouse",
+      "azimuth_deg": 110,
+      "elevation_deg": 27,
+      "padding": 1.65,
+      "composition": "Lake-facing boat bays, supported deck and dining-room glazing",
+      "reference": "https://millerhull.com/project/conibear-shellhouse/"
+    },
+    "EDP": {
+      "name": "Hec Edmundson Pavilion",
+      "azimuth_deg": 200,
+      "elevation_deg": 28,
+      "padding": 1.65,
+      "composition": "Southwest historic arena frontage and gabled sports-hall roof",
+      "reference": "https://gohuskies.com/news/2013/4/18/208237508"
+    },
+    "LINK_UW": {
+      "name": "University of Washington Station",
+      "azimuth_deg": 315,
+      "elevation_deg": 30,
+      "padding": 1.65,
+      "composition": "Northwest station plaza, glazed pavilion and bridge connection",
+      "reference": "https://lmnarchitects.com/project/university-of-washington-station-sound-transit"
+    }
+  },
+  "preserved": {
+    "SUZ": "Retain the individually revised near-west 27-degree view, focus bounds and 1.72 padding.",
+    "STD": "Retain the existing dedicated stadium direction [-0.9,-1.5,2.1] and 1.35 padding.",
+    "DRUMHELLER": "Retain the existing dedicated outdoor fountain framing."
+  }
+}

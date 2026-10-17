@@ -1,5 +1,11 @@
 # Changelog
 
+## 26.10.17.2 — 2026-10-17
+
+- Give 26 architectural highlights individual architectural aerial-photography cameras, choosing principal entrances, courtyard-facing elevations or characteristic volumes instead of one shared viewing direction. Use lower facade views and higher courtyard/sports-bowl views with portrait/landscape-safe framing.
+- Bundle the stable-ID camera catalogue for online, local and standalone editions; preserve existing explicit record cameras, initial/district views, selection colors, source CAD and regional detail budgets.
+- Keep the previously tuned Suzzallo Library entrance view, dedicated Husky Stadium view and Drumheller Fountain framing unchanged; retain the combined Henry gallery/addition fit.
+
 ## 26.10.17.1 — 2026-10-17
 
 - Lower Suzzallo Library's Explore camera elevation from about 35 to 27 degrees above the ground, pull the framing back slightly to include more entrance stairs and Red Square foreground while retaining the near-west bearing and original building colors. Keep the preset consistent in generated metadata and future model builds.
