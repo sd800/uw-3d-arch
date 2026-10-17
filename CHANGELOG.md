@@ -1,5 +1,9 @@
 # Changelog
 
+## 26.10.17.1 — 2026-10-17
+
+- Lower Suzzallo Library's Explore camera elevation from about 35 to 27 degrees above the ground, pull the framing back slightly to include more entrance stairs and Red Square foreground while retaining the near-west bearing and original building colors. Keep the preset consistent in generated metadata and future model builds.
+
 ## 26.10.16.8 — 2026-10-16
 
 - Keep the campus' own sitemap declaration and remove the retired central single-site sitemap reference from robots and future website packaging. The collection now offers one combined cross-site sitemap for verified Search Console submission.

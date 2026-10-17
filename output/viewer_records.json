@@ -1948,8 +1948,9 @@
     "focus_direction": [
       -1.0,
       -0.015,
-      0.7
-    ]
+      0.5
+    ],
+    "focus_padding": 1.72
   },
   {
     "code": "W041",

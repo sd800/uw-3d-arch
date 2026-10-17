@@ -204,7 +204,7 @@ for j,f in enumerate(buildings,1):
         r['partition_en']='; '.join(refinement['details'])+'. Exterior dimensions and partitions remain approximate.'
         r['partition']='按公开建筑资料和航拍细化体量、屋顶与立面；保留官方轮廓。外部高度及构件尺寸仍为近似表达。'
         r['volume_parts']=refinement['volume_parts']
-        for key in ['focus_bounds','focus_direction']:
+        for key in ['focus_bounds','focus_direction','focus_padding']:
             if key in refinement:r[key]=refinement[key]
         if refinement.get('ordinary'):r['partition']='保留公开映射轮廓和庭院，按建筑用途及已有标记细化窗格、楼层线脚、屋顶与接地入口；外部高度与构件尺寸为近似表达。'
     if id=='HAG':r['focus_facilities']=['HAG','AVA']
