@@ -1,0 +1,19 @@
+{
+  "building_highlights": 28,
+  "reconstructed_buildings": 5,
+  "all_individual_layers_present": true,
+  "physical_checks": 10,
+  "checks": [
+    "Denny uses a copper-patina cupola",
+    "Denny lantern caps the supported copper dome",
+    "SAV retains its aerial-verified flat inner roof",
+    "SAV retains distinct slate margins",
+    "RAI retains its aerial-verified flat inner roof",
+    "RAI retains distinct slate margins",
+    "SMI retains its aerial-verified flat inner roof",
+    "SMI retains distinct slate margins",
+    "GWN retains its aerial-verified flat inner roof",
+    "GWN retains distinct slate margins"
+  ],
+  "passed": true
+}

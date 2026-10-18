@@ -48,6 +48,7 @@
     -0.015,
     0.5
   ],
+  "focus_padding": 1.72,
   "validation_probes": {
     "recessed_portals": [
       {
@@ -97,6 +98,5 @@
     "supported_statue_silhouettes": 3,
     "flush_thresholds": 3
   },
-  "limits": "Mapped envelope retained. Bay organization and portal/terrace forms are photo-referenced; secondary dimensions, grades and sculptural silhouettes are approximate.",
-  "focus_padding": 1.72
+  "limits": "Mapped envelope retained. Bay organization and portal/terrace forms are photo-referenced; secondary dimensions, grades and sculptural silhouettes are approximate."
 }

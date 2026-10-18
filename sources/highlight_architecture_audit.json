@@ -1,0 +1,357 @@
+{
+  "review_date": "2026-10-18",
+  "scope": "Every current architectural building Highlight; the individual exterior geometry is reviewed, not merely a shared joinery counter.",
+  "building_highlight_count": 28,
+  "reconstructed_this_review": 5,
+  "joinery_count_is_not_fidelity_evidence": true,
+  "audit": [
+    {
+      "id": "BRK",
+      "code": "W004",
+      "name": "Burke Museum of Natural History and Culture",
+      "decision": "retained existing individual exterior after review",
+      "features_reviewed": [
+        "Retain the existing timber enclosure, tall narrow glazing and closed street-aligned shed roof."
+      ],
+      "reference": "https://olsonkundig.com/projects/burke-museum-of-natural-history-and-culture/",
+      "dimensions": "Retain published dimensions where available; all remaining section levels, bays and secondary members are approximate exterior interpretations."
+    },
+    {
+      "id": "LAW",
+      "code": "W012",
+      "name": "William H. Gates Hall",
+      "decision": "retained existing individual exterior after review",
+      "features_reviewed": [
+        "Warm masonry outer L, south/east glazed elevations and four grounded law-library lawn skylights."
+      ],
+      "reference": "https://www.kpf.com/project/william-h-gates-hall",
+      "dimensions": "Retain published dimensions where available; all remaining section levels, bays and secondary members are approximate exterior interpretations."
+    },
+    {
+      "id": "PCAR",
+      "code": "W014",
+      "name": "PACCAR Hall",
+      "decision": "retained existing individual exterior after review",
+      "features_reviewed": [
+        "Brick wings, public glass atrium and a supported projecting glazed meeting-room volume."
+      ],
+      "reference": "https://lmnarchitects.com/project/paccar-hall-foster-school-of-business-university-of-washington",
+      "dimensions": "Retain published dimensions where available; all remaining section levels, bays and secondary members are approximate exterior interpretations."
+    },
+    {
+      "id": "DEN",
+      "code": "W018",
+      "name": "Denny Hall",
+      "decision": "reconstructed source-specific exterior",
+      "features_reviewed": [
+        "high hipped slate main and rear roofs",
+        "low semi-elliptical side wings",
+        "three wall dormers and central clock",
+        "twin conical entrance towers",
+        "three open porch arches and connected stairs",
+        "open copper cupola, domed crown and small lantern"
+      ],
+      "reference": "https://facilities.uw.edu/files/media/denny-hall-hra.pdf",
+      "dimensions": "Retain published dimensions where available; all remaining section levels, bays and secondary members are approximate exterior interpretations."
+    },
+    {
+      "id": "INT",
+      "code": "W019",
+      "name": "Intellectual House",
+      "decision": "retained existing individual exterior after review",
+      "features_reviewed": [
+        "Retain the existing cedar longhouse, sloped closed roof, timber posts and grounded approach."
+      ],
+      "reference": "https://www.washington.edu/news/2015/03/10/as-home-for-native-learning-opens-a-dream-is-realized/",
+      "dimensions": "Retain published dimensions where available; all remaining section levels, bays and secondary members are approximate exterior interpretations."
+    },
+    {
+      "id": "RAI",
+      "code": "W022",
+      "name": "Raitt Hall",
+      "decision": "reconstructed source-specific exterior",
+      "features_reviewed": [
+        "broad stone-trimmed Tudor frontage",
+        "rectangular paired and triplet window groups",
+        "end and central shaped gables",
+        "recessed entrance and grounded stone approach",
+        "aerial-verified flat inner roof"
+      ],
+      "reference": "https://dxarts.washington.edu/facilities/raitt-hall",
+      "dimensions": "Retain published dimensions where available; all remaining section levels, bays and secondary members are approximate exterior interpretations."
+    },
+    {
+      "id": "SAV",
+      "code": "W029",
+      "name": "Savery Hall",
+      "decision": "reconstructed source-specific exterior",
+      "features_reviewed": [
+        "warm masonry L-shaped teaching wings",
+        "large rectangular stone-mullioned Quad bays",
+        "projecting entrance bay with Tudor arch",
+        "stepped gables and stone coping",
+        "aerial-verified slate margin and flat inner roof"
+      ],
+      "reference": "https://artsci.washington.edu/news/2009-09/extreme-makeover-savery-hall",
+      "dimensions": "Retain published dimensions where available; all remaining section levels, bays and secondary members are approximate exterior interpretations."
+    },
+    {
+      "id": "SMI",
+      "code": "W032",
+      "name": "Smith Hall",
+      "decision": "reconstructed source-specific exterior",
+      "features_reviewed": [
+        "long brick hall with pale stone bay frames",
+        "wide Quad-facing rectangular window groups",
+        "central gabled entry projection",
+        "corner masonry piers and string courses",
+        "separate slate roof edges and flat center"
+      ],
+      "reference": "https://history.washington.edu/sites/history/files/documents/smith_hall_fsep_oct_2019.pdf",
+      "dimensions": "Retain published dimensions where available; all remaining section levels, bays and secondary members are approximate exterior interpretations."
+    },
+    {
+      "id": "KNE",
+      "code": "W033",
+      "name": "Kane Hall",
+      "decision": "retained existing individual exterior after review",
+      "features_reviewed": [
+        "Recessed south portico, continuous concrete piers and tall back-set glazing replace stacked small windows."
+      ],
+      "reference": "https://www.washington.edu/news/2019/12/17/beauty-in-brutalism-architecture-professor-alex-anderson-reviews-the-uws-bunkerlike-behemoths/",
+      "dimensions": "Retain published dimensions where available; all remaining section levels, bays and secondary members are approximate exterior interpretations."
+    },
+    {
+      "id": "HAG",
+      "code": "W035",
+      "name": "Henry Art Gallery",
+      "decision": "retained existing individual exterior after review",
+      "features_reviewed": [
+        "Two-storey original gallery with masonry/stone courses and slate margins; AVA is its separately mapped modern addition."
+      ],
+      "reference": "https://www.gwathmey-siegel.com/2013/08/university-of-washington/",
+      "dimensions": "Retain published dimensions where available; all remaining section levels, bays and secondary members are approximate exterior interpretations."
+    },
+    {
+      "id": "OUG",
+      "code": "W036",
+      "name": "Odegaard Library",
+      "decision": "retained existing individual exterior after review",
+      "features_reviewed": [
+        "Three-storey brick/glass library behind a concrete bay frame; broad central skylight follows the aerial."
+      ],
+      "reference": "https://millerhull.com/project/odegaard-library/",
+      "dimensions": "Retain published dimensions where available; all remaining section levels, bays and secondary members are approximate exterior interpretations."
+    },
+    {
+      "id": "GWN",
+      "code": "W037",
+      "name": "Gowen Hall",
+      "decision": "reconstructed source-specific exterior",
+      "features_reviewed": [
+        "L-shaped brick teaching/library wings",
+        "Tudor-arched wood entrance and stone surround",
+        "wide mullioned Quad windows",
+        "gable and parapet silhouettes",
+        "sloped slate edges retained around flat roof"
+      ],
+      "reference": "https://writing.washington.edu/file/358",
+      "dimensions": "Retain published dimensions where available; all remaining section levels, bays and secondary members are approximate exterior interpretations."
+    },
+    {
+      "id": "SUZ",
+      "code": "W040",
+      "name": "Suzzallo Library",
+      "decision": "retained existing individual exterior after review",
+      "features_reviewed": [
+        "Photo-referenced west reading hall, thirteen Gothic window bays, three physically recessed portals, broad short stair and continuous raised terrace; Explore faces the entrance from Red Square."
+      ],
+      "reference": "https://www.gly.com/uw-seismic-improvements",
+      "dimensions": "Retain published dimensions where available; all remaining section levels, bays and secondary members are approximate exterior interpretations."
+    },
+    {
+      "id": "HUB",
+      "code": "W045",
+      "name": "Student Union Building",
+      "decision": "retained existing individual exterior after review",
+      "features_reviewed": [
+        "Historic brick east enclosure, lower central volumes and distinct glazed north/south public entries."
+      ],
+      "reference": "https://www.nwpart.com/projects/university-of-washington-husky-union-building/",
+      "dimensions": "Retain published dimensions where available; all remaining section levels, bays and secondary members are approximate exterior interpretations."
+    },
+    {
+      "id": "GRB",
+      "code": "W046",
+      "name": "Gerberding Hall",
+      "decision": "retained existing individual exterior after review",
+      "features_reviewed": [
+        "Retain the junction tower, lower mapped wings, louvres, stone courses and attached pinnacles."
+      ],
+      "reference": "https://www.washington.edu/news/2008/05/01/gerberding-a-real-bell-tower-at-last/",
+      "dimensions": "Retain published dimensions where available; all remaining section levels, bays and secondary members are approximate exterior interpretations."
+    },
+    {
+      "id": "IEB",
+      "code": "W048",
+      "name": "Interdisciplinary Engineering Building",
+      "decision": "retained existing individual exterior after review",
+      "features_reviewed": [
+        "Completed dark-brick building, open lower covered arrival, varied tall openings and rooftop PV."
+      ],
+      "reference": "https://www.engr.washington.edu/about/ieb",
+      "dimensions": "Retain published dimensions where available; all remaining section levels, bays and secondary members are approximate exterior interpretations."
+    },
+    {
+      "id": "MGH",
+      "code": "W050",
+      "name": "Mary Gates Hall",
+      "decision": "retained existing individual exterior after review",
+      "features_reviewed": [
+        "Retain Gothic perimeter wings, lower commons roof and central glazing."
+      ],
+      "reference": "https://www.bassettiarch.com/portfoliodetails/marygates",
+      "dimensions": "Retain published dimensions where available; all remaining section levels, bays and secondary members are approximate exterior interpretations."
+    },
+    {
+      "id": "HRC",
+      "code": "W057",
+      "name": "Hans Rosling Center for Population Health",
+      "decision": "retained existing individual exterior after review",
+      "features_reviewed": [
+        "Recessed glazed base, concrete pilotis, west solar sails, quieter precast service face and two inset roof terraces."
+      ],
+      "reference": "https://www.washington.edu/populationhealth/hans-rosling-center-tour/",
+      "dimensions": "Retain published dimensions where available; all remaining section levels, bays and secondary members are approximate exterior interpretations."
+    },
+    {
+      "id": "CSE",
+      "code": "W078",
+      "name": "Paul G. Allen Center for Computer Science & Engineering",
+      "decision": "retained existing individual exterior after review",
+      "features_reviewed": [
+        "Brick teaching wings, seven-storey bay rhythm, shallow window cheeks and a separately glazed circulation atrium."
+      ],
+      "reference": "https://lazowska.cs.washington.edu/psj.allen.center.html",
+      "dimensions": "Retain published dimensions where available; all remaining section levels, bays and secondary members are approximate exterior interpretations."
+    },
+    {
+      "id": "CSE2",
+      "code": "W082",
+      "name": "Bill & Melinda Gates Center for Computer Science & Engineering",
+      "decision": "retained existing individual exterior after review",
+      "features_reviewed": [
+        "Staggered terracotta/brick piers, larger glazing, roof event enclosure, terrace and narrow roof lanterns."
+      ],
+      "reference": "https://lmnarchitects.com/project/bill-melinda-gates-center",
+      "dimensions": "Retain published dimensions where available; all remaining section levels, bays and secondary members are approximate exterior interpretations."
+    },
+    {
+      "id": "LSB",
+      "code": "W086",
+      "name": "Life Sciences Building",
+      "decision": "retained existing individual exterior after review",
+      "features_reviewed": [
+        "Glazed laboratory bar, reddish circulation end, teaching plinth, bounded south solar-glass fins and roof PV."
+      ],
+      "reference": "https://perkinswill.com/project/university-of-washington-life-sciences-building/",
+      "dimensions": "Retain published dimensions where available; all remaining section levels, bays and secondary members are approximate exterior interpretations."
+    },
+    {
+      "id": "ALD",
+      "code": "W105",
+      "name": "Alder Hall",
+      "decision": "retained existing individual exterior after review",
+      "features_reviewed": [
+        "Retain the dedicated open courtyard, shopfront/arcade, whole-block and transit modeling. No geometry changes."
+      ],
+      "reference": "https://hfs.uw.edu/live/undergraduates/undergraduate-communities/alder-hall/",
+      "dimensions": "Retain published dimensions where available; all remaining section levels, bays and secondary members are approximate exterior interpretations."
+    },
+    {
+      "id": "HSEB",
+      "code": "W153",
+      "name": "Health Sciences Education Building",
+      "decision": "retained existing individual exterior after review",
+      "features_reviewed": [
+        "Opaque corrugated silver classroom skin, varied tall openings, glazed north active edge and timber floor-edge accents."
+      ],
+      "reference": "https://millerhull.com/project/health-sciences-education-building/",
+      "dimensions": "Retain published dimensions where available; all remaining section levels, bays and secondary members are approximate exterior interpretations."
+    },
+    {
+      "id": "UMSA",
+      "code": "W193",
+      "name": "UW Medical Center - Montlake, Wing SA - Montlake Tower",
+      "decision": "retained existing individual exterior after review",
+      "features_reviewed": [
+        "Separate diagnostic/service podium, glazed patient tower, repeated pale bay edges and lower companion roofs."
+      ],
+      "reference": "https://www.laminart.com/case-study/montlake-tower-university-washington-medical-center",
+      "dimensions": "Retain published dimensions where available; all remaining section levels, bays and secondary members are approximate exterior interpretations."
+    },
+    {
+      "id": "CSH",
+      "code": "W260",
+      "name": "Conibear Shellhouse",
+      "decision": "retained existing individual exterior after review",
+      "features_reviewed": [
+        "Lower shell-storage bays, upper olive/wood-clad dining/academic enclosure and a supported lake-facing deck. The lake-facing DEM sample is the lower floor datum, rather than the central uphill entrance sample."
+      ],
+      "reference": "https://millerhull.com/project/conibear-shellhouse/",
+      "dimensions": "Retain published dimensions where available; all remaining section levels, bays and secondary members are approximate exterior interpretations."
+    },
+    {
+      "id": "EDP",
+      "code": "W263",
+      "name": "Hec Edmundson Pavilion",
+      "decision": "retained existing individual exterior after review",
+      "features_reviewed": [
+        "Pitched main arena roof, lower north gym/east annex volumes and the historic west brick/window/pier rhythm."
+      ],
+      "reference": "https://gohuskies.com/news/2013/4/18/208237508",
+      "dimensions": "Retain published dimensions where available; all remaining section levels, bays and secondary members are approximate exterior interpretations."
+    },
+    {
+      "id": "STD",
+      "code": "W269",
+      "name": "Husky Stadium",
+      "decision": "retained existing individual exterior after review",
+      "features_reviewed": [
+        "Retain the dedicated stepped bowl, separate upper decks, cantilever roofs, field axis and supports; aerial checked."
+      ],
+      "reference": "https://www.hok.com/projects/view/university-of-washington-husky-stadium-renovation-and-expansion/",
+      "dimensions": "Retain published dimensions where available; all remaining section levels, bays and secondary members are approximate exterior interpretations."
+    },
+    {
+      "id": "LINK_UW",
+      "code": "W272",
+      "name": "University of Washington Station",
+      "decision": "retained existing individual exterior after review",
+      "features_reviewed": [
+        "Retain the dedicated glass station, lobby decks, structural bays and connected pedestrian bridge/landings."
+      ],
+      "reference": "https://lmnarchitects.com/project/university-of-washington-station-sound-transit",
+      "dimensions": "Retain published dimensions where available; all remaining section levels, bays and secondary members are approximate exterior interpretations."
+    }
+  ],
+  "outdoor_highlights": [
+    {
+      "id": "DRUMHELLER",
+      "name": "Drumheller Fountain",
+      "decision": "retained existing dedicated fountain",
+      "features_reviewed": [
+        "Stepped circular basin and pool water",
+        "Thicker center plume and curved outer jets",
+        "Individual static spray meshes, radial water surface and grounded basin edges"
+      ],
+      "reference": "https://www.washington.edu/visit/campus-highlights-guide/"
+    }
+  ],
+  "validation": {
+    "browser_geometry": "All individual exported building layers reviewed at the configured presentation view and opposite side; targeted low-angle checks for open structures. Full source geometry, without runtime regional simplification.",
+    "form_regressions": "scripts/check_highlight_forms.mjs",
+    "camera_regressions": "scripts/check_highlight_views.mjs",
+    "native_cad": "scripts/validate_rhino.py"
+  }
+}

@@ -852,16 +852,46 @@
     "basis": "平面采用 UW 官方 GIS；外部层数、层高与屋顶高度为估算。GIS 总建筑面积不能视为地上层数。",
     "basis_en": "Official UW footprint; exterior storeys, floor heights and roof elevations are approximate. Reported gross floor area may include basements and does not certify exterior storeys.",
     "partition": "按公开建筑资料和航拍细化体量、屋顶与立面；保留官方轮廓。外部高度及构件尺寸仍为近似表达。",
-    "partition_en": "Tenino sandstone replaces incorrect brick; Chateauesque slate roof silhouette and supported octagonal bell cupola. Exterior dimensions and partitions remain approximate.",
+    "partition_en": "high hipped slate roofs on the main block and rear ell; separate low semi-elliptical side wings; three stone wall dormers and central clock; twin conical entrance towers; three open entrance porch arches and connected stairs; open copper cupola with domed crown and small lantern. Exterior dimensions and partitions remain approximate.",
     "source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "footprint_source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "architecture_reference": "https://pcad.lib.washington.edu/building/5433/",
     "construction_status": "Active",
     "volume_parts": [
       {
-        "area_m2": 1963.78,
+        "area_m2": 1268.74,
         "base_offset_m": 0,
-        "height_m": 16.5,
+        "height_m": 14.2,
+        "material": "DennySandstone"
+      },
+      {
+        "area_m2": 466.39,
+        "base_offset_m": 0,
+        "height_m": 14.2,
+        "material": "DennySandstone"
+      },
+      {
+        "area_m2": 0.18,
+        "base_offset_m": 0,
+        "height_m": 7.2,
+        "material": "DennySandstone"
+      },
+      {
+        "area_m2": 110.83,
+        "base_offset_m": 0,
+        "height_m": 7.2,
+        "material": "DennySandstone"
+      },
+      {
+        "area_m2": 0.03,
+        "base_offset_m": 0,
+        "height_m": 7.2,
+        "material": "DennySandstone"
+      },
+      {
+        "area_m2": 117.64,
+        "base_offset_m": 0,
+        "height_m": 7.2,
         "material": "DennySandstone"
       }
     ]
@@ -1051,7 +1081,7 @@
     "basis": "平面采用 UW 官方 GIS；外部层数、层高与屋顶高度为估算。GIS 总建筑面积不能视为地上层数。",
     "basis_en": "Official UW footprint; exterior storeys, floor heights and roof elevations are approximate. Reported gross floor area may include basements and does not certify exterior storeys.",
     "partition": "按公开建筑资料和航拍细化体量、屋顶与立面；保留官方轮廓。外部高度及构件尺寸仍为近似表达。",
-    "partition_en": "Mapped slate slope perimeter and flat inner roof; Grouped masonry window bays, mullions, stone sills, string courses and grounded entry. Exterior dimensions and partitions remain approximate.",
+    "partition_en": "broad stone-trimmed Tudor frontage; rectangular paired and triplet window groups; end and central shaped gables; recessed entrance and grounded stone approach; aerial-verified flat inner roof. Exterior dimensions and partitions remain approximate.",
     "source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "footprint_source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "architecture_reference": null,
@@ -1061,7 +1091,7 @@
         "area_m2": 1425.25,
         "base_offset_m": 0,
         "height_m": 17.7,
-        "material": "BrickRed"
+        "material": "BrickBuff"
       }
     ]
   },
@@ -1372,11 +1402,11 @@
     ],
     "ground_m": 52.762,
     "bottom_m": 52.762,
-    "peak_m": 75.692,
+    "peak_m": 75.712,
     "basis": "平面采用 UW 官方 GIS；外部层数、层高与屋顶高度为估算。GIS 总建筑面积不能视为地上层数。",
     "basis_en": "Official UW footprint; exterior storeys, floor heights and roof elevations are approximate. Reported gross floor area may include basements and does not certify exterior storeys.",
     "partition": "按公开建筑资料和航拍细化体量、屋顶与立面；保留官方轮廓。外部高度及构件尺寸仍为近似表达。",
-    "partition_en": "Mapped slate slope perimeter and flat inner roof; Grouped masonry window bays, mullions, stone sills, string courses and grounded entry. Exterior dimensions and partitions remain approximate.",
+    "partition_en": "warm masonry L-shaped teaching wings; large rectangular stone-mullioned Quad bays; projecting entrance bay with Tudor arch; stepped gables and stone coping; aerial-verified slate margin and flat inner roof. Exterior dimensions and partitions remain approximate.",
     "source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "footprint_source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "architecture_reference": null,
@@ -1386,7 +1416,7 @@
         "area_m2": 2544.15,
         "base_offset_m": 0,
         "height_m": 19.7,
-        "material": "BrickRed"
+        "material": "BrickBuff"
       }
     ]
   },
@@ -1511,11 +1541,11 @@
     ],
     "ground_m": 50.566,
     "bottom_m": 50.566,
-    "peak_m": 73.496,
+    "peak_m": 73.816,
     "basis": "平面采用 UW 官方 GIS；外部层数、层高与屋顶高度为估算。GIS 总建筑面积不能视为地上层数。",
     "basis_en": "Official UW footprint; exterior storeys, floor heights and roof elevations are approximate. Reported gross floor area may include basements and does not certify exterior storeys.",
     "partition": "按公开建筑资料和航拍细化体量、屋顶与立面；保留官方轮廓。外部高度及构件尺寸仍为近似表达。",
-    "partition_en": "Mapped slate slope perimeter and flat inner roof; Grouped masonry window bays, mullions, stone sills, string courses and grounded entry. Exterior dimensions and partitions remain approximate.",
+    "partition_en": "long brick hall with pale stone bay frames; wide Quad-facing rectangular window groups; central gabled entry projection; corner masonry piers and string courses; separate slate roof edges and flat center. Exterior dimensions and partitions remain approximate.",
     "source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "footprint_source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "architecture_reference": null,
@@ -1760,7 +1790,7 @@
     "basis": "平面采用 UW 官方 GIS；外部层数、层高与屋顶高度为估算。GIS 总建筑面积不能视为地上层数。",
     "basis_en": "Official UW footprint; exterior storeys, floor heights and roof elevations are approximate. Reported gross floor area may include basements and does not certify exterior storeys.",
     "partition": "按公开建筑资料和航拍细化体量、屋顶与立面；保留官方轮廓。外部高度及构件尺寸仍为近似表达。",
-    "partition_en": "Mapped slate slope perimeter and flat inner roof; Grouped masonry window bays, mullions, stone sills, string courses and grounded entry. Exterior dimensions and partitions remain approximate.",
+    "partition_en": "L-shaped brick teaching/library wings; Tudor-arched wood entrance and stone surround; wide mullioned Quad windows; gable and parapet silhouettes; sloped slate edges retained around flat roof. Exterior dimensions and partitions remain approximate.",
     "source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "footprint_source": "https://gis.maps.uw.edu/federated/rest/services/BaseComponents/UW_Seattle_Buildings_and_Paths/MapServer/1",
     "architecture_reference": null,

@@ -150,17 +150,51 @@
       "levels": 3,
       "volume_parts": [
         {
-          "area_m2": 1963.78,
+          "area_m2": 1268.74,
           "base_offset_m": 0,
-          "height_m": 16.5,
+          "height_m": 14.2,
+          "material": "DennySandstone"
+        },
+        {
+          "area_m2": 466.39,
+          "base_offset_m": 0,
+          "height_m": 14.2,
+          "material": "DennySandstone"
+        },
+        {
+          "area_m2": 0.18,
+          "base_offset_m": 0,
+          "height_m": 7.2,
+          "material": "DennySandstone"
+        },
+        {
+          "area_m2": 110.83,
+          "base_offset_m": 0,
+          "height_m": 7.2,
+          "material": "DennySandstone"
+        },
+        {
+          "area_m2": 0.03,
+          "base_offset_m": 0,
+          "height_m": 7.2,
+          "material": "DennySandstone"
+        },
+        {
+          "area_m2": 117.64,
+          "base_offset_m": 0,
+          "height_m": 7.2,
           "material": "DennySandstone"
         }
       ],
       "bounded_shade_panels": 0,
       "illustrative_pv_modules": 0,
       "details": [
-        "Tenino sandstone replaces incorrect brick",
-        "Chateauesque slate roof silhouette and supported octagonal bell cupola"
+        "high hipped slate roofs on the main block and rear ell",
+        "separate low semi-elliptical side wings",
+        "three stone wall dormers and central clock",
+        "twin conical entrance towers",
+        "three open entrance porch arches and connected stairs",
+        "open copper cupola with domed crown and small lantern"
       ],
       "accuracy": "Official footprint retained; exterior partitions, heights and members are approximate public-photo interpretations."
     },
@@ -228,14 +262,17 @@
           "area_m2": 1425.25,
           "base_offset_m": 0,
           "height_m": 17.7,
-          "material": "BrickRed"
+          "material": "BrickBuff"
         }
       ],
       "bounded_shade_panels": 0,
       "illustrative_pv_modules": 0,
       "details": [
-        "Mapped slate slope perimeter and flat inner roof",
-        "Grouped masonry window bays, mullions, stone sills, string courses and grounded entry"
+        "broad stone-trimmed Tudor frontage",
+        "rectangular paired and triplet window groups",
+        "end and central shaped gables",
+        "recessed entrance and grounded stone approach",
+        "aerial-verified flat inner roof"
       ],
       "accuracy": "Official footprint retained; exterior partitions, heights and members are approximate public-photo interpretations."
     },
@@ -291,14 +328,17 @@
           "area_m2": 2544.15,
           "base_offset_m": 0,
           "height_m": 19.7,
-          "material": "BrickRed"
+          "material": "BrickBuff"
         }
       ],
       "bounded_shade_panels": 0,
       "illustrative_pv_modules": 0,
       "details": [
-        "Mapped slate slope perimeter and flat inner roof",
-        "Grouped masonry window bays, mullions, stone sills, string courses and grounded entry"
+        "warm masonry L-shaped teaching wings",
+        "large rectangular stone-mullioned Quad bays",
+        "projecting entrance bay with Tudor arch",
+        "stepped gables and stone coping",
+        "aerial-verified slate margin and flat inner roof"
       ],
       "accuracy": "Official footprint retained; exterior partitions, heights and members are approximate public-photo interpretations."
     },
@@ -318,8 +358,11 @@
       "bounded_shade_panels": 0,
       "illustrative_pv_modules": 0,
       "details": [
-        "Mapped slate slope perimeter and flat inner roof",
-        "Grouped masonry window bays, mullions, stone sills, string courses and grounded entry"
+        "long brick hall with pale stone bay frames",
+        "wide Quad-facing rectangular window groups",
+        "central gabled entry projection",
+        "corner masonry piers and string courses",
+        "separate slate roof edges and flat center"
       ],
       "accuracy": "Official footprint retained; exterior partitions, heights and members are approximate public-photo interpretations."
     },
@@ -360,8 +403,11 @@
       "bounded_shade_panels": 0,
       "illustrative_pv_modules": 0,
       "details": [
-        "Mapped slate slope perimeter and flat inner roof",
-        "Grouped masonry window bays, mullions, stone sills, string courses and grounded entry"
+        "L-shaped brick teaching/library wings",
+        "Tudor-arched wood entrance and stone surround",
+        "wide mullioned Quad windows",
+        "gable and parapet silhouettes",
+        "sloped slate edges retained around flat roof"
       ],
       "accuracy": "Official footprint retained; exterior partitions, heights and members are approximate public-photo interpretations."
     },

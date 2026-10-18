@@ -679,10 +679,10 @@
     "category": "building",
     "material": "RoofSlate"
   },
-  "W018M5200": {
+  "W018M5400": {
     "layer": "W018_Denny Hall",
     "category": "building",
-    "material": "RoofMembrane"
+    "material": "RoofPatina"
   },
   "W018M6000": {
     "layer": "W018_Denny Hall",
@@ -693,11 +693,6 @@
     "layer": "W018_Denny Hall",
     "category": "building",
     "material": "DarkGlass"
-  },
-  "W018M9300": {
-    "layer": "W018_Denny Hall",
-    "category": "building",
-    "material": "StepStone"
   },
   "W019M2700": {
     "layer": "W019_Intellectual House",
@@ -824,10 +819,20 @@
     "category": "building",
     "material": "Foundation"
   },
-  "W022M4100": {
+  "W022M4200": {
     "layer": "W022_Raitt Hall",
     "category": "building",
-    "material": "BrickRed"
+    "material": "BrickBuff"
+  },
+  "W022M4400": {
+    "layer": "W022_Raitt Hall",
+    "category": "building",
+    "material": "SuzzalloStone"
+  },
+  "W022M4700": {
+    "layer": "W022_Raitt Hall",
+    "category": "building",
+    "material": "WeatheredWood"
   },
   "W022M5100": {
     "layer": "W022_Raitt Hall",
@@ -848,6 +853,11 @@
     "layer": "W022_Raitt Hall",
     "category": "building",
     "material": "DarkGlass"
+  },
+  "W022D6900": {
+    "layer": "W022_Raitt Hall",
+    "category": "building",
+    "material": "Frame"
   },
   "W022M9300": {
     "layer": "W022_Raitt Hall",
@@ -1109,10 +1119,20 @@
     "category": "building",
     "material": "Foundation"
   },
-  "W029M4100": {
+  "W029M4200": {
     "layer": "W029_Savery Hall",
     "category": "building",
-    "material": "BrickRed"
+    "material": "BrickBuff"
+  },
+  "W029M4400": {
+    "layer": "W029_Savery Hall",
+    "category": "building",
+    "material": "SuzzalloStone"
+  },
+  "W029M4700": {
+    "layer": "W029_Savery Hall",
+    "category": "building",
+    "material": "WeatheredWood"
   },
   "W029M5100": {
     "layer": "W029_Savery Hall",
@@ -1133,6 +1153,11 @@
     "layer": "W029_Savery Hall",
     "category": "building",
     "material": "DarkGlass"
+  },
+  "W029D6900": {
+    "layer": "W029_Savery Hall",
+    "category": "building",
+    "material": "Frame"
   },
   "W029M9300": {
     "layer": "W029_Savery Hall",
@@ -1229,6 +1254,21 @@
     "category": "building",
     "material": "BrickRed"
   },
+  "W032M4200": {
+    "layer": "W032_Smith Hall",
+    "category": "building",
+    "material": "BrickBuff"
+  },
+  "W032M4400": {
+    "layer": "W032_Smith Hall",
+    "category": "building",
+    "material": "SuzzalloStone"
+  },
+  "W032M4700": {
+    "layer": "W032_Smith Hall",
+    "category": "building",
+    "material": "WeatheredWood"
+  },
   "W032M5100": {
     "layer": "W032_Smith Hall",
     "category": "building",
@@ -1248,6 +1288,11 @@
     "layer": "W032_Smith Hall",
     "category": "building",
     "material": "DarkGlass"
+  },
+  "W032D6900": {
+    "layer": "W032_Smith Hall",
+    "category": "building",
+    "material": "Frame"
   },
   "W032M9300": {
     "layer": "W032_Smith Hall",
@@ -1439,6 +1484,21 @@
     "category": "building",
     "material": "BrickRed"
   },
+  "W037M4200": {
+    "layer": "W037_Gowen Hall",
+    "category": "building",
+    "material": "BrickBuff"
+  },
+  "W037M4400": {
+    "layer": "W037_Gowen Hall",
+    "category": "building",
+    "material": "SuzzalloStone"
+  },
+  "W037M4700": {
+    "layer": "W037_Gowen Hall",
+    "category": "building",
+    "material": "WeatheredWood"
+  },
   "W037M5100": {
     "layer": "W037_Gowen Hall",
     "category": "building",
@@ -1458,6 +1518,11 @@
     "layer": "W037_Gowen Hall",
     "category": "building",
     "material": "DarkGlass"
+  },
+  "W037D6900": {
+    "layer": "W037_Gowen Hall",
+    "category": "building",
+    "material": "Frame"
   },
   "W037M9300": {
     "layer": "W037_Gowen Hall",

@@ -3,6 +3,7 @@ Member dimensions, floor datums and secondary roof partitions are approximate.
 """
 from cad_core import *
 from core_architecture import oriented_roofs
+from quad_highlights import frontage as quad_frontage
 
 QUAD={'SAV','RAI','SMI','GWN','MLR','MUS','HUT','THO','JHN','GUG','AND','ROB','HNS'}
 RESIDENCES={'MCC','MDR','WLW','OAK','ELM','LAN','ALD','POP','MAH','TEH'}
@@ -203,7 +204,7 @@ def build_refined(ms,p,base,id,default_height,default_levels,code,lay,info,groun
         height=32.5;levels=3;notes=['Separate original reading hall, southeast Gothic wing and lower flat-roofed 1963 addition','Tall triplet reading-room windows, stepped wall-attached buttresses and a recessed west portal']
     elif id in QUAD or id=='MGH':
         height=default_height;levels=3 if id!='HNS'else 4;h=height-3.3
-        body(p,h,'BrickRed',levels)
+        body(p,h,'BrickBuff'if id in {'SAV','RAI'}else 'BrickRed',levels,None if id in {'SAV','RAI','SMI','GWN'}else 'gothic')
         if id=='MGH':
             world,local,u,v=frame(p);a,b,c,d=local(p).bounds
             strips=[box(a-1,b-1,c+1,b+12),box(a-1,d-12,c+1,d+1),box(a-1,b+12,a+12,d-12),box(c-12,b+12,c+1,d-12)]
@@ -213,8 +214,10 @@ def build_refined(ms,p,base,id,default_height,default_levels,code,lay,info,groun
             commons=world(box((a+c)/2-7,(b+d)/2-5,(a+c)/2+7,(b+d)/2+5)).intersection(center.buffer(-.4))
             for q in polygons(commons):ms['Frame'].append(extrusion(q,base+h+.18,.18));ms['RoofGlass'].append(extrusion(q.buffer(-.12),base+h+.35,.12))
         else:perimeter_roof(ms,p,base+h,3.05,2.8)
-        supported_entry(ms,p,base,(130,155)if id in {'SAV','RAI','SMI','GWN','MLR','MUS'}else(120,-50)if id=='MGH'else(80,110),ground)
-        notes=['Mapped slate slope perimeter and flat inner roof','Grouped masonry window bays, mullions, stone sills, string courses and grounded entry']
+        if id in {'SAV','RAI','SMI','GWN'}:
+            detail=quad_frontage(ms,p,base,h,id,ground);notes=detail['features']
+        else:supported_entry(ms,p,base,(130,155)if id in {'MLR','MUS'}else(120,-50)if id=='MGH'else(80,110),ground)
+        if id not in {'SAV','RAI','SMI','GWN'}:notes=['Mapped slate slope perimeter and flat inner roof','Grouped masonry window bays, mullions, stone sills, string courses and grounded entry']
     elif id=='GRB':
         height=35;levels=3;body(p,17.8,'BrickRed',3);perimeter_roof(ms,p,base+17.8,3.2,2.5)
         tower=box(-16.1,-51.8,-7.0,-42.7).intersection(p)
@@ -225,13 +228,8 @@ def build_refined(ms,p,base,id,default_height,default_levels,code,lay,info,groun
             for q in polygons(at):ms['LightStone'].append(extrusion(q,base+29.7,5.0))
         supported_entry(ms,p,base,(-14,16),ground);notes=['Two mapped wings, lower slate perimeter roofs and a separate junction bell tower','Tower louvres, stone courses and corner pinnacles remain attached to its masonry']
     elif id=='DEN':
-        height=26.2;levels=3;body(p,16.5,'DennySandstone',3,'denny');perimeter_roof(ms,p,base+16.5,5.15,5.0)
-        at=(29.0,291.0);drum=Point(*at).buffer(2.4,quad_segs=2)
-        for q in polygons(drum):ms['DennySandstone'].append(extrusion(q,base+21.45,.85));ms['RoofSlate'].append(extrusion(q,base+24.30,.18))
-        for angle in np.arange(8)*math.tau/8:
-            x=at[0]+2.05*math.cos(angle);y=at[1]+2.05*math.sin(angle);ms['LightStone'].append(cylinder((x,y,base+22.2),(x,y,base+24.4),.13,6))
-        roof=trimesh.creation.cone(radius=2.75,height=1.7,sections=8);roof.apply_translation([*at,base+24.48]);ms['RoofSlate'].append(roof)
-        supported_entry(ms,p,base,(4,245),ground,'denny');notes=['Tenino sandstone replaces incorrect brick','Chateauesque slate roof silhouette and supported octagonal bell cupola']
+        from denny_highlight import build_denny
+        height=26.2;levels=3;notes=build_denny(ms,p,base,body,ground)
     elif id=='BRK':
         height=17.6;levels=3;body(p,12.5,'WeatheredWood',3,None)
         for q in polygons(p):

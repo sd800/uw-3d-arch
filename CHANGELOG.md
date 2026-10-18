@@ -1,5 +1,11 @@
 # Changelog
 
+## 26.10.18.1 — 2026-10-18
+
+- Individually audited all 28 building Highlights and the Drumheller Fountain stop. Rebuilt Savery, Raitt, Smith and Gowen frontages with wide stone-mullioned Tudor bays, distinct gabled entrances and grounded approaches; retained their aerial-verified flat inner roofs and slate margins.
+- Corrected Denny Hall's high hipped slate main/rear roofs, low side wings, twin conical entrance towers, three wall dormers and clock, open porch arches, and domed copper cupola with lantern using UW's historic architecture addendum.
+- Added the complete architectural audit, actual-CAD review gallery and roof/cupola checks. Regenerated native CAD, exact compressed web/offline delivery and preserved Alder/Suzzallo geometry, existing Explore cameras and the fountain stop order.
+
 ## 26.10.17.2 — 2026-10-17
 
 - Give 26 architectural highlights individual architectural aerial-photography cameras, choosing principal entrances, courtyard-facing elevations or characteristic volumes instead of one shared viewing direction. Use lower facade views and higher courtyard/sports-bowl views with portrait/landscape-safe framing.
