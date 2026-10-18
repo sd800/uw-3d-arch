@@ -1,5 +1,10 @@
 # Changelog
 
+## 26.10.18.2 — 2026-10-18
+
+- Show the live camera azimuth, elevation, vertical view span and model-space view center beside the public-source model status. Update on navigation, presets, zoom, resize and language changes, including off-axis horizontal framing.
+- Wrap the bilingual readout on narrow screens and lift the scale, legend and section controls above the footer automatically. Preserve existing camera behavior, CAD geometry and delivery data.
+
 ## 26.10.18.1 — 2026-10-18
 
 - Individually audited all 28 building Highlights and the Drumheller Fountain stop. Rebuilt Savery, Raitt, Smith and Gowen frontages with wide stone-mullioned Tudor bays, distinct gabled entrances and grounded approaches; retained their aerial-verified flat inner roofs and slate margins.
