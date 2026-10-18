@@ -1,14 +1,9 @@
-# Web model transport
+# Web model delivery
 
+The viewer uses standard glTF 2.0 binary (GLB). The lossless complete-model derivative is **11.07 MiB** transferred, from a **71.16 MiB** extension-free download GLB. `EXT_meshopt_compression` and gzip reduce transfer; decompressed position/index accessors match the native GLB byte for byte. No quantization or simplification is introduced by this format conversion.
 
-The initial model transfer is **19.66 MB**, down from **43.39 MB** (54.7% smaller than ordinary gzip). The web stream uses meshoptimizer 1.3.0 lossless vertex/index-sequence coding followed by gzip. No quantization or simplification is applied; its decoded SHA-256 matches the original 3DS. Rhino and original 3DS downloads stay unchanged.
+A worker inflates/decompresses the complete GLB and calculates normals; geometry buffers transfer once to the main thread. Scene creation and no-worker fallback yield between work slices. The meshoptimizer JavaScript/WebAssembly codec is bundled locally. HTTP loads binary assets; double-click `file://` loads classic scripts, and the standalone edition embeds browsing data. WebGL 2, WebAssembly and Compression Streams are required by current delivery.
 
-A single browser worker streams gzip decompression, restores small geometry blocks and parses the CAD model. Its compressed input and resulting geometry buffers are transferred rather than copied. The full intermediate archive is never retained. Scene setup yields to rendering between time slices; browsers that block workers use cooperative per-object parsing. Standalone HTML restores the downloadable CAD on demand in a worker. Decoder JavaScript/WebAssembly is bundled locally and requires no CDN. See `output/web_model_report.json` for byte counts, source digest and maximum block size. `npm run build:model` rebuilds the stream; `npm run check:compression` checks lossless restoration and worker behavior.
+Downloads are listed **3DM → FBX → GLB**. 3DM retains editable Rhino solids and individual layers. FBX and GLB retain mesh geometry and material assignments, grouped by building/layer. FBX uses meter units and Z up; GLB uses a standard Y-up root transform with the metric source vertices retained below it. The public download GLB requires no optional extensions. Files exceeding the hosting per-file limit are delivered losslessly as `.xz`; extract before importing.
 
-## Memory and responsiveness
-
-- At most one decode/parse worker per load. No worker pool is created.
-- A full source CAD buffer still exists temporarily inside that worker; meshes and GPU resources necessarily consume memory too. Compression reduces transfer and duplicate input buffers, not the final model complexity.
-- Native gzip output is consumed a block at a time. Blocks are limited to 4 MiB; the current maximum is recorded in the report. Face decoding needs one additional local 16-bit index array.
-- The no-worker path yields between objects; a single 3DS object remains the indivisible parsing unit. This improves responsiveness but cannot guarantee identical performance on every browser/device.
-- HTTP and root file editions download the original CAD directly on request. The standalone edition recovers the same CAD bytes in a separate on-demand worker after startup.
+`output/exchange_model_report.json` records native mesh counts/hashes; `output/web_model_report.json` records complete GLB transfer counts/hashes. `npm run check:glb` verifies lossless accessor equality, HTTP/local/offline byte integrity and ordered downloads; `npm run check:exchange` compares every FBX vertex/index against GLB and checks units/normals. Rendering still needs memory for decoded geometry and framebuffers.

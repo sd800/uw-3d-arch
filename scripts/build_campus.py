@@ -366,6 +366,8 @@ for name,g in [('Campus',scope),*zone_shapes.items()]:
     v=rh.ViewInfo();v.Name=name;v.Viewport.SetCameraLocation(rh.Point3d(xx+size,yy-size,1400));v.Viewport.SetCameraDirection(rh.Vector3d(-size,size,-1300));v.Viewport.SetCameraUp(rh.Vector3d(0,0,1));v.Viewport.TargetPoint=rh.Point3d(xx,yy,50);v.Viewport.ChangeToParallelProjection(True);v.Viewport.SetFrustum(-size,size,-size,size,1,40000);model.NamedViews.Add(v)
 model.Strings['ModelNotes']='UW Seattle exterior approximation. Official UW building footprints, mapped Sound Transit surface station and OSM neighboring/transit geometry, sampled USGS terrain. Individual campus/neighbor building layers and separate environment layers. Alder block, surface station entries and bridge/stairs interpreted from university/operator/architect sources; exterior heights and member dimensions approximate. No underground railway engineering or measured as-built BIM.'
 assert model.Write(str(OUT/'UW_Seattle_Layered.3dm'),7)
+from campus_exchange import export_scene
+export_scene(ROOT,objects,COLORS,layer_map,records)
 def chunk(tag,data=b''):return struct.pack('<HI',tag,len(data)+6)+data
 def zs(s):return s.encode('ascii')+b'\0'
 def rgb(c):return chunk(0x0011,bytes(c))

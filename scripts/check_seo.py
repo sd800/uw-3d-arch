@@ -35,8 +35,8 @@ expected_stops={b['facility_id']for b in data['records']if b['landmark']}|{p['fa
 assert len(data['landmarkOrder'])==len(expected_stops) and set(data['landmarkOrder'])==expected_stops
 assert all(p.get('outdoor')for p in data.get('tourPlaces',[]))
 entity=next(x for x in schema['@graph'] if x['@type']=='3DModel')
-assert entity['sha256']==hashlib.sha256((r/'output/UW_Seattle.3ds').read_bytes()).hexdigest()
-assert entity['contentUrl']==site+'output/UW_Seattle.3ds'
+assert entity['sha256']==hashlib.sha256((r/data['downloads'][2]['url']).read_bytes()).hexdigest()
+assert entity['contentUrl']==site+data['downloads'][2]['url']
 offline=(r/'output/UW_Campus_Offline.html').read_text()
 assert not re.search(r'<script[^>]+src=',offline) and 'noindex, follow' in offline
 assert not any(bad in text for bad in ['uchicago.edu','UChicago','umich.edu','UMich','芝加哥大学','密西根大学','安娜堡','__SITE_URL__','__CAMPUS_DATA__'])

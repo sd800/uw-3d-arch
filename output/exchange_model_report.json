@@ -1,0 +1,13 @@
+{
+  "format": "glTF 2.0 / FBX 7.4",
+  "name": "UW_Seattle",
+  "meshCount": 4996,
+  "triangles": 5556192,
+  "vertices": 3141608,
+  "sourceCoordinateSystem": "meters, Z up, north +Y; GLB root maps to standard Y up",
+  "glbBytes": 74615840,
+  "fbxBytes": 71161557,
+  "glbSha256": "e0b2a429e42d6de652b5a430d6e13da2cf7698b3c06f7f28f9dad106b614b69a",
+  "fbxSha256": "225dbfc07bac82feb92c40636d993bd48afc97bb0bdff7e5a70013b39c058895",
+  "geometry": "Original construction positions rounded only to Float32 (same precision as previous mesh export); original face sequence and material assignments retained."
+}

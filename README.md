@@ -15,6 +15,8 @@ An independent, bilingual exterior model of the **University of Washington Seatt
 | `output/building_dimensions_and_sources.csv` | Mapped dimensions, estimated heights and source notes |
 | `output/neighboring_building_dimensions_and_sources.csv` | Neighboring building dimensions, storeys and sources |
 | `output/neighboring_areas.json` | Context scope, grade pads, ground samples and counts |
+| `output/UW_Seattle.fbx` | Binary FBX 7.4 mesh model, grouped by building/layer |
+| `output/UW_Seattle.glb` | Standard extension-free glTF 2.0 binary model |
 | `output/layer_map.json` | 3DS object names → native building / environment layers |
 | `scripts/apply_layers_rhino.py` | Restore layers after importing the 3DS into Rhino |
 | `output/campus_aerial.png` | Campus preview and social sharing image |
@@ -95,13 +97,15 @@ Source snapshots are retained; geometry rebuilding needs no live map access. `fe
 - `output/`: CAD files, offline edition, reports and delivery archive.
 - Root `VERSION`, `CHANGELOG.md` and package manifests record releases and builds.
 
-## Website model compression
+## Website model delivery
 
-The initial model transfer is **19.66 MB**, down from **43.39 MB** (54.7% smaller than ordinary gzip). The web stream uses meshoptimizer 1.3.0 lossless vertex/index-sequence coding followed by gzip. No quantization or simplification is applied; its decoded SHA-256 matches the original 3DS. Web compression preserves the source Rhino/3DS geometry without simplification.
+The viewer uses standard glTF 2.0 binary (GLB). The lossless complete-model derivative is **11.07 MiB** transferred, from a **71.16 MiB** extension-free download GLB. `EXT_meshopt_compression` and gzip reduce transfer; decompressed position/index accessors match the native GLB byte for byte. No quantization or simplification is introduced by this format conversion.
 
-A single browser worker streams gzip decompression, restores small geometry blocks and parses the CAD model. Its compressed input and resulting geometry buffers are transferred rather than copied. The full intermediate archive is never retained. Scene setup yields to rendering between time slices; browsers that block workers use cooperative per-object parsing. Standalone HTML restores the downloadable CAD on demand in a worker. Decoder JavaScript/WebAssembly is bundled locally and requires no CDN. See `output/web_model_report.json` for byte counts, source digest and maximum block size. `npm run build:model` rebuilds the stream; `npm run check:compression` checks lossless restoration and worker behavior.
+A worker inflates/decompresses the complete GLB and calculates normals; geometry buffers transfer once to the main thread. Scene creation and no-worker fallback yield between work slices. The meshoptimizer JavaScript/WebAssembly codec is bundled locally. HTTP loads binary assets; double-click `file://` loads classic scripts, and the standalone edition embeds browsing data. WebGL 2, WebAssembly and Compression Streams are required by current delivery.
 
-Alder Hall’s complete street block, its independent custom bus shelters, the satellite-reviewed 20-crossing layout, the two light-rail station precincts and their source/approximation notes are documented in [Transit and Alder block sources](sources/TRANSIT_AND_ALDER_BLOCK.md).
+Downloads are listed **3DM → FBX → GLB**. 3DM retains editable Rhino solids and individual layers. FBX and GLB retain mesh geometry and material assignments, grouped by building/layer. FBX uses meter units and Z up; GLB uses a standard Y-up root transform with the metric source vertices retained below it. The public download GLB requires no optional extensions. Files exceeding the hosting per-file limit are delivered losslessly as `.xz`; extract before importing.
+
+`output/exchange_model_report.json` records native mesh counts/hashes; `output/web_model_report.json` records complete GLB transfer counts/hashes. `npm run check:glb` verifies lossless accessor equality, HTTP/local/offline byte integrity and ordered downloads; `npm run check:exchange` compares every FBX vertex/index against GLB and checks units/normals. Rendering still needs memory for decoded geometry and framebuffers.
 
 ## West Campus housing
 
