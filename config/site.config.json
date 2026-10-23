@@ -2,11 +2,11 @@
   "url": "https://uw.arch.songming.org/",
   "domain": "uw.arch.songming.org",
   "repository": "https://github.com/sd800/uw-3d-arch",
-  "title": "UW Campus 3D Model | Seattle Campus",
+  "title": "University of Washington Campus 3D Model",
   "description": "Explore the University of Washington Seattle campus in 3D: Suzzallo Library, Red Square, the Quad, lakefront, medical and athletic facilities. Individual building layers, sampled terrain, offline viewing, 3DS and Rhino downloads.",
   "imageAlt": "University of Washington Seattle exterior campus model, showing Red Square, Suzzallo Library, the Quad, buildings and green spaces.",
   "zh": {
-    "title": "华盛顿大学 · 三维校区 | 西雅图校区室外空间模型",
+    "title": "University of Washington Campus 3D Model",
     "description": "探索华盛顿大学西雅图校区的室外三维模型：苏扎洛图书馆、红场、The Quad 庭院、医学区与湖岸体育设施，建筑逐栋分层，支持离线浏览及3DS与Rhino下载。",
     "imageAlt": "华盛顿大学西雅图校区三维鸟瞰，展示红场、苏扎洛图书馆、The Quad 庭院、建筑与绿地。"
   }
